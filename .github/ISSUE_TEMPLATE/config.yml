@@ -1,0 +1,8 @@
+contact_links:
+  - name: Are you looking for documentation on diskriminierungsfreie-metadaten?
+    url: https://maehr.github.io/diskriminierungsfreie-metadaten
+    about: Please see the documentation for diskriminierungsfreie-metadaten on its GitHub Pages page.
+  - name: Do want to discuss diskriminierungsfreie-metadaten with the community?
+    url: https://github.com/maehr/diskriminierungsfreie-metadaten/discussions
+    about: Please see the discussions page for diskriminierungsfreie-metadaten.
+blank_issues_enabled: true
