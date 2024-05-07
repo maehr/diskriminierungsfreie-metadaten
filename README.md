@@ -1,145 +1,72 @@
-# GitHub template for FAIR and open research data
+# diskriminierungsfreie-metadaten
 
-This GitHub template is independent of the (research) data and its format. It follows the best practices for open research data as outlined in [The Turing Way](https://the-turing-way.netlify.app/). It uses [GitHub Actions](https://docs.github.com/en/actions) to manage releases, issues, and pull requests, [GitHub Pages](https://pages.github.com/) for documentation, and [Zenodo](https://zenodo.org/) for long-term archiving.
+This repository contains the source of [Handbuch zur Erstellung diskriminierungsfreier Metadaten für historische Quellen und Forschungsdaten. Erfahrungen aus dem historischen Forschungsprojekt Stadt.Geschichte.Basel.](https://maehr.github.io/diskriminierungsfreie-metadaten/) The publication and the data in this repository is openly available to everyone and is intended to support reproducible research in the humanities.
 
-[![GitHub issues](https://img.shields.io/github/issues/maehr/open-research-data-template.svg)](https://github.com/maehr/open-research-data-template/issues)
-[![GitHub forks](https://img.shields.io/github/forks/maehr/open-research-data-template.svg)](https://github.com/maehr/open-research-data-template/network)
-[![GitHub stars](https://img.shields.io/github/stars/maehr/open-research-data-template.svg)](https://github.com/maehr/open-research-data-template/stargazers)
-[![Code license](https://img.shields.io/github/license/maehr/open-research-data-template.svg)](https://github.com/maehr/open-research-data-template/blob/main/LICENSE-AGPL.md)
-[![Data license](https://img.shields.io/github/license/maehr/open-research-data-template.svg)](https://github.com/maehr/open-research-data-template/blob/main/LICENSE-CCBY.md)
+[![GitHub issues](https://img.shields.io/github/issues/maehr/diskriminierungsfreie-metadaten.svg)](https://github.com/maehr/diskriminierungsfreie-metadaten/issues)
+[![GitHub forks](https://img.shields.io/github/forks/maehr/diskriminierungsfreie-metadaten.svg)](https://github.com/maehr/diskriminierungsfreie-metadaten/network)
+[![GitHub stars](https://img.shields.io/github/stars/maehr/diskriminierungsfreie-metadaten.svg)](https://github.com/maehr/diskriminierungsfreie-metadaten/stargazers)
+[![Code license](https://img.shields.io/github/license/maehr/diskriminierungsfreie-metadaten.svg)](https://github.com/maehr/diskriminierungsfreie-metadaten/blob/main/LICENSE-AGPL.md)
+[![Data license](https://img.shields.io/github/license/maehr/diskriminierungsfreie-metadaten.svg)](https://github.com/maehr/diskriminierungsfreie-metadaten/blob/main/LICENSE-CCBY.md)
+[![DOI](https://zenodo.org/badge/11124720.svg)](https://zenodo.org/badge/latestdoi/11124720)
 
-<!-- FIXME [![DOI](https://zenodo.org/badge/ZENODO_RECORD.svg)](https://zenodo.org/badge/latestdoi/ZENODO_RECORD) -->
+## What is the publication about?
 
-## Why use a template (even for small datasets)?
+This handbook is a guide to the creation of non-discriminatory metadata for historical sources and research data, which was developed as part of the Stadt.Geschichte.Basel research project. It is aimed at professional historians, archivists, librarians and anyone working with open research data in the historical sciences. The authors Moritz Mähr and Noëlle Schnegg guide you through the practical aspects of creating metadata based on the FAIR principles to make research data findable, accessible, interoperable and reusable. Through practical guidance and illustrated case studies, the handbook shows how machine-readable metadata can enrich research and teaching and influence the interpretation of historical sources. As a publicly accessible "living document", it is designed for continuous development by the community and is committed to an inclusive and non-discriminatory representation of historical content. The handbook is a fundamental resource for anyone interested in modern digital history and open research data. It is available in German.
 
-- Share your [open research data](#open-research-data) with others
-- Write better [documentation](#documentation) for yourself and the community
-- Write more [consistent](#consistency) code and encourage collaboration
-- Increase [security](#security)
-- Follow accepted [ethics](#ethics)
+Furthermore this repository contains a mapping of the [Schlagwortindex GenderOpen](https://opengenderplatform.de/schlagwortindex) to the [Gemeinsame Normdatei (GND)](https://gnd.network/). The mapping was created as part of the Stadt.Geschichte.Basel research project according to the [Rules for GND cross concordances (mapping methodology)](https://wiki.dnb.de/pages/viewpage.action?pageId=263851113).
 
-## How this template helps you
+## How to cite
 
-### Open research data
+See the [CITATION.cff](CITATION.cff) file for citation information.
 
-- Citeable via [DOI](https://www.doi.org/) (and [CITATION.cff](https://citation-file-format.github.io/))
-- Automatic long-term archiving via [Zenodo](https://zenodo.org/)
-- Licensed under a non-restrictive [AGPL 3.0](LICENSE-AGPL.md) and [CC BY 4.0](LICENSE-CCBY.md) license according to [The Turing Way](https://the-turing-way.netlify.app/reproducible-research/rdm/rdm-sharing.html#step-3-choose-a-licence-and-link-to-your-paper-and-code)
-- Templates for reporting data issues using a [custom template](.github/ISSUE_TEMPLATE/data_issue_report.md)
+## Repository Structure
 
-### Documentation
+This repository is organized as follows:
 
-- [README.md](README.md) according to [www.makeareadme.com](https://www.makeareadme.com/) and [The Turing Way](https://the-turing-way.netlify.app/project-design/project-repo/project-repo-readme.html)
-- [CHANGELOG.md](CHANGELOG.md) according to [keepachangelog.com](https://keepachangelog.com/)
-- Automated [CHANGELOG.md](CHANGELOG.md) via [git-cliff](https://github.com/orhun/git-cliff)
-- [package.json](package.json) via [npm docs](https://docs.npmjs.com/cli/v7/configuring-npm/package-json)
-- Accessible documentation via [gh-pages](https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages) and [Quarto](https://quarto.org/)
+- `manuscript/`: the manuscript of the publication
+- `manuscript/data/`: data files used in the manuscript
+- `manuscript/media/`: images, logos, etc. used in the manuscript
+- `manuscript/index.qmd`: the main document, in markdown format
+- `manuscript/custom-reference-doc.docx`: a custom reference document for the manuscript
+- `manuscript/references.bib`: the bibliography file for the manuscript
 
-### Consistency
+## Getting Started
 
-- Consistent formatting via [Prettier](https://prettier.io/)
-- Consistent commit messages according to [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) via [husky](https://github.com/typicode/husky)
-- Consistent versioning via [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
-- Consistent [fork and pull](https://gist.github.com/Chaser324/ce0505fbed06b947d962) workflow via [GitHub branch protection](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule)
-- Consistent issues via [issue templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository)
-- Consistent file and folder naming conventions via [The Turing Way](https://the-turing-way.netlify.app/reproducible-research/rdm/rdm-storage.html#file-naming-conventions)
+Install [Quarto](https://quarto.org), run `quarto preview manuscript` to preview the manuscript, or run `quarto render manuscript` to render the manuscript.
 
-### Security
-
-- [SECURITY.md](SECURITY.md) per [GitHub](https://docs.github.com/en/code-security/getting-started/adding-a-security-policy-to-your-repository)
-- [GitHub Security Alerts](https://github.blog/2017-11-16-introducing-security-alerts-on-github/)
-- Integrity via [GitHub branch protection](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule)
-
-### Ethics
-
-- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) per the [Contributor Covenant](https://www.contributor-covenant.org/)
-- Friendly initial interactions via [Greetings](https://github.com/actions/starter-workflows/blob/main/automation/greetings.yml)
-
-## Installation
-
-To initialize the template, [generate](https://github.com/maehr/open-research-data-template/generate) a new project, [clone](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) the repository to your local machine and follow this guide.
-
-1. Install [Node.js](https://nodejs.org/en/) and run the following commands in the root directory of the repository:
-
-```bash
-npm install
-npm run prepare
-```
-
-2. Complete the following checklist of tasks to customize the template for your project:
-
-- [ ] enable [GitHub security alerts](https://github.blog/2017-11-16-introducing-security-alerts-on-github/)
-- [ ] [protect](https://help.github.com/en/articles/configuring-protected-branches) the main branch to enforce a [fork and pull](https://gist.github.com/Chaser324/ce0505fbed06b947d962) workflow
-- [ ] search and replace `FULLNAME`, `USERNAME`, `REPO_NAME`, `SHORT_DESCRIPTION` `[INSERT CONTACT METHOD]` in [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md), [package.json](package.json), [README.template.md](README.template.md), [SECURITY.md](SECURITY.md)
-- [ ] setup the [Zenodo integration](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)
-- [ ] add `ZENODO_RECORD` to [README.md](README.md)
-- [ ] add favicons to `./`, e.g. via [favicon.io](https://favicon.io/)
-- [ ] search for `TODO` in the project (mostly documentation) and fix it
-- [ ] delete [README.md](README.md)
-- [ ] rename [README.template.md](README.template.md) to [README.md](README.md)
-- [ ] run `npm run format` to format all files
-- [ ] run `npm run commit` to commit all changes
-- [ ] run `npm run changelog` and include the output in [CHANGELOG.md](CHANGELOG.md)
-- [ ] enable [gh-pages](https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages)
-- [ ] customize the documentation with [Quarto](https://quarto.org/docs/websites/#workflow)
-
-3. optional tasks:
-
-- [ ] add a `CITATION.CFF` according to [citation-file-format.github.io](https://citation-file-format.github.io/)
-- [ ] add a `.zenodo.json` according to [zenodo.org](https://developers.zenodo.org/?python#add-metadata-to-your-github-repository-release)
-
-## Use
-
-Check that all files are properly formatted.
-
-```bash
-npm run check
-```
-
-Format all files.
-
-```bash
-npm run format
-```
-
-Run the wizard to write meaningful commit messages.
-
-```bash
-npm run commit
-```
-
-Run the wizard to create a CHANGELOG.md.
-
-```bash
-npm run changelog
-```
+Run `quarto publish gh-pages` to publish the manuscript to GitHub Pages.
 
 ## Support
 
 This project is maintained by [@maehr](https://github.com/maehr). Please understand that we can't provide individual support via email. We also believe that help is much more valuable when it's shared publicly, so more people can benefit from it.
 
-| Type                                   | Platforms                                                                              |
-| -------------------------------------- | -------------------------------------------------------------------------------------- |
-| 🚨 **Bug Reports**                     | [GitHub Issue Tracker](https://github.com/maehr/open-research-data-template/issues)    |
-| 📊 **Report bad data**                 | [GitHub Issue Tracker](https://github.com/maehr/open-research-data-template/issues)    |
-| 📚 **Docs Issue**                      | [GitHub Issue Tracker](https://github.com/maehr/open-research-data-template/issues)    |
-| 🎁 **Feature Requests**                | [GitHub Issue Tracker](https://github.com/maehr/open-research-data-template/issues)    |
-| 🛡 **Report a security vulnerability** | See [SECURITY.md](SECURITY.md)                                                         |
-| 💬 **General Questions**               | [GitHub Discussions](https://github.com/maehr/open-research-data-template/discussions) |
+| Type                                   | Platforms                                                                                  |
+| -------------------------------------- | ------------------------------------------------------------------------------------------ |
+| 🚨 **Bug Reports**                     | [GitHub Issue Tracker](https://github.com/maehr/diskriminierungsfreie-metadaten/issues)    |
+| 📊 **Report bad data**                 | [GitHub Issue Tracker](https://github.com/maehr/diskriminierungsfreie-metadaten/issues)    |
+| 📚 **Docs Issue**                      | [GitHub Issue Tracker](https://github.com/maehr/diskriminierungsfreie-metadaten/issues)    |
+| 🎁 **Feature Requests**                | [GitHub Issue Tracker](https://github.com/maehr/diskriminierungsfreie-metadaten/issues)    |
+| 🛡 **Report a security vulnerability** | See [SECURITY.md](SECURITY.md)                                                             |
+| 💬 **General Questions**               | [GitHub Discussions](https://github.com/maehr/diskriminierungsfreie-metadaten/discussions) |
 
 ## Roadmap
 
-There are currently no changes planned.
+This handbook is a living document and will be updated regularly. We plan on releasing a citable version of the handbook later this year.
 
 ## Contributing
 
-Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+All contributions to this repository are welcome! If you find errors or problems with the data, or if you want to add new data or features, please open an issue or pull request. Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
-## Authors and credits
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. The available versions are listed in the [tags on this repository](https://github.com/maehr/diskriminierungsfreie-metadaten/tags).
+
+## Authors and acknowledgment
 
 - **Moritz Mähr** - _Initial work_ - [maehr](https://github.com/maehr)
+- **Noëlle Schnegg** - _Initial work_ - [noelleschnegg](https://github.com/noelleschnegg)
 
-See also the list of [contributors](https://github.com/maehr/open-research-data-template/graphs/contributors) who contributed to this project.
+See also the list of [contributors](https://github.com/maehr/diskriminierungsfreie-metadaten/graphs/contributors) who contributed to this project.
 
 ## License
 
