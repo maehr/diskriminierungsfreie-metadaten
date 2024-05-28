@@ -34,7 +34,7 @@ This repository is organized as follows:
 
 Install [Quarto](https://quarto.org), run `quarto preview manuscript` to preview the manuscript, or run `quarto render manuscript` to render the manuscript.
 
-Run `quarto publish gh-pages` to publish the manuscript to GitHub Pages.
+Run `cd manuscript && quarto publish gh-pages` to publish the manuscript to GitHub Pages.
 
 ## Support
 
