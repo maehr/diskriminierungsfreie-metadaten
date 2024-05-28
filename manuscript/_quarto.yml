@@ -13,6 +13,8 @@ manuscript:
 
 format:
   html:
+    link-external-icon: true
+    link-external-newwindow: true
     comments:
       giscus:
         repo: maehr/handbuch-diskriminierungsfreie-metadaten
