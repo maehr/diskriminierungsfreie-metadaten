@@ -64,7 +64,7 @@ Für die am Forschungsprojekt beteiligten Forschenden sind neben schriftlichen Q
 
 Stadt.Geschichte.Basel verpflichtet sich mit dem [Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/) dazu, "allen Teilnehmenden an dem Projekt und unserer Gemeinschaft eine belästigungsfreie Beteiligung, unabhängig von Alter, Körpergröße, Behinderung, ethnischer Zuordnung, Geschlechtermerkmalen, -identität und -ausdruck, Grad der Erfahrung, Bildung, sozialem Status, Nationalität, persönlicher Erscheinung, Rasse, Kaste, Hautfarbe, Religion oder sexueller Identität und Orientierung zu ermöglichen." Historische Quellen und Forschungsdaten, die diskriminierende Inhalte enthalten, werden daher entsprechend gekennzeichnet. Dies wirft jedoch verschiedene Probleme auf. Diskriminierung kann viele Formen annehmen, darunter Rassismus, Antisemitismus, Sexismus, Ableismus, Transphobie und viele andere, und sie kann mehrere Diskriminierungsformen gleichzeitig enthalten. Sie kann explizit oder implizit sein und ist oft tief in den Kontext und die Interpretation dieser Ressourcen eingebettet. Implizite oder strukturelle Formen von Diskriminierung finden sich in vielen bestehenden Thesauri und Schlagwortverzeichnissen wie der Gemeinsamen Normdatei (GND), der am weitesten verbreiteten Normdatei im deutschsprachigen Raum. Viele Begriffe in Thesauri enthalten z.B. nur die männliche Form und oft werden nur zwei Geschlechter oder eine Kategorie für "unbekannt" oder "anders" verwendet. Für die historischen Quellen und Forschungsdaten von Stadt.Geschichte.Basel wird deshalb der [Schlagwortindex GenderOpen](https://opengenderplatform.de/schlagwortindex) verwendet, der eine geschlechtersensible und inklusive Sprache ermöglicht.
 
-Das Handbuch ist wie folgt aufgebaut: In einem ersten Kapitel werden die Grundlagen von Metadaten für historische Quellen und Forschungsdaten geklärt. Dabei ist zu betonen, dass es sich bei den Metadaten von Stadt.Geschichte.Basel um Metadaten zu kulturhistorischen und archäologischen Quellen handelt. Im ersten Kapitel werden Fragen wie \"Was sind Forschungsdaten?\" und \"Was sind Metadaten?\" anhand exemplarischer Ressourcen von Stadt.Geschichte.Basel beantwortet. Im letzten Teil des ersten Kapitels wird das Metadatenschema Dublin Core vorgestellt und seine Vorteile erläutert. Im zweiten Kapitel soll eine Schritt-für-Schritt-Anleitung helfen, eigene Metadaten für historische Quellen und Forschungsdaten zu erstellen. Auch hier wird bei den einzelnen Schritten auf Erfahrungen aus dem Projekt Stadt.Geschichte.Basel zurückgegriffen. Das dritte Kapitel widmet sich konkreten Fallbeispielen, um die Ergebnisse und Erkenntnisse aus den vorangegangenen Kapiteln zu veranschaulichen. Die Beispiele umfassen Bilder, Objekte sowie Karten und Statistiken.
+Das Handbuch ist wie folgt aufgebaut: Im zweiten Kapitel werden die Grundlagen von Metadaten für historische Quellen und Forschungsdaten geklärt. Dabei ist zu betonen, dass es sich bei den Metadaten von Stadt.Geschichte.Basel um Metadaten zu kulturhistorischen und archäologischen Quellen handelt. Es werden Fragen wie \"Was sind Forschungsdaten?\" und \"Was sind Metadaten?\" anhand exemplarischer Ressourcen von Stadt.Geschichte.Basel beantwortet. Im letzten Teil des zweiten Kapitels wird das Metadatenschema Dublin Core vorgestellt und seine Vorteile erläutert. Im dritten Kapitel werden die Metadaten von Stadt.Geschichte.Basel vorgestellt und anhand von Diagrammen die Unterschiede zwischen Metadatenobjekten und den damit verknüpften Ressourcen aufgezeigt. Im vierten Kapitel soll eine Schritt-für-Schritt-Anleitung helfen, eigene Metadaten für historische Quellen und Forschungsdaten zu erstellen. Auch hier wird bei den einzelnen Schritten auf Erfahrungen aus dem Projekt Stadt.Geschichte.Basel zurückgegriffen. Das letzte Kapitel widmet sich konkreten Fallbeispielen, um die Ergebnisse und Erkenntnisse aus den vorangegangenen Kapiteln zu veranschaulichen. Die Beispiele umfassen Bilder, Objekte sowie Karten und Statistiken.
 
 # Grundlagen zu Metadaten für historische Quellen und Forschungsdaten
 
@@ -102,7 +102,7 @@ Die Einhaltung der Prinzipien von Open and FAIR Data wird von vielen Forschungsf
 
 Eine gängige Definition von Metadaten lautet \"Daten über Daten\". Konkreter sind Metadaten Daten, die Informationen über andere Daten enthalten und einer festen Struktur folgen, also strukturiert sind. Sie werden oft mit einem Bibliothekskatalog verglichen, in dem die einzelnen Einträge die Bestände beschreiben. Metadaten dienen dazu, die Eigenschaften, Struktur, Bedeutung und Inhalt der zugrunde liegenden Daten zu erfassen. Ausserdem bieten sie einen Kontext und ermöglichen die Identifikation, Organisation, Verwaltung und Nutzung von Daten. Metadaten sollten so strukturiert sein, dass sie die wichtigsten Attribute des beschriebenen Objekttyps modellieren.
 
-Im Allgemeinen haben alle Informationsobjekte, unabhängig von ihrer physischen oder virtuellen Form, drei Merkmal: Inhalt, Kontext und Struktur. Sie alle sollten und können durch Metadaten wiedergegeben werden:
+Im Allgemeinen haben alle Informationsobjekte, unabhängig von ihrer physischen oder virtuellen Form, drei Merkmale: Inhalt, Kontext und Struktur. Sie alle sollten und können durch Metadaten wiedergegeben werden:
 
 - *Inhalt* bezieht sich darauf, was das Objekt enthält oder worum es geht, und ist *inhärent* für ein Informationsobjekt.
 
@@ -1015,19 +1015,19 @@ Im Folgenden werden anhand \"negativer\" Beispiele Stereotypen sowie Diskriminie
 
 | Feldname | Wert |
 |---|---|
-| objectid |  |
+| objectid |  | 
 | Filename |  |
 | Title | Bestattung von Unlingen |
 | Subject | Geschlechterbild, Geschlechterstereotyp, Geschlechterverhältnis,   Tod |
 | Description | In diesem Lebensbild zur Bestattung im   Gräberfeld von Unlingen haben Männer eine natürliche Vormachtstellung. Frauen   sind selten bis nie in einer führenden sozialen Rolle dargestellt. Wichtige   soziale Ereignisse wie Feste und Bestattungen werden von Männern geleitet und   massgeblich begleitet. Frauen dagegen werden als passive Beobachterinnen   dargestellt, die in der gezeigten Handlung keine aktive Rolle spielen. |
-| Creator | Landesamt für Denkmalpflege im   Regierungspräsidium Stuttgart Q28738904, Samson Götze |
-| Publisher | Landesamt für Denkmalpflege im   Regierungspräsidium Stuttgart Q28738904, Samson Götze |
+| Creator | Landesamt für Denkmalpflege im   Regierungspräsidium Stuttgart [Q28738904](https://www.wikidata.org/wiki/Q28738904), Samson Götze |
+| Publisher | Landesamt für Denkmalpflege im   Regierungspräsidium Stuttgart [Q28738904](https://www.wikidata.org/wiki/Q28738904), Samson Götze |
 | Date |  |
 | Era | Frühgeschichte |
 | Type | Image |
 | Format | image/jpeg |
 | Extent | 703 x 1000 |
-| Source | Landesamt für Denkmalpflege im   Regierungspräsidium Stuttgart/Samson Götze |
+| Source | Landesamt für Denkmalpflege im Regierungspräsidium Stuttgart [Q28738904](https://www.wikidata.org/wiki/Q28738904)/Samson Götze |
 | Language |  |
 | Relation | <https://www.archaeologie-an-der-oberen-donau.de/forschungsprojekte/dfg-langfristprojekt/graeber/unlingen> |
 | Rights | Samson Götze |
@@ -1044,8 +1044,8 @@ Im Folgenden werden anhand \"negativer\" Beispiele Stereotypen sowie Diskriminie
 | Title | Höhlenleben zur älteren Steinzeit |
 | Subject | Geschlechterbild, Geschlechterstereotyp,   Geschlechterverhältnis, Stigmatisierung, Kultur, Kunst |
 | Description | Auf diesem Lebensbild wird   eine strikte Arbeitsteilung zwischen Mann und Frau dargestellt. Dabei ist der   Mann für die Jagd zuständig und die Frau für das Sammeln und die   Kinderbetreuung. Auch die materielle Kultur (u. a. Werkzeuge und   Kunstgegenstände) wird primär von Männern hergestellt. Obwohl die Zeichnung   von Carl Arriens sehr alt ist (sie entstand um 1900), finden sich ähnliche Szenarien   bis weit in die 1990er Jahre. |
-| Creator | Carl Ariens Q15451450 |
-| Publisher |  |
+| Creator | Carl Ariens [Q15451450] (https://www.wikidata.org/wiki/Q15451450) |
+| Publisher | Universitätsbibliothek Heidelberg [Q880794](https://www.wikidata.org/wiki/Q880794)
 | Date | 1927 |
 | Era | Frühgeschichte |
 | Type | Image |
@@ -1053,7 +1053,7 @@ Im Folgenden werden anhand \"negativer\" Beispiele Stereotypen sowie Diskriminie
 | Extent | 842 x 586 |
 | Source | Inv. Nr. S 1985/2364 |
 | Language |  |
-| Relation | <https://archiv.ub.uni-heidelberg.de/artdok/8148/> |
+| Relation | <10.11588/artdok.00008148> |
 | Rights | CC BY-SA 4.0 DEED |
 | License | <https://creativecommons.org/licenses/by-sa/4.0/deed.de> |
 
@@ -1068,14 +1068,14 @@ Im Folgenden werden anhand \"negativer\" Beispiele Stereotypen sowie Diskriminie
 | Title | Bestattung von Bad Dürrenberg |
 | Subject | Sexismus, Ableismus , Tod |
 | Description | Bei   der Bestattung von Bad Dürrenberg handelt es sich um ein etwa 9000 Jahre altes Grab. Darin   wurde eine Frau zusammen mit einem Säugling bestattet. Ihr wurde ein   überreiches Grabinventar aus einer Vielfalt an Tierknochen beigegeben, die   vermutlich zu einem Collier, einem Umhang oder einem Kopfschmuck gehörten.   Die Frau war körperlich stark behindert. So hatte sie unter anderem eine   ausgeprägte Arthrose. Sie starb zwischen 30 und 40 jährig   an einer Sepsis aufgrund eines Kieferabszesses, der ihre untere Gesichtshälfte   entstellte. Das Landesmuseum für Vorgeschichte in Halle berücksichtigt diese   Faktoren beim Lebensbild allesamt nicht. Bei diesem Beispiel handelt es sich   um eine Verzerrung einer historischen Realität, die durch die bildliche   Darstellung in einer Erotisierung mündet. Allgemein fehlen Darstellungen   von Menschen aus archäologischen Kontexten mit körperlicher oder geistiger   Behinderung in Lebensbildern, obwohl diese über anthropologische oder   genetische Analysen eindeutig belegt sind. |
-| Creator | Landesamt für Denkmalpflege und   Archäologie Sachsen-Anhalt Q1802049, Karol Schauer |
-| Publisher | Landesamt für Denkmalpflege und   Archäologie Sachsen-Anhalt Q1802049, Karol Schauer |
+| Creator | Landesamt für Denkmalpflege und   Archäologie Sachsen-Anhalt [Q1802049](https://www.wikidata.org/wiki/Q1802049), Karol Schauer |
+| Publisher | Landesamt für Denkmalpflege und   Archäologie Sachsen-Anhalt [Q1802049](https://www.wikidata.org/wiki/Q1802049), Karol Schauer |
 | Date |  |
 | Era | Frühgeschichte |
 | Type | Image |
 | Format | image/jpeg |
 | Extent | 551 x 670 |
-| Source | Landesamt für Denkmalpflege und   Archäologie Sachsen-Anhalt Q1802049, Karol Schauer |
+| Source | Landesamt für Denkmalpflege und   Archäologie Sachsen-Anhalt [Q1802049](https://www.wikidata.org/wiki/Q1802049), Karol Schauer |
 | Language |  |
 | Relation | <https://www.landesmuseum-vorgeschichte.de/dauerausstellung/menschenwechsel/die-schamanin-von-bad-duerrenberg.html> |
 | Rights | Karol Schauer |
