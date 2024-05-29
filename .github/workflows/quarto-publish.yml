@@ -69,25 +69,13 @@ jobs:
         uses: quarto-dev/quarto-actions/render@v2
         with:
           path: manuscript
-          to: docx
+          to: all
 
       - name: Install LibreOffice
         run: sudo apt-get update && sudo apt-get install -y libreoffice
   
       - name: Convert DOCX to PDF
         run: libreoffice --headless --convert-to pdf 2024-06-01-handbuch-diskriminierungsfreie-metadaten.docx --outdir .
-
-      - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          path: manuscript
-          to: html
-  
-      # - name: Upload PDF
-      #   uses: actions/upload-artifact@v3
-      #   with:
-      #     name: converted-pdf
-      #     path: path/to/output/yourfile.pdf
 
       # NOTE: If Publishing to GitHub Pages, set the permissions correctly (see top of this yaml)
       - name: Publish to GitHub Pages
