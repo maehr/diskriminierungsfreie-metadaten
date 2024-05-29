@@ -65,12 +65,27 @@ jobs:
       #     target: connect
       #     CONNECT_SERVER: enter-the-server-url-here
       #     CONNECT_API_KEY: ${{ secrets.CONNECT_API_KEY }}
+      - name: Render Quarto Project
+        uses: quarto-dev/quarto-actions/render@v2
+
+      - name: Install LibreOffice
+        run: sudo apt-get update && sudo apt-get install -y libreoffice
+  
+      - name: Convert DOCX to PDF
+        run: libreoffice --headless --convert-to pdf manuscript/handbuch-diskriminierungsfreie-metadaten.docx --outdir manuscript/
+  
+      # - name: Upload PDF
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: converted-pdf
+      #     path: path/to/output/yourfile.pdf
 
       # NOTE: If Publishing to GitHub Pages, set the permissions correctly (see top of this yaml)
-      - name: Publish to GitHub Pages (and render)
+      - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
+          render: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
 

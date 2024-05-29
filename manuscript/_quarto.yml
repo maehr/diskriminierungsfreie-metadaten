@@ -20,9 +20,10 @@ format:
         repo: maehr/handbuch-diskriminierungsfreie-metadaten
   docx:
     reference-doc: custom-reference-doc.docx
+    output-file: handbuch-diskriminierungsfreie-metadaten.docx
   pdf:
-    classoption: [landscape]
-  markdown: default
+    output-file: handbuch-diskriminierungsfreie-metadaten.pdf
+  # markdown: default
 
 execute:
   freeze: true
