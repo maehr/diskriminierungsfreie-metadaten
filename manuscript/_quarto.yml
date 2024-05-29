@@ -13,6 +13,8 @@ manuscript:
 
 format:
   html:
+    doi: 10.5281/zenodo.11124720
+    date-modified: last-modified
     link-external-icon: true
     link-external-newwindow: true
     comments:
@@ -20,9 +22,9 @@ format:
         repo: maehr/handbuch-diskriminierungsfreie-metadaten
   docx:
     reference-doc: custom-reference-doc.docx
-    output-file: handbuch-diskriminierungsfreie-metadaten.docx
+    output-file: 2024-06-01-handbuch-diskriminierungsfreie-metadaten.docx
   pdf:
-    output-file: handbuch-diskriminierungsfreie-metadaten.pdf
+    output-file: 2024-06-01-handbuch-diskriminierungsfreie-metadaten.pdf
   # markdown: default
 
 execute:
