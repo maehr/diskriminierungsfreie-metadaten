@@ -25,6 +25,7 @@ format:
     output-file: 2024-06-01-handbuch-diskriminierungsfreie-metadaten.docx
   pdf:
     output-file: 2024-06-01-handbuch-diskriminierungsfreie-metadaten.pdf
+    pdf-engine: latexmk
   # markdown: default
 
 execute:
