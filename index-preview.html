@@ -288,7 +288,7 @@
   <li><a href="#datenstrukturstandards" id="toc-datenstrukturstandards" class="nav-link" data-scroll-target="#datenstrukturstandards"><span class="header-section-number">2.3.4</span> Datenstrukturstandards</a></li>
   </ul></li>
   </ul></li>
-  <li><a href="#metadaten-der-stadt.geschichte.basel" id="toc-metadaten-der-stadt.geschichte.basel" class="nav-link" data-scroll-target="#metadaten-der-stadt.geschichte.basel"><span class="header-section-number">3</span> Metadaten der Stadt.Geschichte.Basel</a>
+  <li><a href="#sec-metadaten" id="toc-sec-metadaten" class="nav-link" data-scroll-target="#sec-metadaten"><span class="header-section-number">3</span> Metadaten der Stadt.Geschichte.Basel</a>
   <ul class="collapse">
   <li><a href="#zwei-typen-von-metadaten-objekte-und-zugeordnete-ressourcen" id="toc-zwei-typen-von-metadaten-objekte-und-zugeordnete-ressourcen" class="nav-link" data-scroll-target="#zwei-typen-von-metadaten-objekte-und-zugeordnete-ressourcen"><span class="header-section-number">3.1</span> Zwei Typen von Metadaten: Objekte und zugeordnete Ressourcen</a>
   <ul class="collapse">
@@ -322,7 +322,7 @@
   <li><a href="#beispiele" id="toc-beispiele" class="nav-link" data-scroll-target="#beispiele"><span class="header-section-number">5</span> Beispiele</a>
   <ul class="collapse">
   <li><a href="#das-bad-zu-leuk" id="toc-das-bad-zu-leuk" class="nav-link" data-scroll-target="#das-bad-zu-leuk"><span class="header-section-number">5.1</span> Das Bad zu Leuk</a></li>
-  <li><a href="#plakat-zur-völkerschau-in-basel-1926" id="toc-plakat-zur-völkerschau-in-basel-1926" class="nav-link" data-scroll-target="#plakat-zur-völkerschau-in-basel-1926"><span class="header-section-number">5.2</span> Plakat zur Völkerschau in Basel, 1926</a></li>
+  <li><a href="#sec-plakat-zur-voelkerschau" id="toc-sec-plakat-zur-voelkerschau" class="nav-link" data-scroll-target="#sec-plakat-zur-voelkerschau"><span class="header-section-number">5.2</span> Plakat zur Völkerschau in Basel, 1926</a></li>
   <li><a href="#schnitzerei-am-chorgestühl-des-basler-münsters" id="toc-schnitzerei-am-chorgestühl-des-basler-münsters" class="nav-link" data-scroll-target="#schnitzerei-am-chorgestühl-des-basler-münsters"><span class="header-section-number">5.3</span> Schnitzerei am Chorgestühl des Basler Münsters</a></li>
   <li><a href="#hie-basel-hie-schweizer-boden---liste-3" id="toc-hie-basel-hie-schweizer-boden---liste-3" class="nav-link" data-scroll-target="#hie-basel-hie-schweizer-boden---liste-3"><span class="header-section-number">5.4</span> Hie Basel Hie Schweizer Boden - Liste 3</a></li>
   <li><a href="#zeitungsinserat-in-der-national-zeitung-1955" id="toc-zeitungsinserat-in-der-national-zeitung-1955" class="nav-link" data-scroll-target="#zeitungsinserat-in-der-national-zeitung-1955"><span class="header-section-number">5.5</span> Zeitungsinserat in der National-Zeitung, 1955</a></li>
@@ -401,7 +401,7 @@ Warnung
 <p>Objekte haben Eigenschaften, die sich aus den Umständen ihrer Erstellung, Verwaltung und Nutzung ergeben und als Metadaten beschrieben werden können. Fachleute, die sich mit dem kulturellen Erbe in Archiven, Bibliotheken, Museen und Sammlungen befassen, verwenden den Begriff&nbsp;<em>Metadaten</em>&nbsp;jedoch häufig für die Mehrwertinformationen. Diese erstellen sie, um Informationsobjekte und die physischen Objekte und Sammlungen, die mit diesen Objekten in Verbindung stehen, zu ordnen, zu beschreiben, zu finden und anderweitig den Zugriff darauf zu verbessern. Solche Metadaten werden häufig durch von einer Fachcommunity entwickelte und geförderte Standards und bewährte Verfahren geregelt. Sie gewährleisten Qualität, Konsistenz und Interoperabilität.<span class="citation" data-cites="staunton2021">(Solche Communities werden auch mit Gatekeeping und anderen Exklusionsmechanismen (implizite Bildungs- oder Opportunitätskosten, die nur von professionell arbeitenden Geisteswissenschaftler*innen getragen werden können) in Verbindung gebracht. <a href="#ref-staunton2021" role="doc-biblioref">Staunton u.&nbsp;a. 2021</a>)</span> Es wird unterschieden zwischen dem Metadatenschema, das die zu erfassenden Datenfelder für jedes Informationsobjekt festlegt, dem Inhaltsstandard, der angibt, woher die Informationen für die Datenfelder stammen, dem Datenwertstandard, der die genauen Werte der Datenfelder beschreibt, und dem Datenstrukturstandard, der das technische Format der Datenfelder vorschreibt. Das Projekt Stadt.Geschichte.Basel verwendet <a href="https://www.dublincore.org">Dublin Core</a> als Schema und Inhaltsstandard, weshalb im Folgenden besonders darauf eingegangen wird.<span class="citation" data-cites="sgg2023">(Für weitere wichtige Standards und ihre potenziell diskriminierenden oder machtvollen Wirkungen siehe <a href="#ref-sgg2023" role="doc-biblioref">Gabay u.&nbsp;a. 2023</a>)</span></p>
 <section id="schema-dublin-core-metadata-element-set" class="level3" data-number="2.3.1">
 <h3 data-number="2.3.1" class="anchored" data-anchor-id="schema-dublin-core-metadata-element-set"><span class="header-section-number">2.3.1</span> Schema:&nbsp;<a href="https://www.dublincore.org/specifications/dublin-core/dces/">Dublin Core Metadata Element Set</a></h3>
-<p>Eines der bekanntesten und am weitesten verbreiteten Metadatenschemas ist das Dublin Core Schema. Es ist ein einfacher und flexibler Standard, der zur Beschreibung einer Vielzahl von Informationsressourcen verwendet werden kann. Dublin Core besteht aus 15 Basisfeldern (Elementen), darunter Titel, Ersteller*in, Thema, Beschreibung, Herausgeber*in, Mitwirkende, Datum, Typ, Format, Identifikator, Quelle, Sprache, Relation, räumliche oder zeitliche Angaben und Rechte. Dieser Standard kann als Grundlage für die Erstellung von Metadaten für historische Forschungsdaten dienen. Es ist wichtig zu beachten, dass die Dublin Core Elemente sowohl einzeln als auch in Kombination mit anderen Datenfeldern verwendet werden können, um komplexere Beschreibungen zu ermöglichen. Bei Stadt.Geschichte.Basel sind dies die Aufnahme von spezifischen Feldern wie zum Beispiel “temporal” zur zeitlichen Verortung und “extent” zur Beschreibung der Bildauflösung (Siehe weiter unten, Metadaten der Stadt.Geschichte.Basel).</p>
+<p>Eines der bekanntesten und am weitesten verbreiteten Metadatenschemas ist das Dublin Core Schema. Es ist ein einfacher und flexibler Standard, der zur Beschreibung einer Vielzahl von Informationsressourcen verwendet werden kann. Dublin Core besteht aus 15 Basisfeldern (Elementen), darunter Titel, Ersteller*in, Thema, Beschreibung, Herausgeber*in, Mitwirkende, Datum, Typ, Format, Identifikator, Quelle, Sprache, Relation, räumliche oder zeitliche Angaben und Rechte. Dieser Standard kann als Grundlage für die Erstellung von Metadaten für historische Forschungsdaten dienen. Es ist wichtig zu beachten, dass die Dublin Core Elemente sowohl einzeln als auch in Kombination mit anderen Datenfeldern verwendet werden können, um komplexere Beschreibungen zu ermöglichen. Bei Stadt.Geschichte.Basel sind dies die Aufnahme von spezifischen Feldern wie zum Beispiel “temporal” zur zeitlichen Verortung und “extent” zur Beschreibung der Bildauflösung (Siehe <a href="#sec-metadaten" class="quarto-xref">Kapitel&nbsp;3</a>).</p>
 <p>Bei historischen Quellen ist das Feld <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/provenance/">dcterms:provenance</a> wünschenswert, um die früheren Besitzverhältnisse transparent und nachvollziehbar zu machen. Die genauen Angaben der Provenienz können allerdings schwierig zu identifizieren sein. Oftmals sind sie auch nicht im Originalkatalog der Institutionen zu finden. Stadt.Geschichte.Basel verzichtete aufgrund fehlender Angaben und beschränkter Recherche-Kapazität auf dieses Feld.</p>
 </section>
 <section id="inhaltsstandard-dublin-core" class="level3" data-number="2.3.2">
@@ -419,7 +419,7 @@ Warnung
 </section>
 </section>
 </section>
-<section id="metadaten-der-stadt.geschichte.basel" class="level1" data-number="3">
+<section id="sec-metadaten" class="level1" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> Metadaten der Stadt.Geschichte.Basel</h1>
 <section id="zwei-typen-von-metadaten-objekte-und-zugeordnete-ressourcen" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="zwei-typen-von-metadaten-objekte-und-zugeordnete-ressourcen"><span class="header-section-number">3.1</span> Zwei Typen von Metadaten: Objekte und zugeordnete Ressourcen</h2>
@@ -536,6 +536,12 @@ Abbildung&nbsp;4: Zwei Metadatenobjekte mit derselben zugeordneten Ressource
 </section>
 <section id="metadatenobjekte-eltern" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="metadatenobjekte-eltern"><span class="header-section-number">3.2</span> Metadatenobjekte (Eltern)</h2>
+<div id="tbl-metadata-objects" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadata-objects-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;1: Metadaten der Elternobjekte (Metadatenobjekte).
+</figcaption>
+<div aria-describedby="tbl-metadata-objects-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table">
 <thead>
 <tr class="header">
@@ -594,13 +600,22 @@ Abbildung&nbsp;4: Zwei Metadatenobjekte mit derselben zugeordneten Ressource
 <td>dcterms:isPartOf</td>
 <td>Ja</td>
 <td>Eine verwandte Ressource, in der die beschriebene Ressource physisch oder logisch enthalten ist.</td>
-<td>DOI oder bibliografische Angaben (nach Infoclio Zitierstandard), mehrere Verweise können angegeben werden</td>
+<td>DOI oder bibliografische Angaben (nach <a href="https://www.infoclio.ch/de/zitierstil">Infoclio Zitierstandard</a>), mehrere Verweise können angegeben werden</td>
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 </section>
 <section id="zugeordnete-ressourcen-kinder" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="zugeordnete-ressourcen-kinder"><span class="header-section-number">3.3</span> Zugeordnete Ressourcen (Kinder)</h2>
+<div id="tbl-metadata-resources" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadata-resources-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;2: Metadaten der zugeordneten Ressourcen (Kinder).
+</figcaption>
+<div aria-describedby="tbl-metadata-resources-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table">
 <thead>
 <tr class="header">
@@ -624,7 +639,7 @@ Abbildung&nbsp;4: Zwei Metadatenobjekte mit derselben zugeordneten Ressource
 <td>dcterms:isPartOf</td>
 <td>Ja</td>
 <td>Eine verwandte Ressource, in der die beschriebene Ressource physisch oder logisch enthalten ist.</td>
-<td>ObjectID (des Elternobjekts), DOI oder bibliografische Angaben (nach Infoclio Zitierstandard), mehrere Verweise können angegeben werden</td>
+<td>ObjectID (des Elternobjekts), DOI oder bibliografische Angaben (nach <a href="https://www.infoclio.ch/de/zitierstil">Infoclio Zitierstandard</a>), mehrere Verweise können angegeben werden</td>
 </tr>
 <tr class="odd">
 <td>Filename</td>
@@ -900,6 +915,9 @@ Jahr angegeben, Tag und Monat nicht angegeben in einem Jahr-Monat-Tag-Ausdruck (
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 </section>
 <section id="relation-von-objekt-und-media" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="relation-von-objekt-und-media"><span class="header-section-number">3.4</span> Relation von Objekt und Media</h2>
@@ -1012,7 +1030,7 @@ Erfahrungen der Stadt.Geschichte.Basel
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Stadt.Geschichte.Basel war bei der Identifikation der Informationen für die Ressourcen mit folgenden Schwierigkeiten konfrontiert: Insbesondere bei Archiven fehlten oftmals Beschreibungen zu einzelnen Ressourcen. Konkret fehlte etwa beim Plakat zu den sogenannten "Völkerschauen" (siehe Fallbeispiel 2) die Information, wer das Plakat herstellte. In solchen Fällen waren selbständige Recherchen oder eine Rücksprache mit den jeweiligen Gedächtnisinstitutionen erforderlich.</p>
+<p>Stadt.Geschichte.Basel war bei der Identifikation der Informationen für die Ressourcen mit folgenden Schwierigkeiten konfrontiert: Insbesondere bei Archiven fehlten oftmals Beschreibungen zu einzelnen Ressourcen. Konkret fehlte etwa beim Plakat zu den sogenannten "Völkerschauen" (siehe <a href="#sec-plakat-zur-voelkerschau" class="quarto-xref">Kapitel&nbsp;5.2</a>) die Information, wer das Plakat herstellte. In solchen Fällen waren selbständige Recherchen oder eine Rücksprache mit den jeweiligen Gedächtnisinstitutionen erforderlich.</p>
 </div>
 </div>
 </section>
@@ -1037,7 +1055,7 @@ Erfahrungen der Stadt.Geschichte.Basel
 <section id="beispiel-beschreibung-der-reproduktion-des-plakates-völkerschau-in-basel-1926" class="level3" data-number="4.1.5">
 <h3 data-number="4.1.5" class="anchored" data-anchor-id="beispiel-beschreibung-der-reproduktion-des-plakates-völkerschau-in-basel-1926"><span class="header-section-number">4.1.5</span> Beispiel: Beschreibung der Reproduktion des Plakates "Völkerschau in Basel 1926"</h3>
 <p>Im Zeitraum zwischen 1879 und 1935 fanden im Basler Zoo 21 sogenannte “<a href="https://www.baslerstadtbuch.ch/stadtbuch/1992/1992_2247.html">Völkerschauen” (Achtung Link führt zu diskriminierenden Bildern)</a> — heute auch Menschenzoos genannt — statt, in denen Menschen aus verschiedenen Kulturen ausgestellt wurden. Schweizweit fanden solche Schauen bis ins Jahr 1964 statt. Bei diesen Veranstaltungen wurden Menschen entweder in festen Einrichtungen, mobilen Zoos oder sogar in Zirkusvorführungen zur Schau gestellt. Dahinter stand ein rassistisches, imperialistisches und kolonialistisches Menschenbild. Die in den Werbeplakaten verwendete Bildsprache bediente sich an kolonialen Fantasien der europäischen Bevölkerung und stellte die Menschen als vermeintlich”primitiv”, “wild”, “kriegerisch” und “exotisch” dar, was zu einer Aufrechterhaltung von negativen Stereotypen führte. Die Schauen waren in der Ideologie der “Rassentheorie” verwurzelt, die eine Überlegenheit der europäischen Bevölkerung gegenüber anderen Kulturen auf angeblich wissenschaftlicher Grundlage behauptete. Die Ideologie der <a href="https://hls-dhs-dss.ch/de/articles/060537/2024-04-08/">Rassentheorie</a> wurde genutzt, um die Ausstellung dieser Menschen als akzeptabel darzustellen, indem sie als blosse Objekte zur Unterhaltung des Publikums behandelt wurden. Die tief verwurzelten Stereotypen und Vorurteile wurden über Generationen hinweg in <a href="https://mirsindvoda.ch/voelkerschauen-in-der-schweiz/">Kultur und Sprache</a> weitergegeben, sei es durch Bücher, Filme oder Erzählungen. Einige der Bilder, die einst dazu gedient haben sollen, die Unterdrückung oder vermeintliche "Rettung" und den "Schutz vor sich selbst" bestimmter "primitiver und unzivilisierter Völker" zu rechtfertigen, bestehen teilweise noch bis heute und manifestieren sich in unterschiedlichen Formen von Diskriminierung.</p>
-<p>In die Beschreibung&nbsp;der Reproduktion des Plakates "Völkerschau in Basel 1926" (siehe Beispiel 2)&nbsp;sind folgende Überlegungen eingeflossen:</p>
+<p>In die Beschreibung&nbsp;der Reproduktion des Plakates "Völkerschau in Basel 1926" (siehe <a href="#sec-plakat-zur-voelkerschau" class="quarto-xref">Kapitel&nbsp;5.2</a>)&nbsp;sind folgende Überlegungen eingeflossen:</p>
 <section id="entstehungskontext-der-ressource" class="level4" data-number="4.1.5.1">
 <h4 data-number="4.1.5.1" class="anchored" data-anchor-id="entstehungskontext-der-ressource"><span class="header-section-number">4.1.5.1</span> Entstehungskontext der Ressource</h4>
 <p>Zunächst ist es wichtig, die Ressource in einen historischen Kontext zu stellen. Rassistische Ideologien haben sich im Laufe der Geschichte verändert, und auch das Verständnis von Rassismus hat sich gewandelt. Daher ist es wichtig, die Ressource im Kontext ihrer Entstehungszeit zu analysieren, um zu verstehen, wie rassistische Überzeugungen zu dieser Zeit verbreitet waren.</p>
@@ -1070,7 +1088,7 @@ Erfahrungen der Stadt.Geschichte.Basel
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Das Projekt hat sich für die Methode der “Titelkontextualisierung” entschieden - unter anderem wegen der besseren Durchsuchbarkeit auf der Forschungsdatenplattform. Weil der Schlagwortindex-GenderOpen gezielt sensible Schlagworte enthält, lassen sich Diskriminierungen in historischen Quellen einfacher finden. Die diskriminierenden Inhalte werden auf der Webseite jeweils mit einer Triggerwarnung angezeigt.</p>
+<p>Das Projekt hat sich für die Methode der “Titelkontextualisierung” entschieden - unter anderem wegen der besseren Durchsuchbarkeit auf der <a href="https://forschung.stadtgeschichtebasel.ch/">Forschungsdatenplattform</a>. Weil der Schlagwortindex-GenderOpen gezielt sensible Schlagworte enthält, lassen sich Diskriminierungen in historischen Quellen einfacher finden. Die diskriminierenden Inhalte werden auf der Webseite jeweils mit einer Triggerwarnung angezeigt.</p>
 </div>
 </div>
 </section>
@@ -1089,7 +1107,7 @@ Erfahrungen der Stadt.Geschichte.Basel
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Stadt.Geschichte.Basel betreibt eine Forschungsdatenplattform.&nbsp;Diese wird als zentrales Repositorium dienen, in dem alle Forschungsressourcen gesammelt und für die Öffentlichkeit nach den FAIR-Prinzipien zugänglich gemacht werden. Nutzer*innen können einfach auf die Plattform zugreifen, die umfangreiche Datenbank durchsuchen und relevante Ressourcen für ihre spezifischen Bedürfnisse finden.&nbsp;Daher ist es wichtig, klare und präzise Informationen darüber zu liefern, wem diese Ressourcen gehören und wer sie nutzen kann. Die Details zu Eigentum und Nutzungsrechten werden deutlich in den Metadaten jeder Ressource angegeben.</p>
+<p>Stadt.Geschichte.Basel betreibt eine <a href="https://forschung.stadtgeschichtebasel.ch/">Forschungsdatenplattform</a>.&nbsp;Diese wird als zentrales Repositorium dienen, in dem alle Forschungsressourcen gesammelt und für die Öffentlichkeit nach den FAIR-Prinzipien zugänglich gemacht werden. Nutzer*innen können einfach auf die Plattform zugreifen, die umfangreiche Datenbank durchsuchen und relevante Ressourcen für ihre spezifischen Bedürfnisse finden.&nbsp;Daher ist es wichtig, klare und präzise Informationen darüber zu liefern, wem diese Ressourcen gehören und wer sie nutzen kann. Die Details zu Eigentum und Nutzungsrechten werden deutlich in den Metadaten jeder Ressource angegeben.</p>
 </div>
 </div>
 </section>
@@ -1263,6 +1281,12 @@ Abbildung&nbsp;6: Das Bad zu Leuk
 </figcaption>
 </figure>
 </div>
+<div id="tbl-metadaten-das-bad-zu-leuk" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadaten-das-bad-zu-leuk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;3: Metadaten des Bildes “Das Bad zu Leuk”
+</figcaption>
+<div aria-describedby="tbl-metadaten-das-bad-zu-leuk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table">
 <thead>
 <tr class="header">
@@ -1338,9 +1362,12 @@ Abbildung&nbsp;6: Das Bad zu Leuk
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 </section>
-<section id="plakat-zur-völkerschau-in-basel-1926" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="plakat-zur-völkerschau-in-basel-1926"><span class="header-section-number">5.2</span> Plakat zur Völkerschau in Basel, 1926</h2>
+<section id="sec-plakat-zur-voelkerschau" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="sec-plakat-zur-voelkerschau"><span class="header-section-number">5.2</span> Plakat zur Völkerschau in Basel, 1926</h2>
 <div id="fig-plakat-zu-voelkerschau-in-basel-1926" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-plakat-zu-voelkerschau-in-basel-1926-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1351,6 +1378,12 @@ Abbildung&nbsp;7: Plakat zur Völkerschau in Basel, 1926
 </figcaption>
 </figure>
 </div>
+<div id="tbl-metadaten-plakat-zur-voelkerschau-in-basel-1926" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadaten-plakat-zur-voelkerschau-in-basel-1926-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;4: Metadaten des Plakats zur Völkerschau in Basel, 1926
+</figcaption>
+<div aria-describedby="tbl-metadaten-plakat-zur-voelkerschau-in-basel-1926-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table">
 <thead>
 <tr class="header">
@@ -1426,6 +1459,9 @@ Abbildung&nbsp;7: Plakat zur Völkerschau in Basel, 1926
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 </section>
 <section id="schnitzerei-am-chorgestühl-des-basler-münsters" class="level2" data-number="5.3">
 <h2 data-number="5.3" class="anchored" data-anchor-id="schnitzerei-am-chorgestühl-des-basler-münsters"><span class="header-section-number">5.3</span> Schnitzerei am Chorgestühl des Basler Münsters</h2>
@@ -1439,6 +1475,12 @@ Abbildung&nbsp;8: Schnitzerei am Chorgestühl des Basler Münsters
 </figcaption>
 </figure>
 </div>
+<div id="tbl-metadaten-schnitzerei-am-chorgestuehl-des-basler-muensters" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadaten-schnitzerei-am-chorgestuehl-des-basler-muensters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;5: Metadaten der Schnitzerei am Chorgestühl des Basler Münsters
+</figcaption>
+<div aria-describedby="tbl-metadaten-schnitzerei-am-chorgestuehl-des-basler-muensters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table">
 <thead>
 <tr class="header">
@@ -1514,6 +1556,9 @@ Abbildung&nbsp;8: Schnitzerei am Chorgestühl des Basler Münsters
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 </section>
 <section id="hie-basel-hie-schweizer-boden---liste-3" class="level2" data-number="5.4">
 <h2 data-number="5.4" class="anchored" data-anchor-id="hie-basel-hie-schweizer-boden---liste-3"><span class="header-section-number">5.4</span> Hie Basel Hie Schweizer Boden - Liste 3</h2>
@@ -1527,6 +1572,12 @@ Abbildung&nbsp;9: Hie Basel Hie Schweizer Boden - Liste 3
 </figcaption>
 </figure>
 </div>
+<div id="tbl-metadaten-hie-basel-hie-schweizer-boden-liste-3" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadaten-hie-basel-hie-schweizer-boden-liste-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;6: Metadaten des Plakats “Hie Basel Hie Schweizer Boden - Liste 3”
+</figcaption>
+<div aria-describedby="tbl-metadaten-hie-basel-hie-schweizer-boden-liste-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table">
 <thead>
 <tr class="header">
@@ -1602,6 +1653,9 @@ Abbildung&nbsp;9: Hie Basel Hie Schweizer Boden - Liste 3
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 </section>
 <section id="zeitungsinserat-in-der-national-zeitung-1955" class="level2" data-number="5.5">
 <h2 data-number="5.5" class="anchored" data-anchor-id="zeitungsinserat-in-der-national-zeitung-1955"><span class="header-section-number">5.5</span> Zeitungsinserat in der National-Zeitung, 1955</h2>
@@ -1615,6 +1669,12 @@ Abbildung&nbsp;10: Zeitungsinserat in der National-Zeitung, 1955
 </figcaption>
 </figure>
 </div>
+<div id="tbl-metadaten-zeitungsinserat-in-der-national-zeitung-1955" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadaten-zeitungsinserat-in-der-national-zeitung-1955-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;7: Metadaten des Zeitungsinserats in der National-Zeitung, 1955
+</figcaption>
+<div aria-describedby="tbl-metadaten-zeitungsinserat-in-der-national-zeitung-1955-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table">
 <thead>
 <tr class="header">
@@ -1707,6 +1767,9 @@ Abbildung&nbsp;10: Zeitungsinserat in der National-Zeitung, 1955
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 </section>
 <section id="die-ausländische-wohnbevölkerung-von-basel-stadt-nach-heimatnation-19201965" class="level2" data-number="5.6">
 <h2 data-number="5.6" class="anchored" data-anchor-id="die-ausländische-wohnbevölkerung-von-basel-stadt-nach-heimatnation-19201965"><span class="header-section-number">5.6</span> Die ausländische Wohnbevölkerung von Basel-Stadt nach Heimatnation, 1920–1965</h2>
@@ -1720,6 +1783,12 @@ Abbildung&nbsp;11: Die ausländische Wohnbevölkerung von Basel-Stadt nach Heima
 </figcaption>
 </figure>
 </div>
+<div id="tbl-metadaten-die-auslaendische-wohnbevoelkerung-von-basel-stadt-nach-heimatnation-1920-1965" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadaten-die-auslaendische-wohnbevoelkerung-von-basel-stadt-nach-heimatnation-1920-1965-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;8: Metadaten der Statistik “Die ausländische Wohnbevölkerung von Basel-Stadt nach Heimatnation, 1920–1965”
+</figcaption>
+<div aria-describedby="tbl-metadaten-die-auslaendische-wohnbevoelkerung-von-basel-stadt-nach-heimatnation-1920-1965-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table">
 <thead>
 <tr class="header">
@@ -1798,6 +1867,9 @@ Abbildung&nbsp;11: Die ausländische Wohnbevölkerung von Basel-Stadt nach Heima
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 </section>
 <section id="basler-brandmarkeisen-17.-jahrhundert" class="level2" data-number="5.7">
 <h2 data-number="5.7" class="anchored" data-anchor-id="basler-brandmarkeisen-17.-jahrhundert"><span class="header-section-number">5.7</span> Basler Brandmarkeisen, 17. Jahrhundert</h2>
@@ -1811,6 +1883,12 @@ Abbildung&nbsp;12: Basler Brandmarkeisen, 17. Jahrhundert
 </figcaption>
 </figure>
 </div>
+<div id="tbl-metadaten-basler-brandmarkeisen-17-jahrhundert" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadaten-basler-brandmarkeisen-17-jahrhundert-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;9: Metadaten der Basler Brandmarkeisen, 17. Jahrhundert
+</figcaption>
+<div aria-describedby="tbl-metadaten-basler-brandmarkeisen-17-jahrhundert-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table">
 <thead>
 <tr class="header">
@@ -1886,6 +1964,9 @@ Abbildung&nbsp;12: Basler Brandmarkeisen, 17. Jahrhundert
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 </section>
 <section id="plan-mit-verteilung-jüdischer-häuser" class="level2" data-number="5.8">
 <h2 data-number="5.8" class="anchored" data-anchor-id="plan-mit-verteilung-jüdischer-häuser"><span class="header-section-number">5.8</span> Plan mit Verteilung jüdischer Häuser</h2>
@@ -1899,6 +1980,12 @@ Abbildung&nbsp;13: Plan mit Verteilung jüdischer Häuser
 </figcaption>
 </figure>
 </div>
+<div id="tbl-metadaten-plan-mit-verteilung-juedischer-haeuser" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadaten-plan-mit-verteilung-juedischer-haeuser-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;10: Metadaten des Plans mit Verteilung jüdischer Häuser
+</figcaption>
+<div aria-describedby="tbl-metadaten-plan-mit-verteilung-juedischer-haeuser-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table">
 <thead>
 <tr class="header">
@@ -1974,6 +2061,9 @@ Abbildung&nbsp;13: Plan mit Verteilung jüdischer Häuser
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 </section>
 <section id="lebensbilder" class="level2" data-number="5.9">
 <h2 data-number="5.9" class="anchored" data-anchor-id="lebensbilder"><span class="header-section-number">5.9</span> Lebensbilder</h2>
@@ -1993,6 +2083,12 @@ Abbildung&nbsp;14: Bestattung von Unlingen
 </figcaption>
 </figure>
 </div>
+<div id="tbl-metadaten-bestattung-von-unlingen" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadaten-bestattung-von-unlingen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;11: Metadaten der Bestattung von Unlingen
+</figcaption>
+<div aria-describedby="tbl-metadaten-bestattung-von-unlingen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table">
 <thead>
 <tr class="header">
@@ -2071,6 +2167,9 @@ Abbildung&nbsp;14: Bestattung von Unlingen
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 </section>
 <section id="rollenverteilung-zwischen-den-geschlechtern" class="level4" data-number="5.9.1.2">
 <h4 data-number="5.9.1.2" class="anchored" data-anchor-id="rollenverteilung-zwischen-den-geschlechtern"><span class="header-section-number">5.9.1.2</span> Rollenverteilung zwischen den Geschlechtern</h4>
@@ -2084,6 +2183,12 @@ Abbildung&nbsp;15: Höhlenleben zur älteren Steinzeit
 </figcaption>
 </figure>
 </div>
+<div id="tbl-metadaten-hoehlenleben-zur-aelteren-steinzeit" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadaten-hoehlenleben-zur-aelteren-steinzeit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;12: Metadaten des Höhlenlebens zur älteren Steinzeit
+</figcaption>
+<div aria-describedby="tbl-metadaten-hoehlenleben-zur-aelteren-steinzeit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table">
 <thead>
 <tr class="header">
@@ -2162,6 +2267,9 @@ Abbildung&nbsp;15: Höhlenleben zur älteren Steinzeit
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 </section>
 <section id="sexualisierung-der-frau" class="level4" data-number="5.9.1.3">
 <h4 data-number="5.9.1.3" class="anchored" data-anchor-id="sexualisierung-der-frau"><span class="header-section-number">5.9.1.3</span> Sexualisierung der Frau</h4>
@@ -2175,6 +2283,12 @@ Abbildung&nbsp;16: Bestattung von Bad Dürrenberg
 </figcaption>
 </figure>
 </div>
+<div id="tbl-metadaten-bestattung-von-bad-duerrenberg" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadaten-bestattung-von-bad-duerrenberg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;13: Metadaten der Bestattung von Bad Dürrenberg
+</figcaption>
+<div aria-describedby="tbl-metadaten-bestattung-von-bad-duerrenberg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table">
 <thead>
 <tr class="header">
@@ -2253,6 +2367,9 @@ Abbildung&nbsp;16: Bestattung von Bad Dürrenberg
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 </section>
 </section>
 <section id="positive-beispiele-von-lebensbildern" class="level3" data-number="5.9.2">
@@ -2269,6 +2386,12 @@ Abbildung&nbsp;17: Opferplatz Thorberger Moor
 </figcaption>
 </figure>
 </div>
+<div id="tbl-metadaten-opferplatz-thorberger-moor" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadaten-opferplatz-thorberger-moor-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;14: Metadaten des Opferplatzes Thorberger Moor
+</figcaption>
+<div aria-describedby="tbl-metadaten-opferplatz-thorberger-moor-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table">
 <thead>
 <tr class="header">
@@ -2347,6 +2470,9 @@ Abbildung&nbsp;17: Opferplatz Thorberger Moor
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 </section>
 <section id="alle-unter-einem-dach" class="level4" data-number="5.9.2.2">
 <h4 data-number="5.9.2.2" class="anchored" data-anchor-id="alle-unter-einem-dach"><span class="header-section-number">5.9.2.2</span> Alle unter einem Dach</h4>
@@ -2360,6 +2486,12 @@ Abbildung&nbsp;18: Alle unter einem Dach
 </figcaption>
 </figure>
 </div>
+<div id="tbl-metadaten-alle-unter-einem-dach" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadaten-alle-unter-einem-dach-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;15: Metadaten von Alle unter einem Dach
+</figcaption>
+<div aria-describedby="tbl-metadaten-alle-unter-einem-dach-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table">
 <thead>
 <tr class="header">
@@ -2438,6 +2570,9 @@ Abbildung&nbsp;18: Alle unter einem Dach
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 </section>
 <section id="die-keltin" class="level4" data-number="5.9.2.3">
 <h4 data-number="5.9.2.3" class="anchored" data-anchor-id="die-keltin"><span class="header-section-number">5.9.2.3</span> Die Keltin</h4>
@@ -2451,6 +2586,12 @@ Abbildung&nbsp;19: Die Keltin
 </figcaption>
 </figure>
 </div>
+<div id="tbl-metadaten-die-keltin" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadaten-die-keltin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;16: Metadaten der Keltin
+</figcaption>
+<div aria-describedby="tbl-metadaten-die-keltin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table">
 <thead>
 <tr class="header">
@@ -2529,6 +2670,9 @@ Abbildung&nbsp;19: Die Keltin
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 </section>
 </section>
 </section>
@@ -6093,7 +6237,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>  <script src="https://giscus.app/client.js" data-repo="maehr/handbuch-diskriminierungsfreie-metadaten" data-repo-id="" data-category="General" data-category-id="" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
 </script>
 <input type="hidden" id="giscus-base-theme" value="light">
-<input type="hidden" id="giscus-alt-theme" value="dark">  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"openEffect":"zoom","selector":".lightbox","loop":false,"descPosition":"bottom","closeEffect":"zoom"});
+<input type="hidden" id="giscus-alt-theme" value="dark">  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

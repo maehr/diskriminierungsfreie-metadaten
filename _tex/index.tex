@@ -6,7 +6,10 @@
 \documentclass[
   letterpaper,
   DIV=11,
-  numbers=noendperiod]{scrartcl}
+  numbers=noendperiod,
+  landscape,
+  a4paper,
+  geometry:margin=1in]{scrartcl}
 
 \usepackage{amsmath,amssymb}
 \usepackage{iftex}
@@ -235,7 +238,7 @@ digitaler Geschichtswissenschaft und Open Research Data beschäftigen
 wollen.
 \end{abstract}
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, toptitle=1mm, bottomtitle=1mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warnung}, bottomrule=.15mm, colframe=quarto-callout-warning-color-frame, opacitybacktitle=0.6, coltitle=black, arc=.35mm, colback=white, opacityback=0, rightrule=.15mm, leftrule=.75mm, titlerule=0mm, left=2mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomtitle=1mm, coltitle=black, left=2mm, bottomrule=.15mm, arc=.35mm, rightrule=.15mm, colback=white, opacityback=0, colbacktitle=quarto-callout-warning-color!10!white, breakable, leftrule=.75mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warnung}, toptitle=1mm, titlerule=0mm, toprule=.15mm, opacitybacktitle=0.6, colframe=quarto-callout-warning-color-frame]
 
 Dieses Dokument enthält Abbildungen von historischen Quellen, die
 diskriminierende Sprache, Bilder oder Darstellungen enthalten. Sie sind
@@ -583,8 +586,8 @@ Elemente sowohl einzeln als auch in Kombination mit anderen Datenfeldern
 verwendet werden können, um komplexere Beschreibungen zu ermöglichen.
 Bei Stadt.Geschichte.Basel sind dies die Aufnahme von spezifischen
 Feldern wie zum Beispiel ``temporal'' zur zeitlichen Verortung und
-``extent'' zur Beschreibung der Bildauflösung (Siehe weiter unten,
-Metadaten der Stadt.Geschichte.Basel).
+``extent'' zur Beschreibung der Bildauflösung (Siehe
+Kapitel~\ref{sec-metadaten}).
 
 Bei historischen Quellen ist das Feld
 \href{https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/provenance/}{dcterms:provenance}
@@ -638,8 +641,7 @@ strukturiert werden soll, um eine maschinelle Lesbarkeit zu
 gewährleisten. Metadaten müssen sowohl für Menschen als auch für
 Maschinen verständlich sein. Beispiele sind XML, RDF etc.
 
-\section{Metadaten der
-Stadt.Geschichte.Basel}\label{metadaten-der-stadt.geschichte.basel}
+\section{Metadaten der Stadt.Geschichte.Basel}\label{sec-metadaten}
 
 \subsection{Zwei Typen von Metadaten: Objekte und zugeordnete
 Ressourcen}\label{zwei-typen-von-metadaten-objekte-und-zugeordnete-ressourcen}
@@ -750,6 +752,22 @@ zugeordneten Ressource}
   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0475}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2494}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.6105}}@{}}
+\caption{Metadaten der Elternobjekte
+(Metadatenobjekte).}\label{tbl-metadata-objects}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Name}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Dublin Core}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Obligatorisch}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Verwendung}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Datenwertstandard}
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 \textbf{Name}
@@ -803,8 +821,9 @@ konnte.
 \end{minipage} \\
 Is Part Of & dcterms:isPartOf & Ja & Eine verwandte Ressource, in der
 die beschriebene Ressource physisch oder logisch enthalten ist. & DOI
-oder bibliografische Angaben (nach Infoclio Zitierstandard), mehrere
-Verweise können angegeben werden \\
+oder bibliografische Angaben (nach
+\href{https://www.infoclio.ch/de/zitierstil}{Infoclio Zitierstandard}),
+mehrere Verweise können angegeben werden \\
 \end{longtable}
 
 \subsection{Zugeordnete Ressourcen
@@ -816,6 +835,22 @@ Verweise können angegeben werden \\
   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0342}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2406}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.6792}}@{}}
+\caption{Metadaten der zugeordneten Ressourcen
+(Kinder).}\label{tbl-metadata-resources}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Name}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Dublin Core}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Obligatorisch}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Verwendung}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Datenwertstandard}
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 \textbf{Name}
@@ -838,7 +873,8 @@ Zufällig generierte Nummern zwischen m000000 und m999999. \\
 Is Part Of & dcterms:isPartOf & Ja & Eine verwandte Ressource, in der
 die beschriebene Ressource physisch oder logisch enthalten ist. &
 ObjectID (des Elternobjekts), DOI oder bibliografische Angaben (nach
-Infoclio Zitierstandard), mehrere Verweise können angegeben werden \\
+\href{https://www.infoclio.ch/de/zitierstil}{Infoclio Zitierstandard}),
+mehrere Verweise können angegeben werden \\
 Filename & & Ja & Der vollständige Pfad/URL einer (oder mehreren)
 Datei(en) inkl. der Dateierweiterung. & Keiner (Wenn möglich Übernahme
 der Pfade vom System zur Verwaltung der Metadaten und der Ressourcen,
@@ -1362,7 +1398,7 @@ sein können. Die grundlegenden Unterschiede sind:
   die digitalen Aspekte erfasst werden.
 \end{itemize}
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, toptitle=1mm, bottomtitle=1mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6, coltitle=black, arc=.35mm, colback=white, opacityback=0, rightrule=.15mm, leftrule=.75mm, titlerule=0mm, left=2mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomtitle=1mm, coltitle=black, left=2mm, bottomrule=.15mm, arc=.35mm, rightrule=.15mm, colback=white, opacityback=0, colbacktitle=quarto-callout-tip-color!10!white, breakable, leftrule=.75mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, toptitle=1mm, titlerule=0mm, toprule=.15mm, opacitybacktitle=0.6, colframe=quarto-callout-tip-color-frame]
 
 Bei den Ressourcen der Stadt.Geschichte.Basel handelt es sich vorwiegend
 um digitale Darstellungen physischer Objekte sowie um digitale Objekte.
@@ -1383,7 +1419,7 @@ von Diskriminierungserfahrungen betroffen sein. Das muss berücksichtigt
 werden. Durch die Kenntnis der Zielgruppe können die Metadaten
 spezifisch auf die Bedürfnisse der Benutzer*innen angepasst werden.
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, toptitle=1mm, bottomtitle=1mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6, coltitle=black, arc=.35mm, colback=white, opacityback=0, rightrule=.15mm, leftrule=.75mm, titlerule=0mm, left=2mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomtitle=1mm, coltitle=black, left=2mm, bottomrule=.15mm, arc=.35mm, rightrule=.15mm, colback=white, opacityback=0, colbacktitle=quarto-callout-tip-color!10!white, breakable, leftrule=.75mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, toptitle=1mm, titlerule=0mm, toprule=.15mm, opacitybacktitle=0.6, colframe=quarto-callout-tip-color-frame]
 
 Die Hauptzielgruppe umfasst Forschende und Studierende, die nebst
 technischen Informationen auch Metadaten benötigen, die ihnen dabei
@@ -1403,15 +1439,16 @@ berücksichtigen. Beispielsweise können unvollständige oder beschädigte
 Informationen, wie beispielsweise verblasste Beschriftungen, die
 Identifizierung physischer Objekte erschweren.
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, toptitle=1mm, bottomtitle=1mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6, coltitle=black, arc=.35mm, colback=white, opacityback=0, rightrule=.15mm, leftrule=.75mm, titlerule=0mm, left=2mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomtitle=1mm, coltitle=black, left=2mm, bottomrule=.15mm, arc=.35mm, rightrule=.15mm, colback=white, opacityback=0, colbacktitle=quarto-callout-tip-color!10!white, breakable, leftrule=.75mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, toptitle=1mm, titlerule=0mm, toprule=.15mm, opacitybacktitle=0.6, colframe=quarto-callout-tip-color-frame]
 
 Stadt.Geschichte.Basel war bei der Identifikation der Informationen für
 die Ressourcen mit folgenden Schwierigkeiten konfrontiert: Insbesondere
 bei Archiven fehlten oftmals Beschreibungen zu einzelnen Ressourcen.
 Konkret fehlte etwa beim Plakat zu den sogenannten "Völkerschauen"
-(siehe Fallbeispiel 2) die Information, wer das Plakat herstellte. In
-solchen Fällen waren selbständige Recherchen oder eine Rücksprache mit
-den jeweiligen Gedächtnisinstitutionen erforderlich.
+(siehe Kapitel~\ref{sec-plakat-zur-voelkerschau}) die Information, wer
+das Plakat herstellte. In solchen Fällen waren selbständige Recherchen
+oder eine Rücksprache mit den jeweiligen Gedächtnisinstitutionen
+erforderlich.
 
 \end{tcolorbox}
 
@@ -1427,7 +1464,7 @@ sichergestellt, dass die Ressource nicht isoliert betrachtet, sondern in
 einen grösseren historischen, sozialen und politischen Kontext gestellt
 wird.
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, toptitle=1mm, bottomtitle=1mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6, coltitle=black, arc=.35mm, colback=white, opacityback=0, rightrule=.15mm, leftrule=.75mm, titlerule=0mm, left=2mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomtitle=1mm, coltitle=black, left=2mm, bottomrule=.15mm, arc=.35mm, rightrule=.15mm, colback=white, opacityback=0, colbacktitle=quarto-callout-tip-color!10!white, breakable, leftrule=.75mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, toptitle=1mm, titlerule=0mm, toprule=.15mm, opacitybacktitle=0.6, colframe=quarto-callout-tip-color-frame]
 
 Stadt.Geschichte.Basel legt besonderen Wert auf die Kontextualisierung,
 um nicht unkritisch Diskriminierung in einzelnen Ressourcen zu
@@ -1479,7 +1516,8 @@ rechtfertigen, bestehen teilweise noch bis heute und manifestieren sich
 in unterschiedlichen Formen von Diskriminierung.
 
 In die Beschreibung~der Reproduktion des Plakates "Völkerschau in Basel
-1926" (siehe Beispiel 2)~sind folgende Überlegungen eingeflossen:
+1926" (siehe Kapitel~\ref{sec-plakat-zur-voelkerschau})~sind folgende
+Überlegungen eingeflossen:
 
 \paragraph{Entstehungskontext der
 Ressource}\label{entstehungskontext-der-ressource}
@@ -1556,14 +1594,15 @@ Objektgeschichte oder Sammlungsgeschichte nicht unwichtig, aus welcher
 Perspektive das Objekt rezipiert wurde und aus welcher Motivation das
 Objekt gesammelt wurde.
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, toptitle=1mm, bottomtitle=1mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6, coltitle=black, arc=.35mm, colback=white, opacityback=0, rightrule=.15mm, leftrule=.75mm, titlerule=0mm, left=2mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomtitle=1mm, coltitle=black, left=2mm, bottomrule=.15mm, arc=.35mm, rightrule=.15mm, colback=white, opacityback=0, colbacktitle=quarto-callout-tip-color!10!white, breakable, leftrule=.75mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, toptitle=1mm, titlerule=0mm, toprule=.15mm, opacitybacktitle=0.6, colframe=quarto-callout-tip-color-frame]
 
 Das Projekt hat sich für die Methode der ``Titelkontextualisierung''
 entschieden - unter anderem wegen der besseren Durchsuchbarkeit auf der
-Forschungsdatenplattform. Weil der Schlagwortindex-GenderOpen gezielt
-sensible Schlagworte enthält, lassen sich Diskriminierungen in
-historischen Quellen einfacher finden. Die diskriminierenden Inhalte
-werden auf der Webseite jeweils mit einer Triggerwarnung angezeigt.
+\href{https://forschung.stadtgeschichtebasel.ch/}{Forschungsdatenplattform}.
+Weil der Schlagwortindex-GenderOpen gezielt sensible Schlagworte
+enthält, lassen sich Diskriminierungen in historischen Quellen einfacher
+finden. Die diskriminierenden Inhalte werden auf der Webseite jeweils
+mit einer Triggerwarnung angezeigt.
 
 \end{tcolorbox}
 
@@ -1577,9 +1616,10 @@ veröffentlicht werden. Wichtig ist hierbei zu beachten, dass bei Open
 Data Plattformen nicht immer kontrolliert werden kann, wer und wie die
 Metadaten verwendet werden.
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, toptitle=1mm, bottomtitle=1mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6, coltitle=black, arc=.35mm, colback=white, opacityback=0, rightrule=.15mm, leftrule=.75mm, titlerule=0mm, left=2mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomtitle=1mm, coltitle=black, left=2mm, bottomrule=.15mm, arc=.35mm, rightrule=.15mm, colback=white, opacityback=0, colbacktitle=quarto-callout-tip-color!10!white, breakable, leftrule=.75mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, toptitle=1mm, titlerule=0mm, toprule=.15mm, opacitybacktitle=0.6, colframe=quarto-callout-tip-color-frame]
 
-Stadt.Geschichte.Basel betreibt eine Forschungsdatenplattform.~Diese
+Stadt.Geschichte.Basel betreibt eine
+\href{https://forschung.stadtgeschichtebasel.ch/}{Forschungsdatenplattform}.~Diese
 wird als zentrales Repositorium dienen, in dem alle Forschungsressourcen
 gesammelt und für die Öffentlichkeit nach den FAIR-Prinzipien zugänglich
 gemacht werden. Nutzer*innen können einfach auf die Plattform zugreifen,
@@ -1659,7 +1699,7 @@ durch einzelne Elemente hat gegenüber der Erstellung eines eigenen
 Schemas mehrere Vorteile. So werden etwa Kosten und Aufwand gespart, die
 Schemas sind benutzerfreundlich und interoperabel.
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, toptitle=1mm, bottomtitle=1mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6, coltitle=black, arc=.35mm, colback=white, opacityback=0, rightrule=.15mm, leftrule=.75mm, titlerule=0mm, left=2mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomtitle=1mm, coltitle=black, left=2mm, bottomrule=.15mm, arc=.35mm, rightrule=.15mm, colback=white, opacityback=0, colbacktitle=quarto-callout-tip-color!10!white, breakable, leftrule=.75mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, toptitle=1mm, titlerule=0mm, toprule=.15mm, opacitybacktitle=0.6, colframe=quarto-callout-tip-color-frame]
 
 Beim Erstellen der Metadatenliste hat sich gezeigt, dass die Übernahme
 der Standardfelder von Dublin Core eine gute Grundlage für die weitere
@@ -1716,7 +1756,7 @@ Quellenlage zu erstellen. Ziel dabei ist es, eine ungefähre Vorstellung
 Erfahrungswerten kann abgeschätzt werden, wie viel Aufwand für die
 einzelnen Quellen benötigt wird.
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, toptitle=1mm, bottomtitle=1mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6, coltitle=black, arc=.35mm, colback=white, opacityback=0, rightrule=.15mm, leftrule=.75mm, titlerule=0mm, left=2mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomtitle=1mm, coltitle=black, left=2mm, bottomrule=.15mm, arc=.35mm, rightrule=.15mm, colback=white, opacityback=0, colbacktitle=quarto-callout-tip-color!10!white, breakable, leftrule=.75mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, toptitle=1mm, titlerule=0mm, toprule=.15mm, opacitybacktitle=0.6, colframe=quarto-callout-tip-color-frame]
 
 Es kann hilfreich sein, von den vorhandenen Informationen aus den
 Gedächtnisinstitutionen auszugehen und dann die weiter oben
@@ -1763,7 +1803,7 @@ beispielsweise ein themenspezifisches Vokabular oder eine kontrollierte
 Liste von Namen. Wichtig ist die Dokumentation der Entscheidung und der
 Vokabulare.
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, toptitle=1mm, bottomtitle=1mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6, coltitle=black, arc=.35mm, colback=white, opacityback=0, rightrule=.15mm, leftrule=.75mm, titlerule=0mm, left=2mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomtitle=1mm, coltitle=black, left=2mm, bottomrule=.15mm, arc=.35mm, rightrule=.15mm, colback=white, opacityback=0, colbacktitle=quarto-callout-tip-color!10!white, breakable, leftrule=.75mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, toptitle=1mm, titlerule=0mm, toprule=.15mm, opacitybacktitle=0.6, colframe=quarto-callout-tip-color-frame]
 
 Im Falle des Feldes "Subject" hat Stadt.Geschichte.Basel den
 Schlagwortindex GenderOpen als kontrolliertes Vokabular gewählt, um die
@@ -1840,6 +1880,16 @@ anderer Projekte auf, insofern ein Bezug zu Basel gegeben ist.
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0126}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9874}}@{}}
+\caption{Metadaten des Bildes ``Das Bad zu
+Leuk''}\label{tbl-metadaten-das-bad-zu-leuk}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Feldname}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Wert}
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 \textbf{Feldname}
@@ -1889,7 +1939,7 @@ License & \url{https://creativecommons.org/publicdomain/mark/1.0/} \\
 \end{longtable}
 
 \subsection{Plakat zur Völkerschau in Basel,
-1926}\label{plakat-zur-vuxf6lkerschau-in-basel-1926}
+1926}\label{sec-plakat-zur-voelkerschau}
 
 \begin{figure}
 
@@ -1907,6 +1957,16 @@ Völkerschau in Basel, 1926}
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0073}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9927}}@{}}
+\caption{Metadaten des Plakats zur Völkerschau in Basel,
+1926}\label{tbl-metadaten-plakat-zur-voelkerschau-in-basel-1926}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Feldname}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Wert}
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 \textbf{Feldname}
@@ -1987,6 +2047,16 @@ am Chorgestühl des Basler Münsters}
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0126}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9874}}@{}}
+\caption{Metadaten der Schnitzerei am Chorgestühl des Basler
+Münsters}\label{tbl-metadaten-schnitzerei-am-chorgestuehl-des-basler-muensters}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Feldname}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Wert}
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 \textbf{Feldname}
@@ -2054,6 +2124,16 @@ Schweizer Boden - Liste 3}
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0196}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9804}}@{}}
+\caption{Metadaten des Plakats ``Hie Basel Hie Schweizer Boden - Liste
+3''}\label{tbl-metadaten-hie-basel-hie-schweizer-boden-liste-3}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Feldname}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Wert}
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 \textbf{Feldname}
@@ -2117,6 +2197,17 @@ in der National-Zeitung, 1955}
   >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.0158}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.9820}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.0011}}@{}}
+\caption{Metadaten des Zeitungsinserats in der National-Zeitung,
+1955}\label{tbl-metadaten-zeitungsinserat-in-der-national-zeitung-1955}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Feldname}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Wert}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 \textbf{Feldname}
@@ -2188,6 +2279,17 @@ ausländische Wohnbevölkerung von Basel-Stadt nach Heimatnation,
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0238}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9762}}@{}}
+\caption{Metadaten der Statistik ``Die ausländische Wohnbevölkerung von
+Basel-Stadt nach Heimatnation,
+1920--1965''}\label{tbl-metadaten-die-auslaendische-wohnbevoelkerung-von-basel-stadt-nach-heimatnation-1920-1965}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Feldname}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Wert}
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 \textbf{Feldname}
@@ -2272,6 +2374,16 @@ Brandmarkeisen, 17. Jahrhundert}
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0229}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9771}}@{}}
+\caption{Metadaten der Basler Brandmarkeisen, 17.
+Jahrhundert}\label{tbl-metadaten-basler-brandmarkeisen-17-jahrhundert}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Feldname}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Wert}
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 \textbf{Feldname}
@@ -2333,6 +2445,16 @@ Verteilung jüdischer Häuser}
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0150}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9850}}@{}}
+\caption{Metadaten des Plans mit Verteilung jüdischer
+Häuser}\label{tbl-metadaten-plan-mit-verteilung-juedischer-haeuser}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Feldname}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Wert}
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 \textbf{Feldname}
@@ -2424,6 +2546,16 @@ Lebensbildern}\label{negative-beispiele-von-lebensbildern}
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\caption{Metadaten der Bestattung von
+Unlingen}\label{tbl-metadaten-bestattung-von-unlingen}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Feldname
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Wert
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 Feldname
@@ -2487,6 +2619,16 @@ Geschlechtern}\label{rollenverteilung-zwischen-den-geschlechtern}
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\caption{Metadaten des Höhlenlebens zur älteren
+Steinzeit}\label{tbl-metadaten-hoehlenleben-zur-aelteren-steinzeit}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Feldname
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Wert
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 Feldname
@@ -2544,6 +2686,16 @@ Dürrenberg}
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\caption{Metadaten der Bestattung von Bad
+Dürrenberg}\label{tbl-metadaten-bestattung-von-bad-duerrenberg}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Feldname
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Wert
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 Feldname
@@ -2616,6 +2768,16 @@ Moor}
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\caption{Metadaten des Opferplatzes Thorberger
+Moor}\label{tbl-metadaten-opferplatz-thorberger-moor}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Feldname
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Wert
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 Feldname
@@ -2669,6 +2831,16 @@ License &
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\caption{Metadaten von Alle unter einem
+Dach}\label{tbl-metadaten-alle-unter-einem-dach}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Feldname
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Wert
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 Feldname
@@ -2719,6 +2891,16 @@ License &
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\caption{Metadaten der
+Keltin}\label{tbl-metadaten-die-keltin}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Feldname
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Wert
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 Feldname
