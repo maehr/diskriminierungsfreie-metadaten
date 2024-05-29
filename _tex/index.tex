@@ -40,13 +40,6 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
-\ifLuaTeX
-  \usepackage{luacolor}
-  \usepackage[soul]{lua-ul}
-\else
-  \usepackage{soul}
-  
-\fi
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \setcounter{secnumdepth}{5}
 % Make \paragraph and \subparagraph free-standing
@@ -62,7 +55,6 @@
 
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
-\usepackage{multirow}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -243,7 +235,7 @@ digitaler Geschichtswissenschaft und Open Research Data beschäftigen
 wollen.
 \end{abstract}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, coltitle=black, colback=white, bottomtitle=1mm, colbacktitle=quarto-callout-warning-color!10!white, leftrule=.75mm, opacitybacktitle=0.6, bottomrule=.15mm, breakable, titlerule=0mm, left=2mm, toprule=.15mm, toptitle=1mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warnung}, rightrule=.15mm, opacityback=0, arc=.35mm]
+\begin{tcolorbox}[enhanced jigsaw, breakable, toptitle=1mm, bottomtitle=1mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warnung}, bottomrule=.15mm, colframe=quarto-callout-warning-color-frame, opacitybacktitle=0.6, coltitle=black, arc=.35mm, colback=white, opacityback=0, rightrule=.15mm, leftrule=.75mm, titlerule=0mm, left=2mm]
 
 Dieses Dokument enthält Abbildungen von historischen Quellen, die
 diskriminierende Sprache, Bilder oder Darstellungen enthalten. Sie sind
@@ -790,6 +782,7 @@ Era & dcterms:temporal & Ja & Epoche (Frühgeschichte, Antike,
 Mittelalter, Neuzeit, Zeitgeschichte) &
 \begin{minipage}[t]{\linewidth}\raggedright
 \begin{itemize}
+\tightlist
 \item
   Ur- und Frühgeschichte
 \item
@@ -818,66 +811,51 @@ Verweise können angegeben werden \\
 (Kinder)}\label{zugeordnete-ressourcen-kinder}
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.0161}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.0254}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.0334}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.2353}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.6644}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.0208}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0165}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0259}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0342}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2406}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.6792}}@{}}
 \toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Name}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Dublin Core}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Obligatorisch}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Verwendung}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Datenwertstandard}
+\end{minipage} \\
+\midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-\multirow{2}{=}{\begin{minipage}[t]{\linewidth}\raggedright
-\section{\texorpdfstring{\textbf{Name}}{Name}}\label{name}
-
-MediaID
-\end{minipage}} &
-\multirow{2}{=}{\begin{minipage}[t]{\linewidth}\raggedright
-\section{\texorpdfstring{\textbf{Dublin
-Core}}{Dublin Core}}\label{dublin-core}
-
-dcterms:identifier
-\end{minipage}} &
-\multirow{2}{=}{\begin{minipage}[t]{\linewidth}\raggedright
-\section{\texorpdfstring{\textbf{Obligatorisch}}{Obligatorisch}}\label{obligatorisch}
-
-Ja
-\end{minipage}} &
-\multirow{2}{=}{\begin{minipage}[t]{\linewidth}\raggedright
-\section{\texorpdfstring{\textbf{Verwendung}}{Verwendung}}\label{verwendung}
-
-Eine eindeutige Zeichenfolge ohne Leer- oder Sonderzeichen, die auf der
-Website als ID verwendet wird.
-\end{minipage}} &
-\multirow{2}{=}{\begin{minipage}[t]{\linewidth}\raggedright
-\section{\texorpdfstring{\textbf{Datenwertstandard}}{Datenwertstandard}}\label{datenwertstandard}
-
-Zufällig generierte Nummern zwischen m000000 und m999999.
-\end{minipage}} & \\
-& & & & & \\
+MediaID & dcterms:identifier & Ja & Eine eindeutige Zeichenfolge ohne
+Leer- oder Sonderzeichen, die auf der Website als ID verwendet wird. &
+Zufällig generierte Nummern zwischen m000000 und m999999. \\
 Is Part Of & dcterms:isPartOf & Ja & Eine verwandte Ressource, in der
 die beschriebene Ressource physisch oder logisch enthalten ist. &
 ObjectID (des Elternobjekts), DOI oder bibliografische Angaben (nach
-Infoclio Zitierstandard), mehrere Verweise können angegeben werden & \\
+Infoclio Zitierstandard), mehrere Verweise können angegeben werden \\
 Filename & & Ja & Der vollständige Pfad/URL einer (oder mehreren)
 Datei(en) inkl. der Dateierweiterung. & Keiner (Wenn möglich Übernahme
 der Pfade vom System zur Verwaltung der Metadaten und der Ressourcen,
-z.B. \href{https://omeka.org/}{Omeka}) & \\
+z.B. \href{https://omeka.org/}{Omeka}) \\
 Title & dcterms:title & Ja & Ein aussagekräftiger Name der Ressource. &
-Keiner (Wenn möglich Übernahme aus Originalkatalog) & \\
+Keiner (Wenn möglich Übernahme aus Originalkatalog) \\
 Subject & dcterms:subject & Ja & Die Schlagwörter der Ressource. &
 \href{https://opengenderplatform.de/schlagwortindex}{Schlagwortindex
 GenderOpen} Ein oder besser mehrere Schlagwörter, kommagetrennt. Für
-Werte siehe Anhang Kapitel~\ref{sec-Schlagwortindex-GenderOpen}. & \\
+Werte siehe Anhang Kapitel~\ref{sec-Schlagwortindex-GenderOpen} \\
 Description & dcterms:description & Ja & Eine Beschreibung der
 Ressource. & Siehe Schritt-für-Schritt-Anleitung
-Kapitel~\ref{sec-Schritt-für-Schritt-Anleitung} & \\
+Kapitel~\ref{sec-Schritt-für-Schritt-Anleitung} \\
 Creator & dcterms:creator & Nein & Eine Entität (Autor*in), die in
 erster Linie für die Erstellung der Ressource verantwortlich ist. &
-Klarname und URL zu
-\href{https://www.wikidata.org/}{Wikidata.org}~(Laufend Werte sammeln
-und wenn möglich dieselben wiederverwenden) & \\
+Klarname und URL zu \href{https://www.wikidata.org/}{Wikidata.org}
+(Laufend Werte sammeln und wenn möglich dieselben wiederverwenden) \\
 Publisher & dcterms:publisher & Ja & Eine Einrichtung, die für die
 Bereitstellung der Ressource verantwortlich ist. (Bei Büchern und
 Buchausschnitten ist eine Bibliothek anzugeben. Die bibliografische
@@ -887,11 +865,13 @@ Klarname und URL zu \href{https://www.wikidata.org/}{Wikidata.org}
 (Laufend Werte sammeln und wenn möglich dieselben wiederverwenden)
 
 \begin{itemize}
+\tightlist
 \item
   \href{https://query.wikidata.org/\#SELECT\%20\%3Finstitution\%20\%3FinstitutionLabel\%20WHERE\%20\%7B\%0A\%20\%20\%3Finstitution\%20wdt\%3AP31\%2Fwdt\%3AP279\%2a\%20\%3Ftype\%20.\%0A\%20\%20VALUES\%20\%3Ftype\%20\%7B\%20wd\%3AQ1497649\%20wd\%3AQ16735822\%20wd\%3AQ28564\%20wd\%3AQ7075\%20wd\%3AQ166118\%20\%7D\%20\%23\%20Museums\%2C\%20Libraries\%2C\%20Archives\%0A\%20\%20\%3Finstitution\%20wdt\%3AP131\%2a\%20wd\%3AQ78\%20.\%20\%23\%20Located\%20in\%20Basel\%0A\%20\%20SERVICE\%20wikibase\%3Alabel\%20\%7B\%20bd\%3AserviceParam\%20wikibase\%3Alanguage\%20\%22\%5BAUTO_LANGUAGE\%5D\%2Cen\%22.\%20\%7D\%0A\%7D}{Liste
   der wichtigsten Institutionen in Basel}
 
   \begin{itemize}
+  \tightlist
   \item
     Historisches Musem Basel
     \href{http://www.wikidata.org/entity/Q386286}{Q386286}
@@ -911,91 +891,113 @@ Klarname und URL zu \href{https://www.wikidata.org/}{Wikidata.org}
     ...
   \end{itemize}
 \end{itemize}
-\end{minipage} & \\
+\end{minipage} \\
 Date & dcterms:date & Nein & Der Zeitpunkt oder Zeitraum der
 (geschätzten) Erstellung der Ressource. &
-\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.6851} + 2\tabcolsep}@{}}{%
+\begin{minipage}[t]{\linewidth}\raggedright
 \href{https://www.loc.gov/standards/datetime/}{Extended Date/Time Format
-(EDTF)} \textbar{} \textbar{} - 2014-03-05 \textbar{} \textbar{} -
-Typisches vollständiges Datum, JJJJ-MM-TT, muss führende Nullen an Monat
-und Tag enthalten \textbar{} \textbar{} - 2014-03 \textbar{} \textbar{}
-- Nur für den Monat angegeben; "irgendwann im März 2014". \textbar{}
-\textbar{} - 2014 \textbar{} \textbar{} - Nur für das Jahr angegeben;
-"irgendwann im Jahr 2014". \textbar{} \textbar{} - 2014-21 \textbar{}
-\textbar{} - Jahreszeit (nördliche Hemisphäre): 21=Frühling, 22=Sommer,
-23=Herbst, 24=Winter \textbar{} \textbar{} - 2014\textasciitilde{}
-\textbar{} \textbar{} - Ungefähres Datum: "Ungefähr 2014". Die genaue
-Interpretation von "ungefähr" ist nicht spezifiziert, aber +/- 2 der
-genauesten angegebenen Einheiten (in diesem Beispiel Jahre) ist eine
-vernünftige Erwartung. \textbar{} \textbar{} - 2014? \textbar{}
-\textbar{} - Ungewisses Datum: "Vielleicht 2014." Die Alternative könnte
-alles andere sein. Damit sollte jedoch sparsam umgegangen werden, denn
-das "alles andere" ist unerwünscht. Wenn eine Vorstellung von einem
-Bereich möglicher Daten besteht, kann die Bereichsform verwendet werden.
-\textbar{} - {[}2012,2014{]} \textbar{} \textbar{} - Eines der
-angegebenen Daten. \textbar{} \textbar{} - ~2XXX \textbar{} \textbar{} -
-Unbestimmte Ziffer(n) von rechts: Das Zeichen "X" kann anstelle einer
-oder mehrerer Ziffern ganz rechts verwendet werden, um anzuzeigen, dass
-der Wert dieser Ziffer in den folgenden Fällen nicht spezifiziert ist:
-Eine Jahreszahl mit einer oder zwei (ganz rechts) nicht spezifizierten
-Ziffern in einem reinen Jahresausdruck (Jahresgenauigkeit) \textbar{}
-\textbar{} \textgreater{} Beispiel 1
-\textquotesingle201X\textquotesingle~ \textbar{} \textgreater{} Beispiel
-2 \textquotesingle20XX\textquotesingle~ \textbar{} \textgreater{} Jahr
-angegeben, Monat unspezifiziert in einem Jahr-Monat-Ausdruck
-(Monatsgenauigkeit)~ \textbar{} \textgreater{} Beispiel 3
-\textquotesingle2004-XX\textquotesingle~ \textbar{} \textgreater{} Jahr
-und Monat werden angegeben, der Tag wird in einem
-Jahr-Monat-Tag-Ausdruck nicht angegeben (Tagesgenauigkeit)~ \textbar{}
-\textgreater{} Beispiel 4 \textquotesingle1985-04-XX\textquotesingle{} ~
-~ ~ ~ ~ ~ ~~~ \textbar{} \textgreater{} Jahr angegeben, Tag und Monat
-nicht angegeben in einem Jahr-Monat-Tag-Ausdruck (Tagesgenauigkeit)~
-\textbar{} \textgreater{} Beispiel 5
-\textquotesingle1985-XX-XX\textquotesingle{} ~ \textbar{} \textbar{} -
-{[}2014-01-03..2014-04-15{]} \textbar{} \textbar{} - Bereich des
-ungewissen Datums: "Irgendwann zwischen dem 3. Januar und dem 15. April
-2014." Beachte, dass genau zwei Zeiträume zwischen den Daten liegen.
-Dies ist die bevorzugte Form für unbestimmte Daten, da sie für den
-Computer am einfachsten zu verarbeiten ist. NICHT ein Intervall gültiger
-Daten ("im Zeitraum vom 3. Januar bis 15. April 2014"); das wird als
-separates Start- und Enddatum eingegeben. \textbar{} \textbar{} -
-{[}..2014-04-15{]} \textbar{} \textbar{} - Unbegrenzter Bereich mit
-ungewissem Datum: "Irgendwann vor dem 15. April 2014". Wenn du also eine
-Vorstellung vom Beginn des Zeitfensters hast, gib es bitte ein.
-\textbar{} \textbar{} - {[}2014-04-15..{]} \textbar{} \textbar{} -
-Offener Bereich mit ungewissem Datum: "Irgendwann nach dem 15. April
-2014". Das System interpretiert dies als einen Zeitpunkt zwischen diesem
-Datum und heute. Wenn du also eine Vorstellung vom Ende des Zeitfensters
-hast, gib es bitte ein. \textbar{} \textbar{} - unknown \textbar{}
-\textbar{} - Das Datum ist völlig unbekannt, aber es ist bekannt, dass
-das Ereignis an einem bestimmten Datum stattfindet. Wir wissen z.B.,
-dass die Organisation eines Zweigs an einem bestimmten Tag stattgefunden
-haben muss, aber wir haben keine Ahnung, wann dieser Tag war. Bitte gehe
-sparsam damit um, denn das System kann daraus nichts abschätzen; wenn du
-eine Vorstellung von einem bestimmten Datum hast, verwende das Formular
-für den Zeitraum. \textbar{}} \\
+(EDTF)}
+
+\begin{itemize}
+\tightlist
+\item
+  2014-03-05 - Typisches vollständiges Datum, JJJJ-MM-TT, muss führende
+  Nullen an Monat und Tag enthalten
+\item
+  2014-03 - Nur für den Monat angegeben; "irgendwann im März 2014".
+\item
+  2014 - Nur für das Jahr angegeben; "irgendwann im Jahr 2014".
+\item
+  2014-21 - Jahreszeit (nördliche Hemisphäre): 21=Frühling, 22=Sommer,
+  23=Herbst, 24=Winter
+\item
+  2014\textasciitilde{} - Ungefähres Datum: "Ungefähr 2014". Die genaue
+  Interpretation von "ungefähr" ist nicht spezifiziert, aber +/- 2 der
+  genauesten angegebenen Einheiten (in diesem Beispiel Jahre) ist eine
+  vernünftige Erwartung.
+\item
+  2014? - Ungewisses Datum: "Vielleicht 2014." Die Alternative könnte
+  alles andere sein. Damit sollte jedoch sparsam umgegangen werden, denn
+  das "alles andere" ist unerwünscht. Wenn eine Vorstellung von einem
+  Bereich möglicher Daten besteht, kann die Bereichsform verwendet
+  werden.
+\item
+  {[}2012,2014{]} - Eines der angegebenen Daten.
+\item
+  2XXX - Unbestimmte Ziffer(n) von rechts: Das Zeichen "X" kann anstelle
+  einer oder mehrerer Ziffern ganz rechts verwendet werden, um
+  anzuzeigen, dass der Wert dieser Ziffer in den folgenden Fällen nicht
+  spezifiziert ist:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Beispiel 1 \textquotesingle201X\textquotesingle{}
+  \item
+    Beispiel 2 \textquotesingle20XX\textquotesingle{}\\
+    Jahr angegeben, Monat unspezifiziert in einem Jahr-Monat-Ausdruck
+    (Monatsgenauigkeit)
+  \item
+    Beispiel 3 \textquotesingle2004-XX\textquotesingle{}\\
+    Jahr und Monat werden angegeben, der Tag wird in einem
+    Jahr-Monat-Tag-Ausdruck nicht angegeben (Tagesgenauigkeit)
+  \item
+    Beispiel 4 \textquotesingle1985-04-XX\textquotesingle{}\\
+    Jahr angegeben, Tag und Monat nicht angegeben in einem
+    Jahr-Monat-Tag-Ausdruck (Tagesgenauigkeit)
+  \item
+    Beispiel 5 \textquotesingle1985-XX-XX\textquotesingle{}
+  \end{itemize}
+\item
+  {[}2014-01-03..2014-04-15{]} - Bereich des ungewissen Datums:
+  "Irgendwann zwischen dem 3. Januar und dem 15. April 2014." Beachte,
+  dass genau zwei Zeiträume zwischen den Daten liegen. Dies ist die
+  bevorzugte Form für unbestimmte Daten, da sie für den Computer am
+  einfachsten zu verarbeiten ist. NICHT ein Intervall gültiger Daten
+  ("im Zeitraum vom 3. Januar bis 15. April 2014"); das wird als
+  separates Start- und Enddatum eingegeben.
+\item
+  {[}..2014-04-15{]} - Unbegrenzter Bereich mit ungewissem Datum:
+  "Irgendwann vor dem 15. April 2014". Wenn du also eine Vorstellung vom
+  Beginn des Zeitfensters hast, gib es bitte ein.
+\item
+  {[}2014-04-15..{]} - Offener Bereich mit ungewissem Datum: "Irgendwann
+  nach dem 15. April 2014". Das System interpretiert dies als einen
+  Zeitpunkt zwischen diesem Datum und heute. Wenn du also eine
+  Vorstellung vom Ende des Zeitfensters hast, gib es bitte ein.
+\item
+  unknown - Das Datum ist völlig unbekannt, aber es ist bekannt, dass
+  das Ereignis an einem bestimmten Datum stattfindet. Wir wissen z.B.,
+  dass die Organisation eines Zweigs an einem bestimmten Tag
+  stattgefunden haben muss, aber wir haben keine Ahnung, wann dieser Tag
+  war. Bitte gehe sparsam damit um, denn das System kann daraus nichts
+  abschätzen; wenn du eine Vorstellung von einem bestimmten Datum hast,
+  verwende das Formular für den Zeitraum.
+\end{itemize}\strut
+\end{minipage} \\
 Era & dcterms:temporal & Ja & Epoche (Frühgeschichte, Antike,
 Mittelalter, Neuzeit, Zeitgeschichte) &
-\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.6851} + 2\tabcolsep}@{}}{%
 \begin{minipage}[t]{\linewidth}\raggedright
 \begin{itemize}
 \tightlist
 \item
-  Ur- und Frühgeschichte \textbar{} \textbar{}
+  Ur- und Frühgeschichte
 \item
-  Römische Zeit und Spätantike \textbar{} \textbar{}
+  Römische Zeit und Spätantike
 \item
-  Mittelalter \textbar{} \textbar{}
+  Mittelalter
 \item
-  Neuzeit \textbar{} \textbar{}
+  Neuzeit
 \item
-  Zeitgeschichte \textbar{} \textbar{} Auf eine Spezifikation der
-  \href{https://www.dublincore.org/specifications/dublin-core/dcmi-period/}{Epochen
-  nach Dublin Core} wurde verzichtet, weil man sich zwischen den
-  verschiedenen Disziplinen nicht auf einheitliche Perioden einigen
-  konnte. \textbar{}
+  Zeitgeschichte
 \end{itemize}
-\end{minipage}} \\
+
+Auf eine Spezifikation der
+\href{https://www.dublincore.org/specifications/dublin-core/dcmi-period/}{Epochen
+nach Dublin Core} wurde verzichtet, weil man sich zwischen den
+verschiedenen Disziplinen nicht auf einheitliche Perioden einigen
+konnte.
+\end{minipage} \\
 Type & dcterms:type & Ja & Die Art oder das Genre der referenzierten
 Ressource im Archiv/Bibliothek etc.
 
@@ -1006,6 +1008,7 @@ Bei Grafiken wird zu Zwecken einer semantischen Klarheit anstatt
 Type Vocabulary}
 
 \begin{itemize}
+\tightlist
 \item
   Collection
 
@@ -1110,14 +1113,14 @@ Type Vocabulary}
     ist.
   \end{itemize}
 \end{itemize}
-\end{minipage} & \\
-Format & dcterms:format & Ja & Das Dateiformat der Ressource.
-
-21535\_Plot\_OutputR-2.pdf & \begin{minipage}[t]{\linewidth}\raggedright
+\end{minipage} \\
+Format & dcterms:format & Ja & Das Dateiformat der Ressource. &
+\begin{minipage}[t]{\linewidth}\raggedright
 \href{http://www.iana.org/assignments/media-types/}{Internet Media Types
 (MIME)}
 
 \begin{itemize}
+\tightlist
 \item
   application/pdf
 
@@ -1183,58 +1186,106 @@ Format & dcterms:format & Ja & Das Dateiformat der Ressource.
     MP4-Videodateien.
   \end{itemize}
 \end{itemize}
-\end{minipage} & \\
+\end{minipage} \\
 Extent & dcterms:extent & Nein & Das physische Medium oder die
 Abmessungen der Ressource. & Breite und Höhe in Pixel (kann
-automatisiert aus der Bilddatei ausgelesen werden) & \\
+automatisiert aus der Bilddatei ausgelesen werden) \\
 Source & dcterms:source & Ja (ausser Abbildungen) & Ein eindeutiger
 Verweis auf die Ressource innerhalb eines bestimmten Kontexts. &
-Institutionenspezifisch (Wenn möglich Übernahme aus Originalkatalog)
-& \\
+Institutionenspezifisch (Wenn möglich Übernahme aus Originalkatalog) \\
 Language & dcterms:language & Nein & Eine Sprache der Ressource. &
 \href{https://www.loc.gov/standards/iso639-2/php/code_list.php}{ISO
-639-2} & \\
+639-2} \\
 Relation & dcterms:relation & Ja (ausser Privatsammlung) & Eine
-verwandte Ressource. & URL zum Originalkatalog & \\
+verwandte Ressource. & URL zum Originalkatalog \\
 Rights & dcterms:rights & Ja & Informationen über die Rechte an der
 Ressource. Achtung: Bei Fotografien ist die Fotograf:in ebenfalls hier
-anzugeben. & Keiner (Wenn möglich Übernahme aus Originalkatalog) & \\
+anzugeben. & Keiner (Wenn möglich Übernahme aus Originalkatalog) \\
 License & & Ja & URL zur Lizenz &
-\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.6851} + 2\tabcolsep}@{}}{%
+\begin{minipage}[t]{\linewidth}\raggedright
 \href{https://creativecommons.org/}{CreativeCommons.org} oder
-\href{https://rightsstatements.org/en/}{RightsStatements.org} \textbar{}
-\textbar{} - \url{https://creativecommons.org/publicdomain/mark/1.0/}
-\textbar{} \textbar{} - Public Domain Mark (PDM)
-\href{https://creativecommons.org/public-domain/freeworks/}{\emph{\ul{Free
-Culture}}} \textbar{} \textbar{} -
-\url{https://creativecommons.org/publicdomain/zero/1.0/} \textbar{}
-\textbar{} - CC0
-\href{https://creativecommons.org/public-domain/freeworks/}{\emph{\ul{Free
-Culture}}} \textbar{} \textbar{} -
-\url{https://creativecommons.org/licenses/by/4.0/} \textbar{} \textbar{}
-- CC BY (Attribution)
-\href{https://creativecommons.org/public-domain/freeworks/}{\emph{\ul{Free
-Culture}}} \textbar{} \textbar{} - Erlaubt anderen, das Werk zu
-verbreiten, zu remixen, zu verändern und darauf aufzubauen, auch
-kommerziell, solange der Urheber genannt wird. \textbar{} \textbar{} -
-\url{https://creativecommons.org/licenses/by-sa/4.0/} \textbar{}
-\textbar{} - CC BY-SA (Attribution-ShareAlike)
-\href{https://creativecommons.org/public-domain/freeworks/}{\emph{\ul{Free
-Culture}}} \textbar{} \textbar{} - Erlaubt anderen, das Werk zu remixen,
-zu verändern und darauf aufzubauen, auch kommerziell, solange das neue
-Werk unter der gleichen Lizenz veröffentlicht wird. \textbar{}
-\textbar{} - \url{https://creativecommons.org/licenses/by-nc-sa/4.0/}
-\textbar{} \textbar{} - CC BY-NC-SA
-(Attribution-NonCommercial-ShareAlike) \textbar{} \textbar{} - Erlaubt
-anderen, das Werk zu bearbeiten, solange es nicht kommerziell genutzt
-wird und unter denselben Bedingungen weitergegeben wird. \textbar{}
-\textbar{} - \url{http://rightsstatements.org/vocab/InC/1.0/} \textbar{}
-\textbar{} - In Copyright. Das Werk ist urheberrechtlich geschützt.
-\textbar{} \textbar{}
-\texttt{\{=html\}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textbar{}\ \ \textless{}!-\/-\ -\/-\textgreater{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textbar{}}
-\textbar{} - \url{http://rightsstatements.org/vocab/InC-RUU/1.0/}
-\textbar{} \textbar{} - In Copyright - Rights-holder(s) unlocatable or
-unidentifiable \textbar{}} \\
+\href{https://rightsstatements.org/en/}{RightsStatements.org}
+
+\begin{itemize}
+\tightlist
+\item
+  \url{https://creativecommons.org/publicdomain/mark/1.0/}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Public Domain Mark (PDM)
+    \href{https://creativecommons.org/public-domain/freeworks/}{\emph{{[}Free
+    Culture{]}}}
+  \end{itemize}
+\item
+  \url{https://creativecommons.org/publicdomain/zero/1.0/}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    CC0
+    \href{https://creativecommons.org/public-domain/freeworks/}{\emph{{[}Free
+    Culture{]}}}
+  \end{itemize}
+\item
+  \url{https://creativecommons.org/licenses/by/4.0/}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    CC BY (Attribution)
+    \href{https://creativecommons.org/public-domain/freeworks/}{\emph{{[}Free
+    Culture{]}}}
+  \item
+    Erlaubt anderen, das Werk zu verbreiten, zu remixen, zu verändern
+    und darauf aufzubauen, auch kommerziell, solange der Urheber genannt
+    wird.
+  \end{itemize}
+\item
+  \url{https://creativecommons.org/licenses/by-sa/4.0/}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    CC BY-SA (Attribution-ShareAlike)
+    \href{https://creativecommons.org/public-domain/freeworks/}{\emph{{[}Free
+    Culture{]}}}
+  \item
+    Erlaubt anderen, das Werk zu remixen, zu verändern und darauf
+    aufzubauen, auch kommerziell, solange das neue Werk unter der
+    gleichen Lizenz veröffentlicht wird.
+  \end{itemize}
+\item
+  \url{https://creativecommons.org/licenses/by-nc-sa/4.0/}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    CC BY-NC-SA (Attribution-NonCommercial-ShareAlike)
+  \item
+    Erlaubt anderen, das Werk zu bearbeiten, solange es nicht
+    kommerziell genutzt wird und unter denselben Bedingungen
+    weitergegeben wird.
+  \end{itemize}
+\item
+  \url{http://rightsstatements.org/vocab/InC/1.0/}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    In Copyright. Das Werk ist urheberrechtlich geschützt.
+  \end{itemize}
+\item
+  \url{http://rightsstatements.org/vocab/InC-RUU/1.0/}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    In Copyright - Rights-holder(s) unlocatable or unidentifiable
+  \end{itemize}
+\end{itemize}
+\end{minipage} \\
 \end{longtable}
 
 \subsection{Relation von Objekt und
@@ -1311,7 +1362,7 @@ sein können. Die grundlegenden Unterschiede sind:
   die digitalen Aspekte erfasst werden.
 \end{itemize}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, coltitle=black, colback=white, bottomtitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, leftrule=.75mm, opacitybacktitle=0.6, bottomrule=.15mm, breakable, titlerule=0mm, left=2mm, toprule=.15mm, toptitle=1mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, rightrule=.15mm, opacityback=0, arc=.35mm]
+\begin{tcolorbox}[enhanced jigsaw, breakable, toptitle=1mm, bottomtitle=1mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6, coltitle=black, arc=.35mm, colback=white, opacityback=0, rightrule=.15mm, leftrule=.75mm, titlerule=0mm, left=2mm]
 
 Bei den Ressourcen der Stadt.Geschichte.Basel handelt es sich vorwiegend
 um digitale Darstellungen physischer Objekte sowie um digitale Objekte.
@@ -1332,7 +1383,7 @@ von Diskriminierungserfahrungen betroffen sein. Das muss berücksichtigt
 werden. Durch die Kenntnis der Zielgruppe können die Metadaten
 spezifisch auf die Bedürfnisse der Benutzer*innen angepasst werden.
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, coltitle=black, colback=white, bottomtitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, leftrule=.75mm, opacitybacktitle=0.6, bottomrule=.15mm, breakable, titlerule=0mm, left=2mm, toprule=.15mm, toptitle=1mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, rightrule=.15mm, opacityback=0, arc=.35mm]
+\begin{tcolorbox}[enhanced jigsaw, breakable, toptitle=1mm, bottomtitle=1mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6, coltitle=black, arc=.35mm, colback=white, opacityback=0, rightrule=.15mm, leftrule=.75mm, titlerule=0mm, left=2mm]
 
 Die Hauptzielgruppe umfasst Forschende und Studierende, die nebst
 technischen Informationen auch Metadaten benötigen, die ihnen dabei
@@ -1352,7 +1403,7 @@ berücksichtigen. Beispielsweise können unvollständige oder beschädigte
 Informationen, wie beispielsweise verblasste Beschriftungen, die
 Identifizierung physischer Objekte erschweren.
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, coltitle=black, colback=white, bottomtitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, leftrule=.75mm, opacitybacktitle=0.6, bottomrule=.15mm, breakable, titlerule=0mm, left=2mm, toprule=.15mm, toptitle=1mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, rightrule=.15mm, opacityback=0, arc=.35mm]
+\begin{tcolorbox}[enhanced jigsaw, breakable, toptitle=1mm, bottomtitle=1mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6, coltitle=black, arc=.35mm, colback=white, opacityback=0, rightrule=.15mm, leftrule=.75mm, titlerule=0mm, left=2mm]
 
 Stadt.Geschichte.Basel war bei der Identifikation der Informationen für
 die Ressourcen mit folgenden Schwierigkeiten konfrontiert: Insbesondere
@@ -1376,7 +1427,7 @@ sichergestellt, dass die Ressource nicht isoliert betrachtet, sondern in
 einen grösseren historischen, sozialen und politischen Kontext gestellt
 wird.
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, coltitle=black, colback=white, bottomtitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, leftrule=.75mm, opacitybacktitle=0.6, bottomrule=.15mm, breakable, titlerule=0mm, left=2mm, toprule=.15mm, toptitle=1mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, rightrule=.15mm, opacityback=0, arc=.35mm]
+\begin{tcolorbox}[enhanced jigsaw, breakable, toptitle=1mm, bottomtitle=1mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6, coltitle=black, arc=.35mm, colback=white, opacityback=0, rightrule=.15mm, leftrule=.75mm, titlerule=0mm, left=2mm]
 
 Stadt.Geschichte.Basel legt besonderen Wert auf die Kontextualisierung,
 um nicht unkritisch Diskriminierung in einzelnen Ressourcen zu
@@ -1505,7 +1556,7 @@ Objektgeschichte oder Sammlungsgeschichte nicht unwichtig, aus welcher
 Perspektive das Objekt rezipiert wurde und aus welcher Motivation das
 Objekt gesammelt wurde.
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, coltitle=black, colback=white, bottomtitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, leftrule=.75mm, opacitybacktitle=0.6, bottomrule=.15mm, breakable, titlerule=0mm, left=2mm, toprule=.15mm, toptitle=1mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, rightrule=.15mm, opacityback=0, arc=.35mm]
+\begin{tcolorbox}[enhanced jigsaw, breakable, toptitle=1mm, bottomtitle=1mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6, coltitle=black, arc=.35mm, colback=white, opacityback=0, rightrule=.15mm, leftrule=.75mm, titlerule=0mm, left=2mm]
 
 Das Projekt hat sich für die Methode der ``Titelkontextualisierung''
 entschieden - unter anderem wegen der besseren Durchsuchbarkeit auf der
@@ -1526,7 +1577,7 @@ veröffentlicht werden. Wichtig ist hierbei zu beachten, dass bei Open
 Data Plattformen nicht immer kontrolliert werden kann, wer und wie die
 Metadaten verwendet werden.
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, coltitle=black, colback=white, bottomtitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, leftrule=.75mm, opacitybacktitle=0.6, bottomrule=.15mm, breakable, titlerule=0mm, left=2mm, toprule=.15mm, toptitle=1mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, rightrule=.15mm, opacityback=0, arc=.35mm]
+\begin{tcolorbox}[enhanced jigsaw, breakable, toptitle=1mm, bottomtitle=1mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6, coltitle=black, arc=.35mm, colback=white, opacityback=0, rightrule=.15mm, leftrule=.75mm, titlerule=0mm, left=2mm]
 
 Stadt.Geschichte.Basel betreibt eine Forschungsdatenplattform.~Diese
 wird als zentrales Repositorium dienen, in dem alle Forschungsressourcen
@@ -1608,7 +1659,7 @@ durch einzelne Elemente hat gegenüber der Erstellung eines eigenen
 Schemas mehrere Vorteile. So werden etwa Kosten und Aufwand gespart, die
 Schemas sind benutzerfreundlich und interoperabel.
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, coltitle=black, colback=white, bottomtitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, leftrule=.75mm, opacitybacktitle=0.6, bottomrule=.15mm, breakable, titlerule=0mm, left=2mm, toprule=.15mm, toptitle=1mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, rightrule=.15mm, opacityback=0, arc=.35mm]
+\begin{tcolorbox}[enhanced jigsaw, breakable, toptitle=1mm, bottomtitle=1mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6, coltitle=black, arc=.35mm, colback=white, opacityback=0, rightrule=.15mm, leftrule=.75mm, titlerule=0mm, left=2mm]
 
 Beim Erstellen der Metadatenliste hat sich gezeigt, dass die Übernahme
 der Standardfelder von Dublin Core eine gute Grundlage für die weitere
@@ -1665,7 +1716,7 @@ Quellenlage zu erstellen. Ziel dabei ist es, eine ungefähre Vorstellung
 Erfahrungswerten kann abgeschätzt werden, wie viel Aufwand für die
 einzelnen Quellen benötigt wird.
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, coltitle=black, colback=white, bottomtitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, leftrule=.75mm, opacitybacktitle=0.6, bottomrule=.15mm, breakable, titlerule=0mm, left=2mm, toprule=.15mm, toptitle=1mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, rightrule=.15mm, opacityback=0, arc=.35mm]
+\begin{tcolorbox}[enhanced jigsaw, breakable, toptitle=1mm, bottomtitle=1mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6, coltitle=black, arc=.35mm, colback=white, opacityback=0, rightrule=.15mm, leftrule=.75mm, titlerule=0mm, left=2mm]
 
 Es kann hilfreich sein, von den vorhandenen Informationen aus den
 Gedächtnisinstitutionen auszugehen und dann die weiter oben
@@ -1712,7 +1763,7 @@ beispielsweise ein themenspezifisches Vokabular oder eine kontrollierte
 Liste von Namen. Wichtig ist die Dokumentation der Entscheidung und der
 Vokabulare.
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, coltitle=black, colback=white, bottomtitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, leftrule=.75mm, opacitybacktitle=0.6, bottomrule=.15mm, breakable, titlerule=0mm, left=2mm, toprule=.15mm, toptitle=1mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, rightrule=.15mm, opacityback=0, arc=.35mm]
+\begin{tcolorbox}[enhanced jigsaw, breakable, toptitle=1mm, bottomtitle=1mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6, coltitle=black, arc=.35mm, colback=white, opacityback=0, rightrule=.15mm, leftrule=.75mm, titlerule=0mm, left=2mm]
 
 Im Falle des Feldes "Subject" hat Stadt.Geschichte.Basel den
 Schlagwortindex GenderOpen als kontrolliertes Vokabular gewählt, um die
@@ -1774,13 +1825,15 @@ anderer Projekte auf, insofern ein Bezug zu Basel gegeben ist.
 
 \subsection{Das Bad zu Leuk}\label{das-bad-zu-leuk}
 
-\begin{figure}[H]
+\begin{figure}
 
-{\centering \includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image10.jpg}
+\centering{
+
+\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image10.jpg}
 
 }
 
-\caption{Das Bad zu Leuk}
+\caption{\label{fig-bad-zu-leuk}Das Bad zu Leuk}
 
 \end{figure}%
 
@@ -1838,13 +1891,16 @@ License & \url{https://creativecommons.org/publicdomain/mark/1.0/} \\
 \subsection{Plakat zur Völkerschau in Basel,
 1926}\label{plakat-zur-vuxf6lkerschau-in-basel-1926}
 
-\begin{figure}[H]
+\begin{figure}
 
-{\centering \includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image4.png}
+\centering{
+
+\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image4.png}
 
 }
 
-\caption{Plakat zur Völkerschau in Basel, 1926}
+\caption{\label{fig-plakat-zu-voelkerschau-in-basel-1926}Plakat zur
+Völkerschau in Basel, 1926}
 
 \end{figure}%
 
@@ -1915,13 +1971,16 @@ License & \url{https://creativecommons.org/publicdomain/mark/1.0/} \\
 \subsection{Schnitzerei am Chorgestühl des Basler
 Münsters}\label{schnitzerei-am-chorgestuxfchl-des-basler-muxfcnsters}
 
-\begin{figure}[H]
+\begin{figure}
 
-{\centering \includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image12.jpg}
+\centering{
+
+\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image12.jpg}
 
 }
 
-\caption{Schnitzerei am Chorgestühl des Basler Münsters}
+\caption{\label{fig-schnitzerei-am-chorgestuehl-des-basler-muensters}Schnitzerei
+am Chorgestühl des Basler Münsters}
 
 \end{figure}%
 
@@ -1979,13 +2038,16 @@ License & \url{http://rightsstatements.org/vocab/InC-RUU/1.0/}
 \subsection{Hie Basel Hie Schweizer Boden - Liste
 3}\label{hie-basel-hie-schweizer-boden---liste-3}
 
-\begin{figure}[H]
+\begin{figure}
 
-{\centering \includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image6.png}
+\centering{
+
+\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image6.png}
 
 }
 
-\caption{Hie Basel Hie Schweizer Boden - Liste 3}
+\caption{\label{fig-hie-basel-hie-schweizer-boden-liste-3}Hie Basel Hie
+Schweizer Boden - Liste 3}
 
 \end{figure}%
 
@@ -2038,13 +2100,16 @@ License & \url{https://creativecommons.org/publicdomain/mark/1.0/} \\
 \subsection{Zeitungsinserat in der National-Zeitung,
 1955}\label{zeitungsinserat-in-der-national-zeitung-1955}
 
-\begin{figure}[H]
+\begin{figure}
 
-{\centering \includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image11.png}
+\centering{
+
+\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image11.png}
 
 }
 
-\caption{Zeitungsinserat in der National-Zeitung, 1955}
+\caption{\label{fig-zeitungsinserat-in-der-national-zeitung-1955}Zeitungsinserat
+in der National-Zeitung, 1955}
 
 \end{figure}%
 
@@ -2106,14 +2171,17 @@ License &
 Heimatnation,
 1920--1965}\label{die-ausluxe4ndische-wohnbevuxf6lkerung-von-basel-stadt-nach-heimatnation-19201965}
 
-\begin{figure}[H]
+\begin{figure}
 
-{\centering \includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image14.jpg}
+\centering{
+
+\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image14.jpg}
 
 }
 
-\caption{Die ausländische Wohnbevölkerung von Basel-Stadt nach
-Heimatnation, 1920--1965}
+\caption{\label{fig-die-auslaendische-wohnbevoelkerung-von-basel-stadt-nach-heimatnation-1920-1965}Die
+ausländische Wohnbevölkerung von Basel-Stadt nach Heimatnation,
+1920--1965}
 
 \end{figure}%
 
@@ -2188,13 +2256,16 @@ License & \url{https://creativecommons.org/publicdomain/mark/1.0/} \\
 \subsection{Basler Brandmarkeisen, 17.
 Jahrhundert}\label{basler-brandmarkeisen-17.-jahrhundert}
 
-\begin{figure}[H]
+\begin{figure}
 
-{\centering \includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image13.jpg}
+\centering{
+
+\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image13.jpg}
 
 }
 
-\caption{Basler Brandmarkeisen, 17. Jahrhundert}
+\caption{\label{fig-basler-brandmarkeisen-17-jahrhundert}Basler
+Brandmarkeisen, 17. Jahrhundert}
 
 \end{figure}%
 
@@ -2246,17 +2317,18 @@ License & \url{https://creativecommons.org/licenses/by-sa/4.0/}
 \subsection{Plan mit Verteilung jüdischer
 Häuser}\label{plan-mit-verteilung-juxfcdischer-huxe4user}
 
-\begin{figure}[H]
+\begin{figure}
 
-{\centering \includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image15.jpg}
+\centering{
+
+\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image15.jpg}
 
 }
 
-\caption{Plan mit Verteilung jüdischer Häuser}
+\caption{\label{fig-plan-mit-verteilung-juedischer-haeuser}Plan mit
+Verteilung jüdischer Häuser}
 
 \end{figure}%
-
-\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image7.jpg}
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0150}}
@@ -2337,13 +2409,15 @@ Lebensbildern}\label{negative-beispiele-von-lebensbildern}
 
 \paragraph{Androzentrismus}\label{androzentrismus}
 
-\begin{figure}[H]
+\begin{figure}
 
-{\centering \includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image8.jpg}
+\centering{
+
+\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image8.jpg}
 
 }
 
-\caption{Bestattung von Unlingen}
+\caption{\label{fig-bestattung-von-unlingen}Bestattung von Unlingen}
 
 \end{figure}%
 
@@ -2397,13 +2471,16 @@ License &
 \paragraph{Rollenverteilung zwischen den
 Geschlechtern}\label{rollenverteilung-zwischen-den-geschlechtern}
 
-\begin{figure}[H]
+\begin{figure}
 
-{\centering \includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image2.png}
+\centering{
+
+\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image2.png}
 
 }
 
-\caption{Höhlenleben zur älteren Steinzeit}
+\caption{\label{fig-hoehlenleben-zur-aelteren-steinzeit}Höhlenleben zur
+älteren Steinzeit}
 
 \end{figure}%
 
@@ -2451,13 +2528,16 @@ License &
 
 \paragraph{Sexualisierung der Frau}\label{sexualisierung-der-frau}
 
-\begin{figure}[H]
+\begin{figure}
 
-{\centering \includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image1.png}
+\centering{
+
+\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image1.png}
 
 }
 
-\caption{Bestattung von Bad Dürrenberg}
+\caption{\label{fig-bestattung-von-bad-duerrenberg}Bestattung von Bad
+Dürrenberg}
 
 \end{figure}%
 
@@ -2520,13 +2600,16 @@ Lebensbildern}\label{positive-beispiele-von-lebensbildern}
 
 \paragraph{Opferplatz Thorberger Moor}\label{opferplatz-thorberger-moor}
 
-\begin{figure}[H]
+\begin{figure}
 
-{\centering \includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image3.png}
+\centering{
+
+\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image3.png}
 
 }
 
-\caption{Opferplatz Thorberger Moor}
+\caption{\label{fig-opferplatz-thorberger-moor}Opferplatz Thorberger
+Moor}
 
 \end{figure}%
 
@@ -2571,13 +2654,15 @@ License &
 
 \paragraph{Alle unter einem Dach}\label{alle-unter-einem-dach}
 
-\begin{figure}[H]
+\begin{figure}
 
-{\centering \includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image5.png}
+\centering{
+
+\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image5.png}
 
 }
 
-\caption{Alle unter einem Dach}
+\caption{\label{fig-alle-unter-einem-dach}Alle unter einem Dach}
 
 \end{figure}%
 
@@ -2619,7 +2704,17 @@ License &
 
 \paragraph{Die Keltin}\label{die-keltin}
 
-\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image9.png}\\
+\begin{figure}
+
+\centering{
+
+\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image9.png}
+
+}
+
+\caption{\label{fig-die-keltin}Die Keltin}
+
+\end{figure}%
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
