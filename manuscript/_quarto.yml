@@ -26,6 +26,10 @@ format:
   pdf:
     output-file: 2024-06-01-handbuch-diskriminierungsfreie-metadaten.pdf
     pdf-engine: latexmk
+    classoption: 
+      - landscape
+      - a4paper
+      - geometry:margin=1in
   # markdown: default
 
 execute:
