@@ -6,8 +6,7 @@
 \documentclass[
   letterpaper,
   DIV=11,
-  numbers=noendperiod,
-  landscape]{scrartcl}
+  numbers=noendperiod]{scrartcl}
 
 \usepackage{amsmath,amssymb}
 \usepackage{iftex}
@@ -63,6 +62,7 @@
 
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{multirow}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -217,7 +217,7 @@ historische Quellen und Forschungsdaten}
 \subtitle{Erfahrungen aus dem historischen Forschungsprojekt
 Stadt.Geschichte.Basel}
 \author{Moritz Mähr \and Noëlle Schnegg}
-\date{2024-05-07}
+\date{2024-05-29}
 
 \begin{document}
 \maketitle
@@ -243,7 +243,7 @@ digitaler Geschichtswissenschaft und Open Research Data beschäftigen
 wollen.
 \end{abstract}
 
-\begin{tcolorbox}[enhanced jigsaw, opacityback=0, toprule=.15mm, colframe=quarto-callout-warning-color-frame, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warnung}, rightrule=.15mm, breakable, bottomtitle=1mm, toptitle=1mm, left=2mm, opacitybacktitle=0.6, leftrule=.75mm, colbacktitle=quarto-callout-warning-color!10!white, titlerule=0mm, coltitle=black, arc=.35mm, bottomrule=.15mm, colback=white]
+\begin{tcolorbox}[enhanced jigsaw, titlerule=0mm, toprule=.15mm, opacitybacktitle=0.6, left=2mm, bottomtitle=1mm, colframe=quarto-callout-warning-color-frame, toptitle=1mm, coltitle=black, opacityback=0, colback=white, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warnung}, breakable, arc=.35mm, colbacktitle=quarto-callout-warning-color!10!white, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 
 Dieses Dokument enthält Abbildungen von historischen Quellen, die
 diskriminierende Sprache, Bilder oder Darstellungen enthalten. Sie sind
@@ -300,7 +300,7 @@ Stadtgeschichte in regionalen, überregionalen und globalen Kontexten zu
 verstehen und den Einfluss von Menschen, Tieren und Dingen zu
 erforschen, ohne strikte Zeiteinteilungen vorzunehmen.
 
-Für die am Forschungsprojekt beteiligten Forschende sind neben
+Für die am Forschungsprojekt beteiligten Forschenden sind neben
 schriftlichen Quellen insbesondere Bilder, Karten und Tabellen sowie
 bibliographische Daten relevant. Die Datentypen variieren je nach Thema,
 Autor*in und Herkunft -- so etwa historische Gemälde und Fotografien,
@@ -354,19 +354,22 @@ deshalb der
 GenderOpen} verwendet, der eine geschlechtersensible und inklusive
 Sprache ermöglicht.
 
-Das Handbuch ist wie folgt aufgebaut: In einem ersten Kapitel werden die
+Das Handbuch ist wie folgt aufgebaut: Im zweiten Kapitel werden die
 Grundlagen von Metadaten für historische Quellen und Forschungsdaten
 geklärt. Dabei ist zu betonen, dass es sich bei den Metadaten von
 Stadt.Geschichte.Basel um Metadaten zu kulturhistorischen und
-archäologischen Quellen handelt. Im ersten Kapitel werden Fragen wie
-"Was sind Forschungsdaten?" und "Was sind Metadaten?" anhand
-exemplarischer Ressourcen von Stadt.Geschichte.Basel beantwortet. Im
-letzten Teil des ersten Kapitels wird das Metadatenschema Dublin Core
-vorgestellt und seine Vorteile erläutert. Im zweiten Kapitel soll eine
+archäologischen Quellen handelt. Es werden Fragen wie "Was sind
+Forschungsdaten?" und "Was sind Metadaten?" anhand exemplarischer
+Ressourcen von Stadt.Geschichte.Basel beantwortet. Im letzten Teil des
+zweiten Kapitels wird das Metadatenschema Dublin Core vorgestellt und
+seine Vorteile erläutert. Im dritten Kapitel werden die Metadaten von
+Stadt.Geschichte.Basel vorgestellt und anhand von Diagrammen die
+Unterschiede zwischen Metadatenobjekten und den damit verknüpften
+Ressourcen aufgezeigt. Im vierten Kapitel soll eine
 Schritt-für-Schritt-Anleitung helfen, eigene Metadaten für historische
 Quellen und Forschungsdaten zu erstellen. Auch hier wird bei den
 einzelnen Schritten auf Erfahrungen aus dem Projekt
-Stadt.Geschichte.Basel zurückgegriffen. Das dritte Kapitel widmet sich
+Stadt.Geschichte.Basel zurückgegriffen. Das letzte Kapitel widmet sich
 konkreten Fallbeispielen, um die Ergebnisse und Erkenntnisse aus den
 vorangegangenen Kapiteln zu veranschaulichen. Die Beispiele umfassen
 Bilder, Objekte sowie Karten und Statistiken.
@@ -526,7 +529,7 @@ Metadaten sollten so strukturiert sein, dass sie die wichtigsten
 Attribute des beschriebenen Objekttyps modellieren.
 
 Im Allgemeinen haben alle Informationsobjekte, unabhängig von ihrer
-physischen oder virtuellen Form, drei Merkmal: Inhalt, Kontext und
+physischen oder virtuellen Form, drei Merkmale: Inhalt, Kontext und
 Struktur. Sie alle sollten und können durch Metadaten wiedergegeben
 werden:
 
@@ -656,7 +659,7 @@ erhellen die Überlegungen, die hinter dieser Zweiteilung stehen.
 \subsubsection{1. Ein Metadatenobjekt mit einer zugeordneten
 Ressource}\label{ein-metadatenobjekt-mit-einer-zugeordneten-ressource}
 
-\includegraphics[width=2.85in,height=0.8in]{index_files/figure-latex/mermaid-figure-6.png}
+\includegraphics[width=2.77in,height=0.78in]{index_files/figure-latex/mermaid-figure-6.png}
 
 \textsubscript{Quelle:
 \href{https://maehr.github.io/diskriminierungsfreie-metadaten/index.qmd.html}{Artikel-Notizbuch}}
@@ -667,7 +670,7 @@ zugeordnete Ressource hat, nämlich ein Portrait.
 \subsubsection{2. Ein Metadatenobjekt mit drei zugeordneten Ressourcen
 (Triptychon)}\label{ein-metadatenobjekt-mit-drei-zugeordneten-ressourcen-triptychon}
 
-\includegraphics[width=3.3in,height=3.33in]{index_files/figure-latex/mermaid-figure-10.png}
+\includegraphics[width=3.21in,height=3.3in]{index_files/figure-latex/mermaid-figure-10.png}
 
 \textsubscript{Quelle:
 \href{https://maehr.github.io/diskriminierungsfreie-metadaten/index.qmd.html}{Artikel-Notizbuch}}
@@ -680,7 +683,7 @@ Triptychons.
 zugeordneten
 Ressourcen}\label{ein-metadatenobjekt-mit-drei-verschiedenen-zugeordneten-ressourcen}
 
-\includegraphics[width=3in,height=3.11in]{index_files/figure-latex/mermaid-figure-9.png}
+\includegraphics[width=2.96in,height=3.09in]{index_files/figure-latex/mermaid-figure-9.png}
 
 \textsubscript{Quelle:
 \href{https://maehr.github.io/diskriminierungsfreie-metadaten/index.qmd.html}{Artikel-Notizbuch}}
@@ -692,7 +695,7 @@ und Geodaten.
 \subsubsection{4. Zwei Metadatenobjekte mit derselben zugeordneten
 Ressource}\label{zwei-metadatenobjekte-mit-derselben-zugeordneten-ressource}
 
-\includegraphics[width=3.13in,height=1.79in]{index_files/figure-latex/mermaid-figure-8.png}
+\includegraphics[width=3.07in,height=1.75in]{index_files/figure-latex/mermaid-figure-8.png}
 
 \textsubscript{Quelle:
 \href{https://maehr.github.io/diskriminierungsfreie-metadaten/index.qmd.html}{Artikel-Notizbuch}}
@@ -769,52 +772,66 @@ Verweise können angegeben werden \\
 (Kinder)}\label{zugeordnete-ressourcen-kinder}
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0165}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0259}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0342}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2406}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.6792}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.0161}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.0254}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.0334}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.2353}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.6644}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.0208}}@{}}
 \toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Name}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Dublin Core}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Obligatorisch}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Verwendung}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Datenwertstandard}
-\end{minipage} \\
-\midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-MediaID & dcterms:identifier & Ja & Eine eindeutige Zeichenfolge ohne
-Leer- oder Sonderzeichen, die auf der Website als ID verwendet wird. &
-Zufällig generierte Nummern zwischen m000000 und m999999. \\
+\multirow{2}{=}{\begin{minipage}[t]{\linewidth}\raggedright
+\section{\texorpdfstring{\textbf{Name}}{Name}}\label{name}
+
+MediaID
+\end{minipage}} &
+\multirow{2}{=}{\begin{minipage}[t]{\linewidth}\raggedright
+\section{\texorpdfstring{\textbf{Dublin
+Core}}{Dublin Core}}\label{dublin-core}
+
+dcterms:identifier
+\end{minipage}} &
+\multirow{2}{=}{\begin{minipage}[t]{\linewidth}\raggedright
+\section{\texorpdfstring{\textbf{Obligatorisch}}{Obligatorisch}}\label{obligatorisch}
+
+Ja
+\end{minipage}} &
+\multirow{2}{=}{\begin{minipage}[t]{\linewidth}\raggedright
+\section{\texorpdfstring{\textbf{Verwendung}}{Verwendung}}\label{verwendung}
+
+Eine eindeutige Zeichenfolge ohne Leer- oder Sonderzeichen, die auf der
+Website als ID verwendet wird.
+\end{minipage}} &
+\multirow{2}{=}{\begin{minipage}[t]{\linewidth}\raggedright
+\section{\texorpdfstring{\textbf{Datenwertstandard}}{Datenwertstandard}}\label{datenwertstandard}
+
+Zufällig generierte Nummern zwischen m000000 und m999999.
+\end{minipage}} & \\
+& & & & & \\
 Is Part Of & dcterms:isPartOf & Ja & Eine verwandte Ressource, in der
 die beschriebene Ressource physisch oder logisch enthalten ist. &
 ObjectID (des Elternobjekts), DOI oder bibliografische Angaben (nach
-Infoclio Zitierstandard), mehrere Verweise können angegeben werden \\
+Infoclio Zitierstandard), mehrere Verweise können angegeben werden & \\
 Filename & & Ja & Der vollständige Pfad/URL einer (oder mehreren)
 Datei(en) inkl. der Dateierweiterung. & Keiner (Wenn möglich Übernahme
 der Pfade vom System zur Verwaltung der Metadaten und der Ressourcen,
-z.B. \href{https://omeka.org/}{Omeka}) \\
+z.B. \href{https://omeka.org/}{Omeka}) & \\
 Title & dcterms:title & Ja & Ein aussagekräftiger Name der Ressource. &
-Keiner (Wenn möglich Übernahme aus Originalkatalog) \\
+Keiner (Wenn möglich Übernahme aus Originalkatalog) & \\
 Subject & dcterms:subject & Ja & Die Schlagwörter der Ressource. &
 \href{https://opengenderplatform.de/schlagwortindex}{Schlagwortindex
 GenderOpen} Ein oder besser mehrere Schlagwörter, kommagetrennt. Für
-Werte siehe Anhang Kapitel~\ref{sec-Schlagwortindex-GenderOpen}. \\
+Werte siehe Anhang Kapitel~\ref{sec-Schlagwortindex-GenderOpen}. & \\
 Description & dcterms:description & Ja & Eine Beschreibung der
 Ressource. & Siehe Schritt-für-Schritt-Anleitung
-Kapitel~\ref{sec-Schritt-für-Schritt-Anleitung} \\
+Kapitel~\ref{sec-Schritt-für-Schritt-Anleitung} & \\
 Creator & dcterms:creator & Nein & Eine Entität (Autor*in), die in
 erster Linie für die Erstellung der Ressource verantwortlich ist. &
 Klarname und URL zu
 \href{https://www.wikidata.org/}{Wikidata.org}~(Laufend Werte sammeln
-und wenn möglich dieselben wiederverwenden) \\
+und wenn möglich dieselben wiederverwenden) & \\
 Publisher & dcterms:publisher & Ja & Eine Einrichtung, die für die
 Bereitstellung der Ressource verantwortlich ist. (Bei Büchern und
 Buchausschnitten ist eine Bibliothek anzugeben. Die bibliografische
@@ -848,181 +865,91 @@ Klarname und URL zu \href{https://www.wikidata.org/}{Wikidata.org}
     ...
   \end{itemize}
 \end{itemize}
-\end{minipage} \\
+\end{minipage} & \\
 Date & dcterms:date & Nein & Der Zeitpunkt oder Zeitraum der
 (geschätzten) Erstellung der Ressource. &
-\begin{minipage}[t]{\linewidth}\raggedright
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.6851} + 2\tabcolsep}@{}}{%
 \href{https://www.loc.gov/standards/datetime/}{Extended Date/Time Format
-(EDTF)}
-
-\begin{itemize}
-\item
-  2014-03-05
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Typisches vollständiges Datum, JJJJ-MM-TT, muss führende Nullen an
-    Monat und Tag enthalten
-  \end{itemize}
-\item
-  2014-03
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Nur für den Monat angegeben; "irgendwann im März 2014".
-  \end{itemize}
-\item
-  2014
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Nur für das Jahr angegeben; "irgendwann im Jahr 2014".
-  \end{itemize}
-\item
-  2014-21
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Jahreszeit (nördliche Hemisphäre): 21=Frühling, 22=Sommer,
-    23=Herbst, 24=Winter
-  \end{itemize}
-\item
-  2014\textasciitilde{}
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Ungefähres Datum: "Ungefähr 2014". Die genaue Interpretation von
-    "ungefähr" ist nicht spezifiziert, aber +/- 2 der genauesten
-    angegebenen Einheiten (in diesem Beispiel Jahre) ist eine
-    vernünftige Erwartung.
-  \end{itemize}
-\item
-  2014?
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Ungewisses Datum: "Vielleicht 2014." Die Alternative könnte alles
-    andere sein. Bitte gehe sparsam damit um, denn das "alles andere"
-    ist unerwünscht. Wenn eine Vorstellung von einem Bereich möglicher
-    Daten besteht, kann die Bereichsform verwendet werden.
-  \end{itemize}
-\item
-  {[}2012,2014{]}
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Eines der angegebenen Daten.
-  \end{itemize}
-\item
-  ~2XXX
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Unbestimmte Ziffer(n) von rechts: Das Zeichen "X" kann anstelle
-    einer oder mehrerer Ziffern ganz rechts verwendet werden, um
-    anzuzeigen, dass der Wert dieser Ziffer in den folgenden Fällen
-    nicht spezifiziert ist: Eine Jahreszahl mit einer oder zwei (ganz
-    rechts) nicht spezifizierten Ziffern in einem reinen Jahresausdruck
-    (Jahresgenauigkeit)
-  \end{itemize}
-\end{itemize}
-
-\begin{quote}
-Beispiel 1 \textquotesingle201X\textquotesingle{}\\
-Beispiel 2 \textquotesingle20XX\textquotesingle{}\\
-Jahr angegeben, Monat unspezifiziert in einem Jahr-Monat-Ausdruck
-(Monatsgenauigkeit)\\
-Beispiel 3 \textquotesingle2004-XX\textquotesingle{}\\
-Jahr und Monat werden angegeben, der Tag wird in einem
-Jahr-Monat-Tag-Ausdruck nicht angegeben (Tagesgenauigkeit)\\
-Beispiel 4 \textquotesingle1985-04-XX\textquotesingle{} ~ ~ ~ ~ ~ ~ ~~\\
-Jahr angegeben, Tag und Monat nicht angegeben in einem
-Jahr-Monat-Tag-Ausdruck (Tagesgenauigkeit)\\
-Beispiel 5 \textquotesingle1985-XX-XX\textquotesingle{}
-\end{quote}
-
-\begin{itemize}
-\item
-  {[}2014-01-03..2014-04-15{]}
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Bereich des ungewissen Datums: "Irgendwann zwischen dem 3. Januar
-    und dem 15. April 2014." Beachte, dass genau zwei Zeiträume zwischen
-    den Daten liegen. Dies ist die bevorzugte Form für unbestimmte
-    Daten, da sie für den Computer am einfachsten zu verarbeiten ist.
-    NICHT ein Intervall gültiger Daten ("im Zeitraum vom 3. Januar bis
-    15. April 2014"); das wird als separates Start- und Enddatum
-    eingegeben.
-  \end{itemize}
-\item
-  {[}..2014-04-15{]}
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Unbegrenzter Bereich mit ungewissem Datum: "Irgendwann vor dem 15.
-    April 2014". Wenn du also eine Vorstellung vom Beginn des
-    Zeitfensters hast, gib es bitte ein.
-  \end{itemize}
-\item
-  {[}2014-04-15..{]}
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Offener Bereich mit ungewissem Datum: "Irgendwann nach dem 15. April
-    2014". Das System interpretiert dies als einen Zeitpunkt zwischen
-    diesem Datum und heute. Wenn du also eine Vorstellung vom Ende des
-    Zeitfensters hast, gib es bitte ein.
-  \end{itemize}
-\item
-  unknown
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Das Datum ist völlig unbekannt, aber es ist bekannt, dass das
-    Ereignis an einem bestimmten Datum stattfindet. Wir wissen z.B.,
-    dass die Organisation eines Zweigs an einem bestimmten Tag
-    stattgefunden haben muss, aber wir haben keine Ahnung, wann dieser
-    Tag war. Bitte gehe sparsam damit um, denn das System kann daraus
-    nichts abschätzen; wenn du eine Vorstellung von einem bestimmten
-    Datum hast, verwende das Formular für den Zeitraum.
-  \end{itemize}
-\end{itemize}\strut
-\end{minipage} \\
+(EDTF)} \textbar{} \textbar{} - 2014-03-05 \textbar{} \textbar{} -
+Typisches vollständiges Datum, JJJJ-MM-TT, muss führende Nullen an Monat
+und Tag enthalten \textbar{} \textbar{} - 2014-03 \textbar{} \textbar{}
+- Nur für den Monat angegeben; "irgendwann im März 2014". \textbar{}
+\textbar{} - 2014 \textbar{} \textbar{} - Nur für das Jahr angegeben;
+"irgendwann im Jahr 2014". \textbar{} \textbar{} - 2014-21 \textbar{}
+\textbar{} - Jahreszeit (nördliche Hemisphäre): 21=Frühling, 22=Sommer,
+23=Herbst, 24=Winter \textbar{} \textbar{} - 2014\textasciitilde{}
+\textbar{} \textbar{} - Ungefähres Datum: "Ungefähr 2014". Die genaue
+Interpretation von "ungefähr" ist nicht spezifiziert, aber +/- 2 der
+genauesten angegebenen Einheiten (in diesem Beispiel Jahre) ist eine
+vernünftige Erwartung. \textbar{} \textbar{} - 2014? \textbar{}
+\textbar{} - Ungewisses Datum: "Vielleicht 2014." Die Alternative könnte
+alles andere sein. Damit sollte jedoch sparsam umgegangen werden, denn
+das "alles andere" ist unerwünscht. Wenn eine Vorstellung von einem
+Bereich möglicher Daten besteht, kann die Bereichsform verwendet werden.
+\textbar{} - {[}2012,2014{]} \textbar{} \textbar{} - Eines der
+angegebenen Daten. \textbar{} \textbar{} - ~2XXX \textbar{} \textbar{} -
+Unbestimmte Ziffer(n) von rechts: Das Zeichen "X" kann anstelle einer
+oder mehrerer Ziffern ganz rechts verwendet werden, um anzuzeigen, dass
+der Wert dieser Ziffer in den folgenden Fällen nicht spezifiziert ist:
+Eine Jahreszahl mit einer oder zwei (ganz rechts) nicht spezifizierten
+Ziffern in einem reinen Jahresausdruck (Jahresgenauigkeit) \textbar{}
+\textbar{} \textgreater{} Beispiel 1
+\textquotesingle201X\textquotesingle~ \textbar{} \textgreater{} Beispiel
+2 \textquotesingle20XX\textquotesingle~ \textbar{} \textgreater{} Jahr
+angegeben, Monat unspezifiziert in einem Jahr-Monat-Ausdruck
+(Monatsgenauigkeit)~ \textbar{} \textgreater{} Beispiel 3
+\textquotesingle2004-XX\textquotesingle~ \textbar{} \textgreater{} Jahr
+und Monat werden angegeben, der Tag wird in einem
+Jahr-Monat-Tag-Ausdruck nicht angegeben (Tagesgenauigkeit)~ \textbar{}
+\textgreater{} Beispiel 4 \textquotesingle1985-04-XX\textquotesingle{} ~
+~ ~ ~ ~ ~ ~~~ \textbar{} \textgreater{} Jahr angegeben, Tag und Monat
+nicht angegeben in einem Jahr-Monat-Tag-Ausdruck (Tagesgenauigkeit)~
+\textbar{} \textgreater{} Beispiel 5
+\textquotesingle1985-XX-XX\textquotesingle{} ~ \textbar{} \textbar{} -
+{[}2014-01-03..2014-04-15{]} \textbar{} \textbar{} - Bereich des
+ungewissen Datums: "Irgendwann zwischen dem 3. Januar und dem 15. April
+2014." Beachte, dass genau zwei Zeiträume zwischen den Daten liegen.
+Dies ist die bevorzugte Form für unbestimmte Daten, da sie für den
+Computer am einfachsten zu verarbeiten ist. NICHT ein Intervall gültiger
+Daten ("im Zeitraum vom 3. Januar bis 15. April 2014"); das wird als
+separates Start- und Enddatum eingegeben. \textbar{} \textbar{} -
+{[}..2014-04-15{]} \textbar{} \textbar{} - Unbegrenzter Bereich mit
+ungewissem Datum: "Irgendwann vor dem 15. April 2014". Wenn du also eine
+Vorstellung vom Beginn des Zeitfensters hast, gib es bitte ein.
+\textbar{} \textbar{} - {[}2014-04-15..{]} \textbar{} \textbar{} -
+Offener Bereich mit ungewissem Datum: "Irgendwann nach dem 15. April
+2014". Das System interpretiert dies als einen Zeitpunkt zwischen diesem
+Datum und heute. Wenn du also eine Vorstellung vom Ende des Zeitfensters
+hast, gib es bitte ein. \textbar{} \textbar{} - unknown \textbar{}
+\textbar{} - Das Datum ist völlig unbekannt, aber es ist bekannt, dass
+das Ereignis an einem bestimmten Datum stattfindet. Wir wissen z.B.,
+dass die Organisation eines Zweigs an einem bestimmten Tag stattgefunden
+haben muss, aber wir haben keine Ahnung, wann dieser Tag war. Bitte gehe
+sparsam damit um, denn das System kann daraus nichts abschätzen; wenn du
+eine Vorstellung von einem bestimmten Datum hast, verwende das Formular
+für den Zeitraum. \textbar{}} \\
 Era & dcterms:temporal & Ja & Epoche (Frühgeschichte, Antike,
 Mittelalter, Neuzeit, Zeitgeschichte) &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.6851} + 2\tabcolsep}@{}}{%
 \begin{minipage}[t]{\linewidth}\raggedright
 \begin{itemize}
+\tightlist
 \item
-  Ur- und Frühgeschichte
+  Ur- und Frühgeschichte \textbar{} \textbar{}
 \item
-  Römische Zeit und Spätantike
+  Römische Zeit und Spätantike \textbar{} \textbar{}
 \item
-  Mittelalter
+  Mittelalter \textbar{} \textbar{}
 \item
-  Neuzeit
+  Neuzeit \textbar{} \textbar{}
 \item
-  Zeitgeschichte
+  Zeitgeschichte \textbar{} \textbar{} Auf eine Spezifikation der
+  \href{https://www.dublincore.org/specifications/dublin-core/dcmi-period/}{Epochen
+  nach Dublin Core} wurde verzichtet, weil man sich zwischen den
+  verschiedenen Disziplinen nicht auf einheitliche Perioden einigen
+  konnte. \textbar{}
 \end{itemize}
-
-Auf eine Spezifikation der
-\href{https://www.dublincore.org/specifications/dublin-core/dcmi-period/}{Epochen
-nach Dublin Core} wurde verzichtet, weil man sich zwischen den
-verschiedenen Disziplinen nicht auf einheitliche Perioden einigen
-konnte. \textbar{}
-\end{minipage} \\
+\end{minipage}} \\
 Type & dcterms:type & Ja & Die Art oder das Genre der referenzierten
 Ressource im Archiv/Bibliothek etc.
 
@@ -1137,7 +1064,7 @@ Type Vocabulary}
     ist.
   \end{itemize}
 \end{itemize}
-\end{minipage} \\
+\end{minipage} & \\
 Format & dcterms:format & Ja & Das Dateiformat der Ressource.
 
 21535\_Plot\_OutputR-2.pdf & \begin{minipage}[t]{\linewidth}\raggedright
@@ -1210,107 +1137,64 @@ Format & dcterms:format & Ja & Das Dateiformat der Ressource.
     MP4-Videodateien.
   \end{itemize}
 \end{itemize}
-\end{minipage} \\
+\end{minipage} & \\
 Extent & dcterms:extent & Nein & Das physische Medium oder die
 Abmessungen der Ressource. & Breite und Höhe in Pixel (kann
-automatisiert aus der Bilddatei ausgelesen werden) \\
+automatisiert aus der Bilddatei ausgelesen werden) & \\
 Source & dcterms:source & Ja (ausser Abbildungen) & Ein eindeutiger
 Verweis auf die Ressource innerhalb eines bestimmten Kontexts. &
-Institutionenspezifisch (Wenn möglich Übernahme aus Originalkatalog) \\
+Institutionenspezifisch (Wenn möglich Übernahme aus Originalkatalog)
+& \\
 Language & dcterms:language & Nein & Eine Sprache der Ressource. &
 \href{https://www.loc.gov/standards/iso639-2/php/code_list.php}{ISO
-639-2} \\
+639-2} & \\
 Relation & dcterms:relation & Ja (ausser Privatsammlung) & Eine
-verwandte Ressource. & URL zum Originalkatalog \\
+verwandte Ressource. & URL zum Originalkatalog & \\
 Rights & dcterms:rights & Ja & Informationen über die Rechte an der
 Ressource. Achtung: Bei Fotografien ist die Fotograf:in ebenfalls hier
-anzugeben. & Keiner (Wenn möglich Übernahme aus Originalkatalog) \\
+anzugeben. & Keiner (Wenn möglich Übernahme aus Originalkatalog) & \\
 License & & Ja & URL zur Lizenz &
-\begin{minipage}[t]{\linewidth}\raggedright
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.6851} + 2\tabcolsep}@{}}{%
 \href{https://creativecommons.org/}{CreativeCommons.org} oder
-\href{https://rightsstatements.org/en/}{RightsStatements.org}
-
-\begin{itemize}
-\item
-  \url{https://creativecommons.org/publicdomain/mark/1.0/}
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Public Domain Mark (PDM)
-    \href{https://creativecommons.org/public-domain/freeworks/}{\emph{\ul{Free
-    Culture}}}
-  \end{itemize}
-\item
-  \url{https://creativecommons.org/publicdomain/zero/1.0/}
-
-  \begin{itemize}
-  \tightlist
-  \item
-    CC0
-    \href{https://creativecommons.org/public-domain/freeworks/}{\emph{\ul{Free
-    Culture}}}
-  \end{itemize}
-\item
-  \url{https://creativecommons.org/licenses/by/4.0/}
-
-  \begin{itemize}
-  \item
-    CC BY (Attribution)
-    \href{https://creativecommons.org/public-domain/freeworks/}{\emph{\ul{Free
-    Culture}}}
-  \item
-    Erlaubt anderen, das Werk zu verbreiten, zu remixen, zu verändern
-    und darauf aufzubauen, auch kommerziell, solange der Urheber genannt
-    wird.
-  \end{itemize}
-\item
-  \url{https://creativecommons.org/licenses/by-sa/4.0/}
-
-  \begin{itemize}
-  \item
-    CC BY-SA (Attribution-ShareAlike)
-    \href{https://creativecommons.org/public-domain/freeworks/}{\emph{\ul{Free
-    Culture}}}
-  \item
-    Erlaubt anderen, das Werk zu remixen, zu verändern und darauf
-    aufzubauen, auch kommerziell, solange das neue Werk unter der
-    gleichen Lizenz veröffentlicht wird.
-  \end{itemize}
-\item
-  \url{https://creativecommons.org/licenses/by-nc-sa/4.0/}
-
-  \begin{itemize}
-  \item
-    CC BY-NC-SA (Attribution-NonCommercial-ShareAlike)
-  \item
-    Erlaubt anderen, das Werk zu bearbeiten, solange es nicht
-    kommerziell genutzt wird und unter denselben Bedingungen
-    weitergegeben wird.
-  \end{itemize}
-\item
-  \url{http://rightsstatements.org/vocab/InC/1.0/}
-
-  \begin{itemize}
-  \tightlist
-  \item
-    In Copyright. Das Werk ist urheberrechtlich geschützt.
-  \end{itemize}
-\end{itemize}
-
-\texttt{\{=html\}\ \ \textless{}!-\/-\ -\/-\textgreater{}} \textbar{} -
-\url{http://rightsstatements.org/vocab/InC-RUU/1.0/}
-
-\begin{verbatim}
- -   In Copyright - Rights-holder(s) unlocatable or unidentifiable
-\end{verbatim}
-\end{minipage} \\
+\href{https://rightsstatements.org/en/}{RightsStatements.org} \textbar{}
+\textbar{} - \url{https://creativecommons.org/publicdomain/mark/1.0/}
+\textbar{} \textbar{} - Public Domain Mark (PDM)
+\href{https://creativecommons.org/public-domain/freeworks/}{\emph{\ul{Free
+Culture}}} \textbar{} \textbar{} -
+\url{https://creativecommons.org/publicdomain/zero/1.0/} \textbar{}
+\textbar{} - CC0
+\href{https://creativecommons.org/public-domain/freeworks/}{\emph{\ul{Free
+Culture}}} \textbar{} \textbar{} -
+\url{https://creativecommons.org/licenses/by/4.0/} \textbar{} \textbar{}
+- CC BY (Attribution)
+\href{https://creativecommons.org/public-domain/freeworks/}{\emph{\ul{Free
+Culture}}} \textbar{} \textbar{} - Erlaubt anderen, das Werk zu
+verbreiten, zu remixen, zu verändern und darauf aufzubauen, auch
+kommerziell, solange der Urheber genannt wird. \textbar{} \textbar{} -
+\url{https://creativecommons.org/licenses/by-sa/4.0/} \textbar{}
+\textbar{} - CC BY-SA (Attribution-ShareAlike)
+\href{https://creativecommons.org/public-domain/freeworks/}{\emph{\ul{Free
+Culture}}} \textbar{} \textbar{} - Erlaubt anderen, das Werk zu remixen,
+zu verändern und darauf aufzubauen, auch kommerziell, solange das neue
+Werk unter der gleichen Lizenz veröffentlicht wird. \textbar{}
+\textbar{} - \url{https://creativecommons.org/licenses/by-nc-sa/4.0/}
+\textbar{} \textbar{} - CC BY-NC-SA
+(Attribution-NonCommercial-ShareAlike) \textbar{} \textbar{} - Erlaubt
+anderen, das Werk zu bearbeiten, solange es nicht kommerziell genutzt
+wird und unter denselben Bedingungen weitergegeben wird. \textbar{}
+\textbar{} - \url{http://rightsstatements.org/vocab/InC/1.0/} \textbar{}
+\textbar{} - In Copyright. Das Werk ist urheberrechtlich geschützt.
+\textbar{} \textbar{}
+\texttt{\{=html\}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textbar{}\ \ \textless{}!-\/-\ -\/-\textgreater{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textbar{}}
+\textbar{} - \url{http://rightsstatements.org/vocab/InC-RUU/1.0/}
+\textbar{} \textbar{} - In Copyright - Rights-holder(s) unlocatable or
+unidentifiable \textbar{}} \\
 \end{longtable}
 
 \subsection{Relation von Objekt und
 Media}\label{relation-von-objekt-und-media}
 
-\includegraphics[width=6.62in,height=7.23in]{index_files/figure-latex/mermaid-figure-7.png}
+\includegraphics[width=6.57in,height=6.99in]{index_files/figure-latex/mermaid-figure-7.png}
 
 \textsubscript{Quelle:
 \href{https://maehr.github.io/diskriminierungsfreie-metadaten/index.qmd.html}{Artikel-Notizbuch}}
@@ -1371,7 +1255,7 @@ sein können. Die grundlegenden Unterschiede sind:
   die digitalen Aspekte erfasst werden.
 \end{itemize}
 
-\begin{tcolorbox}[enhanced jigsaw, opacityback=0, toprule=.15mm, colframe=quarto-callout-tip-color-frame, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, rightrule=.15mm, breakable, bottomtitle=1mm, toptitle=1mm, left=2mm, opacitybacktitle=0.6, leftrule=.75mm, colbacktitle=quarto-callout-tip-color!10!white, titlerule=0mm, coltitle=black, arc=.35mm, bottomrule=.15mm, colback=white]
+\begin{tcolorbox}[enhanced jigsaw, titlerule=0mm, toprule=.15mm, opacitybacktitle=0.6, left=2mm, bottomtitle=1mm, colframe=quarto-callout-tip-color-frame, toptitle=1mm, coltitle=black, opacityback=0, colback=white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, breakable, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 
 Bei den Ressourcen der Stadt.Geschichte.Basel handelt es sich vorwiegend
 um digitale Darstellungen physischer Objekte sowie um digitale Objekte.
@@ -1392,7 +1276,7 @@ von Diskriminierungserfahrungen betroffen sein. Das muss berücksichtigt
 werden. Durch die Kenntnis der Zielgruppe können die Metadaten
 spezifisch auf die Bedürfnisse der Benutzer*innen angepasst werden.
 
-\begin{tcolorbox}[enhanced jigsaw, opacityback=0, toprule=.15mm, colframe=quarto-callout-tip-color-frame, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, rightrule=.15mm, breakable, bottomtitle=1mm, toptitle=1mm, left=2mm, opacitybacktitle=0.6, leftrule=.75mm, colbacktitle=quarto-callout-tip-color!10!white, titlerule=0mm, coltitle=black, arc=.35mm, bottomrule=.15mm, colback=white]
+\begin{tcolorbox}[enhanced jigsaw, titlerule=0mm, toprule=.15mm, opacitybacktitle=0.6, left=2mm, bottomtitle=1mm, colframe=quarto-callout-tip-color-frame, toptitle=1mm, coltitle=black, opacityback=0, colback=white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, breakable, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 
 Die Hauptzielgruppe umfasst Forschende und Studierende, die nebst
 technischen Informationen auch Metadaten benötigen, die ihnen dabei
@@ -1412,7 +1296,7 @@ berücksichtigen. Beispielsweise können unvollständige oder beschädigte
 Informationen, wie beispielsweise verblasste Beschriftungen, die
 Identifizierung physischer Objekte erschweren.
 
-\begin{tcolorbox}[enhanced jigsaw, opacityback=0, toprule=.15mm, colframe=quarto-callout-tip-color-frame, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, rightrule=.15mm, breakable, bottomtitle=1mm, toptitle=1mm, left=2mm, opacitybacktitle=0.6, leftrule=.75mm, colbacktitle=quarto-callout-tip-color!10!white, titlerule=0mm, coltitle=black, arc=.35mm, bottomrule=.15mm, colback=white]
+\begin{tcolorbox}[enhanced jigsaw, titlerule=0mm, toprule=.15mm, opacitybacktitle=0.6, left=2mm, bottomtitle=1mm, colframe=quarto-callout-tip-color-frame, toptitle=1mm, coltitle=black, opacityback=0, colback=white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, breakable, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 
 Stadt.Geschichte.Basel war bei der Identifikation der Informationen für
 die Ressourcen mit folgenden Schwierigkeiten konfrontiert: Insbesondere
@@ -1436,15 +1320,15 @@ sichergestellt, dass die Ressource nicht isoliert betrachtet, sondern in
 einen grösseren historischen, sozialen und politischen Kontext gestellt
 wird.
 
-\begin{tcolorbox}[enhanced jigsaw, opacityback=0, toprule=.15mm, colframe=quarto-callout-tip-color-frame, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, rightrule=.15mm, breakable, bottomtitle=1mm, toptitle=1mm, left=2mm, opacitybacktitle=0.6, leftrule=.75mm, colbacktitle=quarto-callout-tip-color!10!white, titlerule=0mm, coltitle=black, arc=.35mm, bottomrule=.15mm, colback=white]
+\begin{tcolorbox}[enhanced jigsaw, titlerule=0mm, toprule=.15mm, opacitybacktitle=0.6, left=2mm, bottomtitle=1mm, colframe=quarto-callout-tip-color-frame, toptitle=1mm, coltitle=black, opacityback=0, colback=white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, breakable, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 
 Stadt.Geschichte.Basel legt besonderen Wert auf die Kontextualisierung,
 um nicht unkritisch Diskriminierung in einzelnen Ressourcen zu
 reproduzieren. Für die Recherche stützt sich Stadt.Geschichte.Basel
 unter anderem auf Informationen aus den Bänden des Projekts sowie auf
-historische Nachschlagewerke wie dem
+historische Nachschlagewerke wie das
 \href{https://www.baslerstadtbuch.ch/home.html}{Basler Stadtbuch} oder
-dem \href{https://hls-dhs-dss.ch/}{Historische Lexikon der Schweiz}. Um
+das \href{https://hls-dhs-dss.ch/}{Historische Lexikon der Schweiz}. Um
 eine weiterführende Recherche zu ermöglichen und zu erleichtern, sind
 die entsprechenden Nachschlagewerke im Fliesstext der
 Quellenbeschreibung direkt verlinkt.
@@ -1460,8 +1344,8 @@ werden die Schritte zur Kontextualisierung einer Quelle ausgeführt.
 
 Im Zeitraum zwischen 1879 und 1935 fanden im Basler Zoo 21 sogenannte
 ``\href{https://www.baslerstadtbuch.ch/stadtbuch/1992/1992_2247.html}{Völkerschauen''
-(Achtung Link führt zu diskriminierenden Bildern)} - heute auch
-Menschenzoos genannt - statt, in denen Menschen aus verschiedenen
+(Achtung Link führt zu diskriminierenden Bildern)} --- heute auch
+Menschenzoos genannt --- statt, in denen Menschen aus verschiedenen
 Kulturen ausgestellt wurden. Schweizweit fanden solche Schauen bis ins
 Jahr 1964 statt. Bei diesen Veranstaltungen wurden Menschen entweder in
 festen Einrichtungen, mobilen Zoos oder sogar in Zirkusvorführungen zur
@@ -1485,10 +1369,10 @@ Einige der Bilder, die einst dazu gedient haben sollen, die
 Unterdrückung oder vermeintliche "Rettung" und den "Schutz vor sich
 selbst" bestimmter "primitiver und unzivilisierter Völker" zu
 rechtfertigen, bestehen teilweise noch bis heute und manifestieren sich
-in unterschiedlichen Formen von Diskriminierung
+in unterschiedlichen Formen von Diskriminierung.
 
 In die Beschreibung~der Reproduktion des Plakates "Völkerschau in Basel
-1926" (siehe Beispiel 2)~sind folgende Überlegungen eingeflossen
+1926" (siehe Beispiel 2)~sind folgende Überlegungen eingeflossen:
 
 \paragraph{Entstehungskontext der
 Ressource}\label{entstehungskontext-der-ressource}
@@ -1565,7 +1449,7 @@ Objektgeschichte oder Sammlungsgeschichte nicht unwichtig, aus welcher
 Perspektive das Objekt rezipiert wurde und aus welcher Motivation das
 Objekt gesammelt wurde.
 
-\begin{tcolorbox}[enhanced jigsaw, opacityback=0, toprule=.15mm, colframe=quarto-callout-tip-color-frame, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, rightrule=.15mm, breakable, bottomtitle=1mm, toptitle=1mm, left=2mm, opacitybacktitle=0.6, leftrule=.75mm, colbacktitle=quarto-callout-tip-color!10!white, titlerule=0mm, coltitle=black, arc=.35mm, bottomrule=.15mm, colback=white]
+\begin{tcolorbox}[enhanced jigsaw, titlerule=0mm, toprule=.15mm, opacitybacktitle=0.6, left=2mm, bottomtitle=1mm, colframe=quarto-callout-tip-color-frame, toptitle=1mm, coltitle=black, opacityback=0, colback=white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, breakable, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 
 Das Projekt hat sich für die Methode der ``Titelkontextualisierung''
 entschieden - unter anderem wegen der besseren Durchsuchbarkeit auf der
@@ -1586,7 +1470,7 @@ veröffentlicht werden. Wichtig ist hierbei zu beachten, dass bei Open
 Data Plattformen nicht immer kontrolliert werden kann, wer und wie die
 Metadaten verwendet werden.
 
-\begin{tcolorbox}[enhanced jigsaw, opacityback=0, toprule=.15mm, colframe=quarto-callout-tip-color-frame, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, rightrule=.15mm, breakable, bottomtitle=1mm, toptitle=1mm, left=2mm, opacitybacktitle=0.6, leftrule=.75mm, colbacktitle=quarto-callout-tip-color!10!white, titlerule=0mm, coltitle=black, arc=.35mm, bottomrule=.15mm, colback=white]
+\begin{tcolorbox}[enhanced jigsaw, titlerule=0mm, toprule=.15mm, opacitybacktitle=0.6, left=2mm, bottomtitle=1mm, colframe=quarto-callout-tip-color-frame, toptitle=1mm, coltitle=black, opacityback=0, colback=white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, breakable, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 
 Stadt.Geschichte.Basel betreibt eine Forschungsdatenplattform.~Diese
 wird als zentrales Repositorium dienen, in dem alle Forschungsressourcen
@@ -1654,11 +1538,11 @@ begonnen wird, kann es hilfreich sein, diejenigen Informationen
 aufzulisten, die als Datenpunkte aufgenommen werden sollen. Das können
 beispielsweise Titel, Thema, Zugriffsrechte, usw. sein. Wenn zum
 Beispiel Bilder auf einer Karte überlagert werden sollen, müssen
-Koordinatendaten aufgenommen werden. Die Erstellung der Metadatenliste
-erfolgt schrittweise und parallel zur Annotation der einzelnen
-Ressourcen. Es kann sein, dass während der Quellenannotationen einige
-Datenpunkte wieder verworfen werden müssen, da sie für die Gesamtheit
-der Ressourcen nicht erhoben werden können.
+Koordinatendaten aufgenommen werden. Die Erstellung der Liste der
+Metadatenfelder erfolgt schrittweise und parallel zur Annotation der
+einzelnen Ressourcen. Es kann sein, dass während der Quellenannotationen
+einige Datenpunkte wieder verworfen werden müssen, da sie für die
+Gesamtheit der Ressourcen nicht erhoben werden können.
 
 Während die einzelnen Ressourcen annotiert werden, muss entschieden
 werden, ob bestehende Metadatenschemas wie das Dublin Core Metadata
@@ -1668,7 +1552,7 @@ durch einzelne Elemente hat gegenüber der Erstellung eines eigenen
 Schemas mehrere Vorteile. So werden etwa Kosten und Aufwand gespart, die
 Schemas sind benutzerfreundlich und interoperabel.
 
-\begin{tcolorbox}[enhanced jigsaw, opacityback=0, toprule=.15mm, colframe=quarto-callout-tip-color-frame, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, rightrule=.15mm, breakable, bottomtitle=1mm, toptitle=1mm, left=2mm, opacitybacktitle=0.6, leftrule=.75mm, colbacktitle=quarto-callout-tip-color!10!white, titlerule=0mm, coltitle=black, arc=.35mm, bottomrule=.15mm, colback=white]
+\begin{tcolorbox}[enhanced jigsaw, titlerule=0mm, toprule=.15mm, opacitybacktitle=0.6, left=2mm, bottomtitle=1mm, colframe=quarto-callout-tip-color-frame, toptitle=1mm, coltitle=black, opacityback=0, colback=white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, breakable, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 
 Beim Erstellen der Metadatenliste hat sich gezeigt, dass die Übernahme
 der Standardfelder von Dublin Core eine gute Grundlage für die weitere
@@ -1725,7 +1609,7 @@ Quellenlage zu erstellen. Ziel dabei ist es, eine ungefähre Vorstellung
 Erfahrungswerten kann abgeschätzt werden, wie viel Aufwand für die
 einzelnen Quellen benötigt wird.
 
-\begin{tcolorbox}[enhanced jigsaw, opacityback=0, toprule=.15mm, colframe=quarto-callout-tip-color-frame, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, rightrule=.15mm, breakable, bottomtitle=1mm, toptitle=1mm, left=2mm, opacitybacktitle=0.6, leftrule=.75mm, colbacktitle=quarto-callout-tip-color!10!white, titlerule=0mm, coltitle=black, arc=.35mm, bottomrule=.15mm, colback=white]
+\begin{tcolorbox}[enhanced jigsaw, titlerule=0mm, toprule=.15mm, opacitybacktitle=0.6, left=2mm, bottomtitle=1mm, colframe=quarto-callout-tip-color-frame, toptitle=1mm, coltitle=black, opacityback=0, colback=white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, breakable, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 
 Es kann hilfreich sein, von den vorhandenen Informationen aus den
 Gedächtnisinstitutionen auszugehen und dann die weiter oben
@@ -1772,7 +1656,7 @@ beispielsweise ein themenspezifisches Vokabular oder eine kontrollierte
 Liste von Namen. Wichtig ist die Dokumentation der Entscheidung und der
 Vokabulare.
 
-\begin{tcolorbox}[enhanced jigsaw, opacityback=0, toprule=.15mm, colframe=quarto-callout-tip-color-frame, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, rightrule=.15mm, breakable, bottomtitle=1mm, toptitle=1mm, left=2mm, opacitybacktitle=0.6, leftrule=.75mm, colbacktitle=quarto-callout-tip-color!10!white, titlerule=0mm, coltitle=black, arc=.35mm, bottomrule=.15mm, colback=white]
+\begin{tcolorbox}[enhanced jigsaw, titlerule=0mm, toprule=.15mm, opacitybacktitle=0.6, left=2mm, bottomtitle=1mm, colframe=quarto-callout-tip-color-frame, toptitle=1mm, coltitle=black, opacityback=0, colback=white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, breakable, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 
 Im Falle des Feldes "Subject" hat Stadt.Geschichte.Basel den
 Schlagwortindex GenderOpen als kontrolliertes Vokabular gewählt, um die
@@ -2109,51 +1993,57 @@ License & \url{https://creativecommons.org/publicdomain/mark/1.0/} \\
 \end{figure}%
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0158}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9842}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.0158}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.9820}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.0011}}@{}}
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 \textbf{Feldname}
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 \textbf{Wert}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 \end{minipage} \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-Id & m13410 \\
-Title & Zeitungsinserat in der National-Zeitung, 1955 \\
+Id & m13410 & \\
+Title & Zeitungsinserat in der National-Zeitung, 1955 & \\
 Subject & Bildung, Biologismus, Rassismus, Ableismus, Ehe, Patriarchat,
-Sexismus, Sexualität, Familie, Familienbild, Familienform, Presse \\
-Description & Seit 1933 wurde eine Ehe- und Sexualberatungsstelle vom
-Gesundheitsamt Basel-Stadt eingerichtet. Neben individuellen
-Sprechstunden wurden auch Ehekurse für Verlobte und Neuverheiratete
-angeboten. In diesen Kursen wurden die Teilnehmenden in Bereichen wie
-Medizin, Hygiene, Psychologie und Recht geschult. Die Gründung der
-Beratungsstelle hatte eugenische Motiv. Die Absicht bestand darin, nicht
-nur über Verhütung aufzuklären, sondern auch Eheanwärter*innen~in
-zeitgenössischer Vererbungslehre zu informieren. Solche eugenischen
-Ansätze gingen auch von leitenden Ärzten der Basler Psychiatrie aus. Sie
-beeinflussten auch die gesetzlichen Bestimmungen des Schweizerischen
-Zivilgesetzbuches über die Eheschliessung von "Geisteskranken" und die
-Appelle in der Eheberatung, insbesondere zu Themen wie Sterilisation,
-Abtreibung, Einbürgerung, Ausweisung und Rückführung. \\
+Sexismus, Sexualität, Familie, Familienbild, Familienform, Presse & \\
+Description &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.9831} + 2\tabcolsep}@{}}{%
+Seit 1933 wurde eine Ehe- und Sexualberatungsstelle vom Gesundheitsamt
+Basel-Stadt eingerichtet. Neben individuellen Sprechstunden wurden auch
+Ehekurse für Verlobte und Neuverheiratete angeboten. In diesen Kursen
+wurden die Teilnehmenden in Bereichen wie Medizin, Hygiene, Psychologie
+und Recht geschult. Die Gründung der Beratungsstelle hatte eugenische
+Motive. Die Absicht bestand darin, nicht nur über Verhütung aufzuklären,
+sondern auch Eheanwärter*innen~in zeitgenössischer Vererbungslehre zu
+informieren. Solche eugenischen Ansätze gingen auch von leitenden Ärzten
+der Basler Psychiatrie aus. Sie beeinflussten auch die gesetzlichen
+Bestimmungen des Schweizerischen Zivilgesetzbuches über die
+Eheschliessung von "Geisteskranken" und die Appelle in der Eheberatung,
+insbesondere zu Themen wie Sterilisation, Abtreibung, Einbürgerung,
+Ausweisung und Rückführung.} \\
 Creator & Gesundheitsamt Basel-Stadt
-\href{https://www.wikidata.org/wiki/Q33121140}{Q33121140} \\
+\href{https://www.wikidata.org/wiki/Q33121140}{Q33121140} & \\
 Publisher &
-StaBS~\href{https://www.wikidata.org/wiki/Q2324698}{Q2324698} \\
-Date & 1955 \\
-Temporal & Zeitgeschichte \\
-Type & Text \\
-Format & image/tiff \\
-Extent & 7508 x 7785 \\
-Source & StaBS, SD-REG 5a 0.21.0 (1) 2 \\
-Language & Deutsch \\
-Relation & \url{https://dls.staatsarchiv.bs.ch/records/373373} \\
+StaBS~\href{https://www.wikidata.org/wiki/Q2324698}{Q2324698} & \\
+Date & 1955 & \\
+Temporal & Zeitgeschichte & \\
+Type & Text & \\
+Format & image/tiff & \\
+Extent & 7508 x 7785 & \\
+Source & StaBS, SD-REG 5a 0.21.0 (1) 2 & \\
+Language & Deutsch & \\
+Relation & \url{https://dls.staatsarchiv.bs.ch/records/373373} & \\
 Rights & In Copyright
 
-StABS, SD-REG 5a 0.21.0 (1) 2 \\
-License & \url{http://rightsstatements.org/vocab/InC/1.0/} \textbar{} \\
+StABS, SD-REG 5a 0.21.0 (1) 2 & \\
+License &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.9831} + 2\tabcolsep}@{}}{%
+\url{http://rightsstatements.org/vocab/InC/1.0/} \textbar{}} \\
 \end{longtable}
 
 \subsection{Die ausländische Wohnbevölkerung von Basel-Stadt nach
@@ -2369,7 +2259,11 @@ anderem Lebensbilder angefertigt. Lebensbilder dienen dazu, die
 Lebensumstände der ur- und frühzeitlichen Menschen zu rekonstruieren.
 Sie werden in diesem Handbuch ebenfalls thematisiert, da sie wie
 historische Quellen Diskriminierung und Stereotypisierungen enthalten
-können. Diskurse zur Darstellung von sozialen Strukturen und
+können. So wird beispielsweise auf Lebensbildern oftmals das Bild einer
+Kernfamilie dargestellt. Diese Kernfamilie entspricht dem heutigen
+stereotypen Familienideal, das aus Vater, Mutter und zwei Kindern
+besteht. Zudem sind Kinder auf Lebensbildern grundsätzlich
+unterrepräsentiert. Diskurse zur Darstellung von sozialen Strukturen und
 Verhältnissen auf Lebensbildern fanden in der Archäologie erst ab den
 2000er-Jahren statt. Reflexionsprozesse sind deshalb wichtig, weil
 Lebensbilder dazu beitragen, ein "Bild von Verhältnissen, die schon
@@ -2423,16 +2317,19 @@ geleitet und massgeblich begleitet. Frauen dagegen werden als passive
 Beobachterinnen dargestellt, die in der gezeigten Handlung keine aktive
 Rolle spielen. \\
 Creator & Landesamt für Denkmalpflege im Regierungspräsidium Stuttgart
-Q28738904, Samson Götze \\
+\href{https://www.wikidata.org/wiki/Q28738904}{Q28738904}, Samson
+Götze \\
 Publisher & Landesamt für Denkmalpflege im Regierungspräsidium Stuttgart
-Q28738904, Samson Götze \\
+\href{https://www.wikidata.org/wiki/Q28738904}{Q28738904}, Samson
+Götze \\
 Date & \\
 Era & Frühgeschichte \\
 Type & Image \\
 Format & image/jpeg \\
 Extent & 703 x 1000 \\
-Source & Landesamt für Denkmalpflege im Regierungspräsidium
-Stuttgart/Samson Götze \\
+Source & Landesamt für Denkmalpflege im Regierungspräsidium Stuttgart
+\href{https://www.wikidata.org/wiki/Q28738904}{Q28738904}/Samson
+Götze \\
 Language & \\
 Relation &
 \url{https://www.archaeologie-an-der-oberen-donau.de/forschungsprojekte/dfg-langfristprojekt/graeber/unlingen} \\
@@ -2479,8 +2376,10 @@ materielle Kultur (u. a. Werkzeuge und Kunstgegenstände) wird primär von
 Männern hergestellt. Obwohl die Zeichnung von Carl Arriens sehr alt ist
 (sie entstand um 1900), finden sich ähnliche Szenarien bis weit in die
 1990er Jahre. \\
-Creator & Carl Ariens Q15451450 \\
-Publisher & \\
+Creator & Carl Ariens {[}Q15451450{]}
+(https://www.wikidata.org/wiki/Q15451450) \\
+Publisher & Universitätsbibliothek Heidelberg
+\href{https://www.wikidata.org/wiki/Q880794}{Q880794} \\
 Date & 1927 \\
 Era & Frühgeschichte \\
 Type & Image \\
@@ -2488,7 +2387,7 @@ Format & image/jpeg \\
 Extent & 842 x 586 \\
 Source & Inv. Nr. S 1985/2364 \\
 Language & \\
-Relation & \url{https://archiv.ub.uni-heidelberg.de/artdok/8148/} \\
+Relation & \textless10.11588/artdok.00008148\textgreater{} \\
 Rights & CC BY-SA 4.0 DEED \\
 License &
 \url{https://creativecommons.org/licenses/by-sa/4.0/deed.de} \\
@@ -2539,16 +2438,19 @@ von Menschen aus archäologischen Kontexten mit körperlicher oder
 geistiger Behinderung in Lebensbildern, obwohl diese über
 anthropologische oder genetische Analysen eindeutig belegt sind. \\
 Creator & Landesamt für Denkmalpflege und Archäologie Sachsen-Anhalt
-Q1802049, Karol Schauer \\
+\href{https://www.wikidata.org/wiki/Q1802049}{Q1802049}, Karol
+Schauer \\
 Publisher & Landesamt für Denkmalpflege und Archäologie Sachsen-Anhalt
-Q1802049, Karol Schauer \\
+\href{https://www.wikidata.org/wiki/Q1802049}{Q1802049}, Karol
+Schauer \\
 Date & \\
 Era & Frühgeschichte \\
 Type & Image \\
 Format & image/jpeg \\
 Extent & 551 x 670 \\
 Source & Landesamt für Denkmalpflege und Archäologie Sachsen-Anhalt
-Q1802049, Karol Schauer \\
+\href{https://www.wikidata.org/wiki/Q1802049}{Q1802049}, Karol
+Schauer \\
 Language & \\
 Relation &
 \url{https://www.landesmuseum-vorgeschichte.de/dauerausstellung/menschenwechsel/die-schamanin-von-bad-duerrenberg.html} \\
@@ -2556,43 +2458,6 @@ Rights & Karol Schauer \\
 License &
 \url{https://rightsstatements.org/page/InC-RUU/1.0/?language=de} \\
 \end{longtable}
-
-Es lassen sich noch weitere Punkte zu Verhältnissen auflisten, die
-entweder in Lebensbildern fehlen oder problematisch dargestellt
-werden:~~
-
-\begin{itemize}
-\item
-  Auf Lebensbildern wird oftmals das Bild einer Kernfamilie dargestellt.
-  Diese Kernfamilie entspricht dem heutigen stereotypen Familienideal,
-  das aus Vater, Mutter und zwei Kindern besteht. Zudem sind Kinder auf
-  Lebensbildern grundsätzlich unterrepräsentiert. Wenn sie wie im
-  folgenden Beispiel vorhanden sind, nehmen sie die Rolle von
-  Statist*innen ein. Sie spielen, essen oder beobachten die Arbeiten der
-  Erwachsenen.
-\item
-  Gemäss den Lebensbildern gibt es in der Vergangenheit keine
-  gleichgeschlechtlichen Beziehungen beziehungsweise Beziehungen sind
-  heterosexuell-monogam, im Idealfall entspricht sie der Ehe. Es gibt
-  nur die beiden biologischen Geschlechter ``Mann'' und ``Frau'' und
-  keine sozialen Geschlechter sowie keine intersexuellen Individuen,
-  obschon es all dies gab.
-\item
-  Lebensbilder suggerieren den Eindruck, dass Menschen seit dem
-  Paläolothikum hellhäutig waren, was nicht stimmt. Noch bis weit ins
-  Mesolithikum hinein behielten die Menschen auf dem europäischen
-  Kontinent die dunkel pigmentierte Hautfarbe des afrikanischen
-  Kontinents, von wo aus sie eingewandert waren.
-\item
-  Menschen in der Ur- und Frühgeschichte werden in vielen Lebensbildern
-  normal- beziehungsweise~idealgewichtig dargestellt, obwohl sowohl
-  anthropologische Untersuchungen als auch Trachtbestandteile wie sehr
-  breite Gürtel dieses Bild widerlegen.
-\item
-  Menschen werden physisch und kognitiv unbeeinträchtigt dargestellt.
-  Diese Realität widerlegen anthropologische und genetische
-  Untersuchungen.
-\end{itemize}
 
 \subsubsection{Positive Beispiele von
 Lebensbildern}\label{positive-beispiele-von-lebensbildern}
@@ -2953,10 +2818,10 @@ Dienstleistungssektor & =EQ & Dienstleistungssektor & 4012183-5 & \\
 Digitalisierung & =EQ & Digitalisierung & 4123065-6 & \\
 Diskriminierung & =EQ & Diskriminierung & 4012472-1 & \\
 Diskurs & =EQ & Diskurs & 300471955 & \\
-Disziplinarität & & Not found & NOt found & \\
+Disziplinarität & & Not Found & Not Found & \\
 Diversität & RM & Heterogenität & 4201275-2 & Heterogenität \\
 Diversity Management & =EQ & Diversity Management & 7611361-9 & \\
-Doing Gender & & Not found & Not found & \\
+Doing Gender & & Not Found & Not Found & \\
 Drag & =EQ & Drag & 1176239244 & \\
 Ehe & =EQ & Ehe & 4013630-9 & \\
 Ehegattensplitting & =EQ & Ehegattensplitting & 7503178-4 & \\
@@ -2971,7 +2836,7 @@ Entwicklungszusammenarbeit & =EQ & Entwicklungszusammenarbeit &
 4198756-1 & \\
 Epistemologie & BM & Genetische Epistemologie & 4135354-7 & \\
 Erfahrung & =EQ & Erfahrung & 1239135211 & \\
-Erinnerungskultur & & Not found & not found & \\
+Erinnerungskultur & & Not Found & Not Found & \\
 Ernährung & =EQ & Ernährung & 4015332-0 & \\
 Erotik & =EQ & Erotik & 4015369-1 & \\
 Erwachsenenbildung & =EQ & Erwachsenenbildung & 4015428-2 & \\
@@ -2990,32 +2855,32 @@ Eurozentrismus & =EQ & Eurozentrismus & 4200132-8 & \\
 Exil & =EQ & Exil & 1026311314 & \\
 Familie & =EQ & Familie & 123631333X & \\
 Familienbild & =EQ & Familienbild & 1103153382 & \\
-Familienform & & not found & not found & \\
+Familienform & & Not Found & Not Found & \\
 Familienpolitik & =EQ & Familienpolitik & 4016418-4 & \\
 Faschismus & =EQ & Faschismus & 4016494-9 & \\
-Female Genital Cutting & & not found & not found & \\
-Female Genital Mutilation & & not found & not found & \\
+Female Genital Cutting & & Not Found & Not Found & \\
+Female Genital Mutilation & & Not Found & Not Found & \\
 Feminisierung & =EQ & Feminisierung & 4397368-1 & \\
 Feminismus & =EQ & Feminismus & 4222126-2 & \\
-Faschismus & & not found & not found & \\
+Faschismus & & Not Found & Not Found & \\
 Film & =EQ & Film & 4017102-4 & \\
 Flucht & =EQ & Flucht & 1274267641 & \\
 Frauen & =EQ & Frauen & 1142536149 & \\
-Frauen in Führungspositionen & & not found & not found & \\
+Frauen in Führungspositionen & & Not Found & Not Found & \\
 Frauenanteil & NM & Geschlechterverhältnis & 4243608-4 &
 Geschlechterverhältnis  \\
-Frauenbeauftragte & & not found & not found & \\
+Frauenbeauftragte & & Not Found & Not Found & \\
 Frauenberuf & =EQ & Frauenberuf & 1201699207 & \\
 Frauenbewegung & =EQ & Frauenbewegung & 4071428-7 & \\
 Frauenbild & =EQ & Frauenbild & 4125057-6 & \\
 Frauenfeindlichkeit & =EQ & Frauenfeindlichkeit & 4155231-3 & \\
 Frauenförderung & =EQ & Frauenförderung & 4226107-7 & \\
 Frauenforschung & =EQ & Frauenforschung & 4244891-8 & \\
-Frauengeschichte & & not found & not found & \\
+Frauengeschichte & & Not Found & Not Found & \\
 Frauenhaus & =EQ & Frauenhaus & 4155233-7 & \\
 Frauenorganisation & EQ & Frauenverband & 4155246-5 & Frauenverband \\
 Frauenpolitik & =EQ & Frauenpolitik & 4113623-8 & \\
-Frauenrechte & & not found & not found & \\
+Frauenrechte & & Not Found & Not Found & \\
 Frauenstudium & =EQ & Frauenstudium & 4129623-0 & \\
 Frauenuniversität & =EQ & Frauenuniversität & 4470659-5 & \\
 Frauenwahlrecht & =EQ & Frauenwahlrecht & 120484805X & \\
@@ -3024,12 +2889,12 @@ Fundamentalismus & =EQ & Fundamentalismus & 4137178-1 & \\
 Geburtenkontrolle & \textasciitilde EQ & Geburtenregelung & 4019593-4 &
 Geburtenregelung \\
 Gefühl & =EQ & Gefühl & 4019702-5 & \\
-Gender & & not found & not found & \\
-Gender Bias & & not found & not found & \\
-Gender Budgeting & & not found & not found & \\
+Gender & & Not Found & Not Found & \\
+Gender Bias & & Not Found & Not Found & \\
+Gender Budgeting & & Not Found & Not Found & \\
 Gender Mainstreaming & =EQ & Gender Mainstreaming & 4845903-3 & \\
 Gender Pay Gap & =EQ & Gender Pay Gap & 1314965875 & \\
-Genderkompetenz & & not found & not Found & \\
+Genderkompetenz & & Not Found & Not Found & \\
 Generation & =EQ & Generation & 4259035-8 & \\
 Genetik & =EQ & Genetik & 4071711-2 & \\
 Genozid & EQ & Völkermord & 4063690-2 & Völkermord \\
@@ -3037,14 +2902,14 @@ Gentechnologie & =EQ & Gentechnologie & 4071722-7 & \\
 Gerechtigkeit & =EQ & Gerechtigkeit & 4020310-4 & \\
 Geschichte & =EQ & Geschichte & 4020517-4 & \\
 Geschlecht & =EQ & Geschlecht & 4020547-2 & \\
-Geschlechterbild & & not found & not Found & \\
+Geschlechterbild & & Not Found & Not Found & \\
 Geschlechterdifferenz & EQ & Geschlechterunterschied & 4071781-1 &
 Geschlechterunterschied \\
 Geschlechterforschung & =EQ & Geschlechterforschung & 4482930-9 & \\
 Geschlechtergerechte Sprache & =EQ & Geschlechtergerechte Sprache &
 1186727241 & \\
-Geschlechterkonstruktion & & not found & not Found & \\
-Geschlechterordnung & & not found & not Found & \\
+Geschlechterkonstruktion & & Not Found & Not Found & \\
+Geschlechterordnung & & Not Found & Not Found & \\
 Geschlechterrolle & =EQ & Geschlechterrolle & 4071776-8 & \\
 Geschlechterstereotyp & =EQ & Geschlechterstereotyp & 4157010-8 & \\
 Geschlechterverhältnis & =EQ & Geschlechterverhältnis & 4020548-4 & \\
@@ -3142,12 +3007,12 @@ Lebenspartnerschaft & EQ & Eingetragene Lebenspartnerschaft & 4648252-0
 Lehre & =EQ & Lehre & 7573711-5 & \\
 Leib & =EQ & Leib & 1225568218 & \\
 Lesben & EQ & Lesbe & 4035430-1 & Lesbe \\
-Lesbenbewegung & & not Found & not Found & \\
+Lesbenbewegung & & Not Found & Not Found & \\
 Liberalismus & =EQ & Liberalismus & 4035582-2 & \\
 Liebe & =EQ & Liebe & 1228569932 & \\
 Literatur & =EQ & Literatur & 1248794494 & \\
 Lohn & =EQ & Lohn & 2018391-4 & \\
-LSBTIQ & & not Found & not Found & \\
+LSBTIQ & & Not Found & Not Found & \\
 Macht & =EQ & Macht & 1123508909 & \\
 Mädchen & =EQ & Mädchen & 1262354552 & \\
 Mädchenarbeit & =EQ & Mädchenarbeit & 7506089-9 & \\
@@ -3155,7 +3020,7 @@ Männer & =EQ & Männer & 1189215802 & \\
 Männerbild & =EQ & Männerbild & 4139085-4 & \\
 Männerbund & =EQ & Männerbund & 4168466-7 & \\
 Männlichkeit & =EQ & Männlichkeit & 4123701-8 & \\
-Marginalisierung & & not Found & not Found & \\
+Marginalisierung & & Not Found & Not Found & \\
 Mathematik & =EQ & Mathematik & 4037944-9 & \\
 Matriarchat & =EQ & Matriarchat & 4037966-8 & \\
 Medien & =EQ & Medien & 4169187-8 & \\
@@ -3205,7 +3070,7 @@ Philosophie & =EQ & Philosophie & 4045791-6 & \\
 Physik & =EQ & Physik & 4045956-1 & \\
 Politik & =EQ & Politik & 4046514-7 & \\
 Pornografie & =EQ & Pornografie & 4046809-4 & \\
-Postkoloniale Theorie & & not Found & not Found & \\
+Postkoloniale Theorie & & Not Found & Not Found & \\
 Postkolonialismus & =EQ & Postkolonialismus & 4566658-1 & \\
 Postmoderne & =EQ & Postmoderne & 4115604-3 & \\
 Poststrukturalismus & =EQ & Poststrukturalismus & 4137176-8 & \\
@@ -3224,7 +3089,7 @@ Queer Theory & EQ & Queer-Theorie & 7628620-4 & \\
 Rassismus & =EQ & Rassismus & 4076527-1 & \\
 Raum & =EQ & Raum & 1061812227 & \\
 Recht & =EQ & Recht & 1190300982 & \\
-Rechtsextremismus & & not Found & not Found & \\
+Rechtsextremismus & & Not Found & Not Found & \\
 Reisen & =EQ & Reisen & 1079282084 & \\
 Religion & =EQ & Religion & 4049396-9 & \\
 Repräsentation & =EQ & Repräsentation & 4137492-7 & \\
@@ -3237,7 +3102,7 @@ Scheidung & =EQ & Scheidung & 1140154451 & \\
 Schule & =EQ & Schule & 4053474-1 & \\
 Schwangerschaft & =EQ & Schwangerschaft & 4053724-9 & \\
 Schwangerschaftsabbruch & =EQ & Schwangerschaftsabbruch & 4053732-8 & \\
-Schwarze Deutsche & & not Found & not Found & \\
+Schwarze Deutsche & & Not Found & Not Found & \\
 Schwule & EQ+ & Homosexuelles Paar & 4120463-3 & Homosexuelles Paar \\
 Schwulenbewegung & EQ & Homosexuellenbewegung & 4140613-8 & \\
 Selbstständigkeit & =EQ & Selbstständigkeit & 4137544-0 & \\
@@ -3292,8 +3157,8 @@ Transformation & =EQ & Transformation & 4451062-7 & \\
 Transgender & =EQ & Transgender & 7619945-9 & \\
 Transsexualität & =EQ & Transsexualität & 4185937-6 & \\
 Umwelt & =EQ & Umwelt & 1199664804 & \\
-unbezahlte Arbeit & & not Found & not Found & \\
-Undoing Gender & & not Found & not Found & \\
+unbezahlte Arbeit & & Not Found & Not Found & \\
+Undoing Gender & & Not Found & Not Found & \\
 Universalismus & =EQ & Universalismus & 4186917-5 & \\
 Universität & =EQ & Universität & 4061778-6 & \\
 Unternehmen & =EQ & Unternehmen & 4061963-1 & \\

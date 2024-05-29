@@ -74,10 +74,10 @@
 | Digitalisierung                     | =EQ                       | Digitalisierung                              | 4123065-6                |                                      |
 | Diskriminierung                     | =EQ                       | Diskriminierung                              | 4012472-1                |                                      |
 | Diskurs                             | =EQ                       | Diskurs                                      | 300471955                |                                      |
-| Disziplinarität                     |                           | Not found                                    | NOt found                |                                      |
+| Disziplinarität                     |                           | Not Found                                    | Not Found                |                                      |
 | Diversität                          | RM                        | Heterogenität                                | 4201275-2                | Heterogenität                        |
 | Diversity Management                | =EQ                       | Diversity Management                         | 7611361-9                |                                      |
-| Doing Gender                        |                           | Not found                                    | Not found                |                                      |
+| Doing Gender                        |                           | Not Found                                    | Not Found                |                                      |
 | Drag                                | =EQ                       | Drag                                         | 1176239244               |                                      |
 | Ehe                                 | =EQ                       | Ehe                                          | 4013630-9                |                                      |
 | Ehegattensplitting                  | =EQ                       | Ehegattensplitting                           | 7503178-4                |                                      |
@@ -91,7 +91,7 @@
 | Entwicklungszusammenarbeit          | =EQ                       | Entwicklungszusammenarbeit                   | 4198756-1                |                                      |
 | Epistemologie                       | BM                        | Genetische Epistemologie                     | 4135354-7                |                                      |
 | Erfahrung                           | =EQ                       | Erfahrung                                    | 1239135211               |                                      |
-| Erinnerungskultur                   |                           | Not found                                    | not found                |                                      |
+| Erinnerungskultur                   |                           | Not Found                                    | Not Found                |                                      |
 | Ernährung                           | =EQ                       | Ernährung                                    | 4015332-0                |                                      |
 | Erotik                              | =EQ                       | Erotik                                       | 4015369-1                |                                      |
 | Erwachsenenbildung                  | =EQ                       | Erwachsenenbildung                           | 4015428-2                |                                      |
@@ -109,31 +109,31 @@
 | Exil                                | =EQ                       | Exil                                         | 1026311314               |                                      |
 | Familie                             | =EQ                       | Familie                                      | 123631333X               |                                      |
 | Familienbild                        | =EQ                       | Familienbild                                 | 1103153382               |                                      |
-| Familienform                        |                           | not found                                    | not found                |                                      |
+| Familienform                        |                           | Not Found                                    | Not Found                |                                      |
 | Familienpolitik                     | =EQ                       | Familienpolitik                              | 4016418-4                |                                      |
 | Faschismus                          | =EQ                       | Faschismus                                   | 4016494-9                |                                      |
-| Female Genital Cutting              |                           | not found                                    | not found                |                                      |
-| Female Genital Mutilation           |                           | not found                                    | not found                |                                      |
+| Female Genital Cutting              |                           | Not Found                                    | Not Found                |                                      |
+| Female Genital Mutilation           |                           | Not Found                                    | Not Found                |                                      |
 | Feminisierung                       | =EQ                       | Feminisierung                                | 4397368-1                |                                      |
 | Feminismus                          | =EQ                       | Feminismus                                   | 4222126-2                |                                      |
-| Faschismus                          |                           | not found                                    | not found                |                                      |
+| Faschismus                          |                           | Not Found                                    | Not Found                |                                      |
 | Film                                | =EQ                       | Film                                         | 4017102-4                |                                      |
 | Flucht                              | =EQ                       | Flucht                                       | 1274267641               |                                      |
 | Frauen                              | =EQ                       | Frauen                                       | 1142536149               |                                      |
-| Frauen in Führungspositionen        |                           | not found                                    | not found                |                                      |
+| Frauen in Führungspositionen        |                           | Not Found                                    | Not Found                |                                      |
 | Frauenanteil                        | NM                        | Geschlechterverhältnis <Demographie>         | 4243608-4                | Geschlechterverhältnis <Demographie> |
-| Frauenbeauftragte                   |                           | not found                                    | not found                |                                      |
+| Frauenbeauftragte                   |                           | Not Found                                    | Not Found                |                                      |
 | Frauenberuf                         | =EQ                       | Frauenberuf                                  | 1201699207               |                                      |
 | Frauenbewegung                      | =EQ                       | Frauenbewegung                               | 4071428-7                |                                      |
 | Frauenbild                          | =EQ                       | Frauenbild                                   | 4125057-6                |                                      |
 | Frauenfeindlichkeit                 | =EQ                       | Frauenfeindlichkeit                          | 4155231-3                |                                      |
 | Frauenförderung                     | =EQ                       | Frauenförderung                              | 4226107-7                |                                      |
 | Frauenforschung                     | =EQ                       | Frauenforschung                              | 4244891-8                |                                      |
-| Frauengeschichte                    |                           | not found                                    | not found                |                                      |
+| Frauengeschichte                    |                           | Not Found                                    | Not Found                |                                      |
 | Frauenhaus                          | =EQ                       | Frauenhaus                                   | 4155233-7                |                                      |
 | Frauenorganisation                  | EQ                        | Frauenverband                                | 4155246-5                | Frauenverband                        |
 | Frauenpolitik                       | =EQ                       | Frauenpolitik                                | 4113623-8                |                                      |
-| Frauenrechte                        |                           | not found                                    | not found                |                                      |
+| Frauenrechte                        |                           | Not Found                                    | Not Found                |                                      |
 | Frauenstudium                       | =EQ                       | Frauenstudium                                | 4129623-0                |                                      |
 | Frauenuniversität                   | =EQ                       | Frauenuniversität                            | 4470659-5                |                                      |
 | Frauenwahlrecht                     | =EQ                       | Frauenwahlrecht                              | 120484805X               |                                      |
@@ -141,12 +141,12 @@
 | Fundamentalismus                    | =EQ                       | Fundamentalismus                             | 4137178-1                |                                      |
 | Geburtenkontrolle                   | ~EQ                       | Geburtenregelung                             | 4019593-4                | Geburtenregelung                     |
 | Gefühl                              | =EQ                       | Gefühl                                       | 4019702-5                |                                      |
-| Gender                              |                           | not found                                    | not found                |                                      |
-| Gender Bias                         |                           | not found                                    | not found                |                                      |
-| Gender Budgeting                    |                           | not found                                    | not found                |                                      |
+| Gender                              |                           | Not Found                                    | Not Found                |                                      |
+| Gender Bias                         |                           | Not Found                                    | Not Found                |                                      |
+| Gender Budgeting                    |                           | Not Found                                    | Not Found                |                                      |
 | Gender Mainstreaming                | =EQ                       | Gender Mainstreaming                         | 4845903-3                |                                      |
 | Gender Pay Gap                      | =EQ                       | Gender Pay Gap                               | 1314965875               |                                      |
-| Genderkompetenz                     |                           | not found                                    | not Found                |                                      |
+| Genderkompetenz                     |                           | Not Found                                    | Not Found                |                                      |
 | Generation                          | =EQ                       | Generation                                   | 4259035-8                |                                      |
 | Genetik                             | =EQ                       | Genetik                                      | 4071711-2                |                                      |
 | Genozid                             | EQ                        | Völkermord                                   | 4063690-2                | Völkermord                           |
@@ -154,12 +154,12 @@
 | Gerechtigkeit                       | =EQ                       | Gerechtigkeit                                | 4020310-4                |                                      |
 | Geschichte                          | =EQ                       | Geschichte                                   | 4020517-4                |                                      |
 | Geschlecht                          | =EQ                       | Geschlecht                                   | 4020547-2                |                                      |
-| Geschlechterbild                    |                           | not found                                    | not Found                |                                      |
+| Geschlechterbild                    |                           | Not Found                                    | Not Found                |                                      |
 | Geschlechterdifferenz               | EQ                        | Geschlechterunterschied                      | 4071781-1                | Geschlechterunterschied              |
 | Geschlechterforschung               | =EQ                       | Geschlechterforschung                        | 4482930-9                |                                      |
 | Geschlechtergerechte Sprache        | =EQ                       | Geschlechtergerechte Sprache                 | 1186727241               |                                      |
-| Geschlechterkonstruktion            |                           | not found                                    | not Found                |                                      |
-| Geschlechterordnung                 |                           | not found                                    | not Found                |                                      |
+| Geschlechterkonstruktion            |                           | Not Found                                    | Not Found                |                                      |
+| Geschlechterordnung                 |                           | Not Found                                    | Not Found                |                                      |
 | Geschlechterrolle                   | =EQ                       | Geschlechterrolle                            | 4071776-8                |                                      |
 | Geschlechterstereotyp               | =EQ                       | Geschlechterstereotyp                        | 4157010-8                |                                      |
 | Geschlechterverhältnis              | =EQ                       | Geschlechterverhältnis                       | 4020548-4                |                                      |
@@ -254,12 +254,12 @@
 | Lehre                               | =EQ                       | Lehre                                        | 7573711-5                |                                      |
 | Leib                                | =EQ                       | Leib                                         | 1225568218               |                                      |
 | Lesben                              | EQ                        | Lesbe                                        | 4035430-1                | Lesbe                                |
-| Lesbenbewegung                      |                           | not Found                                    | not Found                |                                      |
+| Lesbenbewegung                      |                           | Not Found                                    | Not Found                |                                      |
 | Liberalismus                        | =EQ                       | Liberalismus                                 | 4035582-2                |                                      |
 | Liebe                               | =EQ                       | Liebe                                        | 1228569932               |                                      |
 | Literatur                           | =EQ                       | Literatur                                    | 1248794494               |                                      |
 | Lohn                                | =EQ                       | Lohn                                         | 2018391-4                |                                      |
-| LSBTIQ                              |                           | not Found                                    | not Found                |                                      |
+| LSBTIQ                              |                           | Not Found                                    | Not Found                |                                      |
 | Macht                               | =EQ                       | Macht                                        | 1123508909               |                                      |
 | Mädchen                             | =EQ                       | Mädchen                                      | 1262354552               |                                      |
 | Mädchenarbeit                       | =EQ                       | Mädchenarbeit                                | 7506089-9                |                                      |
@@ -267,7 +267,7 @@
 | Männerbild                          | =EQ                       | Männerbild                                   | 4139085-4                |                                      |
 | Männerbund                          | =EQ                       | Männerbund                                   | 4168466-7                |                                      |
 | Männlichkeit                        | =EQ                       | Männlichkeit                                 | 4123701-8                |                                      |
-| Marginalisierung                    |                           | not Found                                    | not Found                |                                      |
+| Marginalisierung                    |                           | Not Found                                    | Not Found                |                                      |
 | Mathematik                          | =EQ                       | Mathematik                                   | 4037944-9                |                                      |
 | Matriarchat                         | =EQ                       | Matriarchat                                  | 4037966-8                |                                      |
 | Medien                              | =EQ                       | Medien                                       | 4169187-8                |                                      |
@@ -315,7 +315,7 @@
 | Physik                              | =EQ                       | Physik                                       | 4045956-1                |                                      |
 | Politik                             | =EQ                       | Politik                                      | 4046514-7                |                                      |
 | Pornografie                         | =EQ                       | Pornografie                                  | 4046809-4                |                                      |
-| Postkoloniale Theorie               |                           | not Found                                    | not Found                |                                      |
+| Postkoloniale Theorie               |                           | Not Found                                    | Not Found                |                                      |
 | Postkolonialismus                   | =EQ                       | Postkolonialismus                            | 4566658-1                |                                      |
 | Postmoderne                         | =EQ                       | Postmoderne                                  | 4115604-3                |                                      |
 | Poststrukturalismus                 | =EQ                       | Poststrukturalismus                          | 4137176-8                |                                      |
@@ -334,7 +334,7 @@
 | Rassismus                           | =EQ                       | Rassismus                                    | 4076527-1                |                                      |
 | Raum                                | =EQ                       | Raum                                         | 1061812227               |                                      |
 | Recht                               | =EQ                       | Recht                                        | 1190300982               |                                      |
-| Rechtsextremismus                   |                           | not Found                                    | not Found                |                                      |
+| Rechtsextremismus                   |                           | Not Found                                    | Not Found                |                                      |
 | Reisen                              | =EQ                       | Reisen                                       | 1079282084               |                                      |
 | Religion                            | =EQ                       | Religion                                     | 4049396-9                |                                      |
 | Repräsentation                      | =EQ                       | Repräsentation                               | 4137492-7                |                                      |
@@ -346,7 +346,7 @@
 | Schule                              | =EQ                       | Schule                                       | 4053474-1                |                                      |
 | Schwangerschaft                     | =EQ                       | Schwangerschaft                              | 4053724-9                |                                      |
 | Schwangerschaftsabbruch             | =EQ                       | Schwangerschaftsabbruch                      | 4053732-8                |                                      |
-| Schwarze Deutsche                   |                           | not Found                                    | not Found                |                                      |
+| Schwarze Deutsche                   |                           | Not Found                                    | Not Found                |                                      |
 | Schwule                             | EQ+                       | Homosexuelles Paar                           | 4120463-3                | Homosexuelles Paar                   |
 | Schwulenbewegung                    | EQ                        | Homosexuellenbewegung                        | 4140613-8                |                                      |
 | Selbstständigkeit                   | =EQ                       | Selbstständigkeit                            | 4137544-0                |                                      |
@@ -401,8 +401,8 @@
 | Transgender                         | =EQ                       | Transgender                                  | 7619945-9                |                                      |
 | Transsexualität                     | =EQ                       | Transsexualität                              | 4185937-6                |                                      |
 | Umwelt                              | =EQ                       | Umwelt                                       | 1199664804               |                                      |
-| unbezahlte Arbeit                   |                           | not Found                                    | not Found                |                                      |
-| Undoing Gender                      |                           | not Found                                    | not Found                |                                      |
+| unbezahlte Arbeit                   |                           | Not Found                                    | Not Found                |                                      |
+| Undoing Gender                      |                           | Not Found                                    | Not Found                |                                      |
 | Universalismus                      | =EQ                       | Universalismus                               | 4186917-5                |                                      |
 | Universität                         | =EQ                       | Universität                                  | 4061778-6                |                                      |
 | Unternehmen                         | =EQ                       | Unternehmen                                  | 4061963-1                |                                      |
