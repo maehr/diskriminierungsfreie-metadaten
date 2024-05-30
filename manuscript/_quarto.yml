@@ -23,6 +23,9 @@ format:
   docx:
     reference-doc: custom-reference-doc.docx
     output-file: 2024-06-01-handbuch-diskriminierungsfreie-metadaten.docx
+    fig-align: left
+    subject: Diskriminierungsfreie Metadaten
+    category: Handbuch
   pdf:
     output-file: 2024-06-01-handbuch-diskriminierungsfreie-metadaten.pdf
     pdf-engine: latexmk
