@@ -22,14 +22,14 @@ format:
         repo: maehr/handbuch-diskriminierungsfreie-metadaten
   docx:
     reference-doc: custom-reference-doc.docx
-    output-file: 2024-06-01-handbuch-diskriminierungsfreie-metadaten.docx
+    output-file: handbuch-diskriminierungsfreie-metadaten.docx
     fig-align: left
     subject: Diskriminierungsfreie Metadaten
     category: Handbuch
   pdf:
-    output-file: 2024-06-01-handbuch-diskriminierungsfreie-metadaten.pdf
+    output-file: handbuch-diskriminierungsfreie-metadaten.pdf
     pdf-engine: latexmk
-    classoption: 
+    classoption:
       - landscape
       - a4paper
       - geometry:margin=1in
