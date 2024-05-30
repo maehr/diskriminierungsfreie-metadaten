@@ -238,7 +238,7 @@ digitaler Geschichtswissenschaft und Open Research Data beschäftigen
 wollen.
 \end{abstract}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, bottomtitle=1mm, coltitle=black, opacitybacktitle=0.6, toprule=.15mm, opacityback=0, arc=.35mm, toptitle=1mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warnung}, colbacktitle=quarto-callout-warning-color!10!white, colback=white, bottomrule=.15mm, breakable, titlerule=0mm, rightrule=.15mm, leftrule=.75mm, left=2mm]
+\begin{tcolorbox}[enhanced jigsaw, titlerule=0mm, colframe=quarto-callout-warning-color-frame, colback=white, opacityback=0, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warnung}, colbacktitle=quarto-callout-warning-color!10!white, coltitle=black, bottomtitle=1mm, opacitybacktitle=0.6, arc=.35mm, toprule=.15mm, toptitle=1mm, bottomrule=.15mm, leftrule=.75mm, breakable]
 
 Dieses Dokument enthält Abbildungen von historischen Quellen, die
 diskriminierende Sprache, Bilder oder Darstellungen enthalten. Sie sind
@@ -356,8 +356,9 @@ Stadt.Geschichte.Basel um Metadaten zu kulturhistorischen und
 archäologischen Quellen handelt. Es werden Fragen wie "Was sind
 Forschungsdaten?" und "Was sind Metadaten?" anhand exemplarischer
 Ressourcen von Stadt.Geschichte.Basel beantwortet. Im letzten Teil des
-zweiten Kapitels wird das Metadatenschema Dublin Core vorgestellt und
-seine Vorteile erläutert. Im dritten Kapitel werden die Metadaten von
+zweiten Kapitels wird das Metadatenschema
+\href{https://www.dublincore.org}{Dublin Core} vorgestellt und seine
+Vorteile erläutert. Im dritten Kapitel werden die Metadaten von
 Stadt.Geschichte.Basel vorgestellt und anhand von Diagrammen die
 Unterschiede zwischen Metadatenobjekten und den damit verknüpften
 Ressourcen aufgezeigt. Im vierten Kapitel soll eine
@@ -569,25 +570,26 @@ Inhaltsstandard, weshalb im Folgenden besonders darauf eingegangen
 wird.(Für weitere wichtige Standards und ihre potenziell
 diskriminierenden oder machtvollen Wirkungen siehe Gabay u.~a. 2023)
 
-\subsubsection{\texorpdfstring{Schema:~\href{https://www.dublincore.org/specifications/dublin-core/dces/}{Dublin
-Core Metadata Element
-Set}}{Schema:~Dublin Core Metadata Element Set}}\label{schema-dublin-core-metadata-element-set}
+\subsubsection{Schema:~Dublin Core Metadata Element
+Set}\label{schema-dublin-core-metadata-element-set}
 
 Eines der bekanntesten und am weitesten verbreiteten Metadatenschemas
-ist das Dublin Core Schema. Es ist ein einfacher und flexibler Standard,
+ist das
+\href{https://www.dublincore.org/specifications/dublin-core/dces/}{Dublin
+Core Metadata Element Set}. Es ist ein einfacher und flexibler Standard,
 der zur Beschreibung einer Vielzahl von Informationsressourcen verwendet
-werden kann. Dublin Core besteht aus 15 Basisfeldern (Elementen),
-darunter Titel, Ersteller*in, Thema, Beschreibung, Herausgeber*in,
-Mitwirkende, Datum, Typ, Format, Identifikator, Quelle, Sprache,
-Relation, räumliche oder zeitliche Angaben und Rechte. Dieser Standard
-kann als Grundlage für die Erstellung von Metadaten für historische
-Forschungsdaten dienen. Es ist wichtig zu beachten, dass die Dublin Core
-Elemente sowohl einzeln als auch in Kombination mit anderen Datenfeldern
-verwendet werden können, um komplexere Beschreibungen zu ermöglichen.
-Bei Stadt.Geschichte.Basel sind dies die Aufnahme von spezifischen
-Feldern wie zum Beispiel ``temporal'' zur zeitlichen Verortung und
-``extent'' zur Beschreibung der Bildauflösung (Siehe
-Kapitel~\ref{sec-metadaten}).
+werden kann. \href{https://www.dublincore.org}{Dublin Core} besteht aus
+15 Basisfeldern (Elementen), darunter Titel, Ersteller*in, Thema,
+Beschreibung, Herausgeber*in, Mitwirkende, Datum, Typ, Format,
+Identifikator, Quelle, Sprache, Relation, räumliche oder zeitliche
+Angaben und Rechte. Dieser Standard kann als Grundlage für die
+Erstellung von Metadaten für historische Forschungsdaten dienen. Es ist
+wichtig zu beachten, dass die Dublin Core Elemente sowohl einzeln als
+auch in Kombination mit anderen Datenfeldern verwendet werden können, um
+komplexere Beschreibungen zu ermöglichen. Bei Stadt.Geschichte.Basel
+sind dies die Aufnahme von spezifischen Feldern wie zum Beispiel
+``temporal'' zur zeitlichen Verortung und ``extent'' zur Beschreibung
+der Bildauflösung (Siehe Kapitel~\ref{sec-metadaten}).
 
 Bei historischen Quellen ist das Feld
 \href{https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/provenance/}{dcterms:provenance}
@@ -609,9 +611,9 @@ Was ist die beste Quelle für Informationen? Für welche Elemente sollten
 Datenwertstandards verwendet werden und wenn ja, welche
 Datenwertstandards sollten verwendet werden?
 
-Der Dublin Core-Standard enthält Definitionen für jedes
-Metadatenelement, die angeben, welche Arten von Informationen wo und wie
-aufgezeichnet werden sollten. Mit vielen der Datenelemente sind
+\href{https://www.dublincore.org}{Dublin Core} enthält Definitionen für
+jedes Metadatenelement, die angeben, welche Arten von Informationen wo
+und wie aufgezeichnet werden sollten. Mit vielen der Datenelemente sind
 Datenwertstandards wie das
 \href{https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/}{DCMI
 Type Vocabulary} und
@@ -646,7 +648,8 @@ Maschinen verständlich sein. Beispiele sind XML, RDF etc.
 \subsection{Zwei Typen von Metadaten: Objekte und zugeordnete
 Ressourcen}\label{zwei-typen-von-metadaten-objekte-und-zugeordnete-ressourcen}
 
-Stadt.Geschichte.Basel verwendet Dublin Core als Schema und als
+Stadt.Geschichte.Basel verwendet
+\href{https://www.dublincore.org}{Dublin Core} als Schema und als
 Inhaltsstandard. Darüber hinaus wird zwischen Metadatenobjekten und den
 damit verknüpften Ressourcen unterschieden. Ein paar fiktive Beispiele
 erhellen die Überlegungen, die hinter dieser Zweiteilung stehen.
@@ -1398,7 +1401,7 @@ sein können. Die grundlegenden Unterschiede sind:
   die digitalen Aspekte erfasst werden.
 \end{itemize}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, bottomtitle=1mm, coltitle=black, opacitybacktitle=0.6, toprule=.15mm, opacityback=0, arc=.35mm, toptitle=1mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, colbacktitle=quarto-callout-tip-color!10!white, colback=white, bottomrule=.15mm, breakable, titlerule=0mm, rightrule=.15mm, leftrule=.75mm, left=2mm]
+\begin{tcolorbox}[enhanced jigsaw, titlerule=0mm, colframe=quarto-callout-tip-color-frame, colback=white, opacityback=0, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, colbacktitle=quarto-callout-tip-color!10!white, coltitle=black, bottomtitle=1mm, opacitybacktitle=0.6, arc=.35mm, toprule=.15mm, toptitle=1mm, bottomrule=.15mm, leftrule=.75mm, breakable]
 
 Bei den Ressourcen der Stadt.Geschichte.Basel handelt es sich vorwiegend
 um digitale Darstellungen physischer Objekte sowie um digitale Objekte.
@@ -1419,7 +1422,7 @@ von Diskriminierungserfahrungen betroffen sein. Das muss berücksichtigt
 werden. Durch die Kenntnis der Zielgruppe können die Metadaten
 spezifisch auf die Bedürfnisse der Benutzer*innen angepasst werden.
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, bottomtitle=1mm, coltitle=black, opacitybacktitle=0.6, toprule=.15mm, opacityback=0, arc=.35mm, toptitle=1mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, colbacktitle=quarto-callout-tip-color!10!white, colback=white, bottomrule=.15mm, breakable, titlerule=0mm, rightrule=.15mm, leftrule=.75mm, left=2mm]
+\begin{tcolorbox}[enhanced jigsaw, titlerule=0mm, colframe=quarto-callout-tip-color-frame, colback=white, opacityback=0, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, colbacktitle=quarto-callout-tip-color!10!white, coltitle=black, bottomtitle=1mm, opacitybacktitle=0.6, arc=.35mm, toprule=.15mm, toptitle=1mm, bottomrule=.15mm, leftrule=.75mm, breakable]
 
 Die Hauptzielgruppe umfasst Forschende und Studierende, die nebst
 technischen Informationen auch Metadaten benötigen, die ihnen dabei
@@ -1439,7 +1442,7 @@ berücksichtigen. Beispielsweise können unvollständige oder beschädigte
 Informationen, wie beispielsweise verblasste Beschriftungen, die
 Identifizierung physischer Objekte erschweren.
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, bottomtitle=1mm, coltitle=black, opacitybacktitle=0.6, toprule=.15mm, opacityback=0, arc=.35mm, toptitle=1mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, colbacktitle=quarto-callout-tip-color!10!white, colback=white, bottomrule=.15mm, breakable, titlerule=0mm, rightrule=.15mm, leftrule=.75mm, left=2mm]
+\begin{tcolorbox}[enhanced jigsaw, titlerule=0mm, colframe=quarto-callout-tip-color-frame, colback=white, opacityback=0, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, colbacktitle=quarto-callout-tip-color!10!white, coltitle=black, bottomtitle=1mm, opacitybacktitle=0.6, arc=.35mm, toprule=.15mm, toptitle=1mm, bottomrule=.15mm, leftrule=.75mm, breakable]
 
 Stadt.Geschichte.Basel war bei der Identifikation der Informationen für
 die Ressourcen mit folgenden Schwierigkeiten konfrontiert: Insbesondere
@@ -1464,7 +1467,7 @@ sichergestellt, dass die Ressource nicht isoliert betrachtet, sondern in
 einen grösseren historischen, sozialen und politischen Kontext gestellt
 wird.
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, bottomtitle=1mm, coltitle=black, opacitybacktitle=0.6, toprule=.15mm, opacityback=0, arc=.35mm, toptitle=1mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, colbacktitle=quarto-callout-tip-color!10!white, colback=white, bottomrule=.15mm, breakable, titlerule=0mm, rightrule=.15mm, leftrule=.75mm, left=2mm]
+\begin{tcolorbox}[enhanced jigsaw, titlerule=0mm, colframe=quarto-callout-tip-color-frame, colback=white, opacityback=0, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, colbacktitle=quarto-callout-tip-color!10!white, coltitle=black, bottomtitle=1mm, opacitybacktitle=0.6, arc=.35mm, toprule=.15mm, toptitle=1mm, bottomrule=.15mm, leftrule=.75mm, breakable]
 
 Stadt.Geschichte.Basel legt besonderen Wert auf die Kontextualisierung,
 um nicht unkritisch Diskriminierung in einzelnen Ressourcen zu
@@ -1594,7 +1597,7 @@ Objektgeschichte oder Sammlungsgeschichte nicht unwichtig, aus welcher
 Perspektive das Objekt rezipiert wurde und aus welcher Motivation das
 Objekt gesammelt wurde.
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, bottomtitle=1mm, coltitle=black, opacitybacktitle=0.6, toprule=.15mm, opacityback=0, arc=.35mm, toptitle=1mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, colbacktitle=quarto-callout-tip-color!10!white, colback=white, bottomrule=.15mm, breakable, titlerule=0mm, rightrule=.15mm, leftrule=.75mm, left=2mm]
+\begin{tcolorbox}[enhanced jigsaw, titlerule=0mm, colframe=quarto-callout-tip-color-frame, colback=white, opacityback=0, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, colbacktitle=quarto-callout-tip-color!10!white, coltitle=black, bottomtitle=1mm, opacitybacktitle=0.6, arc=.35mm, toprule=.15mm, toptitle=1mm, bottomrule=.15mm, leftrule=.75mm, breakable]
 
 Das Projekt hat sich für die Methode der ``Titelkontextualisierung''
 entschieden - unter anderem wegen der besseren Durchsuchbarkeit auf der
@@ -1616,7 +1619,7 @@ veröffentlicht werden. Wichtig ist hierbei zu beachten, dass bei Open
 Data Plattformen nicht immer kontrolliert werden kann, wer und wie die
 Metadaten verwendet werden.
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, bottomtitle=1mm, coltitle=black, opacitybacktitle=0.6, toprule=.15mm, opacityback=0, arc=.35mm, toptitle=1mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, colbacktitle=quarto-callout-tip-color!10!white, colback=white, bottomrule=.15mm, breakable, titlerule=0mm, rightrule=.15mm, leftrule=.75mm, left=2mm]
+\begin{tcolorbox}[enhanced jigsaw, titlerule=0mm, colframe=quarto-callout-tip-color-frame, colback=white, opacityback=0, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, colbacktitle=quarto-callout-tip-color!10!white, coltitle=black, bottomtitle=1mm, opacitybacktitle=0.6, arc=.35mm, toprule=.15mm, toptitle=1mm, bottomrule=.15mm, leftrule=.75mm, breakable]
 
 Stadt.Geschichte.Basel betreibt eine
 \href{https://forschung.stadtgeschichtebasel.ch/}{Forschungsdatenplattform}.~Diese
@@ -1638,8 +1641,9 @@ Für die Festlegung der Metadatenfelder empfiehlt es sich, von einem
 Standard auszugehen und die Liste entsprechend der eigenen Bedürfnisse
 anzupassen.
 
-Stadt.Geschichte.Basel ist von den 15 Feldern von Dublin Core Standard
-ausgegangen:
+Stadt.Geschichte.Basel ist von den 15 Feldern vom
+\href{https://www.dublincore.org/specifications/dublin-core/dces/}{Dublin
+Core Metadata Element Set} ausgegangen:
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.2000}}
@@ -1692,20 +1696,21 @@ einige Datenpunkte wieder verworfen werden müssen, da sie für die
 Gesamtheit der Ressourcen nicht erhoben werden können.
 
 Während die einzelnen Ressourcen annotiert werden, muss entschieden
-werden, ob bestehende Metadatenschemas wie das Dublin Core Metadata
-Element Set übernommen, angepasst oder ein eigenes Schema erstellt
-werden soll. Die Übernahme von fertigen Schemas oder deren Ergänzung
-durch einzelne Elemente hat gegenüber der Erstellung eines eigenen
-Schemas mehrere Vorteile. So werden etwa Kosten und Aufwand gespart, die
-Schemas sind benutzerfreundlich und interoperabel.
+werden, ob bestehende Metadatenschemas wie das
+\href{https://www.dublincore.org/specifications/dublin-core/dces/}{Dublin
+Core Metadata Element Set} übernommen, angepasst oder ein eigenes Schema
+erstellt werden soll. Die Übernahme von fertigen Schemas oder deren
+Ergänzung durch einzelne Elemente hat gegenüber der Erstellung eines
+eigenen Schemas mehrere Vorteile. So werden etwa Kosten und Aufwand
+gespart, die Schemas sind benutzerfreundlich und interoperabel.
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, bottomtitle=1mm, coltitle=black, opacitybacktitle=0.6, toprule=.15mm, opacityback=0, arc=.35mm, toptitle=1mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, colbacktitle=quarto-callout-tip-color!10!white, colback=white, bottomrule=.15mm, breakable, titlerule=0mm, rightrule=.15mm, leftrule=.75mm, left=2mm]
+\begin{tcolorbox}[enhanced jigsaw, titlerule=0mm, colframe=quarto-callout-tip-color-frame, colback=white, opacityback=0, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, colbacktitle=quarto-callout-tip-color!10!white, coltitle=black, bottomtitle=1mm, opacitybacktitle=0.6, arc=.35mm, toprule=.15mm, toptitle=1mm, bottomrule=.15mm, leftrule=.75mm, breakable]
 
 Beim Erstellen der Metadatenliste hat sich gezeigt, dass die Übernahme
-der Standardfelder von Dublin Core eine gute Grundlage für die weitere
-Arbeit bietet. So wurde beispielsweise anhand des Feldes ``Date'' das
-Feld ``Era'' hinzugefügt, um ein noch breiteres zeitliches Spektrum
-angeben zu können.
+der Standardfelder von \href{https://www.dublincore.org}{Dublin Core}
+eine gute Grundlage für die weitere Arbeit bietet. So wurde
+beispielsweise anhand des Feldes ``Date'' das Feld ``Era'' hinzugefügt,
+um ein noch breiteres zeitliches Spektrum angeben zu können.
 
 \end{tcolorbox}
 
@@ -1756,7 +1761,7 @@ Quellenlage zu erstellen. Ziel dabei ist es, eine ungefähre Vorstellung
 Erfahrungswerten kann abgeschätzt werden, wie viel Aufwand für die
 einzelnen Quellen benötigt wird.
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, bottomtitle=1mm, coltitle=black, opacitybacktitle=0.6, toprule=.15mm, opacityback=0, arc=.35mm, toptitle=1mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, colbacktitle=quarto-callout-tip-color!10!white, colback=white, bottomrule=.15mm, breakable, titlerule=0mm, rightrule=.15mm, leftrule=.75mm, left=2mm]
+\begin{tcolorbox}[enhanced jigsaw, titlerule=0mm, colframe=quarto-callout-tip-color-frame, colback=white, opacityback=0, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, colbacktitle=quarto-callout-tip-color!10!white, coltitle=black, bottomtitle=1mm, opacitybacktitle=0.6, arc=.35mm, toprule=.15mm, toptitle=1mm, bottomrule=.15mm, leftrule=.75mm, breakable]
 
 Es kann hilfreich sein, von den vorhandenen Informationen aus den
 Gedächtnisinstitutionen auszugehen und dann die weiter oben
@@ -1775,14 +1780,21 @@ fertigstellen}\label{schritt-fuxfcnf-metadatenpunkte-fertigstellen}
 
 In diesem Schritt wird die Liste der Datenpunkte fertiggestellt. Diese
 Liste kann als eigenes Metadatenschema kodifiziert oder auf ein
-bestehendes Schema, wie z.B. Dublin Core übertragen werden. Diesen Weg
-hat Stadt.Geschichte.Basel gewählt.
+bestehendes Schema, wie z.B. \href{https://www.dublincore.org}{Dublin
+Core} übertragen werden. Diesen Weg hat Stadt.Geschichte.Basel gewählt.
 
 In vielen Fällen, insbesondere bei komplexen Objekten oder hierarchisch
 strukturierten Archiv- und anderen Sammlungsarten, kann auch eine
-Kombination von Schemata die beste Lösung sein (z. B. MARC oder BIBFRAME
-und/oder EAD auf der Ebene der Sammlung; MARC, Dublin Core, MODS, VRA
-Core oder LIDO auf der Ebene der Objekte).
+Kombination von Schemata die beste Lösung sein (z. B.
+\href{https://www.loc.gov/marc/}{MARC} oder
+\href{https://www.loc.gov/bibframe/}{BIBFRAME} und/oder
+\href{https://www.loc.gov/ead/}{EAD} auf der Ebene der Sammlung;
+\href{https://www.loc.gov/marc/}{MARC},
+\href{https://dublincore.org/}{Dublin Core},
+\href{https://www.loc.gov/standards/mods/}{MODS},
+\href{http://core.vraweb.org/}{VRA Core}, oder
+\href{https://cidoc.mini.icom.museum/working-groups/lido/lido-overview/about-lido/what-is-lido/}{LIDO}
+auf der Ebene der Objekte).
 
 \subsection{Sechster Schritt: Datenwertstandards
 wählen}\label{sechster-schritt-datenwertstandards-wuxe4hlen}
@@ -1803,11 +1815,12 @@ beispielsweise ein themenspezifisches Vokabular oder eine kontrollierte
 Liste von Namen. Wichtig ist die Dokumentation der Entscheidung und der
 Vokabulare.
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, bottomtitle=1mm, coltitle=black, opacitybacktitle=0.6, toprule=.15mm, opacityback=0, arc=.35mm, toptitle=1mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, colbacktitle=quarto-callout-tip-color!10!white, colback=white, bottomrule=.15mm, breakable, titlerule=0mm, rightrule=.15mm, leftrule=.75mm, left=2mm]
+\begin{tcolorbox}[enhanced jigsaw, titlerule=0mm, colframe=quarto-callout-tip-color-frame, colback=white, opacityback=0, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, colbacktitle=quarto-callout-tip-color!10!white, coltitle=black, bottomtitle=1mm, opacitybacktitle=0.6, arc=.35mm, toprule=.15mm, toptitle=1mm, bottomrule=.15mm, leftrule=.75mm, breakable]
 
 Im Falle des Feldes "Subject" hat Stadt.Geschichte.Basel den
-Schlagwortindex GenderOpen als kontrolliertes Vokabular gewählt, um die
-verschiedenen Diskriminierungsformen beschreiben zu können.
+\href{https://opengenderplatform.de/schlagwortindex}{Schlagwortindex
+GenderOpen} als kontrolliertes Vokabular gewählt, um die verschiedenen
+Diskriminierungsformen beschreiben zu können.
 
 \end{tcolorbox}
 
@@ -1878,23 +1891,23 @@ anderer Projekte auf, insofern ein Bezug zu Basel gegeben ist.
 \end{figure}%
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0126}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9874}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.7500}}@{}}
 \caption{Metadaten des Bildes ``Das Bad zu
 Leuk''}\label{tbl-metadaten-das-bad-zu-leuk}\tabularnewline
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Feldname}
+Feldname
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Wert}
+Wert
 \end{minipage} \\
 \midrule\noalign{}
 \endfirsthead
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Feldname}
+Feldname
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Wert}
+Wert
 \end{minipage} \\
 \midrule\noalign{}
 \endhead
@@ -1932,9 +1945,7 @@ Extent & 6676 x 4704 \\
 Source & Städelmuseum Inv. 2233 \\
 Language & \\
 Relation & \url{https://www.staedelmuseum.de/go/ds/2233} \\
-Rights & Bilddaten gemeinfrei - Kunstmuseum Basel
-
-KMB, Inv. 87 \\
+Rights & Bilddaten gemeinfrei - Kunstmuseum BaselKMB, Inv. 87 \\
 License & \url{https://creativecommons.org/publicdomain/mark/1.0/} \\
 \end{longtable}
 
@@ -1955,23 +1966,23 @@ Völkerschau in Basel, 1926}
 \end{figure}%
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0073}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9927}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.7500}}@{}}
 \caption{Metadaten des Plakats zur Völkerschau in Basel,
 1926}\label{tbl-metadaten-plakat-zur-voelkerschau-in-basel-1926}\tabularnewline
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Feldname}
+Feldname
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Wert}
+Wert
 \end{minipage} \\
 \midrule\noalign{}
 \endfirsthead
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Feldname}
+Feldname
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Wert}
+Wert
 \end{minipage} \\
 \midrule\noalign{}
 \endhead
@@ -2010,7 +2021,7 @@ Erzählungen.Einige der Bilder, welche einst dazu gedient haben sollen,
 die Unterdrückung oder vermeintliche "Rettung" und den "Schutz vor sich
 selbst" bestimmter "primitiver und unzivilisierter Völker" zu
 rechtfertigen, bestehen teilweise noch bis heute und manifestieren sich
-in unterschiedlichen Formen von Diskriminierung. \textbar{} \\
+in unterschiedlichen Formen von Diskriminierung. \\
 Creator & \\
 Publisher &
 StaBS~\href{https://www.wikidata.org/wiki/Q2324698}{Q2324698} \\
@@ -2022,9 +2033,8 @@ Extent & 23376 x 30371 \\
 Source & StaBs BSL 1001 N 7 \\
 Language & Deutsch \\
 Relation & \url{https://dls.staatsarchiv.bs.ch/records/135592} \\
-Rights & print und print digital (2022-)
-
-Staatsarchiv Basel-Stadt, BSL 1001 N 7 \\
+Rights & print und print digital (2022-)Staatsarchiv Basel-Stadt, BSL
+1001 N 7 \\
 License & \url{https://creativecommons.org/publicdomain/mark/1.0/} \\
 \end{longtable}
 
@@ -2045,23 +2055,23 @@ am Chorgestühl des Basler Münsters}
 \end{figure}%
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0126}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9874}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.7500}}@{}}
 \caption{Metadaten der Schnitzerei am Chorgestühl des Basler
 Münsters}\label{tbl-metadaten-schnitzerei-am-chorgestuehl-des-basler-muensters}\tabularnewline
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Feldname}
+Feldname
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Wert}
+Wert
 \end{minipage} \\
 \midrule\noalign{}
 \endfirsthead
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Feldname}
+Feldname
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Wert}
+Wert
 \end{minipage} \\
 \midrule\noalign{}
 \endhead
@@ -2085,8 +2095,7 @@ gesellschaftlich auszuschliessen. In Europa gab es mindestens 50 solcher
 Darstellungen, die auch in oder an Rathäusern angebracht waren. Einige
 bestehen noch heute. Das Original der Schnitzerei im Basler Münster
 wurde aus ungeklärten Gründen zerstört. Die Replika wurde erst im Jahr
-1996 entfernt und befindet sich nun im Jüdischen Museum der Schweiz.
-\textbar{} \\
+1996 entfernt und befindet sich nun im Jüdischen Museum der Schweiz. \\
 Creator & \\
 Publisher & Denkmalpflege Basel Stadt
 \href{https://www.wikidata.org/wiki/Q27479725}{Q27479725} \\
@@ -2098,11 +2107,9 @@ Extent & 3887 x 3619 \\
 Source & Sammlung Münsterfoto \\
 Language & \\
 Relation & \\
-Rights & In Copyright
-
-Kantonale Denkmalpflege Basel-Stadt, Foto Hans Grunert \\
-License & \url{http://rightsstatements.org/vocab/InC-RUU/1.0/}
-\textbar{} \\
+Rights & In CopyrightKantonale Denkmalpflege Basel-Stadt, Foto Hans
+Grunert \\
+License & \url{http://rightsstatements.org/vocab/InC-RUU/1.0/} \\
 \end{longtable}
 
 \subsection{Hie Basel Hie Schweizer Boden - Liste
@@ -2122,23 +2129,23 @@ Schweizer Boden - Liste 3}
 \end{figure}%
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0196}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9804}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.7500}}@{}}
 \caption{Metadaten des Plakats ``Hie Basel Hie Schweizer Boden - Liste
 3''}\label{tbl-metadaten-hie-basel-hie-schweizer-boden-liste-3}\tabularnewline
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Feldname}
+Feldname
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Wert}
+Wert
 \end{minipage} \\
 \midrule\noalign{}
 \endfirsthead
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Feldname}
+Feldname
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Wert}
+Wert
 \end{minipage} \\
 \midrule\noalign{}
 \endhead
@@ -2171,9 +2178,7 @@ Source & CH-000957-X:4432 \\
 Language & Schweizerdeutsch \\
 Relation &
 \url{https://commons.wikimedia.org/wiki/File:CH-000957-X-4432_Plattner.tif} \\
-Rights & Public Domain
-
-Plakatsammlung SfG Basel, Fotoarchiv Hofmann \\
+Rights & Public DomainPlakatsammlung SfG Basel, Fotoarchiv Hofmann \\
 License & \url{https://creativecommons.org/publicdomain/mark/1.0/} \\
 \end{longtable}
 
@@ -2194,68 +2199,59 @@ in der National-Zeitung, 1955}
 \end{figure}%
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.0158}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.9820}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.0011}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.7500}}@{}}
 \caption{Metadaten des Zeitungsinserats in der National-Zeitung,
 1955}\label{tbl-metadaten-zeitungsinserat-in-der-national-zeitung-1955}\tabularnewline
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Feldname}
+Feldname
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Wert}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Wert
 \end{minipage} \\
 \midrule\noalign{}
 \endfirsthead
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Feldname}
+Feldname
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Wert}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Wert
 \end{minipage} \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-Id & m13410 & \\
-Title & Zeitungsinserat in der National-Zeitung, 1955 & \\
+Id & m13410 \\
+Title & Zeitungsinserat in der National-Zeitung, 1955 \\
 Subject & Bildung, Biologismus, Rassismus, Ableismus, Ehe, Patriarchat,
-Sexismus, Sexualität, Familie, Familienbild, Familienform, Presse & \\
-Description &
-\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.9831} + 2\tabcolsep}@{}}{%
-Seit 1933 wurde eine Ehe- und Sexualberatungsstelle vom Gesundheitsamt
-Basel-Stadt eingerichtet. Neben individuellen Sprechstunden wurden auch
-Ehekurse für Verlobte und Neuverheiratete angeboten. In diesen Kursen
-wurden die Teilnehmenden in Bereichen wie Medizin, Hygiene, Psychologie
-und Recht geschult. Die Gründung der Beratungsstelle hatte eugenische
-Motive. Die Absicht bestand darin, nicht nur über Verhütung aufzuklären,
-sondern auch Eheanwärter*innen~in zeitgenössischer Vererbungslehre zu
-informieren. Solche eugenischen Ansätze gingen auch von leitenden Ärzten
-der Basler Psychiatrie aus. Sie beeinflussten auch die gesetzlichen
-Bestimmungen des Schweizerischen Zivilgesetzbuches über die
-Eheschliessung von "Geisteskranken" und die Appelle in der Eheberatung,
-insbesondere zu Themen wie Sterilisation, Abtreibung, Einbürgerung,
-Ausweisung und Rückführung.} \\
+Sexismus, Sexualität, Familie, Familienbild, Familienform, Presse \\
+Description & Seit 1933 wurde eine Ehe- und Sexualberatungsstelle vom
+Gesundheitsamt Basel-Stadt eingerichtet. Neben individuellen
+Sprechstunden wurden auch Ehekurse für Verlobte und Neuverheiratete
+angeboten. In diesen Kursen wurden die Teilnehmenden in Bereichen wie
+Medizin, Hygiene, Psychologie und Recht geschult. Die Gründung der
+Beratungsstelle hatte eugenische Motive. Die Absicht bestand darin,
+nicht nur über Verhütung aufzuklären, sondern auch Eheanwärter*innen~in
+zeitgenössischer Vererbungslehre zu informieren. Solche eugenischen
+Ansätze gingen auch von leitenden Ärzten der Basler Psychiatrie aus. Sie
+beeinflussten auch die gesetzlichen Bestimmungen des Schweizerischen
+Zivilgesetzbuches über die Eheschliessung von "Geisteskranken" und die
+Appelle in der Eheberatung, insbesondere zu Themen wie Sterilisation,
+Abtreibung, Einbürgerung, Ausweisung und Rückführung. \\
 Creator & Gesundheitsamt Basel-Stadt
-\href{https://www.wikidata.org/wiki/Q33121140}{Q33121140} & \\
+\href{https://www.wikidata.org/wiki/Q33121140}{Q33121140} \\
 Publisher &
-StaBS~\href{https://www.wikidata.org/wiki/Q2324698}{Q2324698} & \\
-Date & 1955 & \\
-Temporal & Zeitgeschichte & \\
-Type & Text & \\
-Format & image/tiff & \\
-Extent & 7508 x 7785 & \\
-Source & StaBS, SD-REG 5a 0.21.0 (1) 2 & \\
-Language & Deutsch & \\
-Relation & \url{https://dls.staatsarchiv.bs.ch/records/373373} & \\
-Rights & In Copyright
-
-StABS, SD-REG 5a 0.21.0 (1) 2 & \\
-License &
-\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.9831} + 2\tabcolsep}@{}}{%
-\url{http://rightsstatements.org/vocab/InC/1.0/} \textbar{}} \\
+StaBS~\href{https://www.wikidata.org/wiki/Q2324698}{Q2324698} \\
+Date & 1955 \\
+Temporal & Zeitgeschichte \\
+Type & Text \\
+Format & image/tiff \\
+Extent & 7508 x 7785 \\
+Source & StaBS, SD-REG 5a 0.21.0 (1) 2 \\
+Language & Deutsch \\
+Relation & \url{https://dls.staatsarchiv.bs.ch/records/373373} \\
+Rights & In CopyrightStABS, SD-REG 5a 0.21.0 (1) 2 \\
+License & \url{http://rightsstatements.org/vocab/InC/1.0/} \\
 \end{longtable}
 
 \subsection{Die ausländische Wohnbevölkerung von Basel-Stadt nach
@@ -2277,24 +2273,24 @@ ausländische Wohnbevölkerung von Basel-Stadt nach Heimatnation,
 \end{figure}%
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0238}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9762}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.7500}}@{}}
 \caption{Metadaten der Statistik ``Die ausländische Wohnbevölkerung von
 Basel-Stadt nach Heimatnation,
 1920--1965''}\label{tbl-metadaten-die-auslaendische-wohnbevoelkerung-von-basel-stadt-nach-heimatnation-1920-1965}\tabularnewline
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Feldname}
+Feldname
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Wert}
+Wert
 \end{minipage} \\
 \midrule\noalign{}
 \endfirsthead
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Feldname}
+Feldname
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Wert}
+Wert
 \end{minipage} \\
 \midrule\noalign{}
 \endhead
@@ -2308,34 +2304,30 @@ Gesellschaft, Gesetz \\
 Description & Die vorliegende Statistik bietet Informationen über die
 Verteilung von deutscher, französischer oder italienischer
 Staatsbürgerschaft im Kanton Basel-Stadt im Zeitraum von 1920 bis 1965.
-Der grau schraffierte Bereich repräsentiert die übrigen Nationalitäten.
-
-Aus der Statistik lassen sich zwei signifikante Trends ablesen: Der
-Anteil der Personen deutscher Nationalität nahm kontinuierlich ab. Dies
-ist auf verschiedene Faktoren zurückzuführen, unter anderem auf die
-Ablehnung von Personen deutscher Nationalität, die bereits seit
-Jahrzehnten in der Schweiz lebten, nach dem Zweiten Weltkrieg. Die
-Gründe für die Ablehnung der Gesuche waren vielfältig und umfassten
-unter anderem Sympathien für den Nationalsozialismus sowie das Argument,
-dass diese Personen als zu wenig "schweizerisch" angesehen wurden.
-
-Auf der anderen Seite stieg der Anteil der Personen aus Italien in den
-1960er Jahren deutlich an. Es ist anzumerken, dass der Anteil sogar noch
-höher gewesen wäre, wenn die Gastarbeiter*innen aus anderen Kantonen,
-die zu diesem Zeitpunkt in der Region tätig waren, in dieser Statistik
-mit einbezogen worden wären. Ausserdem fanden die Volkszählungen im
-Dezember statt und daher sind saisonale Gastarbeiter*innen nicht
-konsistent erfasst.
-
-Es ist bekannt, dass die Basler Regierung die schweizweite Politik der
-Arbeitsmigration, die auch als "Fremdarbeit" bekannt ist, unterstützte.
-Es ist wichtig anzumerken, dass die Umsetzung dieser Politik damals auf
-bestimmten Arbeitsmodellen
+Der grau schraffierte Bereich repräsentiert die übrigen
+Nationalitäten.Aus der Statistik lassen sich zwei signifikante Trends
+ablesen: Der Anteil der Personen deutscher Nationalität nahm
+kontinuierlich ab. Dies ist auf verschiedene Faktoren zurückzuführen,
+unter anderem auf die Ablehnung von Personen deutscher Nationalität, die
+bereits seit Jahrzehnten in der Schweiz lebten, nach dem Zweiten
+Weltkrieg. Die Gründe für die Ablehnung der Gesuche waren vielfältig und
+umfassten unter anderem Sympathien für den Nationalsozialismus sowie das
+Argument, dass diese Personen als zu wenig "schweizerisch" angesehen
+wurden.Auf der anderen Seite stieg der Anteil der Personen aus Italien
+in den 1960er Jahren deutlich an. Es ist anzumerken, dass der Anteil
+sogar noch höher gewesen wäre, wenn die Gastarbeiter*innen aus anderen
+Kantonen, die zu diesem Zeitpunkt in der Region tätig waren, in dieser
+Statistik mit einbezogen worden wären. Ausserdem fanden die
+Volkszählungen im Dezember statt und daher sind saisonale
+Gastarbeiter*innen nicht konsistent erfasst.Es ist bekannt, dass die
+Basler Regierung die schweizweite Politik der Arbeitsmigration, die auch
+als "Fremdarbeit" bekannt ist, unterstützte. Es ist wichtig anzumerken,
+dass die Umsetzung dieser Politik damals auf bestimmten Arbeitsmodellen
 (\href{https://hls-dhs-dss.ch/de/articles/007991/2006-12-07/}{Rotationsprinzip})
 basierte, die heute als problematisch angesehen werden. Integration in
 die Basler Gesellschaft wurde nicht ausreichend gefördert und
 italienische Arbeiter*innen wurden oft dazu angehalten, die Stadt nach
-neun Monaten wieder zu verlassen. \textbar{} \\
+neun Monaten wieder zu verlassen. \\
 Creator & Stadt.Geschichte.Basel
 \href{https://www.wikidata.org/wiki/Q122442230}{Q122442230} \\
 Publisher & Stadt.Geschichte.Basel
@@ -2348,10 +2340,8 @@ Extent & 1686 x 748 \\
 Source & JB 1941, S. 24 / JB 1951, S. 25 / JB 1966, S. 32 \\
 Language & Deutsch \\
 Relation & \\
-Rights & Public Domain
-
-Quelle: JB 1941, S. 24 / JB 1951, S. 25 / JB 1966, S. 32. Bearbeitung:
-Nico Görlich / Moritz Twente \\
+Rights & Public DomainQuelle: JB 1941, S. 24 / JB 1951, S. 25 / JB 1966,
+S. 32. Bearbeitung: Nico Görlich / Moritz Twente \\
 License & \url{https://creativecommons.org/publicdomain/mark/1.0/} \\
 \end{longtable}
 
@@ -2372,23 +2362,23 @@ Brandmarkeisen, 17. Jahrhundert}
 \end{figure}%
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0229}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9771}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.7500}}@{}}
 \caption{Metadaten der Basler Brandmarkeisen, 17.
 Jahrhundert}\label{tbl-metadaten-basler-brandmarkeisen-17-jahrhundert}\tabularnewline
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Feldname}
+Feldname
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Wert}
+Wert
 \end{minipage} \\
 \midrule\noalign{}
 \endfirsthead
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Feldname}
+Feldname
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Wert}
+Wert
 \end{minipage} \\
 \midrule\noalign{}
 \endhead
@@ -2419,11 +2409,9 @@ Source & HMB, Inv. 1921.1258. und 1921.1259. \\
 Language & \\
 Relation &
 \url{https://www.hmb.ch/museen/sammlungsobjekte/einzelansicht/s/brandmarkeisen/} \\
-Rights & CC BY-SA 4.0, Peter Portner
-
-HMB, Inv. 1921.1258 + 1259, Foto Peter Portner \\
-License & \url{https://creativecommons.org/licenses/by-sa/4.0/}
-\textbar{} \\
+Rights & CC BY-SA 4.0, Peter PortnerHMB, Inv. 1921.1258 + 1259, Foto
+Peter Portner \\
+License & \url{https://creativecommons.org/licenses/by-sa/4.0/} \\
 \end{longtable}
 
 \subsection{Plan mit Verteilung jüdischer
@@ -2443,23 +2431,23 @@ Verteilung jüdischer Häuser}
 \end{figure}%
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0150}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9850}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.7500}}@{}}
 \caption{Metadaten des Plans mit Verteilung jüdischer
 Häuser}\label{tbl-metadaten-plan-mit-verteilung-juedischer-haeuser}\tabularnewline
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Feldname}
+Feldname
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Wert}
+Wert
 \end{minipage} \\
 \midrule\noalign{}
 \endfirsthead
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Feldname}
+Feldname
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Wert}
+Wert
 \end{minipage} \\
 \midrule\noalign{}
 \endhead
@@ -2482,7 +2470,7 @@ anschliessende Ermordungen fanden zu dieser Zeit nicht nur in Basel
 statt. Ab 1362 siedelten sich wieder vermehrt jüdische Familien in Basel
 an. Der Standort der Synagoge hatte sich wohl aufgrund Beschlagnahmung
 und Enteignung der Synagoge der ersten Gemeinde verschoben. Sie lag nun
-in der Grünpfahlgasse. \\
+in der Grünpfahlgasse.~ \\
 Creator & Stadt.Geschichte.Basel
 \href{https://www.wikidata.org/wiki/Q122442230}{Q122442230} \\
 Publisher & Stadt.Geschichte.Basel
@@ -2495,10 +2483,8 @@ Extent & 1145 x 1125 / 495 x 329 \\
 Source & Alder/Matt 2010, S. 28 \\
 Language & Deutsch \\
 Relation & \\
-Rights & Public Domain
-
-Quelle: Alder/Matt 2010, S. 28. Bearbeitung: Nico Görlich / Moritz
-Twente \\
+Rights & Public Domain\textgreater Quelle: Alder/Matt 2010, S. 28.
+Bearbeitung: Nico Görlich / Moritz Twente \\
 License & \url{https://creativecommons.org/publicdomain/mark/1.0/} \\
 \end{longtable}
 
@@ -2544,8 +2530,8 @@ Lebensbildern}\label{negative-beispiele-von-lebensbildern}
 \end{figure}%
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.7500}}@{}}
 \caption{Metadaten der Bestattung von
 Unlingen}\label{tbl-metadaten-bestattung-von-unlingen}\tabularnewline
 \toprule\noalign{}
@@ -2617,8 +2603,8 @@ Geschlechtern}\label{rollenverteilung-zwischen-den-geschlechtern}
 \end{figure}%
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.7500}}@{}}
 \caption{Metadaten des Höhlenlebens zur älteren
 Steinzeit}\label{tbl-metadaten-hoehlenleben-zur-aelteren-steinzeit}\tabularnewline
 \toprule\noalign{}
@@ -2651,8 +2637,8 @@ materielle Kultur (u. a. Werkzeuge und Kunstgegenstände) wird primär von
 Männern hergestellt. Obwohl die Zeichnung von Carl Arriens sehr alt ist
 (sie entstand um 1900), finden sich ähnliche Szenarien bis weit in die
 1990er Jahre. \\
-Creator & Carl Ariens {[}Q15451450{]}
-(https://www.wikidata.org/wiki/Q15451450) \\
+Creator & Carl Ariens
+\href{https://www.wikidata.org/wiki/Q15451450}{Q15451450} \\
 Publisher & Universitätsbibliothek Heidelberg
 \href{https://www.wikidata.org/wiki/Q880794}{Q880794} \\
 Date & 1927 \\
@@ -2684,8 +2670,8 @@ Dürrenberg}
 \end{figure}%
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.7500}}@{}}
 \caption{Metadaten der Bestattung von Bad
 Dürrenberg}\label{tbl-metadaten-bestattung-von-bad-duerrenberg}\tabularnewline
 \toprule\noalign{}
@@ -2766,8 +2752,8 @@ Moor}
 \end{figure}%
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.7500}}@{}}
 \caption{Metadaten des Opferplatzes Thorberger
 Moor}\label{tbl-metadaten-opferplatz-thorberger-moor}\tabularnewline
 \toprule\noalign{}
@@ -2829,8 +2815,8 @@ License &
 \end{figure}%
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.7500}}@{}}
 \caption{Metadaten von Alle unter einem
 Dach}\label{tbl-metadaten-alle-unter-einem-dach}\tabularnewline
 \toprule\noalign{}
@@ -2889,8 +2875,8 @@ License &
 \end{figure}%
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.7500}}@{}}
 \caption{Metadaten der
 Keltin}\label{tbl-metadaten-die-keltin}\tabularnewline
 \toprule\noalign{}
