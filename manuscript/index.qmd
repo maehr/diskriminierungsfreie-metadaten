@@ -832,7 +832,7 @@ Im Folgenden werden anhand \"negativer\" Beispiele Stereotypen sowie Diskriminie
 | Title | Höhlenleben zur älteren Steinzeit |
 | Subject | Geschlechterbild, Geschlechterstereotyp,   Geschlechterverhältnis, Stigmatisierung, Kultur, Kunst |
 | Description | Auf diesem Lebensbild wird eine strikte Arbeitsteilung zwischen Mann und Frau dargestellt. Dabei ist der Mann für die Jagd zuständig und die Frau für das Sammeln und die Kinderbetreuung. Auch die materielle Kultur (u. a. Werkzeuge und Kunstgegenstände) wird primär von Männern hergestellt. Obwohl die Zeichnung von Carl Arriens sehr alt ist (sie entstand um 1900), finden sich ähnliche Szenarien bis weit in die 1990er Jahre. |
-| Creator | Carl Ariens [Q15451450] (https://www.wikidata.org/wiki/Q15451450) |
+| Creator | Carl Ariens [Q15451450](https://www.wikidata.org/wiki/Q15451450) |
 | Publisher | Universitätsbibliothek Heidelberg [Q880794](https://www.wikidata.org/wiki/Q880794)
 | Date | 1927 |
 | Era | Frühgeschichte |
