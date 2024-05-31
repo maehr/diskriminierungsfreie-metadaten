@@ -71,11 +71,11 @@ jobs:
           path: manuscript
           to: all
 
-      - name: Install LibreOffice
-        run: sudo apt-get update && sudo apt-get install -y libreoffice
+      # - name: Install LibreOffice
+      #   run: sudo apt-get update && sudo apt-get install -y libreoffice
 
-      - name: Convert DOCX to PDF
-        run: libreoffice --headless --convert-to pdf ./manuscript/_manuscript/handbuch-diskriminierungsfreie-metadaten.docx --outdir ./manuscript/_manuscript/
+      # - name: Convert DOCX to PDF
+      #   run: libreoffice --headless --convert-to pdf ./manuscript/_manuscript/handbuch-diskriminierungsfreie-metadaten.docx --outdir ./manuscript/_manuscript/
 
       # NOTE: If Publishing to GitHub Pages, set the permissions correctly (see top of this yaml)
       - name: Publish to GitHub Pages
