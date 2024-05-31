@@ -65,11 +65,11 @@ jobs:
       #     target: connect
       #     CONNECT_SERVER: enter-the-server-url-here
       #     CONNECT_API_KEY: ${{ secrets.CONNECT_API_KEY }}
-      - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          path: manuscript
-          to: all
+      # - name: Render Quarto Project
+      #   uses: quarto-dev/quarto-actions/render@v2
+      #   with:
+      #     path: manuscript
+      #     to: all
 
       # - name: Install LibreOffice
       #   run: sudo apt-get update && sudo apt-get install -y libreoffice
@@ -83,7 +83,7 @@ jobs:
         with:
           path: manuscript
           target: gh-pages
-          render: false
+          render: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
 

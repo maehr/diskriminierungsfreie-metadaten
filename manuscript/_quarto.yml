@@ -2,7 +2,7 @@ project:
   type: manuscript
 
 manuscript:
-  article: index.qmd
+  article: handbuch-diskriminierungsfreie-metadaten.qmd
   resources:
     - data/genderopen_gnd_mapping.csv
   code-links:
@@ -21,12 +21,17 @@ format:
         repo: maehr/handbuch-diskriminierungsfreie-metadaten
   docx:
     reference-doc: custom-reference-doc.docx
-    output-file: handbuch-diskriminierungsfreie-metadaten.docx
+    fig-align: left
+    subject: Diskriminierungsfreie Metadaten
+    category: Handbuch
+  odt: 
     fig-align: left
     subject: Diskriminierungsfreie Metadaten
     category: Handbuch
   typst:
-    output-file: handbuch-diskriminierungsfreie-metadaten.pdf
+    fig-align: left
+    subject: Diskriminierungsfreie Metadaten
+    category: Handbuch
 
 execute:
   freeze: true
