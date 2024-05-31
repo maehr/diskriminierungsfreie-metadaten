@@ -15,7 +15,7 @@
 		"commitizen": "^4.3.0",
 		"cz": "^1.8.2",
 		"cz-conventional-changelog": "^3.3.0",
-		"git-cliff": "^2.2.1",
+		"git-cliff": "^2.2.2",
 		"husky": "^9.0.11",
 		"prettier": "^3.2.5"
 	},

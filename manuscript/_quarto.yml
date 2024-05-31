@@ -28,11 +28,7 @@ format:
     category: Handbuch
   pdf:
     output-file: handbuch-diskriminierungsfreie-metadaten.pdf
-    pdf-engine: latexmk
-    classoption:
-      - landscape
-      - a4paper
-      - geometry:margin=1in
+    pdf-engine: wkhtmltopdf
   # markdown: default
 
 execute:
