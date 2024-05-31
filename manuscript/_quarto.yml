@@ -4,7 +4,6 @@ project:
 manuscript:
   article: index.qmd
   resources:
-    - data/genderopen_gnd_mapping.md
     - data/genderopen_gnd_mapping.csv
   code-links:
     - text: GitHub Repo
@@ -28,8 +27,7 @@ format:
     category: Handbuch
   pdf:
     output-file: handbuch-diskriminierungsfreie-metadaten.pdf
-    pdf-engine: wkhtmltopdf
-  # markdown: default
+    pdf-engine: xelatex
 
 execute:
   freeze: true
