@@ -413,9 +413,7 @@ Der erste Schritt besteht darin, zu klären, welche Metadaten zu welchem Zweck u
 Wird ein physisches Objekt, ein digitales Objekt oder eine digitale Darstellung eines physischen Objekts beschrieben? Diese Frage ist wichtig, da unterschiedliche Arten von Quellen unterschiedliche Informationen erfordern und spezifische Metadatenkategorien relevant sein können. Die grundlegenden Unterschiede sind:
 
 - Physische Objekte sind materielle Gegenstände wie Bücher, Gemälde, Dokumente oder Artefakte. Beim Erstellen von Metadaten für physische Objekte müssen Informationen erfasst werden, die direkt mit dem Objekt selbst in Verbindung stehen. Dazu gehören physische Merkmale wie Grösse, Material, Zustand, Herkunft und allenfalls spezielle Merkmale oder Besonderheiten des Objekts.
-
 - Digitale Objekte sind nicht-materielle Inhalte, die in digitaler Form vorliegen. Sie können unter anderem Texte, Bilder, Audio- oder Videodateien umfassen. Bei den Metadaten für digitale Objekte müssen technische Informationen wie Dateiformat und -typ, Dateigrösse oder Auflösung berücksichtigt werden. Ausserdem müssen Rechte und Lizenzen des digitalen Objektes geklärt und entsprechende Informationen zu Urheberrechten angegeben werden.
-
 - Digitale Darstellungen physischer Objekte sind digitale Repräsentationen von physischen Objekten. Bei der Erstellung von Metadaten für digitale Darstellungen physischer Objekte müssen sowohl Informationen über das ursprüngliche physische Objekt als auch über die digitalen Aspekte erfasst werden.
 
 ::: {.callout-tip title="Erfahrungen der Stadt.Geschichte.Basel"}
@@ -514,6 +512,8 @@ Stadt.Geschichte.Basel ist von den 15 Feldern vom [Dublin Core Metadata Element 
 | Title         | Ein Name, der der Ressource gegeben wird.                                                                                                                 |
 | Type          | Die Art oder das Genre der Ressource.                                                                                                                     |
 
+: Metadatenfelder des Dublin Core Metadata Element Set.
+
 Während mit der Beantwortung der in Schritt eins gestellten Fragen begonnen wird, kann es hilfreich sein, diejenigen Informationen aufzulisten, die als Datenpunkte aufgenommen werden sollen. Das können beispielsweise Titel, Thema, Zugriffsrechte, usw. sein. Wenn zum Beispiel Bilder auf einer Karte überlagert werden sollen, müssen Koordinatendaten aufgenommen werden. Die Erstellung der Liste der Metadatenfelder erfolgt schrittweise und parallel zur Annotation der einzelnen Ressourcen. Es kann sein, dass während der Quellenannotationen einige Datenpunkte wieder verworfen werden müssen, da sie für die Gesamtheit der Ressourcen nicht erhoben werden können.
 
 Während die einzelnen Ressourcen annotiert werden, muss entschieden werden, ob bestehende Metadatenschemas wie das [Dublin Core Metadata Element Set](https://www.dublincore.org/specifications/dublin-core/dces/) übernommen, angepasst oder ein eigenes Schema erstellt werden soll. Die Übernahme von fertigen Schemas oder deren Ergänzung durch einzelne Elemente hat gegenüber der Erstellung eines eigenen Schemas mehrere Vorteile. So werden etwa Kosten und Aufwand gespart, die Schemas sind benutzerfreundlich und interoperabel.
@@ -561,15 +561,10 @@ Im Falle des Feldes \"Subject\" hat Stadt.Geschichte.Basel den [Schlagwortindex 
 Bei der Erstellung oder Bewertung von Metadaten ist es wichtig, sich immer wieder zu fragen:
 
 - **Genauigkeit:** Sind die erfassten Daten korrekt und sachlich?
-
 - **Vollständigkeit:** Wurden alle relevanten Daten vollständig erfasst?
-
 - **Konsistenz:** Wurden die Daten konsistent eingegeben? Wird derselbe Satz von Metadatenelementen verwendet, um alle Ressourcen in der Sammlung zu beschreiben? Werden die Daten in demselben Format eingegeben?
-
 - **Interoperabilität:**Sind die Daten maschinenlesbar? Können die Metadaten leicht in ein anderes System migriert und von diesem verstanden werden? Können sie mit anderen Metadatensätzen oder Sammlungen zusammengeführt werden?
-
 - **Inklusivität:**Sind die Daten inklusiv, nicht abwertend und frei von Vorurteilen und schädlicher Sprache? Falls historische Begriffe verwendet werden: Werden sie korrekt kontextualisiert? Sind die verwendeten Begriffe für die beschriebene Ressource geeignet? Stimmen die Begriffe und beschreibenden Informationen mit der Art und Weise überein, wie die Ersteller\*innen oder Nutzer\*innen einer Ressource diese beschreiben könnten?
-
 - **Ethische Überlegungen:**Enthalten die Daten persönliche, identifizierende oder anderweitig sensible Informationen? Sind die Rechte vorhanden, die in den Daten enthaltenen Informationen aufzuzeichnen oder zu veröffentlichen? Werden die Mitwirkenden an den Daten und die darin zitierten Ressourcen genannt?
 
 # Beispiele
