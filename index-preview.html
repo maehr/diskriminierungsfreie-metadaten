@@ -155,10 +155,10 @@
 <meta name="citation_keywords" content="Diskriminierungsfreie Metadaten,Historische Quellen und Forschungsdaten,FAIR-Prinzipien,Stadt.Geschichte.Basel,Open Research Data,Code of Conduct,Dublin Core,Schlagwortindex GenderOpen">
 <meta name="citation_author" content="Moritz Mähr">
 <meta name="citation_author" content="Noëlle Schnegg">
-<meta name="citation_publication_date" content="2024-06-01">
-<meta name="citation_cover_date" content="2024-06-01">
+<meta name="citation_publication_date" content="2024-06-03">
+<meta name="citation_cover_date" content="2024-06-03">
 <meta name="citation_year" content="2024">
-<meta name="citation_online_date" content="2024-06-01">
+<meta name="citation_online_date" content="2024-06-03">
 <meta name="citation_fulltext_html_url" content="https://maehr.github.io/diskriminierungsfreie-metadaten/">
 <meta name="citation_doi" content="10.5281/zenodo.11124720">
 <meta name="citation_language" content="de-CH">
@@ -228,14 +228,14 @@
                 <div>
             <div class="quarto-title-meta-heading">Veröffentlichungsdatum</div>
             <div class="quarto-title-meta-contents">
-              <p class="date">1. Juni 2024</p>
+              <p class="date">3. Juni 2024</p>
             </div>
           </div>
           
                 <div>
             <div class="quarto-title-meta-heading">Geändert</div>
             <div class="quarto-title-meta-contents">
-              <p class="date-modified">30. Mai 2024</p>
+              <p class="date-modified">31. Mai 2024</p>
             </div>
           </div>
                 
@@ -545,10 +545,10 @@ Tabelle&nbsp;1: Metadaten der Elternobjekte (Metadatenobjekte).
 <table class="table">
 <thead>
 <tr class="header">
-<th><strong>Name</strong></th>
-<th><strong>Dublin Core</strong></th>
-<th><strong>Obligatorisch</strong></th>
-<th><strong>Verwendung</strong></th>
+<th>Name</th>
+<th>Dublin Core</th>
+<th>Obligatorisch</th>
+<th>Verwendung</th>
 <th><strong>Datenwertstandard</strong></th>
 </tr>
 </thead>
@@ -558,7 +558,7 @@ Tabelle&nbsp;1: Metadaten der Elternobjekte (Metadatenobjekte).
 <td>dcterms:identifier</td>
 <td>Ja</td>
 <td>Eine eindeutige Zeichenfolge ohne Leer- oder Sonderzeichen, die auf der Website als ID verwendet wird.</td>
-<td>Zufällig generierte Nummern zwischen sgb000000 und sgb999999.</td>
+<td>Zufällig generierte Nummern zwischen abb000000 und abb999999.</td>
 </tr>
 <tr class="even">
 <td>Title</td>
@@ -585,15 +585,8 @@ Tabelle&nbsp;1: Metadaten der Elternobjekte (Metadatenobjekte).
 <td>Era</td>
 <td>dcterms:temporal</td>
 <td>Ja</td>
-<td>Epoche (Frühgeschichte, Antike, Mittelalter, Neuzeit, Zeitgeschichte)</td>
-<td><ul>
-<li>Ur- und Frühgeschichte</li>
-<li>Römische Zeit und Spätantike</li>
-<li>Mittelalter</li>
-<li>Neuzeit</li>
-<li>Zeitgeschichte</li>
-</ul>
-<p>Auf eine Spezifikation der <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-period/">Epochen nach Dublin Core</a> wurde verzichtet, weil man sich zwischen den verschiedenen Disziplinen nicht auf einheitliche Perioden einigen konnte.</p></td>
+<td>Epoche (Frühgeschichte, Antike, Mittelalter, Neuzeit, Zeitgeschichte)&nbsp;</td>
+<td>- Ur- und Frühgeschichte<br>- Römische Zeit und Spätantike<br>- Mittelalter<br>- Neuzeit<br>- Zeitgeschichte<br><br>Auf eine Spezifikation der <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-period/">Epochen nach Dublin Core</a> wurde verzichtet, weil man sich zwischen den verschiedenen Disziplinen nicht auf einheitliche Perioden einigen konnte.</td>
 </tr>
 <tr class="even">
 <td>Is Part Of</td>
@@ -619,11 +612,11 @@ Tabelle&nbsp;2: Metadaten der zugeordneten Ressourcen (Kinder).
 <table class="table">
 <thead>
 <tr class="header">
-<th><strong>Name</strong></th>
-<th><strong>Dublin Core</strong></th>
-<th><strong>Obligatorisch</strong></th>
-<th><strong>Verwendung</strong></th>
-<th><strong>Datenwertstandard</strong></th>
+<th>Name</th>
+<th>Dublin Core</th>
+<th>Obligatorisch</th>
+<th>Verwendung</th>
+<th>Datenwertstandard</th>
 </tr>
 </thead>
 <tbody>
@@ -681,162 +674,427 @@ Tabelle&nbsp;2: Metadaten der zugeordneten Ressourcen (Kinder).
 <td>dcterms:publisher</td>
 <td>Ja</td>
 <td>Eine Einrichtung, die für die Bereitstellung der Ressource verantwortlich ist. (Bei Büchern und Buchausschnitten ist eine Bibliothek anzugeben. Die bibliografische Referenz wird unter Rights vermerkt.)</td>
-<td><p>Klarname und URL zu <a href="https://www.wikidata.org/">Wikidata.org</a> (Laufend Werte sammeln und wenn möglich dieselben wiederverwenden)</p>
-<ul>
-<li><a href="https://query.wikidata.org/#SELECT%20%3Finstitution%20%3FinstitutionLabel%20WHERE%20%7B%0A%20%20%3Finstitution%20wdt%3AP31%2Fwdt%3AP279%2a%20%3Ftype%20.%0A%20%20VALUES%20%3Ftype%20%7B%20wd%3AQ1497649%20wd%3AQ16735822%20wd%3AQ28564%20wd%3AQ7075%20wd%3AQ166118%20%7D%20%23%20Museums%2C%20Libraries%2C%20Archives%0A%20%20%3Finstitution%20wdt%3AP131%2a%20wd%3AQ78%20.%20%23%20Located%20in%20Basel%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D">Liste der wichtigsten Institutionen in Basel</a>
-<ul>
-<li>Historisches Musem Basel <a href="http://www.wikidata.org/entity/Q386286">Q386286</a></li>
-<li>Staatsarchiv des Kantons Basel-Stadt <a href="https://www.wikidata.org/wiki/Q2324698">Q2324698</a></li>
-<li>Universitätsbibliothek Basel <a href="http://www.wikidata.org/entity/Q81164649">Q81164649</a></li>
-<li>Basler Mission <a href="http://www.wikidata.org/entity/Q20614250">Q20614250</a></li>
-<li>Jüdisches Museum <a href="http://www.wikidata.org/entity/Q1551099">Q1551099</a></li>
-<li>...</li>
-</ul></li>
-</ul></td>
+<td>Klarname und URL zu <a href="https://www.wikidata.org/">Wikidata.org</a> (Laufend Werte sammeln und wenn möglich dieselben wiederverwenden)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Liste der wichtigsten Institutionen in Basel</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- Historisches Musem Basel <a href="http://www.wikidata.org/entity/Q386286">Q386286</a></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- Staatsarchiv des Kantons Basel-Stadt <a href="https://www.wikidata.org/wiki/Q2324698">Q2324698</a></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- Universitätsbibliothek Basel <a href="http://www.wikidata.org/entity/Q81164649">Q81164649</a></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- Basler Mission <a href="http://www.wikidata.org/entity/Q20614250">Q20614250</a></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- Jüdisches Museum <a href="http://www.wikidata.org/entity/Q1551099">Q1551099</a></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- ...</td>
 </tr>
 <tr class="odd">
 <td>Date</td>
 <td>dcterms:date</td>
 <td>Nein</td>
 <td>Der Zeitpunkt oder Zeitraum der (geschätzten) Erstellung der Ressource.</td>
-<td><p><a href="https://www.loc.gov/standards/datetime/">Extended Date/Time Format (EDTF)</a></p>
-<ul>
-<li>2014-03-05 - Typisches vollständiges Datum, JJJJ-MM-TT, muss führende Nullen an Monat und Tag enthalten</li>
-<li>2014-03 - Nur für den Monat angegeben; "irgendwann im März 2014".</li>
-<li>2014 - Nur für das Jahr angegeben; "irgendwann im Jahr 2014".</li>
-<li>2014-21 - Jahreszeit (nördliche Hemisphäre): 21=Frühling, 22=Sommer, 23=Herbst, 24=Winter</li>
-<li>2014~ - Ungefähres Datum: "Ungefähr 2014". Die genaue Interpretation von "ungefähr" ist nicht spezifiziert, aber +/- 2 der genauesten angegebenen Einheiten (in diesem Beispiel Jahre) ist eine vernünftige Erwartung.</li>
-<li>2014? - Ungewisses Datum: "Vielleicht 2014." Die Alternative könnte alles andere sein. Damit sollte jedoch sparsam umgegangen werden, denn das "alles andere" ist unerwünscht. Wenn eine Vorstellung von einem Bereich möglicher Daten besteht, kann die Bereichsform verwendet werden.</li>
-<li>[2012,2014] - Eines der angegebenen Daten.</li>
-<li>2XXX - Unbestimmte Ziffer(n) von rechts: Das Zeichen "X" kann anstelle einer oder mehrerer Ziffern ganz rechts verwendet werden, um anzuzeigen, dass der Wert dieser Ziffer in den folgenden Fällen nicht spezifiziert ist:
-<ul>
-<li>Beispiel 1 '201X'</li>
-<li>Beispiel 2 '20XX'<br>
-Jahr angegeben, Monat unspezifiziert in einem Jahr-Monat-Ausdruck (Monatsgenauigkeit)</li>
-<li>Beispiel 3 '2004-XX'<br>
-Jahr und Monat werden angegeben, der Tag wird in einem Jahr-Monat-Tag-Ausdruck nicht angegeben (Tagesgenauigkeit)</li>
-<li>Beispiel 4 '1985-04-XX'<br>
-Jahr angegeben, Tag und Monat nicht angegeben in einem Jahr-Monat-Tag-Ausdruck (Tagesgenauigkeit)</li>
-<li>Beispiel 5 '1985-XX-XX'</li>
-</ul></li>
-<li>[2014-01-03..2014-04-15] - Bereich des ungewissen Datums: "Irgendwann zwischen dem 3. Januar und dem 15. April 2014." Beachte, dass genau zwei Zeiträume zwischen den Daten liegen. Dies ist die bevorzugte Form für unbestimmte Daten, da sie für den Computer am einfachsten zu verarbeiten ist. NICHT ein Intervall gültiger Daten ("im Zeitraum vom 3. Januar bis 15. April 2014"); das wird als separates Start- und Enddatum eingegeben.</li>
-<li>[..2014-04-15] - Unbegrenzter Bereich mit ungewissem Datum: "Irgendwann vor dem 15. April 2014". Wenn du also eine Vorstellung vom Beginn des Zeitfensters hast, gib es bitte ein.</li>
-<li>[2014-04-15..] - Offener Bereich mit ungewissem Datum: "Irgendwann nach dem 15. April 2014". Das System interpretiert dies als einen Zeitpunkt zwischen diesem Datum und heute. Wenn du also eine Vorstellung vom Ende des Zeitfensters hast, gib es bitte ein.</li>
-<li>unknown - Das Datum ist völlig unbekannt, aber es ist bekannt, dass das Ereignis an einem bestimmten Datum stattfindet. Wir wissen z.B., dass die Organisation eines Zweigs an einem bestimmten Tag stattgefunden haben muss, aber wir haben keine Ahnung, wann dieser Tag war. Bitte gehe sparsam damit um, denn das System kann daraus nichts abschätzen; wenn du eine Vorstellung von einem bestimmten Datum hast, verwende das Formular für den Zeitraum.</li>
-</ul></td>
+<td><a href="https://www.loc.gov/standards/datetime/">Extended Date/Time Format (EDTF)</a></td>
 </tr>
 <tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- 2014-03-05 - Typisches vollständiges Datum, JJJJ-MM-TT, muss führende Nullen an Monat und Tag enthalten</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- 2014-03 - Nur für den Monat angegeben; “irgendwann im März 2014”.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- 2014 - Nur für das Jahr angegeben; “irgendwann im Jahr 2014”.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- 2014-21 - Jahreszeit (nördliche Hemisphäre): 21=Frühling, 22=Sommer, 23=Herbst, 24=Winter</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- 2014~ - Ungefähres Datum: “Ungefähr 2014”. Die genaue Interpretation von “ungefähr” ist nicht spezifiziert, aber +/- 2 der genauesten angegebenen Einheiten (in diesem Beispiel Jahre) ist eine vernünftige Erwartung.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- 2014? - Ungewisses Datum: “Vielleicht 2014.” Die Alternative könnte alles andere sein. Damit sollte jedoch sparsam umgegangen werden, denn das “alles andere” ist unerwünscht. Wenn eine Vorstellung von einem Bereich möglicher Daten besteht, kann die Bereichsform verwendet werden.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- [2012,2014] - Eines der angegebenen Daten.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- 2XXX - Unbestimmte Ziffer(n) von rechts: Das Zeichen “X” kann anstelle einer oder mehrerer Ziffern ganz rechts verwendet werden, um anzuzeigen, dass der Wert dieser Ziffer in den folgenden Fällen nicht spezifiziert ist:</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- Beispiel 1 ‘201X’</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- Beispiel 2 ‘20XX’</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Jahr angegeben, Monat unspezifiziert in einem Jahr-Monat-Ausdruck (Monatsgenauigkeit)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- Beispiel 3 ‘2004-XX’</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Jahr und Monat werden angegeben, der Tag wird in einem Jahr-Monat-Tag-Ausdruck nicht angegeben (Tagesgenauigkeit)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- Beispiel 4 ‘1985-04-XX’</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Jahr angegeben, Tag und Monat nicht angegeben in einem Jahr-Monat-Tag-Ausdruck (Tagesgenauigkeit)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- Beispiel 5 ‘1985-XX-XX’</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- [2014-01-03..2014-04-15] - Bereich des ungewissen Datums: “Irgendwann zwischen dem 3. Januar und dem 15. April 2014.” Beachte, dass genau zwei Zeiträume zwischen den Daten liegen. Dies ist die bevorzugte Form für unbestimmte Daten, da sie für den Computer am einfachsten zu verarbeiten ist. NICHT ein Intervall gültiger Daten (“im Zeitraum vom 3. Januar bis 15. April 2014”); das wird als separates Start- und Enddatum eingegeben.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- [..2014-04-15] - Unbegrenzter Bereich mit ungewissem Datum: “Irgendwann vor dem 15. April 2014”. Wenn du also eine Vorstellung vom Beginn des Zeitfensters hast, gib es bitte ein.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- [2014-04-15..] - Offener Bereich mit ungewissem Datum: “Irgendwann nach dem 15. April 2014”. Das System interpretiert dies als einen Zeitpunkt zwischen diesem Datum und heute. Wenn du also eine Vorstellung vom Ende des Zeitfensters hast, gib es bitte ein.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- unknown - Das Datum ist völlig unbekannt, aber es ist bekannt, dass das Ereignis an einem bestimmten Datum stattfindet. Wir wissen z.B., dass die Organisation eines Zweigs an einem bestimmten Tag stattgefunden haben muss, aber wir haben keine Ahnung, wann dieser Tag war. Bitte gehe sparsam damit um, denn das System kann daraus nichts abschätzen; wenn du eine Vorstellung von einem bestimmten Datum hast, verwende das Formular für den Zeitraum.</td>
+</tr>
+<tr class="odd">
 <td>Era</td>
 <td>dcterms:temporal</td>
 <td>Ja</td>
 <td>Epoche (Frühgeschichte, Antike, Mittelalter, Neuzeit, Zeitgeschichte)</td>
-<td><ul>
-<li>Ur- und Frühgeschichte</li>
-<li>Römische Zeit und Spätantike</li>
-<li>Mittelalter</li>
-<li>Neuzeit</li>
-<li>Zeitgeschichte</li>
-</ul>
-<p>Auf eine Spezifikation der <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-period/">Epochen nach Dublin Core</a> wurde verzichtet, weil man sich zwischen den verschiedenen Disziplinen nicht auf einheitliche Perioden einigen konnte.</p></td>
+<td>- Ur- und Frühgeschichte</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- Römische Zeit und Spätantike</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- Mittelalter</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- Neuzeit</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- Zeitgeschichte</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Auf eine Spezifikation der <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-period/">Epochen nach Dublin Core</a> wurde verzichtet, weil man sich zwischen den verschiedenen Disziplinen nicht auf einheitliche Perioden einigen konnte.</td>
 </tr>
 <tr class="odd">
 <td>Type</td>
 <td>dcterms:type</td>
 <td>Ja</td>
-<td><p>Die Art oder das Genre der referenzierten Ressource im Archiv/Bibliothek etc.</p>
-<p>Bei Grafiken wird zu Zwecken einer semantischen Klarheit anstatt "Dataset" den Type "Image" verwendet.</p></td>
-<td><p><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7">DCMI Type Vocabulary</a></p>
-<ul>
-<li>Collection
-<ul>
-<li>Eine Sammlung von Ressourcen.</li>
-</ul></li>
-<li>Dataset
-<ul>
-<li>Eine Sammlung von Daten, die für die Verarbeitung durch ein Computerprogramm strukturiert ist.</li>
-</ul></li>
-<li>Event
-<ul>
-<li>Eine zeitliche Entität, die durch einen festen Zeitpunkt oder ein Intervall im Zeitverlauf gekennzeichnet ist.</li>
-</ul></li>
-<li>Image
-<ul>
-<li>Eine visuelle Darstellung, die nicht primär für Kommunikation über Text hinausgeht.</li>
-</ul></li>
-<li>Interactive Resource
-<ul>
-<li>Eine Ressource, die eine Interaktion mit dem Benutzer erfordert, um ihren Zweck zu erfüllen.</li>
-</ul></li>
-<li>Moving Image
-<ul>
-<li>Eine Serie von visuellen Darstellungen, die eine Illusion von Bewegung erzeugen, wenn sie in schneller Abfolge gezeigt werden.</li>
-</ul></li>
-<li>Physical Object
-<ul>
-<li>Ein physisches Objekt (z.B. ein Buch, ein Gemälde oder eine Statue).</li>
-</ul></li>
-<li>Service
-<ul>
-<li>Ein System, das anderen Systemen Ressourcen zur Verfügung stellt.</li>
-</ul></li>
-<li>Software
-<ul>
-<li>Ein Computerprogramm in ausführbarer Form.</li>
-</ul></li>
-<li>Sound
-<ul>
-<li>Eine Ressource, die primär für die Wahrnehmung durch das Ohr bestimmt ist.</li>
-</ul></li>
-<li>Still Image
-<ul>
-<li>Eine statische visuelle Darstellung.</li>
-</ul></li>
-<li>Text
-<ul>
-<li>Eine Ressource, die primär für die Kommunikation durch Text bestimmt ist.</li>
-</ul></li>
-</ul></td>
+<td>Die Art oder das Genre der referenzierten Ressource im Archiv/Bibliothek etc.</td>
+<td><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7">DCMI Type Vocabulary</a></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Bei Grafiken wird zu Zwecken einer semantischen Klarheit anstatt “Dataset” den Type “Image” verwendet.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- ‘Collection’ Eine Sammlung von Ressourcen.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- ‘Dataset’ Eine Sammlung von Daten, die für die Verarbeitung durch ein Computerprogramm strukturiert ist.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- ‘Event’ Eine zeitliche Entität, die durch einen festen Zeitpunkt oder ein Intervall im Zeitverlauf gekennzeichnet ist.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- ‘Image’ Eine visuelle Darstellung, die nicht primär für Kommunikation über Text hinausgeht.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- ‘Interactive Resource’ Eine Ressource, die eine Interaktion mit dem Benutzer erfordert, um ihren Zweck zu erfüllen.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- ‘Moving Image’ Eine Serie von visuellen Darstellungen, die eine Illusion von Bewegung erzeugen, wenn sie in schneller Abfolge gezeigt werden.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- ‘Physical Object’ Ein physisches Objekt (z.B. ein Buch, ein Gemälde oder eine Statue).</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- ‘Service’ Ein System, das anderen Systemen Ressourcen zur Verfügung stellt.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- ‘Software’ Ein Computerprogramm in ausführbarer Form.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- ‘Sound’ Eine Ressource, die primär für die Wahrnehmung durch das Ohr bestimmt ist.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- ‘Still Image’ Eine statische visuelle Darstellung.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- ‘Text’ Eine Ressource, die primär für die Kommunikation durch Text bestimmt ist.</td>
 </tr>
 <tr class="even">
 <td>Format</td>
 <td>dcterms:format</td>
 <td>Ja</td>
 <td>Das Dateiformat der Ressource.</td>
-<td><p><a href="http://www.iana.org/assignments/media-types/">Internet Media Types (MIME)</a></p>
-<ul>
-<li>application/pdf
-<ul>
-<li>Portable Document Format (PDF).</li>
-</ul></li>
-<li>image/jpeg
-<ul>
-<li>JPEG-Bilddateien.</li>
-</ul></li>
-<li>image/png
-<ul>
-<li>PNG-Bilddateien.</li>
-</ul></li>
-<li>image/gif
-<ul>
-<li>GIF-Bilddateien.</li>
-</ul></li>
-<li>image/svg+xml
-<ul>
-<li>SVG (Scalable Vector Graphics) Dateien.</li>
-</ul></li>
-<li>audio/mpeg
-<ul>
-<li>MP3-Audiodateien.</li>
-</ul></li>
-<li>audio/wav
-<ul>
-<li>WAV-Audiodateien.</li>
-</ul></li>
-<li>video/mp4
-<ul>
-<li>MP4-Videodateien.</li>
-</ul></li>
-</ul></td>
+<td><a href="http://www.iana.org/assignments/media-types/">Internet Media Types (MIME)</a></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- ‘application/pdf’ Portable Document Format (PDF).</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- ‘image/jpeg’ JPEG-Bilddateien.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- ‘image/png’ PNG-Bilddateien.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- ‘image/gif’ GIF-Bilddateien.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- ‘image/svg+xml’ SVG (Scalable Vector Graphics) Dateien.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- ‘audio/mpeg’ MP3-Audiodateien.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- ‘audio/wav’ WAV-Audiodateien.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- ‘video/mp4’ MP4-Videodateien.</td>
 </tr>
 <tr class="odd">
 <td>Extent</td>
@@ -878,40 +1136,63 @@ Jahr angegeben, Tag und Monat nicht angegeben in einem Jahr-Monat-Tag-Ausdruck (
 <td></td>
 <td>Ja</td>
 <td>URL zur Lizenz</td>
-<td><p><a href="https://creativecommons.org/">CreativeCommons.org</a> oder <a href="https://rightsstatements.org/en/">RightsStatements.org</a></p>
-<ul>
-<li><a href="https://creativecommons.org/publicdomain/mark/1.0/" class="uri">https://creativecommons.org/publicdomain/mark/1.0/</a>
-<ul>
-<li>Public Domain Mark (PDM) <a href="https://creativecommons.org/public-domain/freeworks/"><em>[Free Culture]</em></a></li>
-</ul></li>
-<li><a href="https://creativecommons.org/publicdomain/zero/1.0/" class="uri">https://creativecommons.org/publicdomain/zero/1.0/</a>
-<ul>
-<li>CC0 <a href="https://creativecommons.org/public-domain/freeworks/"><em>[Free Culture]</em></a></li>
-</ul></li>
-<li><a href="https://creativecommons.org/licenses/by/4.0/" class="uri">https://creativecommons.org/licenses/by/4.0/</a>
-<ul>
-<li>CC BY (Attribution) <a href="https://creativecommons.org/public-domain/freeworks/"><em>[Free Culture]</em></a></li>
-<li>Erlaubt anderen, das Werk zu verbreiten, zu remixen, zu verändern und darauf aufzubauen, auch kommerziell, solange der Urheber genannt wird.</li>
-</ul></li>
-<li><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="uri">https://creativecommons.org/licenses/by-sa/4.0/</a>
-<ul>
-<li>CC BY-SA (Attribution-ShareAlike) <a href="https://creativecommons.org/public-domain/freeworks/"><em>[Free Culture]</em></a></li>
-<li>Erlaubt anderen, das Werk zu remixen, zu verändern und darauf aufzubauen, auch kommerziell, solange das neue Werk unter der gleichen Lizenz veröffentlicht wird.</li>
-</ul></li>
-<li><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="uri">https://creativecommons.org/licenses/by-nc-sa/4.0/</a>
-<ul>
-<li>CC BY-NC-SA (Attribution-NonCommercial-ShareAlike)</li>
-<li>Erlaubt anderen, das Werk zu bearbeiten, solange es nicht kommerziell genutzt wird und unter denselben Bedingungen weitergegeben wird.</li>
-</ul></li>
-<li><a href="http://rightsstatements.org/vocab/InC/1.0/" class="uri">http://rightsstatements.org/vocab/InC/1.0/</a>
-<ul>
-<li>In Copyright. Das Werk ist urheberrechtlich geschützt.</li>
-</ul></li>
-<li><a href="http://rightsstatements.org/vocab/InC-RUU/1.0/" class="uri">http://rightsstatements.org/vocab/InC-RUU/1.0/</a>
-<ul>
-<li>In Copyright - Rights-holder(s) unlocatable or unidentifiable</li>
-</ul></li>
-</ul></td>
+<td><a href="https://creativecommons.org/">CreativeCommons.org</a> oder <a href="https://rightsstatements.org/en/">RightsStatements.org</a></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- ‘<a href="https://creativecommons.org/publicdomain/mark/1.0/" class="uri">https://creativecommons.org/publicdomain/mark/1.0/</a>’ Public Domain Mark (PDM) <a href="https://creativecommons.org/public-domain/freeworks/"><em>[Free Culture]</em></a></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- ‘<a href="https://creativecommons.org/publicdomain/zero/1.0/" class="uri">https://creativecommons.org/publicdomain/zero/1.0/</a>’ CC0 <a href="https://creativecommons.org/public-domain/freeworks/"><em>[Free Culture]</em></a></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- ‘<a href="https://creativecommons.org/licenses/by/4.0/" class="uri">https://creativecommons.org/licenses/by/4.0/</a>’ CC BY (Attribution) <a href="https://creativecommons.org/public-domain/freeworks/"><em>[Free Culture]</em></a> Erlaubt anderen, das Werk zu verbreiten, zu remixen, zu verändern und darauf aufzubauen, auch kommerziell, solange der Urheber genannt wird.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- ‘<a href="https://creativecommons.org/licenses/by-sa/4.0/" class="uri">https://creativecommons.org/licenses/by-sa/4.0/</a>’ CC BY-SA (Attribution-ShareAlike) <a href="https://creativecommons.org/public-domain/freeworks/"><em>[Free Culture]</em></a> Erlaubt anderen, das Werk zu remixen, zu verändern und darauf aufzubauen, auch kommerziell, solange das neue Werk unter der gleichen Lizenz veröffentlicht wird.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- ‘<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="uri">https://creativecommons.org/licenses/by-nc-sa/4.0/</a>’ CC BY-NC-SA (Attribution-NonCommercial-ShareAlike) Erlaubt anderen, das Werk zu bearbeiten, solange es nicht kommerziell genutzt wird und unter denselben Bedingungen weitergegeben wird.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- ‘<a href="http://rightsstatements.org/vocab/InC/1.0/" class="uri">http://rightsstatements.org/vocab/InC/1.0/</a>’ In Copyright. Das Werk ist urheberrechtlich geschützt.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- ‘<a href="http://rightsstatements.org/vocab/InC-RUU/1.0/" class="uri">http://rightsstatements.org/vocab/InC-RUU/1.0/</a>’ In Copyright - Rights-holder(s) unlocatable or unidentifiable</td>
 </tr>
 </tbody>
 </table>
@@ -932,7 +1213,7 @@ Jahr angegeben, Tag und Monat nicht angegeben in einem Jahr-Monat-Tag-Ausdruck (
 <pre class="mermaid mermaid-js">erDiagram
     MEDIA ||--o{ OBJECT : hasPart
     MEDIA {
-        text id "m1234567"
+        text id "ID des Medienobjekts, z.B. m1234567"
         text title "Titel des Kinder- bzw. Medienobjekts"
         GenderOpen[] subject "Schlagworte/Themen des Medienobjekts, z.B. 'Alter', 'Carearbeit'"
         text description "Beschreibung des Medienobjekts"
@@ -982,9 +1263,9 @@ Abbildung&nbsp;5: Relation von Objekt und Media.
 <h3 data-number="4.1.1" class="anchored" data-anchor-id="was-beschreibe-ich"><span class="header-section-number">4.1.1</span> Was beschreibe ich?</h3>
 <p>Wird ein physisches Objekt, ein digitales Objekt oder eine digitale Darstellung eines physischen Objekts beschrieben? Diese Frage ist wichtig, da unterschiedliche Arten von Quellen unterschiedliche Informationen erfordern und spezifische Metadatenkategorien relevant sein können. Die grundlegenden Unterschiede sind:</p>
 <ul>
-<li><p>Physische Objekte sind materielle Gegenstände wie Bücher, Gemälde, Dokumente oder Artefakte. Beim Erstellen von Metadaten für physische Objekte müssen Informationen erfasst werden, die direkt mit dem Objekt selbst in Verbindung stehen. Dazu gehören physische Merkmale wie Grösse, Material, Zustand, Herkunft und allenfalls spezielle Merkmale oder Besonderheiten des Objekts.</p></li>
-<li><p>Digitale Objekte sind nicht-materielle Inhalte, die in digitaler Form vorliegen. Sie können unter anderem Texte, Bilder, Audio- oder Videodateien umfassen. Bei den Metadaten für digitale Objekte müssen technische Informationen wie Dateiformat und -typ, Dateigrösse oder Auflösung berücksichtigt werden. Ausserdem müssen Rechte und Lizenzen des digitalen Objektes geklärt und entsprechende Informationen zu Urheberrechten angegeben werden.</p></li>
-<li><p>Digitale Darstellungen physischer Objekte sind digitale Repräsentationen von physischen Objekten. Bei der Erstellung von Metadaten für digitale Darstellungen physischer Objekte müssen sowohl Informationen über das ursprüngliche physische Objekt als auch über die digitalen Aspekte erfasst werden.</p></li>
+<li>Physische Objekte sind materielle Gegenstände wie Bücher, Gemälde, Dokumente oder Artefakte. Beim Erstellen von Metadaten für physische Objekte müssen Informationen erfasst werden, die direkt mit dem Objekt selbst in Verbindung stehen. Dazu gehören physische Merkmale wie Grösse, Material, Zustand, Herkunft und allenfalls spezielle Merkmale oder Besonderheiten des Objekts.</li>
+<li>Digitale Objekte sind nicht-materielle Inhalte, die in digitaler Form vorliegen. Sie können unter anderem Texte, Bilder, Audio- oder Videodateien umfassen. Bei den Metadaten für digitale Objekte müssen technische Informationen wie Dateiformat und -typ, Dateigrösse oder Auflösung berücksichtigt werden. Ausserdem müssen Rechte und Lizenzen des digitalen Objektes geklärt und entsprechende Informationen zu Urheberrechten angegeben werden.</li>
+<li>Digitale Darstellungen physischer Objekte sind digitale Repräsentationen von physischen Objekten. Bei der Erstellung von Metadaten für digitale Darstellungen physischer Objekte müssen sowohl Informationen über das ursprüngliche physische Objekt als auch über die digitalen Aspekte erfasst werden.</li>
 </ul>
 <div class="callout callout-style-default callout-tip callout-titled" title="Erfahrungen der Stadt.Geschichte.Basel">
 <div class="callout-header d-flex align-content-center">
@@ -1117,9 +1398,10 @@ Erfahrungen der Stadt.Geschichte.Basel
 <p>Für die Festlegung der Metadatenfelder empfiehlt es sich, von einem Standard auszugehen und die Liste entsprechend der eigenen Bedürfnisse anzupassen.</p>
 <p>Stadt.Geschichte.Basel ist von den 15 Feldern vom <a href="https://www.dublincore.org/specifications/dublin-core/dces/">Dublin Core Metadata Element Set</a> ausgegangen:</p>
 <table class="table">
+<caption>Metadatenfelder des Dublin Core Metadata Element Set.</caption>
 <colgroup>
-<col style="width: 20%">
-<col style="width: 80%">
+<col style="width: 7%">
+<col style="width: 92%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -1257,12 +1539,12 @@ Erfahrungen der Stadt.Geschichte.Basel
 <h2 data-number="4.7" class="anchored" data-anchor-id="siebter-schritt-checkliste"><span class="header-section-number">4.7</span> Siebter Schritt: Checkliste</h2>
 <p>Bei der Erstellung oder Bewertung von Metadaten ist es wichtig, sich immer wieder zu fragen:</p>
 <ul>
-<li><p><strong>Genauigkeit:</strong>&nbsp;Sind die erfassten Daten korrekt und sachlich?</p></li>
-<li><p><strong>Vollständigkeit:</strong>&nbsp;Wurden alle relevanten Daten vollständig erfasst?</p></li>
-<li><p><strong>Konsistenz:</strong>&nbsp;Wurden die Daten konsistent eingegeben? Wird derselbe Satz von Metadatenelementen verwendet, um alle Ressourcen in der Sammlung zu beschreiben? Werden die Daten in demselben Format eingegeben?</p></li>
-<li><p><strong>Interoperabilität:</strong>Sind die Daten maschinenlesbar? Können die Metadaten leicht in ein anderes System migriert und von diesem verstanden werden? Können sie mit anderen Metadatensätzen oder Sammlungen zusammengeführt werden?</p></li>
-<li><p><strong>Inklusivität:</strong>Sind die Daten inklusiv, nicht abwertend und frei von Vorurteilen und schädlicher Sprache? Falls historische Begriffe verwendet werden: Werden sie korrekt kontextualisiert? Sind die verwendeten Begriffe für die beschriebene Ressource geeignet? Stimmen die Begriffe und beschreibenden Informationen mit der Art und Weise überein, wie die Ersteller*innen oder Nutzer*innen einer Ressource diese beschreiben könnten?</p></li>
-<li><p><strong>Ethische Überlegungen:</strong>Enthalten die Daten persönliche, identifizierende oder anderweitig sensible Informationen? Sind die Rechte vorhanden, die in den Daten enthaltenen Informationen aufzuzeichnen oder zu veröffentlichen? Werden die Mitwirkenden an den Daten und die darin zitierten Ressourcen genannt?</p></li>
+<li><strong>Genauigkeit:</strong>&nbsp;Sind die erfassten Daten korrekt und sachlich?</li>
+<li><strong>Vollständigkeit:</strong>&nbsp;Wurden alle relevanten Daten vollständig erfasst?</li>
+<li><strong>Konsistenz:</strong>&nbsp;Wurden die Daten konsistent eingegeben? Wird derselbe Satz von Metadatenelementen verwendet, um alle Ressourcen in der Sammlung zu beschreiben? Werden die Daten in demselben Format eingegeben?</li>
+<li><strong>Interoperabilität:</strong>Sind die Daten maschinenlesbar? Können die Metadaten leicht in ein anderes System migriert und von diesem verstanden werden? Können sie mit anderen Metadatensätzen oder Sammlungen zusammengeführt werden?</li>
+<li><strong>Inklusivität:</strong>Sind die Daten inklusiv, nicht abwertend und frei von Vorurteilen und schädlicher Sprache? Falls historische Begriffe verwendet werden: Werden sie korrekt kontextualisiert? Sind die verwendeten Begriffe für die beschriebene Ressource geeignet? Stimmen die Begriffe und beschreibenden Informationen mit der Art und Weise überein, wie die Ersteller*innen oder Nutzer*innen einer Ressource diese beschreiben könnten?</li>
+<li><strong>Ethische Überlegungen:</strong>Enthalten die Daten persönliche, identifizierende oder anderweitig sensible Informationen? Sind die Rechte vorhanden, die in den Daten enthaltenen Informationen aufzuzeichnen oder zu veröffentlichen? Werden die Mitwirkenden an den Daten und die darin zitierten Ressourcen genannt?</li>
 </ul>
 </section>
 </section>
@@ -1274,7 +1556,7 @@ Erfahrungen der Stadt.Geschichte.Basel
 <div id="fig-bad-zu-leuk" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-bad-zu-leuk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="media/image10.jpg" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1"><img src="media/image10.jpg" style="width:80.0%;height:80.0%" class="figure-img"></a>
+<a href="media/image10.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1"><img src="media/image10.jpg" style="width:80.0%;height:80.0%" class="figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bad-zu-leuk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;6: Das Bad zu Leuk
@@ -1296,8 +1578,8 @@ Tabelle&nbsp;3: Metadaten des Bildes “Das Bad zu Leuk”
 </thead>
 <tbody>
 <tr class="odd">
-<td>Id</td>
-<td>m13456</td>
+<td>MediaId</td>
+<td>m123456</td>
 </tr>
 <tr class="even">
 <td>Title</td>
@@ -1370,7 +1652,7 @@ Tabelle&nbsp;3: Metadaten des Bildes “Das Bad zu Leuk”
 <div id="fig-plakat-zu-voelkerschau-in-basel-1926" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-plakat-zu-voelkerschau-in-basel-1926-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="media/image4.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2"><img src="media/image4.png" style="width:80.0%;height:80.0%" class="figure-img"></a>
+<a href="media/image4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2"><img src="media/image4.png" style="width:80.0%;height:80.0%" class="figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-plakat-zu-voelkerschau-in-basel-1926-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;7: Plakat zur Völkerschau in Basel, 1926
@@ -1392,8 +1674,8 @@ Tabelle&nbsp;4: Metadaten des Plakats zur Völkerschau in Basel, 1926
 </thead>
 <tbody>
 <tr class="odd">
-<td>Id</td>
-<td>m13457</td>
+<td>MediaId</td>
+<td>m123457</td>
 </tr>
 <tr class="even">
 <td>Title</td>
@@ -1466,7 +1748,7 @@ Tabelle&nbsp;4: Metadaten des Plakats zur Völkerschau in Basel, 1926
 <div id="fig-schnitzerei-am-chorgestuehl-des-basler-muensters" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-schnitzerei-am-chorgestuehl-des-basler-muensters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="media/image12.jpg" class="lightbox" data-glightbox="description: .lightbox-desc-3" data-gallery="quarto-lightbox-gallery-3"><img src="media/image12.jpg" style="width:80.0%;height:80.0%" class="figure-img"></a>
+<a href="media/image12.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" data-glightbox="description: .lightbox-desc-3"><img src="media/image12.jpg" style="width:80.0%;height:80.0%" class="figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-schnitzerei-am-chorgestuehl-des-basler-muensters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;8: Schnitzerei am Chorgestühl des Basler Münsters
@@ -1488,8 +1770,8 @@ Tabelle&nbsp;5: Metadaten der Schnitzerei am Chorgestühl des Basler Münsters
 </thead>
 <tbody>
 <tr class="odd">
-<td>Id</td>
-<td>m13458</td>
+<td>MediaId</td>
+<td>m123458</td>
 </tr>
 <tr class="even">
 <td>Title</td>
@@ -1562,7 +1844,7 @@ Tabelle&nbsp;5: Metadaten der Schnitzerei am Chorgestühl des Basler Münsters
 <div id="fig-hie-basel-hie-schweizer-boden-liste-3" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-hie-basel-hie-schweizer-boden-liste-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="media/image6.png" class="lightbox" data-glightbox="description: .lightbox-desc-4" data-gallery="quarto-lightbox-gallery-4"><img src="media/image6.png" style="width:80.0%;height:80.0%" class="figure-img"></a>
+<a href="media/image6.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" data-glightbox="description: .lightbox-desc-4"><img src="media/image6.png" style="width:80.0%;height:80.0%" class="figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hie-basel-hie-schweizer-boden-liste-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;9: Hie Basel Hie Schweizer Boden - Liste 3
@@ -1584,8 +1866,8 @@ Tabelle&nbsp;6: Metadaten des Plakats “Hie Basel Hie Schweizer Boden - Liste 3
 </thead>
 <tbody>
 <tr class="odd">
-<td>Id</td>
-<td>m13459</td>
+<td>MediaId</td>
+<td>m123459</td>
 </tr>
 <tr class="even">
 <td>Title</td>
@@ -1658,7 +1940,7 @@ Tabelle&nbsp;6: Metadaten des Plakats “Hie Basel Hie Schweizer Boden - Liste 3
 <div id="fig-zeitungsinserat-in-der-national-zeitung-1955" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-zeitungsinserat-in-der-national-zeitung-1955-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="media/image11.png" class="lightbox" data-glightbox="description: .lightbox-desc-5" data-gallery="quarto-lightbox-gallery-5"><img src="media/image11.png" style="width:80.0%;height:80.0%" class="figure-img"></a>
+<a href="media/image11.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" data-glightbox="description: .lightbox-desc-5"><img src="media/image11.png" style="width:80.0%;height:80.0%" class="figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-zeitungsinserat-in-der-national-zeitung-1955-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;10: Zeitungsinserat in der National-Zeitung, 1955
@@ -1680,8 +1962,8 @@ Tabelle&nbsp;7: Metadaten des Zeitungsinserats in der National-Zeitung, 1955
 </thead>
 <tbody>
 <tr class="odd">
-<td>Id</td>
-<td>m13410</td>
+<td>MediaId</td>
+<td>m123410</td>
 </tr>
 <tr class="even">
 <td>Title</td>
@@ -1754,7 +2036,7 @@ Tabelle&nbsp;7: Metadaten des Zeitungsinserats in der National-Zeitung, 1955
 <div id="fig-die-auslaendische-wohnbevoelkerung-von-basel-stadt-nach-heimatnation-1920-1965" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-die-auslaendische-wohnbevoelkerung-von-basel-stadt-nach-heimatnation-1920-1965-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="media/image14.jpg" class="lightbox" data-glightbox="description: .lightbox-desc-6" data-gallery="quarto-lightbox-gallery-6"><img src="media/image14.jpg" style="width:80.0%;height:80.0%" class="figure-img"></a>
+<a href="media/image14.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-6" data-glightbox="description: .lightbox-desc-6"><img src="media/image14.jpg" style="width:80.0%;height:80.0%" class="figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-die-auslaendische-wohnbevoelkerung-von-basel-stadt-nach-heimatnation-1920-1965-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;11: Die ausländische Wohnbevölkerung von Basel-Stadt nach Heimatnation, 1920–1965
@@ -1776,8 +2058,8 @@ Tabelle&nbsp;8: Metadaten der Statistik “Die ausländische Wohnbevölkerung vo
 </thead>
 <tbody>
 <tr class="odd">
-<td>Id</td>
-<td>m13411</td>
+<td>MediaId</td>
+<td>m123411</td>
 </tr>
 <tr class="even">
 <td>Title</td>
@@ -1850,7 +2132,7 @@ Tabelle&nbsp;8: Metadaten der Statistik “Die ausländische Wohnbevölkerung vo
 <div id="fig-basler-brandmarkeisen-17-jahrhundert" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-basler-brandmarkeisen-17-jahrhundert-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="media/image13.jpg" class="lightbox" data-glightbox="description: .lightbox-desc-7" data-gallery="quarto-lightbox-gallery-7"><img src="media/image13.jpg" style="width:80.0%;height:80.0%" class="figure-img"></a>
+<a href="media/image13.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-7" data-glightbox="description: .lightbox-desc-7"><img src="media/image13.jpg" style="width:80.0%;height:80.0%" class="figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-basler-brandmarkeisen-17-jahrhundert-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;12: Basler Brandmarkeisen, 17. Jahrhundert
@@ -1872,8 +2154,8 @@ Tabelle&nbsp;9: Metadaten der Basler Brandmarkeisen, 17. Jahrhundert
 </thead>
 <tbody>
 <tr class="odd">
-<td>Id</td>
-<td>m13412</td>
+<td>MediaId</td>
+<td>m123412</td>
 </tr>
 <tr class="even">
 <td>Title</td>
@@ -1946,7 +2228,7 @@ Tabelle&nbsp;9: Metadaten der Basler Brandmarkeisen, 17. Jahrhundert
 <div id="fig-plan-mit-verteilung-juedischer-haeuser" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-plan-mit-verteilung-juedischer-haeuser-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="media/image15.jpg" class="lightbox" data-glightbox="description: .lightbox-desc-8" data-gallery="quarto-lightbox-gallery-8"><img src="media/image15.jpg" style="width:80.0%;height:80.0%" class="figure-img"></a>
+<a href="media/image15.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-8" data-glightbox="description: .lightbox-desc-8"><img src="media/image15.jpg" style="width:80.0%;height:80.0%" class="figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-plan-mit-verteilung-juedischer-haeuser-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;13: Plan mit Verteilung jüdischer Häuser
@@ -1968,8 +2250,8 @@ Tabelle&nbsp;10: Metadaten des Plans mit Verteilung jüdischer Häuser
 </thead>
 <tbody>
 <tr class="odd">
-<td>Id</td>
-<td>m13413</td>
+<td>MediaId</td>
+<td>m123413</td>
 </tr>
 <tr class="even">
 <td>Title</td>
@@ -2039,7 +2321,7 @@ Tabelle&nbsp;10: Metadaten des Plans mit Verteilung jüdischer Häuser
 </section>
 <section id="lebensbilder" class="level2" data-number="5.9">
 <h2 data-number="5.9" class="anchored" data-anchor-id="lebensbilder"><span class="header-section-number">5.9</span> Lebensbilder</h2>
-<p>Für den ersten Geschichtsband der Stadt.Geschichte.Basel werden unter anderem Lebensbilder angefertigt. Lebensbilder dienen dazu, die Lebensumstände der ur- und frühzeitlichen Menschen zu rekonstruieren. Sie werden in diesem Handbuch ebenfalls thematisiert, da sie wie historische Quellen Diskriminierung und Stereotypisierungen enthalten können. So wird beispielsweise auf Lebensbildern oftmals das Bild einer Kernfamilie dargestellt. Diese Kernfamilie entspricht dem heutigen stereotypen Familienideal, das aus Vater, Mutter und zwei Kindern besteht. Zudem sind Kinder auf Lebensbildern grundsätzlich unterrepräsentiert. Diskurse zur Darstellung von sozialen Strukturen und Verhältnissen auf Lebensbildern fanden in der Archäologie erst ab den 2000er-Jahren statt. Reflexionsprozesse sind deshalb wichtig, weil Lebensbilder dazu beitragen, ein "Bild von Verhältnissen, die schon immer so waren" zu festigen. Die Leser*innen betrachten die dargestellten Stereotypen als selbstverständlich und nehmen an, dass sie seit langem existieren und daher als richtig angesehen werden sollten, ohne, dass die Bilder infrage gestellt werden.&nbsp;&nbsp;</p>
+<p>Für den ersten Geschichtsband der Stadt.Geschichte.Basel werden unter anderem Lebensbilder angefertigt. Lebensbilder dienen dazu, die Lebensumstände der ur- und frühzeitlichen Menschen zu rekonstruieren. Sie werden in diesem Handbuch ebenfalls thematisiert, da sie wie historische Quellen Diskriminierung und Stereotypisierungen enthalten können. So wird beispielsweise auf Lebensbildern oftmals das Bild einer Kernfamilie dargestellt. Diese Kernfamilie entspricht dem heutigen stereotypen Familienideal, das aus Vater, Mutter und zwei Kindern besteht. Zudem sind Kinder auf Lebensbildern grundsätzlich unterrepräsentiert. Diskurse zur Darstellung von sozialen Strukturen und Verhältnissen auf Lebensbildern fanden in der Archäologie erst ab den 2000er-Jahren statt. Reflexionsprozesse sind deshalb wichtig, weil Lebensbilder dazu beitragen, ein "Bild von Verhältnissen, die schon immer so waren" zu festigen. Die Leser*innen betrachten die dargestellten Stereotypen als selbstverständlich und nehmen an, dass sie seit langem existieren und daher als richtig angesehen werden sollten, ohne, dass die Bilder infrage gestellt werden.</p>
 <p>Im Folgenden werden anhand "negativer" Beispiele Stereotypen sowie Diskriminierungen in Lebensbildern präsentiert. Im zweiten Unterkapitel werden "positive" Beispiele gezeigt.</p>
 <section id="negative-beispiele-von-lebensbildern" class="level3" data-number="5.9.1">
 <h3 data-number="5.9.1" class="anchored" data-anchor-id="negative-beispiele-von-lebensbildern"><span class="header-section-number">5.9.1</span> Negative Beispiele von Lebensbildern</h3>
@@ -2048,7 +2330,7 @@ Tabelle&nbsp;10: Metadaten des Plans mit Verteilung jüdischer Häuser
 <div id="fig-bestattung-von-unlingen" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-bestattung-von-unlingen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="media/image8.jpg" class="lightbox" data-glightbox="description: .lightbox-desc-9" data-gallery="quarto-lightbox-gallery-9"><img src="media/image8.jpg" style="width:80.0%;height:80.0%" class="figure-img"></a>
+<a href="media/image8.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-9" data-glightbox="description: .lightbox-desc-9"><img src="media/image8.jpg" style="width:80.0%;height:80.0%" class="figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bestattung-von-unlingen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;14: Bestattung von Unlingen
@@ -2070,8 +2352,8 @@ Tabelle&nbsp;11: Metadaten der Bestattung von Unlingen
 </thead>
 <tbody>
 <tr class="odd">
-<td>objectid</td>
-<td></td>
+<td>MediaId</td>
+<td>m123414</td>
 </tr>
 <tr class="even">
 <td>Filename</td>
@@ -2148,7 +2430,7 @@ Tabelle&nbsp;11: Metadaten der Bestattung von Unlingen
 <div id="fig-hoehlenleben-zur-aelteren-steinzeit" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-hoehlenleben-zur-aelteren-steinzeit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="media/image2.png" class="lightbox" data-glightbox="description: .lightbox-desc-10" data-gallery="quarto-lightbox-gallery-10"><img src="media/image2.png" style="width:80.0%;height:80.0%" class="figure-img"></a>
+<a href="media/image2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" data-glightbox="description: .lightbox-desc-10"><img src="media/image2.png" style="width:80.0%;height:80.0%" class="figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hoehlenleben-zur-aelteren-steinzeit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;15: Höhlenleben zur älteren Steinzeit
@@ -2170,8 +2452,8 @@ Tabelle&nbsp;12: Metadaten des Höhlenlebens zur älteren Steinzeit
 </thead>
 <tbody>
 <tr class="odd">
-<td>objectid</td>
-<td></td>
+<td>MediaId</td>
+<td>m123415</td>
 </tr>
 <tr class="even">
 <td>Filename</td>
@@ -2248,7 +2530,7 @@ Tabelle&nbsp;12: Metadaten des Höhlenlebens zur älteren Steinzeit
 <div id="fig-bestattung-von-bad-duerrenberg" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-bestattung-von-bad-duerrenberg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="media/image1.png" class="lightbox" data-glightbox="description: .lightbox-desc-11" data-gallery="quarto-lightbox-gallery-11"><img src="media/image1.png" style="width:80.0%;height:80.0%" class="figure-img"></a>
+<a href="media/image1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" data-glightbox="description: .lightbox-desc-11"><img src="media/image1.png" style="width:80.0%;height:80.0%" class="figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bestattung-von-bad-duerrenberg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;16: Bestattung von Bad Dürrenberg
@@ -2270,8 +2552,8 @@ Tabelle&nbsp;13: Metadaten der Bestattung von Bad Dürrenberg
 </thead>
 <tbody>
 <tr class="odd">
-<td>objectid</td>
-<td></td>
+<td>MediaId</td>
+<td>m123416</td>
 </tr>
 <tr class="even">
 <td>Filename</td>
@@ -2351,7 +2633,7 @@ Tabelle&nbsp;13: Metadaten der Bestattung von Bad Dürrenberg
 <div id="fig-opferplatz-thorberger-moor" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-opferplatz-thorberger-moor-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="media/image3.png" class="lightbox" data-glightbox="description: .lightbox-desc-12" data-gallery="quarto-lightbox-gallery-12"><img src="media/image3.png" style="width:80.0%;height:80.0%" class="figure-img"></a>
+<a href="media/image3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12" data-glightbox="description: .lightbox-desc-12"><img src="media/image3.png" style="width:80.0%;height:80.0%" class="figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-opferplatz-thorberger-moor-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;17: Opferplatz Thorberger Moor
@@ -2373,8 +2655,8 @@ Tabelle&nbsp;14: Metadaten des Opferplatzes Thorberger Moor
 </thead>
 <tbody>
 <tr class="odd">
-<td>objectid</td>
-<td></td>
+<td>MediaId</td>
+<td>m123417</td>
 </tr>
 <tr class="even">
 <td>Filename</td>
@@ -2451,7 +2733,7 @@ Tabelle&nbsp;14: Metadaten des Opferplatzes Thorberger Moor
 <div id="fig-alle-unter-einem-dach" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-alle-unter-einem-dach-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="media/image5.png" class="lightbox" data-glightbox="description: .lightbox-desc-13" data-gallery="quarto-lightbox-gallery-13"><img src="media/image5.png" style="width:80.0%;height:80.0%" class="figure-img"></a>
+<a href="media/image5.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13" data-glightbox="description: .lightbox-desc-13"><img src="media/image5.png" style="width:80.0%;height:80.0%" class="figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-alle-unter-einem-dach-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;18: Alle unter einem Dach
@@ -2473,8 +2755,8 @@ Tabelle&nbsp;15: Metadaten von Alle unter einem Dach
 </thead>
 <tbody>
 <tr class="odd">
-<td>objectid</td>
-<td></td>
+<td>MediaId</td>
+<td>m123418</td>
 </tr>
 <tr class="even">
 <td>Filename</td>
@@ -2551,7 +2833,7 @@ Tabelle&nbsp;15: Metadaten von Alle unter einem Dach
 <div id="fig-die-keltin" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-die-keltin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="media/image9.png" class="lightbox" data-glightbox="description: .lightbox-desc-14" data-gallery="quarto-lightbox-gallery-14"><img src="media/image9.png" style="width:80.0%;height:80.0%" class="figure-img"></a>
+<a href="media/image9.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14" data-glightbox="description: .lightbox-desc-14"><img src="media/image9.png" style="width:80.0%;height:80.0%" class="figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-die-keltin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;19: Die Keltin
@@ -2573,8 +2855,8 @@ Tabelle&nbsp;16: Metadaten der Keltin
 </thead>
 <tbody>
 <tr class="odd">
-<td>objectid</td>
-<td></td>
+<td>MediaId</td>
+<td>m123419</td>
 </tr>
 <tr class="even">
 <td>Filename</td>
@@ -6209,7 +6491,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>  <script src="https://giscus.app/client.js" data-repo="maehr/handbuch-diskriminierungsfreie-metadaten" data-repo-id="" data-category="General" data-category-id="" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
 </script>
 <input type="hidden" id="giscus-base-theme" value="light">
-<input type="hidden" id="giscus-alt-theme" value="dark">  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"loop":false,"descPosition":"bottom","closeEffect":"zoom","openEffect":"zoom","selector":".lightbox"});
+<input type="hidden" id="giscus-alt-theme" value="dark">  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"descPosition":"bottom","selector":".lightbox","loop":false,"closeEffect":"zoom","openEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
