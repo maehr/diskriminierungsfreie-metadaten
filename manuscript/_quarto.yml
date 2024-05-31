@@ -25,9 +25,8 @@ format:
     fig-align: left
     subject: Diskriminierungsfreie Metadaten
     category: Handbuch
-  pdf:
+  typst:
     output-file: handbuch-diskriminierungsfreie-metadaten.pdf
-    pdf-engine: xelatex
 
 execute:
   freeze: true
