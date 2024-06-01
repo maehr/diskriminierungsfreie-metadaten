@@ -25,8 +25,8 @@ format:
     subject: Diskriminierungsfreie Metadaten
     category: Handbuch
     wrap: none
-  pdf:
-    pdf-engine: wkhtmltopdf
+  pdf: default
+
 
 execute:
   freeze: true
