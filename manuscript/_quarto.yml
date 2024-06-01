@@ -20,12 +20,7 @@ format:
       giscus:
         repo: maehr/handbuch-diskriminierungsfreie-metadaten
   docx:
-    reference-doc: report_DepGesch_V02_de.dotx
-    fig-align: left
-    subject: Diskriminierungsfreie Metadaten
-    category: Handbuch
-  odt:
-    reference-doc: report_DepGesch_V02_de.dotx
+    reference-doc: custom-reference-doc.docx
     fig-align: left
     subject: Diskriminierungsfreie Metadaten
     category: Handbuch
@@ -34,6 +29,7 @@ format:
     fig-align: left
     subject: Diskriminierungsfreie Metadaten
     category: Handbuch
+    wrap: none
 
 execute:
   freeze: true
