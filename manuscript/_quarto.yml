@@ -24,23 +24,9 @@ format:
     fig-align: left
     subject: Diskriminierungsfreie Metadaten
     category: Handbuch
-  typst:
-    papersize: a4
-    fig-align: left
-    subject: Diskriminierungsfreie Metadaten
-    category: Handbuch
     wrap: none
-    toc: true
-    toc-depth: 2
-    section-numbering: "1.1.1.1"
-    columns: 2
-    margin:
-      top: 1cm
-      bottom: 1cm
-      left: 2cm
-      right: 1cm
-    fontsize: 10pt
-    mainfont: "Arial"
+  pdf:
+    pdf-engine: wkhtmltopdf
 
 execute:
   freeze: true
