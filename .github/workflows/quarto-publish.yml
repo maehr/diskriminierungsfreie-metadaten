@@ -30,17 +30,11 @@ jobs:
         with:
           tinytex: true
 
-      - name: Render Quarto Project docx
+      - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
         with:
           path: manuscript
-          to: docx
-
-      - name: Render Quarto Project html
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          path: manuscript
-          to: html
+          to: all
 
       - name: Install Chromium
         run: |
