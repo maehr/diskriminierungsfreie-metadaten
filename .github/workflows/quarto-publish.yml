@@ -36,9 +36,9 @@ jobs:
           path: manuscript
           to: all
 
-      - name: Convert html to pdf with google chrome with headless mode margin 1cm and background images enabled no header
+      - name: Convert html to pdf with Chromium
         run: |
-          chromium --headless --disable-gpu --print-to-pdf=manuscript/_manuscript/handbuch-diskriminierungsfreie-metadaten.pdf --no-pdf-header-footer --print-background --virtual-time-budget=10000 --print-to-pdf-no-header --print-to-pdf --print-to-pdf --print-to-pdf-no-header-footer --print-to-pdf --virtual-time-budget=10000 --print-to-pdf-no-header --virtual-time-budget=10000 --margin-top=1cm --margin-right=1cm --margin-bottom=1cm --margin-left=1cm file:///$(pwd)/manuscript/_manuscript/index.html
+          chromium --headless --disable-gpu --print-to-pdf=manuscript/_manuscript/handbuch-diskriminierungsfreie-metadaten.pdf --print-to-pdf-no-header --no-pdf-header-footer --print-background --virtual-time-budget=10000 --no-margins file:///$(pwd)/manuscript/_manuscript/index.html
 
       - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2

@@ -19,6 +19,8 @@ format:
     comments:
       giscus:
         repo: maehr/handbuch-diskriminierungsfreie-metadaten
+    css: 
+    - custom.css
   docx:
     reference-doc: custom-reference.docx
     fig-align: left
