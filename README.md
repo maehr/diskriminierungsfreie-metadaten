@@ -27,7 +27,8 @@ This repository is organized as follows:
 - `manuscript/data/`: data files used in the manuscript
 - `manuscript/media/`: images, logos, etc. used in the manuscript
 - `manuscript/index.qmd`: the main document, in markdown format
-- `manuscript/custom-reference-doc.docx`: a custom reference document for the manuscript
+- `manuscript/custom-reference.docx`: a custom reference document for the manuscript
+- `manuscript/custom.css`: a custom css style sheet for printing
 - `manuscript/references.bib`: the bibliography file for the manuscript
 
 ## Getting Started
