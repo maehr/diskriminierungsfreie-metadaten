@@ -6,8 +6,10 @@ manuscript:
   resources:
     - data/genderopen_gnd_mapping.csv
   code-links:
-    - text: GitHub Repo
-      href: https://github.com/maehr/handbuch-diskriminierungsfreie-metadaten
+    - text: Diskussion Living Document
+      href: https://github.com/maehr/diskriminierungsfreie-metadaten/discussions
+    - text: Quellcode
+      href: https://github.com/maehr/diskriminierungsfreie-metadaten
   manuscript-url: https://maehr.github.io/diskriminierungsfreie-metadaten/
 
 format:
@@ -18,7 +20,7 @@ format:
     link-external-newwindow: true
     comments:
       giscus:
-        repo: maehr/handbuch-diskriminierungsfreie-metadaten
+        repo: maehr/diskriminierungsfreie-metadaten
     css:
       - custom.css
   docx:
@@ -31,3 +33,4 @@ format:
     toc-title: Inhaltsverzeichnis
   pdf:
     pdf-engine: xelatex
+    keep-tex: false

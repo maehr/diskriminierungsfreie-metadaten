@@ -41,7 +41,7 @@ website:
           - text: Contributing
             href: CONTRIBUTING.md
           - text: License (Data)
-            href: LICENSE-CCBY.md
+            href: LICENSE-CCBYSA.md
           - text: License (Code)
             href: LICENSE-AGPL.md
           - text: Security

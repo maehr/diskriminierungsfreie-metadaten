@@ -1,13 +1,13 @@
 {
 	"name": "diskriminierungsfreie-metadaten",
-	"description": "Handbuch zur Erstellung diskriminierungsfreier Metadaten für historische Quellen und Forschungsdaten. Erfahrungen aus dem historischen Forschungsprojekt Stadt.Geschichte.Basel.",
+	"description": "Handbuch zur Erstellung diskriminierungsfreier Metadaten für historische Quellen und Forschungsdaten. Erfahrungen aus dem geschichtswissenschaftlichen Forschungsprojekt Stadt.Geschichte.Basel",
 	"author": "Moritz Mähr <moritz.maehr@unibas.ch>",
 	"url": "https://github.com/maehr/diskriminierungsfreie-metadaten/issues",
 	"license": "AGPL-3.0",
 	"scripts": {
-		"check": "prettier --ignore-path .gitignore  --check . '!{CODE_OF_CONDUCT.md,LICENSE-AGPL.md,LICENSE-CCBY.md,_layouts/default.html,package-lock.json,pnpm-lock.yaml,yarn.lock}'",
+		"check": "prettier --ignore-path .gitignore  --check . '!{CODE_OF_CONDUCT.md,LICENSE-AGPL.md,LICENSE-CCBYSA.md,_layouts/default.html,package-lock.json,pnpm-lock.yaml,yarn.lock}'",
 		"commit": "cz",
-		"format": "prettier --ignore-path .gitignore --write . '!{CODE_OF_CONDUCT.md,LICENSE-AGPL.md,LICENSE-CCBY.md,_layouts/default.html,package-lock.json,pnpm-lock.yaml,yarn.lock}'",
+		"format": "prettier --ignore-path .gitignore --write . '!{CODE_OF_CONDUCT.md,LICENSE-AGPL.md,LICENSE-CCBYSA.md,_layouts/default.html,package-lock.json,pnpm-lock.yaml,yarn.lock}'",
 		"prepare": "husky",
 		"changelog": "npm exec git-cliff -- --config cliff.toml"
 	},
@@ -17,9 +17,7 @@
 		"cz-conventional-changelog": "^3.3.0",
 		"git-cliff": "^2.2.2",
 		"husky": "^9.0.11",
-		"pdf-puppeteer": "^1.1.11",
-		"prettier": "^3.3.0",
-		"puppeteer": "^22.10.0"
+		"prettier": "^3.3.0"
 	},
 	"type": "module",
 	"config": {
