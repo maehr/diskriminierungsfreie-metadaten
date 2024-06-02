@@ -4,7 +4,7 @@ on:
         - main
     workflow_dispatch:
   
-  name: Render and Publish
+  name: Render and Publish Mac
   
   permissions:
     contents: write
