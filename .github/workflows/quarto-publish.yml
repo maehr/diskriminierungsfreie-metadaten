@@ -43,7 +43,7 @@ jobs:
       - name: Install Puppeteer
         run: npm install puppeteer
 
-      - name: Convert HTML to PDF using DevTools Protocol
+      - name: Convert HTML to PDF using Puppeteer
         run: |
           node -e "
           const puppeteer = require('puppeteer');
@@ -51,51 +51,61 @@ jobs:
           const path = require('path');
   
           (async () => {
-            const browser = await puppeteer.launch({ headless: true });
-            const page = await browser.newPage();
-            const filePath = 'file://' + path.resolve('manuscript/_manuscript/index.html');
-            await page.goto(filePath, { waitUntil: 'networkidle0' });
+            try {
+              const browser = await puppeteer.launch({ headless: true });
+              const page = await browser.newPage();
+              const filePath = 'file://' + path.resolve('manuscript/_manuscript/index.html');
+              console.log('Navigating to', filePath);
+              await page.goto(filePath, { waitUntil: 'networkidle0' });
   
-            // Check if the page content is loaded
-            const content = await page.content();
-            if (!content || content.trim().length === 0) {
-              console.error('Page content is empty');
+              // Check if the page content is loaded
+              const content = await page.content();
+              if (!content || content.trim().length === 0) {
+                console.error('Page content is empty');
+                await browser.close();
+                process.exit(1);
+              }
+  
+              // Log page content for debugging
+              console.log('Page content loaded successfully.');
+  
+              // Ensure all elements are visible
+              await page.evaluate(() => {
+                const elements = document.querySelectorAll('*');
+                elements.forEach(element => {
+                  if (getComputedStyle(element).visibility === 'hidden' || getComputedStyle(element).display === 'none') {
+                    element.style.visibility = 'visible';
+                    element.style.display = 'block';
+                  }
+                });
+              });
+  
+              // Wait a bit to ensure content is rendered
+              await page.waitForTimeout(2000);
+  
+              // Create a CDP session
+              const client = await page.target().createCDPSession();
+  
+              // Set up PDF options
+              const pdfOptions = {
+                path: 'manuscript/_manuscript/handbuch-diskriminierungsfreie-metadaten.pdf',
+                format: 'A4',
+                printBackground: true,
+                margin: { top: '1in', bottom: '1in', left: '1in', right: '1in' }
+              };
+  
+              // Generate the PDF using the DevTools Protocol
+              const pdfBuffer = await client.send('Page.printToPDF', pdfOptions);
+  
+              // Write the PDF to a file
+              fs.writeFileSync(pdfOptions.path, Buffer.from(pdfBuffer.data, 'base64'));
+  
+              console.log('PDF generated successfully:', pdfOptions.path);
               await browser.close();
+            } catch (error) {
+              console.error('Error during PDF generation', error);
               process.exit(1);
             }
-  
-            // Ensure all elements are visible
-            await page.evaluate(() => {
-              const elements = document.querySelectorAll('*');
-              elements.forEach(element => {
-                if (getComputedStyle(element).visibility === 'hidden' || getComputedStyle(element).display === 'none') {
-                  element.style.visibility = 'visible';
-                  element.style.display = 'block';
-                }
-              });
-            });
-  
-            // Create a CDP session
-            const client = await page.target().createCDPSession();
-  
-            // Set up PDF options
-            const pdfOptions = {
-              format: 'A4',
-              printBackground: true,
-              marginTop: 1 * 72,
-              marginBottom: 1 * 72,
-              marginLeft: 1 * 72,
-              marginRight: 1 * 72,
-            };
-  
-            // Generate the PDF using the DevTools Protocol
-            const pdfBuffer = await client.send('Page.printToPDF', pdfOptions);
-  
-            // Write the PDF to a file
-            const outputFilePath = 'manuscript/_manuscript/handbuch-diskriminierungsfreie-metadaten.pdf';
-            fs.writeFileSync(outputFilePath, Buffer.from(pdfBuffer.data, 'base64'));
-  
-            await browser.close();
           })();
           "
 
