@@ -29,10 +29,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          # To install LaTeX to build PDF book outputs, uncomment below
           tinytex: true
-        # uncomment below and fill to pin a version
-        # version: SPECIFIC-QUARTO-VERSION-HERE
 
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
@@ -50,13 +47,6 @@ jobs:
       - name: Convert HTML to PDF using DevTools Protocol
         run: node .github/workflows/convert-html-to-pdf.js
 
-      # - name: Install LibreOffice
-      #   run: sudo apt-get update && sudo apt-get install -y libreoffice
-
-      # - name: Convert DOCX to PDF
-      #   run: libreoffice --headless --convert-to pdf ./manuscript/_manuscript/handbuch-diskriminierungsfreie-metadaten.docx --outdir ./manuscript/_manuscript/
-
-      # NOTE: If Publishing to GitHub Pages, set the permissions correctly (see top of this yaml)
       - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
         with:

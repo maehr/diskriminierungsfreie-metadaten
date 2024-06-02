@@ -21,7 +21,7 @@ format:
         repo: maehr/handbuch-diskriminierungsfreie-metadaten
   docx:
     reference-doc: custom-reference-doc2.docx
-    # fig-align: left
+    fig-align: left
     subject: Diskriminierungsfreie Metadaten
     category: Handbuch
     wrap: none
@@ -30,7 +30,3 @@ format:
     toc-title: Inhaltsverzeichnis
   pdf:
     pdf-engine: xelatex
-    pdf-engine-opt: '-no-pdf'
-
-execute:
-  freeze: true
