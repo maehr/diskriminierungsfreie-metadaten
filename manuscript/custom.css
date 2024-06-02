@@ -1,0 +1,19 @@
+@media print {
+	img {
+		max-height: 8cm;
+		object-fit: contain;
+	}
+
+	@page {
+		size: A4;
+		margin: 1cm;
+	}
+
+	body {
+		margin: 0;
+	}
+
+	.level1 {
+		page-break-before: always;
+	}
+}
