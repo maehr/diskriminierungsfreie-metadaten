@@ -20,7 +20,7 @@ format:
       giscus:
         repo: maehr/handbuch-diskriminierungsfreie-metadaten
   docx:
-    reference-doc: custom-reference-doc.docx
+    reference-doc: custom-reference-doc2.docx
     # fig-align: left
     subject: Diskriminierungsfreie Metadaten
     category: Handbuch
@@ -28,8 +28,9 @@ format:
     toc: true
     toc-depth: 3
     toc-title: Inhaltsverzeichnis
-  pdf: default
-
+  pdf:
+    pdf-engine: xelatex
+    pdf-engine-opt: '-no-pdf'
 
 execute:
   freeze: true

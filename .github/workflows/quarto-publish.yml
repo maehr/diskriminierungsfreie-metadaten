@@ -47,16 +47,8 @@ jobs:
       - name: Install pdf-puppeteer
         run: npm install pdf-puppeteer puppeteer
 
-      - name: Convert HTML to PDF
-        run: |
-          node -e "
-          const convertHTMLToPDF = require('pdf-puppeteer');
-          const fs = require('fs');
-          const html = fs.readFileSync('./manuscript/_manuscript/index.html', 'utf8');
-          convertHTMLToPDF(html, (pdf) => {
-            fs.writeFileSync('./manuscript/_manuscript/handbuch-diskriminierungsfreie-metadaten.pdf', pdf);
-          }, { format: 'A4' });
-          "
+      - name: Convert HTML to PDF using DevTools Protocol
+        run: node .github/workflows/convert-html-to-pdf.js
 
       # - name: Install LibreOffice
       #   run: sudo apt-get update && sudo apt-get install -y libreoffice

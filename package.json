@@ -17,7 +17,9 @@
 		"cz-conventional-changelog": "^3.3.0",
 		"git-cliff": "^2.2.2",
 		"husky": "^9.0.11",
-		"prettier": "^3.2.5"
+		"pdf-puppeteer": "^1.1.11",
+		"prettier": "^3.3.0",
+		"puppeteer": "^22.10.0"
 	},
 	"type": "module",
 	"config": {
