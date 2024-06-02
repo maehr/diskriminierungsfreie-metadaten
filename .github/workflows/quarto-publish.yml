@@ -38,7 +38,7 @@ jobs:
 
       - name: Convert html to pdf with Chromium
         run: |
-          chromium --headless --disable-gpu --print-to-pdf=manuscript/_manuscript/handbuch-diskriminierungsfreie-metadaten.pdf --print-to-pdf-no-header --no-pdf-header-footer --print-background --virtual-time-budget=10000 --no-margins file:///$(pwd)/manuscript/_manuscript/index.html
+          chromium --headless --disable-gpu --print-to-pdf=manuscript/_manuscript/handbuch-diskriminierungsfreie-metadaten.pdf  --scale=1.0 --no-pdf-header-footer --print-background --virtual-time-budget=10000 file:///$(pwd)/manuscript/_manuscript/index.html
 
       - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
