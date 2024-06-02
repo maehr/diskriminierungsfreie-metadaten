@@ -36,9 +36,6 @@ jobs:
           path: manuscript
           to: all
 
-      - name: Install Source Sans Pro font
-        run: sudo apt install fonts-source-sans-pro
-
       - name: Convert html to pdf with Chromium
         run: |
           chromium --headless --disable-gpu --print-to-pdf=manuscript/_manuscript/handbuch-diskriminierungsfreie-metadaten.pdf --print-to-pdf-no-header --no-pdf-header-footer --print-background --virtual-time-budget=10000 --no-margins file:///$(pwd)/manuscript/_manuscript/index.html
