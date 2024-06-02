@@ -36,18 +36,6 @@ jobs:
           path: manuscript
           to: all
 
-      - name: Install Google Font Source Sna
-        run: |
-          wget -O Source_Sans.zip https://fonts.google.com/download?family=Source%20Sans%203
-          unzip -d source_sans/ Source_Sans.zip
-          mv source_sans /usr/share/fonts/
-          fc-cache -fv
-          # https://fonts.google.com/specimen/Source+Sans+3
-          # wget -O Fira_Sans.zip https://fonts.google.com/download?family=Fira%20Sans
-          # unzip -d fira_sans/ Fira_Sans.zip
-          # mv fira_sans /usr/share/fonts/
-          # fc-cache -fv
-
       - name: Convert html to pdf with Chromium
         run: |
           chromium --headless --disable-gpu --print-to-pdf=manuscript/_manuscript/handbuch-diskriminierungsfreie-metadaten.pdf  --scale=1.0 --no-pdf-header-footer --print-background --virtual-time-budget=10000 file:///$(pwd)/manuscript/_manuscript/index.html
