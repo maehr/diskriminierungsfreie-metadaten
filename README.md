@@ -6,7 +6,7 @@ This repository contains the source of [Handbuch zur Erstellung diskriminierungs
 [![GitHub forks](https://img.shields.io/github/forks/maehr/diskriminierungsfreie-metadaten.svg)](https://github.com/maehr/diskriminierungsfreie-metadaten/network)
 [![GitHub stars](https://img.shields.io/github/stars/maehr/diskriminierungsfreie-metadaten.svg)](https://github.com/maehr/diskriminierungsfreie-metadaten/stargazers)
 [![Code license](https://img.shields.io/github/license/maehr/diskriminierungsfreie-metadaten.svg)](https://github.com/maehr/diskriminierungsfreie-metadaten/blob/main/LICENSE-AGPL.md)
-[![Data license](https://img.shields.io/github/license/maehr/diskriminierungsfreie-metadaten.svg)](https://github.com/maehr/diskriminierungsfreie-metadaten/blob/main/LICENSE-CCBY.md)
+[![Data license](https://img.shields.io/github/license/maehr/diskriminierungsfreie-metadaten.svg)](https://github.com/maehr/diskriminierungsfreie-metadaten/blob/main/LICENSE-CCBYSA.md)
 [![DOI](https://zenodo.org/badge/11124720.svg)](https://zenodo.org/badge/latestdoi/11124720)
 
 ## What is the publication about?
@@ -24,9 +24,10 @@ See the [CITATION.cff](CITATION.cff) file for citation information.
 This repository is organized as follows:
 
 - `manuscript/`: the manuscript of the publication
-- `manuscript/data/`: data files used in the manuscript
+- `manuscript/data/genderopen_gnd_mapping.csv`: the mapping of the Schlagwortindex GenderOpen to the GND
 - `manuscript/media/`: images, logos, etc. used in the manuscript
-- `manuscript/index.qmd`: the main document, in markdown format
+- `manuscript/_quarto.yml`: the configuration file for the manuscript
+- `manuscript/handbuch-diskriminierungsfreie-metadaten.qmd`: the main document, in markdown format
 - `manuscript/custom-reference.docx`: a custom reference document for the manuscript
 - `manuscript/custom.css`: a custom css style sheet for printing
 - `manuscript/references.bib`: the bibliography file for the manuscript
@@ -52,7 +53,7 @@ This project is maintained by [@maehr](https://github.com/maehr). Please underst
 
 ## Roadmap
 
-This handbook is a living document and will be updated regularly. We plan on releasing a citable version of the handbook later this year.
+This handbook is a living document and will be updated regularly. The discussion of the handbook is open to everyone and we welcome feedback and suggestions for improvement on [GitHub Discussions](https://github.com/maehr/diskriminierungsfreie-metadaten/discussions).
 
 ## Contributing
 
@@ -71,6 +72,6 @@ See also the list of [contributors](https://github.com/maehr/diskriminierungsfre
 
 ## License
 
-The data in this repository is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) License - see the [LICENSE-CCBY](LICENSE-CCBY.md) file for details. By using this data, you agree to give appropriate credit to the original author(s) and to indicate if any modifications have been made.
+The data in this repository is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) License - see the [LICENSE-CCBYSA](LICENSE-CCBYSA.md) file for details. By using this data, you agree to give appropriate credit to the original author(s) and to indicate if any modifications have been made.
 
 The code in this repository is released under the GNU Affero General Public License v3.0 - see the [LICENSE-AGPL](LICENSE-AGPL.md) file for details. By using this code, you agree to make any modifications available under the same license.
