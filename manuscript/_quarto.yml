@@ -26,7 +26,6 @@ format:
     fig-align: left
     subject: Diskriminierungsfreie Metadaten
     category: Handbuch
-    wrap: none
     toc: true
     toc-depth: 3
     toc-title: Inhaltsverzeichnis
