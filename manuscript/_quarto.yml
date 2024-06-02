@@ -33,3 +33,4 @@ format:
     toc-title: Inhaltsverzeichnis
   pdf:
     pdf-engine: xelatex
+    keep-tex: false
