@@ -1,10 +1,15 @@
 @media print {
-    @page {
-      size: A4;
-      margin: 1cm;
-    }
-    body {
-      margin: 0;
-    }
-  }
-  
+	img {
+		max-height: 8cm;
+		object-fit: contain;
+	}
+
+	@page {
+		size: A4;
+		margin: 1cm;
+	}
+
+	body {
+		margin: 0;
+	}
+}
