@@ -36,78 +36,9 @@ jobs:
           path: manuscript
           to: all
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 21
-
-      - name: Install Puppeteer
-        run: npm install puppeteer
-
-      - name: Convert HTML to PDF using Puppeteer
+      - name: Convert html to pdf with google chrome with headless mode margin 1cm and background images enabled no header
         run: |
-          node -e "
-          const puppeteer = require('puppeteer');
-          const fs = require('fs');
-          const path = require('path');
-  
-          (async () => {
-            try {
-              const browser = await puppeteer.launch({ headless: true });
-              const page = await browser.newPage();
-              const filePath = 'file://' + path.resolve('manuscript/_manuscript/index.html');
-              console.log('Navigating to', filePath);
-              await page.goto(filePath, { waitUntil: 'networkidle0' });
-  
-              // Check if the page content is loaded
-              const content = await page.content();
-              if (!content || content.trim().length === 0) {
-                console.error('Page content is empty');
-                await browser.close();
-                process.exit(1);
-              }
-  
-              // Log page content for debugging
-              console.log('Page content loaded successfully.');
-  
-              // Ensure all elements are visible
-              await page.evaluate(() => {
-                const elements = document.querySelectorAll('*');
-                elements.forEach(element => {
-                  if (getComputedStyle(element).visibility === 'hidden' || getComputedStyle(element).display === 'none') {
-                    element.style.visibility = 'visible';
-                    element.style.display = 'block';
-                  }
-                });
-              });
-  
-              // Wait a bit to ensure content is rendered
-              await page.waitForTimeout(2000);
-  
-              // Create a CDP session
-              const client = await page.target().createCDPSession();
-  
-              // Set up PDF options
-              const pdfOptions = {
-                path: 'manuscript/_manuscript/handbuch-diskriminierungsfreie-metadaten.pdf',
-                format: 'A4',
-                printBackground: true,
-                margin: { top: '1in', bottom: '1in', left: '1in', right: '1in' }
-              };
-  
-              // Generate the PDF using the DevTools Protocol
-              const pdfBuffer = await client.send('Page.printToPDF', pdfOptions);
-  
-              // Write the PDF to a file
-              fs.writeFileSync(pdfOptions.path, Buffer.from(pdfBuffer.data, 'base64'));
-  
-              console.log('PDF generated successfully:', pdfOptions.path);
-              await browser.close();
-            } catch (error) {
-              console.error('Error during PDF generation', error);
-              process.exit(1);
-            }
-          })();
-          "
+          chromium --headless --disable-gpu --print-to-pdf=manuscript/_manuscript/handbuch-diskriminierungsfreie-metadaten.pdf --no-pdf-header-footer --print-background --virtual-time-budget=10000 --print-to-pdf-no-header --print-to-pdf --print-to-pdf --print-to-pdf-no-header-footer --print-to-pdf --virtual-time-budget=10000 --print-to-pdf-no-header --virtual-time-budget=10000 --margin-top=1cm --margin-right=1cm --margin-bottom=1cm --margin-left=1cm file:///$(pwd)/manuscript/_manuscript/index.html
 
       - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
