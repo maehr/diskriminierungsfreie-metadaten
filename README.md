@@ -1,4 +1,4 @@
-# diskriminierungsfreie-metadaten
+# Hand Diskriminierungsfreie Metadaten
 
 This repository contains the source of [Handbuch zur Erstellung diskriminierungsfreier Metadaten für historische Quellen und Forschungsdaten. Erfahrungen aus dem historischen Forschungsprojekt Stadt.Geschichte.Basel.](https://maehr.github.io/diskriminierungsfreie-metadaten/) The publication and the data in this repository is openly available to everyone and is intended to support reproducible research in the humanities.
 
@@ -7,7 +7,7 @@ This repository contains the source of [Handbuch zur Erstellung diskriminierungs
 [![GitHub stars](https://img.shields.io/github/stars/maehr/diskriminierungsfreie-metadaten.svg)](https://github.com/maehr/diskriminierungsfreie-metadaten/stargazers)
 [![Code license](https://img.shields.io/github/license/maehr/diskriminierungsfreie-metadaten.svg)](https://github.com/maehr/diskriminierungsfreie-metadaten/blob/main/LICENSE-AGPL.md)
 [![Data license](https://img.shields.io/github/license/maehr/diskriminierungsfreie-metadaten.svg)](https://github.com/maehr/diskriminierungsfreie-metadaten/blob/main/LICENSE-CCBYSA.md)
-[![DOI](https://zenodo.org/badge/11124720.svg)](https://zenodo.org/badge/latestdoi/11124720)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11124720.svg)](https://doi.org/10.5281/zenodo.11124720)
 
 ## What is the publication about?
 
