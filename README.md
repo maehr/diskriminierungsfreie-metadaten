@@ -1,4 +1,4 @@
-# Hand Diskriminierungsfreie Metadaten
+# Manual for the creation of non-discriminatory metadata for historical sources and research data
 
 This repository contains the source of [Handbuch zur Erstellung diskriminierungsfreier Metadaten für historische Quellen und Forschungsdaten. Erfahrungen aus dem historischen Forschungsprojekt Stadt.Geschichte.Basel.](https://maehr.github.io/diskriminierungsfreie-metadaten/) The publication and the data in this repository is openly available to everyone and is intended to support reproducible research in the humanities.
 
