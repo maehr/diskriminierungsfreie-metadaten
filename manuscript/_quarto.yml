@@ -23,6 +23,8 @@ format:
         repo: maehr/diskriminierungsfreie-metadaten
     css:
       - custom.css
+    include-in-header:
+      - custom-header.html
   docx:
     reference-doc: custom-reference.docx
     fig-align: left
