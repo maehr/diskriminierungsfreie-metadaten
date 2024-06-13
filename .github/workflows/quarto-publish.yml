@@ -49,6 +49,11 @@ jobs:
         run: |
           chromium --headless --disable-gpu --print-to-pdf=manuscript/_manuscript/handbuch-diskriminierungsfreie-metadaten.pdf  --scale=1.0 --no-pdf-header-footer --print-background --virtual-time-budget=10000 file:///$(pwd)/manuscript/_manuscript/index.html
 
+      - name: Clean up
+        run: |
+          rm -rf ./handbuch-diskriminierungsfreie-metadaten_files/
+          rm -rf ./_tex/
+
       - name: JamPack
         run: |
           npx @divriots/jampack .
