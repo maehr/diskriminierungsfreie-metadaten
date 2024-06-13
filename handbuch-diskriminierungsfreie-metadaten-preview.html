@@ -1,135 +1,19 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="de-CH" xml:lang="de-CH"><head>
-    <meta charset="utf-8">
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="de-CH" xml:lang="de-CH"><head><meta charset="utf-8"><style>:where(img){height:auto}</style>
+    
     <meta name="generator" content="quarto-1.4.555">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
 
     <meta name="keywords" content="Diskriminierungsfreie Metadaten, Historische Quellen und Forschungsdaten, FAIR-Prinzipien, Stadt.Geschichte.Basel, Open Research Data, Code of Conduct, Dublin Core, Schlagwortindex GenderOpen">
+    <meta name="description" content="<p>Erfahren Sie, wie Sie diskriminierungsfreie Metadaten für historische Quellen und Forschungsdaten erstellen können. Dieses Handbuch, entwickelt im Rahmen des Projekts Stadt.Geschichte.Basel von Moritz Mähr und Noëlle Schnegg, bietet praktische Anleitungen und FAIR-Prinzipien zur Verbesserung der Zugänglichkeit, Interoperabilität und Wiederverwendbarkeit von Forschungsdaten. Ideal für Historikerinnen, Archivarinnen und Bibliothekarinnen, die sich für inklusive und ethische Forschungsdaten einsetzen.</p>">
 
-    <title>Handbuch zur Erstellung diskriminierungsfreier Metadaten für historische Quellen und Forschungsdaten</title>
-    <style>
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      div.columns{display: flex; gap: min(4vw, 1.5em);}
-      div.column{flex: auto; overflow-x: auto;}
-      div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-      ul.task-list{list-style: none;}
-      ul.task-list li input[type="checkbox"] {
-        width: 0.8em;
-        margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-        vertical-align: middle;
-      }
-      /* CSS for citations */
-      div.csl-bib-body { }
-      div.csl-entry {
-        clear: both;
-        margin-bottom: 0em;
-      }
-      .hanging-indent div.csl-entry {
-        margin-left:2em;
-        text-indent:-2em;
-      }
-      div.csl-left-margin {
-        min-width:2em;
-        float:left;
-      }
-      div.csl-right-inline {
-        margin-left:2em;
-        padding-left:1em;
-      }
-      div.csl-indent {
-        margin-left: 2em;
-      }    </style>
+    <title>Handbuch zur Erstellung diskriminierungsfreier Metadaten für historische Quellen und Forschungsdaten am Beispiel von Stadt.Geschichte.Basel</title>
+    <style>code{white-space:pre-wrap}span.smallcaps{font-variant:small-caps}div.columns{gap:min(4vw,1.5em);display:flex}div.column{flex:auto;overflow-x:auto}div.hanging-indent{text-indent:-1.5em;margin-left:1.5em}ul.task-list{list-style:none}ul.task-list li input[type=checkbox]{vertical-align:middle;width:.8em;margin:0 .8em .2em -1em}div.csl-entry{clear:both;margin-bottom:0}.hanging-indent div.csl-entry{text-indent:-2em;margin-left:2em}div.csl-left-margin{float:left;min-width:2em}div.csl-right-inline{margin-left:2em;padding-left:1em}div.csl-indent{margin-left:2em}</style>
 
-    <style>
-      body.hypothesis-enabled #quarto-embed-header {
-        padding-right: 36px;
-      }
+    <style>body.hypothesis-enabled #quarto-embed-header{padding-right:36px}#quarto-embed-header{border-bottom:1px solid;justify-content:space-between;align-items:center;width:100%;height:3em;display:flex}#quarto-embed-header h6{margin-left:1em;margin-right:1em;padding-top:.6em;font-size:1.1em;font-weight:400}#quarto-embed-header a.quarto-back-link,#quarto-embed-header a.quarto-download-embed{margin:1em;font-size:.8em}.quarto-back-container{padding-left:.5em;display:flex}.headroom{will-change:transform;transition:transform .2s linear}.headroom--pinned{transform:translateY(0%)}.headroom--unpinned{transform:translateY(-100%)}</style>
 
-      #quarto-embed-header {
-        height: 3em;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: solid 1px;
-      }
-
-      #quarto-embed-header h6 {
-        font-size: 1.1em;
-        padding-top: 0.6em;
-        margin-left: 1em;
-        margin-right: 1em;
-        font-weight: 400;
-      }
-
-      #quarto-embed-header a.quarto-back-link,
-      #quarto-embed-header a.quarto-download-embed {
-        font-size: 0.8em;
-        margin-top: 1em;
-        margin-bottom: 1em;
-        margin-left: 1em;
-        margin-right: 1em;
-      }
-
-      .quarto-back-container {
-        padding-left: 0.5em;
-        display: flex;
-      }
-
-      .headroom {
-          will-change: transform;
-          transition: transform 200ms linear;
-      }
-
-      .headroom--pinned {
-          transform: translateY(0%);
-      }
-
-      .headroom--unpinned {
-          transform: translateY(-100%);
-      }      
-    </style>
-
-    <script>
-    window.document.addEventListener("DOMContentLoaded", function () {
-
-      var header = window.document.querySelector("#quarto-embed-header");
-      const titleBannerEl = window.document.querySelector("body > #title-block-header");
-      if (titleBannerEl) {
-        titleBannerEl.style.paddingTop = header.clientHeight + "px";
-      }
-      const contentEl = window.document.getElementById('quarto-content');
-      for (const child of contentEl.children) {
-        child.style.paddingTop = header.clientHeight + "px";
-        child.style.marginTop = "1em";
-      }
-
-      // Use the article root if the `back` call doesn't work. This isn't perfect
-      // but should typically work
-      window.quartoBackToArticle = () => {
-        var currentUrl = window.location.href;
-        window.history.back();
-        setTimeout(() => {
-            // if location was not changed in 100 ms, then there is no history back
-            if(currentUrl === window.location.href){              
-                // redirect to site root
-                window.location.href = "index.html";
-            }
-        }, 100);
-      }
-
-      const headroom = new window.Headroom(header, {
-        tolerance: 5,
-        onPin: function () {
-        },
-        onUnpin: function () {
-        },
-      });
-      headroom.init();
-    });
-    </script>
+    <script>window.document.addEventListener("DOMContentLoaded",function(){var e=window.document.querySelector("#quarto-embed-header");const n=window.document.querySelector("body > #title-block-header");n&&(n.style.paddingTop=e.clientHeight+"px");const t=window.document.getElementById("quarto-content");for(const o of t.children)o.style.paddingTop=e.clientHeight+"px",o.style.marginTop="1em";window.quartoBackToArticle=()=>{var o=window.location.href;window.history.back(),setTimeout(()=>{o===window.location.href&&(window.location.href="index.html")},100)},new window.Headroom(e,{tolerance:5,onPin:function(){},onUnpin:function(){}}).init()});
+</script>
 
     
 <script src="site_libs/manuscript-notebook/headroom.min.js"></script>
@@ -183,30 +67,31 @@
 </head>
 
   <body class="quarto-notebook">
-    <div id="quarto-embed-header" class="headroom fixed-top bg-primary">
+    <div id="quarto-embed-header" class="bg-primary fixed-top headroom">
       
-      <a onclick="window.quartoBackToArticle(); return false;" class="btn btn-primary quarto-back-link" href=""><i class="bi bi-caret-left"></i> Zurück zum Artikel</a>
+      <a onclick="return window.quartoBackToArticle(),!1;
+" class="btn btn-primary quarto-back-link" href=""><i class="bi bi-caret-left"></i> Zurück zum Artikel</a>
       <h6><i class="bi bi-journal-code"></i> Article Notebook</h6>
 
             <a href="./handbuch-diskriminierungsfreie-metadaten.qmd" class="btn btn-primary quarto-download-embed" download="handbuch-diskriminierungsfreie-metadaten.qmd">Quellcode herunterladen</a>
           </div>
 
-     <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-right">
+     <header id="title-block-header" class="page-columns page-full default quarto-title-block toc-left">
+  <div class="page-columns page-full quarto-title-banner">
+    <div class="column-page-right quarto-title">
       <h1 class="title">Handbuch zur Erstellung diskriminierungsfreier Metadaten für historische Quellen und Forschungsdaten</h1>
-            <p class="subtitle lead">Erfahrungen aus dem geschichtswissenschaftlichen Forschungsprojekt Stadt.Geschichte.Basel</p>
+            <p class="lead subtitle">Erfahrungen aus dem geschichtswissenschaftlichen Forschungsprojekt Stadt.Geschichte.Basel</p>
           </div>
 
     
     <div class="quarto-title-meta-container">
       <div class="quarto-title-meta-column-start">
-            <div class="quarto-title-meta-author column-page-right">
+            <div class="column-page-right quarto-title-meta-author">
           <div class="quarto-title-meta-heading">Autor:innen</div>
           <div class="quarto-title-meta-heading">Zugehörigkeit</div>
           
                 <div class="quarto-title-meta-contents">
-            <p class="author">Moritz Mähr <a href="mailto:moritz.maehr@unibas.ch" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0002-1367-1618" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+            <p class="author">Moritz Mähr <a href="mailto:moritz.maehr@unibas.ch" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0002-1367-1618" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==" alt=""></a></p>
           </div>
                 <div class="quarto-title-meta-contents">
                     <p class="affiliation">
@@ -214,7 +99,7 @@
                       </p>
                   </div>
                       <div class="quarto-title-meta-contents">
-            <p class="author">Noëlle Schnegg <a href="mailto:noelle.schnegg@unibas.ch" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0009-0008-5207-6652" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+            <p class="author">Noëlle Schnegg <a href="mailto:noelle.schnegg@unibas.ch" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0009-0008-5207-6652" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==" alt=""></a></p>
           </div>
                 <div class="quarto-title-meta-contents">
                     <p class="affiliation">
@@ -223,7 +108,7 @@
                   </div>
                     </div>
         
-        <div class="quarto-title-meta column-page-right">
+        <div class="column-page-right quarto-title-meta">
 
                       
                 <div>
@@ -236,7 +121,7 @@
                 <div>
             <div class="quarto-title-meta-heading">Geändert</div>
             <div class="quarto-title-meta-contents">
-              <p class="date-modified">9. Juni 2024</p>
+              <p class="date-modified">13. Juni 2024</p>
             </div>
           </div>
                 
@@ -250,7 +135,7 @@
           </div>
               </div>
       </div>
-      <div class="quarto-title-meta-column-end quarto-other-formats-target">
+      <div class="quarto-other-formats-target quarto-title-meta-column-end">
       </div>
     </div>
 
@@ -270,8 +155,8 @@
 
     <div class="quarto-other-links-text-target">
     </div>  </div>
-</header><div id="quarto-content" class="page-columns page-rows-contents page-layout-full toc-left">
-<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+</header><div id="quarto-content" class="page-columns toc-left page-layout-full page-rows-contents">
+<div id="quarto-sidebar-toc-left" class="toc-left sidebar">
   <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
@@ -343,10 +228,10 @@
 </div>
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
 </div>
-<main class="content quarto-banner-title-block column-page-right" id="quarto-document-content">      
+<main class="column-page-right content quarto-banner-title-block" id="quarto-document-content">      
 
-       <div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
+       <div class="callout callout-style-default callout-titled callout-warning">
+<div class="align-content-center callout-header d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -354,7 +239,7 @@
 Warnung
 </div>
 </div>
-<div class="callout-body-container callout-body">
+<div class="callout-body callout-body-container">
 <p>Dieses Dokument enthält Abbildungen von historischen Quellen, die diskriminierende Sprache, Bilder oder Darstellungen enthalten. Sie sind Ausdruck von Vorurteilen, Stereotypen oder Gewalt gegen bestimmte Gruppen in der Vergangenheit.</p>
 </div>
 </div>
@@ -427,8 +312,8 @@ Warnung
 <p>Stadt.Geschichte.Basel verwendet <a href="https://www.dublincore.org">Dublin Core</a> als Schema und als Inhaltsstandard. Darüber hinaus wird zwischen Metadatenobjekten und den damit verknüpften Ressourcen unterschieden. Ein paar fiktive Beispiele erhellen die Überlegungen, die hinter dieser Zweiteilung stehen.</p>
 <section id="ein-metadatenobjekt-mit-einer-zugeordneten-ressource" class="level3" data-number="3.1.1">
 <h3 data-number="3.1.1" class="anchored" data-anchor-id="ein-metadatenobjekt-mit-einer-zugeordneten-ressource"><span class="header-section-number">3.1.1</span> Ein Metadatenobjekt mit einer zugeordneten Ressource</h3>
-<div id="fig-metadata-1" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
+<div id="fig-metadata-1" class="anchored quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float figure quarto-float-fig">
 <div aria-describedby="fig-metadata-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
 <div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div class="cell" data-layout-align="default">
 <div class="cell-output-display">
@@ -444,7 +329,7 @@ B[(Portrait)] --&gt; A["Metadatenobjekt&lt;br&gt;(Abbildung 13)"]
 </div>
 </div></div>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-metadata-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption quarto-float-caption-bottom quarto-float-fig" id="fig-metadata-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;1: Ein Metadatenobjekt (Abbildung 13) hat eine zugeordnete Ressource, nämlich ein Portrait.
 </figcaption>
 </figure>
@@ -454,8 +339,8 @@ Abbildung&nbsp;1: Ein Metadatenobjekt (Abbildung 13) hat eine zugeordnete Ressou
 <section id="ein-metadatenobjekt-mit-drei-zugeordneten-ressourcen-triptychon" class="level3" data-number="3.1.2">
 <h3 data-number="3.1.2" class="anchored" data-anchor-id="ein-metadatenobjekt-mit-drei-zugeordneten-ressourcen-triptychon"><span class="header-section-number">3.1.2</span> Ein Metadatenobjekt mit drei zugeordneten Ressourcen (Triptychon)</h3>
 <p>Dieses Diagramm stellt dar, dass ein Metadatenobjekt (Abbildung 7) drei zugeordnete Ressourcen hat: die linke, mittlere und rechte Seite eines Triptychons.</p>
-<div id="fig-metadata-2" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
+<div id="fig-metadata-2" class="anchored quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float figure quarto-float-fig">
 <div aria-describedby="fig-metadata-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
 <div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div class="cell" data-layout-align="default">
 <div class="cell-output-display">
@@ -473,7 +358,7 @@ Abbildung&nbsp;1: Ein Metadatenobjekt (Abbildung 13) hat eine zugeordnete Ressou
 </div>
 </div></div>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-metadata-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption quarto-float-caption-bottom quarto-float-fig" id="fig-metadata-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;2: Ein Metadatenobjekt (Abbildung 7) hat drei zugeordnete Ressourcen: die linke, mittlere und rechte Seite eines Triptychons.
 </figcaption>
 </figure>
@@ -482,8 +367,8 @@ Abbildung&nbsp;2: Ein Metadatenobjekt (Abbildung 7) hat drei zugeordnete Ressour
 <section id="ein-metadatenobjekt-mit-drei-verschiedenen-zugeordneten-ressourcen" class="level3" data-number="3.1.3">
 <h3 data-number="3.1.3" class="anchored" data-anchor-id="ein-metadatenobjekt-mit-drei-verschiedenen-zugeordneten-ressourcen"><span class="header-section-number">3.1.3</span> Ein Metadatenobjekt mit drei verschiedenen zugeordneten Ressourcen</h3>
 <p>Hier sehen wir ein Metadatenobjekt (Abbildung 83) mit drei unterschiedlichen zugeordneten Ressourcen: einer Karte, einer Legende und Geodaten.</p>
-<div id="fig-metadata-3" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
+<div id="fig-metadata-3" class="anchored quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float figure quarto-float-fig">
 <div aria-describedby="fig-metadata-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
 <div class="cell-container"><div class="cell-decorator"><pre>In [3]:</pre></div><div class="cell" data-layout-align="default">
 <div class="cell-output-display">
@@ -501,7 +386,7 @@ Abbildung&nbsp;2: Ein Metadatenobjekt (Abbildung 7) hat drei zugeordnete Ressour
 </div>
 </div></div>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-metadata-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption quarto-float-caption-bottom quarto-float-fig" id="fig-metadata-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;3: Ein Metadatenobjekt (Abbildung 83) hat drei unterschiedliche zugeordnete Ressourcen: eine Karte, eine Legende und Geodaten.
 </figcaption>
 </figure>
@@ -510,8 +395,8 @@ Abbildung&nbsp;3: Ein Metadatenobjekt (Abbildung 83) hat drei unterschiedliche z
 <section id="zwei-metadatenobjekte-mit-derselben-zugeordneten-ressource" class="level3" data-number="3.1.4">
 <h3 data-number="3.1.4" class="anchored" data-anchor-id="zwei-metadatenobjekte-mit-derselben-zugeordneten-ressource"><span class="header-section-number">3.1.4</span> Zwei Metadatenobjekte mit derselben zugeordneten Ressource</h3>
 <p>Eine Abbildung wird zweimal verwendet. Folglich haben zwei Metadatenobjekte (Abbildungen 73 und 11) dieselbe Ressource zugeordnet, nämlich einen Kupferstich.</p>
-<div id="fig-metadata-4" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
+<div id="fig-metadata-4" class="anchored quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float figure quarto-float-fig">
 <div aria-describedby="fig-metadata-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
 <div class="cell-container"><div class="cell-decorator"><pre>In [4]:</pre></div><div class="cell" data-layout-align="default">
 <div class="cell-output-display">
@@ -528,7 +413,7 @@ Abbildung&nbsp;3: Ein Metadatenobjekt (Abbildung 83) hat drei unterschiedliche z
 </div>
 </div></div>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-metadata-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption quarto-float-caption-bottom quarto-float-fig" id="fig-metadata-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;4: Zwei Metadatenobjekte mit derselben zugeordneten Ressource
 </figcaption>
 </figure>
@@ -537,9 +422,9 @@ Abbildung&nbsp;4: Zwei Metadatenobjekte mit derselben zugeordneten Ressource
 </section>
 <section id="metadatenobjekte-eltern" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="metadatenobjekte-eltern"><span class="header-section-number">3.2</span> Metadatenobjekte (Eltern)</h2>
-<div id="tbl-metadata-objects" class="quarto-float anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadata-objects-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="tbl-metadata-objects" class="anchored quarto-float">
+<figure class="quarto-float figure quarto-float-tbl">
+<figcaption class="quarto-float-caption quarto-float-caption-top quarto-float-tbl" id="tbl-metadata-objects-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabelle&nbsp;1: Metadaten der Elternobjekte (Metadatenobjekte).
 </figcaption>
 <div aria-describedby="tbl-metadata-objects-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -604,9 +489,9 @@ Tabelle&nbsp;1: Metadaten der Elternobjekte (Metadatenobjekte).
 </section>
 <section id="zugeordnete-ressourcen-kinder" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="zugeordnete-ressourcen-kinder"><span class="header-section-number">3.3</span> Zugeordnete Ressourcen (Kinder)</h2>
-<div id="tbl-metadata-resources" class="quarto-float anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadata-resources-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="tbl-metadata-resources" class="anchored quarto-float">
+<figure class="quarto-float figure quarto-float-tbl">
+<figcaption class="quarto-float-caption quarto-float-caption-top quarto-float-tbl" id="tbl-metadata-resources-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabelle&nbsp;2: Metadaten der zugeordneten Ressourcen (Kinder).
 </figcaption>
 <div aria-describedby="tbl-metadata-resources-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1112,8 +997,8 @@ Tabelle&nbsp;2: Metadaten der zugeordneten Ressourcen (Kinder).
 </section>
 <section id="relation-von-objekt-und-media" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="relation-von-objekt-und-media"><span class="header-section-number">3.4</span> Relation von Objekt und Media</h2>
-<div id="fig-metadata-5" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
+<div id="fig-metadata-5" class="anchored quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float figure quarto-float-fig">
 <div aria-describedby="fig-metadata-5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
 <div class="cell-container"><div class="cell-decorator"><pre>In [5]:</pre></div><div class="cell" data-layout-align="default">
 <div class="cell-output-display">
@@ -1156,7 +1041,7 @@ Tabelle&nbsp;2: Metadaten der zugeordneten Ressourcen (Kinder).
 </div>
 </div></div>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-metadata-5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption quarto-float-caption-bottom quarto-float-fig" id="fig-metadata-5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;5: Relation von Objekt und Media.
 </figcaption>
 </figure>
@@ -1177,8 +1062,8 @@ Abbildung&nbsp;5: Relation von Objekt und Media.
 <li>Digitale Objekte sind nicht-materielle Inhalte, die in digitaler Form vorliegen. Sie können unter anderem Texte, Bilder, Audio- oder Videodateien umfassen. Bei den Metadaten für digitale Objekte müssen technische Informationen wie Dateiformat und -typ, Dateigrösse oder Auflösung berücksichtigt werden. Ausserdem müssen Rechte und Lizenzen des digitalen Objektes geklärt und entsprechende Informationen zu Urheberrechten angegeben werden.</li>
 <li>Digitale Darstellungen physischer Objekte sind digitale Repräsentationen von physischen Objekten. Bei der Erstellung von Metadaten für digitale Darstellungen physischer Objekte müssen sowohl Informationen über das ursprüngliche physische Objekt als auch über die digitalen Aspekte erfasst werden.</li>
 </ul>
-<div class="callout callout-style-default callout-tip callout-titled" title="Erfahrungen der Stadt.Geschichte.Basel">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-default callout-titled callout-tip" title="Erfahrungen der Stadt.Geschichte.Basel">
+<div class="align-content-center callout-header d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1186,7 +1071,7 @@ Abbildung&nbsp;5: Relation von Objekt und Media.
 Erfahrungen der Stadt.Geschichte.Basel
 </div>
 </div>
-<div class="callout-body-container callout-body">
+<div class="callout-body callout-body-container">
 <p>Bei den Ressourcen der Stadt.Geschichte.Basel handelt es sich vorwiegend um digitale Darstellungen physischer Objekte sowie um digitale Objekte. Vor diesem Hintergrund muss der Fokus bezüglich der Metadaten von Anfang an breit gesetzt werden. Das hat dazu geführt, dass im Verlauf des Erstellens des Metadatenschemas einzelne Felder hinzugefügt und später wieder verworfen wurden.</p>
 </div>
 </div>
@@ -1194,8 +1079,8 @@ Erfahrungen der Stadt.Geschichte.Basel
 <section id="wer-ist-meine-zielgruppe" class="level3" data-number="4.1.2">
 <h3 data-number="4.1.2" class="anchored" data-anchor-id="wer-ist-meine-zielgruppe"><span class="header-section-number">4.1.2</span> Wer ist meine Zielgruppe?</h3>
 <p>Es ist wichtig, die Zielgruppe für die zu erstellenden Metadaten zu kennen, da sie die Relevanz, den Umfang und die Art der Metadaten beeinflusst. Auch die Zielgruppe, die auf die Metadaten zugreift, kann von Diskriminierungserfahrungen betroffen sein. Das muss berücksichtigt werden. Durch die Kenntnis der Zielgruppe können die Metadaten spezifisch auf die Bedürfnisse der Benutzer*innen angepasst werden.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Erfahrungen der Stadt.Geschichte.Basel">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-default callout-titled callout-tip" title="Erfahrungen der Stadt.Geschichte.Basel">
+<div class="align-content-center callout-header d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1203,7 +1088,7 @@ Erfahrungen der Stadt.Geschichte.Basel
 Erfahrungen der Stadt.Geschichte.Basel
 </div>
 </div>
-<div class="callout-body-container callout-body">
+<div class="callout-body callout-body-container">
 <p>Die Hauptzielgruppe umfasst Forschende und Studierende, die nebst technischen Informationen auch Metadaten benötigen, die ihnen dabei helfen, den Kontext der Forschungsdaten zu verstehen. Beispiele dafür sind etwa Informationen über den historischen Zeitraum, die kulturellen oder politischen Bedingungen sowie die Quellenbasis.</p>
 </div>
 </div>
@@ -1211,8 +1096,8 @@ Erfahrungen der Stadt.Geschichte.Basel
 <section id="welche-informationen-werden-benötigt-um-die-ressource-zu-identifizieren" class="level3" data-number="4.1.3">
 <h3 data-number="4.1.3" class="anchored" data-anchor-id="welche-informationen-werden-benötigt-um-die-ressource-zu-identifizieren"><span class="header-section-number">4.1.3</span> Welche Informationen werden benötigt, um die Ressource zu identifizieren?</h3>
 <p>Dies kann je nach Informationsstand und Art der Objekte mehr oder weniger Zeit in Anspruch nehmen. Es ist wichtig, mögliche Schwierigkeiten bei der Identifizierung von Beginn weg zu berücksichtigen. Beispielsweise können unvollständige oder beschädigte Informationen, wie beispielsweise verblasste Beschriftungen, die Identifizierung physischer Objekte erschweren.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Erfahrungen der Stadt.Geschichte.Basel">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-default callout-titled callout-tip" title="Erfahrungen der Stadt.Geschichte.Basel">
+<div class="align-content-center callout-header d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1220,7 +1105,7 @@ Erfahrungen der Stadt.Geschichte.Basel
 Erfahrungen der Stadt.Geschichte.Basel
 </div>
 </div>
-<div class="callout-body-container callout-body">
+<div class="callout-body callout-body-container">
 <p>Stadt.Geschichte.Basel war bei der Identifikation der Informationen für die Ressourcen mit folgenden Schwierigkeiten konfrontiert: Insbesondere bei Archiven fehlten oftmals Beschreibungen zu einzelnen Ressourcen. Konkret fehlte etwa beim Plakat zu den sogenannten "Völkerschauen" (siehe <a href="#sec-plakat-zur-voelkerschau" class="quarto-xref">Kapitel&nbsp;5.2</a>) die Information, wer das Plakat herstellte. In solchen Fällen waren selbständige Recherchen oder eine Rücksprache mit den jeweiligen Gedächtnisinstitutionen erforderlich.</p>
 </div>
 </div>
@@ -1228,8 +1113,8 @@ Erfahrungen der Stadt.Geschichte.Basel
 <section id="welche-informationen-werden-benötigt-um-die-ressourcen-in-den-richtigen-kontext-zu-setzen" class="level3" data-number="4.1.4">
 <h3 data-number="4.1.4" class="anchored" data-anchor-id="welche-informationen-werden-benötigt-um-die-ressourcen-in-den-richtigen-kontext-zu-setzen"><span class="header-section-number">4.1.4</span> Welche Informationen werden benötigt, um die Ressourcen in den richtigen Kontext zu setzen?</h3>
 <p>Um eine Ressource kontextualisieren zu können, müssen grundlegende Aspekte wie der historische Zeitraum, der geografische Kontext, der kulturelle und soziale Hintergrund sowie die Quellenbasis berücksichtigt werden. Mit der Kontextualisierung der historischen Ressource wird sichergestellt, dass die Ressource nicht isoliert betrachtet, sondern in einen grösseren historischen, sozialen und politischen Kontext gestellt wird.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Erfahrungen der Stadt.Geschichte.Basel">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-default callout-titled callout-tip" title="Erfahrungen der Stadt.Geschichte.Basel">
+<div class="align-content-center callout-header d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1237,7 +1122,7 @@ Erfahrungen der Stadt.Geschichte.Basel
 Erfahrungen der Stadt.Geschichte.Basel
 </div>
 </div>
-<div class="callout-body-container callout-body">
+<div class="callout-body callout-body-container">
 <p>Stadt.Geschichte.Basel legt besonderen Wert auf die Kontextualisierung, um nicht unkritisch Diskriminierung in einzelnen Ressourcen zu reproduzieren. Für die Recherche stützt sich Stadt.Geschichte.Basel unter anderem auf Informationen aus den Bänden des Projekts sowie auf historische Nachschlagewerke wie das <a href="https://www.baslerstadtbuch.ch/home.html">Basler Stadtbuch</a> oder das <a href="https://hls-dhs-dss.ch/">Historische Lexikon der Schweiz</a>. Um eine weiterführende Recherche zu ermöglichen und zu erleichtern, sind die entsprechenden Nachschlagewerke im Fliesstext der Quellenbeschreibung direkt verlinkt.</p>
 </div>
 </div>
@@ -1269,8 +1154,8 @@ Erfahrungen der Stadt.Geschichte.Basel
 <section id="begriffe" class="level5" data-number="4.1.5.1.5">
 <h5 data-number="4.1.5.1.5" class="anchored" data-anchor-id="begriffe"><span class="header-section-number">4.1.5.1.5</span> Begriffe</h5>
 <p>In den letzten Jahren hat die öffentliche Debatte, wie mit diskriminierenden Begriffen in Metadaten umgegangen werden soll, zugenommen. Auch Museen, Archive und Bibliotheken stellen sich vermehrt die Frage, welche Methoden angewendet werden sollen, damit Diskriminierung nicht reproduziert wird. Im Folgenden werden drei unterschiedliche Ansätze erläutert. Bei der “Titelkontextualisierung” wird zwar der diskriminierende Begriff benannt, aber gleichzeitig kritisch kontextualisiert, wobei der Umfang der Kontextualisierung stark variieren kann. Ein anderer Ansatz ist die “Titelverfremdung”. Dabei können die Titel auf den Kopf gestellt, durchgestrichen oder gespiegelt werden. Ausserdem ist die Einbindung von Sternchen möglich, bei der die einzelnen Buchstaben durch Asterisken ersetzt werden. Als dritte Methode kann der Titel geändert werden. Wichtig ist dabei, diesen Prozess der Titeländerung zu dokumentieren. Warum wurde der Begriff geändert und wer hat dem Objekt seinen Titel gegeben? Zudem ist es für die Objektgeschichte oder Sammlungsgeschichte nicht unwichtig, aus welcher Perspektive das Objekt rezipiert wurde und aus welcher Motivation das Objekt gesammelt wurde.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Erfahrungen der Stadt.Geschichte.Basel">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-default callout-titled callout-tip" title="Erfahrungen der Stadt.Geschichte.Basel">
+<div class="align-content-center callout-header d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1278,7 +1163,7 @@ Erfahrungen der Stadt.Geschichte.Basel
 Erfahrungen der Stadt.Geschichte.Basel
 </div>
 </div>
-<div class="callout-body-container callout-body">
+<div class="callout-body callout-body-container">
 <p>Das Projekt hat sich für die Methode der “Titelkontextualisierung” entschieden - unter anderem wegen der besseren Durchsuchbarkeit auf der <a href="https://forschung.stadtgeschichtebasel.ch/">Forschungsdatenplattform</a>. Weil der Schlagwortindex-GenderOpen gezielt sensible Schlagworte enthält, lassen sich Diskriminierungen in historischen Quellen einfacher finden. Die diskriminierenden Inhalte werden auf der Webseite jeweils mit einer Triggerwarnung angezeigt.</p>
 </div>
 </div>
@@ -1288,8 +1173,8 @@ Erfahrungen der Stadt.Geschichte.Basel
 <section id="wie-werden-die-metadaten-der-zielgruppe-zugänglich-gemacht" class="level3" data-number="4.1.6">
 <h3 data-number="4.1.6" class="anchored" data-anchor-id="wie-werden-die-metadaten-der-zielgruppe-zugänglich-gemacht"><span class="header-section-number">4.1.6</span> Wie werden die Metadaten der Zielgruppe zugänglich gemacht?</h3>
 <p>Es gibt eine Vielzahl von Möglichkeiten, Metadaten der Zielgruppe zugänglich zu machen. So können Metadaten etwa in öffentlichen Bibliotheken, Archiven oder Online-Archiven - sogenannten Repositorien - veröffentlicht werden. Wichtig ist hierbei zu beachten, dass bei Open Data Plattformen nicht immer kontrolliert werden kann, wer und wie die Metadaten verwendet werden.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Erfahrungen der Stadt.Geschichte.Basel">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-default callout-titled callout-tip" title="Erfahrungen der Stadt.Geschichte.Basel">
+<div class="align-content-center callout-header d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1297,7 +1182,7 @@ Erfahrungen der Stadt.Geschichte.Basel
 Erfahrungen der Stadt.Geschichte.Basel
 </div>
 </div>
-<div class="callout-body-container callout-body">
+<div class="callout-body callout-body-container">
 <p>Stadt.Geschichte.Basel betreibt eine <a href="https://forschung.stadtgeschichtebasel.ch/">Forschungsdatenplattform</a>.&nbsp;Diese wird als zentrales Repositorium dienen, in dem alle Forschungsressourcen gesammelt und für die Öffentlichkeit nach den FAIR-Prinzipien zugänglich gemacht werden. Nutzer*innen können einfach auf die Plattform zugreifen, die umfangreiche Datenbank durchsuchen und relevante Ressourcen für ihre spezifischen Bedürfnisse finden.&nbsp;Daher ist es wichtig, klare und präzise Informationen darüber zu liefern, wem diese Ressourcen gehören und wer sie nutzen kann. Die Details zu Eigentum und Nutzungsrechten werden deutlich in den Metadaten jeder Ressource angegeben.</p>
 </div>
 </div>
@@ -1310,8 +1195,8 @@ Erfahrungen der Stadt.Geschichte.Basel
 <table class="caption-top table">
 <caption>Metadatenfelder des Dublin Core Metadata Element Set.</caption>
 <colgroup>
-<col style="width: 7%">
-<col style="width: 92%">
+<col style="width:7%">
+<col style="width:92%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -1384,8 +1269,8 @@ Erfahrungen der Stadt.Geschichte.Basel
 </table>
 <p>Während mit der Beantwortung der in Schritt eins gestellten Fragen begonnen wird, kann es hilfreich sein, diejenigen Informationen aufzulisten, die als Datenpunkte aufgenommen werden sollen. Das können beispielsweise Titel, Thema, Zugriffsrechte, usw. sein. Wenn zum Beispiel Bilder auf einer Karte überlagert werden sollen, müssen Koordinatendaten aufgenommen werden. Die Erstellung der Liste der Metadatenfelder erfolgt schrittweise und parallel zur Annotation der einzelnen Ressourcen. Es kann sein, dass während der Quellenannotationen einige Datenpunkte wieder verworfen werden müssen, da sie für die Gesamtheit der Ressourcen nicht erhoben werden können.</p>
 <p>Während die einzelnen Ressourcen annotiert werden, muss entschieden werden, ob bestehende Metadatenschemas wie das <a href="https://www.dublincore.org/specifications/dublin-core/dces/">Dublin Core Metadata Element Set</a> übernommen, angepasst oder ein eigenes Schema erstellt werden soll. Die Übernahme von fertigen Schemas oder deren Ergänzung durch einzelne Elemente hat gegenüber der Erstellung eines eigenen Schemas mehrere Vorteile. So werden etwa Kosten und Aufwand gespart, die Schemas sind benutzerfreundlich und interoperabel.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Erfahrungen der Stadt.Geschichte.Basel">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-default callout-titled callout-tip" title="Erfahrungen der Stadt.Geschichte.Basel">
+<div class="align-content-center callout-header d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1393,7 +1278,7 @@ Erfahrungen der Stadt.Geschichte.Basel
 Erfahrungen der Stadt.Geschichte.Basel
 </div>
 </div>
-<div class="callout-body-container callout-body">
+<div class="callout-body callout-body-container">
 <p>Beim Erstellen der Metadatenliste hat sich gezeigt, dass die Übernahme der Standardfelder von <a href="https://www.dublincore.org">Dublin Core</a> eine gute Grundlage für die weitere Arbeit bietet. So wurde beispielsweise anhand des Feldes “Date” das Feld “Era” hinzugefügt, um ein noch breiteres zeitliches Spektrum angeben zu können.</p>
 </div>
 </div>
@@ -1408,8 +1293,8 @@ Erfahrungen der Stadt.Geschichte.Basel
 <p>Es ist wichtig, dass das "goldene Minimum" gefunden wird. Was genau das goldene Minimum im Rahmen des jeweiligen Projekts ist, hängt von den Projektzielen und den verfügbaren Ressourcen ab.</p>
 <p>Es muss bestimmt werden, welche Informationen wichtig sind, um das Auffinden und die Identifikation zu erleichtern sowie einen ausreichenden Kontext zu liefern, aber nicht mehr. Insbesondere der Text zur Kontextualisierung der Quelle soll zwar die wichtigsten Informationen enthalten, ins Detail muss er jedoch nicht gehen. Falls eine Gedächtnisinstitution bereits über einen längeren beschreibenden Text zur Ressource verfügt, kann nachgefragt werden, ob Aspekte daraus übernommen werden dürfen. Dies kann viel Zeit für weitere Recherchen einsparen.</p>
 <p>Ebenfalls ist es wichtig, zeitliche Limiten für die Annotation einzelner Quellen festzusetzen. So wird nicht zu viel Rechercheaufwand für einzelne Quellen aufgewendet. Darüber hinaus kann es hilfreich sein, vor der eigentlichen Quellenannotation einen Überblick über die gesamte Quellenlage zu erstellen. Ziel dabei ist es, eine ungefähre Vorstellung über die Anzahl an Quellen mit Diskriminierung zu erhalten. Anhand von Erfahrungswerten kann abgeschätzt werden, wie viel Aufwand für die einzelnen Quellen benötigt wird.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Erfahrungen der Stadt.Geschichte.Basel">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-default callout-titled callout-tip" title="Erfahrungen der Stadt.Geschichte.Basel">
+<div class="align-content-center callout-header d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1417,7 +1302,7 @@ Erfahrungen der Stadt.Geschichte.Basel
 Erfahrungen der Stadt.Geschichte.Basel
 </div>
 </div>
-<div class="callout-body-container callout-body">
+<div class="callout-body callout-body-container">
 <p>Es kann hilfreich sein, von den vorhandenen Informationen aus den Gedächtnisinstitutionen auszugehen und dann die weiter oben beschriebenen Schritte durchzugehen. Für das Zeitmanagement war es besonders hilfreich, dass Informationen zu den Quellen direkt aus den einzelnen Bänden genommen werden konnten. Schwierig war es hingegen, vor den Annotationen einen Gesamtüberblick zu den Quellen mit Diskriminierung zu erhalten. So wurde die Liste potenziell diskriminierender Themen erst erstellt, nachdem das Projekt eine grössere Anzahl von Quellen annotiert hatte.</p>
 </div>
 </div>
@@ -1431,8 +1316,8 @@ Erfahrungen der Stadt.Geschichte.Basel
 <h2 data-number="4.6" class="anchored" data-anchor-id="sechster-schritt-datenwertstandards-wählen"><span class="header-section-number">4.6</span> Sechster Schritt: Datenwertstandards wählen</h2>
 <p>Institutionen müssen eine sorgfältige Auswahl an geeigneten Metadatenschemata, kontrollierten Vokabularen (einschliesslich sammlungsspezifischer Thesauri und lokaler Auswahllisten) und Katalogisierungsstandards treffen. Folgende Fragen müssen dabei gestellt werden:&nbsp;Sollen Datenwertstandards (kontrollierte Vokabulare, Thesauri, Kodierungs- oder Formatierungsstandards) verwendet werden? Wenn ja, welche Standards sollen für welche Felder gelten? Kontrollierte Vokabulare sind zu bevorzugen, da diese für die Weiterverwendung der Forschungsdaten als Basis für interoperable Schnittstellen dienen können.</p>
 <p>Alternativ können auch eigene Standards für Datenwerte erstellt werden, beispielsweise ein themenspezifisches Vokabular oder eine kontrollierte Liste von Namen. Wichtig ist die Dokumentation der Entscheidung und der Vokabulare.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Erfahrungen der Stadt.Geschichte.Basel">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-default callout-titled callout-tip" title="Erfahrungen der Stadt.Geschichte.Basel">
+<div class="align-content-center callout-header d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1440,7 +1325,7 @@ Erfahrungen der Stadt.Geschichte.Basel
 Erfahrungen der Stadt.Geschichte.Basel
 </div>
 </div>
-<div class="callout-body-container callout-body">
+<div class="callout-body callout-body-container">
 <p>Im Falle des Feldes "Subject" hat Stadt.Geschichte.Basel den <a href="https://opengenderplatform.de/schlagwortindex">Schlagwortindex GenderOpen</a> als kontrolliertes Vokabular gewählt, um die verschiedenen Diskriminierungsformen beschreiben zu können.</p>
 </div>
 </div>
@@ -1463,19 +1348,19 @@ Erfahrungen der Stadt.Geschichte.Basel
 <p>Auf der <a href="https://forschung.stadtgeschichtebasel.ch/">Forschungsdatenplattform</a>&nbsp;werden Forschungsdaten und weitere Ressourcen der Stadt.Geschichte.Basel über eine benutzer*innenfreundliche Oberfläche Forschenden, Studierenden und Geschichtsinteressierten zur Verfügung gestellt. Jede Ressource (eine Quelle, ein Foto, eine Illustration, ein Datensatz etc.) wird mit Metadaten versehen, im Vier-Augen-Prinzip von Fachleuten geprüft, veröffentlicht und langzeitarchiviert. Die Daten können frei heruntergeladen werden und verweisen auf andere Informationsquellen und Vermittlungsangebote. Die Stadt.Geschichte.Basel nimmt auch Daten anderer Projekte auf, insofern ein Bezug zu Basel gegeben ist.</p>
 <section id="das-bad-zu-leuk" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="das-bad-zu-leuk"><span class="header-section-number">5.1</span> Das Bad zu Leuk</h2>
-<div id="fig-bad-zu-leuk" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
+<div id="fig-bad-zu-leuk" class="anchored quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float figure quarto-float-fig">
 <div aria-describedby="fig-bad-zu-leuk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="media/image10.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1"><img src="media/image10.jpg" style="width:80.0%;height:80.0%" class="figure-img"></a>
+<a href="media/image10.jpg" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1"><img src="media/image10.webp" style="width:80%;height:80%" class="figure-img" alt="" loading="lazy" decoding="async" width="800" height="564"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bad-zu-leuk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption quarto-float-caption-bottom quarto-float-fig" id="fig-bad-zu-leuk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;6: Das Bad zu Leuk
 </figcaption>
 </figure>
 </div>
-<div id="tbl-metadaten-das-bad-zu-leuk" class="quarto-float anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadaten-das-bad-zu-leuk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="tbl-metadaten-das-bad-zu-leuk" class="anchored quarto-float">
+<figure class="quarto-float figure quarto-float-tbl">
+<figcaption class="quarto-float-caption quarto-float-caption-top quarto-float-tbl" id="tbl-metadaten-das-bad-zu-leuk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabelle&nbsp;3: Metadaten des Bildes “Das Bad zu Leuk”
 </figcaption>
 <div aria-describedby="tbl-metadaten-das-bad-zu-leuk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1559,19 +1444,19 @@ Tabelle&nbsp;3: Metadaten des Bildes “Das Bad zu Leuk”
 </section>
 <section id="sec-plakat-zur-voelkerschau" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="sec-plakat-zur-voelkerschau"><span class="header-section-number">5.2</span> Plakat zur Völkerschau in Basel, 1926</h2>
-<div id="fig-plakat-zu-voelkerschau-in-basel-1926" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
+<div id="fig-plakat-zu-voelkerschau-in-basel-1926" class="anchored quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float figure quarto-float-fig">
 <div aria-describedby="fig-plakat-zu-voelkerschau-in-basel-1926-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="media/image4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2"><img src="media/image4.png" style="width:80.0%;height:80.0%" class="figure-img"></a>
+<a href="media/image4.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2"><img src="media/image4.webp" style="width:80%;height:80%" class="figure-img" alt="" loading="lazy" decoding="async" width="1200" height="1560" srcset="media/image4.webp 1200w, media/image4@900w.webp 900w" sizes="100vw"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-plakat-zu-voelkerschau-in-basel-1926-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption quarto-float-caption-bottom quarto-float-fig" id="fig-plakat-zu-voelkerschau-in-basel-1926-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;7: Plakat zur Völkerschau in Basel, 1926
 </figcaption>
 </figure>
 </div>
-<div id="tbl-metadaten-plakat-zur-voelkerschau-in-basel-1926" class="quarto-float anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadaten-plakat-zur-voelkerschau-in-basel-1926-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="tbl-metadaten-plakat-zur-voelkerschau-in-basel-1926" class="anchored quarto-float">
+<figure class="quarto-float figure quarto-float-tbl">
+<figcaption class="quarto-float-caption quarto-float-caption-top quarto-float-tbl" id="tbl-metadaten-plakat-zur-voelkerschau-in-basel-1926-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabelle&nbsp;4: Metadaten des Plakats zur Völkerschau in Basel, 1926
 </figcaption>
 <div aria-describedby="tbl-metadaten-plakat-zur-voelkerschau-in-basel-1926-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1655,19 +1540,19 @@ Tabelle&nbsp;4: Metadaten des Plakats zur Völkerschau in Basel, 1926
 </section>
 <section id="schnitzerei-am-chorgestühl-des-basler-münsters" class="level2" data-number="5.3">
 <h2 data-number="5.3" class="anchored" data-anchor-id="schnitzerei-am-chorgestühl-des-basler-münsters"><span class="header-section-number">5.3</span> Schnitzerei am Chorgestühl des Basler Münsters</h2>
-<div id="fig-schnitzerei-am-chorgestuehl-des-basler-muensters" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
+<div id="fig-schnitzerei-am-chorgestuehl-des-basler-muensters" class="anchored quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float figure quarto-float-fig">
 <div aria-describedby="fig-schnitzerei-am-chorgestuehl-des-basler-muensters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="media/image12.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" data-glightbox="description: .lightbox-desc-3"><img src="media/image12.jpg" style="width:80.0%;height:80.0%" class="figure-img"></a>
+<a href="media/image12.jpg" class="lightbox" data-glightbox="description: .lightbox-desc-3" data-gallery="quarto-lightbox-gallery-3"><img src="media/image12.webp" style="width:80%;height:80%" class="figure-img" alt="" loading="lazy" decoding="async" width="2500" height="2328" srcset="media/image12.webp 2500w, media/image12@2200w.webp 2200w, media/image12@1900w.webp 1900w, media/image12@1600w.webp 1600w, media/image12@1300w.webp 1300w, media/image12@1000w.webp 1000w" sizes="100vw"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-schnitzerei-am-chorgestuehl-des-basler-muensters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption quarto-float-caption-bottom quarto-float-fig" id="fig-schnitzerei-am-chorgestuehl-des-basler-muensters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;8: Schnitzerei am Chorgestühl des Basler Münsters
 </figcaption>
 </figure>
 </div>
-<div id="tbl-metadaten-schnitzerei-am-chorgestuehl-des-basler-muensters" class="quarto-float anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadaten-schnitzerei-am-chorgestuehl-des-basler-muensters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="tbl-metadaten-schnitzerei-am-chorgestuehl-des-basler-muensters" class="anchored quarto-float">
+<figure class="quarto-float figure quarto-float-tbl">
+<figcaption class="quarto-float-caption quarto-float-caption-top quarto-float-tbl" id="tbl-metadaten-schnitzerei-am-chorgestuehl-des-basler-muensters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabelle&nbsp;5: Metadaten der Schnitzerei am Chorgestühl des Basler Münsters
 </figcaption>
 <div aria-describedby="tbl-metadaten-schnitzerei-am-chorgestuehl-des-basler-muensters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1751,19 +1636,19 @@ Tabelle&nbsp;5: Metadaten der Schnitzerei am Chorgestühl des Basler Münsters
 </section>
 <section id="hie-basel-hie-schweizer-boden---liste-3" class="level2" data-number="5.4">
 <h2 data-number="5.4" class="anchored" data-anchor-id="hie-basel-hie-schweizer-boden---liste-3"><span class="header-section-number">5.4</span> Hie Basel Hie Schweizer Boden - Liste 3</h2>
-<div id="fig-hie-basel-hie-schweizer-boden-liste-3" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
+<div id="fig-hie-basel-hie-schweizer-boden-liste-3" class="anchored quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float figure quarto-float-fig">
 <div aria-describedby="fig-hie-basel-hie-schweizer-boden-liste-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="media/image6.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" data-glightbox="description: .lightbox-desc-4"><img src="media/image6.png" style="width:80.0%;height:80.0%" class="figure-img"></a>
+<a href="media/image6.png" class="lightbox" data-glightbox="description: .lightbox-desc-4" data-gallery="quarto-lightbox-gallery-4"><img src="media/image6.webp" style="width:80%;height:80%" class="figure-img" alt="" loading="lazy" decoding="async" width="519" height="748"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hie-basel-hie-schweizer-boden-liste-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption quarto-float-caption-bottom quarto-float-fig" id="fig-hie-basel-hie-schweizer-boden-liste-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;9: Hie Basel Hie Schweizer Boden - Liste 3
 </figcaption>
 </figure>
 </div>
-<div id="tbl-metadaten-hie-basel-hie-schweizer-boden-liste-3" class="quarto-float anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadaten-hie-basel-hie-schweizer-boden-liste-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="tbl-metadaten-hie-basel-hie-schweizer-boden-liste-3" class="anchored quarto-float">
+<figure class="quarto-float figure quarto-float-tbl">
+<figcaption class="quarto-float-caption quarto-float-caption-top quarto-float-tbl" id="tbl-metadaten-hie-basel-hie-schweizer-boden-liste-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabelle&nbsp;6: Metadaten des Plakats “Hie Basel Hie Schweizer Boden - Liste 3”
 </figcaption>
 <div aria-describedby="tbl-metadaten-hie-basel-hie-schweizer-boden-liste-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1847,19 +1732,19 @@ Tabelle&nbsp;6: Metadaten des Plakats “Hie Basel Hie Schweizer Boden - Liste 3
 </section>
 <section id="zeitungsinserat-in-der-national-zeitung-1955" class="level2" data-number="5.5">
 <h2 data-number="5.5" class="anchored" data-anchor-id="zeitungsinserat-in-der-national-zeitung-1955"><span class="header-section-number">5.5</span> Zeitungsinserat in der National-Zeitung, 1955</h2>
-<div id="fig-zeitungsinserat-in-der-national-zeitung-1955" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
+<div id="fig-zeitungsinserat-in-der-national-zeitung-1955" class="anchored quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float figure quarto-float-fig">
 <div aria-describedby="fig-zeitungsinserat-in-der-national-zeitung-1955-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="media/image11.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" data-glightbox="description: .lightbox-desc-5"><img src="media/image11.png" style="width:80.0%;height:80.0%" class="figure-img"></a>
+<a href="media/image11.png" class="lightbox" data-glightbox="description: .lightbox-desc-5" data-gallery="quarto-lightbox-gallery-5"><img src="media/image11.webp" style="width:80%;height:80%" class="figure-img" alt="" loading="lazy" decoding="async" width="1200" height="1244" srcset="media/image11.webp 1200w, media/image11@900w.webp 900w" sizes="100vw"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-zeitungsinserat-in-der-national-zeitung-1955-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption quarto-float-caption-bottom quarto-float-fig" id="fig-zeitungsinserat-in-der-national-zeitung-1955-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;10: Zeitungsinserat in der National-Zeitung, 1955
 </figcaption>
 </figure>
 </div>
-<div id="tbl-metadaten-zeitungsinserat-in-der-national-zeitung-1955" class="quarto-float anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadaten-zeitungsinserat-in-der-national-zeitung-1955-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="tbl-metadaten-zeitungsinserat-in-der-national-zeitung-1955" class="anchored quarto-float">
+<figure class="quarto-float figure quarto-float-tbl">
+<figcaption class="quarto-float-caption quarto-float-caption-top quarto-float-tbl" id="tbl-metadaten-zeitungsinserat-in-der-national-zeitung-1955-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabelle&nbsp;7: Metadaten des Zeitungsinserats in der National-Zeitung, 1955
 </figcaption>
 <div aria-describedby="tbl-metadaten-zeitungsinserat-in-der-national-zeitung-1955-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1943,19 +1828,19 @@ Tabelle&nbsp;7: Metadaten des Zeitungsinserats in der National-Zeitung, 1955
 </section>
 <section id="die-ausländische-wohnbevölkerung-von-basel-stadt-nach-heimatnation-19201965" class="level2" data-number="5.6">
 <h2 data-number="5.6" class="anchored" data-anchor-id="die-ausländische-wohnbevölkerung-von-basel-stadt-nach-heimatnation-19201965"><span class="header-section-number">5.6</span> Die ausländische Wohnbevölkerung von Basel-Stadt nach Heimatnation, 1920–1965</h2>
-<div id="fig-die-auslaendische-wohnbevoelkerung-von-basel-stadt-nach-heimatnation-1920-1965" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
+<div id="fig-die-auslaendische-wohnbevoelkerung-von-basel-stadt-nach-heimatnation-1920-1965" class="anchored quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float figure quarto-float-fig">
 <div aria-describedby="fig-die-auslaendische-wohnbevoelkerung-von-basel-stadt-nach-heimatnation-1920-1965-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="media/image14.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-6" data-glightbox="description: .lightbox-desc-6"><img src="media/image14.jpg" style="width:80.0%;height:80.0%" class="figure-img"></a>
+<a href="media/image14.jpg" class="lightbox" data-glightbox="description: .lightbox-desc-6" data-gallery="quarto-lightbox-gallery-6"><img src="media/image14.webp" style="width:80%;height:80%" class="figure-img" alt="" loading="lazy" decoding="async" width="1686" height="748" srcset="media/image14.webp 1686w, media/image14@1386w.webp 1386w, media/image14@1086w.webp 1086w, media/image14@786w.webp 786w" sizes="100vw"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-die-auslaendische-wohnbevoelkerung-von-basel-stadt-nach-heimatnation-1920-1965-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption quarto-float-caption-bottom quarto-float-fig" id="fig-die-auslaendische-wohnbevoelkerung-von-basel-stadt-nach-heimatnation-1920-1965-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;11: Die ausländische Wohnbevölkerung von Basel-Stadt nach Heimatnation, 1920–1965
 </figcaption>
 </figure>
 </div>
-<div id="tbl-metadaten-die-auslaendische-wohnbevoelkerung-von-basel-stadt-nach-heimatnation-1920-1965" class="quarto-float anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadaten-die-auslaendische-wohnbevoelkerung-von-basel-stadt-nach-heimatnation-1920-1965-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="tbl-metadaten-die-auslaendische-wohnbevoelkerung-von-basel-stadt-nach-heimatnation-1920-1965" class="anchored quarto-float">
+<figure class="quarto-float figure quarto-float-tbl">
+<figcaption class="quarto-float-caption quarto-float-caption-top quarto-float-tbl" id="tbl-metadaten-die-auslaendische-wohnbevoelkerung-von-basel-stadt-nach-heimatnation-1920-1965-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabelle&nbsp;8: Metadaten der Statistik “Die ausländische Wohnbevölkerung von Basel-Stadt nach Heimatnation, 1920–1965”
 </figcaption>
 <div aria-describedby="tbl-metadaten-die-auslaendische-wohnbevoelkerung-von-basel-stadt-nach-heimatnation-1920-1965-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -2039,19 +1924,19 @@ Tabelle&nbsp;8: Metadaten der Statistik “Die ausländische Wohnbevölkerung vo
 </section>
 <section id="basler-brandmarkeisen-17.-jahrhundert" class="level2" data-number="5.7">
 <h2 data-number="5.7" class="anchored" data-anchor-id="basler-brandmarkeisen-17.-jahrhundert"><span class="header-section-number">5.7</span> Basler Brandmarkeisen, 17. Jahrhundert</h2>
-<div id="fig-basler-brandmarkeisen-17-jahrhundert" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
+<div id="fig-basler-brandmarkeisen-17-jahrhundert" class="anchored quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float figure quarto-float-fig">
 <div aria-describedby="fig-basler-brandmarkeisen-17-jahrhundert-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="media/image13.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-7" data-glightbox="description: .lightbox-desc-7"><img src="media/image13.jpg" style="width:80.0%;height:80.0%" class="figure-img"></a>
+<a href="media/image13.jpg" class="lightbox" data-glightbox="description: .lightbox-desc-7" data-gallery="quarto-lightbox-gallery-7"><img src="media/image13.webp" style="width:80%;height:80%" class="figure-img" alt="" loading="lazy" decoding="async" width="1979" height="2500" srcset="media/image13.webp 1979w, media/image13@1679w.webp 1679w, media/image13@1379w.webp 1379w, media/image13@1079w.webp 1079w" sizes="100vw"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-basler-brandmarkeisen-17-jahrhundert-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption quarto-float-caption-bottom quarto-float-fig" id="fig-basler-brandmarkeisen-17-jahrhundert-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;12: Basler Brandmarkeisen, 17. Jahrhundert
 </figcaption>
 </figure>
 </div>
-<div id="tbl-metadaten-basler-brandmarkeisen-17-jahrhundert" class="quarto-float anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadaten-basler-brandmarkeisen-17-jahrhundert-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="tbl-metadaten-basler-brandmarkeisen-17-jahrhundert" class="anchored quarto-float">
+<figure class="quarto-float figure quarto-float-tbl">
+<figcaption class="quarto-float-caption quarto-float-caption-top quarto-float-tbl" id="tbl-metadaten-basler-brandmarkeisen-17-jahrhundert-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabelle&nbsp;9: Metadaten der Basler Brandmarkeisen, 17. Jahrhundert
 </figcaption>
 <div aria-describedby="tbl-metadaten-basler-brandmarkeisen-17-jahrhundert-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -2135,19 +2020,19 @@ Tabelle&nbsp;9: Metadaten der Basler Brandmarkeisen, 17. Jahrhundert
 </section>
 <section id="plan-mit-verteilung-jüdischer-häuser" class="level2" data-number="5.8">
 <h2 data-number="5.8" class="anchored" data-anchor-id="plan-mit-verteilung-jüdischer-häuser"><span class="header-section-number">5.8</span> Plan mit Verteilung jüdischer Häuser</h2>
-<div id="fig-plan-mit-verteilung-juedischer-haeuser" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
+<div id="fig-plan-mit-verteilung-juedischer-haeuser" class="anchored quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float figure quarto-float-fig">
 <div aria-describedby="fig-plan-mit-verteilung-juedischer-haeuser-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="media/image15.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-8" data-glightbox="description: .lightbox-desc-8"><img src="media/image15.jpg" style="width:80.0%;height:80.0%" class="figure-img"></a>
+<a href="media/image15.jpg" class="lightbox" data-glightbox="description: .lightbox-desc-8" data-gallery="quarto-lightbox-gallery-8"><img src="media/image15.webp" style="width:80%;height:80%" class="figure-img" alt="" loading="lazy" decoding="async" width="1522" height="1123" srcset="media/image15.webp 1522w, media/image15@1222w.webp 1222w, media/image15@922w.webp 922w" sizes="100vw"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-plan-mit-verteilung-juedischer-haeuser-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption quarto-float-caption-bottom quarto-float-fig" id="fig-plan-mit-verteilung-juedischer-haeuser-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;13: Plan mit Verteilung jüdischer Häuser
 </figcaption>
 </figure>
 </div>
-<div id="tbl-metadaten-plan-mit-verteilung-juedischer-haeuser" class="quarto-float anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadaten-plan-mit-verteilung-juedischer-haeuser-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="tbl-metadaten-plan-mit-verteilung-juedischer-haeuser" class="anchored quarto-float">
+<figure class="quarto-float figure quarto-float-tbl">
+<figcaption class="quarto-float-caption quarto-float-caption-top quarto-float-tbl" id="tbl-metadaten-plan-mit-verteilung-juedischer-haeuser-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabelle&nbsp;10: Metadaten des Plans mit Verteilung jüdischer Häuser
 </figcaption>
 <div aria-describedby="tbl-metadaten-plan-mit-verteilung-juedischer-haeuser-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -2237,19 +2122,19 @@ Tabelle&nbsp;10: Metadaten des Plans mit Verteilung jüdischer Häuser
 <h3 data-number="5.9.1" class="anchored" data-anchor-id="negative-beispiele-von-lebensbildern"><span class="header-section-number">5.9.1</span> Negative Beispiele von Lebensbildern</h3>
 <section id="androzentrismus" class="level4" data-number="5.9.1.1">
 <h4 data-number="5.9.1.1" class="anchored" data-anchor-id="androzentrismus"><span class="header-section-number">5.9.1.1</span> Androzentrismus</h4>
-<div id="fig-bestattung-von-unlingen" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
+<div id="fig-bestattung-von-unlingen" class="anchored quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float figure quarto-float-fig">
 <div aria-describedby="fig-bestattung-von-unlingen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="media/image8.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-9" data-glightbox="description: .lightbox-desc-9"><img src="media/image8.jpg" style="width:80.0%;height:80.0%" class="figure-img"></a>
+<a href="media/image8.jpg" class="lightbox" data-glightbox="description: .lightbox-desc-9" data-gallery="quarto-lightbox-gallery-9"><img src="media/image8.webp" style="width:80%;height:80%" class="figure-img" alt="" loading="lazy" decoding="async" width="703" height="1000"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bestattung-von-unlingen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption quarto-float-caption-bottom quarto-float-fig" id="fig-bestattung-von-unlingen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;14: Bestattung von Unlingen
 </figcaption>
 </figure>
 </div>
-<div id="tbl-metadaten-bestattung-von-unlingen" class="quarto-float anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadaten-bestattung-von-unlingen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="tbl-metadaten-bestattung-von-unlingen" class="anchored quarto-float">
+<figure class="quarto-float figure quarto-float-tbl">
+<figcaption class="quarto-float-caption quarto-float-caption-top quarto-float-tbl" id="tbl-metadaten-bestattung-von-unlingen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabelle&nbsp;11: Metadaten der Bestattung von Unlingen
 </figcaption>
 <div aria-describedby="tbl-metadaten-bestattung-von-unlingen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -2337,19 +2222,19 @@ Tabelle&nbsp;11: Metadaten der Bestattung von Unlingen
 </section>
 <section id="rollenverteilung-zwischen-den-geschlechtern" class="level4" data-number="5.9.1.2">
 <h4 data-number="5.9.1.2" class="anchored" data-anchor-id="rollenverteilung-zwischen-den-geschlechtern"><span class="header-section-number">5.9.1.2</span> Rollenverteilung zwischen den Geschlechtern</h4>
-<div id="fig-hoehlenleben-zur-aelteren-steinzeit" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
+<div id="fig-hoehlenleben-zur-aelteren-steinzeit" class="anchored quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float figure quarto-float-fig">
 <div aria-describedby="fig-hoehlenleben-zur-aelteren-steinzeit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="media/image2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" data-glightbox="description: .lightbox-desc-10"><img src="media/image2.png" style="width:80.0%;height:80.0%" class="figure-img"></a>
+<a href="media/image2.png" class="lightbox" data-glightbox="description: .lightbox-desc-10" data-gallery="quarto-lightbox-gallery-10"><img src="media/image2.webp" style="width:80%;height:80%" class="figure-img" alt="" loading="lazy" decoding="async" width="842" height="586"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hoehlenleben-zur-aelteren-steinzeit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption quarto-float-caption-bottom quarto-float-fig" id="fig-hoehlenleben-zur-aelteren-steinzeit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;15: Höhlenleben zur älteren Steinzeit
 </figcaption>
 </figure>
 </div>
-<div id="tbl-metadaten-hoehlenleben-zur-aelteren-steinzeit" class="quarto-float anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadaten-hoehlenleben-zur-aelteren-steinzeit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="tbl-metadaten-hoehlenleben-zur-aelteren-steinzeit" class="anchored quarto-float">
+<figure class="quarto-float figure quarto-float-tbl">
+<figcaption class="quarto-float-caption quarto-float-caption-top quarto-float-tbl" id="tbl-metadaten-hoehlenleben-zur-aelteren-steinzeit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabelle&nbsp;12: Metadaten des Höhlenlebens zur älteren Steinzeit
 </figcaption>
 <div aria-describedby="tbl-metadaten-hoehlenleben-zur-aelteren-steinzeit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -2437,19 +2322,19 @@ Tabelle&nbsp;12: Metadaten des Höhlenlebens zur älteren Steinzeit
 </section>
 <section id="sec-sexualisierung-der-frau" class="level4" data-number="5.9.1.3">
 <h4 data-number="5.9.1.3" class="anchored" data-anchor-id="sec-sexualisierung-der-frau"><span class="header-section-number">5.9.1.3</span> Sexualisierung der Frau</h4>
-<div id="fig-bestattung-von-bad-duerrenberg" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
+<div id="fig-bestattung-von-bad-duerrenberg" class="anchored quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float figure quarto-float-fig">
 <div aria-describedby="fig-bestattung-von-bad-duerrenberg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="media/image1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" data-glightbox="description: .lightbox-desc-11"><img src="media/image1.png" style="width:80.0%;height:80.0%" class="figure-img"></a>
+<a href="media/image1.png" class="lightbox" data-glightbox="description: .lightbox-desc-11" data-gallery="quarto-lightbox-gallery-11"><img src="media/image1.webp" style="width:80%;height:80%" class="figure-img" alt="" loading="lazy" decoding="async" width="551" height="670"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bestattung-von-bad-duerrenberg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption quarto-float-caption-bottom quarto-float-fig" id="fig-bestattung-von-bad-duerrenberg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;16: Bestattung von Bad Dürrenberg
 </figcaption>
 </figure>
 </div>
-<div id="tbl-metadaten-bestattung-von-bad-duerrenberg" class="quarto-float anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadaten-bestattung-von-bad-duerrenberg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="tbl-metadaten-bestattung-von-bad-duerrenberg" class="anchored quarto-float">
+<figure class="quarto-float figure quarto-float-tbl">
+<figcaption class="quarto-float-caption quarto-float-caption-top quarto-float-tbl" id="tbl-metadaten-bestattung-von-bad-duerrenberg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabelle&nbsp;13: Metadaten der Bestattung von Bad Dürrenberg
 </figcaption>
 <div aria-describedby="tbl-metadaten-bestattung-von-bad-duerrenberg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -2540,19 +2425,19 @@ Tabelle&nbsp;13: Metadaten der Bestattung von Bad Dürrenberg
 <h3 data-number="5.9.2" class="anchored" data-anchor-id="positive-beispiele-von-lebensbildern"><span class="header-section-number">5.9.2</span> Positive Beispiele von Lebensbildern</h3>
 <section id="opferplatz-thorberger-moor" class="level4" data-number="5.9.2.1">
 <h4 data-number="5.9.2.1" class="anchored" data-anchor-id="opferplatz-thorberger-moor"><span class="header-section-number">5.9.2.1</span> Opferplatz Thorberger Moor</h4>
-<div id="fig-opferplatz-thorberger-moor" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
+<div id="fig-opferplatz-thorberger-moor" class="anchored quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float figure quarto-float-fig">
 <div aria-describedby="fig-opferplatz-thorberger-moor-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="media/image3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12" data-glightbox="description: .lightbox-desc-12"><img src="media/image3.png" style="width:80.0%;height:80.0%" class="figure-img"></a>
+<a href="media/image3.png" class="lightbox" data-glightbox="description: .lightbox-desc-12" data-gallery="quarto-lightbox-gallery-12"><img src="media/image3.webp" style="width:80%;height:80%" class="figure-img" alt="" loading="lazy" decoding="async" width="996" height="440"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-opferplatz-thorberger-moor-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption quarto-float-caption-bottom quarto-float-fig" id="fig-opferplatz-thorberger-moor-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;17: Opferplatz Thorberger Moor
 </figcaption>
 </figure>
 </div>
-<div id="tbl-metadaten-opferplatz-thorberger-moor" class="quarto-float anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadaten-opferplatz-thorberger-moor-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="tbl-metadaten-opferplatz-thorberger-moor" class="anchored quarto-float">
+<figure class="quarto-float figure quarto-float-tbl">
+<figcaption class="quarto-float-caption quarto-float-caption-top quarto-float-tbl" id="tbl-metadaten-opferplatz-thorberger-moor-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabelle&nbsp;14: Metadaten des Opferplatzes Thorberger Moor
 </figcaption>
 <div aria-describedby="tbl-metadaten-opferplatz-thorberger-moor-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -2640,19 +2525,19 @@ Tabelle&nbsp;14: Metadaten des Opferplatzes Thorberger Moor
 </section>
 <section id="alle-unter-einem-dach" class="level4" data-number="5.9.2.2">
 <h4 data-number="5.9.2.2" class="anchored" data-anchor-id="alle-unter-einem-dach"><span class="header-section-number">5.9.2.2</span> Alle unter einem Dach</h4>
-<div id="fig-alle-unter-einem-dach" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
+<div id="fig-alle-unter-einem-dach" class="anchored quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float figure quarto-float-fig">
 <div aria-describedby="fig-alle-unter-einem-dach-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="media/image5.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13" data-glightbox="description: .lightbox-desc-13"><img src="media/image5.png" style="width:80.0%;height:80.0%" class="figure-img"></a>
+<a href="media/image5.png" class="lightbox" data-glightbox="description: .lightbox-desc-13" data-gallery="quarto-lightbox-gallery-13"><img src="media/image5.webp" style="width:80%;height:80%" class="figure-img" alt="" loading="lazy" decoding="async" width="1129" height="375" srcset="media/image5.webp 1129w, media/image5@829w.webp 829w" sizes="100vw"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-alle-unter-einem-dach-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption quarto-float-caption-bottom quarto-float-fig" id="fig-alle-unter-einem-dach-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;18: Alle unter einem Dach
 </figcaption>
 </figure>
 </div>
-<div id="tbl-metadaten-alle-unter-einem-dach" class="quarto-float anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadaten-alle-unter-einem-dach-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="tbl-metadaten-alle-unter-einem-dach" class="anchored quarto-float">
+<figure class="quarto-float figure quarto-float-tbl">
+<figcaption class="quarto-float-caption quarto-float-caption-top quarto-float-tbl" id="tbl-metadaten-alle-unter-einem-dach-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabelle&nbsp;15: Metadaten von Alle unter einem Dach
 </figcaption>
 <div aria-describedby="tbl-metadaten-alle-unter-einem-dach-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -2740,19 +2625,19 @@ Tabelle&nbsp;15: Metadaten von Alle unter einem Dach
 </section>
 <section id="die-keltin" class="level4" data-number="5.9.2.3">
 <h4 data-number="5.9.2.3" class="anchored" data-anchor-id="die-keltin"><span class="header-section-number">5.9.2.3</span> Die Keltin</h4>
-<div id="fig-die-keltin" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
+<div id="fig-die-keltin" class="anchored quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float figure quarto-float-fig">
 <div aria-describedby="fig-die-keltin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="media/image9.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14" data-glightbox="description: .lightbox-desc-14"><img src="media/image9.png" style="width:80.0%;height:80.0%" class="figure-img"></a>
+<a href="media/image9.png" class="lightbox" data-glightbox="description: .lightbox-desc-14" data-gallery="quarto-lightbox-gallery-14"><img src="media/image9.webp" style="width:80%;height:80%" class="figure-img" alt="" loading="lazy" decoding="async" width="371" height="493"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-die-keltin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption quarto-float-caption-bottom quarto-float-fig" id="fig-die-keltin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;19: Die Keltin
 </figcaption>
 </figure>
 </div>
-<div id="tbl-metadaten-die-keltin" class="quarto-float anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-metadaten-die-keltin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="tbl-metadaten-die-keltin" class="anchored quarto-float">
+<figure class="quarto-float figure quarto-float-tbl">
+<figcaption class="quarto-float-caption quarto-float-caption-top quarto-float-tbl" id="tbl-metadaten-die-keltin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabelle&nbsp;16: Metadaten der Keltin
 </figcaption>
 <div aria-describedby="tbl-metadaten-die-keltin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -2843,7 +2728,7 @@ Tabelle&nbsp;16: Metadaten der Keltin
 </section>
 <section id="literatur" class="level1" data-number="6">
 <h1 data-number="6"><span class="header-section-number">6</span> Literatur</h1>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="refs" class="csl-bib-body hanging-indent references" data-entry-spacing="0" role="list">
 <div id="ref-australianresearchdatacommonsardc2020a" class="csl-entry" role="listitem">
 Australian Research Data Commons (ARDC). 2020. <span>«<span>ARDC Metadata Guide</span>»</span>, März. <a href="https://doi.org/10.5281/ZENODO.6459832">https://doi.org/10.5281/ZENODO.6459832</a>.
 </div>
@@ -5976,448 +5861,11 @@ Zhang, Lei. 2022. <span>«Empowering Linked Data in Cultural Heritage Institutio
 </ol>
 </section>
      </main>
-<!-- /main column -->  <script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Kopiert");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Kopiert");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  });
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-          // target, if specified
-          link.setAttribute("target", "_blank");
-          if (link.getAttribute("rel") === null) {
-            link.setAttribute("rel", "noopener");
-          }
-          // default icon
-          link.classList.add("external");
-      }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-    const config = {
-      allowHTML: true,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start',
-    };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
-          }
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
-        }
-        return container.innerHTML
-      } else {
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
-      }
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
-    });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            div.style.left = 0;
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
-      });
-    }
-  }
-});
+<!-- /main column -->  <script id="quarto-html-after-body" type="application/javascript">window.document.addEventListener("DOMContentLoaded",function(R){const C=n=>{const t=n.getAttribute("data-mode"),e=window.document.querySelector("body");t==="dark"?(e.classList.add("quarto-dark"),e.classList.remove("quarto-light")):(e.classList.add("quarto-light"),e.classList.remove("quarto-dark"))};(()=>{const n=window.document.querySelector("link#quarto-bootstrap");n&&C(n)})();const S="\uE9CB",w=new window.AnchorJS;w.options={placement:"right",icon:S},w.add(".anchored");const q=n=>{for(const t of n.classList)if(t.startsWith("code-annotation-"))return!0;return!1};new window.ClipboardJS(".code-copy-button",{text:function(n){const t=n.previousElementSibling.cloneNode(!0);for(const e of t.children)q(e)&&e.remove();return t.innerText}}).on("success",function(n){const t=n.trigger;t.blur(),t.classList.add("code-copy-button-checked");var e=t.getAttribute("title");t.setAttribute("title","Kopiert");let o;window.bootstrap&&(t.setAttribute("data-bs-toggle","tooltip"),t.setAttribute("data-bs-placement","left"),t.setAttribute("data-bs-title","Kopiert"),o=new bootstrap.Tooltip(t,{trigger:"manual",customClass:"code-copy-button-tooltip",offset:[0,-8]}),o.show()),setTimeout(function(){o&&(o.hide(),t.removeAttribute("data-bs-title"),t.removeAttribute("data-bs-toggle"),t.removeAttribute("data-bs-placement")),t.setAttribute("title",e),t.classList.remove("code-copy-button-checked")},1e3),n.clearSelection()});for(var M=new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//),T=new RegExp(/^mailto:/),k=new RegExp("/"+window.location.host+"/"),H=n=>k.test(n)||M.test(n)||T.test(n),b=window.document.querySelectorAll("a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)"),r=0;r<b.length;r++){const n=b[r];H(n.href)||(n.dataset.originalHref!==void 0&&(n.href=n.dataset.originalHref),n.setAttribute("target","_blank"),n.getAttribute("rel")===null&&n.setAttribute("rel","noopener"),n.classList.add("external"))}function g(n,t,e,o){const i={allowHTML:!0,maxWidth:500,delay:100,arrow:!1,appendTo:function(l){return l.parentElement},interactive:!0,interactiveBorder:10,theme:"quarto",placement:"bottom-start"};t&&(i.content=t),e&&(i.onTrigger=e),o&&(i.onUntrigger=o),window.tippy(n,i)}const y=window.document.querySelectorAll('a[role="doc-noteref"]');for(var r=0;r<y.length;r++){const t=y[r];g(t,function(){let e=t.getAttribute("data-footnote-href")||t.getAttribute("href");try{e=new URL(e).hash}catch{}const o=e.replace(/^#\/?/,""),i=window.document.getElementById(o);return i?i.innerHTML:""})}const v=window.document.querySelectorAll("a.quarto-xref"),p=(n,t)=>{const e=o=>{if(o.classList.remove("page-full","page-columns"),o.children)for(const i of o.children)e(i)};if(e(t),n===null||n.startsWith("sec-")){const o=document.createElement("div");if(t.children&&t.children.length>2){o.appendChild(t.children[0].cloneNode(!0));for(let i=1;i<t.children.length;i++){const l=t.children[i];if(!(l.tagName==="P"&&l.innerText==="")){o.appendChild(l.cloneNode(!0));break}}return window.Quarto?.typesetMath&&window.Quarto.typesetMath(o),o.innerHTML}else return window.Quarto?.typesetMath&&window.Quarto.typesetMath(t),t.innerHTML}else{const o=t.querySelector("a.anchorjs-link");return o&&o.remove(),window.Quarto?.typesetMath&&window.Quarto.typesetMath(t),t.classList.contains("callout")?t.outerHTML:t.innerHTML}};for(var r=0;r<v.length;r++){const t=v[r];g(t,void 0,function(e){e.disable();let o=t.getAttribute("href"),i;if(o.startsWith("#"))i=o;else try{i=new URL(o).hash}catch{}if(i){const l=i.replace(/^#\/?/,""),c=window.document.getElementById(l);if(c!==null)try{const s=p(l,c.cloneNode(!0));e.setContent(s)}finally{e.enable(),e.show()}else fetch(o.split("#")[0]).then(s=>s.text()).then(s=>{const u=new DOMParser().parseFromString(s,"text/html").getElementById(l);if(u!==null){const a=p(l,u);e.setContent(a)}}).finally(()=>{e.enable(),e.show()})}else fetch(o).then(l=>l.text()).then(l=>{const d=new DOMParser().parseFromString(l,"text/html").querySelector("main.content");if(d!==null){d.children.length>0&&d.children[0].tagName==="HEADER"&&d.children[0].remove();const f=p(null,d);e.setContent(f)}}).finally(()=>{e.enable(),e.show()})},function(e){})}let m;const I=(n,t)=>{let e='data-code-cell="'+n+'"',o='data-code-annotation="'+t+'"';return"span["+e+"]["+o+"]"},E=n=>{const t=window.document,e=n.getAttribute("data-target-cell"),o=n.getAttribute("data-target-annotation"),c=window.document.querySelector(I(e,o)).getAttribute("data-code-lines").split(",").map(u=>e+"-"+u);let s=null,d=null,f=null;if(c.length>0){const u=window.document.getElementById(c[0]);if(s=u.offsetTop,d=u.offsetHeight,f=u.parentElement.parentElement,c.length>1){const a=window.document.getElementById(c[c.length-1]);d=a.offsetTop+a.offsetHeight-s}if(s!==null&&d!==null&&f!==null){let a=window.document.getElementById("code-annotation-line-highlight");a===null&&(a=window.document.createElement("div"),a.setAttribute("id","code-annotation-line-highlight"),a.style.position="absolute",f.appendChild(a)),a.style.top=s-2+"px",a.style.height=d+4+"px",a.style.left=0;let h=window.document.getElementById("code-annotation-line-highlight-gutter");h===null&&(h=window.document.createElement("div"),h.setAttribute("id","code-annotation-line-highlight-gutter"),h.style.position="absolute",window.document.getElementById(e).querySelector(".code-annotation-gutter").appendChild(h)),h.style.top=s-2+"px",h.style.height=d+4+"px"}m=n}},A=()=>{["code-annotation-line-highlight","code-annotation-line-highlight-gutter"].forEach(t=>{const e=window.document.getElementById(t);e&&e.remove()}),m=void 0};window.addEventListener("resize",B(()=>{elRect=void 0,m&&E(m)},10));function B(n,t){let e=!1,o;return(...i)=>{e?(o&&clearTimeout(o),o=setTimeout(()=>{n.apply(this,i),o=e=!1},t)):(n.apply(this,i),e=!0)}}const D=window.document.querySelectorAll("dt[data-target-cell]");for(const n of D)n.addEventListener("click",t=>{const e=t.target;if(e!==m){A();const o=window.document.querySelector("dt[data-target-cell].code-annotation-active");o&&o.classList.remove("code-annotation-active"),E(e),e.classList.add("code-annotation-active")}else A(),e.classList.remove("code-annotation-active")});const L=n=>{const t=n.parentElement;if(t){const e=t.dataset.cites;return e?{el:n,cites:e.split(" ")}:L(n.parentElement)}else return};for(var x=window.document.querySelectorAll('a[role="doc-biblioref"]'),r=0;r<x.length;r++){const t=x[r],e=L(t);e&&g(e.el,function(){var o=window.document.createElement("div");return e.cites.forEach(function(i){var l=window.document.createElement("div");l.classList.add("hanging-indent"),l.classList.add("csl-entry");var c=window.document.getElementById("ref-"+i);c&&(l.innerHTML=c.innerHTML),o.appendChild(l)}),o.innerHTML})}});
 </script>  <script src="https://giscus.app/client.js" data-repo="maehr/diskriminierungsfreie-metadaten" data-repo-id="R_kgDOL4LhWA" data-category="General" data-category-id="DIC_kwDOL4LhWM4CfNQc" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
 </script>
 <input type="hidden" id="giscus-base-theme" value="light">
-<input type="hidden" id="giscus-alt-theme" value="dark">  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"selector":".lightbox","openEffect":"zoom"});
-window.onload = () => {
-  lightboxQuarto.on('slide_before_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    const href = trigger.getAttribute('href');
-    if (href !== null) {
-      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-      if (imgEl !== null) {
-        const srcAttr = imgEl.getAttribute("src");
-        if (srcAttr && srcAttr.startsWith("data:")) {
-          slideConfig.href = srcAttr;
-        }
-      }
-    } 
-  });
-
-  lightboxQuarto.on('slide_after_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    if (window.Quarto?.typesetMath) {
-      window.Quarto.typesetMath(slideNode);
-    }
-  });
-
-};
-          </script> 
+<input type="hidden" id="giscus-alt-theme" value="dark">  </div> <!-- /content -->  <script>var lightboxQuarto=GLightbox({closeEffect:"zoom",selector:".lightbox",loop:!1,descPosition:"bottom",openEffect:"zoom"});window.onload=()=>{lightboxQuarto.on("slide_before_load",e=>{const{slideIndex:d,slideNode:o,slideConfig:i,player:n,trigger:l}=e,r=l.getAttribute("href");if(r!==null){const s=window.document.querySelector(`a[href="${r}"] img`);if(s!==null){const t=s.getAttribute("src");t&&t.startsWith("data:")&&(i.href=t)}}}),lightboxQuarto.on("slide_after_load",e=>{const{slideIndex:d,slideNode:o,slideConfig:i,player:n,trigger:l}=e;window.Quarto?.typesetMath&&window.Quarto.typesetMath(o)})};
+</script> 
   
 </body></html>
