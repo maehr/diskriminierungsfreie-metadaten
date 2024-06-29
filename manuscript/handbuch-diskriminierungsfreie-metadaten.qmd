@@ -491,8 +491,7 @@ Institutionen müssen eine sorgfältige Auswahl an geeigneten Metadatenschemata,
 Alternativ können auch eigene Standards für Datenwerte erstellt werden, beispielsweise ein themenspezifisches Vokabular oder eine kontrollierte Liste von Namen. Wichtig ist die Dokumentation der Entscheidung und der Vokabulare.
 
 ::: {.callout-tip title="Erfahrungen der Stadt.Geschichte.Basel"}
-Im Falle des Feldes \"Subject\" hat Stadt.Geschichte.Basel den [Schlagwortindex GenderOpen](https://opengenderplatform.de/schlagwortindex) als kontrolliertes Vokabular gewählt, um die verschiedenen Diskriminierungsformen beschreiben zu können.
-:::
+Im Falle des Feldes \"Subject\" hat Stadt.Geschichte.Basel den [Schlagwortindex GenderOpen](https://opengenderplatform.de/schlagwortindex) als kontrolliertes Vokabular gewählt, um die verschiedenen Diskriminierungsformen beschreiben zu können. An dieser Stelle muss auf die Grenzen des Schlagwortindexes hingewiesen werden. Bei der Verschlagwortung der Daten der Stadt.Geschichte.Basel kam es teilweise zu Ungenauigkeiten. So wird beispielsweise im Fall [5.8] (https://maehr.github.io/diskriminierungsfreie-metadaten/#plan-mit-verteilung-j%C3%BCdischer-h%C3%A4user) (Plan mit Verteilung jüdischer Häuser) der Begriff "Antisemitismus" verwendet, obwohl dieser Begriff für die mittelalterliche Situation nicht zutreffend ist. Der Begriff "Antijudaismus" beschreibt den damaligen Kontext genauer, ist jedoch im GenderOpen-Index nicht vorhanden. 
 
 ## Siebter Schritt: Checkliste
 
