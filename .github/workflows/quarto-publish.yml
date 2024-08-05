@@ -35,6 +35,10 @@ jobs:
         with:
           tinytex: true
 
+      - name: Set up TeX dependencies
+        run: |
+          tlmgr install hyphen-german
+
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
         with:
