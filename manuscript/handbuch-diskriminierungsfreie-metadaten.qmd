@@ -55,6 +55,11 @@ number-sections: true
 Dieses Dokument enthält Abbildungen von historischen Quellen, die diskriminierende Sprache, Bilder oder Darstellungen enthalten. Sie sind Ausdruck von Vorurteilen, Stereotypen oder Gewalt gegen bestimmte Gruppen in der Vergangenheit.
 :::
 
+::: {.callout-important}
+## Hinweis zur anstehenden Überarbeitung des Handbuchs
+Dieses Handbuch wird derzeit überarbeitet, neu strukturiert und erweitert. Seit der Erstveröffentlichung im Juni 2024 haben wir viele wertvolle Rückmeldungen und Ergänzungsvorschläge erhalten, welche alle in die Überarbeitung einfliessen. Haben Sie Anregungen oder Feedback? Wir freuen uns jederzeit über Ihre Rückmeldungen! Bitte kontaktieren Sie uns via Email oder [GitHub](https://github.com/maehr/diskriminierungsfreie-metadaten/discussions/4#discussioncomment-10626797).
+:::
+
 # Einleitung
 
 Dieses Handbuch ist eine Anleitung für die diskriminierungsfreie Auszeichnung von Metadaten für historische Quellen und Forschungsdaten. Es richtet sich an professionelle Historiker\*innen, Archivar\*innen, Bibliothekar\*innen und andere Personen, die mit historischen Quellen und Forschungsdaten arbeiten und sich für die Erstellung und Verwendung von Metadaten interessieren. Die Auszeichnung von Metadaten ist ein wesentlicher Aspekt der Archivierung, Präsentation und Analyse von historischen Quellen und Forschungsdaten. Metadaten liefern nicht nur wichtige Informationen über den Kontext und den Inhalt dieser Ressourcen, sondern sind insbesondere dann von grosser Bedeutung, wenn historische Ressourcen gemäss den FAIR-Prinzipien (Findable Accessible Interoperable Reusable) auffindbar, zugänglich, interoperabel und nachnutzbar gemacht werden sollen. Frei zugängliche, maschinenlesbare Metadaten ermöglichen nicht nur die Integration in Suchmaschinen und andere Findmittel, sondern verändern auch die Art und Weise, wie historische Quellen und Forschungsdaten erforscht, interpretiert und verstanden werden.
@@ -509,9 +514,26 @@ Bei der Erstellung oder Bewertung von Metadaten ist es wichtig, sich immer wiede
 
 Auf der [Forschungsdatenplattform](https://forschung.stadtgeschichtebasel.ch/) werden Forschungsdaten und weitere Ressourcen der Stadt.Geschichte.Basel über eine benutzer\*innenfreundliche Oberfläche Forschenden, Studierenden und Geschichtsinteressierten zur Verfügung gestellt. Jede Ressource (eine Quelle, ein Foto, eine Illustration, ein Datensatz etc.) wird mit Metadaten versehen, im Vier-Augen-Prinzip von Fachleuten geprüft, veröffentlicht und langzeitarchiviert. Die Daten können frei heruntergeladen werden und verweisen auf andere Informationsquellen und Vermittlungsangebote. Die Stadt.Geschichte.Basel nimmt auch Daten anderer Projekte auf, insofern ein Bezug zu Basel gegeben ist.
 
+::: {.callout-important}
+## Hinweis zur anstehenden Überarbeitung des Handbuchs
+Die in diesem Kapitel gezeigten Beschreibungstexte und Metadaten sind eine Momentaufnahme aus dem Projekt Stadt.Geschichte.Basel und befinden sich in Überarbeitung. Sie sind daher nicht als "Best-Practice"-Beispiele zu verstehen. Wir laden Sie ein, die Beispiele kritisch zu betrachten und als Ausgangspunkt für Diskussionen zu nutzen.
+:::
+
+
 ## Das Bad zu Leuk
 
 ![Das Bad zu Leuk](media/image10.jpg){width=80% height=80% #fig-bad-zu-leuk}
+
+::: {.callout-important}
+## Hinweis zur anstehenden Überarbeitung des Handbuchs
+
+Die in den Beispielen gewählten Schlagwörter stammen einzig aus dem Schlagwortindex *OpenGender*. Dieser selektive Fokus ist irritierend, da u.a. zentrale Schlagwörter wie "Bad" oder "Hygiene" fehlen. Dies führte zu kritischen Anmerkungen, wie etwa vom Team der ETH Bibliothek Zürich: 
+
+*"Sexismus und sexuelle Belästigung" ist m.E. falsch resp. ein Kategorienfehler (Sexismus ist ein moderner Begriff)."*
+
+Weiterhin fehlen in der Auswahl treffendere Begriffe, wie "Male Gaze" oder "Sexualisierung". Diese sind jedoch nicht im OpenGender-Index enthalten.
+:::
+
 
 | Feldname    | Wert                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -715,6 +737,13 @@ Für den ersten Geschichtsband der Stadt.Geschichte.Basel werden unter anderem L
 
 Im Folgenden werden anhand \"negativer\" Beispiele Stereotypen sowie Diskriminierungen in Lebensbildern präsentiert. Im zweiten Unterkapitel werden \"positive\" Beispiele gezeigt.
 
+::: {.callout-important}
+## Hinweis zur anstehenden Überarbeitung des Handbuchs
+
+Die Aufteilung der Beispiele der Lebensbilder in "positiv" und "negativ" ist missverständlich und wird künftig aufgehoben.
+:::
+
+
 ### Negative Beispiele von Lebensbildern
 
 #### Androzentrismus
@@ -853,6 +882,16 @@ Im Folgenden werden anhand \"negativer\" Beispiele Stereotypen sowie Diskriminie
 
 ![Die Keltin](media/image9.png){width=80% height=80% #fig-die-keltin}
 
+
+::: {.callout-important}
+## Hinweis zur anstehenden Überarbeitung des Handbuchs
+
+Der selektive Fokus im Beschreibungsfeld zur Keltin führt neue Diskriminierungen ein und wird überabeitet. Wir danken Karin Lackner von der Universität Graz für ihren kritischen Kommentar: 
+
+*"Ich finde die Beschreibung der Keltin mit 'hat keine Idealfigur' etwas eigenartig. Wer bestimmt, was eine Idealfigur ist? Vielleicht war das, was die Dame hat, die keltische Idealfigur? [...] Außerdem finde ich es merkwürdig, dass das erste, was über die dargestellte Dame – offenbar eine hochrangige Frau – im Beschreibungstext erwähnt wird, die Figur ist. Frauen werden auch heute noch oft auf ihr Äußeres reduziert, und der Beschreibungstext macht dasselbe."*
+:::
+
+
 | Feldname    | Wert                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | MediaId     | m123419                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -881,6 +920,12 @@ Im Folgenden werden anhand \"negativer\" Beispiele Stereotypen sowie Diskriminie
 :::
 
 # Anhang: Schlagwortindex GenderOpen inklusive GND-Mapping {#sec-Schlagwortindex-GenderOpen}
+
+::: {.callout-important}
+## Hinweis zur anstehenden Überarbeitung des Handbuchs
+Das Mapping wird demnächst aktualisiert, da seit der Publikation des Handbuchs neue Begriffe in den GND aufgenommen worden sind.
+:::
+
 
 | Open Gender-Term                    | [ISO 25964-2](https://www.niso.org/schemas/iso25964) (MARC 7XX-$4) | GND-Term                                     | GND Identifier           | Synonyme                             |
 | ----------------------------------- | ------------------------------------------------------------------ | -------------------------------------------- | ------------------------ | ------------------------------------ |
