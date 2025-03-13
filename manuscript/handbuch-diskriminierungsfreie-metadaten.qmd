@@ -57,7 +57,7 @@ Dieses Dokument enthält Abbildungen von historischen Quellen, die diskriminiere
 
 ::: {.callout-important}
 ## Hinweis zur anstehenden Überarbeitung des Handbuchs
-Dieses Handbuch wird derzeit überarbeitet, neu strukturiert und erweitert. Seit der Erstveröffentlichung im Juni 2024 haben wir viele wertvolle Rückmeldungen und Ergänzungsvorschläge erhalten, welche alle in die Überarbeitung einfliessen. Haben Sie Anregungen oder Feedback? Wir freuen uns jederzeit über Ihre Rückmeldungen! Bitte kontaktieren Sie uns via Email oder [GitHub](https://github.com/maehr/diskriminierungsfreie-metadaten/discussions/4#discussioncomment-10626797).
+Dieses Handbuch wird derzeit überarbeitet, neu strukturiert und erweitert. Seit der Erstveröffentlichung im Juni 2024 haben wir viele wertvolle Rückmeldungen und Ergänzungsvorschläge erhalten, welche alle in die Überarbeitung einfliessen. Haben Sie Anregungen oder Feedback? Wir freuen uns jederzeit über Ihre Rückmeldungen! Kontaktieren Sie die Autor*innen via [E-Mail](https://maehr.github.io/diskriminierungsfreie-metadaten/) oder [GitHub](https://github.com/maehr/diskriminierungsfreie-metadaten/discussions/4#discussioncomment-10626797).
 :::
 
 # Einleitung
@@ -531,7 +531,7 @@ Die in den Beispielen gewählten Schlagwörter stammen einzig aus dem Schlagwort
 
 *"Sexismus und sexuelle Belästigung" ist m.E. falsch resp. ein Kategorienfehler (Sexismus ist ein moderner Begriff)."*
 
-Weiterhin fehlen in der Auswahl treffendere Begriffe, wie "Male Gaze" oder "Sexualisierung". Diese sind jedoch nicht im OpenGender-Index enthalten.
+Weiterhin fehlen in der Auswahl treffendere Begriffe, wie "Male Gaze" oder "Sexualisierung". Diese sind jedoch nicht im [Schlagwortindex OpenGender](https://opengenderplatform.de/schlagwortindex#:~:text=Der%20Schlagwortindex%20GenderOpen%20ist%20ein,besteht%20aus%20einem%20kontrollierten%20Vokabular) enthalten.
 :::
 
 
