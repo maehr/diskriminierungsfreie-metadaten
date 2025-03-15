@@ -80,15 +80,17 @@
 \makesavenoteenv{longtable}
 \usepackage{graphicx}
 \makeatletter
-\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
-\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
-\makeatother
-% Scale images if necessary, so that they will not overflow the page
-% margins by default, and it is still possible to overwrite the defaults
-% using explicit options in \includegraphics[width, height, ...]{}
-\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
 % Set default figure placement to htbp
-\makeatletter
 \def\fps@figure{htbp}
 \makeatother
 % definitions for citeproc citations
@@ -194,7 +196,7 @@
 \let\LanguageShortHands\languageshorthands
 \def\languageshorthands#1{}
 \ifLuaTeX
-  \usepackage{selnolig}  % disable illegal ligatures
+  \usepackage[german]{selnolig} % disable illegal ligatures
 \fi
 \usepackage{bookmark}
 
@@ -234,25 +236,24 @@ Dieses Handbuch ist ein Leitfaden zur Erstellung von
 diskriminierungsfreien Metadaten für historische Quellen und
 Forschungsdaten, der im Rahmen des Forschungsprojekts
 Stadt.Geschichte.Basel entwickelt wurde. Es richtet sich an
-professionelle Historiker*innen, Archivar*innen, Bibliothekar*innen und
-alle, die sich mit Open Research Data in den Geschichtswissenschaften
-beschäftigen. Die Autor*innen Moritz Mähr und Noëlle Schnegg führen
-durch die praktischen Aspekte der Erstellung von Metadaten, basierend
-auf den FAIR-Prinzipien, um Forschungsdaten auffindbar, zugänglich,
-interoperabel und nachnutzbar zu machen. Durch praktische Anleitungen
-und illustrierte Fallbeispiele zeigt das Handbuch, wie maschinenlesbare
-Metadaten Forschung und Lehre bereichern und die Interpretation
-historischer Quellen beeinflussen können. Als öffentlich zugängliches
-``Living Document'' ist es auf eine kontinuierliche Weiterentwicklung
-durch die Community ausgelegt und verpflichtet sich zu einer inklusiven
-und diskriminierungsfreien Darstellung historischer Inhalte. Das
-Handbuch ist eine grundlegende Ressource für alle, die sich mit moderner
-digitaler Geschichtswissenschaft und Open Research Data beschäftigen
-wollen.
+Historiker*innen, Archivar*innen, Bibliothekar*innen und alle, die sich
+mit Open Research Data in den Geschichtswissenschaften beschäftigen. Die
+Autor*innen Moritz Mähr und Noëlle Schnegg führen durch die praktischen
+Aspekte der Erstellung von Metadaten, basierend auf den FAIR-Prinzipien,
+um Forschungsdaten auffindbar, zugänglich, interoperabel und nachnutzbar
+zu machen. Durch praktische Anleitungen und illustrierte Fallbeispiele
+zeigt das Handbuch, wie maschinenlesbare Metadaten Forschung und Lehre
+bereichern und die Interpretation historischer Quellen beeinflussen
+können. Als öffentlich zugängliches ``Living Document'' ist es auf eine
+kontinuierliche Weiterentwicklung durch die Community ausgelegt und
+verpflichtet sich zu einer inklusiven und diskriminierungsfreien
+Darstellung historischer Inhalte. Das Handbuch ist eine grundlegende
+Ressource für alle, die sich mit moderner digitaler
+Geschichtswissenschaft und Open Research Data beschäftigen wollen.
 \end{abstract}
 
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warnung}, rightrule=.15mm, titlerule=0mm, colback=white, opacitybacktitle=0.6, opacityback=0, arc=.35mm, colbacktitle=quarto-callout-warning-color!10!white, coltitle=black, toprule=.15mm, bottomtitle=1mm, toptitle=1mm, breakable, leftrule=.75mm, left=2mm, colframe=quarto-callout-warning-color-frame, bottomrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, coltitle=black, colback=white, leftrule=.75mm, titlerule=0mm, colframe=quarto-callout-warning-color-frame, bottomtitle=1mm, opacityback=0, colbacktitle=quarto-callout-warning-color!10!white, left=2mm, rightrule=.15mm, arc=.35mm, bottomrule=.15mm, toptitle=1mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warnung}, toprule=.15mm]
 
 Dieses Dokument enthält Abbildungen von historischen Quellen, die
 diskriminierende Sprache, Bilder oder Darstellungen enthalten. Sie sind
@@ -261,25 +262,38 @@ Gruppen in der Vergangenheit.
 
 \end{tcolorbox}
 
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, coltitle=black, colback=white, leftrule=.75mm, titlerule=0mm, colframe=quarto-callout-important-color-frame, bottomtitle=1mm, opacityback=0, colbacktitle=quarto-callout-important-color!10!white, left=2mm, rightrule=.15mm, arc=.35mm, bottomrule=.15mm, toptitle=1mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Hinweis zur anstehenden Überarbeitung des Handbuchs}, toprule=.15mm]
+
+Dieses Handbuch wird derzeit überarbeitet, neu strukturiert und
+erweitert. Seit der Erstveröffentlichung im Juni 2024 haben wir viele
+wertvolle Rückmeldungen und Ergänzungsvorschläge erhalten, welche alle
+in die Überarbeitung einfliessen. Haben Sie Anregungen oder Feedback?
+Wir freuen uns jederzeit über Ihre Rückmeldungen! Kontaktieren Sie die
+Autor*innen via
+\href{https://maehr.github.io/diskriminierungsfreie-metadaten/}{E-Mail}
+oder
+\href{https://github.com/maehr/diskriminierungsfreie-metadaten/discussions/4\#discussioncomment-10626797}{GitHub}.
+
+\end{tcolorbox}
+
 \section{Einleitung}\label{einleitung}
 
 Dieses Handbuch ist eine Anleitung für die diskriminierungsfreie
 Auszeichnung von Metadaten für historische Quellen und Forschungsdaten.
-Es richtet sich an professionelle Historiker*innen, Archivar*innen,
-Bibliothekar*innen und andere Personen, die mit historischen Quellen und
-Forschungsdaten arbeiten und sich für die Erstellung und Verwendung von
-Metadaten interessieren. Die Auszeichnung von Metadaten ist ein
-wesentlicher Aspekt der Archivierung, Präsentation und Analyse von
-historischen Quellen und Forschungsdaten. Metadaten liefern nicht nur
-wichtige Informationen über den Kontext und den Inhalt dieser
-Ressourcen, sondern sind insbesondere dann von grosser Bedeutung, wenn
-historische Ressourcen gemäss den FAIR-Prinzipien (Findable Accessible
-Interoperable Reusable) auffindbar, zugänglich, interoperabel und
-nachnutzbar gemacht werden sollen. Frei zugängliche, maschinenlesbare
-Metadaten ermöglichen nicht nur die Integration in Suchmaschinen und
-andere Findmittel, sondern verändern auch die Art und Weise, wie
-historische Quellen und Forschungsdaten erforscht, interpretiert und
-verstanden werden.
+Es richtet sich an Historiker*innen, Archivar*innen, Bibliothekar*innen
+und andere Personen, die mit historischen Quellen und Forschungsdaten
+arbeiten und sich für die Erstellung und Verwendung von Metadaten
+interessieren. Die Auszeichnung von Metadaten ist ein wesentlicher
+Aspekt der Archivierung, Präsentation und Analyse von historischen
+Quellen und Forschungsdaten. Metadaten liefern nicht nur wichtige
+Informationen über den Kontext und den Inhalt dieser Ressourcen, sondern
+sind insbesondere dann von grosser Bedeutung, wenn historische
+Ressourcen gemäss den FAIR-Prinzipien (Findable Accessible Interoperable
+Reusable) auffindbar, zugänglich, interoperabel und nachnutzbar gemacht
+werden sollen. Frei zugängliche, maschinenlesbare Metadaten ermöglichen
+nicht nur die Integration in Suchmaschinen und andere Findmittel,
+sondern verändern auch die Art und Weise, wie historische Quellen und
+Forschungsdaten erforscht, interpretiert und verstanden werden.
 
 Das Handbuch entstand im Rahmen des historischen Forschungsprojekts
 Stadt.Geschichte.Basel und wurde von Moritz Mähr (promovierter
@@ -341,7 +355,7 @@ Covenant Code of Conduct} dazu, ``allen Teilnehmenden an dem Projekt und
 unserer Gemeinschaft eine belästigungsfreie Beteiligung, unabhängig von
 Alter, Körpergröße, Behinderung, ethnischer Zuordnung,
 Geschlechtermerkmalen, -identität und -ausdruck, Grad der Erfahrung,
-Bildung, sozialem Status, Nationalität, persönlicher Erscheinung, Rasse,
+Bildung, sozialem Status, Nationalität, persönlicher Erscheinung, Race,
 Kaste, Hautfarbe, Religion oder sexueller Identität und Orientierung zu
 ermöglichen.'' Historische Quellen und Forschungsdaten, die
 diskriminierende Inhalte enthalten, werden daher entsprechend
@@ -675,7 +689,7 @@ Ressource}\label{ein-metadatenobjekt-mit-einer-zugeordneten-ressource}
 
 \centering{
 
-\includegraphics[width=2.85in,height=0.8in]{handbuch-diskriminierungsfreie-metadaten_files/figure-latex/mermaid-figure-6.png}
+\includegraphics[width=3.32in,height=0.98in]{handbuch-diskriminierungsfreie-metadaten_files/figure-latex/mermaid-figure-6.png}
 
 \textsubscript{Quelle:
 \href{https://maehr.github.io/diskriminierungsfreie-metadaten/handbuch-diskriminierungsfreie-metadaten.qmd.html}{Artikel-Notizbuch}}
@@ -701,7 +715,7 @@ Triptychons.
 
 \centering{
 
-\includegraphics[width=3.3in,height=3.33in]{handbuch-diskriminierungsfreie-metadaten_files/figure-latex/mermaid-figure-10.png}
+\includegraphics[width=3.76in,height=3.49in]{handbuch-diskriminierungsfreie-metadaten_files/figure-latex/mermaid-figure-10.png}
 
 \textsubscript{Quelle:
 \href{https://maehr.github.io/diskriminierungsfreie-metadaten/handbuch-diskriminierungsfreie-metadaten.qmd.html}{Artikel-Notizbuch}}
@@ -725,7 +739,7 @@ und Geodaten.
 
 \centering{
 
-\includegraphics[width=3in,height=3.11in]{handbuch-diskriminierungsfreie-metadaten_files/figure-latex/mermaid-figure-9.png}
+\includegraphics[width=3.47in,height=3.27in]{handbuch-diskriminierungsfreie-metadaten_files/figure-latex/mermaid-figure-9.png}
 
 \textsubscript{Quelle:
 \href{https://maehr.github.io/diskriminierungsfreie-metadaten/handbuch-diskriminierungsfreie-metadaten.qmd.html}{Artikel-Notizbuch}}
@@ -749,7 +763,7 @@ nämlich einen Kupferstich.
 
 \centering{
 
-\includegraphics[width=3.12in,height=1.79in]{handbuch-diskriminierungsfreie-metadaten_files/figure-latex/mermaid-figure-8.png}
+\includegraphics[width=3.59in,height=2.31in]{handbuch-diskriminierungsfreie-metadaten_files/figure-latex/mermaid-figure-8.png}
 
 \textsubscript{Quelle:
 \href{https://maehr.github.io/diskriminierungsfreie-metadaten/handbuch-diskriminierungsfreie-metadaten.qmd.html}{Artikel-Notizbuch}}
@@ -764,11 +778,11 @@ zugeordneten Ressource}
 \subsection{Metadatenobjekte (Eltern)}\label{metadatenobjekte-eltern}
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0221}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0382}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0262}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2052}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.7082}}@{}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.0221}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.0382}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.0262}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2052}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.7082}}@{}}
 \caption{Metadaten der Elternobjekte
 (Metadatenobjekte).}\label{tbl-metadata-objects}\tabularnewline
 \toprule\noalign{}
@@ -833,11 +847,11 @@ mehrere Verweise können angegeben werden \\
 (Kinder)}\label{zugeordnete-ressourcen-kinder}
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0125}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0215}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0294}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2276}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.7089}}@{}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.0125}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.0215}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.0294}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2276}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.7089}}@{}}
 \caption{Metadaten der zugeordneten Ressourcen
 (Kinder).}\label{tbl-metadata-resources}\tabularnewline
 \toprule\noalign{}
@@ -1138,7 +1152,7 @@ sein können. Die grundlegenden Unterschiede sind:
   die digitalen Aspekte erfasst werden.
 \end{itemize}
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, rightrule=.15mm, titlerule=0mm, colback=white, opacitybacktitle=0.6, opacityback=0, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, coltitle=black, toprule=.15mm, bottomtitle=1mm, toptitle=1mm, breakable, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, bottomrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, coltitle=black, colback=white, leftrule=.75mm, titlerule=0mm, colframe=quarto-callout-tip-color-frame, bottomtitle=1mm, opacityback=0, colbacktitle=quarto-callout-tip-color!10!white, left=2mm, rightrule=.15mm, arc=.35mm, bottomrule=.15mm, toptitle=1mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, toprule=.15mm]
 
 Bei den Ressourcen der Stadt.Geschichte.Basel handelt es sich vorwiegend
 um digitale Darstellungen physischer Objekte sowie um digitale Objekte.
@@ -1159,7 +1173,7 @@ von Diskriminierungserfahrungen betroffen sein. Das muss berücksichtigt
 werden. Durch die Kenntnis der Zielgruppe können die Metadaten
 spezifisch auf die Bedürfnisse der Benutzer*innen angepasst werden.
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, rightrule=.15mm, titlerule=0mm, colback=white, opacitybacktitle=0.6, opacityback=0, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, coltitle=black, toprule=.15mm, bottomtitle=1mm, toptitle=1mm, breakable, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, bottomrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, coltitle=black, colback=white, leftrule=.75mm, titlerule=0mm, colframe=quarto-callout-tip-color-frame, bottomtitle=1mm, opacityback=0, colbacktitle=quarto-callout-tip-color!10!white, left=2mm, rightrule=.15mm, arc=.35mm, bottomrule=.15mm, toptitle=1mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, toprule=.15mm]
 
 Die Hauptzielgruppe umfasst Forschende und Studierende, die nebst
 technischen Informationen auch Metadaten benötigen, die ihnen dabei
@@ -1179,7 +1193,7 @@ berücksichtigen. Beispielsweise können unvollständige oder beschädigte
 Informationen, wie beispielsweise verblasste Beschriftungen, die
 Identifizierung physischer Objekte erschweren.
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, rightrule=.15mm, titlerule=0mm, colback=white, opacitybacktitle=0.6, opacityback=0, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, coltitle=black, toprule=.15mm, bottomtitle=1mm, toptitle=1mm, breakable, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, bottomrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, coltitle=black, colback=white, leftrule=.75mm, titlerule=0mm, colframe=quarto-callout-tip-color-frame, bottomtitle=1mm, opacityback=0, colbacktitle=quarto-callout-tip-color!10!white, left=2mm, rightrule=.15mm, arc=.35mm, bottomrule=.15mm, toptitle=1mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, toprule=.15mm]
 
 Stadt.Geschichte.Basel war bei der Identifikation der Informationen für
 die Ressourcen mit folgenden Schwierigkeiten konfrontiert: Insbesondere
@@ -1204,7 +1218,7 @@ sichergestellt, dass die Ressource nicht isoliert betrachtet, sondern in
 einen grösseren historischen, sozialen und politischen Kontext gestellt
 wird.
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, rightrule=.15mm, titlerule=0mm, colback=white, opacitybacktitle=0.6, opacityback=0, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, coltitle=black, toprule=.15mm, bottomtitle=1mm, toptitle=1mm, breakable, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, bottomrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, coltitle=black, colback=white, leftrule=.75mm, titlerule=0mm, colframe=quarto-callout-tip-color-frame, bottomtitle=1mm, opacityback=0, colbacktitle=quarto-callout-tip-color!10!white, left=2mm, rightrule=.15mm, arc=.35mm, bottomrule=.15mm, toptitle=1mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, toprule=.15mm]
 
 Stadt.Geschichte.Basel legt besonderen Wert auf die Kontextualisierung,
 um nicht unkritisch Diskriminierung in einzelnen Ressourcen zu
@@ -1334,7 +1348,7 @@ Objektgeschichte oder Sammlungsgeschichte nicht unwichtig, aus welcher
 Perspektive das Objekt rezipiert wurde und aus welcher Motivation das
 Objekt gesammelt wurde.
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, rightrule=.15mm, titlerule=0mm, colback=white, opacitybacktitle=0.6, opacityback=0, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, coltitle=black, toprule=.15mm, bottomtitle=1mm, toptitle=1mm, breakable, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, bottomrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, coltitle=black, colback=white, leftrule=.75mm, titlerule=0mm, colframe=quarto-callout-tip-color-frame, bottomtitle=1mm, opacityback=0, colbacktitle=quarto-callout-tip-color!10!white, left=2mm, rightrule=.15mm, arc=.35mm, bottomrule=.15mm, toptitle=1mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, toprule=.15mm]
 
 Das Projekt hat sich für die Methode der ``Titelkontextualisierung''
 entschieden - unter anderem wegen der besseren Durchsuchbarkeit auf der
@@ -1356,7 +1370,7 @@ veröffentlicht werden. Wichtig ist hierbei zu beachten, dass bei Open
 Data Plattformen nicht immer kontrolliert werden kann, wer und wie die
 Metadaten verwendet werden.
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, rightrule=.15mm, titlerule=0mm, colback=white, opacitybacktitle=0.6, opacityback=0, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, coltitle=black, toprule=.15mm, bottomtitle=1mm, toptitle=1mm, breakable, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, bottomrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, coltitle=black, colback=white, leftrule=.75mm, titlerule=0mm, colframe=quarto-callout-tip-color-frame, bottomtitle=1mm, opacityback=0, colbacktitle=quarto-callout-tip-color!10!white, left=2mm, rightrule=.15mm, arc=.35mm, bottomrule=.15mm, toptitle=1mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, toprule=.15mm]
 
 Stadt.Geschichte.Basel betreibt eine
 \href{https://forschung.stadtgeschichtebasel.ch/}{Forschungsdatenplattform}.~Diese
@@ -1383,8 +1397,8 @@ Stadt.Geschichte.Basel ist von den 15 Feldern vom
 Core Metadata Element Set} ausgegangen:
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0783}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9217}}@{}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.0783}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.9217}}@{}}
 \caption{Metadatenfelder des Dublin Core Metadata Element
 Set.}\tabularnewline
 \toprule\noalign{}
@@ -1451,7 +1465,7 @@ Ergänzung durch einzelne Elemente hat gegenüber der Erstellung eines
 eigenen Schemas mehrere Vorteile. So werden etwa Kosten und Aufwand
 gespart, die Schemas sind benutzerfreundlich und interoperabel.
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, rightrule=.15mm, titlerule=0mm, colback=white, opacitybacktitle=0.6, opacityback=0, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, coltitle=black, toprule=.15mm, bottomtitle=1mm, toptitle=1mm, breakable, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, bottomrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, coltitle=black, colback=white, leftrule=.75mm, titlerule=0mm, colframe=quarto-callout-tip-color-frame, bottomtitle=1mm, opacityback=0, colbacktitle=quarto-callout-tip-color!10!white, left=2mm, rightrule=.15mm, arc=.35mm, bottomrule=.15mm, toptitle=1mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, toprule=.15mm]
 
 Beim Erstellen der Metadatenliste hat sich gezeigt, dass die Übernahme
 der Standardfelder von \href{https://www.dublincore.org}{Dublin Core}
@@ -1508,7 +1522,7 @@ Quellenlage zu erstellen. Ziel dabei ist es, eine ungefähre Vorstellung
 Erfahrungswerten kann abgeschätzt werden, wie viel Aufwand für die
 einzelnen Quellen benötigt wird.
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, rightrule=.15mm, titlerule=0mm, colback=white, opacitybacktitle=0.6, opacityback=0, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, coltitle=black, toprule=.15mm, bottomtitle=1mm, toptitle=1mm, breakable, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, bottomrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, coltitle=black, colback=white, leftrule=.75mm, titlerule=0mm, colframe=quarto-callout-tip-color-frame, bottomtitle=1mm, opacityback=0, colbacktitle=quarto-callout-tip-color!10!white, left=2mm, rightrule=.15mm, arc=.35mm, bottomrule=.15mm, toptitle=1mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, toprule=.15mm]
 
 Es kann hilfreich sein, von den vorhandenen Informationen aus den
 Gedächtnisinstitutionen auszugehen und dann die weiter oben
@@ -1562,7 +1576,7 @@ beispielsweise ein themenspezifisches Vokabular oder eine kontrollierte
 Liste von Namen. Wichtig ist die Dokumentation der Entscheidung und der
 Vokabulare.
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, rightrule=.15mm, titlerule=0mm, colback=white, opacitybacktitle=0.6, opacityback=0, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, coltitle=black, toprule=.15mm, bottomtitle=1mm, toptitle=1mm, breakable, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, bottomrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, coltitle=black, colback=white, leftrule=.75mm, titlerule=0mm, colframe=quarto-callout-tip-color-frame, bottomtitle=1mm, opacityback=0, colbacktitle=quarto-callout-tip-color!10!white, left=2mm, rightrule=.15mm, arc=.35mm, bottomrule=.15mm, toptitle=1mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Erfahrungen der Stadt.Geschichte.Basel}, toprule=.15mm]
 
 Im Falle des Feldes "Subject" hat Stadt.Geschichte.Basel den
 \href{https://opengenderplatform.de/schlagwortindex}{Schlagwortindex
@@ -1624,13 +1638,24 @@ heruntergeladen werden und verweisen auf andere Informationsquellen und
 Vermittlungsangebote. Die Stadt.Geschichte.Basel nimmt auch Daten
 anderer Projekte auf, insofern ein Bezug zu Basel gegeben ist.
 
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, coltitle=black, colback=white, leftrule=.75mm, titlerule=0mm, colframe=quarto-callout-important-color-frame, bottomtitle=1mm, opacityback=0, colbacktitle=quarto-callout-important-color!10!white, left=2mm, rightrule=.15mm, arc=.35mm, bottomrule=.15mm, toptitle=1mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Hinweis zur anstehenden Überarbeitung des Handbuchs}, toprule=.15mm]
+
+Die in diesem Kapitel gezeigten Beschreibungstexte und Metadaten sind
+eine Momentaufnahme aus dem Projekt Stadt.Geschichte.Basel und befinden
+sich in Überarbeitung. Sie sind daher nicht als
+``Best-Practice''-Beispiele zu verstehen. Wir laden Sie ein, die
+Beispiele kritisch zu betrachten und als Ausgangspunkt für Diskussionen
+zu nutzen.
+
+\end{tcolorbox}
+
 \subsection{Das Bad zu Leuk}\label{das-bad-zu-leuk}
 
 \begin{figure}
 
 \centering{
 
-\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image10.jpg}
+\includegraphics[width=0.8\linewidth,height=0.8\textheight]{media/image10.jpg}
 
 }
 
@@ -1638,9 +1663,27 @@ anderer Projekte auf, insofern ein Bezug zu Basel gegeben ist.
 
 \end{figure}%
 
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, coltitle=black, colback=white, leftrule=.75mm, titlerule=0mm, colframe=quarto-callout-important-color-frame, bottomtitle=1mm, opacityback=0, colbacktitle=quarto-callout-important-color!10!white, left=2mm, rightrule=.15mm, arc=.35mm, bottomrule=.15mm, toptitle=1mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Hinweis zur anstehenden Überarbeitung des Handbuchs}, toprule=.15mm]
+
+Die in den Beispielen gewählten Schlagwörter stammen einzig aus dem
+Schlagwortindex \emph{OpenGender}. Dieser selektive Fokus ist
+irritierend, da u.a. zentrale Schlagwörter wie ``Bad'' oder ``Hygiene''
+fehlen. Dies führte zu kritischen Anmerkungen, wie etwa vom Team der ETH
+Bibliothek Zürich:
+
+\emph{``Sexismus und sexuelle Belästigung'' ist m.E. falsch resp. ein
+Kategorienfehler (Sexismus ist ein moderner Begriff).''}
+
+Weiterhin fehlen in der Auswahl treffendere Begriffe, wie ``Male Gaze''
+oder ``Sexualisierung''. Diese sind jedoch nicht im
+\href{https://opengenderplatform.de/schlagwortindex\#:~:text=Der\%20Schlagwortindex\%20GenderOpen\%20ist\%20ein,besteht\%20aus\%20einem\%20kontrollierten\%20Vokabular}{Schlagwortindex
+OpenGender} enthalten.
+
+\end{tcolorbox}
+
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0100}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9900}}@{}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.0100}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.9900}}@{}}
 \caption{Metadaten des Bildes ``Das Bad zu
 Leuk''}\label{tbl-metadaten-das-bad-zu-leuk}\tabularnewline
 \toprule\noalign{}
@@ -1704,7 +1747,7 @@ License & \url{https://creativecommons.org/publicdomain/mark/1.0/} \\
 
 \centering{
 
-\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image4.png}
+\includegraphics[width=0.8\linewidth,height=0.8\textheight]{media/image4.png}
 
 }
 
@@ -1714,8 +1757,8 @@ Völkerschau in Basel, 1926}
 \end{figure}%
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0059}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9941}}@{}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.0059}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.9941}}@{}}
 \caption{Metadaten des Plakats zur Völkerschau in Basel,
 1926}\label{tbl-metadaten-plakat-zur-voelkerschau-in-basel-1926}\tabularnewline
 \toprule\noalign{}
@@ -1794,7 +1837,7 @@ Münsters}\label{schnitzerei-am-chorgestuxfchl-des-basler-muxfcnsters}
 
 \centering{
 
-\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image12.jpg}
+\includegraphics[width=0.8\linewidth,height=0.8\textheight]{media/image12.jpg}
 
 }
 
@@ -1804,8 +1847,8 @@ am Chorgestühl des Basler Münsters}
 \end{figure}%
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0101}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9899}}@{}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.0101}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.9899}}@{}}
 \caption{Metadaten der Schnitzerei am Chorgestühl des Basler
 Münsters}\label{tbl-metadaten-schnitzerei-am-chorgestuehl-des-basler-muensters}\tabularnewline
 \toprule\noalign{}
@@ -1868,7 +1911,7 @@ License & \url{http://rightsstatements.org/vocab/InC-RUU/1.0/} \\
 
 \centering{
 
-\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image6.png}
+\includegraphics[width=0.8\linewidth,height=0.8\textheight]{media/image6.png}
 
 }
 
@@ -1878,8 +1921,8 @@ Schweizer Boden - Liste 3}
 \end{figure}%
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0156}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9844}}@{}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.0156}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.9844}}@{}}
 \caption{Metadaten des Plakats ``Hie Basel Hie Schweizer Boden - Liste
 3''}\label{tbl-metadaten-hie-basel-hie-schweizer-boden-liste-3}\tabularnewline
 \toprule\noalign{}
@@ -1940,7 +1983,7 @@ License & \url{https://creativecommons.org/publicdomain/mark/1.0/} \\
 
 \centering{
 
-\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image11.png}
+\includegraphics[width=0.8\linewidth,height=0.8\textheight]{media/image11.png}
 
 }
 
@@ -1950,8 +1993,8 @@ in der National-Zeitung, 1955}
 \end{figure}%
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0125}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9875}}@{}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.0125}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.9875}}@{}}
 \caption{Metadaten des Zeitungsinserats in der National-Zeitung,
 1955}\label{tbl-metadaten-zeitungsinserat-in-der-national-zeitung-1955}\tabularnewline
 \toprule\noalign{}
@@ -2014,7 +2057,7 @@ Heimatnation,
 
 \centering{
 
-\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image14.jpg}
+\includegraphics[width=0.8\linewidth,height=0.8\textheight]{media/image14.jpg}
 
 }
 
@@ -2025,8 +2068,8 @@ ausländische Wohnbevölkerung von Basel-Stadt nach Heimatnation,
 \end{figure}%
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0060}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9940}}@{}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.0060}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.9940}}@{}}
 \caption{Metadaten der Statistik ``Die ausländische Wohnbevölkerung von
 Basel-Stadt nach Heimatnation,
 1920--1965''}\label{tbl-metadaten-die-auslaendische-wohnbevoelkerung-von-basel-stadt-nach-heimatnation-1920-1965}\tabularnewline
@@ -2105,7 +2148,7 @@ Jahrhundert}\label{basler-brandmarkeisen-17.-jahrhundert}
 
 \centering{
 
-\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image13.jpg}
+\includegraphics[width=0.8\linewidth,height=0.8\textheight]{media/image13.jpg}
 
 }
 
@@ -2115,8 +2158,8 @@ Brandmarkeisen, 17. Jahrhundert}
 \end{figure}%
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0182}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9818}}@{}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.0182}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.9818}}@{}}
 \caption{Metadaten der Basler Brandmarkeisen, 17.
 Jahrhundert}\label{tbl-metadaten-basler-brandmarkeisen-17-jahrhundert}\tabularnewline
 \toprule\noalign{}
@@ -2174,7 +2217,7 @@ Häuser}\label{plan-mit-verteilung-juxfcdischer-huxe4user}
 
 \centering{
 
-\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image15.jpg}
+\includegraphics[width=0.8\linewidth,height=0.8\textheight]{media/image15.jpg}
 
 }
 
@@ -2184,8 +2227,8 @@ Verteilung jüdischer Häuser}
 \end{figure}%
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0119}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9881}}@{}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.0119}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.9881}}@{}}
 \caption{Metadaten des Plans mit Verteilung jüdischer
 Häuser}\label{tbl-metadaten-plan-mit-verteilung-juedischer-haeuser}\tabularnewline
 \toprule\noalign{}
@@ -2266,6 +2309,13 @@ Im Folgenden werden anhand "negativer" Beispiele Stereotypen sowie
 Diskriminierungen in Lebensbildern präsentiert. Im zweiten Unterkapitel
 werden "positive" Beispiele gezeigt.
 
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, coltitle=black, colback=white, leftrule=.75mm, titlerule=0mm, colframe=quarto-callout-important-color-frame, bottomtitle=1mm, opacityback=0, colbacktitle=quarto-callout-important-color!10!white, left=2mm, rightrule=.15mm, arc=.35mm, bottomrule=.15mm, toptitle=1mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Hinweis zur anstehenden Überarbeitung des Handbuchs}, toprule=.15mm]
+
+Die Aufteilung der Beispiele der Lebensbilder in ``positiv'' und
+``negativ'' ist missverständlich und wird künftig aufgehoben.
+
+\end{tcolorbox}
+
 \subsubsection{Negative Beispiele von
 Lebensbildern}\label{negative-beispiele-von-lebensbildern}
 
@@ -2275,7 +2325,7 @@ Lebensbildern}\label{negative-beispiele-von-lebensbildern}
 
 \centering{
 
-\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image8.jpg}
+\includegraphics[width=0.8\linewidth,height=0.8\textheight]{media/image8.jpg}
 
 }
 
@@ -2284,8 +2334,8 @@ Lebensbildern}\label{negative-beispiele-von-lebensbildern}
 \end{figure}%
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0171}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9829}}@{}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.0171}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.9829}}@{}}
 \caption{Metadaten der Bestattung von
 Unlingen}\label{tbl-metadaten-bestattung-von-unlingen}\tabularnewline
 \toprule\noalign{}
@@ -2350,7 +2400,7 @@ Geschlechtern}\label{rollenverteilung-zwischen-den-geschlechtern}
 
 \centering{
 
-\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image2.png}
+\includegraphics[width=0.8\linewidth,height=0.8\textheight]{media/image2.png}
 
 }
 
@@ -2360,8 +2410,8 @@ Geschlechtern}\label{rollenverteilung-zwischen-den-geschlechtern}
 \end{figure}%
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0252}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9748}}@{}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.0252}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.9748}}@{}}
 \caption{Metadaten des Höhlenlebens zur älteren
 Steinzeit}\label{tbl-metadaten-hoehlenleben-zur-aelteren-steinzeit}\tabularnewline
 \toprule\noalign{}
@@ -2417,7 +2467,7 @@ License &
 
 \centering{
 
-\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image1.png}
+\includegraphics[width=0.8\linewidth,height=0.8\textheight]{media/image1.png}
 
 }
 
@@ -2427,8 +2477,8 @@ Dürrenberg}
 \end{figure}%
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0108}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9892}}@{}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.0108}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.9892}}@{}}
 \caption{Metadaten der Bestattung von Bad
 Dürrenberg}\label{tbl-metadaten-bestattung-von-bad-duerrenberg}\tabularnewline
 \toprule\noalign{}
@@ -2499,7 +2549,7 @@ Lebensbildern}\label{positive-beispiele-von-lebensbildern}
 
 \centering{
 
-\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image3.png}
+\includegraphics[width=0.8\linewidth,height=0.8\textheight]{media/image3.png}
 
 }
 
@@ -2509,8 +2559,8 @@ Moor}
 \end{figure}%
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0279}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9721}}@{}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.0279}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.9721}}@{}}
 \caption{Metadaten des Opferplatzes Thorberger
 Moor}\label{tbl-metadaten-opferplatz-thorberger-moor}\tabularnewline
 \toprule\noalign{}
@@ -2563,7 +2613,7 @@ License &
 
 \centering{
 
-\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image5.png}
+\includegraphics[width=0.8\linewidth,height=0.8\textheight]{media/image5.png}
 
 }
 
@@ -2572,8 +2622,8 @@ License &
 \end{figure}%
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0370}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9630}}@{}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.0370}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.9630}}@{}}
 \caption{Metadaten von Alle unter einem
 Dach}\label{tbl-metadaten-alle-unter-einem-dach}\tabularnewline
 \toprule\noalign{}
@@ -2624,7 +2674,7 @@ License &
 
 \centering{
 
-\includegraphics[width=0.8\textwidth,height=0.8\textheight]{media/image9.png}
+\includegraphics[width=0.8\linewidth,height=0.8\textheight]{media/image9.png}
 
 }
 
@@ -2632,9 +2682,25 @@ License &
 
 \end{figure}%
 
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, coltitle=black, colback=white, leftrule=.75mm, titlerule=0mm, colframe=quarto-callout-important-color-frame, bottomtitle=1mm, opacityback=0, colbacktitle=quarto-callout-important-color!10!white, left=2mm, rightrule=.15mm, arc=.35mm, bottomrule=.15mm, toptitle=1mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Hinweis zur anstehenden Überarbeitung des Handbuchs}, toprule=.15mm]
+
+Der selektive Fokus im Beschreibungsfeld zur Keltin führt neue
+Diskriminierungen ein und wird überabeitet. Wir danken Karin Lackner von
+der Universität Graz für ihren kritischen Kommentar:
+
+\emph{``Ich finde die Beschreibung der Keltin mit `hat keine Idealfigur'
+etwas eigenartig. Wer bestimmt, was eine Idealfigur ist? Vielleicht war
+das, was die Dame hat, die keltische Idealfigur? {[}\ldots{]} Außerdem
+finde ich es merkwürdig, dass das erste, was über die dargestellte Dame
+-- offenbar eine hochrangige Frau -- im Beschreibungstext erwähnt wird,
+die Figur ist. Frauen werden auch heute noch oft auf ihr Äußeres
+reduziert, und der Beschreibungstext macht dasselbe.''}
+
+\end{tcolorbox}
+
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0186}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9814}}@{}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.0186}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.9814}}@{}}
 \caption{Metadaten der
 Keltin}\label{tbl-metadaten-die-keltin}\tabularnewline
 \toprule\noalign{}
@@ -2799,12 +2865,19 @@ Information Management} 6 (3): 100013.
 \section{Anhang: Schlagwortindex GenderOpen inklusive
 GND-Mapping}\label{sec-Schlagwortindex-GenderOpen}
 
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, coltitle=black, colback=white, leftrule=.75mm, titlerule=0mm, colframe=quarto-callout-important-color-frame, bottomtitle=1mm, opacityback=0, colbacktitle=quarto-callout-important-color!10!white, left=2mm, rightrule=.15mm, arc=.35mm, bottomrule=.15mm, toptitle=1mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Hinweis zur anstehenden Überarbeitung des Handbuchs}, toprule=.15mm]
+
+Das Mapping wird demnächst aktualisiert, da seit der Publikation des
+Handbuchs neue Begriffe in den GND aufgenommen worden sind.
+
+\end{tcolorbox}
+
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1707}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.3220}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2146}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1171}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1756}}@{}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1707}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.3220}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2146}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1171}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1756}}@{}}
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 Open Gender-Term
