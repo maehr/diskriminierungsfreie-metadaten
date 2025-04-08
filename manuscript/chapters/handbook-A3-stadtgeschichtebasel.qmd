@@ -1,0 +1,7 @@
+## Metadaten aus dem Projekt _Stadt.Geschichte.Basel_
+
+::: {.callout-tip title="Erfahrungen Stadt.Geschichte.Basel"}
+- Metadatenobjekte (Eltern)  
+- Zugeordnete Ressourcen (Kinder)
+- Relation von Objekt und Media  
+:::

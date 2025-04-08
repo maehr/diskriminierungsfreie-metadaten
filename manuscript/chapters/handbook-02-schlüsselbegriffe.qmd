@@ -1,0 +1,98 @@
+# Schlüsselbegriffe
+
+## Diskriminierung in Daten und Datensätzen
+
+## Forschungsdaten
+
+## Metadaten
+
+### Was sind Metadaten?
+
+- Beispiele und Abgrenzung zu *Daten* und *Paradaten*.
+- Was ist ein Metadatenobjekt?
+- Was ist ein zugeordnete Ressource?
+- Können verschieden zueinander im Verhältnis stehen -- in beiden Fällen kann es zu Diskriminierung/Bias kommen.
+
+### Verhältnis von Metadatenobjekten und zugeordneten Ressourcen
+
+#### Ein Metadatenobjekt mit einer zugeordneten Ressource
+
+#### Ein Metadatenobjekt mit drei zugeordneten Ressourcen (Triptychon)
+
+#### Ein Metadatenobjekt mit drei verschiedenen zugeordneten Ressourcen
+
+#### Zwei Metadatenobjekte mit derselben zugeordneten Ressource
+
+### Standarts
+
+- Festhalten: Es existieren verschiedene Standards... Fokus hier (vorerst) auf Dublin Core
+
+#### Schemas / Strukturstandard
+
+- Dublin Core Metadata Element Set
+
+::: {.callout-tip title="Tipp der Stadt.Geschichte.Basel"}
+Verweis auf Anhang mit Tabellen der Metadaten der Stadt.Geschichte.Basel
+:::
+
+#### Formatstandard
+
+- XML/RDF
+
+#### Inhaltsstandard
+
+- Welche Felder wie befüllt werden (z. B. Reihenfolge Vor- und Nachnamen)
+- RSWK
+
+#### Wertstandard
+
+- Inhalt der Felder (z. B. GND)
+
+## Opendata-Prinzipien
+
+### Open Data und Langzeitarchivierung
+
+- Grundsätzliches
+- Zenodo und andere Aggregatoren und Publikationsorte
+
+### FAIR-Prinzipien
+
+- FAIR ≠ open (in gewissen Kontexten kann Einschränkung sinnvoll sein und ist in FAIR eingeschlossen!)
+- ...
+
+### CARE-Prinzipien
+
+- Die CARE-Prinzipien wurde innerhlab www.rd-alliance.org gegründet.
+  - C:
+  - A:
+  - R:
+  - E:
+- Stand Umsetzung aktuell
+  - Noch relativ neu und kommen deshalb erst nach und nach in Umsetzung.
+  - Ihre hohe Anziehungskraft (gerade als Komplement zu den FAIR-Prinzipien) verweist jedoch auf ein grosses Bedürfnis.
+- Fokus:
+  - CARE-Prinzipien adressieren dezidiert indigene Daten, bietet jedoch keinen allgemeinen Rahmen für ethischen Fragen in Bezug auf Sammlungsdaten.
+  - Entsprechend stellt sich die Frage, inwieweit die CARE-Prinzipien "fliessend" auf andere Kontexte ausgeweitet werden können, oder ob die Formulierung separater Prinzipien je nach Kontext sinnvoller wäre.
+  - Die CARE-Prinzipien liefern wichtige Impulse für FDM um ethische Fragen im Umgang mit Forschungsdaten und -materialien zu reflektieren und systematisch zu berücksichtigen.
+  
+  #### Communities
+  - Bei der konkreten Umsetzung stellen sich Fragen wie: "Wer sind genau die *Communities*?" oder "Wie genau bemessen wir *collective benefit*?" Je nach Kontext sind diese Fragen schwer zu beantworten.
+    - Kritische Einordnung des oftmals pauschalisierend eingesetzten Community-Begriffs (vgl. z.B. Kaiser et al. 2023)
+    - Verliert eine Gruppe irgendwann die Rechte über ihre Vorfahren? Wer bestimmt, woran festmachen?
+    - ...
+  - Beispiele nennen für andere Kontexte, e.g. Datenschutzthematik, NS-Register, heterogene Community, ... 
+  - TK-Labels (Fokussieren auf Selbstbestimmung bei der Label-Vergabe im Kontext von Institutions-Gatekeeping)
+
+
+  #### Diskriminierungsfrei vs. Diskriminierungssensibel
+  - "Diskriminierungsfrei" im alten Titel aufgreifen
+    - Mit dieser Differenzierung soll kein Relativismus betrieben werden!
+      - Streben hin zu Diskriminierungsfreiheit: ja, unbedingt; Diskriminierungsfreiheit behaupten: nein
+    - Begründung
+      - Diskriminierungsverständnis ist geografisch und communityabhängig heterogen 
+      - Diskriminierungsverständnis ändert sich -- auch in Zukunft
+      - Auch "Normdaten" verändern sich (auch die GND)
+      - Dekolonialisierung nie abgeschlossen
+      - Archiv-Lücken betonen
+      - Archiv-Geschichte bleibt
+      - Weit mehr als bloss Vokabular

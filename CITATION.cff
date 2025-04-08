@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 title: >-
-  Handbuch zur Erstellung diskriminierungsfreier Metadaten
+  Handbuch zur Erstellung diskriminierungssensible Metadaten
   für historische Quellen und Forschungsdaten
 message: 'If you use this guide, please cite it as below.'
 type: software
@@ -19,8 +19,9 @@ identifiers:
 repository-code: 'https://github.com/maehr/diskriminierungsfreie-metadaten'
 url: 'https://maehr.github.io/diskriminierungsfreie-metadaten/'
 abstract: >-
-  Dieses Handbuch ist ein Leitfaden zur Erstellung von diskriminierungsfreien Metadaten für historische Quellen und Forschungsdaten, der im Rahmen des Forschungsprojekts Stadt.Geschichte.Basel entwickelt wurde. Es richtet sich an professionelle Historiker\*innen, Archivar\*innen, Bibliothekar\*innen und alle, die sich mit Open Research Data in den Geschichtswissenschaften beschäftigen. Die Autor\*innen Moritz Mähr und Noëlle Schnegg führen durch die praktischen Aspekte der Erstellung von Metadaten, basierend auf den FAIR-Prinzipien, um Forschungsdaten auffindbar, zugänglich, interoperabel und nachnutzbar zu machen. Durch praktische Anleitungen und illustrierte Fallbeispiele zeigt das Handbuch, wie maschinenlesbare Metadaten Forschung und Lehre bereichern und die Interpretation historischer Quellen beeinflussen können. Als öffentlich zugängliches "Living Document" ist es auf eine kontinuierliche Weiterentwicklung durch die Community ausgelegt und verpflichtet sich zu einer inklusiven und diskriminierungsfreien Darstellung historischer Inhalte. Das Handbuch ist eine grundlegende Ressource für alle, die sich mit moderner digitaler Geschichtswissenschaft und Open Research Data beschäftigen wollen.
+  Dieses Handbuch ist ein Leitfaden zur Erstellung von diskriminierungssensiblen Metadaten für historische Quellen und Forschungsdaten, der im Rahmen des Forschungsprojekts Stadt.Geschichte.Basel entwickelt wurde. Es richtet sich an professionelle Historiker\*innen, Archivar\*innen, Bibliothekar\*innen und alle, die sich mit Open Research Data in den Geschichtswissenschaften beschäftigen. Die Autor\*innen Moritz Mähr und Noëlle Schnegg führen durch die praktischen Aspekte der Erstellung von Metadaten, basierend auf den FAIR-Prinzipien, um Forschungsdaten auffindbar, zugänglich, interoperabel und nachnutzbar zu machen. Durch praktische Anleitungen und illustrierte Fallbeispiele zeigt das Handbuch, wie maschinenlesbare Metadaten Forschung und Lehre bereichern und die Interpretation historischer Quellen beeinflussen können. Als öffentlich zugängliches "Living Document" ist es auf eine kontinuierliche Weiterentwicklung durch die Community ausgelegt und verpflichtet sich zu einer inklusiven und diskriminierungsfreien Darstellung historischer Inhalte. Das Handbuch ist eine grundlegende Ressource für alle, die sich mit moderner digitaler Geschichtswissenschaft und Open Research Data beschäftigen wollen.
 keywords:
+  - Diskriminierungssensible Metadaten
   - Diskriminierungsfreie Metadaten
   - Historische Quellen und Forschungsdaten
   - FAIR-Prinzipien

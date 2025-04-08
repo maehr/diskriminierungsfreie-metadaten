@@ -1,8 +1,8 @@
 {
-	"name": "diskriminierungsfreie-metadaten",
-	"description": "Handbuch zur Erstellung diskriminierungsfreier Metadaten für historische Quellen und Forschungsdaten. Erfahrungen aus dem geschichtswissenschaftlichen Forschungsprojekt Stadt.Geschichte.Basel",
-	"author": "Moritz Mähr <moritz.maehr@unibas.ch>",
-	"url": "https://github.com/maehr/diskriminierungsfreie-metadaten/issues",
+	"name": "diskriminierungssensible-metadaten",
+	"description": "Handbuch zur Erstellung diskriminierungssensibler Metadaten für historische Quellen und Forschungsdaten. Erfahrungen aus dem geschichtswissenschaftlichen Forschungsprojekt Stadt.Geschichte.Basel",
+	"author": "Levyn Bürki (levyn.buerki@unibe.ch), Moritz Mähr (moritz.maehr@unibas.ch), Noëlle Schnegg (noelle.schnegg@unibas.ch)",
+	"url": "https://maehr.github.io/diskriminierungsfreie-metadaten/issues",
 	"license": "AGPL-3.0",
 	"scripts": {
 		"check": "prettier --ignore-path .gitignore  --check . '!{CODE_OF_CONDUCT.md,LICENSE-AGPL.md,LICENSE-CCBYSA.md,_layouts/default.html,package-lock.json,pnpm-lock.yaml,yarn.lock}'",

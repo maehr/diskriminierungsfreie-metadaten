@@ -1,0 +1,80 @@
+---
+title: Handbuch zur Erstellung diskriminierungssensibler Metadaten für historische Quellen und Forschungsdaten
+subtitle: Schlüsselbegriffe und Erfahrungen aus der Praxis
+authors:
+  - name: Levyn Bürki
+    orcid: 0009-0009-7602-0714
+    email: levyn.buerki@unibe.ch
+    affiliation: Universität Bern
+    roles:
+      - writing
+      - project management
+    corresponding: true
+  - name: Moritz Mähr
+    orcid: 0000-0002-1367-1618
+    email: moritz.maehr@unibas.ch
+    affiliation: Universität Basel
+    roles:
+      - writing
+      - project management
+      - research data management
+    corresponding: true
+  - name: Noëlle Schnegg
+    orcid: 0009-0008-5207-6652
+    email: noelle.schnegg@unibas.ch
+    affiliation: Universität Basel
+    roles:
+      - writing
+      - data curation
+    corresponding: true
+lang: de-CH
+keywords:
+  - Diskriminierungssensible Metadaten
+  - Diskriminierungsfreie Metadaten
+  - Historische Quellen und Forschungsdaten
+  - FAIR-Prinzipien
+  - CARE-Prinzipien
+  - Datenethik
+  - Stadt.Geschichte.Basel
+  - Open Research Data
+  - Code of Conduct
+  - Dublin Core
+  - Schlagwortindex GenderOpen
+abstract: |
+  Dieses Handbuch ist ein Leitfaden zur Erstellung von diskriminierungssensibler Metadaten für historische Quellen und Forschungsdaten. Es richtet sich an Historiker\*innen, Archivar\*innen, Bibliothekar\*innen und alle, die sich mit Datenethik und Open Research Data in den Geschichtswissenschaften beschäftigen. Die Autor\*innen Levyn Bürki, Moritz Mähr und Noëlle Schnegg führen durch die praktischen Aspekte der Erstellung von Metadaten, basierend auf den FAIR- und CARE-Prinzipien, um Forschungsdaten auffindbar, zugänglich, interoperabel und nachnutzbar zu machen. Durch praktische Anleitungen und illustrierte Fallbeispiele zeigt das Handbuch, wie maschinenlesbare Metadaten Forschung und Lehre bereichern und die Interpretation historischer Quellen beeinflussen können. Als öffentlich zugängliches "Living Document" ist es auf eine kontinuierliche Weiterentwicklung durch die Community ausgelegt und verpflichtet sich zu einer inklusiven und diskriminierungsfreien Darstellung historischer Inhalte. Das Handbuch ist eine grundlegende Ressource für alle, die sich mit moderner digitaler Geschichtswissenschaft und Open Research Data beschäftigen wollen.
+pagetitle: Handbuch zur Erstellung diskriminierungssensibler Metadaten für historische Quellen und Forschungsdaten.
+description-meta: |
+  Erfahren Sie, wie Sie diskriminierungssensible Metadaten für historische Quellen und Forschungsdaten erstellen können. Dieses Handbuch, entwickelt von Levyn Bürki, Moritz Mähr und Noëlle Schnegg, bietet praktische Anleitungen zur Verbesserung der Zugänglichkeit, Interoperabilität und Wiederverwendbarkeit von Forschungsdaten sowie zur Umsetzung von FAIR- und CARE-Prinzipien. Ideal für Historikerinnen, Archivarinnen und Bibliothekarinnen, die sich für inklusive und ethische Forschungsdaten einsetzen.
+key-points:
+  - Inhalt: Das Handbuch deckt datenethische Grundlagen, spezifische Metadaten-Standards und Techniken für die diskriminierungssensible Auszeichnung ab.
+  - Zielsetzung: Erstellung von FAIR- und CARE-Metadaten, die inklusiv und diskriminierungs-sensibel gestaltet sind und die Auffindbarkeit, Zugänglichkeit, Interoperabilität und Nachnutzung von historischen Daten unterstützen.
+  - Zielgruppe: Archivar\*innen, Bibliothekar\*innen, Historiker\*innen und Data Stewards.
+  - Praxisnahe Fallbeispiele: Detaillierte Szenarien aus unterschiedlichen historischen Epochen und Herausforderungen verdeutlichen die Anwendung der Theorie in der Praxis.
+  - Living Document: Das Handbuch wird als offenes Dokument auf GitHub veröffentlicht und steht der Community zur Weiterentwicklung zur Verfügung.
+date: 2025-00-00
+bibliography: references.bib
+nocite: |
+  @*
+citation:
+  type: report
+  doi: 10.5281/zenodo.11124720
+  url: https://foo.bar
+number-sections: true
+output: pdf_document
+---
+
+::: {.callout-warning title="Content Note"}
+Dieses Dokument enthält Abbildungen von historischen Quellen, die diskriminierende Sprache, Bilder oder Darstellungen enthalten. Sie sind Ausdruck von Vorurteilen, Stereotypen oder Gewalt gegen bestimmte Gruppen in der Vergangenheit.
+:::
+
+{{< include chapters/handbook-01-introduction.qmd >}}
+{{< include chapters/handbook-02-schlüsselbegriffe.qmd >}}
+{{< include chapters/handbook-03-praxis.qmd >}}
+{{< include chapters/handbook-04-literatur.qmd >}}
+
+# Anhang
+
+{{< include chapters/handbook-A1-checkliste.qmd >}}
+{{< include chapters/handbook-A2-nuetzliche-tools.qmd >}}
+{{< include chapters/handbook-A3-stadtgeschichtebasel.qmd >}}
+
