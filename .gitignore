@@ -1,3 +1,11 @@
+# Added manually
+/node_modules/
+index.aux
+index.log
+index.pdf
+index.tex
+
+
 # Exclude example.env
 !example.env
 
