@@ -23,7 +23,7 @@
 
 #### Zwei Metadatenobjekte mit derselben zugeordneten Ressource
 
-### Standarts
+### Standards
 
 - Festhalten: Es existieren verschiedene Standards... Fokus hier (vorerst) auf Dublin Core
 
