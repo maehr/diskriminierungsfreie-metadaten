@@ -1,8 +1,8 @@
-# Added manually
-index.aux
-index.log
-index.pdf
-index.tex
+# Exclude local build files
+*.aux
+*.log
+*.pdf
+*.tex
 
 # Exclude example.env
 !example.env
