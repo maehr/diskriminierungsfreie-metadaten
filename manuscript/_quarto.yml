@@ -35,8 +35,8 @@ format:
     toc: true
     toc-depth: 4
     toc-title: Inhaltsverzeichnis
-    notebook-links: false
+    # notebook-links: false
   pdf:
     pdf-engine: xelatex
     keep-tex: false
-    notebook-links: false
+    # notebook-links: false
