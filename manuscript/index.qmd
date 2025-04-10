@@ -57,7 +57,7 @@ nocite: |
   @*
 citation:
   type: report
-  doi: 10.5281/zenodo.11124720
+  doi: 10.5281/zenodo.11124719
   url: https://foo.bar
 number-sections: true
 output: pdf_document
