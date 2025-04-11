@@ -18,7 +18,6 @@ permissions:
 jobs:
   build-deploy:
     runs-on: macos-latest
-
     steps:
       - name: Set Timezone
         uses: szenius/set-timezone@v2.0
@@ -69,6 +68,7 @@ jobs:
 
       - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
+        if: github.ref == 'refs/heads/main'
         with:
           path: manuscript
           target: gh-pages
