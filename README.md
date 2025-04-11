@@ -34,9 +34,107 @@ This repository is organized as follows:
 
 ## Getting Started
 
-Install [Quarto](https://quarto.org), run `quarto preview manuscript` to preview the manuscript, or run `quarto render manuscript` to render the manuscript.
+We recommend using **GitHub Codespaces** for the easiest and fastest setup. It gives you a pre-configured, cloud-based development environment with everything ready to go — directly in your browser.
 
-Run `cd manuscript && quarto publish gh-pages` to publish the manuscript to GitHub Pages.
+### 🚀 Quick Start with GitHub Codespaces
+
+1. **Fork this repository** to your GitHub account (if needed).
+
+<div align="center">
+  <img src="docs/assets/img_fork.png" alt="Fork the repository" style="width: 540px; margin: 1em 0;" />
+</div>
+
+2. Click the green **`<> Code`** button at the top right of this repository.
+
+3. Select the **“Codespaces”** tab and click **“Create codespace on `main`”**.
+
+<div align="center">
+  <img src="docs/assets/img_codespace.png" alt="Create Codespace" style="width: 540px; margin: 1em 0;" />
+</div>
+
+4. GitHub will now build a container that includes:
+
+   - ✅ Node.js (via `npm`)
+   - ✅ Quarto
+
+5. Once the Codespace is ready, you can preview the documentation locally inside the Codespace with:
+
+   - **Open a terminal** in the Codespace (Terminal > New Terminal).
+   - **Run the following command** to install all dependencies:
+
+```bash
+cd manuscript && quarto preview
+```
+
+<div align="center">
+  <img src="docs/assets/img_terminal.png" alt="Terminal" style="width: 540px; margin: 1em 0;" />
+</div>
+
+<details>
+<summary>👩‍💻 Setup locally (Advanced users)</summary>
+
+### Prerequisites
+
+Make sure the following tools are installed locally:
+
+- [Node.js](https://nodejs.org/en/download/)
+- [Quarto](https://quarto.org/docs/get-started/)
+
+### Local setup steps
+
+```bash
+# 1. Install Node.js dependencies
+npm install
+
+# 2. Preview documentation
+cd manuscript && quarto preview
+```
+
+</details>
+
+## Use
+
+Check that all files are properly formatted.
+
+```bash
+npm run check
+```
+
+Format all files.
+
+```bash
+npm run format
+```
+
+Run the wizard to write meaningful commit messages.
+
+```bash
+npm run commit
+```
+
+Run the wizard to create a CHANGELOG.md.
+
+```bash
+npm run changelog
+```
+
+Preview the documentation.
+
+```bash
+cd manuscript && quarto preview
+```
+
+Render the documentation.
+
+```bash
+cd manuscript && quarto render
+```
+
+Publish the documentation to GitHub Pages.
+
+```bash
+cd manuscript && quarto publish gh-pages
+```
 
 ## Support
 
