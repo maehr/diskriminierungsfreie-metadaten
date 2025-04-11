@@ -72,7 +72,7 @@ Dieses Dokument enthält Abbildungen von historischen Quellen, die diskriminiere
 {{< include chapters/handbook-03-praxis.qmd >}}
 {{< include chapters/handbook-04-literatur.qmd >}}
 
-# Anhang
+# Anhang 
 
 {{< include chapters/handbook-A1-checkliste.qmd >}}
 {{< include chapters/handbook-A2-nuetzliche-tools.qmd >}}
