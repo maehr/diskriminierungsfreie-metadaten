@@ -1,17 +1,20 @@
-# Praxis: Diskriminierungssensibler Umgang mit Metadaten  
+# Praxis: Diskriminierungssensibler Umgang mit Metadaten
 
-## Erstellung von Metadaten  
+## Erstellung von Metadaten
+
 - Abgrenzen (1) Primärerschliessung, (2) Arbeiten mit Subsets bestehender Metadaten -> in der Praxis oft eine Mischung aus beidem.
 - Folgende Arbeitsschritte sind dabei stets wichtig: Inhaltsangabe Folgekapitel
 
-### Forschungsrahmen abstecken  
+### Forschungsrahmen abstecken
+
 - Was beschreibe ich?
 - Umfang der Metadatenerfassung (Ziel, Produkt, Ressourcenmanagement (Notwendiges vs. nice to have, etc., für wen (Zielgruppen)?)
-- Prioritätensetzung und Zeitmanagement  
+- Prioritätensetzung und Zeitmanagement
 - Erfassen und Identifizieren der Ressource(n)
 - Welche Informationen werden benötigt, um die Ressourcen in den Kontext zu setzen
 
-### Umgang mit bestehenden Metadaten  
+### Umgang mit bestehenden Metadaten
+
 - **Situationen:** Datenrecherche mit Archivkatalog/Aggregator/...
 - **Woher stammen Metadaten:** Archive, Literatur, ...
 - **Herausforderungen:** Heterogenität, Umgang mit bestehenden Diskriminierungen
@@ -21,23 +24,24 @@
 Beispiele
 :::
 
-### Kontextualisierung der Ressource  
+### Kontextualisierung der Ressource
+
 - Entstehungskontext der Ressource
-    - Sozialer und politischer Kontext  
-    - Quellenbeschreibung  
-    - Kontexte der Primär-Autor:innen 
+  - Sozialer und politischer Kontext
+  - Quellenbeschreibung
+  - Kontexte der Primär-Autor:innen
 - Verwendungskontext der Ressource
-    - In welchem Kontext/Umfang/Zustand/Verschlagwortung wird sie heute zur Verfügung gestellt?
-    - Kontexte der betreuenden Archivar:innen etc.
-    - Interpretation und Rezeption in der Forschung usw. (beeinflusst etwa Auffindbarkeit)
+  - In welchem Kontext/Umfang/Zustand/Verschlagwortung wird sie heute zur Verfügung gestellt?
+  - Kontexte der betreuenden Archivar:innen etc.
+  - Interpretation und Rezeption in der Forschung usw. (beeinflusst etwa Auffindbarkeit)
 - Praxis: Reflexion und Dokumentation von obigem
 
 ::: {.callout-tip title="Beispiele"}
 Diverse Beispiele
 :::
 
+### Metadatenfelder festlegen
 
-### Metadatenfelder festlegen  
 - Was sind die Optionen?
 - Identifizieren relevanter Felder für die Bedürfnisse des Projekts
 - Übernehmen bestehender Felder
@@ -49,6 +53,7 @@ Diverse Beispiele
 :::
 
 ### Wertstandards wählen und verschlagworten
+
 - Was sind die Optionen?
 - Wertstandard wählen und mit Ressourcen abgleichen
 - Anpassungen abwägen und vornehmen und Entscheidungen dokumentieren
@@ -56,242 +61,261 @@ Diverse Beispiele
 - Extrinsisch vs. intrinsisch (vgl. auch Metadatenfelder)
 
 ::: {.callout-tip title="Limitationen"}
-- Das Verwenden und Ausgeben von Objektbezeichnungen in einer Lokalsprache setzt voraus, dass eine 1:1-Übersetzung existiert, was nicht immer der Fall ist.
-:::
 
+- Das Verwenden und Ausgeben von Objektbezeichnungen in einer Lokalsprache setzt voraus, dass eine 1:1-Übersetzung existiert, was nicht immer der Fall ist.
+  :::
 
 ::: {.callout-note title="Ausschlüsse durch Mapping"}
+
 - kumulative Äquivalenz
-:::
+  :::
 
 ::: {.callout-note title="Stolpersteine bei Begriffsauswahl"}
+
 - Sprachspezifische Unterschiede (Rasse/Race)
 - Kontext (Zwerg)
 - Wiederaneignungen und Selbstbeschreibungen (Crip)
 - Stehende Begriffe (e.g. _Lycaon krebsi_)
 - ...
-:::
+  :::
 
 ::: {.callout-tip title="Stolpersteine bei der Verschlagwortung"}
+
 - Umgang mit Darstellungen von Nacktheit. Malegaze/Objektivierung/Sexualisierung/Prüdheit/Selbstbestimmung/... ("Bad zu Leuk", ...)
 - Werte-Urteile von aussen ohne Insider-Wissen
 - Gut gemeint aber...
-    - Neue Diskriminierungen schaffen durch...
-        - Monofokus (Keltin)  
-        - Alarmglocken (Nacktheit)  
+  - Neue Diskriminierungen schaffen durch...
+    - Monofokus (Keltin)
+    - Alarmglocken (Nacktheit)
 - Übersetzungen (vgl. oben)  
-:::
+  :::
 
 ::: {.callout-tip title="'Neue' Konzepte und historische Quellen"}
+
 - Beim Verschlagworten und Beschreiben historischer Quellen sollten Begriffe stets so akkurat wie möglich gewählt werden.
 - Zuweilen wird dieses Argument jedoch verwendet, um bspw. die Auszeichnung potenziell nichtbinärer Menschen als ideologisch oder unwissenschaftlich zu diskreditieren. Nichtbinarität sei ein zeitgenössisches Konzept, heisst es dann, welches in historischen Daten nichts verloren habe.
 - Dekonstruktion dieser Behauptung.
-:::
-
+  :::
 
 ::: {.callout-tip title="Systematische Lücken bei Schlagwortindexen"}
-(ggf. in Kapitel *2-Schlüsselbegriffe* verschieben)
+(ggf. in Kapitel _2-Schlüsselbegriffe_ verschieben)
+
 - Beispiele: Gender-Open-Pendent für Kolonialitäts-Kontext, Gender-Open-Pendent e.g. für Italienisch
 - Gründe für Fehlen: ...
 - Bedarf und Chancen: ...
 - Hürden: ...
-:::
+  :::
 
 ::: {.callout-tip title="Sollen wir eine eigene Ontologie erstellen?"}
+
 - Erfahrungen der Stadt.Geschichte.Basel zum Einsatz von OpenGender
-    - nur OpenGender Schlagwortindex?
-    - interne Strategie
+  - nur OpenGender Schlagwortindex?
+  - interne Strategie
 - Chancen: ...
 - Gefahren: ...
 - Notwendigkeit: es fehlen viele Indexe (vgl. Box "systematische Lücken bei Schlagwortindexen")
-- Strategien und Alternativen
-    - Kombination/Mapping verschiedener Indexe (vgl. nächste Box)
-    - Subset erstellen
-:::
+- Strategien und Alternativen - Kombination/Mapping verschiedener Indexe (vgl. nächste Box) - Subset erstellen
+  :::
 
 ::: {.callout-tip title="Best Practices für Mappings"}
+
 - Tipps, Ressourcen und Aggregatoren
 - GND-OpenGender-Mapping
-:::
-
+  :::
 
 ### Transparente Metadaten: Versionierung und Dokumentation
+
 - Relevanz
-    - Wer hat wann und wieso welche Metadaten erstellt/geändert?
-    - _"Wie dokumentieren wir, wie wir selber erschliessen? (In 50 Jahren wird auch das wieder interessieren und in Frage gestellt werden.)"_ Tobias Wildi (Rückmeldung per Linkedin)
-    - _"Veraltete Metadaten sollen nicht einfach gelöscht, sondern durch neue aktuelle Beschreibungen überlagert werden. Es muss möglich sein, die Entwicklung verschiedener Generationen von Metadaten über die Zeit nachzuverfolgen, denn an ihnen manifestiert sich, wie wir Dinge benennen und über sie denken. Und die Welt steht wie gesagt nicht still, die heute angefertigten Metadaten werden nicht die letzten sein. Zukünftige Generationen werden ihrerseits aus unseren Metadaten auf unsere gesellschaftlichen Verhältnisse und Wertvorstellen rückschliessen. Diese Nachvollziehbarkeit ist aber nur möglich, wenn alte Metadaten nicht gelöscht, sondern versioniert werden und ihr Entstehungskontext dokumentiert wird."_ Tobias Wildi (Rückmeldung per Linkedin)
-    - Historische Nachvollziehbarkeit: _"Unter welchen Umständen und durch welche Personen sind Metadaten mit Begrifflichkeiten und Weltvorstellungen entstanden, von denen wir uns heute abgrenzen?"_ Tobias Wildi (Rückmeldung per Linkedin)
+  - Wer hat wann und wieso welche Metadaten erstellt/geändert?
+  - _"Wie dokumentieren wir, wie wir selber erschliessen? (In 50 Jahren wird auch das wieder interessieren und in Frage gestellt werden.)"_ Tobias Wildi (Rückmeldung per Linkedin)
+  - _"Veraltete Metadaten sollen nicht einfach gelöscht, sondern durch neue aktuelle Beschreibungen überlagert werden. Es muss möglich sein, die Entwicklung verschiedener Generationen von Metadaten über die Zeit nachzuverfolgen, denn an ihnen manifestiert sich, wie wir Dinge benennen und über sie denken. Und die Welt steht wie gesagt nicht still, die heute angefertigten Metadaten werden nicht die letzten sein. Zukünftige Generationen werden ihrerseits aus unseren Metadaten auf unsere gesellschaftlichen Verhältnisse und Wertvorstellen rückschliessen. Diese Nachvollziehbarkeit ist aber nur möglich, wenn alte Metadaten nicht gelöscht, sondern versioniert werden und ihr Entstehungskontext dokumentiert wird."_ Tobias Wildi (Rückmeldung per Linkedin)
+  - Historische Nachvollziehbarkeit: _"Unter welchen Umständen und durch welche Personen sind Metadaten mit Begrifflichkeiten und Weltvorstellungen entstanden, von denen wir uns heute abgrenzen?"_ Tobias Wildi (Rückmeldung per Linkedin)
 - Umsetzung
-    - Technische Integration in bestehende Sammlungsmanagement-Tools
-    - Automatisierbarkeit
+  - Technische Integration in bestehende Sammlungsmanagement-Tools
+  - Automatisierbarkeit
 - Abwägungen
-    - Detailgrad
-    - Sichtbarkeit nach aussen (siehe unten)
+  - Detailgrad
+  - Sichtbarkeit nach aussen (siehe unten)
 
 ::: {.callout-tip title="Beispiel für technische/konzeptuelle Umsetzung Versionierung"}
+
 - ...
-- Mindestanforderungen
-    - Zugriff via (Volltext)suche (vgl. unten)
-    - "This content was machine translated"
-:::
+- Mindestanforderungen - Zugriff via (Volltext)suche (vgl. unten) - "This content was machine translated"
+  :::
 
 ::: {.callout-tip title="Beispiel für technische/konzeptuelle Umsetzung Dokumentation"}
+
 - ...
-:::
+  :::
 
 ::: {.callout-tip title="Wohin mit der Dokumentation"}
+
 - Gehört eine Dokumentation in jede einzelne Ressource oder reicht es, eine zentrale Dokumentation für einen ganzen Datensatz anzulegen?
 - Wie kann nebst den Daten auch die Dokumentation interoperabel gestaltet werden?
-:::
+  :::
 
 ### Umgang mit Nicht-Wissen
 
 #### Lücken und Unsicherheiten in Quellen
-- Sammlungslücken und fehlende Metadaten/Informationen sind auch eine wichtige Information! 
-    - Beispiele aus e.g. Militär-Archiven sowie aus Provenienzforschung bringen.
-    - Problematik der Unsichtbarmachung im Archiv (hier bloss Verweis auf Schlüsselbegriffe)
+
+- Sammlungslücken und fehlende Metadaten/Informationen sind auch eine wichtige Information!
+  - Beispiele aus e.g. Militär-Archiven sowie aus Provenienzforschung bringen.
+  - Problematik der Unsichtbarmachung im Archiv (hier bloss Verweis auf Schlüsselbegriffe)
 - Leerstellen: Zum Umgang beim Leerlassen von Metadatenfeldern:
-    - ggf. sollte Absicht hinter dem Leerlassen dokumentiert werden, denn Info existiert nicht ≠ Info nicht gefunden ≠ Datensatz nicht/nur teilweise bearbeitet.
-    - analoges gilt für Tagging von Beständen als un/problematisch.
-- Qualifikation der Metadaten: Zum Umgang mit Unsicherheiten: 
-    - z.B. unsichere oder unleserliche Quelle ≠ widersprüchliche, fragwürdie oder umstrittene Quellenlage
+  - ggf. sollte Absicht hinter dem Leerlassen dokumentiert werden, denn Info existiert nicht ≠ Info nicht gefunden ≠ Datensatz nicht/nur teilweise bearbeitet.
+  - analoges gilt für Tagging von Beständen als un/problematisch.
+- Qualifikation der Metadaten: Zum Umgang mit Unsicherheiten:
+  - z.B. unsichere oder unleserliche Quelle ≠ widersprüchliche, fragwürdie oder umstrittene Quellenlage
 
 #### Expertisen einholen und einbinden
-- Expertisen identifizieren. 
-    - Wer hat Autorität, (mit)zubestimmen? (vgl. *2-Schlüsselbegriffe/Communities*)
+
+- Expertisen identifizieren.
+  - Wer hat Autorität, (mit)zubestimmen? (vgl. _2-Schlüsselbegriffe/Communities_)
 - Eigene Positioniertheit reflektieren
 - Wechselseitige Machtdynamiken, Interessen, Bedürfnisse und Verletzlichkeiten reflektieren (auf beiden Seiten)
 - Potenziale, Formen (auch Grenzen) von Dialog und Mitbestimmung gemeinsam ausloten
 - Settings herstellen um Expertise optimal einzuholen
 - Umgang mit sich widersprechenden Sichtweisen bzw. Bedürfnissen (ggf. auch innerhalb einer "Community")
-    - Zur Problematik des oftmals pauschalisierend eingesetzten Community-Begriffs, siehe *2-Schlüsselbegriffe/Communities*
-    - Interessensabwägung
-    - Dokumentieren in Freitextfeld
-    - ...
+  - Zur Problematik des oftmals pauschalisierend eingesetzten Community-Begriffs, siehe _2-Schlüsselbegriffe/Communities_
+  - Interessensabwägung
+  - Dokumentieren in Freitextfeld
+  - ...
 
 ### Umgang mit LLMs
+
 ::: {.callout-info title="Tipps für eine robuste Metadaten-Dokumentation"}
 (Nicht im Fokus von Handbuch 2.0 → Verweisen auf Handbuch 3.0)
 :::
 
 - Dringlichkeit, dieses Kapitel ins Handbuch aufzunehmen
-    - Vorstellung ist verbreitet, AI könne Verschlagwortung übernehmen
-    - Sensibilisierung für Biases in Trainingsdaten
-    - Metadaten für LLM optimiert publizieren als Teil von FAIR-Data? (machinereadable/LLM-readable data)
-    - Umgang mit bereits bestehenden AI-generierten Metadaten 
-        - wie erkennen?
-        - worauf achten? 
-        - wie markieren/dokumentieren?
+
+  - Vorstellung ist verbreitet, AI könne Verschlagwortung übernehmen
+  - Sensibilisierung für Biases in Trainingsdaten
+  - Metadaten für LLM optimiert publizieren als Teil von FAIR-Data? (machinereadable/LLM-readable data)
+  - Umgang mit bereits bestehenden AI-generierten Metadaten
+    - wie erkennen?
+    - worauf achten?
+    - wie markieren/dokumentieren?
 
 - Publizieren von Metadaten
 - AI-Tools
-    - Diskussion bestehender Tools
-        - DE-BIAS-Tool
-        - ...
-    - Chancen von und Anforderungen an AI-Tools
-        - man-in-the-loop
-    - Grenzen von AI-Tools
-        - Umgang mit Halluzinationen.
-        - Autor:innenschaft / Haftungsprobleme mit vollautomatisch eingesetzter KI
+  - Diskussion bestehender Tools
+    - DE-BIAS-Tool
+    - ...
+  - Chancen von und Anforderungen an AI-Tools
+    - man-in-the-loop
+  - Grenzen von AI-Tools
+    - Umgang mit Halluzinationen.
+    - Autor:innenschaft / Haftungsprobleme mit vollautomatisch eingesetzter KI
 
 ::: {.callout-tip title="Positive Erfahrungen aus der Praxis"}
+
 - Beispiele sammeln
-:::
+  :::
 
 ::: {.callout-tip title="Negative Erfahrungen aus der Praxis"}
-- Beispiele sammeln
-:::
 
-## Zugang und Publikation 
+- Beispiele sammeln
+  :::
+
+## Zugang und Publikation
+
 - Metadaten machen Anschein, alles sei suchbar und da. Doch nein!
 - Bei Publikation von Metadaten muss stets auch Rezeptionsebene mitgedacht werden -- ganz besonders z.B. auf Sammlungsportalen.
 - Im Kontext sensibler Daten geht es dabei auch um Fragen von Zugang
 - Und im Kontext von Open Data und Aggregatoren auch um die Frage, inwiefern eine diskriminierungssensible Weitergabe und Präsentation von Daten gefördert werden kann.
 
 ### Rahmen abstecken
+
 - Metadaten als Findhilfe? Oder mehr?
 
 ### Umgang mit sensiblen und/oder diskriminierenden Inhalten
+
 - **Was:** Sensible vs. diskriminierende Daten
-- **Wirkung:** 
-    - Trigger vermeiden vs.
-    - Schutz vulnerabler Einzelpersonen/Menschengruppen/Kulturgut vs. 
-    - Reproduktion diskriminierender Narrative
+- **Wirkung:**
+  - Trigger vermeiden vs.
+  - Schutz vulnerabler Einzelpersonen/Menschengruppen/Kulturgut vs.
+  - Reproduktion diskriminierender Narrative
 - **Ebenen:** Rechtslage vs. Ethik (es geht um Sicherheit, aber auch um Würde)
 - **Abwägung:** Potenzieller Intersssenskonflikt zwischen (1) Zugang erleichtern und (2) Schaden vermeiden (nicht immer einfach)
 
 #### Identifizieren sensibler Daten
+
 - Beispiele
-    - **Geodaten:** So kann es etwa Sinn machen, Fundorte archäologischer Objekte nicht öffentlich zu machen, um Risiko von Plünderungen zu reduzieren  
-    - **Personendaten im Archiv:** sensible Informationen lebender/toter Personen Objekte (z.B. Aufenthaltsorte/Interviewtranskripte mit Nachfahren, Zeitzeug:innen, ...)
-    - **Personendaten der Archivar:innen:** Transparenz liefert wohlverdiente Sichtbarkeit für Sachbearbeiter:innen, exponiert sie aber gleichzeitig auch. Ggf. Kürzel statt Klarnamen verwenden
+  - **Geodaten:** So kann es etwa Sinn machen, Fundorte archäologischer Objekte nicht öffentlich zu machen, um Risiko von Plünderungen zu reduzieren
+  - **Personendaten im Archiv:** sensible Informationen lebender/toter Personen Objekte (z.B. Aufenthaltsorte/Interviewtranskripte mit Nachfahren, Zeitzeug:innen, ...)
+  - **Personendaten der Archivar:innen:** Transparenz liefert wohlverdiente Sichtbarkeit für Sachbearbeiter:innen, exponiert sie aber gleichzeitig auch. Ggf. Kürzel statt Klarnamen verwenden
 - Rechtliche/Ethische Grundsätze
-    - ...
+  - ...
 
 #### Identifizieren diskriminierender Daten
+
 - Beispiele
-    - **Diskriminierende Beschreibungen:** ...
-    - **Zuschreibungen und Stereotypisierungen:** ...
+  - **Diskriminierende Beschreibungen:** ...
+  - **Zuschreibungen und Stereotypisierungen:** ...
 - Rechtliche/Ethische Grundsätze
-    - ...
+  - ...
 
 #### Strategien zum Zugangs-Management
+
 - Grundsätzlich: Was zeigen wir wem wie weshalb und unter welchen Bedingungen?
-    - Betrifft ein Datenportal genauso wie dieses Handbuch
-    - **Wer:** Unterschiedliche Zugänge für verschiedene Zielpublika (Menschen mit spezifischer Forschungsfrage, Online-Datenbank, Dialog mit "Herkunftsgesellschaften", Web-Crawlers, ...)
-    - **Worauf:** Vollzugriff vs. Kontextualisierung vs. Teilzugriff vs. Versionsgeschichte
-    - **Kontextualisierung:** Unter welcher Frage/Suchbegriffen soll ein bestimmter Inhalt (z.B. ein Bild) gefunden werden? (z.B. "Antisemitismus" oder "jüdische Menschen"?)
+  - Betrifft ein Datenportal genauso wie dieses Handbuch
+  - **Wer:** Unterschiedliche Zugänge für verschiedene Zielpublika (Menschen mit spezifischer Forschungsfrage, Online-Datenbank, Dialog mit "Herkunftsgesellschaften", Web-Crawlers, ...)
+  - **Worauf:** Vollzugriff vs. Kontextualisierung vs. Teilzugriff vs. Versionsgeschichte
+  - **Kontextualisierung:** Unter welcher Frage/Suchbegriffen soll ein bestimmter Inhalt (z.B. ein Bild) gefunden werden? (z.B. "Antisemitismus" oder "jüdische Menschen"?)
 - **Umgang mit Bildern**
-    - Relevant für Portale, Ausstellungen, Slides auf Vorträgen
-    - Entsprechende Überlegungen sollten auch an einer Fachtagungen gemacht werden (z.B. beim zeigen rassistischer Praktiken auf Bildern)
+  - Relevant für Portale, Ausstellungen, Slides auf Vorträgen
+  - Entsprechende Überlegungen sollten auch an einer Fachtagungen gemacht werden (z.B. beim zeigen rassistischer Praktiken auf Bildern)
 - **Umgang mit Text**
-    - Strategien: Verfremdung, Verzerrung, Durchstreichung, Sternchenbarriere (N\*\*\*), Änderung, Anführungszeichen
-    - Diskussion: Rücksicht mit historischem Kontext
-    - Diskussion zu Titeln
+  - Strategien: Verfremdung, Verzerrung, Durchstreichung, Sternchenbarriere (N\*\*\*), Änderung, Anführungszeichen
+  - Diskussion: Rücksicht mit historischem Kontext
+  - Diskussion zu Titeln
 - **Umgang mit Biased Perspektiven**
-    - Reproduktion von Blickregimen (z.B. in der [Deutschen Fotothek](https://www.deutschefotothek.de/cms/weltsichten.xml))
-    - Auswahl von Touren / Eingangsnarrativen / Kontextualisierungen (und Kontextualisierungsprinzipien!!) / bewussten Umwegen / Bildminiaturen
+  - Reproduktion von Blickregimen (z.B. in der [Deutschen Fotothek](https://www.deutschefotothek.de/cms/weltsichten.xml))
+  - Auswahl von Touren / Eingangsnarrativen / Kontextualisierungen (und Kontextualisierungsprinzipien!!) / bewussten Umwegen / Bildminiaturen
 - **Umgang mit Lücken**
-    - Explizieren, dass bspw. Namen von Personen unbekannt (bzw. nicht archiviert/notiert/als erwähnenswert befunden worden)
+  - Explizieren, dass bspw. Namen von Personen unbekannt (bzw. nicht archiviert/notiert/als erwähnenswert befunden worden)
 - **Zugangsbeschränkung**
-    - API-Key als (symbolische) Hürde
-    - Content-Notes/Disclaimer
-        - MARC-Feld 500
-        - Kommentar zu Länge, Detailgrad, Inhalt
-        - User wählen lassen, ob sie spezifische Inhalte sehen wollen (CSS-Media-Feature)
+  - API-Key als (symbolische) Hürde
+  - Content-Notes/Disclaimer
+    - MARC-Feld 500
+    - Kommentar zu Länge, Detailgrad, Inhalt
+    - User wählen lassen, ob sie spezifische Inhalte sehen wollen (CSS-Media-Feature)
 - **Schutz von Datenbanken vor unbefugtem Zugriff**
-    - Verantwortung 
+  - Verantwortung
 
 ::: {.callout-tip title="Erfahrungen"}
+
 - Umgang mit Zensurvorwürfen beim Markieren/Kontextualisieren
-    - Beispiel Stadtbücherei Münster: [Link](https://www.rtl.de/cms/muenster-warnhinweise-in-stadtbuecherei-sorgen-fuer-diskussionen-5095758.html)
+  - Beispiel Stadtbücherei Münster: [Link](https://www.rtl.de/cms/muenster-warnhinweise-in-stadtbuecherei-sorgen-fuer-diskussionen-5095758.html)
 - GND
-    - Umgang mit veralteten/alternativen Begriffen
-    - RSWK erwähnt Datenethik nicht
-    - Problematik Verwendungshäufigkeit: z.B. "I---", welches noch häufig verwendet wird?
+  - Umgang mit veralteten/alternativen Begriffen
+  - RSWK erwähnt Datenethik nicht
+  - Problematik Verwendungshäufigkeit: z.B. "I---", welches noch häufig verwendet wird?
 - ...
-:::
+  :::
 
 ::: {.callout-tip title="Umgang mit Zitaten und Titeln"}
+
 - Vorstellung, dass Werk/Ressource nur _einen_ Titel haben kann, hat grundsätzlich keinen ontologischen Grund. D.h. es ist durchaus möglich, problematische Titel zu ändern!
-    - Beispiele
-- Sternchenbarrieren (N\*\*\*) in Titeln
-    - möglich solange kommentiert und falls wissenschaftliche Volltextsuche auf Volltext (und ggf. Versionen) zugreifen kann.
-:::
-
-
+  - Beispiele
+- Sternchenbarrieren (N\*\*\*) in Titeln - möglich solange kommentiert und falls wissenschaftliche Volltextsuche auf Volltext (und ggf. Versionen) zugreifen kann.
+  :::
 
 ## Handlungsfähig bleiben
+
 - _"Es ist halt schlicht unmöglich, komplett diskriminierungsfrei zu sein."_
 - _"Dann können wir ja gar nichts mehr veröffentlichen"_
 - Plädoyer für konstruktiven und proaktiven Umgang aus der "Komplett biasfreie Daten sind doch eh nicht möglich"-Blockade raus, ohne Extremszenarien gegeneinander auszuspielen.
 - Gleichzeitig Warnung vor "es sich mit Kompromissen zu einfach machen".
 
 ### Typische Widerstände und Konflikte
-- Es kann herausfordernd und persönlich belastend sein, Widerstand zu leisten und kritische Positionen konstruktiv einzubringen. 
-    - Dieses Kapitel des Handbuchs dient dem Teilen oft gehörter Widerstände und Konflikte, und Strategien, wie diese aufgelöst werden können.
+
+- Es kann herausfordernd und persönlich belastend sein, Widerstand zu leisten und kritische Positionen konstruktiv einzubringen.
+  - Dieses Kapitel des Handbuchs dient dem Teilen oft gehörter Widerstände und Konflikte, und Strategien, wie diese aufgelöst werden können.
 
 #### Widerstände im Team/Institution
+
 > "Komplett biasfreie Daten sind doch eh nicht möglich"
 
 > "2015 waren die Diskurse noch nicht da"
@@ -319,10 +343,12 @@ Diverse Beispiele
 - CARE-Prinzipien als anregende Frage- und Reflexionsliste einführen
 
 ::: {.callout-note title="Wir sammeln weitere Statements"}
+
 - bitte melden per Email oder Pullrequest
-:::
+  :::
 
 #### Konflikte auf Förderebene
+
 > "Wir hätten Projektfinanzierung nicht erhalten, hätten wir die Bilder nicht vollumfassend offen publiziert."
 
 > "Wir brauchen ein Endprodukt"
@@ -330,11 +356,13 @@ Diverse Beispiele
 > "Uns sind die Hände gebunden"
 
 ::: {.callout-note title="Wir sammeln weitere Statements"}
+
 - bitte melden per Email oder Pullrequest
-:::
+  :::
 
 ### Wie weiter mit abgeschlossenen Projekten?
-- Bestehende Plattformen werden (aktuellen) Ansprüchen zu diskriminierungssensiblem Umgang oft nicht gerecht. 
+
+- Bestehende Plattformen werden (aktuellen) Ansprüchen zu diskriminierungssensiblem Umgang oft nicht gerecht.
 - Leider fehlt es oft an Zeit und Finanzierung, um Änderungen vorzunehmen. Oder es können technische, personelle oder institutionspolitische Hürden bestehen.
 - Kritische Auseinandersetzung mit bestehenden Projekte kann sehr produktiv sein, da es auf potenzielle Hürden zukünftiger Projekte sensibilisiert.
 - Gleichzeitig stellt sich die Frage, wie mit abgeschlossenen Projekten umzugehen ist. Denn wenn datenethische Grundsätze verpflichten zu Aktion zur Reduktion von Schaden.

@@ -3,6 +3,7 @@
 ## Diskriminierung in Daten und Datensätzen
 
 ## Forschungsdaten
+
 Forschungsdaten sind Ressourcen, die Forschende während ihrer Forschung verwenden und produzieren. Dazu gehören Datensätze, Software, Quellcode, Workflows, Forschungsprotokolle, Modelle, Zeitreihen, Tabellen, Diagramme, Karten, Bilder, Videos, Interviews, Artikel, Sekundärliteratur, etc.
 
 Bei historischen Forschungsprojekten stammt ein grosser Teil dieser Forschungsdaten oft aus den Beständen von Gedächtnisinstitutionen wie Archiven, Bibliotheken und Museen oder steht in publizierter Form (Bücher, Artikel etc.) zur Verfügung. In vielen Fällen sorgen diese Einrichtungen für die Langzeitarchivierung der Ressourcen. Dann kann über die DOI oder die Signatur direkt auf die Ressourcen (sowie auf deren Metadaten) verwiesen werden. In solchen Fällen sollten zusätzlich alle Informationen erfasst werden, die über die bereits vorhandenen Metadaten hinausgehen. Dabei kann es sich um Quellenannotationen, erweiterte Beschreibungen, korrigierte Angaben etc. handeln. Es empfiehlt sich jedoch auch in diesen Fällen, einen möglichst kompletten Metadatensatz zu erstellen. Redundanz ist bei Forschungsdaten wünschenswert und erhöht ihre Verfügbarkeit und Auffindbarkeit.
@@ -15,7 +16,7 @@ Neben den Forschungsdaten müssen auch die dazugehörigen Prozessinformationen u
 
 ### Was sind Metadaten?
 
-- Beispiele und Abgrenzung zu *Daten* und *Paradaten*.
+- Beispiele und Abgrenzung zu _Daten_ und _Paradaten_.
 - Was ist ein Metadatenobjekt?
 - Was ist ein zugeordnete Ressource?
 - Können verschieden zueinander im Verhältnis stehen -- in beiden Fällen kann es zu Diskriminierung/Bias kommen.
@@ -78,25 +79,27 @@ Verweis auf Anhang mit Tabellen der Metadaten der Stadt.Geschichte.Basel
   - Noch relativ neu und kommen deshalb erst nach und nach in Umsetzung.
   - Ihre hohe Anziehungskraft (gerade als Komplement zu den FAIR-Prinzipien) verweist jedoch auf ein grosses Bedürfnis.
 - Fokus:
+
   - CARE-Prinzipien adressieren dezidiert indigene Daten, bietet jedoch keinen allgemeinen Rahmen für ethischen Fragen in Bezug auf Sammlungsdaten.
   - Entsprechend stellt sich die Frage, inwieweit die CARE-Prinzipien "fliessend" auf andere Kontexte ausgeweitet werden können, oder ob die Formulierung separater Prinzipien je nach Kontext sinnvoller wäre.
   - Die CARE-Prinzipien liefern wichtige Impulse für FDM um ethische Fragen im Umgang mit Forschungsdaten und -materialien zu reflektieren und systematisch zu berücksichtigen.
-  
+
   #### Communities
-  - Bei der konkreten Umsetzung stellen sich Fragen wie: "Wer sind genau die *Communities*?" oder "Wie genau bemessen wir *collective benefit*?" Je nach Kontext sind diese Fragen schwer zu beantworten.
+
+  - Bei der konkreten Umsetzung stellen sich Fragen wie: "Wer sind genau die _Communities_?" oder "Wie genau bemessen wir _collective benefit_?" Je nach Kontext sind diese Fragen schwer zu beantworten.
     - Kritische Einordnung des oftmals pauschalisierend eingesetzten Community-Begriffs (vgl. z.B. Kaiser et al. 2023)
     - Verliert eine Gruppe irgendwann die Rechte über ihre Vorfahren? Wer bestimmt, woran festmachen?
     - ...
-  - Beispiele nennen für andere Kontexte, e.g. Datenschutzthematik, NS-Register, heterogene Community, ... 
+  - Beispiele nennen für andere Kontexte, e.g. Datenschutzthematik, NS-Register, heterogene Community, ...
   - TK-Labels (Fokussieren auf Selbstbestimmung bei der Label-Vergabe im Kontext von Institutions-Gatekeeping)
 
-
   #### Diskriminierungsfrei vs. Diskriminierungssensibel
+
   - "Diskriminierungsfrei" im alten Titel aufgreifen
     - Mit dieser Differenzierung soll kein Relativismus betrieben werden!
       - Streben hin zu Diskriminierungsfreiheit: ja, unbedingt; Diskriminierungsfreiheit behaupten: nein
     - Begründung
-      - Diskriminierungsverständnis ist geografisch und communityabhängig heterogen 
+      - Diskriminierungsverständnis ist geografisch und communityabhängig heterogen
       - Diskriminierungsverständnis ändert sich -- auch in Zukunft
       - Auch "Normdaten" verändern sich (auch die GND)
       - Dekolonialisierung nie abgeschlossen

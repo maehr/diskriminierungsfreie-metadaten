@@ -1,25 +1,29 @@
 # Einleitung
 
 - **Warum dieses Handbuch?**
-  - *Aktualität Thema:*
-  - *Abgrenzung zu anderen Projekten/Leitfäden/Handbüchern:* 
-  - *Zielgruppe:* Das Handbuch richtet sich an Historiker*innen, Archivar*innen, Bibliothekar*innen und alle, die sich mit Open Research Data in den Geschichtswissenschaften beschäftigen.
+
+  - _Aktualität Thema:_
+  - _Abgrenzung zu anderen Projekten/Leitfäden/Handbüchern:_
+  - _Zielgruppe:_ Das Handbuch richtet sich an Historiker*innen, Archivar*innen, Bibliothekar\*innen und alle, die sich mit Open Research Data in den Geschichtswissenschaften beschäftigen.
 
 - **Entstehungskontext**
-  - Eine erste Auflage dieses Handbuchs entstand im Rahmen des historischen Forschungsprojekts *Stadt.Geschichte.Basel* und wurde im Juni 2024 von Moritz Mähr und Noëlle Schnegg publiziert. Gemeinsam mit Levyn Bürki wurde das Handbuch ab Herbst 2024 schliesslich neu strukturiert und überarbeitet.
+
+  - Eine erste Auflage dieses Handbuchs entstand im Rahmen des historischen Forschungsprojekts _Stadt.Geschichte.Basel_ und wurde im Juni 2024 von Moritz Mähr und Noëlle Schnegg publiziert. Gemeinsam mit Levyn Bürki wurde das Handbuch ab Herbst 2024 schliesslich neu strukturiert und überarbeitet.
     - Einarbeitung des Feedbacks aus der Erstveröffentlichung sowie von Diskussionen, welche seither an Workshops und Konferenzen geführt.
     - Titeländerung
     - Eigene Positionalität
 
 - **Problemdefinitionen**
-  - **Diskriminierungsbegriff und Datenethik:** 
-    - Diskriminierung kann viele Formen annehmen und geht über diskriminierendes Vokabular hinaus. 
+
+  - **Diskriminierungsbegriff und Datenethik:**
+
+    - Diskriminierung kann viele Formen annehmen und geht über diskriminierendes Vokabular hinaus.
     - Darunter Rassismus, Antisemitismus, Sexismus, Ableismus, Transphobie und viele andere, und sie kann mehrere Diskriminierungsformen gleichzeitig enthalten (Intersektionalität).
-    - Sie kann explizit oder implizit sein und ist oft tief in den Kontext und die Interpretation dieser Ressourcen eingebettet. 
-    - Implizite oder strukturelle Formen von Diskriminierung finden sich in vielen bestehenden Thesauri und Schlagwortverzeichnissen wie der Gemeinsamen Normdatei (GND), der am weitesten verbreiteten Normdatei im deutschsprachigen Raum. 
-    - Durch Basisfelder, Klassifizierung nach hegemonialer Praxis, ... Bei einem Textfeld geht es immer auch darum, was es *kann*: wie wird es ausgelesen? Interpretiert? Dargestellt? Übermittlet? Dokumentiert?
+    - Sie kann explizit oder implizit sein und ist oft tief in den Kontext und die Interpretation dieser Ressourcen eingebettet.
+    - Implizite oder strukturelle Formen von Diskriminierung finden sich in vielen bestehenden Thesauri und Schlagwortverzeichnissen wie der Gemeinsamen Normdatei (GND), der am weitesten verbreiteten Normdatei im deutschsprachigen Raum.
+    - Durch Basisfelder, Klassifizierung nach hegemonialer Praxis, ... Bei einem Textfeld geht es immer auch darum, was es _kann_: wie wird es ausgelesen? Interpretiert? Dargestellt? Übermittlet? Dokumentiert?
     - Sie stecken aber auch in institutionellen Strukturen/Bias, kolonialen Sammlungskonzepten, ...
-    - Schliesslich sind auch Aspekte des Datenschutz und Selbstbestimmung ein wesentlicher Teil eines diskriminierungssensiblen Umgangs mit Daten und Metadaten. Im Kontext indigener Daten existieren dazu bereits die CARE-Prinzipien, welche auch für andere Kontexte, etwa den Umgang mit Daten aus nationalsozialistischen Kontexten wegweisend sein können. Datenethische Grundsätze (Do-no-harm Prinzip, Schadensminimierung, Collectiv benefit). 
+    - Schliesslich sind auch Aspekte des Datenschutz und Selbstbestimmung ein wesentlicher Teil eines diskriminierungssensiblen Umgangs mit Daten und Metadaten. Im Kontext indigener Daten existieren dazu bereits die CARE-Prinzipien, welche auch für andere Kontexte, etwa den Umgang mit Daten aus nationalsozialistischen Kontexten wegweisend sein können. Datenethische Grundsätze (Do-no-harm Prinzip, Schadensminimierung, Collectiv benefit).
     - Unter diskriminierungssensiblem Arbeiten an und mit Archiv- und Forschungsdaten verstehen wir unmittelbar auch eine Arbeit an Forschungsdatenqualität.
 
   - **Beispiele, Fragen und Konfliktlinien:** Inhaltlich, strukturell, technisch und politisch:
@@ -36,9 +40,9 @@
     - Umgang mit Lücken, Unsicherheiten und Widersprüchen in Daten, insbesondere bei Massenerschliessungen, wo es auch darum gehen muss, systematische Fehler zu limitieren.
     - ...
 
-- **Aufbau, Fokus und Verwendungshinweise:** Was das Handbuch *ist* -- und was es *nicht ist*. Wie verwende ich das Handbuch? Was kann ich erwarten? Ist dieses Handbuch für mich?
+- **Aufbau, Fokus und Verwendungshinweise:** Was das Handbuch _ist_ -- und was es _nicht ist_. Wie verwende ich das Handbuch? Was kann ich erwarten? Ist dieses Handbuch für mich?
 
-  - **Ziel:** Ziel muss es sein, diskriminierende Strukturen nicht nur aufzeigen, sondern diese zu überwinden. Dazu braucht es einen Austausch über Lösungsansätze genauso wie über bestehende Hürden und Unsicherheiten. Hierzu möchte das vorliegende Handbuch einen Beitrag leisten.  Dazu sammelt es Erfahrungswissen zum diskriminierungssensiblen Umgang mit Metadaten in Forschungskontexten und gibt diese weiter. Um möglichst vielen Menschen zugänglich zu sein, werden in einem ersten Teil wichtige Schlüsselbegriffe eingeführt. Ein zweiter Teil versammelt schliesslich Praxiswissen aus verschiedenen thematischen, strukturellen und institutionellen Kontexten.
+  - **Ziel:** Ziel muss es sein, diskriminierende Strukturen nicht nur aufzeigen, sondern diese zu überwinden. Dazu braucht es einen Austausch über Lösungsansätze genauso wie über bestehende Hürden und Unsicherheiten. Hierzu möchte das vorliegende Handbuch einen Beitrag leisten. Dazu sammelt es Erfahrungswissen zum diskriminierungssensiblen Umgang mit Metadaten in Forschungskontexten und gibt diese weiter. Um möglichst vielen Menschen zugänglich zu sein, werden in einem ersten Teil wichtige Schlüsselbegriffe eingeführt. Ein zweiter Teil versammelt schliesslich Praxiswissen aus verschiedenen thematischen, strukturellen und institutionellen Kontexten.
   - **Metadaten-Lebenszyklus:** Erstellung / Verwendung / Vermittlung usw.
   - **Diskriminierungs-Kontexte:** Essenzialisierung, Bias, Lücken und Unsichtbarmachung, Fehlende Perspektiven durch Unwissen/Ignorance, ethische Konflikte bei sensiblen Daten, institutionalisierte Strukturen im Arbeitsalltag,...
   - **Umgang:** Wünschenswert sind auch Beiträge, wie diskriminierende Metadaten nicht nur erkannt, sondern auch angesprochen und beseitigt/vermieden/überwunden werden können -- nicht zuletzt im Kontext von Förderrichtlinien oder Teaminternen Spannungen.
@@ -48,4 +52,5 @@
   - **Code of Conduct:** [Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/)
 
 **Dank:**
+
 - Ggf. hier Personen verdanken, die Inputs und Beispiele geliefert und gegengelesen haben.

@@ -1,19 +1,20 @@
-## Nützliche Tools  
+## Nützliche Tools
 
 ### Handbücher und Leitfäden
-- Reader for Black Lives Philadephia  
 
+- Reader for Black Lives Philadephia
 
-### GND-Viewers  
-- Kommentar Vorteile und Nachteile (z. B. des GND-Explorers)  
-- [https://swb.bsz-bw.de/](https://swb.bsz-bw.de/DB=2.104/?COOKIE=Us998,Pbszgast,I2017,B20728+,SY,NRecherche-DB,D2.104,E6b0d3db2-1,A,H,R178.197.206.37,FY)  
-- GND-wiki der dnb  
-- Regelwerk  
-- Theoriebox  
+### GND-Viewers
 
-### Ontologien und Mappings  
+- Kommentar Vorteile und Nachteile (z. B. des GND-Explorers)
+- [https://swb.bsz-bw.de/](https://swb.bsz-bw.de/DB=2.104/?COOKIE=Us998,Pbszgast,I2017,B20728+,SY,NRecherche-DB,D2.104,E6b0d3db2-1,A,H,R178.197.206.37,FY)
+- GND-wiki der dnb
+- Regelwerk
+- Theoriebox
+
+### Ontologien und Mappings
+
 - [LIDO](https://terminology-view.lido-schema.org/vocnet/?startNode=lido00409&lang=en&uriVocItem=http://terminology.lido-schema.org/eventType)
-- Iconclass (ruft Community aktiv auf, sich antidiskriminierend zu beteiligen)  
-- [https://wiki.dnb.de/display/GND/GND-Mappings+zu+externen+Thesauri](https://wiki.dnb.de/display/GND/GND-Mappings+zu+externen+Thesauri)  
-- Link zum Opengender-Mapping (externe Publikation)  
-
+- Iconclass (ruft Community aktiv auf, sich antidiskriminierend zu beteiligen)
+- [https://wiki.dnb.de/display/GND/GND-Mappings+zu+externen+Thesauri](https://wiki.dnb.de/display/GND/GND-Mappings+zu+externen+Thesauri)
+- Link zum Opengender-Mapping (externe Publikation)

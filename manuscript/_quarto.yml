@@ -26,7 +26,7 @@ format:
       - custom-header.html
     page-layout: full
     license: CC BY-SA
-    
+
   docx:
     reference-doc: custom-reference.docx
     fig-align: left
