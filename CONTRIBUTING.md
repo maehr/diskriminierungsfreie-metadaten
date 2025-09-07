@@ -41,6 +41,42 @@ node scripts/fetch-latest-doi.js
 
 This ensures that all documentation and citations reference the correct published version and date consistently across all files.
 
+## v2.0.0alpha Development Guidelines
+
+The v2.0.0alpha release represents a major overhaul of the _Diskriminierungsfreie Metadaten_ handbook. Development for this release follows specific guidelines:
+
+### Branch Strategy
+
+- **Main branch**: Stable v1.x releases and maintenance
+- **v2.0.0alpha branch**: Active development for v2.0.0alpha release
+- **Feature branches**: Create from `v2.0.0alpha` for specific features, prefix with `v2/feature/`
+
+### Alpha Release Versioning
+
+This release follows semantic versioning with alpha pre-release identifiers:
+
+- **v2.0.0-alpha.0**: Initial alpha release setup
+- **v2.0.0-alpha.1, v2.0.0-alpha.2, etc.**: Iterative alpha releases
+- **v2.0.0-beta.0**: Beta release when alpha phase is complete
+- **v2.0.0**: Final release
+
+### Development Workflow for v2.0.0alpha
+
+1. **Base branch**: All v2 work should be based on the `v2.0.0alpha` branch
+2. **Feature development**: Create feature branches from `v2.0.0alpha`
+3. **Pull requests**: Target the `v2.0.0alpha` branch, not `main`
+4. **Testing**: Ensure all changes work with the existing build pipeline
+5. **Documentation**: Update relevant documentation as part of feature development
+
+### Alpha Release Goals
+
+The v2.0.0alpha release aims to establish:
+
+- Restructured repository organization
+- Enhanced build pipeline for the new handbook structure
+- Updated documentation framework
+- Foundation for content development and review
+
 ## Pull Request Process
 
 1. Ensure any install or build dependencies are removed before the end of the layer when doing a
