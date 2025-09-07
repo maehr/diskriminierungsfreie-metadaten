@@ -40,7 +40,7 @@ key-points:
   - Zielgruppe: Archivar\*innen, Bibliothekar\*innen, Historiker\*innen und Data Stewards.
   - Praxisnahe Fallbeispiele: Detaillierte Szenarien aus unterschiedlichen historischen Epochen und Herausforderungen verdeutlichen die Anwendung der Theorie in der Praxis.
   - Living Document: Das Handbuch wird als offenes Dokument auf GitHub veröffentlicht und steht der Community zur Weiterentwicklung zur Verfügung.
-date: 2024-06-03
+date: {{LATEST_DATE}}
 bibliography: references.bib
 nocite: |
   @*

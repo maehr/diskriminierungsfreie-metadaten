@@ -15,7 +15,7 @@ authors:
     orcid: 'https://orcid.org/0009-0008-5207-6652'
 identifiers:
   - type: doi
-    value: { { LATEST_DOI } }
+    value: '{{LATEST_DOI}}'
 repository-code: 'https://github.com/maehr/diskriminierungsfreie-metadaten'
 url: 'https://maehr.github.io/diskriminierungsfreie-metadaten/'
 abstract: >-
@@ -31,4 +31,4 @@ keywords:
   - Schlagwortindex GenderOpen
 license: CC-BY-SA-4.0
 version: '1.0'
-date-released: '2024-06-03'
+date-released: '{{LATEST_DATE}}'
