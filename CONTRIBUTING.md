@@ -5,44 +5,41 @@ email, or any other method with the owners of this repository before making a ch
 
 Please note we have a [code of conduct](CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
 
-## Automated DOI and Date Management
+## DOI and Date Management
 
-This repository uses automated DOI and publication date injection from Zenodo to keep citations up-to-date. The system works as follows:
+This repository manages DOI and publication date consistency across all metadata files. The system works as follows:
 
 ### How it works
 
-1. **Placeholders**: Source files use `{{LATEST_DOI}}` and `{{LATEST_DATE}}` placeholders instead of hardcoded values
-2. **API Integration**: A script queries the Zenodo API (`https://zenodo.org/api/records/11124719/versions/latest`) to fetch the current latest DOI and publication date
-3. **Automatic Replacement**: During the build process, placeholders are replaced with the actual latest values
-4. **Fallback**: If the API is unavailable, the system falls back to known working values
+1. **Hardcoded Values**: DOI and dates are hardcoded directly in source files for reliability
+2. **Validation Script**: A validation script (`scripts/fetch-latest-doi.js`) checks consistency across files
+3. **Quality Assurance**: Ensures all metadata files reference the correct DOI and dates
 
-### Files with DOI placeholders
+### Files with DOI information
 
-- `README.md`: Zenodo badge
+- `README.md`: Zenodo badge with DOI link
 - `manuscript/handbuch-diskriminierungsfreie-metadaten.qmd`: Citation DOI
 - `manuscript/_quarto.yml`: Format DOI
+- `CITATION.cff`: Official citation DOI and release date
 
-### Manual DOI and date update
+### Manual DOI and date validation
 
-To manually update DOIs and publication dates locally for testing:
+To validate DOI and date consistency across all files:
 
 ```bash
-npm run fetch-doi
+npm run validate-doi
 # or
 node scripts/fetch-latest-doi.js
 ```
 
 ### Technical details
 
-- **Concept DOI**: `10.5281/zenodo.11124719` (always points to the latest version)
-- **API Endpoint**: `https://zenodo.org/api/records/11124719/versions/latest`
-- **Script Location**: `scripts/fetch-latest-doi.js`
-- **Placeholders**:
-  - `{{LATEST_DOI}}` for DOI injection
-  - `{{LATEST_DATE}}` for publication date injection
-- **Build Integration**: GitHub Actions workflow automatically runs the script before rendering
+- **Current DOI**: `10.5281/zenodo.17073511` (v1.0.1 release)
+- **Release Date**: `2024-06-03`
+- **Script Location**: `scripts/fetch-latest-doi.js` (validation mode)
+- **Expected Values**: Script validates against hardcoded expected values for each release
 
-This ensures that all generated documentation and citations reference the most current published version and date without manual intervention.
+This ensures that all documentation and citations reference the correct published version and date consistently across all files.
 
 ## Pull Request Process
 

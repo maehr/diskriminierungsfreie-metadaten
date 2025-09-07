@@ -1,120 +1,129 @@
 #!/usr/bin/env node
 
 /**
- * Fetch the latest DOI and date from Zenodo API and replace placeholders in files
- * This script queries the Zenodo API for the latest version of the concept DOI
- * and replaces {{LATEST_DOI}} and {{LATEST_DATE}} placeholders in specified files.
+ * Validate DOI and date consistency across project files
+ * This script checks that DOI and date values are consistent across all metadata files
+ * and validates against the expected release version values.
  */
 
-import { readFileSync, writeFileSync } from 'fs';
+import { readFileSync } from 'fs';
 import { join } from 'path';
 
-const ZENODO_CONCEPT_ID = '11124719';
-const ZENODO_API_URL = `https://zenodo.org/api/records/${ZENODO_CONCEPT_ID}/versions/latest`;
-const DOI_PLACEHOLDER = '{{LATEST_DOI}}';
-const DOI_SPACED_PLACEHOLDER = '{ { LATEST_DOI } }';
-const DATE_PLACEHOLDER = '{{LATEST_DATE}}';
-const DATE_SPACED_PLACEHOLDER = '{ { LATEST_DATE } }';
+// Expected values for v1.0.1
+const EXPECTED_DOI = '10.5281/zenodo.17073511';
+const EXPECTED_DATE = '2024-06-03';
 
 /**
- * Fetch the latest DOI and date from Zenodo API
- * @returns {Promise<{doi: string, date: string}>} The latest DOI and publication date
+ * Extract DOI from a file content based on file type
+ * @param {string} content - File content
+ * @param {string} fileName - File name to determine extraction method
+ * @returns {string|null} Extracted DOI or null if not found
  */
-async function fetchLatestData() {
-	try {
-		console.log(`Fetching latest data from: ${ZENODO_API_URL}`);
-
-		const response = await fetch(ZENODO_API_URL);
-		if (!response.ok) {
-			throw new Error(`HTTP error! status: ${response.status}`);
-		}
-
-		const data = await response.json();
-		const doi = data.doi;
-		const date = data.publication_date;
-
-		if (!doi) {
-			throw new Error('DOI not found in API response');
-		}
-
-		if (!date) {
-			throw new Error('Publication date not found in API response');
-		}
-
-		console.log(`Latest DOI: ${doi}`);
-		console.log(`Latest date: ${date}`);
-		return { doi, date };
-	} catch (error) {
-		console.error('Error fetching data:', error);
-		// Fallback to current values if API fails
-		const fallbackDOI = '10.5281/zenodo.17073511';
-		const fallbackDate = '2024-06-03';
-		console.warn(`Using fallback DOI: ${fallbackDOI}`);
-		console.warn(`Using fallback date: ${fallbackDate}`);
-		return { doi: fallbackDOI, date: fallbackDate };
+function extractDOI(content, fileName) {
+	if (fileName.endsWith('.cff')) {
+		// CITATION.cff: value: '10.5281/zenodo.17073511'
+		const match = content.match(/value:\s*['"]([^'"]+)['"]/);
+		return match ? match[1] : null;
+	} else if (fileName.endsWith('.qmd')) {
+		// QMD: doi: 10.5281/zenodo.17073511
+		const match = content.match(/doi:\s*([^\s\n]+)/);
+		return match ? match[1] : null;
+	} else if (fileName.endsWith('.yml')) {
+		// YAML: doi: '10.5281/zenodo.17073511'
+		const match = content.match(/doi:\s*['"]([^'"]+)['"]/);
+		return match ? match[1] : null;
+	} else if (fileName.endsWith('.md')) {
+		// README.md: https://doi.org/10.5281/zenodo.11124719
+		const match = content.match(/doi\.org\/([^)\s]+)/);
+		return match ? match[1] : null;
 	}
+	return null;
 }
 
 /**
- * Replace placeholders in a file with the actual DOI and date
- * @param {string} filePath - Path to the file
- * @param {string} doi - The DOI to inject
- * @param {string} date - The date to inject
+ * Extract date from a file content based on file type
+ * @param {string} content - File content
+ * @param {string} fileName - File name to determine extraction method
+ * @returns {string|null} Extracted date or null if not found
  */
-function replaceDataInFile(filePath, doi, date) {
+function extractDate(content, fileName) {
+	if (fileName.endsWith('.cff')) {
+		// CITATION.cff: date-released: '2025-09-07'
+		const match = content.match(/date-released:\s*['"]([^'"]+)['"]/);
+		return match ? match[1] : null;
+	} else if (fileName.endsWith('.qmd')) {
+		// QMD: date: 2024-06-03
+		const match = content.match(/^date:\s*([^\s\n]+)/m);
+		return match ? match[1] : null;
+	}
+	return null;
+}
+
+/**
+ * Validate DOI and date in a specific file
+ * @param {string} filePath - Path to the file
+ * @returns {Object} Validation result
+ */
+function validateFile(filePath) {
 	try {
-		console.log(`Processing file: ${filePath}`);
+		console.log(`Validating file: ${filePath}`);
 
 		const content = readFileSync(filePath, 'utf8');
+		const fileName = filePath.split('/').pop();
 
-		const hasDOIPlaceholder =
-			content.includes(DOI_PLACEHOLDER) || content.includes(DOI_SPACED_PLACEHOLDER);
-		const hasDatePlaceholder =
-			content.includes(DATE_PLACEHOLDER) || content.includes(DATE_SPACED_PLACEHOLDER);
+		const doi = extractDOI(content, fileName);
+		const date = extractDate(content, fileName);
 
-		if (!hasDOIPlaceholder && !hasDatePlaceholder) {
-			console.log(`No placeholders found in ${filePath}, skipping`);
-			return;
+		const result = {
+			file: filePath,
+			doi: doi,
+			date: date,
+			doiValid: doi === EXPECTED_DOI,
+			dateValid: date === EXPECTED_DATE || date === null, // Date is optional for some files
+			errors: []
+		};
+
+		if (doi && !result.doiValid) {
+			result.errors.push(`DOI mismatch: found "${doi}", expected "${EXPECTED_DOI}"`);
 		}
 
-		let updatedContent = content;
-
-		// Replace DOI placeholders
-		if (hasDOIPlaceholder) {
-			updatedContent = updatedContent.replace(new RegExp(DOI_PLACEHOLDER, 'g'), doi);
-			updatedContent = updatedContent.replace(
-				new RegExp(DOI_SPACED_PLACEHOLDER.replace(/[{}]/g, '\\$&'), 'g'),
-				doi
-			);
-			console.log(`Updated DOI in ${filePath}: ${doi}`);
+		if (date && !result.dateValid) {
+			result.errors.push(`Date mismatch: found "${date}", expected "${EXPECTED_DATE}"`);
 		}
 
-		// Replace date placeholders
-		if (hasDatePlaceholder) {
-			updatedContent = updatedContent.replace(new RegExp(DATE_PLACEHOLDER, 'g'), date);
-			updatedContent = updatedContent.replace(
-				new RegExp(DATE_SPACED_PLACEHOLDER.replace(/[{}]/g, '\\$&'), 'g'),
-				date
-			);
-			console.log(`Updated date in ${filePath}: ${date}`);
+		if (!doi) {
+			result.errors.push('No DOI found in file');
 		}
 
-		writeFileSync(filePath, updatedContent, 'utf8');
-		console.log(`Successfully processed ${filePath}`);
+		console.log(`  DOI: ${doi || 'NOT FOUND'} ${result.doiValid ? '✅' : '❌'}`);
+		if (date) {
+			console.log(`  Date: ${date} ${result.dateValid ? '✅' : '❌'}`);
+		}
+
+		return result;
 	} catch (error) {
-		console.error(`Error processing file ${filePath}:`, error);
+		console.error(`Error validating file ${filePath}:`, error);
+		return {
+			file: filePath,
+			doi: null,
+			date: null,
+			doiValid: false,
+			dateValid: false,
+			errors: [`File read error: ${error.message}`]
+		};
 	}
 }
 
 /**
- * Main function
+ * Main validation function
  */
 async function main() {
-	console.log('Starting DOI and date injection process...');
+	console.log('🔍 Starting DOI and date validation...');
+	console.log(`Expected DOI: ${EXPECTED_DOI}`);
+	console.log(`Expected Date: ${EXPECTED_DATE}`);
+	console.log('');
 
-	const { doi, date } = await fetchLatestData();
-
-	// Files that need DOI and/or date replacement
+	// Files that should contain DOI and/or date information
 	const files = [
 		'README.md',
 		'manuscript/handbuch-diskriminierungsfreie-metadaten.qmd',
@@ -122,12 +131,42 @@ async function main() {
 		'CITATION.cff'
 	];
 
-	files.forEach((file) => {
-		const fullPath = join(process.cwd(), file);
-		replaceDataInFile(fullPath, doi, date);
-	});
+	const results = [];
+	let hasErrors = false;
 
-	console.log('DOI and date injection process completed!');
+	for (const file of files) {
+		const fullPath = join(process.cwd(), file);
+		const result = validateFile(fullPath);
+		results.push(result);
+
+		if (result.errors.length > 0) {
+			hasErrors = true;
+		}
+	}
+
+	console.log('\n📋 Validation Summary:');
+	console.log('='.repeat(50));
+
+	for (const result of results) {
+		const status = result.errors.length === 0 ? '✅ PASS' : '❌ FAIL';
+		console.log(`${status} ${result.file}`);
+
+		if (result.errors.length > 0) {
+			result.errors.forEach((error) => {
+				console.log(`  ⚠️  ${error}`);
+			});
+		}
+	}
+
+	console.log('='.repeat(50));
+
+	if (hasErrors) {
+		console.log('❌ Validation FAILED - Please fix the above issues');
+		process.exit(1);
+	} else {
+		console.log('✅ All files passed validation!');
+		console.log('🎉 DOI and date consistency check completed successfully');
+	}
 }
 
 // Run the script

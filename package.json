@@ -12,7 +12,7 @@
 		"prepare": "husky",
 		"changelog": "pnpm exec git-cliff -- --config cliff.toml",
 		"jampack": "pnpm exec jampack manuscript/_manuscript",
-		"fetch-doi": "node scripts/fetch-latest-doi.js"
+		"validate-doi": "node scripts/fetch-latest-doi.js"
 	},
 	"devDependencies": {
 		"commitizen": "^4.3.1",
