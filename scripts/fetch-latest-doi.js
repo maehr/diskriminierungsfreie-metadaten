@@ -9,7 +9,7 @@
 import { readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
 
-const ZENODO_CONCEPT_ID = '17073511';
+const ZENODO_CONCEPT_ID = '11124719';
 const ZENODO_API_URL = `https://zenodo.org/api/records/${ZENODO_CONCEPT_ID}/versions/latest`;
 const DOI_PLACEHOLDER = '{{LATEST_DOI}}';
 const DOI_SPACED_PLACEHOLDER = '{ { LATEST_DOI } }';

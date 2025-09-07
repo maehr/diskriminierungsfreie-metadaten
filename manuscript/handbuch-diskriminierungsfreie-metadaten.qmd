@@ -46,7 +46,7 @@ nocite: |
   @*
 citation:
   type: report
-  doi: 10.5281/zenodo.11124720
+  doi: 10.5281/zenodo.17073511
   url: https://maehr.github.io/diskriminierungsfreie-metadaten/
 number-sections: true
 ---
