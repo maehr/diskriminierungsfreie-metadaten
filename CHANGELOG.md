@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://github.com/maehr/diskriminierungsfreie-metadaten/compare/v1.0.0...HEAD)
 
-## [v1.0.0](https://github.com/maehr/diskriminierungsfreie-metadaten/releases/tag/v1.0.0) - 2024-05-16
+## [v1.0.0](https://github.com/maehr/diskriminierungsfreie-metadaten/releases/tag/v1.0.0) - 2024-06-03
 
 ### Features
 
