@@ -9,7 +9,7 @@
 import { readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
 
-const ZENODO_CONCEPT_ID = '11124719';
+const ZENODO_CONCEPT_ID = '17073511';
 const ZENODO_API_URL = `https://zenodo.org/api/records/${ZENODO_CONCEPT_ID}/versions/latest`;
 const DOI_PLACEHOLDER = '{{LATEST_DOI}}';
 const DOI_SPACED_PLACEHOLDER = '{ { LATEST_DOI } }';
@@ -47,7 +47,7 @@ async function fetchLatestData() {
 	} catch (error) {
 		console.error('Error fetching data:', error);
 		// Fallback to current values if API fails
-		const fallbackDOI = '10.5281/zenodo.11124720';
+		const fallbackDOI = '10.5281/zenodo.17073511';
 		const fallbackDate = '2024-06-03';
 		console.warn(`Using fallback DOI: ${fallbackDOI}`);
 		console.warn(`Using fallback date: ${fallbackDate}`);

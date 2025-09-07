@@ -15,7 +15,7 @@ authors:
     orcid: 'https://orcid.org/0009-0008-5207-6652'
 identifiers:
   - type: doi
-    value: '{{LATEST_DOI}}'
+    value: '10.5281/zenodo.17073511'
 repository-code: 'https://github.com/maehr/diskriminierungsfreie-metadaten'
 url: 'https://maehr.github.io/diskriminierungsfreie-metadaten/'
 abstract: >-
