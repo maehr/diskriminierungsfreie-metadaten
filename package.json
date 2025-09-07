@@ -9,15 +9,17 @@
 		"commit": "cz",
 		"format": "prettier --ignore-path .gitignore --write . '!{CODE_OF_CONDUCT.md,LICENSE-AGPL.md,LICENSE-CCBYSA.md,_layouts/default.html,package-lock.json,pnpm-lock.yaml,yarn.lock}'",
 		"prepare": "husky",
-		"changelog": "npm exec git-cliff -- --config cliff.toml"
+		"changelog": "pnpm exec git-cliff -- --config cliff.toml",
+		"jampack": "pnpm exec jampack manuscript/_manuscript"
 	},
 	"devDependencies": {
 		"commitizen": "^4.3.1",
 		"cz": "^1.8.2",
 		"cz-conventional-changelog": "^3.3.0",
-		"git-cliff": "^2.8.0",
+		"git-cliff": "^2.10.0",
 		"husky": "^9.1.7",
-		"prettier": "^3.5.3"
+		"prettier": "^3.6.2",
+		"@divriots/jampack": "^0.33.1"
 	},
 	"type": "module",
 	"config": {
