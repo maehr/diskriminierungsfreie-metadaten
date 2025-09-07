@@ -53,7 +53,7 @@ We recommend using **GitHub Codespaces** for the easiest and fastest setup. It g
 </div>
 
 4. GitHub will now build a container that includes:
-   - ✅ Node.js (via `npm`)
+   - ✅ Node.js (via `pnpm`)
    - ✅ Quarto
 
 5. Once the Codespace is ready, you can preview the documentation locally inside the Codespace with:
@@ -82,7 +82,7 @@ Make sure the following tools are installed locally:
 
 ```bash
 # 1. Install Node.js dependencies
-npm install
+pnpm install
 
 # 2. Preview documentation
 cd manuscript && quarto preview
@@ -95,25 +95,25 @@ cd manuscript && quarto preview
 Check that all files are properly formatted.
 
 ```bash
-npm run check
+pnpm run check
 ```
 
 Format all files.
 
 ```bash
-npm run format
+pnpm run format
 ```
 
 Run the wizard to write meaningful commit messages.
 
 ```bash
-npm run commit
+pnpm run commit
 ```
 
 Run the wizard to create a CHANGELOG.md.
 
 ```bash
-npm run changelog
+pnpm run changelog
 ```
 
 Preview the documentation.

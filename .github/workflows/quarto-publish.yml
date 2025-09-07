@@ -23,16 +23,22 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '22'
+          cache: 'pnpm'
 
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
 
       - name: Check for linting errors
-        run: npm run check
+        run: pnpm run check
 
   build-deploy:
     runs-on: macos-latest
@@ -59,6 +65,14 @@ jobs:
         with:
           tinytex: true
 
+      - name: Cache Brew dependencies
+        uses: actions/cache@v4
+        with:
+          path: /usr/local/Homebrew
+          key: ${{ runner.os }}-brew-${{ hashFiles('**/quarto-publish.yml') }}
+          restore-keys: |
+            ${{ runner.os }}-brew-
+
       - name: Set up TeX dependencies
         run: |
           tlmgr install hyphen-german
@@ -77,17 +91,13 @@ jobs:
         run: |
           chromium --headless --disable-gpu --print-to-pdf=manuscript/_manuscript/handbuch-diskriminierungsfreie-metadaten.pdf  --scale=1.0 --no-pdf-header-footer --print-background --virtual-time-budget=10000 file:///$(pwd)/manuscript/_manuscript/index.html
 
-      - name: Clean up
-        run: |
-          rm -rf ./handbuch-diskriminierungsfreie-metadaten_files/
-          rm -rf ./_tex/
-
       - name: JamPack
         run: |
-          npx @divriots/jampack .
+          pnpm run jampack
 
       - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
+        if: github.repository == 'maehr/open-research-data-template' && github.ref == 'refs/heads/main'
         with:
           path: manuscript
           target: gh-pages
