@@ -40,13 +40,13 @@ key-points:
   - Zielgruppe: Archivar\*innen, Bibliothekar\*innen, Historiker\*innen und Data Stewards.
   - Praxisnahe Fallbeispiele: Detaillierte Szenarien aus unterschiedlichen historischen Epochen und Herausforderungen verdeutlichen die Anwendung der Theorie in der Praxis.
   - Living Document: Das Handbuch wird als offenes Dokument auf GitHub veröffentlicht und steht der Community zur Weiterentwicklung zur Verfügung.
-date: {{LATEST_DATE}}
+date: 2024-06-03
 bibliography: references.bib
 nocite: |
   @*
 citation:
   type: report
-  doi: {{LATEST_DOI}}
+  doi: 10.5281/zenodo.11124720
   url: https://maehr.github.io/diskriminierungsfreie-metadaten/
 number-sections: true
 ---
