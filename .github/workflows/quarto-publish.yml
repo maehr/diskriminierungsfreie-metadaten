@@ -10,9 +10,8 @@ on:
 name: Render and Publish
 
 permissions:
-  contents: read
+  contents: write
   pages: write
-  id-token: write
 
 jobs:
   lint:
@@ -97,7 +96,7 @@ jobs:
 
       - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
-        if: github.repository == 'maehr/open-research-data-template' && github.ref == 'refs/heads/main'
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         with:
           path: manuscript
           target: gh-pages

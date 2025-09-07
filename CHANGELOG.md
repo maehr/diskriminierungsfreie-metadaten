@@ -29,6 +29,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Improved code formatting and linting setup
 - Enhanced GitHub Actions workflows
 
+### References
+
+- Archived version: [DOI: 10.5281/zenodo.17073511](https://doi.org/10.5281/zenodo.17073511)
+
 ## [v1.0.0](https://github.com/maehr/diskriminierungsfreie-metadaten/releases/tag/v1.0.0) - 2024-06-03
 
 ### Features
