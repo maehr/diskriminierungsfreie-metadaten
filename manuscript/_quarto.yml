@@ -2,9 +2,7 @@ project:
   type: manuscript
 
 manuscript:
-  article: handbuch-diskriminierungsfreie-metadaten.qmd
-  resources:
-    - data/genderopen_gnd_mapping.csv
+  # article: handbuch-diskriminierungsfreie-metadaten.qmd
   code-links:
     - text: Diskussion Living Document
       href: https://github.com/maehr/diskriminierungsfreie-metadaten/discussions
@@ -27,14 +25,14 @@ format:
       - custom-header.html
     page-layout: full
     license: CC BY-SA
-  docx:
-    reference-doc: custom-reference.docx
-    fig-align: left
-    subject: Diskriminierungsfreie Metadaten
-    category: Handbuch
-    toc: true
-    toc-depth: 3
-    toc-title: Inhaltsverzeichnis
-  pdf:
-    pdf-engine: xelatex
-    keep-tex: false
+  # docx:
+  #   reference-doc: custom-reference.docx
+  #   fig-align: left
+  #   subject: Diskriminierungsfreie Metadaten
+  #   category: Handbuch
+  #   toc: true
+  #   toc-depth: 3
+  #   toc-title: Inhaltsverzeichnis
+  # pdf:
+  #   pdf-engine: xelatex
+  #   keep-tex: false

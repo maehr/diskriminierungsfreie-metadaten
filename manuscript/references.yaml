@@ -1,0 +1,1108 @@
+---
+references:
+  - id: '2025'
+    citation-key: '2025'
+    genre: Antidiskriminierungsgesetz ADG - Dossier
+    issued:
+      - year: 2025
+        month: 12
+        day: 3
+    publisher: Humanrights.ch
+    title: 'Ausgangslage: Inwieweit schützt das aktuelle Recht vor Diskriminierung?'
+    type: report
+    URL: >-
+      https://www.humanrights.ch/de/ipf/menschenrechte/diskriminierung/antidiskriminierungsgesetz/adg-ausgangslage/
+
+  - id: baroncini_access_2025
+    author:
+      - family: Baroncini
+        given: S.
+      - family: Buyken
+        given: C.
+      - family: Garzón Rodríguez
+        given: J.
+      - family: Marino
+        given: I. K.
+      - family: Oberbichler
+        given: S.
+      - family: Petz
+        given: C.
+    citation-key: baroncini_access_2025
+    issued:
+      - year: 2025
+        month: 8
+        day: 1
+    publisher: DH Lab
+    title: From access to ethics. Data discussions at the DH2025 conference in lisbon
+    type: webpage
+    URL: https://dhlab.hypotheses.org/7355
+
+  - id: baroncini2025
+    abstract: >-
+      by Sofia Baroncini, Constanze Buyken, Judit Garzón Rodríguez, Ian Kisil
+      Marino, Sarah Oberbichler, Cindarella Petz The 2025 Digital Humanities
+      Conference, held this year in Lisbon under the theme “Building Access and
+      Accessibility: Open Science to All Citizens”, brought together a global
+      community of researchers, developers, and practitioners to reflect on the
+      role of openness, inclusivity, … „From Access to Ethics: Data Discussions at
+      the DH2025 Conference in Lisbon“ weiterlesen
+    accessed:
+      - year: 2025
+        month: 9
+        day: 7
+    author:
+      - family: Baroncini
+        given: Sofia
+    citation-key: baroncini2025
+    container-title: DH Lab
+    DOI: 10.58079/14gdf
+    genre: Billet
+    ISSN: 2702-7368
+    issued:
+      - year: 2025
+        month: 8
+        day: 1
+    language: de
+    title: 'From Access to Ethics: Data Discussions at the DH2025 Conference in Lisbon'
+    title-short: From Access to Ethics
+    type: post-weblog
+    URL: https://dhlab.hypotheses.org/7355
+
+  - id: basta2019
+    abstract: >-
+      Gender bias is highly impacting natural language processing applications.
+      Word embeddings have clearly been proven both to keep and amplify gender
+      biases that are present in current data sources. Recently, contextualized
+      word embeddings have enhanced previous word embedding techniques by
+      computing word vector representations dependent on the sentence they appear
+      in. In this paper, we study the impact of this conceptual change in the word
+      embedding computation in relation with gender bias. Our analysis includes
+      different measures previously applied in the literature to standard word
+      embeddings. Our findings suggest that contextualized word embeddings are
+      less biased than standard ones even when the latter are debiased.
+    accessed:
+      - year: 2025
+        month: 7
+        day: 14
+    author:
+      - family: Basta
+        given: Christine
+      - family: Costa-jussà
+        given: Marta R.
+      - family: Casas
+        given: Noe
+    citation-key: basta2019
+    DOI: 10.48550/arXiv.1904.08783
+    issued:
+      - year: 2019
+        month: 4
+        day: 18
+    number: arXiv:1904.08783
+    publisher: arXiv
+    source: arXiv.org
+    title: Evaluating the Underlying Gender Bias in Contextualized Word Embeddings
+    type: article
+    URL: http://arxiv.org/abs/1904.08783
+
+  - id: berlinredaktion2025
+    abstract: >-
+      Große Sprachmodelle fordern die Geisteswissenschaften in ihrem
+      traditionsreichen Handwerk heraus: der Textarbeit. Zusammenfassungen,
+      Exzerpte, Hervorheben von Argumentationslinien sowie die grammatische
+      Textgenerierung überzeugen und verbessern sich in einem rasanten Tempo.
+      Diesen Ergebnissen hinkt die inhaltliche Qualität der Textgenerierung noch
+      hinterher. Doch dieses Ungleichgewicht wird fortlaufend geringer, es ist
+      sogar aktiv steuerbar. In dieser Blogreihe wird dieser Verwendung und
+      Steuerbarkeit von großen Sprachmodellen nachgegangen und anhand von
+      Praxisbeispielen verdeutlicht. Die Blogreihe wurde von Studierenden verfasst
+      und greift die Lerninhalte der Lehrveranstaltung „Wie verändern große
+      Sprachmodelle die Geschichtswissenschaften?“ aus dem Wintersemester 2024/25
+      unter der Leitung von Prof. Dr. Torsten Hiltmann auf.
+    accessed:
+      - year: 2025
+        month: 6
+        day: 4
+    author:
+      - family: Berlin (Redaktion)
+        given: Digital History
+    citation-key: berlinredaktion2025
+    container-title: Digital History Berlin
+    DOI: 10.58079/13wcq
+    genre: Billet
+    issued:
+      - year: 2025
+        month: 5
+        day: 9
+    language: de
+    title: >-
+      Wie verändern große Sprachmodelle die Geschichtswissenschaften? Eine
+      studentische Blogreihe zur Anwendung von LLMs in der historischen Forschung.
+    title-short: Wie verändern große Sprachmodelle die Geschichtswissenschaften?
+    type: post-weblog
+    URL: https://dhistory.hypotheses.org/10289
+
+  - id: bowker1999
+    abstract: >-
+      A revealing and surprising look at how classification systems can shape both
+      worldviews and social interactions.What do a seventeenth-century mortality
+      tab
+    accessed:
+      - year: 2025
+        month: 7
+        day: 10
+    author:
+      - family: Bowker
+        given: Geoffrey C.
+      - family: Star
+        given: Susan Leigh
+    citation-key: bowker1999
+    DOI: 10.7551/mitpress/6352.001.0001
+    ISBN: 978-0-262-26907-0
+    issued:
+      - year: 1999
+        month: 9
+        day: 29
+    language: en
+    publisher: The MIT Press
+    source: direct.mit.edu
+    title: 'Sorting Things Out: Classification and Its Consequences'
+    title-short: Sorting Things Out
+    type: book
+    URL: >-
+      https://direct.mit.edu/books/monograph/4738/Sorting-Things-OutClassification-and-Its
+
+  - id: bowker1999a
+    abstract: >-
+      A revealing and surprising look at how classification systems can shape both
+      worldviews and social interactions.What do a seventeenth-century mortality
+      tab
+    accessed:
+      - year: 2025
+        month: 9
+        day: 7
+    author:
+      - family: Bowker
+        given: Geoffrey C.
+      - family: Star
+        given: Susan Leigh
+    citation-key: bowker1999a
+    DOI: 10.7551/mitpress/6352.001.0001
+    ISBN: 978-0-262-26907-0
+    issued:
+      - year: 1999
+        month: 9
+        day: 29
+    language: en
+    publisher: The MIT Press
+    source: direct.mit.edu
+    title: 'Sorting Things Out: Classification and Its Consequences'
+    title-short: Sorting Things Out
+    type: book
+    URL: >-
+      https://direct.mit.edu/books/monograph/4738/Sorting-Things-OutClassification-and-Its
+
+  - id: budde2008
+    author:
+      - family: Budde
+        given: Gunilla
+    citation-key: budde2008
+    container-title: Geschichte.Studium - Wissenschaft - Beruf
+    editor:
+      - family: Freist
+        given: Dagmar
+      - family: Günther-Arndt
+        given: Hilke
+    event-place: Berlin
+    issued:
+      - year: 2008
+    page: 52-69
+    publisher-place: Berlin
+    title: Quellen, Quellen, Quellen ...
+    type: chapter
+    URL: >-
+      https://elearning.uni-oldenburg.de/sendfile.php?type=0&file_id=5435fe2c79f320a9d7465f0f61851ca5&file_name=budde_quellen-quellen-quellen.pdf&set_language=de_DE
+
+  - id: costa-jussa2022
+    accessed:
+      - year: 2025
+        month: 7
+        day: 14
+    author:
+      - family: Costa-Jussà
+        given: Marta R.
+      - family: Escolano
+        given: Carlos
+      - family: Basta
+        given: Christine
+      - family: Ferrando
+        given: Javier
+      - family: Batlle
+        given: Roser
+      - family: Kharitonova
+        given: Ksenia
+    citation-key: costa-jussa2022
+    container-title: Proceedings of the aaai conference on artificial intelligence
+    issue: '11'
+    issued:
+      - year: 2022
+    page: 11855–11863
+    source: Google Scholar
+    title: >-
+      Interpreting gender bias in neural machine translation: Multilingual
+      architecture matters
+    title-short: Interpreting gender bias in neural machine translation
+    type: paper-conference
+    URL: https://ojs.aaai.org/index.php/AAAI/article/view/21442
+    volume: '36'
+
+  - id: dignazio2020
+    author:
+      - family: D'Ignazio
+        given: Catherine
+      - family: Klein
+        given: Lauren
+    citation-key: dignazio2020
+    container-title: Data Feminism
+    issued:
+      - year: 2020
+        month: 3
+        day: 16
+    language: english
+    page: 2-41
+    publisher: The MIT Press
+    title: Collect, Analyze, Imagine, Teach
+    type: chapter
+    URL: https://data-feminism.mitpress.mit.edu/pub/ei7cogfn
+
+  - id: eynden2011
+    author:
+      - family: Eynden
+        given: Veerle
+        dropping-particle: van den
+    citation-key: eynden2011
+    edition: 3rd ed., fully rev
+    event-place: Colchester
+    ISBN: 978-1-904059-78-3
+    issued:
+      - year: 2011
+    language: en
+    note: 'OCLC: 731028890'
+    publisher: UK Data Archive
+    publisher-place: Colchester
+    source: Open WorldCat
+    title: 'Managing and sharing data: best practice for researchers'
+    title-short: Managing and sharing data
+    type: book
+
+  - id: frye_politics_1983
+    author:
+      - family: Frye
+        given: Marilyn
+    citation-key: frye_politics_1983
+    event-place: Trumansburg, NY
+    ISBN: 978-0-89594-099-5
+    issued:
+      - year: 1983
+    publisher: Crossing Press
+    publisher-place: Trumansburg, NY
+    title: 'The politics of reality: Essays in feminist theory'
+    type: book
+
+  - id: gofairinitiative
+    abstract: >-
+      In 2016, the ‘FAIR Guiding Principles for scientific data management and
+      stewardship’ 1 were pub-
+
+      lished in Scientific Data. The authors intended to provide guidelines to
+      improve the F indability,
+
+      Accessibility, Interoperability, and Reusability of digital assets. The
+      principles emphasise machine-
+
+      actionability (i.e., the capacity of computational systems to find, access,
+      interoperate, and reuse data
+
+      with none or minimal human intervention) because humans increasingly rely on
+      computational sup-
+
+      port to deal with data as a result of the increase in volume, complexity,
+      and creation speed of data.
+    accessed:
+      - year: 2022
+        month: 9
+        day: 22
+    author:
+      - literal: Go FAIR Initiative
+    citation-key: gofairinitiative
+    title: FAIR Principles
+    type: document
+    URL: >-
+      https://www.go-fair.org/wp-content/uploads/2022/01/FAIRPrinciples_overview.pdf
+
+  - id: gooding2025
+    abstract: >-
+      Through the web of library catalogs, library management systems and myriad
+      digital resources, libraries have become repositories not only for physical
+      and digital information resources but also for enormous amounts of data
+      about the interactions between these resources and their users. Bringing
+      together leading practitioners and academic voices, this book aims to
+      consider library catalogue data as a research resource. Separated into four
+      sections, the book discusses a range of topics surrounding library
+      information and data, including: Practical routes to preparing library
+      catalogue data for researchers; The ethics of library metadata privacy and
+      reuse; Data interoperability across library systems; Data and collections
+      bias; Library-vendor relationships and data licensing; The practical and
+      theoretical issues inherent in reimagining administrative, usage, and
+      bibliographic data as a research resource; and Scholarship that responds to
+      the possibilities of library data
+    citation-key: gooding2025
+    editor:
+      - family: Gooding
+        given: Paul
+      - family: Terras
+        given: Melissa M.
+      - family: Ames
+        given: Sarah
+    event-place: Place of publication not identified
+    ISBN: 978-1-78330-658-9
+    issued:
+      - year: 2025
+    language: eng
+    note: 'OCLC: 1474008533'
+    publisher: Facet Publishing
+    publisher-place: Place of publication not identified
+    source: Open WorldCat
+    title: 'Library catalogues as data: research, practice and usage'
+    title-short: Library catalogues as data
+    type: book
+
+  - id: higgins2008
+    abstract: >-
+      Lifecycle management of digital materials is necessary to ensure their
+      continuity. The DCC Curation Lifecycle Model has been developed as a
+      generic, curation-specific, tool which can be used, in conjunction with
+      relevant standards, to plan curation and preservation activities to
+      different levels of granularity. The DCC will use the model: as a training
+      tool for data creators, data curators and data users; to organise and plan
+      their resources; and to help organisations identify risks to their digital
+      assets and plan management strategies for their successful curation.
+    accessed:
+      - year: 2025
+        month: 7
+        day: 9
+    author:
+      - family: Higgins
+        given: Sarah
+    citation-key: higgins2008
+    container-title: International Journal of Digital Curation
+    container-title-short: IJDC
+    DOI: 10.2218/ijdc.v3i1.48
+    ISSN: 1746-8256
+    issue: '1'
+    issued:
+      - year: 2008
+        month: 12
+        day: 2
+    license: http://creativecommons.org/licenses/by/4.0
+    page: 134-140
+    publisher: University of Edinburgh
+    source: Crossref
+    title: The DCC Curation Lifecycle Model
+    type: article-journal
+    URL: https://ijdc.net/index.php/ijdc/article/view/48
+    volume: '3'
+
+  - id: jaillant2025
+    citation-key: jaillant2025
+    DOI: 10.14324/111.9781800088375
+    editor:
+      - family: Jaillant
+        given: Lise
+      - family: Warwick
+        given: Claire
+      - family: Gooding
+        given: Paul
+      - family: Aske
+        given: Katherine
+      - family: Layne-Worthey
+        given: Glen
+      - family: Downie
+        given: J. Stephen
+    event-place: London
+    ISBN: 978-1-80008-835-1
+    issued:
+      - year: 2025
+    publisher: UCL Press
+    publisher-place: London
+    title: Navigating artificial intelligence for cultural heritage organisations
+    type: book
+    URL: https://doi.org/10.14324/111.9781800088375
+
+  - id: junger2021
+    accessed:
+      - year: 2025
+        month: 6
+        day: 9
+    author:
+      - family: Junger
+        given: Ulrike
+      - family: Scholze
+        given: Frank
+    citation-key: junger2021
+    container-title: Qualität in der Inhaltserschließung
+    DOI: 10.1515/9783110691597-004
+    editor:
+      - family: Franke-Maier
+        given: Michael
+      - family: Kasprzik
+        given: Anna
+      - family: Ledl
+        given: Andreas
+      - family: Schürmann
+        given: Hans
+    ISBN: 978-3-11-069159-7
+    issued:
+      - year: 2021
+        month: 10
+        day: 4
+    language: de
+    license: http://creativecommons.org/licenses/by/4.0
+    page: 55-70
+    publisher: De Gruyter Saur
+    source: www.degruyterbrill.com
+    title: >-
+      Neue Wege und Qualitäten – Die Inhaltserschließungspolitik der Deutschen
+      Nationalbibliothek
+    type: chapter
+    URL: https://www.degruyterbrill.com/document/doi/10.1515/9783110691597-004/html
+
+  - id: kaiser2023
+    abstract: >-
+      Recent debates have highlighted the colonial roots and legacies of museums,
+      prompting intense discussions about these institutions within the museums
+      themselves. Amidst the debates, policy-makers and museum professionals
+      worldwide have come to regard the digitisation of collections as an
+      important means for addressing global inequity by advancing fast and fair
+      access to collection items. In this paper we want to caution against the
+      hope that political problems can be solved by technical solutions alone. We
+      argue that the digitisation of collections, like any other technology,
+      integrates assumptions and preferences-about people, capacities,
+      values-that, if left unchecked, reproduce or reinforce inequities. We
+      present different approaches and initiatives developed at the Museum für
+      Naturkunde Berlin (Natural History Museum Berlin, MfN) assessing critical
+      questions about the assumptions and preferences congealed in digitisation
+      efforts. What rationales and imaginaries structure digitisation? Who is
+      served by normative concepts such as transparency, access, participation and
+      standardisation? We argue that digitisation efforts, rather than offering a
+      solution, provide an opportunity to consider the unequal distribution of
+      power, historical responsibilities and epistemic injustices. This paper
+      concludes with tentative recommendations for the digitisation of natural
+      history collections from colonial contexts.
+    author:
+      - family: Kaiser
+        given: Katja
+      - family: Heumann
+        given: Ina
+      - family: Nadim
+        given: Tahani
+      - family: Keysar
+        given: Hagit
+      - family: Petersen
+        given: Mareike
+      - family: Korun
+        given: Meryem
+      - family: Berger
+        given: Frederik
+    citation-key: kaiser2023
+    issued:
+      - year: 2023
+        month: 2
+        day: 7
+    page: 13-25
+    source: ResearchGate
+    title: >-
+      Promises of mass digitisation and the colonial realities of natural history
+      collections
+    type: article-journal
+    volume: '11'
+
+  - id: koenig2024
+    abstract: >-
+      Dies ist ein pragmatischer und praxisorientierter Beitrag zum Einsatz von
+      KI-Tools wie ChatGPT und Co. in den Geschichtswissenschaften. Als
+      begleitende Assistenten können sie für Historiker:innen bei einer Vielzahl
+      von Aufgaben produktiv von Nutzen sein. Doch für welche konkret? Was muss
+      man beachten? Und wie formuliert man gute Prompts?
+    accessed:
+      - year: 2025
+        month: 6
+        day: 4
+    author:
+      - family: König
+        given: Mareike
+    citation-key: koenig2024
+    container-title: Digital Humanities am DHIP
+    DOI: 10.58079/126eo
+    genre: Billet
+    ISSN: 2262-5852
+    issued:
+      - year: 2024
+        month: 8
+        day: 19
+    language: de
+    title: >-
+      ChatGPT und Co. in den Geschichtswissenschaften – Grundlagen, Prompts und
+      Praxisbeispiele
+    type: post-weblog
+    URL: https://dhdhi.hypotheses.org/9197
+
+  - id: loukissas2019
+    author:
+      - family: Loukissas
+        given: Yanni Alexander
+    citation-key: loukissas2019
+    DOI: https://doi.org/10.7551/mitpress/11543.001.0001
+    ISBN: 978-0-262-35221-5
+    issued:
+      - year: 2019
+    publisher: The MIT Press
+    title: 'All Data Are Local: Thinking Critically in a Data-Driven Society'
+    type: book
+
+  - id: loukissas2019a
+    abstract: >-
+      How to analyze data settings rather than data sets, acknowledging the
+      meaning-making power of the local.In our data-driven society, it is too easy
+      to assum
+    accessed:
+      - year: 2025
+        month: 9
+        day: 7
+    author:
+      - family: Loukissas
+        given: Yanni Alexander
+    citation-key: loukissas2019a
+    DOI: 10.7551/mitpress/11543.001.0001
+    ISBN: 978-0-262-35221-5
+    issued:
+      - year: 2019
+        month: 4
+        day: 30
+    language: en
+    publisher: The MIT Press
+    source: direct.mit.edu
+    title: 'All Data Are Local: Thinking Critically in a Data-Driven Society'
+    title-short: All Data Are Local
+    type: book
+    URL: >-
+      https://direct.mit.edu/books/oa-monograph/4323/All-Data-Are-LocalThinking-Critically-in-a-Data
+
+  - id: mehrabi2021
+    abstract: >-
+      With the widespread use of artificial intelligence (AI) systems and
+      applications in our everyday lives, accounting for fairness has gained
+      significant importance in designing and engineering of such systems. AI
+      systems can be used in many sensitive environments to make important and
+      life-changing decisions; thus, it is crucial to ensure that these decisions
+      do not reflect discriminatory behavior toward certain groups or populations.
+      More recently some work has been developed in traditional machine learning
+      and deep learning that address such challenges in different subdomains. With
+      the commercialization of these systems, researchers are becoming more aware
+      of the biases that these applications can contain and are attempting to
+      address them. In this survey, we investigated different real-world
+      applications that have shown biases in various ways, and we listed different
+      sources of biases that can affect AI applications. We then created a
+      taxonomy for fairness definitions that machine learning researchers have
+      defined to avoid the existing bias in AI systems. In addition to that, we
+      examined different domains and subdomains in AI showing what researchers
+      have observed with regard to unfair outcomes in the state-of-the-art methods
+      and ways they have tried to address them. There are still many future
+      directions and solutions that can be taken to mitigate the problem of bias
+      in AI systems. We are hoping that this survey will motivate researchers to
+      tackle these issues in the near future by observing existing work in their
+      respective fields.
+    accessed:
+      - year: 2025
+        month: 7
+        day: 10
+    author:
+      - family: Mehrabi
+        given: Ninareh
+      - family: Morstatter
+        given: Fred
+      - family: Saxena
+        given: Nripsuta
+      - family: Lerman
+        given: Kristina
+      - family: Galstyan
+        given: Aram
+    citation-key: mehrabi2021
+    container-title: ACM Computing Surveys
+    container-title-short: ACM Comput. Surv.
+    DOI: 10.1145/3457607
+    ISSN: 0360-0300, 1557-7341
+    issue: '6'
+    issued:
+      - year: 2021
+        month: 7
+        day: 13
+    language: en
+    license: https://www.acm.org/publications/policies/copyright_policy#Background
+    page: 115:1–115:35
+    publisher: Association for Computing Machinery (ACM)
+    source: Crossref
+    title: A Survey on Bias and Fairness in Machine Learning
+    type: article-journal
+    URL: https://doi.org/10.1145/3457607
+    volume: '54'
+
+  - id: nayak2024
+    abstract: >-
+      Foundation models and vision-language pre-training have notably advanced
+      Vision Language Models (VLMs), enabling multimodal processing of visual and
+      linguistic data. However, their performance has been typically assessed on
+      general scene understanding - recognizing objects, attributes, and actions -
+      rather than cultural comprehension. This study introduces CulturalVQA, a
+      visual question-answering benchmark aimed at assessing VLM's geo-diverse
+      cultural understanding. We curate a collection of 2,378 image-question pairs
+      with 1-5 answers per question representing cultures from 11 countries across
+      5 continents. The questions probe understanding of various facets of culture
+      such as clothing, food, drinks, rituals, and traditions. Benchmarking VLMs
+      on CulturalVQA, including GPT-4V and Gemini, reveals disparity in their
+      level of cultural understanding across regions, with strong cultural
+      understanding capabilities for North America while significantly lower
+      performance for Africa. We observe disparity in their performance across
+      cultural facets too, with clothing, rituals, and traditions seeing higher
+      performances than food and drink. These disparities help us identify areas
+      where VLMs lack cultural understanding and demonstrate the potential of
+      CulturalVQA as a comprehensive evaluation set for gauging VLM progress in
+      understanding diverse cultures.
+    accessed:
+      - year: 2025
+        month: 7
+        day: 14
+    author:
+      - family: Nayak
+        given: Shravan
+      - family: Jain
+        given: Kanishk
+      - family: Awal
+        given: Rabiul
+      - family: Reddy
+        given: Siva
+      - family: Steenkiste
+        given: Sjoerd
+        dropping-particle: van
+      - family: Hendricks
+        given: Lisa Anne
+      - family: Stańczak
+        given: Karolina
+      - family: Agrawal
+        given: Aishwarya
+    citation-key: nayak2024
+    DOI: 10.48550/arXiv.2407.10920
+    issued:
+      - year: 2024
+        month: 10
+        day: 14
+    number: arXiv:2407.10920
+    publisher: arXiv
+    source: arXiv.org
+    title: Benchmarking Vision Language Models for Cultural Understanding
+    type: article
+    URL: http://arxiv.org/abs/2407.10920
+
+  - id: net2024
+    abstract: >-
+      In this paper, we address the challenges of automatic metadata annotation in
+      the domain of Galleries, Libraries, Archives, and Museums (GLAMs) by
+      introducing a novel dataset, EUFCC340K, collected from the Europeana portal.
+      Comprising over 340,000 images, the EUFCC340K dataset is organized across
+      multiple facets: Materials, Object Types, Disciplines, and Subjects,
+      following a hierarchical structure based on the Art & Architecture Thesaurus
+      (AAT). We developed several baseline models, incorporating multiple heads on
+      a ConvNeXT backbone for multi-label image tagging on these facets, and
+      fine-tuning a CLIP model with our image text pairs. Our experiments to
+      evaluate model robustness and generalization capabilities in two different
+      test scenarios demonstrate the utility of the dataset in improving
+      multi-label classification tools that have the potential to alleviate
+      cataloging tasks in the cultural heritage sector.
+    accessed:
+      - year: 2025
+        month: 6
+        day: 9
+    author:
+      - family: Net
+        given: Francesc
+      - family: Folia
+        given: Marc
+      - family: Casals
+        given: Pep
+      - family: Bagdanov
+        given: Andrew D.
+      - family: Gomez
+        given: Lluis
+    citation-key: net2024
+    DOI: 10.48550/arXiv.2406.02380
+    issued:
+      - year: 2024
+        month: 6
+        day: 4
+    number: arXiv:2406.02380
+    publisher: arXiv
+    source: arXiv.org
+    title: >-
+      EUFCC-340K: A Faceted Hierarchical Dataset for Metadata Annotation in GLAM
+      Collections
+    title-short: EUFCC-340K
+    type: article
+    URL: http://arxiv.org/abs/2406.02380
+
+  - id: researchdataallianceinternationalindigenousdatasovereigntyinterestgroup2019
+    accessed:
+      - year: 2022
+        month: 9
+        day: 21
+    author:
+      - literal: >-
+          Research Data Alliance International Indigenous Data Sovereignty
+          Interest Group
+    citation-key: researchdataallianceinternationalindigenousdatasovereigntyinterestgroup2019
+    issued:
+      - year: 2019
+        month: 9
+        day: 6
+    title: CARE Principles for Indigenous Data Governance
+    type: document
+    URL: >-
+      https://static1.squarespace.com/static/5d3799de845604000199cd24/t/5d79c383e904c741c9e9cd86/1568260995760/CARE+Principles+for+Indigenous+Data+Governance_FINAL_Sept+06+2019.pdf
+
+  - id: rodgers_oneill_infrastructural_2012
+    author:
+      - family: Rodgers
+        given: Dennis
+      - family: O’Neill
+        given: Bruce
+    citation-key: rodgers_oneill_infrastructural_2012
+    container-title: Ethnography
+    DOI: 10.1177/1466138111435738
+    issue: '4'
+    issued:
+      - year: 2012
+    page: 401–412
+    title: 'Infrastructural violence: Introduction to the special issue'
+    type: article-journal
+    volume: '13'
+
+  - id: rottmann2023
+    author:
+      - family: Rottmann
+        given: Andrea
+    citation-key: rottmann2023
+    container-title: Archiv - Theorie & Praxis
+    issue: 76. Jahrgang
+    issued:
+      - year: 2023
+        month: 11
+    language: de
+    page: 21-24
+    title: >-
+      Que/e/r zur Ordnung des Archivs? Queere Geschichte in staatlichen Archiven
+      erforschen
+    type: article-journal
+    URL: >-
+      https://www.archive.nrw.de/sites/default/files/media/files/Archiv.theoriepraxis23-4-Internet.pdf
+    volume: '04'
+
+  - id: schopper2024
+    abstract: >-
+      Anschließend an die "Grundlagen des Datenmanagements" und der praktischen
+      Übung zu Datenmanagement bietet dieser Kurs eine Einführung in das Thema
+      Metadaten. Was sind Metadaten? Aus welchen Komponenten bestehen sie? Und
+      welche Typen von Metadaten können wir unterscheiden?
+    accessed:
+      - year: 2025
+        month: 9
+        day: 7
+    author:
+      - family: Schopper
+        given: Daniel
+    citation-key: schopper2024
+    container-title: DARIAH-Campus
+    issued:
+      - year: 2024
+        month: 9
+        day: 18
+    language: de
+    publisher: DARIAH-Campus
+    source: campus.dariah.eu
+    title: Einführung in Metadaten und Dokumentation
+    type: article-journal
+    URL: https://campus.dariah.eu/resources/hosted/einfuehrung-metadaten
+
+  - id: schweiz
+    abstract: >-
+      Webdossier: KI im Museum Künstliche Intelligenz hat sich innerhalb kurzer
+      Zeit von einer Nischentechnologie zu einem zentralen Transformationstreiber
+      für Museen entwickelt. Dieses Dossier stellt einen Überblick über die
+      wichtigsten Fragen dar und wird laufend aktualisiert und ergänzt. Einführung
+      Sammlungen katalogisieren sich fast von selbst, Besucher:innen erhalten
+      Führungen von virtuellen Guides und die Herkunft der Ausstellungsobjekte
+      wird durch KI detailliert erforscht. Science-Fiction? Längst Realität.
+      Künstliche Intelligenz hat sich innerhalb kurzer Zeit von einer
+      Nischentechnologie zu einem zentralen Transformationstreiber für Museen
+      entwickelt. Nach Jahren der «Digitalisierung von Kultur» steht der
+      Museumssektor nun vor der Herausforderung, sich in einer «Kultur der
+      Digitalität» zu positionieren. Der Begriff «Künstliche Intelligenz» ist
+      allerdings diffus und fungiert als Sammelbegriff für verschiedene
+      Technologien. Meistens gemeint ist die sogenannte generative KI. Im
+      Gegensatz zu traditioneller KI, welche bestimmte Aufgaben nach vorgegebenen
+      Regeln ausführt (z.B. Schachcomputer oder Übersetzer), lernt die generative
+      KI aus grossen Datenmengen selbstständig dazu und kann so neue, einzigartige
+      Inhalte erstellen. Darunter fallen Texte ebenso wie Bilder und Designs,
+      Videos, Musik und Sprache oder sogar Codes für Software-Entwicklung. Die
+      jüngsten Durchbrüche bei generativer KI, ausgelöst durch ChatGPT, haben das
+      Thema in den Mainstream gebracht. Für Museen bietet KI zahlreiche
+      Möglichkeiten: Von der Automatisierung der Sammlungserschliessung über die
+      Provenienzforschung bis hin zu personalisierten Vermittlungsangeboten und
+      Besuchserlebnissen. Gleichzeitig stellen sich grundlegende Fragen zu
+      Authentizität, Urheberrecht, Ethik und der Rolle des Museums.
+    accessed:
+      - year: 2025
+        month: 9
+        day: 7
+    author:
+      - family: Schweiz
+        given: Verband der Museen
+        dropping-particle: der
+    citation-key: schweiz
+    container-title: museums.ch
+    language: de
+    title: 'Webdossier: KI im Museum'
+    title-short: Webdossier
+    type: webpage
+    URL: >-
+      https://www.museums.ch/de/unser-engagement/mitteilungen/aktuelles/webdossier-ki-im-museum-6966.html
+
+  - id: spivak_subaltern_1988
+    author:
+      - family: Spivak
+        given: Gayatri Chakravorty
+    citation-key: spivak_subaltern_1988
+    container-title: Marxism and the interpretation of culture
+    editor:
+      - family: Nelson
+        given: Cary
+      - family: Grossberg
+        given: Lawrence
+    event-place: Urbana and Chicago
+    ISBN: 978-3-85132-506-5
+    issued:
+      - year: 1988
+    page: 271–313
+    publisher: University of Illinois Press
+    publisher-place: Urbana and Chicago
+    title: Can the subaltern speak?
+    type: chapter
+
+  - id: stanczak2021
+    abstract: >-
+      Language can be used as a means of reproducing and enforcing harmful
+      stereotypes and biases and has been analysed as such in numerous research.
+      In this paper, we present a survey of 304 papers on gender bias in natural
+      language processing. We analyse definitions of gender and its categories
+      within social sciences and connect them to formal definitions of gender bias
+      in NLP research. We survey lexica and datasets applied in research on gender
+      bias and then compare and contrast approaches to detecting and mitigating
+      gender bias. We find that research on gender bias suffers from four core
+      limitations. 1) Most research treats gender as a binary variable neglecting
+      its fluidity and continuity. 2) Most of the work has been conducted in
+      monolingual setups for English or other high-resource languages. 3) Despite
+      a myriad of papers on gender bias in NLP methods, we find that most of the
+      newly developed algorithms do not test their models for bias and disregard
+      possible ethical considerations of their work. 4) Finally, methodologies
+      developed in this line of research are fundamentally flawed covering very
+      limited definitions of gender bias and lacking evaluation baselines and
+      pipelines. We suggest recommendations towards overcoming these limitations
+      as a guide for future research.
+    accessed:
+      - year: 2025
+        month: 7
+        day: 14
+    author:
+      - family: Stanczak
+        given: Karolina
+      - family: Augenstein
+        given: Isabelle
+    citation-key: stanczak2021
+    DOI: 10.48550/arXiv.2112.14168
+    issued:
+      - year: 2021
+        month: 12
+        day: 28
+    number: arXiv:2112.14168
+    publisher: arXiv
+    source: arXiv.org
+    title: A Survey on Gender Bias in Natural Language Processing
+    type: article
+    URL: http://arxiv.org/abs/2112.14168
+
+  - id: toth-czifra2019
+    abstract: >-
+      This DARIAH Guide brings together tools, videos, short articles and other
+      training materials that might be relevant when reflecting on your data
+      management processes both in the immediate context of your research and in
+      their broader disciplinary context. Its aim is to equip you with tools and
+      practical advice, but more importantly, with conceptual twists that will
+      help you to establish ethically committed, optimal and as open as possible
+      research and data management workflows.
+    accessed:
+      - year: 2025
+        month: 9
+        day: 7
+    author:
+      - family: Tóth-Czifra
+        given: Erzsébet
+    citation-key: toth-czifra2019
+    container-title: DARIAH-Campus
+    issued:
+      - year: 2019
+        month: 5
+        day: 3
+    language: en
+    publisher: DARIAH-Campus
+    source: campus.dariah.eu
+    title: DARIAH Pathfinder to Data Management Best Practices in the Humanities
+    type: article-journal
+    URL: >-
+      https://campus.dariah.eu/resources/pathfinders/dariah-pathfinder-to-data-management-best-practices-in-the-humanities
+
+  - id: trognitz2024
+    abstract: >-
+      Dieser Kurs gibt einen Einblick in die langfristige Bewahrung digitaler
+      Daten, d.h. die Archivierung digitaler Daten. Es werden praktische Tipps aus
+      der Perspektive der Datenersteller gegeben.
+    accessed:
+      - year: 2025
+        month: 9
+        day: 7
+    author:
+      - family: Trognitz
+        given: Martina
+    citation-key: trognitz2024
+    container-title: DARIAH-Campus
+    issued:
+      - year: 2024
+        month: 11
+        day: 21
+    language: de
+    publisher: DARIAH-Campus
+    source: campus.dariah.eu
+    title: Langzeitarchivierung
+    type: article-journal
+    URL: https://campus.dariah.eu/resources/hosted/langzeitarchivierung
+
+  - id: trognitz2024a
+    abstract: >-
+      Dieses Kapitel erläutert einige grundlegende Regeln für ein aktives und
+      gutes Datenmanagement und beschreibt, wie Dateien und Ordner sinnvoll und
+      eindeutig benannt und strukturiert werden können, wie man mit Versionierung
+      arbeitet und welche Dateiformate für die Nachnutzbarkeit und
+      Langzeitarchivierung geeignet sind.
+    accessed:
+      - year: 2025
+        month: 9
+        day: 7
+    author:
+      - family: Trognitz
+        given: Martina
+    citation-key: trognitz2024a
+    container-title: DARIAH-Campus
+    issued:
+      - year: 2024
+        month: 9
+        day: 16
+    language: de
+    publisher: DARIAH-Campus
+    source: campus.dariah.eu
+    title: Grundlagen des Datenmanagements
+    type: article-journal
+    URL: https://campus.dariah.eu/resources/hosted/grundlagen-datenmanagement
+
+  - id: young_justice_1990
+    author:
+      - family: Young
+        given: Iris Marion
+    citation-key: young_justice_1990
+    event-place: Princeton, NJ
+    ISBN: 978-0-691-02315-1
+    issued:
+      - year: 1990
+    publisher: Princeton University Press
+    publisher-place: Princeton, NJ
+    title: Justice and the politics of difference
+    type: book
+
+  - id: zotero-item-22723
+    accessed:
+      - year: 2025
+        month: 6
+        day: 9
+    citation-key: zotero-item-22723
+    language: de
+    title: Erschließungsmaschine gestartet – blog.dnb.de
+    type: post-weblog
+    URL: https://blog.dnb.de/erschliessungsmaschine-gestartet/
+
+  - id: zotero-item-22725
+    abstract: >-
+      Die DNB erschließt ihre Bestände formal und inhaltlich. Auf diese Weise
+      können Nutzer*innen zum Beispiel per Titel, Verlag, Schlagwort oder
+      Sachgruppe zum Gesuchten gelangen. Für die inhaltliche Erschließung von
+      Medienwerken nutzt die DNB bereits seit 2012 maschinelle Verfahren und KI.
+      Im April 2022 wurde ein neu entwickeltes System in Betrieb genommen: die
+      „Erschließungsmaschine“ (EMa). Das System generiert inhaltsbeschreibende
+      Metadaten zur Anreicherung der Nachweise im Katalog der DNB. Über die
+      Datendienste der DNB stehen diese Daten auch für externe Anwendungen zur
+      Verfügung. DDC-Sachgruppen, Schlagwörter aus der GND sowie
+      DDC-Kurznotationen der Sachgruppe Medizin für deutsch- und englischsprachige
+      Medienwerke werden schon mit dem neuen System erzeugt. Die Vergabe von
+      Kurznotationen für weitere 52 Sachgruppen wird vorübergehend noch mit dem
+      bisherigen Erschließungssystem durchgeführt.
+    accessed:
+      - year: 2025
+        month: 6
+        day: 9
+    citation-key: zotero-item-22725
+    container-title: Deutsche Nationalbibliothek
+    language: de
+    title: Start der Erschließungsmaschine eMA
+    type: webpage
+    URL: >-
+      https://jahresbericht.dnb.de/Webs/jahresbericht/DE/2022/Hoehepunkte/Erschliessungsmaschine/erschliessungsmaschine_node.html
+
+  - id: zotero-item-22813
+    abstract: >-
+      Personal website of Debora Nozza, Assistant Professor at Bocconi University
+      interested in Natural Language Processing and Machine Learning.
+    accessed:
+      - year: 2025
+        month: 7
+        day: 14
+    citation-key: zotero-item-22813
+    container-title: Debora Nozza
+    language: en-us
+    title: Debora Nozza
+    type: webpage
+    URL: https://www.deboranozza.com/
+
+  - id: zotero-item-22940
+    accessed:
+      - year: 2025
+        month: 9
+        day: 7
+    citation-key: zotero-item-22940
+    language: en-US
+    title: Metadata Resources | Steven Jack Miller
+    type: post-weblog
+    URL: https://sites.uwm.edu/mll/metadata-resources/
