@@ -10,7 +10,8 @@
 		"format": "prettier --ignore-path .gitignore --write . '!{CODE_OF_CONDUCT.md,LICENSE-AGPL.md,LICENSE-CCBYSA.md,_layouts/default.html,package-lock.json,pnpm-lock.yaml,yarn.lock}'",
 		"prepare": "husky",
 		"changelog": "pnpm exec git-cliff -- --config cliff.toml",
-		"jampack": "pnpm exec jampack manuscript/_manuscript"
+		"jampack": "pnpm exec jampack manuscript/_manuscript",
+		"fetch-doi": "node scripts/fetch-latest-doi.js"
 	},
 	"devDependencies": {
 		"commitizen": "^4.3.1",

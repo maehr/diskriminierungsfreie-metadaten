@@ -53,6 +53,15 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Set up Node.js for DOI script
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Inject latest DOI from Zenodo
+        run: |
+          node scripts/fetch-latest-doi.js
+
       - name: Overwrite _quarto.yml
         if: github.repository == 'maehr/open-research-data-template'
         run: |

@@ -14,7 +14,7 @@ manuscript:
 
 format:
   html:
-    doi: 10.5281/zenodo.11124720
+    doi: {{LATEST_DOI}}
     date-modified: last-modified
     link-external-icon: true
     link-external-newwindow: true

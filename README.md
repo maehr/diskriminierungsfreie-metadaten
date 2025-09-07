@@ -7,7 +7,7 @@ This repository contains the source of [Handbuch zur Erstellung diskriminierungs
 [![GitHub stars](https://img.shields.io/github/stars/maehr/diskriminierungsfreie-metadaten.svg)](https://github.com/maehr/diskriminierungsfreie-metadaten/stargazers)
 [![Code license](https://img.shields.io/github/license/maehr/diskriminierungsfreie-metadaten.svg)](https://github.com/maehr/diskriminierungsfreie-metadaten/blob/main/LICENSE-AGPL.md)
 [![Data license](https://img.shields.io/github/license/maehr/diskriminierungsfreie-metadaten.svg)](https://github.com/maehr/diskriminierungsfreie-metadaten/blob/main/LICENSE-CCBYSA.md)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11124720.svg)](https://doi.org/10.5281/zenodo.11124720)
+[![DOI](https://zenodo.org/badge/DOI/{{LATEST_DOI}}.svg)](https://doi.org/{{LATEST_DOI}})
 
 ## What is the publication about?
 
