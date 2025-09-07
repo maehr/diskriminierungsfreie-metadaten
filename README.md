@@ -53,12 +53,10 @@ We recommend using **GitHub Codespaces** for the easiest and fastest setup. It g
 </div>
 
 4. GitHub will now build a container that includes:
-
    - ✅ Node.js (via `npm`)
    - ✅ Quarto
 
 5. Once the Codespace is ready, you can preview the documentation locally inside the Codespace with:
-
    - **Open a terminal** in the Codespace (Terminal > New Terminal).
    - **Run the following command** to install all dependencies:
 
