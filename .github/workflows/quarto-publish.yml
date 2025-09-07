@@ -93,7 +93,7 @@ jobs:
 
       - name: JamPack
         run: |
-          pnpm run jampack
+          npx @divriots/jampack .
 
       - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
