@@ -12,6 +12,7 @@ import { join } from 'path';
 const ZENODO_CONCEPT_ID = '11124719';
 const ZENODO_API_URL = `https://zenodo.org/api/records/${ZENODO_CONCEPT_ID}/versions/latest`;
 const PLACEHOLDER = '{{LATEST_DOI}}';
+const SPACED_PLACEHOLDER = '{ { LATEST_DOI } }';
 
 /**
  * Fetch the latest DOI from Zenodo API
@@ -55,12 +56,16 @@ function replaceDOIInFile(filePath, doi) {
 
 		const content = readFileSync(filePath, 'utf8');
 
-		if (!content.includes(PLACEHOLDER)) {
+		if (!content.includes(PLACEHOLDER) && !content.includes(SPACED_PLACEHOLDER)) {
 			console.log(`No placeholder found in ${filePath}, skipping`);
 			return;
 		}
 
-		const updatedContent = content.replace(new RegExp(PLACEHOLDER, 'g'), doi);
+		let updatedContent = content.replace(new RegExp(PLACEHOLDER, 'g'), doi);
+		updatedContent = updatedContent.replace(
+			new RegExp(SPACED_PLACEHOLDER.replace(/[{}]/g, '\\$&'), 'g'),
+			doi
+		);
 		writeFileSync(filePath, updatedContent, 'utf8');
 
 		console.log(`Updated ${filePath} with DOI: ${doi}`);
@@ -81,7 +86,8 @@ async function main() {
 	const files = [
 		'README.md',
 		'manuscript/handbuch-diskriminierungsfreie-metadaten.qmd',
-		'manuscript/_quarto.yml'
+		'manuscript/_quarto.yml',
+		'CITATION.cff'
 	];
 
 	files.forEach((file) => {
