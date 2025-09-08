@@ -557,19 +557,6 @@ references:
     URL: https://dhdhi.hypotheses.org/9197
 
   - id: loukissas2019
-    author:
-      - family: Loukissas
-        given: Yanni Alexander
-    citation-key: loukissas2019
-    DOI: https://doi.org/10.7551/mitpress/11543.001.0001
-    ISBN: 978-0-262-35221-5
-    issued:
-      - year: 2019
-    publisher: The MIT Press
-    title: 'All Data Are Local: Thinking Critically in a Data-Driven Society'
-    type: book
-
-  - id: loukissas2019a
     abstract: >-
       How to analyze data settings rather than data sets, acknowledging the
       meaning-making power of the local.In our data-driven society, it is too easy
@@ -581,7 +568,7 @@ references:
     author:
       - family: Loukissas
         given: Yanni Alexander
-    citation-key: loukissas2019a
+    citation-key: loukissas2019
     DOI: 10.7551/mitpress/11543.001.0001
     ISBN: 978-0-262-35221-5
     issued:

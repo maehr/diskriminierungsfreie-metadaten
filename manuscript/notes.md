@@ -2,10 +2,10 @@ Todos
 
 - [ ] Generelle Sprachregeln (Überprüfen mit AI)  
        - [ ] Abkürzungen wie z.B. oder ggf. immer ausschreiben  
-       - [ ] Schweizer Hochdeutsch (kein scharfes S)  
-       - [ ] Bildunterschrift und Alttext für jede Abbildung  
-       - [ ] Keine “Vgl./Siehe/Siehe auch” bei Referenzen  
-       - [ ] Gender-Sternchen statt Doppelpunkt  
+       - [x] Schweizer Hochdeutsch (kein scharfes S)  
+       - [x] Bildunterschrift und Alttext für jede Abbildung  
+       - [x] Keine “Vgl./Siehe/Siehe auch” bei Referenzen  
+       - [x] Gender-Sternchen statt Doppelpunkt  
        - [ ] Anführungszeichen einheitlich versus Kursivierung versus Fett?
 - [ ] Folgende Dinge auszeichnen  
        - [ ] BEISPIELE?  

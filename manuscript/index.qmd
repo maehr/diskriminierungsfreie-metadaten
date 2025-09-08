@@ -51,7 +51,7 @@ number-sections: true
 
 # Vorwort zur zweiten Auflage
 
-*Diskriminierungssensible Metadatenpraxis. Ein Handbuch zur ethischen Auszeichnung historischer Quellen und Forschungsdaten* liegt nun in einer überarbeiteten zweiten Auflage vor. Das Handbuch ist neu in zwei Teile gegliedert: Der theoretische Teil bietet begriffliche und konzeptionelle Überlegungen zu Sprache, Klassifikation, Repräsentation und Macht. Der Praxisteil stellt Anleitungen, Checklisten und Beispiele für die Erstellung und Pflege von Metadaten bereit. Somit können Leser\*innen wahlweise mit der konzeptionellen Rahmung oder mit der direkten Anwendung beginnen. Beide Teile verweisen aufeinander und können im Zusammenspiel genutzt werden.
+*Diskriminierungssensible Metadatenpraxis. Ein Handbuch zur ethischen Auszeichnung historischer Quellen und Forschungsdaten* liegt nun in einer überarbeiteten zweiten Auflage vor. Dieses Handbuch ist neu in zwei Teile gegliedert: Der theoretische Teil bietet begriffliche und konzeptionelle Überlegungen zu Sprache, Klassifikation, Repräsentation und Macht. Der Praxisteil stellt Anleitungen, Checklisten und Beispiele für die Erstellung und Pflege von Metadaten bereit. Somit können Leser\*innen wahlweise mit der konzeptionellen Rahmung oder mit der direkten Anwendung beginnen. Beide Teile verweisen aufeinander und können im Zusammenspiel genutzt werden.
 
 Die erste Fassung des Handbuchs entstand 2023 im Rahmen des Forschungsprojekts [Stadt.Geschichte.Basel](https://stadtgeschichtebasel.ch/) unter anderem als Hilfestellung zur Auszeichnung von Objekten auf der [Forschungsdatenplattform](https://forschung.stadtgeschichtebasel.ch/) und erschien am 3\. Juni 2024\. Diskussionen, Workshops und Rückmeldungen aus der Community machten jedoch deutlich, dass der ursprüngliche Anspruch, zu diskriminierungsfreien Metadaten anzuleiten, nicht einlösbar war. In der zweiten Auflage korrigieren wir diesen Anspruch: Im Zentrum steht nun die Anleitung zu einem diskriminierungssensiblen Umgang mit Machtverhältnissen und Kontexten.
 
@@ -77,9 +77,9 @@ Mit diesem Handbuch setzen wir uns für eine diskriminierungssensible Metadatenp
 
 Diskriminierungssensibilität bedeutet, aufmerksam zu bleiben für Veränderungen von Normen, die Vielfalt von Diskriminierungserfahrungen und die Unabgeschlossenheit von Dekolonisierungsprozessen. Sie fordert uns auf, unsere eigene Positionierung und bestehende Machtverhältnisse kritisch zu hinterfragen und zu reflektieren.
 
-Im Handbuch verwenden wir bewusst eine breite Definition von Diskriminierung, um möglichst viele Anwendungsfälle abzudecken. Unter Diskriminierung verstehen wir schwerwiegende Formen der Benachteiligung. Eine Benachteiligung wird zu einer Diskriminierung, wenn sie in einem unmittelbaren Zusammenhang mit der tatsächlichen oder zugeschriebenen Zugehörigkeit zu einer bestimmten Gruppe oder einem Merkmal steht. Zu diesen Gruppenzugehörigkeiten oder Merkmalen zählen u. a. die soziale Stellung, das biologische und soziale Geschlecht sowie die Geschlechtsidentität, die ethnische Herkunft, diskriminierende Fremdzuschreibungen, die Religionszugehörigkeit, die Weltanschauung und politische Überzeugungen, die Sprache, eine Behinderung oder chronische Erkrankung, eine genetische Disposition, das Lebensalter, die sexuelle Orientierung, das Körpergewicht und die Lebensform (zum Beispiel Fahrende). Diskriminierungen entstehen laufend, weil gesellschaftliche Werte und Normen bestimmte Gruppen stigmatisieren.
+Im Handbuch verwenden wir bewusst eine breite Definition von Diskriminierung, um möglichst viele Anwendungsfälle abzudecken. Unter Diskriminierung verstehen wir schwerwiegende Formen der Benachteiligung. Eine Benachteiligung wird zu einer Diskriminierung, wenn sie in einem unmittelbaren Zusammenhang mit der tatsächlichen oder zugeschriebenen Zugehörigkeit zu einer bestimmten Gruppe oder einem Merkmal steht. Zu diesen Gruppenzugehörigkeiten oder Merkmalen zählen unter anderem die soziale Stellung, das biologische und soziale Geschlecht sowie die Geschlechtsidentität, die ethnische Herkunft, diskriminierende Fremdzuschreibungen, die Religionszugehörigkeit, die Weltanschauung und politische Überzeugungen, die Sprache, eine Behinderung oder chronische Erkrankung, eine genetische Disposition, das Lebensalter, die sexuelle Orientierung, das Körpergewicht und die Lebensform (zum Beispiel Fahrende). Diskriminierungen entstehen laufend, weil gesellschaftliche Werte und Normen bestimmte Gruppen stigmatisieren.
 
-Der Band gliedert sich in zwei Teile: Im ersten Teil definieren wir die theoretischen und technischen Schlüsselbegriffe und verknüpfen sozial- und informationswissenschaftliche Perspektiven. Wir behandeln u. a. Normativität, Formen der Diskriminierung, Bias und Oppression sowie Grundlagen zu Forschungs- und Metadaten, Metadatenstandards und FAIR/CARE/LOUD.
+Der Band gliedert sich in zwei Teile: Im ersten Teil definieren wir die theoretischen und technischen Schlüsselbegriffe und verknüpfen sozial- und informationswissenschaftliche Perspektiven. Wir behandeln unter anderem Normativität, Formen der Diskriminierung, Bias und Oppression sowie Grundlagen zu Forschungs- und Metadaten, Metadatenstandards und FAIR/CARE/LOUD.
 
 Im zweiten Teil behandeln wir den diskriminierungssensiblen Umgang mit Metadaten entlang des gesamten Forschungsdatenlebenszyklus: \[REFERENZ higgins2008 [https://www.dcc.ac.uk/guidance/curation-lifecycle-model](https://www.dcc.ac.uk/guidance/curation-lifecycle-model)\]
 
@@ -294,7 +294,7 @@ Institutionelle Diskriminierung entsteht, wenn interne Ordnungen und Routinen vo
 * **Lizenz- und Gebührenpolitik**
 
   * *Mechanismus:* Hohe Reproduktionskosten, restriktive Lizenzen.  
-  * *Effekt:* Erschwerte Nachnutzung für Forschende ohne starke institutionelle Einbindung, besonders in ressourcenärmeren Ländern und Regionen.  
+  * *Effekt:* Erschwerte Nachnutzung für Forscher\*innen ohne starke institutionelle Einbindung, besonders in ressourcenärmeren Ländern und Regionen.  
   * *Indikatoren:* Anteil Open-Access-Objekte; Gebühren pro Nutzungstyp.  
   * *Gegenmassnahmen:* OA-First-Policy, gestaffelte Gebühren, CARE-kompatible Zugangsmodelle.  
 * **Metadatenstandards ohne Mehrsprachigkeit**
@@ -318,7 +318,7 @@ Statistische Diskriminierung bezeichnet die Benachteiligung von Individuen, wenn
 
 * **Automatisches Geschlechter-Mapping in Normdaten**
 
-  * *Mechanismus:* Imputation (d. h. Schätzung fehlender Werte) von `gender` aus Namensstatistiken oder Sprachmodellen.  
+  * *Mechanismus:* Imputation (das heisst Schätzung fehlender Werte) von `gender` aus Namensstatistiken oder Sprachmodellen.  
   * *Effekt:* Systematische Fehlzuordnung bei nicht-westlichen, historischen oder trans Namen.  
   * *Indikatoren:* Häufung von Zuweisungen nahe dem Klassifikationsschwellenwert; überproportionale Korrekturen nach Herkunftsregion.  
   * *Gegenmassnahmen:* Enthaltungsregel bei Unsicherheit; separate Felder für Selbstangaben und Quellen; kalibrierte Schwellen; aktive Nachannotation.  
@@ -393,7 +393,7 @@ Fehlerhafte Verallgemeinerung von Gruppenergebnissen auf Individuen oder Subgrup
 
 Bias durch nicht-zufällige Auswahl von Stichproben führt zu mangelnder Generalisierbarkeit.
 
-*Beispiel:* Oral History-Projekte, die ausschliesslich mit Zeitzeugen arbeiten, die aktiv Kontakt zu Forschenden aufnehmen, erfassen tendenziell eher politisch engagierte oder bildungsnahe Akteure.
+*Beispiel:* Oral History-Projekte, die ausschliesslich mit Zeitzeugen arbeiten, die aktiv Kontakt zu Forscher\*innen aufnehmen, erfassen tendenziell eher politisch engagierte oder bildungsnahe Akteur\*innen.
 
 #### **Längsschnittfehler (Longitudinal Data Fallacy)** {#sec-längsschnittfehler-longitudinal-data-fallacy}
 
@@ -463,13 +463,13 @@ Bias durch selbstselektierende Teilnehmende, zum Beispiel in Umfragen.
 
 Individuelle Entscheidungen werden durch soziale Einflüsse verzerrt.
 
-*Beispiel:* Bei kollaborativen Transkriptionsprojekten orientieren sich neue User an den Lesegewohnheiten erfahrener Transkribierender und übernehmen deren Fehler.
+*Beispiel:* Bei kollaborativen Transkriptionsprojekten orientieren sich neue User\*innen an den Lesegewohnheiten erfahrener Transkribierender und übernehmen deren Fehler.
 
 #### **Verhaltensverzerrung (Behavioral Bias)** {#sec-verhaltensverzerrung-behavioral-bias}
 
 Unterschiedliches Verhalten von Nutzenden je nach Plattform, Kontext oder Zeit.
 
-*Beispiel:* Historiker\*innen recherchieren systematischer, während Laien häufig nach Familiennamen oder spektakulären Ereignissen suchen. Dies beeinflusst Zugriffszahlen.
+*Beispiel:* Historiker\*innen recherchieren systematischer, während Lai\*innen häufig nach Familiennamen oder spektakulären Ereignissen suchen. Dies beeinflusst Zugriffszahlen.
 
 #### **Zeitliche Verzerrung (Temporal Bias)** {#sec-zeitliche-verzerrung-temporal-bias}
 
@@ -530,7 +530,7 @@ Schliesslich sind rechtlich-ethische und ökologische Grenzen mitzudenken. Re-Id
 
 ### Was sind Forschungsdaten? {#sec-was-sind-forschungsdaten}
 
-Unter Forschungsdaten verstehen wir sämtliche digitale Repräsentationen von physischen und virtuellen Objekte, die Forschende während ihrer Forschung verwenden und produzieren und die als digitale Daten repräsentiert werden können. Dazu gehören Quellen, Transkriptionen oder Reproduktionen, Exzerpte, Zeitreihen, Tabellen, Diagramme, Karten, Modelle, Bilder, Videos, Interviews, Artikel, Sekundärliteratur, Software, Quellcode, Workflows, Forschungsprotokolle, Datensätze etc.
+Unter Forschungsdaten verstehen wir sämtliche digitale Repräsentationen von physischen und virtuellen Objekte, die Forscher\*innen während ihrer Forschung verwenden und produzieren und die als digitale Daten repräsentiert werden können. Dazu gehören Quellen, Transkriptionen oder Reproduktionen, Exzerpte, Zeitreihen, Tabellen, Diagramme, Karten, Modelle, Bilder, Videos, Interviews, Artikel, Sekundärliteratur, Software, Quellcode, Workflows, Forschungsprotokolle, Datensätze etc.
 
 Bei historischen Forschungsprojekten stammt ein grosser Teil der Forschungsdaten oft aus den Beständen von Gedächtnisinstitutionen wie Archiven, Bibliotheken und Museen oder steht in publizierter Form in Büchern oder Artikeln zur Verfügung. In vielen Fällen sorgen diese Einrichtungen für die Langzeitarchivierung der Quellen. Dann kann über die DOI oder die Signatur direkt auf die Objekte (sowie auf deren Metadaten) verwiesen werden. Meistens werden in Forschungsprojekten jedoch zusätzliche Metadaten erhoben oder bestehende Metadaten korrigiert. Dabei kann es sich um Quellenannotationen, erweiterte Beschreibungen, korrigierte Angaben etc. handeln. In diesen Fällen empfiehlt es sich, einen neuen, möglichst kompletten Metadatensatz zu erstellen und mit Verweis auf das Original  auf einer geeigneten Plattform zur Verfügung zu stellen. Redundanz ist bei Forschungsdaten wünschenswert und erhöht ihre Verfügbarkeit und Auffindbarkeit.
 
@@ -714,7 +714,7 @@ Konventionelle Datenpraktiken vernachlässigen oft Entstehungskontexte, Machtver
 
 * **Kollektiver Nutzen** fordert, dass Datenpraxis dem kollektiven Nutzen der betroffenen Gemeinschaften dient und nicht nur externen Forschungsinteressen.  
 * **Kontrolle über die Daten** sichert Anspruchsgruppen die Hoheit über den gesamten Lebenszyklus von Daten. Ein Beispiel sind *Traditional Knowledge (TK) Labels* von [Local Contexts](https://localcontexts.org/), die Nutzungsbedingungen sichtbar machen.  
-* **Verantwortung** betont die Verantwortung von Forschenden und Institutionen, Risiken zu minimieren, Transparenz zu sichern und Rechenschaft abzulegen.  
+* **Verantwortung** betont die Verantwortung von Forscher\*innen und Institutionen, Risiken zu minimieren, Transparenz zu sichern und Rechenschaft abzulegen.  
 * **Ethik** verlangt einen Umgang, der über Rechtskonformität hinausgeht und auf Respekt, kulturelle Sensibilität und Schadensvermeidung zielt.
 
 Die Prinzipien wurden 2018 im Rahmen der International Data Week entworfen und zwischen 2019 und 2020 von der Global Indigenous Data Alliance ausgearbeitet ([GIDA – CARE Principles](https://www.gida-global.org/care), [Carroll et al. 2020](https://doi.org/10.5334/dsj-2020-043)). Gedächtnisinstitutionen agieren dabei zwangsläufig als Gatekeeper; Governance-Modelle sollen Entscheidungsrechte explizit abbilden. In Kanada fassen die [OCAP®-Prinzipien](https://fnigc.ca/ocap-training/) Ownership, Control, Access und Possession als konkrete Form indigener Datenhoheit.
@@ -725,7 +725,7 @@ Die Prinzipien wurden 2018 im Rahmen der International Data Week entworfen und z
 
 * **Verknüpft** verlangt eindeutige Referenzen und semantische Verknüpfungen, damit Datensätze anschlussfähig in Wissensnetzen zirkulieren.  
 * **Offen** steht für rechtlich wie technisch barrierearme Bereitstellung, inklusive offener Formate und Schnittstellen.  
-* **Nutzbar** betont dokumentierte Provenienz, verständliche Zugänge, einfache Exporte und APIs sowie Qualitätssicherung, damit Forschende ohne Spezialwerkzeuge arbeiten können.  
+* **Nutzbar** betont dokumentierte Provenienz, verständliche Zugänge, einfache Exporte und APIs sowie Qualitätssicherung, damit Forscher\*innen ohne Spezialwerkzeuge arbeiten können.  
 * **Daten** rückt Inhalte in den Mittelpunkt und fordert wiederverwendbare Bereitstellung statt statischer Visualisierungen.
 
 LOUD operationalisiert FAIR in Richtung Nutzung und bleibt mit CARE kompatibel, weil Nutzungsbedingungen und Rechte modelliert und kommuniziert werden.
@@ -736,7 +736,7 @@ Für offen lizenzierte Daten und breite Nachnutzung stehen FAIR und LOUD im Vord
 
 # Praxis: Diskriminierungssensibler Umgang mit Metadaten {#sec-praxis:-diskriminierungssensibler-umgang-mit-metadaten}
 
-Metadaten sind weit mehr als neutrale Beschreibungen von Forschungsdaten oder kulturellen Objekten – sie prägen fundamental, wie Inhalte gefunden, verstanden und interpretiert werden. In digitalen Archiven, Repositorien und Forschungsprojekten entscheiden Metadaten darüber, welche Geschichten erzählt werden und welche im Verborgenen bleiben. Dabei reproduzieren sie oft unbewusst historische Machtstrukturen, diskriminierende Begriffe oder ausschließende Kategorisierungen.
+Metadaten sind weit mehr als neutrale Beschreibungen von Forschungsdaten oder kulturellen Objekten – sie prägen fundamental, wie Inhalte gefunden, verstanden und interpretiert werden. In digitalen Archiven, Repositorien und Forschungsprojekten entscheiden Metadaten darüber, welche Geschichten erzählt werden und welche im Verborgenen bleiben. Dabei reproduzieren sie oft unbewusst historische Machtstrukturen, diskriminierende Begriffe oder ausschliessende Kategorisierungen.
 
 Ein diskriminierungssensibler Umgang mit Metadaten bedeutet, diese Wirkmacht bewusst zu reflektieren und verantwortungsvoll zu gestalten. Es geht darum, marginalisierte Stimmen sichtbar zu machen, respektvolle Sprache zu verwenden und transparente Entscheidungsprozesse zu dokumentieren. Gleichzeitig müssen historische Kontexte gewahrt und problematische Inhalte nicht beschönigt, sondern klar benannt und kontextualisiert werden.
 
@@ -789,9 +789,9 @@ Ein weiterer wichtiger Aspekt in diesem Schritt ist **die Sensibilität** gegen�
 
 Bei der Festlegung von Metadatenfeldern stellt sich häufig die Frage, ob bestimmte Angaben in eigenständigen Feldern oder in einem allgemeinen Kommentarfeld erfasst werden sollten. Die Entscheidung hängt dabei von Kriterien wie Automatisierbarkeit, Häufigkeit der Nutzung, Standardisierung, Anforderungen durch Aggregatoren sowie der gewünschten Flexibilität ab. In der Praxis erfolgt die Modellierung der Felder meist iterativ und parallel zur Quellenannotation. Dabei kann es vorkommen, dass ursprünglich geplante Felder wieder verworfen oder angepasst werden müssen, weil sich herausstellt, dass sie nur für einen Teil der Objekte relevant sind.
 
-Schliesslich ist es wichtig, sämtliche Entscheidungen und Abwägungen bei der Schemaauswahl und Felddefinition nachvollziehbar zu dokumentieren. So wird nicht nur die interne Konsistenz gewährleistet, sondern auch eine spätere Nachvollziehbarkeit durch andere Forschende und Projekte sichergestellt.
+Schliesslich ist es wichtig, sämtliche Entscheidungen und Abwägungen bei der Schemaauswahl und Felddefinition nachvollziehbar zu dokumentieren. So wird nicht nur die interne Konsistenz gewährleistet, sondern auch eine spätere Nachvollziehbarkeit durch andere Forscher\*innen und Projekte sichergestellt.
 
-Ein weiterer zentraler Punkt bei der Auswahl und Planung von Infrastrukturen ist die Abwägung zwischen proprietären Lösungen und offenen, quelloffenen Systemen. Proprietäre Software und kommerzielle Plattformen können kurzfristig Vorteile durch Benutzerfreundlichkeit, Support und Marktverbreitung bieten. Gleichzeitig bergen sie das Risiko des Vendor Lock-in: Daten und Workflows sind an ein spezifisches System gebunden, wodurch langfristige Migrationen, Interoperabilität und Kostenkontrolle erschwert werden. Gerade bei Forschungsdaten widerspricht dies den Prinzipien von Nachhaltigkeit, Offenheit und FAIR/CARE.
+Ein weiterer zentraler Punkt bei der Auswahl und Planung von Infrastrukturen ist die Abwägung zwischen proprietären Lösungen und offenen, quelloffenen Systemen. Proprietäre Software und kommerzielle Plattformen können kurzfristig Vorteile durch Benutzer\*innenfreundlichkeit, Support und Marktverbreitung bieten. Gleichzeitig bergen sie das Risiko des Vendor Lock-in: Daten und Workflows sind an ein spezifisches System gebunden, wodurch langfristige Migrationen, Interoperabilität und Kostenkontrolle erschwert werden. Gerade bei Forschungsdaten widerspricht dies den Prinzipien von Nachhaltigkeit, Offenheit und FAIR/CARE.
 
 **CHECKLIST**
 
