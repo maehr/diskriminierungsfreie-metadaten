@@ -13,6 +13,45 @@ references:
     URL: >-
       https://www.humanrights.ch/de/ipf/menschenrechte/diskriminierung/antidiskriminierungsgesetz/adg-ausgangslage/
 
+  - id: A4BLiP2020
+    abstract: >-
+      Deutsch: Die Arbeitsgruppe für antirassistische Beschreibung von „Archives
+      for Black Lives in Philadelphia“ legt Empfehlungen und Hilfsmittel für eine
+      antirassistische Praxis in der Archivbeschreibung vor. Das Dokument umfasst
+      Leitlinien zur Überarbeitung bestehender Metadaten, zum Umgang mit
+      rassistischer Terminologie, zu kollaborativen Ansätzen mit betroffenen
+      Gemeinschaften und zur Förderung von Transparenz. Ziel ist es,
+      diskriminierende Strukturen in der archivalischen Praxis sichtbar zu machen,
+      zu dekonstruieren und zu überwinden, insbesondere im Hinblick auf die
+      Beschreibung von Materialien der Schwarzen Diaspora. English: The
+      Anti-Racist Description Working Group of Archives for Black Lives in
+      Philadelphia presents guidelines and tools for implementing anti-racist
+      practices in archival description. The document provides recommendations for
+      revising legacy metadata, addressing racist terminology, fostering
+      collaboration with affected communities, and enhancing transparency. Its aim
+      is to expose, deconstruct, and remediate discriminatory structures in
+      archival practices, with a particular focus on records documenting the Black
+      diaspora.
+    accessed:
+      - year: 2025
+        month: 9
+        day: 8
+    author:
+      - literal: >-
+          Archives for Black Lives in Philadelphia. Anti-Racist Description
+          Working Group
+    citation-key: A4BLiP2020
+    event-place: Philadelphia
+    issued:
+      - year: 2020
+        month: 9
+    language: english
+    publisher: Archives for Black Lives in Philadelphia
+    publisher-place: Philadelphia
+    title: 'Archives for black lives in philadelphia: Anti-racist description resources'
+    type: report
+    URL: https://archivesforblacklives.files.wordpress.com/2020/10/ardr_202010.pdf
+
   - id: baroncini_access_2025
     author:
       - family: Baroncini

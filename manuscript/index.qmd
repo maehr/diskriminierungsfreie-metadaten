@@ -22,21 +22,24 @@ authors:
 lang: de-CH
 keywords:
   - Diskriminierungssensible Metadaten
-  - Historische Quellen und Forschungsdaten
+  - Ethische Metadatenpraxis
+  - Historische Quellen
+  - Digitale Geschichtswissenschaft
   - FAIR-Prinzipien
-  - Open Research Data
-  - Dublin Core
-  - TBD
+  - CARE-Prinzipien
+  - Bias in Daten
+  - Metadatenstandards
+  - Digital Humanities
 abstract: |
-  TBD
+  Dieses Handbuch bietet eine praxisorientierte Anleitung für die diskriminierungssensible Auszeichnung von Metadaten zu historischen Quellen und Forschungsdaten. Es richtet sich an Historiker*innen, Archivar*innen, Bibliothekar*innen und Daten-Kurator*innen und verbindet theoretische Reflexionen zu Normativität, Bias und Oppression mit konkreten Handlungsempfehlungen für den gesamten Forschungsdatenlebenszyklus. Das Handbuch behandelt sowohl technische Aspekte der Metadatenmodellierung als auch ethische Fragen der Repräsentation marginalisierter Gruppen. Durch die Kombination von Theorie und Praxis unterstützt es Fachleute dabei, Diskriminierung in der Metadatenpraxis zu erkennen und diskriminierungssensible Alternativen zu entwickeln.
 pagetitle: Diskriminierungssensible Metadatenpraxis. Ein Handbuch zur ethischen Auszeichnung historischer Quellen und Forschungsdaten.
 description-meta: |
-  TBD
+  Handbuch zur diskriminierungssensiblen Metadatenpraxis für historische Quellen und Forschungsdaten. Eine praxisorientierte Anleitung für Historiker*innen, Archivar*innen und Bibliothekar*innen zur ethischen Auszeichnung und Kontextualisierung von Metadaten unter Berücksichtigung von FAIR- und CARE-Prinzipien.
 key-points:
-  - Inhalt: TBD
-  - Zielsetzung: TBD
-  - Zielgruppe: Archivar\*innen, Bibliothekar\*innen, Historiker\*innen und Data Stewards.
-  - Praxisnahe Fallbeispiele: TBD
+  - Inhalt: Theoretische Grundlagen zu Diskriminierung, Bias und Oppression in Daten sowie praktische Anleitungen für alle Phasen des Forschungsdatenlebenszyklus von der Planung bis zur Archivierung.
+  - Zielsetzung: Sensibilisierung für diskriminierende Strukturen in Metadaten und Bereitstellung konkreter Methoden und Strategien für eine diskriminierungssensible Metadatenpraxis.
+  - Zielgruppe: Historiker*innen, Archivar*innen, Bibliothekar*innen, Daten-Kurator*innen und alle Fachleute, die mit der Erstellung, Verwaltung und Bereitstellung von Metadaten zu historischen Quellen arbeiten.
+  - Praxisnahe Fallbeispiele: Konkrete Beispiele aus der deutschsprachigen Forschungslandschaft, Checklisten für verschiedene Arbeitsphasen und Lösungsansätze für wiederkehrende Herausforderungen in der Metadatenpraxis.
   - Living Document: Das Handbuch wird als offenes Dokument auf GitHub veröffentlicht und steht der Community zur Weiterentwicklung zur Verfügung.
 date: 2025-09-08
 bibliography: references.yaml
@@ -1193,7 +1196,7 @@ So werden Diskriminierungen nicht nur benannt, sondern in überprüfbaren Schrit
 
 Dieser Entscheidungsbaum hilft bei der Orientierung der Kapitel und verlinkt auf externe Ressourcen. Vergleiche dazu auch Anhang *“A-2 Nützliche Listen, Tools und Anlaufstellen”*.
 
-::: {#fig-metadata-3 fig-alt="Das Bild zeigt ein Flussdiagramm zur Navigation bei fachspezifischen Fragen zu Metadaten. Zentral steht das Feld «Ich habe eine fachspezifische Frage». Von dort führen drei Äste zu den Bereichen «Metadaten», «Forschungs- oder Institutionskontexte» und «Spezifische Diskriminierungsformen». Unter «Metadaten» gibt es die Unterpunkte: «Normdaten» (verweist auf Breslau 2019), «Open Data / Commons» (Hahn 2016), «Recht & Lizenzen» (Weitzmann & Klimpel 2016\) und «Kartografische Sammlungen» (Gasser & Hötea 2024). Unter «Forschungs- oder Institutionskontexte» erscheinen: «Kunstmuseen» (Knaus 2019), «Universitätsarchive» (Bruckmann 2024\) und «Kolonialkontexte» (Bruckmann 2024). Unter «Spezifische Diskriminierungsformen» finden sich: «NS-Provenienz» (Baresel-Brand 2019\) und «Sklaverei-Archive» (Ahrndt 2021). Alle Felder sind rechteckig und hellviolett hinterlegt. Unterpunkte sind jeweils direkt mit den entsprechenden Literaturangaben verbunden."}
+::: {#fig-metadata-3 fig-alt="Flussdiagramm zur Orientierung bei fachspezifischen Fragen in der Archiv- und Metadatenforschung. Die zentrale Frage „Ich habe eine fachspezifische Frage“ verzweigt in drei Bereiche: Metadaten, Forschungs- oder Institutionskontexte sowie Spezifische Diskriminierungsformen. Unter „Metadaten“ stehen Normdaten (Breslau 2019), Open Data / Commons (Hahn 2016), Recht & Lizenzen (Weitzmann & Klimpel 2016) und Kartografische Sammlungen (Gasser & Hötea 2024). Unter „Forschungs- oder Institutionskontexte“ finden sich Kunstmuseen (Knaus 2019), Universitätsarchive (Bruckmann 2024) und Kolonialkontexte (Bruckmann 2024). Unter „Spezifische Diskriminierungsformen“ erscheinen NS-Provenienz (Baresel-Brand 2019), Sklaverei-Archive (Ahrndt 2021) und Rassismus (A4BLiP 2020)."}
 
 ```{mermaid}
 flowchart TD
@@ -1226,17 +1229,17 @@ flowchart TD
     %% Spezifische Diskriminierungsformen
     SpezDisk --> NSProvenienz["NS-Provenienz"]
     SpezDisk --> Sklaverei["Sklaverei-Archive"]
+    SpezDisk --> Rassismus["Rassismus"]
 
     NSProvenienz --> Baresel["Baresel-Brand (2019)"]
     Sklaverei --> Ahrndt["Ahrndt (2021)"]
+    Rassismus --> A4BLiP2020["A4BLiP (2020)"]
 ```
 
 Hilfestellungen für weiterführende Fragen, die über die behandelten Themen des Handbuchs hinausgehen.
 :::
 
 <!-- ![Hilfestellungen für weiterführende Fragen, die über die behandelten Themen des Handbuchs hinausgehen.](images/image9.png){fig-alt="Das Bild zeigt ein Flussdiagramm zur Navigation bei fachspezifischen Fragen zu Metadaten. Zentral steht das Feld «Ich habe eine fachspezifische Frage». Von dort führen drei Äste zu den Bereichen «Metadaten», «Forschungs- oder Institutionskontexte» und «Spezifische Diskriminierungsformen». Unter «Metadaten» gibt es die Unterpunkte: «Normdaten» (verweist auf Breslau 2019), «Open Data / Commons» (Hahn 2016), «Recht & Lizenzen» (Weitzmann & Klimpel 2016\) und «Kartografische Sammlungen» (Gasser & Hötea 2024). Unter «Forschungs- oder Institutionskontexte» erscheinen: «Kunstmuseen» (Knaus 2019), «Universitätsarchive» (Bruckmann 2024\) und «Kolonialkontexte» (Bruckmann 2024). Unter «Spezifische Diskriminierungsformen» finden sich: «NS-Provenienz» (Baresel-Brand 2019\) und «Sklaverei-Archive» (Ahrndt 2021). Alle Felder sind rechteckig und hellviolett hinterlegt. Unterpunkte sind jeweils direkt mit den entsprechenden Literaturangaben verbunden."} -->
-
-* [ ] TBD: Reader for Black Lives Philadephia <https://archivesforblacklives.wordpress.com/wp-content/uploads/2020/11/ardr_202010.pdf>
 
 <!-- ## Glossare {#glossare}
 
