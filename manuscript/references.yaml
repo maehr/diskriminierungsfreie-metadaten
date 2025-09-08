@@ -261,6 +261,34 @@ references:
     URL: >-
       https://elearning.uni-oldenburg.de/sendfile.php?type=0&file_id=5435fe2c79f320a9d7465f0f61851ca5&file_name=budde_quellen-quellen-quellen.pdf&set_language=de_DE
 
+  - id: carroll2021
+    author:
+      - family: Carroll
+        given: Stephanie Russo
+      - family: Herczog
+        given: Edit
+      - family: Hudson
+        given: Maui
+      - family: Russell
+        given: Keith
+      - family: Stall
+        given: Shelley
+    citation-key: carroll2021
+    container-title: Scientific Data
+    container-title-short: Sci Data
+    DOI: 10.1038/s41597-021-00892-0
+    ISSN: 2052-4463
+    issue: '1'
+    issued:
+      - year: 2021
+        month: 4
+        day: 16
+    language: english
+    page: '108'
+    title: Operationalizing the CARE and FAIR Principles for Indigenous data futures
+    type: article-journal
+    volume: '8'
+
   - id: costa-jussa2022
     accessed:
       - year: 2025
@@ -313,6 +341,72 @@ references:
     type: chapter
     URL: https://data-feminism.mitpress.mit.edu/pub/ei7cogfn
 
+  - id: Endings_Principles_2023
+    abstract: >-
+      Deutsch: Die Endings-Prinzipien definieren Langlebigkeit als Ergebnis
+      offener, validierbarer und versionskontrollierter Daten, vollständiger
+      Dokumentation, strikt getesteter Build-Prozesse, statischer Webprodukte ohne
+      serverseitige Abhängigkeiten (HTML, CSS, JavaScript; keine
+      Datenbanken/Frameworks) und geplanter Release-Verwaltung mit klaren
+      Versionen, stabilen URLs und Zitierhinweisen. Vorgaben umfassen offene
+      Formate (z. B. TEI XML, GML, ODF, TXT), kontinuierliche Validierung/CI,
+      Datenbeilagen in Publikationen, massive Redundanz und „graceful failure“.
+      Ausnahmen sind nur für weit verbreitete, offene Zusatzbibliotheken oder
+      Suchdienste zulässig. English: The Endings principles define longevity as
+      the outcome of open, validatable, version-controlled data; comprehensive
+      documentation; rigorously tested build processes; static web products with
+      no server-side dependencies (HTML, CSS, JavaScript; no
+      databases/frameworks); and planned release management with clear versioning,
+      persistent URLs, and citation guidance. Requirements include open formats
+      (e.g., TEI XML, GML, ODF, TXT), continuous validation/CI, bundling source
+      data with publications, massive redundancy, and graceful failure. Limited
+      exceptions permit widely used open libraries or indexing services.
+    accessed:
+      - year: 2025
+        month: 9
+        day: 9
+    author:
+      - literal: The Endings Project Team
+    authority: University of Victoria
+    citation-key: Endings_Principles_2023
+    issued:
+      - year: 2023
+        month: 3
+        day: 3
+    language: english
+    title: Endings principles for digital longevity
+    type: webpage
+    URL: https://endings.uvic.ca/principles.html
+
+  - id: Europeana_EDM_Documentation
+    abstract: >-
+      Deutsch: Übersichtsseite zur gesamten Dokumentation des Europeana Data Model
+      (EDM). Enthält Factsheet und Präsentation (Einordnung, Nutzen), den EDM
+      Primer (Einsatz von Klassen und Properties), Mapping Guidelines
+      (Pflichtgrade, Datentypen, Beispiele), die formale
+      EDM-Definition/Specification, XML-Schema samt Schematron-Regeln und Hinweise
+      zur Validierung in Oxygen, Objekt-Templates, domänenspezifische Profile und
+      Mappings sowie die Roadmap. Zielgruppe sind Datenliefernde und
+      Implementierende, Zweck ist Interoperabilität und Linked-Data-fähige
+      Aggregation von Kulturdaten. English: Landing page aggregating all Europeana
+      Data Model (EDM) documentation. Includes factsheet and slides (rationale,
+      benefits), the EDM Primer (use of classes and properties), Mapping
+      Guidelines (obligation levels, datatypes, examples), the formal EDM
+      Definition/Specification, XML Schema with Schematron rules and guidance for
+      Oxygen-based validation, object templates, domain profiles and mappings, and
+      the roadmap. Targeted at data providers and implementers to ensure
+      interoperability and Linked Data–ready cultural heritage aggregation.
+    accessed:
+      - year: 2025
+        month: 9
+        day: 9
+    authority: Europeana Foundation
+    citation-key: Europeana_EDM_Documentation
+    language: english
+    title: Europeana data model. EDM documentation
+    type: webpage
+    URL: https://pro.europeana.eu/page/edm-documentation
+
   - id: eynden2011
     author:
       - family: Eynden
@@ -333,6 +427,84 @@ references:
     title-short: Managing and sharing data
     type: book
 
+  - id: FORRT_Paradata_2025
+    abstract: >-
+      Deutsch: Paradaten sind Daten über Erhebungssituation und Kontext von
+      Primärdaten und unterscheiden sich von Metadaten. Sie erlauben
+      mikroprozessuale Analysen von Interaktionen in Umfragen und Experimenten
+      (z. B. Antwortzeiten, Antwortmuster, vorzeitige Reaktionen, kontextuelle
+      Leistungshemmnisse) und dienen u. a. der Identifikation und Korrektur von
+      Mess- und Stichprobenfehlern. English: Paradata are data about the
+      circumstances and context of primary data collection, distinct from
+      metadata. They enable micro-level analyses of interactions in surveys and
+      experiments (e.g., response times, straight-lining patterns, premature
+      responses, contextual impediments to task performance) and are used to
+      detect and adjust measurement and sampling errors.
+    accessed:
+      - year: 2025
+        month: 9
+        day: 9
+    author:
+      - family: Hart
+        given: Alexander
+      - family: Reid
+        given: Graham
+      - family: Hartmann
+        given: Helena
+      - family: Pennington
+        given: Charlotte R.
+      - family: Topor
+        given: Marta
+      - family: Azevedo
+        given: Flávio
+    authority: FORRT, Framework for Open and Reproducible Research Training
+    citation-key: FORRT_Paradata_2025
+    issued:
+      - year: 2025
+        month: 2
+        day: 7
+    language: german
+    title: Paradata (Paradaten)
+    type: webpage
+    URL: https://forrt.org/glossary/german/paradata/
+
+  - id: forschungsdateninfo_metadaten_2024
+    abstract: >-
+      Deutsch: Die Seite erläutert die Rolle von Metadaten für Auffindbarkeit und
+      Nachnutzung und unterscheidet bibliografische, administrative, Prozess-
+      sowie inhaltsbeschreibende Metadaten. Sie nennt exemplarische Standards
+      (u. a. DataCite für DOI-Registrierung, PREMIS für Langzeitarchivierung, METS
+      als Container) und verweist auf Übersichten zu fachspezifischen Schemata
+      (RDA Metadata Standards Catalog, RDA Metadata Standards Directory,
+      FAIRsharing, DCC). Zudem adressiert sie kontrollierte Vokabulare, Thesauri
+      und Ontologien sowie Nachweisdienste wie BARTOC und Beispiele wie LOV, OBO
+      Foundry, NFDI4Ing Terminology Service und Archivo. English: This page
+      explains the role of metadata for findability and reuse and distinguishes
+      bibliographic, administrative, process, and descriptive/content metadata. It
+      highlights example standards (e.g., DataCite for DOI registration, PREMIS
+      for long-term preservation, METS as a container) and points to registries
+      for domain-specific schemas (RDA Metadata Standards Catalog, RDA Metadata
+      Standards Directory, FAIRsharing, DCC). It also covers controlled
+      vocabularies, thesauri, and ontologies, including registries such as BARTOC
+      and examples like LOV, OBO Foundry, the NFDI4Ing Terminology Service, and
+      Archivo.
+    accessed:
+      - year: 2025
+        month: 9
+        day: 8
+    author:
+      - literal: forschungsdaten.info
+    citation-key: forschungsdateninfo_metadaten_2024
+    issued:
+      - year: 2024
+        month: 4
+        day: 25
+    language: german
+    title: Metadaten und Metadatenstandards
+    type: webpage
+    URL: >-
+      https://forschungsdaten.info/themen/beschreiben-und-dokumentieren/metadaten-und-metadatenstandards/
+
   - id: frye_politics_1983
     author:
       - family: Frye
@@ -346,6 +518,35 @@ references:
     publisher-place: Trumansburg, NY
     title: 'The politics of reality: Essays in feminist theory'
     type: book
+
+  - id: GIDA_CARE_2025
+    abstract: >-
+      Deutsch: Die CARE-Prinzipien (Collective Benefit, Authority to Control,
+      Responsibility, Ethics) formulieren menschen- und zweckorientierte
+      Leitlinien für indigene Daten-Governance. Sie ergänzen FAIR, indem sie
+      historische Kontexte, Machtasymmetrien und kollektive Rechte adressieren.
+      Ziel ist es, Selbstbestimmung, Wertschöpfung im Einklang mit indigenen
+      Weltanschauungen sowie verantwortliche Zugangs-, Nutzungs- und
+      Teilhaberegeln für Daten über und von Indigenen zu stärken. English: The
+      CARE Principles (Collective Benefit, Authority to Control, Responsibility,
+      Ethics) provide people- and purpose-oriented guidelines for Indigenous data
+      governance. They complement FAIR by addressing historical contexts, power
+      differentials, and collective rights. The aim is to strengthen
+      self-determination, value creation grounded in Indigenous worldviews, and
+      responsible rules for access, use, and participation concerning data by and
+      about Indigenous Peoples.
+    accessed:
+      - year: 2025
+        month: 9
+        day: 9
+    author:
+      - literal: Global Indigenous Data Alliance
+    authority: Global Indigenous Data Alliance (GIDA)
+    citation-key: GIDA_CARE_2025
+    language: english
+    title: CARE principles for indigenous data governance
+    type: webpage
+    URL: https://www.gida-global.org/care
 
   - id: gofairinitiative
     abstract: >-
@@ -450,6 +651,35 @@ references:
     type: article-journal
     URL: https://ijdc.net/index.php/ijdc/article/view/48
     volume: '3'
+
+  - id: humanrightsCH_FormenDiskriminierung
+    abstract: >-
+      Deutsch: Die Seite systematisiert juristische Diskriminierungsformen in der
+      Schweiz. Sie erläutert direkte und indirekte Diskriminierung, strukturelle
+      und institutionelle Diskriminierung sowie Mehrfach- und intersektionale
+      Diskriminierung. Der Beitrag verortet diese Konzepte im Rahmen des
+      Gleichheitsgebots und des Diskriminierungsverbots und verweist auf
+      staatliche Pflichten zur Prävention und Beseitigung von Diskriminierung,
+      einschliesslich relevanter Rechtsgrundlagen und Praxisbeispiele. English:
+      This page classifies legal forms of discrimination in Switzerland. It
+      explains direct and indirect discrimination, structural and institutional
+      discrimination, and multiple/intersectional discrimination. The article
+      situates these concepts within the constitutional equality and
+      non-discrimination principles and outlines state duties to prevent and
+      eliminate discrimination, including key legal bases and practice examples.
+    accessed:
+      - year: 2025
+        month: 9
+        day: 8
+    author:
+      - literal: humanrights.ch
+    authority: humanrights.ch
+    citation-key: humanrightsCH_FormenDiskriminierung
+    language: german
+    title: Formen der Diskriminierung
+    type: webpage
+    URL: >-
+      https://www.humanrights.ch/de/ipf/menschenrechte/diskriminierung/diskriminierungsverbot-dossier/juristisches-konzept/formen-der-diskriminierung/
 
   - id: jaillant2025
     citation-key: jaillant2025
@@ -622,6 +852,71 @@ references:
     type: book
     URL: >-
       https://direct.mit.edu/books/oa-monograph/4323/All-Data-Are-LocalThinking-Critically-in-a-Data
+
+  - id: Maehr_SGB_digital_2022
+    abstract: >-
+      Deutsch: Die Seite fasst das digitale Teilkonzept von Stadt.Geschichte.Basel
+      zusammen. Zwei Arbeitspakete: (1) Forschungsdaten—Erhebung, Aufbereitung,
+      Sicherung und Bereitstellung (u. a. Omeka für Bilddaten, ArcGIS Online für
+      Karten, Zotero für Literatur, Versionierung über GitHub/GitLab;
+      Langzeitarchivierung via Zenodo und Staats-/Nationalbibliothek); (2)
+      Showcases—Portal, Data Stories (z. B. ArcGIS StoryMaps), Vermittlung mit
+      Partnern (AR-Stadtrundgänge, Podcasts, Unterrichtsmaterial). Leitprinzipien:
+      FAIR, Open Science/Open Source, digitale Nachhaltigkeit, Minimal Computing,
+      Mobile First. Zeitplan: Phase 1 (2021–2023), Phase 2 (ab 2023) mit
+      Verstetigung und Ausbau. English: This page summarizes the digital concept
+      for Stadt.Geschichte.Basel. Two work packages: (1) Research data—collection,
+      curation, preservation and publication (e.g., Omeka for images, ArcGIS
+      Online for maps, Zotero for references, versioning via GitHub/GitLab;
+      long-term preservation via Zenodo and state/national libraries); (2)
+      Showcases—portal, data stories (e.g., ArcGIS StoryMaps), and dissemination
+      with partners (AR city tours, podcasts, teaching units). Guiding principles:
+      FAIR, open science/open source, digital sustainability, minimal computing,
+      mobile-first. Timeline: Phase 1 (2021–2023), Phase 2 (from 2023) with
+      consolidation and expansion.
+    accessed:
+      - year: 2025
+        month: 9
+        day: 9
+    author:
+      - family: Mähr
+        given: Moritz
+    authority: Stadt.Geschichte.Basel; Universität Basel
+    citation-key: Maehr_SGB_digital_2022
+    issued:
+      - year: 2022
+        month: 4
+    language: german
+    title: >-
+      Konzept „Stadt.Geschichte.Basel digital“: Zusammenfassung des Konzepts
+      (April 2022) und des Zwischenberichts (Dezember 2022)
+    type: webpage
+    URL: >-
+      https://dokumentation.stadtgeschichtebasel.ch/products/interna/digitalkonzept/
+
+  - id: mahr2025
+    accessed:
+      - year: 2025
+        month: 9
+        day: 8
+    author:
+      - family: Mähr
+        given: Moritz
+    citation-key: mahr2025
+    genre: Markdown
+    issued:
+      - year: 2025
+        month: 8
+        day: 31
+    license: AGPL-3.0
+    original-date:
+      - year: 2025
+        month: 8
+        day: 30
+    source: GitHub
+    title: Dublin Core Metadata Enhancer
+    type: software
+    URL: https://github.com/Stadt-Geschichte-Basel/dublin-core-metadata-enhancer
 
   - id: mehrabi2021
     abstract: >-
@@ -840,6 +1135,41 @@ references:
       https://www.archive.nrw.de/sites/default/files/media/files/Archiv.theoriepraxis23-4-Internet.pdf
     volume: '04'
 
+  - id: Schopper_2024_Einfuehrung_Metadaten
+    abstract: >-
+      Deutsch: Das DARIAH-Campus-Training führt in Metadaten und Dokumentation
+      ein. Lernziele: Nutzen und Bedeutung guter Metadaten erkennen, Komponenten
+      unterscheiden, Verlässlichkeit prüfen. Behandelt werden Einsatzszenarien in
+      Forschung und GLAM, Dimensionen von Metadaten (Benennung, Zeit, Umfang,
+      Raum, Akteur:innen, Inhalt, Recht), die drei Ebenen digitaler Objekte
+      (physisch, logisch, semantisch), Aufbau von Metadatenschemata und
+      kontrollierte Vokabulare. Ein Exkurs illustriert Struktur und Entwicklung
+      von Dublin Core. English: This DARIAH Campus training introduces metadata
+      and documentation. Learning outcomes: recognise the value of high-quality
+      metadata, distinguish components, assess reliability. It covers use cases in
+      research and GLAM, core dimensions of metadata (naming, temporal, extent,
+      spatial, agents, content, rights), the three layers of digital objects
+      (physical, logical, semantic), schema design, and controlled vocabularies. A
+      short case illustrates the structure and evolution of Dublin Core.
+    accessed:
+      - year: 2025
+        month: 9
+        day: 9
+    author:
+      - family: Schopper
+        given: Daniel
+    authority: DARIAH Campus
+    citation-key: Schopper_2024_Einfuehrung_Metadaten
+    contributor:
+      - family: Wiencek
+        given: Florian
+    issued:
+      - year: 2024
+    language: german
+    title: Einführung in Metadaten und Dokumentation
+    type: webpage
+    URL: https://campus.dariah.eu/resources/hosted/einfuehrung-metadaten
+
   - id: schopper2024
     abstract: >-
       Anschließend an die "Grundlagen des Datenmanagements" und der praktischen
@@ -909,6 +1239,77 @@ references:
     type: webpage
     URL: >-
       https://www.museums.ch/de/unser-engagement/mitteilungen/aktuelles/webdossier-ki-im-museum-6966.html
+
+  - id: SGB_Datendokumentation_2025
+    abstract: >-
+      Deutsch: Die Seite beschreibt die Datendokumentation der
+      Forschungsdatenplattform Stadt.Geschichte.Basel. Sie verweist auf
+      projektbezogene Publikationen (Zenodo), erläutert das projektspezifische
+      Datenmodell und den Annotationsprozess gemäss dem „Handbuch zur Erstellung
+      diskriminierungsfreier Metadaten“, und führt das Extended Date Time Format
+      (EDTF) als Standard zur präzisen, unsicheren und intervallbasierten
+      Zeitangabe ein. Die Plattform ist als statische Website mit
+      CollectionBuilder umgesetzt und stellt nachnutzbare Quellen und historische
+      Forschungsdaten bereit. English: This page documents the data practices of
+      the Stadt.Geschichte.Basel research data platform. It links to
+      project-related publications (Zenodo), explains the project-specific data
+      model and the annotation workflow based on the “Handbook for Creating
+      Non-Discriminatory Metadata,” and introduces Extended Date Time Format
+      (EDTF) for precise, uncertain, and interval-based temporal statements. The
+      platform is implemented as a static site using CollectionBuilder and
+      provides reusable sources and historical research data.
+    accessed:
+      - year: 2025
+        month: 9
+        day: 9
+    author:
+      - literal: Stadt.Geschichte.Basel
+    citation-key: SGB_Datendokumentation_2025
+    issued:
+      - year: 2025
+    language: german
+    title: Datendokumentation. Forschungsdatenplattform Stadt.Geschichte.Basel
+    type: webpage
+    URL: https://forschung.stadtgeschichtebasel.ch/data.html
+
+  - id: sgg2023
+    abstract: >-
+      Le document propose un glossaire et un catalogue qui répertorient les
+      standards les plus importants permettant l'interopérabilité, afin que les
+      projets d'histoire numériques puissent facilement être exploités à nouveau
+      par des tiers et mis en réseau. Le présent rapport se focalise sur des
+      standards techniques.
+    author:
+      - family: Gabay
+        given: Simon
+      - family: Hodel
+        given: Tobias
+      - family: Mähr
+        given: Moritz
+      - family: Nellen
+        given: Stefan
+      - family: Roth-Lochner
+        given: Barbara
+      - family: Sutter
+        given: Pascale
+      - family: Voellmin
+        given: Andrea
+      - family: Wartburg
+        given: Karin
+        non-dropping-particle: von
+    citation-key: sgg2023
+    container-title: Whitepaper
+    DOI: 10.5281/ZENODO.10122052
+    editor:
+      - literal: Schweizerische Gesellschaft für Geschichte
+    issued:
+      - year: 2023
+        month: 11
+        day: 10
+    title: >-
+      Datenstandards für die historische Forschung – Ein White-Paper der
+      Schweizerischen Gesellschaft für Geschichte
+    type: article-journal
 
   - id: spivak_subaltern_1988
     author:
@@ -1054,6 +1455,193 @@ references:
     title: Grundlagen des Datenmanagements
     type: article-journal
     URL: https://campus.dariah.eu/resources/hosted/grundlagen-datenmanagement
+
+  - id: WerkzeugkastenGeschichte_2016
+    abstract: >-
+      Deutsch: Online-Handbuch des Departements Geschichte der Universität Basel
+      mit PDF-Ausgabe (58 S.). Themen: Entwicklung von Fragestellungen; Literatur-
+      und Quellenrecherche; Quellenkritik und -interpretation; wissenschaftliches
+      Lesen, Exzerpieren, Schreiben und Gliedern; Zitieren und Plagiatsvermeidung;
+      Präsentation von Ergebnissen. Enthält Module zu Publikationsformen,
+      Katalogen, Bibliografien, Archiven, Editionen und digitalen Ressourcen sowie
+      Suchstrategien, Quellenarten, Archivrecherche und Kriterien zur Bewertung
+      wissenschaftlicher Arbeiten. English: Online handbook by the Department of
+      History, University of Basel, with a PDF edition (58 pages). Covers research
+      question design; literature and source discovery; source criticism and
+      interpretation; academic reading, excerpting, writing and structuring;
+      citation and plagiarism avoidance; presenting results. Includes modules on
+      publication types, catalogues, bibliographies, archives, editions and
+      digital resources, as well as search strategies, source types, archival
+      discovery and criteria for evaluating academic work.
+    accessed:
+      - year: 2025
+        month: 9
+        day: 9
+    author:
+      - family: Hitz
+        given: Benjamin
+      - family: Stüdli
+        given: Beat
+    authority: Departement Geschichte, Universität Basel
+    citation-key: WerkzeugkastenGeschichte_2016
+    issued:
+      - year: 2016
+    language: german
+    title: >-
+      Werkzeugkasten Geschichte. Online-Handbuch für Studium und
+      wissenschaftliches Arbeiten & PDF-Ausgabe
+    type: webpage
+    URL: https://dg.philhist.unibas.ch/de/studium/werkzeugkasten-geschichte/
+
+  - id: wilkinson2016
+    abstract: >-
+      There is an urgent need to improve the infrastructure supporting the reuse
+      of scholarly data. A diverse set of stakeholders—representing academia,
+      industry, funding agencies, and scholarly publishers—have come together to
+      design and jointly endorse a concise and measureable set of principles that
+      we refer to as the FAIR Data Principles. The intent is that these may act as
+      a guideline for those wishing to enhance the reusability of their data
+      holdings. Distinct from peer initiatives that focus on the human scholar,
+      the FAIR Principles put specific emphasis on enhancing the ability of
+      machines to automatically find and use the data, in addition to supporting
+      its reuse by individuals. This Comment is the first formal publication of
+      the FAIR Principles, and includes the rationale behind them, and some
+      exemplar implementations in the community.
+    accessed:
+      - year: 2025
+        month: 9
+        day: 8
+    author:
+      - family: Wilkinson
+        given: Mark D.
+      - family: Dumontier
+        given: Michel
+      - family: Aalbersberg
+        given: IJsbrand Jan
+      - family: Appleton
+        given: Gabrielle
+      - family: Axton
+        given: Myles
+      - family: Baak
+        given: Arie
+      - family: Blomberg
+        given: Niklas
+      - family: Boiten
+        given: Jan-Willem
+      - family: Silva Santos
+        given: Luiz Bonino
+        non-dropping-particle: da
+      - family: Bourne
+        given: Philip E.
+      - family: Bouwman
+        given: Jildau
+      - family: Brookes
+        given: Anthony J.
+      - family: Clark
+        given: Tim
+      - family: Crosas
+        given: Mercè
+      - family: Dillo
+        given: Ingrid
+      - family: Dumon
+        given: Olivier
+      - family: Edmunds
+        given: Scott
+      - family: Evelo
+        given: Chris T.
+      - family: Finkers
+        given: Richard
+      - family: Gonzalez-Beltran
+        given: Alejandra
+      - family: Gray
+        given: Alasdair J. G.
+      - family: Groth
+        given: Paul
+      - family: Goble
+        given: Carole
+      - family: Grethe
+        given: Jeffrey S.
+      - family: Heringa
+        given: Jaap
+      - family: Hoen
+        given: Peter A. C.
+        non-dropping-particle: ’t
+      - family: Hooft
+        given: Rob
+      - family: Kuhn
+        given: Tobias
+      - family: Kok
+        given: Ruben
+      - family: Kok
+        given: Joost
+      - family: Lusher
+        given: Scott J.
+      - family: Martone
+        given: Maryann E.
+      - family: Mons
+        given: Albert
+      - family: Packer
+        given: Abel L.
+      - family: Persson
+        given: Bengt
+      - family: Rocca-Serra
+        given: Philippe
+      - family: Roos
+        given: Marco
+      - family: Schaik
+        given: Rene
+        non-dropping-particle: van
+      - family: Sansone
+        given: Susanna-Assunta
+      - family: Schultes
+        given: Erik
+      - family: Sengstag
+        given: Thierry
+      - family: Slater
+        given: Ted
+      - family: Strawn
+        given: George
+      - family: Swertz
+        given: Morris A.
+      - family: Thompson
+        given: Mark
+      - family: Lei
+        given: Johan
+        non-dropping-particle: van der
+      - family: Mulligen
+        given: Erik
+        non-dropping-particle: van
+      - family: Velterop
+        given: Jan
+      - family: Waagmeester
+        given: Andra
+      - family: Wittenburg
+        given: Peter
+      - family: Wolstencroft
+        given: Katherine
+      - family: Zhao
+        given: Jun
+      - family: Mons
+        given: Barend
+    citation-key: wilkinson2016
+    container-title: Scientific Data
+    container-title-short: Sci Data
+    DOI: 10.1038/sdata.2016.18
+    ISSN: 2052-4463
+    issue: '1'
+    issued:
+      - year: 2016
+        month: 3
+        day: 15
+    language: en
+    license: 2016 The Author(s)
+    page: '160018'
+    publisher: Nature Publishing Group
+    source: www.nature.com
+    title: The FAIR Guiding Principles for scientific data management and stewardship
+    type: article-journal
+    URL: https://www.nature.com/articles/sdata201618
+    volume: '3'
 
   - id: young_justice_1990
     author:

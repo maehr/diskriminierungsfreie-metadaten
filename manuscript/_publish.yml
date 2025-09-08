@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: 4e5dc29c-5fe0-4366-960b-206645c95951
+      url: https://moritz-maehr.quarto.pub/manuscript

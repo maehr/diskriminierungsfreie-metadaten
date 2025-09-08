@@ -84,7 +84,7 @@ Im Handbuch verwenden wir bewusst eine breite Definition von Diskriminierung, um
 
 Der Band gliedert sich in zwei Teile: Im ersten Teil definieren wir die theoretischen und technischen Schlüsselbegriffe und verknüpfen sozial- und informationswissenschaftliche Perspektiven. Wir behandeln Normativität, Formen der Diskriminierung, Bias und Oppression sowie Grundlagen zu Forschungs- und Metadaten, Metadatenstandards und FAIR/CARE/LOUD.
 
-Im zweiten Teil behandeln wir den diskriminierungssensiblen Umgang mit Metadaten entlang des gesamten Forschungsdatenlebenszyklus: \[REFERENZ higgins2008 [https://www.dcc.ac.uk/guidance/curation-lifecycle-model](https://www.dcc.ac.uk/guidance/curation-lifecycle-model)\]
+Im zweiten Teil behandeln wir den diskriminierungssensiblen Umgang mit Metadaten entlang des gesamten Forschungsdatenlebenszyklus[@higgins2008]:
 
 1. **Planung und Konzeption:** Konzeptionelle Grundentscheidungen, Auswahl von Standards, Rollen, ethische und rechtliche Aspekte, Fokus auf Einwilligung und Schutz vulnerabler Gruppen.  
 2. **Datensammlung und Quellenkritik:** Datenerzeugung und \-sammlung, Nutzung offener Formate und normierter Begrifflichkeiten zur Interoperabilität sowie Kontextualisierung der Quellen.  
@@ -165,7 +165,7 @@ Das Handbuch ist ein «Living Document». Wir laden die Communities der Digital 
 
 Die Entwicklung und Anwendung einer diskriminierungssensiblen Metadatenpraxis setzt ein gemeinsames Verständnis zentraler Begriffe und Konzepte voraus. Dieses Kapitel definiert und kontextualisiert die theoretischen und technischen Schlüsselbegriffe, die den Rahmen des Handbuchs bilden. Im Fokus stehen Begriffe wie **Normativität**, **Diskriminierung**, **Bias** und **Oppression**, die sowohl aus geistes- und kulturwissenschaftlicher als auch aus informations-, bibliotheks- und archivwissenschaftlicher Perspektive diskutiert werden. Neben diesen kritischen Grundbegriffen werden auch technische Termini wie **Metadatenstandard**, **Normdaten** und **Datenwertstandard** eingeführt, um die Brücke zwischen inhaltlicher Reflexion und technischer Implementierung zu schlagen.
 
-Dieses Kapitel bestimmt die Begriffe so, dass sie sowohl analytisch tragfähig als auch praktisch operationalisierbar sind. Die Auswahl und Definition der Begriffe orientiert sich an internationalen Menschenrechtsstandards (REFERENZ [Human Rights](https://www.humanrights.ch/de/ipf/menschenrechte/diskriminierung/diskriminierungsverbot-dossier/juristisches-konzept/formen-der-diskriminierung/)) und interdisziplinären Ansätzen wie Data Feminism, Data Justice und Critical Data Studies (REFERENZ Mehrabi et al. 2021; Loukissas 2019; D’Ignazio/Klein 2020). Damit bildet dieses Kapitel die konzeptionelle und terminologische Grundlage für alle weiteren Analysen und Empfehlungen im Handbuch.
+Dieses Kapitel bestimmt die Begriffe so, dass sie sowohl analytisch tragfähig als auch praktisch operationalisierbar sind. Die Auswahl und Definition der Begriffe orientiert sich an internationalen Menschenrechtsstandards [@humanrightsCH_FormenDiskriminierung] und interdisziplinären Ansätzen wie Data Feminism, Data Justice und Critical Data Studies [@mehrabi2021;@loukissas2019;@dignazio2020]. Damit bildet dieses Kapitel die konzeptionelle und terminologische Grundlage für alle weiteren Analysen und Empfehlungen im Handbuch.
 
 ## Diskriminierung in und durch Daten {#sec-diskriminierung-in-und-durch-daten}
 
@@ -175,7 +175,7 @@ Dieses Kapitel bestimmt die Begriffe so, dass sie sowohl analytisch tragfähig a
 
 <!-- [](https://www.wikidata.org/wiki/Q7835) -->
 
-Daten und Metadaten erscheinen auf den ersten Blick als objektive Repräsentationen der Wirklichkeit, doch sind sie stets in historisch gewachsene Machtverhältnisse und normative Ordnungen eingebettet. Das Beispiel der Krim in Wikidata [Q7835](https://www.wikidata.org/wiki/Q7835) (REFERENZ [Q7835](https://www.wikidata.org/wiki/Q7835)) und die beigefügte Karte der Halbinsel illustrieren anschaulich, wie scheinbar neutrale Darstellungen in Metadaten inhärent Stellung beziehen und politische Konfliktlagen spiegeln.
+Daten und Metadaten erscheinen auf den ersten Blick als objektive Repräsentationen der Wirklichkeit, doch sind sie stets in historisch gewachsene Machtverhältnisse und normative Ordnungen eingebettet. Das Beispiel der Krim in Wikidata [Q7835](https://www.wikidata.org/wiki/Q7835) und die beigefügte Karte der Halbinsel illustrieren anschaulich, wie scheinbar neutrale Darstellungen in Metadaten inhärent Stellung beziehen und politische Konfliktlagen spiegeln.
 
 ![Politische Karte der Krim mit Städten, Verkehrswegen und geografischen Bezeichnungen. Die Karte zeigt die Halbinsel im Schwarzen Meer, angrenzend an die Ukraine und Russland.](images/image5.png){fig-alt="Karte der Krim mit eingezeichneten Städten, Strassen, Eisenbahnlinien und Landschaftsmerkmalen. Zu sehen sind Simferopol, Sewastopol, Jalta, Feodossija, Kertsch und Jewpatorija sowie Gebirge, Küstenlinien und angrenzende Regionen der Ukraine und Russlands."}
 
@@ -185,7 +185,7 @@ Die Karte präsentiert die Krim als „Autonome Republik Krim“ und zeigt damit
 
 Dieses kartografische Beispiel steht paradigmatisch für die normativen Setzungen, die auch digital kodierten Datenstrukturen wie Wikidata zugrunde liegen. So wird die Krim dort sowohl als Teil der Ukraine („de jure“) als auch Russlands („de facto“) geführt, jedoch übernehmen viele verknüpfte Objekte wie Städte oder administrative Einheiten diese Mehrdeutigkeit nicht konsistent oder bilden einzig die ukrainische Perspektive ab. Die Karte operiert dabei mit einem klaren Framing zugunsten der ukrainischen Souveränität und blendet alternative Klassifikationsoptionen, wie etwa die Bezeichnung „Republik Krim“ als Teil Russlands, weitgehend aus.
 
-Dies verdeutlicht, dass jede Form von Daten- und Metadatenmodellierung – sei sie visuell, textuell oder strukturell – auf normativen Entscheidungen beruht, die oft unsichtbar bleiben. Die Auswahl von Bezeichnungen, die Sichtbarkeit von Grenzen oder die Hierarchisierung von Souveränitätsansprüchen spiegeln und stabilisieren bestehende Machtasymmetrien und wirken als „invisible hand of classification“ (REFERENZ Bowker & Star 1999). Für Nutzer\*innen entsteht der Eindruck technischer Neutralität, obwohl sowohl die Karte als auch digitale Datenbanken politische Aushandlungsprozesse und Interessen materialisieren.
+Dies verdeutlicht, dass jede Form von Daten- und Metadatenmodellierung – sei sie visuell, textuell oder strukturell – auf normativen Entscheidungen beruht, die oft unsichtbar bleiben. Die Auswahl von Bezeichnungen, die Sichtbarkeit von Grenzen oder die Hierarchisierung von Souveränitätsansprüchen spiegeln und stabilisieren bestehende Machtasymmetrien und wirken als „invisible hand of classification“ [@bowker1999]. Für Nutzer\*innen entsteht der Eindruck technischer Neutralität, obwohl sowohl die Karte als auch digitale Datenbanken politische Aushandlungsprozesse und Interessen materialisieren.
 
 Eine diskriminierungssensible Metadatenpraxis setzt daher an der Schnittstelle von Technik und Gesellschaft an: Sie verlangt die konsequente Offenlegung und Reflexion der eigenen Klassifikationsschemata, Entscheidungslogiken und Datenstrukturen. In der Umsetzung heisst das: transparente Dokumentation von Modellierungsentscheidungen (Schema, Version, Geltungsbereich), parallele Felder für Mehrperspektivität (*de jure*/*de facto*, Selbst- und Fremdbezeichnungen), überprüfbare Quellen- und Provenienzangaben sowie die explizite, maschinenlesbare Markierung von Konflikten und Unsicherheiten in den Metadaten (Status, Zeitraum, räumliche Gültigkeit). Die Beschreibung durch Metadaten und ihre Repräsentation in digitalen Datenbanken sind bewusst gestaltete, nachvollziehbare Praktiken, die nie lediglich „abbilden“, sondern normativ wirken.
 
@@ -346,7 +346,7 @@ Statistische Diskriminierung bezeichnet die Benachteiligung von Individuen, wenn
 
 ### Spezifische Diskriminierungen in historischen Quellen und Forschungsdaten {#sec-spezifische-diskriminierungen-in-historischen-quellen-und-forschungsdaten}
 
-Diskriminierung kann bei der Arbeit mit historischen Quellen und Forschungsdaten in mehreren Formen auftreten \[REFERENZ Philadelphia 2019, S. 5\]:
+Diskriminierung kann bei der Arbeit mit historischen Quellen und Forschungsdaten in mehreren Formen auftreten<!-- [@A4BLiP2019] -->:
 
 1. **Diskriminierende Aussagen über marginalisierte Gruppen produzieren oder reproduzieren**, sei es durch eigene Formulierungen oder durch unterkomplexe Weitergabe von Forschungsdaten.  
 2. **Marginalisierte Gruppen systematisch von Entscheidungsprozessen ausschliessen oder unterrepräsentieren** bzw. solche Zustände fortschreiben.  
@@ -488,13 +488,13 @@ Verzerrungen, die auf Unterschieden in Struktur, Lexik, Semantik und Syntax nutz
 
 ## Unterdrückung in Daten (Oppression in Data)
 
-Oppression ist nicht bloss eine einzelne Handlung der Benachteiligung, sondern das Zusammenspiel von Praktiken, Diskursen und Institutionen, die Handlungsspielräume ganzer Gruppen systematisch einengen. In der feministischen Machttheorie wird Unterdrückung als **strukturelles „power-over“** verstanden: eine dauerhafte, nicht-zufällige Konstellation, in der Institutionen, Normen und symbolische Ordnungen bestimmte Gruppen in ihren Optionen einschränken, während andere privilegiert werden.(REFERENZ Young 1990\) Unterdrückung wirkt **materiell** (physisch, ökonomisch), **symbolisch** (Stigmatisierung, Unsichtbarmachung) und **epistemisch** (Festlegung dessen, was als Wissen gilt).
+Oppression ist nicht bloss eine einzelne Handlung der Benachteiligung, sondern das Zusammenspiel von Praktiken, Diskursen und Institutionen, die Handlungsspielräume ganzer Gruppen systematisch einengen. In der feministischen Machttheorie wird Unterdrückung als **strukturelles „power-over“** verstanden: eine dauerhafte, nicht-zufällige Konstellation, in der Institutionen, Normen und symbolische Ordnungen bestimmte Gruppen in ihren Optionen einschränken, während andere privilegiert werden.[@young_justice_1990] Unterdrückung wirkt **materiell** (physisch, ökonomisch), **symbolisch** (Stigmatisierung, Unsichtbarmachung) und **epistemisch** (Festlegung dessen, was als Wissen gilt).
 
-Historische Daten- und Metadatenpraktiken können Unterdrückung auf mindestens drei Ebenen reproduzieren: ontologisch, epistemisch und infrastrukturell. Diese Formen wirken kumulativ: Jede einzelne Drahtstrebe, beispielsweise ein kontrolliertes Vokabular, scheint zunächst harmlos. Doch im Zusammenspiel entsteht ein Käfig, der die Bewegungsfreiheit bestimmter Gruppen systematisch einschränkt. (REFERENZ Frye 1983\)
+Historische Daten- und Metadatenpraktiken können Unterdrückung auf mindestens drei Ebenen reproduzieren: ontologisch, epistemisch und infrastrukturell. Diese Formen wirken kumulativ: Jede einzelne Drahtstrebe, beispielsweise ein kontrolliertes Vokabular, scheint zunächst harmlos. Doch im Zusammenspiel entsteht ein Käfig, der die Bewegungsfreiheit bestimmter Gruppen systematisch einschränkt.[@frye_politics_1983]
 
 ### Ontologische Gewalt
 
-*Wirkmechanismus*: Erzwingt Kategorien, die der Selbstbeschreibung der Betroffenen widersprechen oder sie auf defizitäre Merkmale reduziert. (REFERENZ Bowker/Star 1999\)
+*Wirkmechanismus*: Erzwingt Kategorien, die der Selbstbeschreibung der Betroffenen widersprechen oder sie auf defizitäre Merkmale reduziert.[@bowker1999]
 
 *Beispiele*:
 
@@ -503,7 +503,7 @@ Historische Daten- und Metadatenpraktiken können Unterdrückung auf mindestens 
 
 ### Epistemische Gewalt
 
-*Wirkmechanismus*: Verunmöglicht Wissen, indem es bestimmte Perspektiven ausschliesst oder als „Rauschen“ markiert. (REFERENZ Spivak 1988\)
+*Wirkmechanismus*: Verunmöglicht Wissen, indem es bestimmte Perspektiven ausschliesst oder als „Rauschen“ markiert.[@spivak_subaltern_1988]
 
 *Beispiele*:
 
@@ -512,7 +512,7 @@ Historische Daten- und Metadatenpraktiken können Unterdrückung auf mindestens 
 
 ### Infrastrukturelle Gewalt
 
-*Wirkmechanismus*: Fixiert Benachteiligungen durch technische Standards, die schwer veränderbar sind (lock-in). (REFERENZ Rodgers/O’Neill 2012\)
+*Wirkmechanismus*: Fixiert Benachteiligungen durch technische Standards, die schwer veränderbar sind (lock-in).[@rodgers_oneill_infrastructural_2012]
 
 *Beispiele*:
 
@@ -547,7 +547,7 @@ Metadaten enthalten strukturierte Informationen über Objekte, insbesondere übe
 
 ![Plakat des Circus Knie für eine „Völkerschau“, Darstellung von stereotypisierten Szenen mit Männern beim Handwerk, Schweiz, 20\. Jahrhundert.](images/image6.jpg){fig-alt="Plakat mit rotem Hintergrund: Drei Männer in bunten Gewändern und Turbanen führen Handarbeiten aus – einer webt, einer hält Schmuck, einer arbeitet mit Tongefässen. Darunter steht gross „KNIE“ und kleiner „Völkerschau“." width="50%"}
 
-Zur Illustration Begrifflichkeiten rund um Metadaten greifen wir auf die Metadaten des Beispiels *Knie Völkerschau* (REFERENZ [https://www.europeana.eu/de/item/92023/images\_billed\_2010\_okt\_billeder\_object488811?lang=de](https://www.europeana.eu/de/item/92023/images_billed_2010_okt_billeder_object488811?lang=de)) zurück. Wir haben es ausgewählt, weil es exemplarisch für problematische, kolonial geprägte Darstellungsweisen in populärer Unterhaltungskultur des 20\. Jahrhunderts steht und über reichhaltige Metadaten verfügt.
+Zur Illustration Begrifflichkeiten rund um Metadaten greifen wir auf die Metadaten des Beispiels [*Knie Völkerschau*](https://www.europeana.eu/de/item/92023/images_billed_2010_okt_billeder_object488811) zurück. Wir haben es ausgewählt, weil es exemplarisch für problematische, kolonial geprägte Darstellungsweisen in populärer Unterhaltungskultur des 20\. Jahrhunderts steht und über reichhaltige Metadaten verfügt.
 
 | Feld (Dublin Core / Europeana) | Wert |
 | :---- | :---- |
@@ -571,7 +571,7 @@ Zur Illustration Begrifflichkeiten rund um Metadaten greifen wir auf die Metadat
 
 : "Metadaten-Tabelle für: *Knie Völkerschau*"
 
-Die Metadaten des Plakats *Knie Völkerschau* machen deutlich, dass Metadaten sowohl **intrinsische** (dem Objekt selbst inhärente) als auch **extrinsische** (dem Objekt zugeschriebene) **Informationen** enthalten können. So verweist etwa *dc:description* auf intrinsische Eigenschaften wie Format, Material und Gestaltung des Drucks, während Felder wie *dc:subject* oder *edm:provider* extrinsische Klassifikationen und institutionelle Zuschreibungen dokumentieren (REFERENZ: [forschungsdaten.info](https://forschungsdaten.info/themen/beschreiben-und-dokumentieren/metadaten-und-metadatenstandards/)).
+Die Metadaten des Plakats *Knie Völkerschau* machen deutlich, dass Metadaten sowohl **intrinsische** (dem Objekt selbst inhärente) als auch **extrinsische** (dem Objekt zugeschriebene) **Informationen** enthalten können. So verweist etwa *dc:description* auf intrinsische Eigenschaften wie Format, Material und Gestaltung des Drucks, während Felder wie *dc:subject* oder *edm:provider* extrinsische Klassifikationen und institutionelle Zuschreibungen dokumentieren.[@forschungsdateninfo_metadaten_2024]
 
 Darüber hinaus lassen sich die im Beispiel vorliegenden Metadaten verschiedenen **Funktionskategorien** zuordnen:
 
@@ -579,7 +579,7 @@ Darüber hinaus lassen sich die im Beispiel vorliegenden Metadaten verschiedenen
 * **Administrative Metadaten**: Angaben zu Datenprovidern, Aggregationsdiensten und Zugangs-URLs (*edm:provider*, *edm:isShownAt*).  
 * **Fachspezifisch-inhaltliche Metadaten**: thematische Schlagworte (*dc:subject*) oder die Beschreibung der dargestellten Handwerker-Szenen (*dc:description*).
 
-Im Kontext der Digitalisierung ist zusätzlich von **Paradaten** bzw. **Prozessmetadaten** zu sprechen, die im Europeana-Datensatz implizit mitschwingen, auch wenn sie nicht explizit aufgeführt sind. Dazu gehören etwa Kameraeinstellungen oder Farbprofile, die während der Erstellung des Digitalisats generiert wurden (REFERENZ: [forrt.org](https://forrt.org/glossary/german/paradata/)).
+Im Kontext der Digitalisierung ist zusätzlich von **Paradaten** bzw. **Prozessmetadaten** zu sprechen, die im Europeana-Datensatz implizit mitschwingen, auch wenn sie nicht explizit aufgeführt sind. Dazu gehören etwa Kameraeinstellungen oder Farbprofile, die während der Erstellung des Digitalisats generiert wurden.[@FORRT_Paradata_2025]
 
 Das Beispiel illustriert zudem die Differenz zwischen **physischen Objekten** und deren **digitalen Repräsentationen**:
 
@@ -690,11 +690,11 @@ Das Beispiel *Knie Völkerschau* ist vollständig eingebettet in ein interoperab
 | `edm:country` | ISO 3166-1 Alpha-2 | `DK` → *Denmark* | **EDM: country** | EDM | RDF/XML | Anzeige Herkunftsland | Europeana-Facettierung |
 : "Metadaten-Tabelle für: *Knie Völkerschau* mit sieben Ebenen"
 
-Im Praxisteil dieses Handbuchs gehen wir insbesondere auf Schemas, Inhalts- und Wertstandards ein und beziehen uns dabei vorwiegend auf die [Dublin Core Metadata Initiative (DCMI)](https://www.dublincore.org) (REFERENZ). Eine umfassende Übersicht weiterer verbreiteter Standards liefert etwa [Gabay u. a. 2023](https://zenodo.org/records/10122052) (REFERENZ).
+Im Praxisteil dieses Handbuchs gehen wir insbesondere auf Schemas, Inhalts- und Wertstandards ein und beziehen uns dabei vorwiegend auf die [Dublin Core Metadata Initiative (DCMI)](https://www.dublincore.org). Eine umfassende Übersicht weiterer verbreiteter Standards liefert etwa @sgg2023.
 
 ## FAIR, CARE und LOUD: Überblick und Zielsetzung
 
-Dieses Kapitel bündelt drei komplementäre Orientierungen der Forschungsdatenpraxis. **FAIR** adressiert Auffindbarkeit, Zugänglichkeit, Interoperabilität und Wiederverwendbarkeit als technische und organisatorische Leitlinien ([Wilkinson et al. 2016](https://doi.org/10.1038/sdata.2016.18), [GO-FAIR: FAIR Principles](https://www.go-fair.org/fair-principles/)). **CARE** rückt kollektiven Nutzen, Kontrollhoheit, Verantwortung und Ethik in den Fokus, insbesondere bei indigenen Daten ([GIDA – CARE Principles](https://www.gida-global.org/care), [Carroll et al. 2020](https://doi.org/10.5334/dsj-2020-043)). **LOUD** verschiebt den Blick von der reinen Bereitstellung hin zur tatsächlichen Nutzbarkeit in Arbeitsabläufen der Geisteswissenschaften. Ziel ist eine lesbare, praxisnahe Ordnung der Prinzipien für historische Forschung und Metadatenarbeit.
+Dieses Kapitel bündelt drei komplementäre Orientierungen der Forschungsdatenpraxis. **FAIR** adressiert Auffindbarkeit, Zugänglichkeit, Interoperabilität und Wiederverwendbarkeit als technische und organisatorische Leitlinien [@wilkinson2016;@gofairinitiative]. **CARE** rückt kollektiven Nutzen, Kontrollhoheit, Verantwortung und Ethik in den Fokus, insbesondere bei indigenen Daten [@GIDA_CARE_2025;@carroll2021]. **LOUD** verschiebt den Blick von der reinen Bereitstellung hin zur tatsächlichen Nutzbarkeit in Arbeitsabläufen der Geisteswissenschaften. Ziel ist eine lesbare, praxisnahe Ordnung der Prinzipien für historische Forschung und Metadatenarbeit.
 
 ### Begriffsklärungen: offen, öffentlich, Open Data
 
@@ -746,7 +746,7 @@ Metadaten sind weit mehr als neutrale Beschreibungen von Forschungsdaten oder ku
 
 Ein diskriminierungssensibler Umgang mit Metadaten bedeutet, diese Wirkmacht bewusst zu reflektieren und verantwortungsvoll zu gestalten. Es geht darum, marginalisierte Stimmen sichtbar zu machen, respektvolle Sprache zu verwenden und transparente Entscheidungsprozesse zu dokumentieren. Gleichzeitig müssen historische Kontexte gewahrt und problematische Inhalte nicht beschönigt, sondern klar benannt und kontextualisiert werden.
 
-Der Praxisteil orientiert sich am DCC Curation Lifecycle nach Higgins (REFERENZ higgins2008, <https://www.dcc.ac.uk/guidance/curation-lifecycle-model>) und führt durch alle Phasen der Metadatenerstellung – von der ersten Planung bis zur Langzeitarchivierung. Die sieben Hauptkapitel behandeln jeweils spezifische Herausforderungen und bieten konkrete Handlungsempfehlungen, Checklisten und Praxisbeispiele. Dabei werden sowohl die etablierten FAIR-Prinzipien (Findable, Accessible, Interoperable, Reusable) als auch die CARE-Prinzipien (Collective Benefit, Authority to Control, Responsibility, Ethics) berücksichtigt, die besonders bei kulturell sensiblen Inhalten von Bedeutung sind.
+Der Praxisteil orientiert sich am DCC Curation Lifecycle nach Higgins [-@higgins2008] und führt durch alle Phasen der Metadatenerstellung – von der ersten Planung bis zur Langzeitarchivierung. Die sieben Hauptkapitel behandeln jeweils spezifische Herausforderungen und bieten konkrete Handlungsempfehlungen, Checklisten und Praxisbeispiele. Dabei werden sowohl die etablierten FAIR-Prinzipien (Findable, Accessible, Interoperable, Reusable) als auch die CARE-Prinzipien (Collective Benefit, Authority to Control, Responsibility, Ethics) berücksichtigt, die besonders bei kulturell sensiblen Inhalten von Bedeutung sind.
 
 Die Phasen sind iterativ angelegt – Entscheidungen wirken rückkoppelnd auf frühere Schritte, und neue Erkenntnisse erfordern oft Anpassungen in der Herangehensweise. Ziel ist eine belastbare Nachvollziehbarkeit, verbesserte Auffindbarkeit und angemessene Kontextualisierung sensibler Inhalte, die sowohl wissenschaftlichen Standards genügt als auch ethischen Anforderungen entspricht.
 
@@ -760,27 +760,29 @@ Die Phasen sind iterativ angelegt – Entscheidungen wirken rückkoppelnd auf fr
 
 **Was beschreibe ich?** Dazu muss der Umfang der zu erfassenden Forschungsdaten, die zur Verfügung stehenden Ressourcen und Prioritäten festgelegt werden. Damit einher geht auch die Bestimmung, wie einheitlich die Metadaten aussehen sollen. Dazu kann ein Pilot mit zufällig gezogenen Quellen durchgeführt werden, um Aufwand, Tiefe und Lücken realistisch zu schätzen.
 
-**CHECKLIST**
+::: {.callout-important title="Checkliste Zielsetzung"}
 
 * Ziel, Zielgruppen, Nutzungsszenarien dokumentiert  
 * Prioritäten und Mindeststandards definiert  
 * Pilotkorpus erfasst und Aufwand gemessen  
 * Sensible Inhalte antizipiert und gekennzeichnet
 
+:::
+
 ::: {.callout-note title="Erfahrungen Stadt.Geschichte.Basel"}
 
-Eine frühe Klärung von Objekttypen, Zielgruppen und Kontexten war zentral. Das Schema blieb bewusst flexibel und wurde iterativ angepasst. Neben technischen Angaben waren kontextualisierende Informationen nötig. Diskriminierende Inhalte wurden historisch, sozial und politisch eingebettet. Fehlende Urheber\*innen erforderten eigene Recherche. Dabei halfen verlinkte Nachschlagewerke (zum Beispiel Basler Stadtbuch). Der Überblick über diskriminierende Themen entstand jedoch erst nach vielen Annotationen. REFERENZ [https://dokumentation.stadtgeschichtebasel.ch/products/interna/digitalkonzept/](https://dokumentation.stadtgeschichtebasel.ch/products/interna/digitalkonzept/)
+Eine frühe Klärung von Objekttypen, Zielgruppen und Kontexten war zentral. Das Schema blieb bewusst flexibel und wurde iterativ angepasst. Neben technischen Angaben waren kontextualisierende Informationen nötig. Diskriminierende Inhalte wurden historisch, sozial und politisch eingebettet. Fehlende Urheber\*innen erforderten eigene Recherche. Dabei halfen verlinkte Nachschlagewerke (zum Beispiel Basler Stadtbuch). Der Überblick über diskriminierende Themen entstand jedoch erst nach vielen Annotationen.[@Maehr_SGB_digital_2022]
 :::
 
 ### 1.2 Ethische und rechtliche Rahmenbedingungen {#sec-12-ethische-und-rechtliche-rahmenbedingungen}
 
-Frühzeitige Klärung ist entscheidend: Urheber- und Leistungsschutzrechte, Datenschutz und Persönlichkeitsrechte, Rechte Dritter sowie der Schutz vulnerabler Gruppen müssen berücksichtigt werden. Grundlage bildet ein Rechteinventar, das pro Objekt Herkunft, Urheber\*in, Rechteketten und Personenbezug dokumentiert.(REFERENZ Weitzmann, John H., und Paul Klimpel)
+Frühzeitige Klärung ist entscheidend: Urheber- und Leistungsschutzrechte, Datenschutz und Persönlichkeitsrechte, Rechte Dritter sowie der Schutz vulnerabler Gruppen müssen berücksichtigt werden. Grundlage bildet ein Rechteinventar, das pro Objekt Herkunft, Urheber\*in, Rechteketten und Personenbezug dokumentiert.[@weitzmann_klimpel_2016]
 
-Der Umgang mit personenbezogenen Daten verlangt eine klare Rechtsgrundlage (Einwilligung, Vertrag, gesetzliche Grundlage, berechtigtes Interesse) und gegebenenfalls Schutzmassnahmen wie Anonymisierung, Zugriffsstufen oder Content-Warnings (QUERVERWEIS 5\. Veröffentlichung und Zugang).
+Der Umgang mit personenbezogenen Daten verlangt eine klare Rechtsgrundlage (Einwilligung, Vertrag, gesetzliche Grundlage, berechtigtes Interesse) und gegebenenfalls Schutzmassnahmen wie Anonymisierung, Zugriffsstufen oder Content-Warnings [@sec-5-veröffentlichung-und-zugang].
 
 Für die Veröffentlichung sind Lizenzangaben und Rechteaussagen (zum Beispiel CC-Lizenzen, RightsStatements.org) maschinenlesbar zu dokumentieren. Interne Review- und Eskalationswege sichern die Nachvollziehbarkeit und Rechtssicherheit. Bei komplexen Fällen ist juristische Expertise beizuziehen.
 
-**CHECKLIST**
+::: {.callout-important title="Checkliste rechtliche Rahmenbedingungen"}
 
 * Rechtslage pro Inhaltstyp dokumentiert und geklärt  
 * Einwilligungen und Einschränkungen erfasst  
@@ -788,9 +790,11 @@ Für die Veröffentlichung sind Lizenzangaben und Rechteaussagen (zum Beispiel C
 * Lizenz/rights statement festgelegt  
 * Review- und Eskalationswege definiert
 
+:::
+
 ### 1.3 Standards und Infrastruktur festlegen {#sec-13-standards-und-infrastruktur-festlegen}
 
-Als Ausgangspunkt sollten etablierte Schemata wie das Dublin Core Metadata Element Set (DCMES), MODS oder Schema.org geprüft werden. Ihre Verbreitung in der Fachcommunity und die Anschlussfähigkeit an bestehende Systeme sichern Interoperabilität und Nachhaltigkeit. Je nach Projekt kann es sinnvoll sein, Schemata zu erweitern oder zu kombinieren, etwa EAD oder MARC auf Sammlungsebene und Dublin Core, MODS, LIDO oder VRA Core auf Objektebene. REFERENZ [https://campus.dariah.eu/resources/hosted/einfuehrung-metadaten](https://campus.dariah.eu/resources/hosted/einfuehrung-metadaten)
+Als Ausgangspunkt sollten etablierte Schemata wie das Dublin Core Metadata Element Set (DCMES), MODS oder Schema.org geprüft werden. Ihre Verbreitung in der Fachcommunity und die Anschlussfähigkeit an bestehende Systeme sichern Interoperabilität und Nachhaltigkeit. Je nach Projekt kann es sinnvoll sein, Schemata zu erweitern oder zu kombinieren, etwa EAD oder MARC auf Sammlungsebene und Dublin Core, MODS, LIDO oder VRA Core auf Objektebene.[@Schopper_2024_Einfuehrung_Metadaten]
 
 Darüber hinaus ist die frühzeitige Planung von Normdaten, kontrollierten Vokabularen, technischen Plattformen und Datenflüssen entscheidend. Bei der Definition der Metadatenfelder empfiehlt es sich, zunächst alle relevanten Informationen zu sammeln (zum Beispiel Zeitangaben, Geokoordinaten, Lizenzhinweise, Versionsgeschichte). Ob Angaben in eigenen Feldern oder in Kommentarfeldern erfasst werden, hängt von Automatisierbarkeit, Standardisierung und Aggregationsanforderungen ab.
 
@@ -802,15 +806,17 @@ Schliesslich ist es wichtig, sämtliche Entscheidungen und Abwägungen bei der S
 
 Ein weiterer zentraler Punkt bei der Auswahl und Planung von Infrastrukturen ist die Abwägung zwischen proprietären Lösungen und offenen, quelloffenen Systemen. Proprietäre Software und kommerzielle Plattformen können kurzfristig Vorteile durch Benutzer\*innenfreundlichkeit, Support und Marktverbreitung bieten. Gleichzeitig bergen sie das Risiko des Vendor Lock-in: Daten und Workflows sind an ein spezifisches System gebunden, wodurch langfristige Migrationen, Interoperabilität und Kostenkontrolle erschwert werden. Gerade bei Forschungsdaten widerspricht dies den Prinzipien von Nachhaltigkeit, Offenheit und FAIR/CARE.
 
-**CHECKLIST**
+::: {.callout-important title="Checkliste Standards und Infrastruktur"}
 
 * Zentrales Schema \+ Erweiterungen dokumentiert  
 * Normdaten/Vokabulare ausgewählt  
 * Plattform, Exportformate und Persistent Identifiers (DOI etc.) definiert
 
+:::
+
 ::: {.callout-note title="Erfahrungen Stadt.Geschichte.Basel"}
 
-Im Projekt Stadt.Geschichte.Basel wurde ein flexibles Metadatenmodell entwickelt, das unterschiedliche Objekte und Medien klar voneinander trennt. Zeitangaben werden nach dem EDTF Standard (REFERENZ [https://forschung.stadtgeschichtebasel.ch/data.html](https://forschung.stadtgeschichtebasel.ch/data.html)) erfasst, damit auch unsichere oder mehrdeutige Daten präzise dokumentiert werden können. Für die Arbeit wird ein Mix aus etablierten Open Source Werkzeugen (Omeka, QGIS, R, Python etc.) und kommerziellen Plattformen (GitHub, ArcGIS) eingesetzt. Die Daten werden vor Veröffentlichung geprüft, angereichert und zur Nachnutzung bereitgestellt. Für die langfristige Sicherung werden sie im DaSCH und auf Zenodo archiviert. Begleitend sorgen Schulungen, Data Stewards und die Einbindung in Lehre und Praktika für nachhaltige Nutzung. Leitlinien wie FAIR, Open Access und digitale Nachhaltigkeit prägen die Infrastruktur. Proprietäre Dienste werden durch offene Standards und Repositorien abgesichert. Zudem gibt es klare Regelungen zu Datenschutz und Barrierefreiheit. Die Dokumentation wird regelmässig aktualisiert. (REFERENZ [https://dokumentation.stadtgeschichtebasel.ch/products/interna/digitalkonzept/](https://dokumentation.stadtgeschichtebasel.ch/products/interna/digitalkonzept/))
+Im Projekt Stadt.Geschichte.Basel wurde ein flexibles Metadatenmodell entwickelt, das unterschiedliche Objekte und Medien klar voneinander trennt. Zeitangaben werden nach dem EDTF Standard erfasst, damit auch unsichere oder mehrdeutige Daten präzise dokumentiert werden können [@SGB_Datendokumentation_2025]. Für die Arbeit wird ein Mix aus etablierten Open Source Werkzeugen (Omeka, QGIS, R, Python etc.) und kommerziellen Plattformen (GitHub, ArcGIS) eingesetzt. Die Daten werden vor Veröffentlichung geprüft, angereichert und zur Nachnutzung bereitgestellt. Für die langfristige Sicherung werden sie im DaSCH und auf Zenodo archiviert. Begleitend sorgen Schulungen, Data Stewards und die Einbindung in Lehre und Praktika für nachhaltige Nutzung. Leitlinien wie FAIR, Open Access und digitale Nachhaltigkeit prägen die Infrastruktur. Proprietäre Dienste werden durch offene Standards und Repositorien abgesichert. Zudem gibt es klare Regelungen zu Datenschutz und Barrierefreiheit. Die Dokumentation wird regelmässig aktualisiert.[@Maehr_SGB_digital_2022]
 :::
 
 ## 2\. Datensammlung und Quellenkritik {#sec-2-datensammlung-und-quellenkritik}
@@ -823,7 +829,7 @@ In der Praxis findet oftmals eine Kombination aus Primärerschliesung und Re-Use
 
 ![Screenshot aus Europeana: Metadaten zum “Genozid-Denkmal” in Ejmiacin, Armenien. ](images/image7.png){fig-alt="Screenshot eines Metadateneintrags in Europeana zum Objekt “Genozid-Denkmal” mit Angaben wie “Betreff”, “Datenpartner” oder “Rechtehinweise”."}
 
-Zum Objekt “Genozid-Denkmal” (REFERENZ [https://www.europeana.eu/de/item/199/item\_EIXXGS4W5AVJLCA556YUS4IRIS2CRMF5?page=2](https://www.europeana.eu/de/item/199/item_EIXXGS4W5AVJLCA556YUS4IRIS2CRMF5?page=2)) aus Europeana liegen schon einige Metadaten bereit. Erfasst sind der **Betreff** (Skulptur) und die **Objektart** (memorials/monuments). Als **Datenpartner** wird das Deutsche Dokumentationszentrum für Kunstgeschichte \- Bildarchiv Foto Marburg angegeben, während die **Deutsche Digitale Bibliothek** als Aggregator fungiert und die Metadaten zusammenzog. Weitere Angaben betreffen das **Erstellungsdatum** (1965), den **Ort** (Ejmiacin), die **Sammlung** (199 DDB BildarchivFotoMarburg) sowie die **Rechteinformation** nach rightsstatements.org.
+Zum Objekt [“Genozid-Denkmal”](https://www.europeana.eu/de/item/199/item_EIXXGS4W5AVJLCA556YUS4IRIS2CRMF5?page=2) aus Europeana liegen schon einige Metadaten bereit. Erfasst sind der **Betreff** (Skulptur) und die **Objektart** (memorials/monuments). Als **Datenpartner** wird das Deutsche Dokumentationszentrum für Kunstgeschichte \- Bildarchiv Foto Marburg angegeben, während die **Deutsche Digitale Bibliothek** als Aggregator fungiert und die Metadaten zusammenzog. Weitere Angaben betreffen das **Erstellungsdatum** (1965), den **Ort** (Ejmiacin), die **Sammlung** (199 DDB BildarchivFotoMarburg) sowie die **Rechteinformation** nach rightsstatements.org.
 
 Im Beispiel wird deutlich, dass die Metadaten zwar formale Metadaten enthalten, jedoch wesentliche Aspekte einer diskriminierungssensiblen Metadatenpraxins fehlen. So bleibt die Beschreibung auf einer technischen, oberflächlichen Ebene, ohne den historischen Kontext, also den Genozid an den Armenier\*innen, zu benennen. Auch die Betroffenenperspektive findet nirgends Ausdruck: Weder werden anerkannte Selbstbezeichnungen verwendet, noch gibt es Verweise auf Ressourcen der armenischen Community. Stattdessen stehen ausschliesslich die beteiligten Institutionen als Datenpartner im Vordergrund. Zudem beschränken sich die Metadaten auf Deutsch und Englisch; eine Mehrsprachigkeit unter Einbezug der armenischen Sprache wäre jedoch zentral, um kulturelle Kontexte sichtbar zu machen. Schliesslich behandelt der Rechtehinweis lediglich die Nachnutzung des Fotos, nicht aber die kulturelle Sensibilität des Denkmals selbst. Eine diskriminierungssensible Metadatenpraxis sollte im Gegensatz über die rein formale Erfassung hinausgehen, indem sie präzisere Benennungen wählt, historische Einordnungen in einem Beschreibungsfeld ergänzt, Mehrsprachigkeit ermöglicht und vor allem die Perspektiven und Stimmen der betroffenen Communities einbezieht. Dies müsste bei der Erstellung alles berücksichtigt und neu erfasst werden.
 
@@ -831,7 +837,7 @@ Beim Zusammenführen von Metadaten sollten in einem letzten Schritt alle **Fehls
 
 ![Screenshot aus dem Online-Zugang des Schweizerischen Bundesarchivs zur Akte „Zigeuner-Problem“ (Signatur E4001E\#1991/200\#143\*), erstellt 1972–1982, abgelegt beim Generalsekretariat des Eidgenössischen Justiz- und Polizeidepartements.](images/image8.png){fig-alt="Webseite des Schweizerischen Bundesarchivs mit Informationen zur Akte „Zigeuner-Problem“. Angezeigt werden Signatur, Titel, Entstehungszeitraum (1972–1982), Zugänglichkeit („frei zugänglich“), Aktenzeichen (0172), Provenienz (Generalsekretariat EJPD, 1953–1983) sowie der Archivplan mit Verlinkungen."}
 
-Das Dossier “Zigeuner-Problem” (REFERENZ [https://www.recherche.bar.admin.ch/recherche/\#/en/archive/unit/3187803](https://www.recherche.bar.admin.ch/recherche/#/en/archive/unit/3187803)) im Schweizer Bundesarchiv macht deutlich, wie selbst Archivtitel Diskriminierung reproduzieren können. Diese stigmatisierende Fremdbezeichnung entstand in der damaligen Behördenpraxis und sollte zwar für heutige Nutzer\*innen zur Sicherung der Authentizität erhalten bleiben, gleichzeitig jedoch in den Metadaten oder Paradaten klar als diskriminierende Bezeichnung markiert und kontextualisiert werden. Konkret könnte beispielsweise in den Metadaten ein Hinweis auf die Verfolgung von Sinti und Roma sowie alternative Suchbegriffe respektive Selbstbezeichnungen stehen.
+Das Dossier [“Zigeuner-Problem”](https://www.recherche.bar.admin.ch/recherche/#/en/archive/unit/3187803) im Schweizer Bundesarchiv macht deutlich, wie selbst Archivtitel Diskriminierung reproduzieren können. Diese stigmatisierende Fremdbezeichnung entstand in der damaligen Behördenpraxis und sollte zwar für heutige Nutzer\*innen zur Sicherung der Authentizität erhalten bleiben, gleichzeitig jedoch in den Metadaten oder Paradaten klar als diskriminierende Bezeichnung markiert und kontextualisiert werden. Konkret könnte beispielsweise in den Metadaten ein Hinweis auf die Verfolgung von Sinti und Roma sowie alternative Suchbegriffe respektive Selbstbezeichnungen stehen.
 
 ::: {.callout-tip title="Kritische Fragen an bestehende Metadaten"}
 
@@ -852,7 +858,7 @@ Das Dossier “Zigeuner-Problem” (REFERENZ [https://www.recherche.bar.admin.ch
 
 ### 2.2 Kontextualisierung der Quellen {#sec-22-kontextualisierung-der-quellen}
 
-Wenn wie in den Beispielen “Genozid-Denkmal” oder “Zigeuner-Problem” eine Kontextualisierung fehlt, muss in diesem Schritt eine Analyse des Entstehungs- sowie des Verwendungskontextes vorgenommen werden. Mit Blick auf einen diskriminierungssensiblen Umgang mit historischen Quellen gilt es zu beachten, dass sich diskriminierende Ideologien im Lauf der Zeit verändert haben. Eine fundierte Analyse der historischen Überlieferungsgeschichte erlaubt es, die Wirkungsmacht dieser Ideologien zum Zeitpunkt der Objekterstellung zu rekonstruieren und damit kritisch zu reflektieren. Im Zentrum steht dabei die Frage “Unter welchen Umständen und mit welcher Absicht wurde die Quelle verfasst?”. (REFERENZ [https://dg.philhist.unibas.ch/de/studium/werkzeugkasten-geschichte/](https://dg.philhist.unibas.ch/de/studium/werkzeugkasten-geschichte/))
+Wenn wie in den Beispielen “Genozid-Denkmal” oder “Zigeuner-Problem” eine Kontextualisierung fehlt, muss in diesem Schritt eine Analyse des Entstehungs- sowie des Verwendungskontextes vorgenommen werden. Mit Blick auf einen diskriminierungssensiblen Umgang mit historischen Quellen gilt es zu beachten, dass sich diskriminierende Ideologien im Lauf der Zeit verändert haben. Eine fundierte Analyse der historischen Überlieferungsgeschichte erlaubt es, die Wirkungsmacht dieser Ideologien zum Zeitpunkt der Objekterstellung zu rekonstruieren und damit kritisch zu reflektieren. Im Zentrum steht dabei die Frage “Unter welchen Umständen und mit welcher Absicht wurde die Quelle verfasst?”.[@WerkzeugkastenGeschichte_2016]
 
 Zudem helfen bei der Kontextualisierung die acht W-Fragen: Wer? Wann? Wo? Welche Quelle? Warum? An wen? Wie/wer überlieferte? Wovon zeugt sie, wovon schweigt sie?
 
@@ -914,7 +920,7 @@ Es kann zwischen **intrinsischen und extrinsischen Schlagwörtern** unterschiede
 
 * **Lücken:** Fehlende Personenidentitäten explizit kennzeichnen. Keine Annahmen zu Nationalität, Geschlecht etc. treffen.  
 * **Widersprüche:** Abweichende Datierungen oder Ortsangaben parallel erfassen und Quellenlage dokumentieren.  
-* **Unsicherheit:** Unscharfe Angaben formal kennzeichnen (z. B. EDTF „\~1905“). REFERENZ [https://www.loc.gov/standards/datetime/](https://www.loc.gov/standards/datetime/)  
+* **Unsicherheit:** Unscharfe Angaben formal kennzeichnen (z. B. [EDTF](https://www.loc.gov/standards/datetime/) „\~1905“).
 * **Häufige Fehler:**  
   * Nacktheit und Sexualität ohne Kontext sexualisieren  
   * Personen über Diskriminierungsmarker essenzialisieren  
@@ -941,14 +947,14 @@ Die Integration von Large Language Models (LLMs) in die Metadatenerstellung ver�
 
 ::: {.callout-note title="Künstliche Intelligenz bei der automatischen Verschlagwortung bei der DNB"}
 
-Die Deutsche Nationalbibliothek setzt seit 2012 KI für die automatische Verschlagwortung ein. Während grosse Datenmengen effizient erschlossen werden, zeigen sich Grenzen im „Long Tail“ und bei komplexen Themen. Bei einer sozialwissenschaftlichen Reihe musste die Automatisierung wegen hoher Fehlerquoten eingestellt werden.(REFERENZ Quelle: junger2021 und "Junger and Scholze \- 2021 \- Neue Wege und Qualitäten – Die Inhaltserschließungspolitik der Deutschen Nationalbibliothek.pdf")
+Die Deutsche Nationalbibliothek setzt seit 2012 KI für die automatische Verschlagwortung ein. Während grosse Datenmengen effizient erschlossen werden, zeigen sich Grenzen im „Long Tail“ und bei komplexen Themen. Bei einer sozialwissenschaftlichen Reihe musste die Automatisierung wegen hoher Fehlerquoten eingestellt werden.[@junger2021]
 
 LLMs reproduzieren kulturelle und historische Prägungen, verstärken Stereotypen und verschleiern Unsicherheiten durch Halluzinationen. Ohne redaktionelle Kontrolle drohen fehlerhafte oder spekulative Inhalte, die sich in Katalogen verfestigen.
 :::
 
 ::: {.callout-note title="Multimodale KI für automatische Alt-Texte bei Stadt.Geschichte.Basel"}
 
-KI-Modelle generieren im Projekt automatische Alt-Texte und verbessern so die Barrierefreiheit. Ohne systematische Qualitätskontrolle bleiben jedoch Risiken inkonsistenter oder diskriminierender Beschreibungen. REFERENZ <https://github.com/maehr/dublin-core-metadata-enhancer/>
+KI-Modelle generieren im Projekt automatische Alt-Texte und verbessern so die Barrierefreiheit. Ohne systematische Qualitätskontrolle bleiben jedoch Risiken inkonsistenter oder diskriminierender Beschreibungen.[@mahr2025]
 
 „Human-in-the-loop“ ist kein Garant für Sicherheit: Fachpersonen benötigen Zeit, Schulung und klare Workflows. Definierte Rollen (z. B. Kuratierung, Technik, Ethik-Board), nachvollziehbare Versionshistorien und Eskalationsverfahren sind notwendig, ebenso wie gezielte Trainings zu Bias-Erkennung und Prompt-Design.
 :::
@@ -981,13 +987,13 @@ Es müssen konkrete Einsatzszenarien definiert werden (z. B. automatische Transk
 
 Im Zentrum dieser Phase steht die dauerhafte, sichere und strukturierte Ablage der Forschungsdaten. Dazu werden Speichersysteme, Zugriffsrechte und Backup-Strategien festgelegt. Relevanz haben dabei sowohl technische Standards und Vorgaben zur Datensicherheit als auch diskriminierungssensible Zugangsregelungen. Ebenso zentral sind die fortlaufende Pflege und Versionierung der Daten, um Transparenz und Nachvollziehbarkeit zu gewährleisten.
 
-Die Auswahl geeigneter Plattformen sollte sich nach Kriterien wie Dauerhaftigkeit, Persistenten Identifikatoren (PIDs) und Exportpfaden richten. In Betracht kommen insbesondere Zenodo, DaSCH, SWISSUbase oder institutionelle Repositorien mit langfristiger Ausrichtung. Barrierefreiheit ist mitzudenken. Ein Data Dictionary (REFERENZ [Wikipedia](https://en.wikipedia.org/wiki/Data_dictionary), [UC Merced Library](https://library.ucmerced.edu/data-dictionaries)) ist bereitzustellen. Es sollte Felddefinitionen, Datentypen, zulässige Werte, Beispiele und Annotationsregeln enthalten. Zugriffsstufen und sensible Felder sind technisch verpflichtend einzurichten.
+Die Auswahl geeigneter Plattformen sollte sich nach Kriterien wie Dauerhaftigkeit, Persistenten Identifikatoren (PIDs) und Exportpfaden richten. In Betracht kommen insbesondere Zenodo, DaSCH, SWISSUbase oder institutionelle Repositorien mit langfristiger Ausrichtung. Barrierefreiheit ist mitzudenken. Ein [Data Dictionary](https://library.ucmerced.edu/data-dictionaries) ist bereitzustellen. Es sollte Felddefinitionen, Datentypen, zulässige Werte, Beispiele und Annotationsregeln enthalten. Zugriffsstufen und sensible Felder sind technisch verpflichtend einzurichten.
 
 Offene Publikationsinfrastrukturen wie Zenodo bieten insbesondere kleineren Teams und Projekten ohne institutionelle Anbindung einen niederschwelligen Weg zur langfristigen Sicherung und Sichtbarkeit von Forschungsdaten. Zugleich ermöglichen abgestufte Zugriffskontrollen oder kontextspezifische Lizenzen den Schutz sensibler Daten, ohne deren Existenz oder Forschungskontext zu verschleiern.
 
 ### 4.2 Versionierung und Historisierung {#sec-42-versionierung-und-historisierung}
 
-Metadaten sollten nicht gelöscht, sondern in ihrer Entwicklung dokumentiert werden. Jede Änderung ist mit den Angaben *Wer–Wann–Warum* zu versehen. Frühere Forschungsstände sind als Referenzen zu bewahren, um Transparenz über die eigene Institutions- und Forschungsgeschichte sicherzustellen. Dafür gilt es, geeignete Workflows in der eingesetzten Software zu nutzen. Bei kleineren Projekten bieten sich versionierte Releases in Zenodo oder GitLab an; auch der Einsatz von *Semantic Versioning* kann hier sinnvoll sein. Ein Beispiel für eine strukturierte Dokumentation findet sich unter REFERENZ [Europeana EDM Documentation](https://pro.europeana.eu/page/edm-documentation).
+Metadaten sollten nicht gelöscht, sondern in ihrer Entwicklung dokumentiert werden. Jede Änderung ist mit den Angaben *Wer–Wann–Warum* zu versehen. Frühere Forschungsstände sind als Referenzen zu bewahren, um Transparenz über die eigene Institutions- und Forschungsgeschichte sicherzustellen. Dafür gilt es, geeignete Workflows in der eingesetzten Software zu nutzen. Bei kleineren Projekten bieten sich versionierte Releases in Zenodo oder GitLab an; auch der Einsatz von *Semantic Versioning* kann hier sinnvoll sein. Ein Beispiel für eine strukturierte Dokumentation findet sich unter @Europeana_EDM_Documentation.
 
 Die Wahl des Versionierungsmodus richtet sich nach Komplexität und Kollaborationsgrad. Für sehr kleine und kurzlebige Artefakte genügt eine konsistente Dateibenennung, ergänzt um ein zentrales **Änderungsprotokoll**, das jeweils Änderungen, Begründungen und betroffene Dateien aufführt. Für kleine Teams mit laufender Zusammenarbeit liefern Plattformen wie Nextcloud oder ownCloud automatische Dateiversionen; dennoch sollten die Entscheidungsgründe zusätzlich im **Änderungsprotokoll** festgehalten werden, da Dateiversionshistorien selten aussagekräftige Provenienzen abbilden. Für kollaborative Projekte mit Verzweigungen, Peer-Review und hohen Anforderungen an Reproduzierbarkeit ist der Einsatz von **Git** vorzuziehen.
 
@@ -1007,7 +1013,7 @@ In der Phase der Veröffentlichung werden die Forschungsdaten, sofern rechtlich 
 
 Metadaten erfüllen die Funktion von Findhilfen und Kontextträgern. Im Rahmen der Publikation müssen Ort, Vermittlungsstrategien und Mechanismen zur Langzeitkontrolle geklärt werden. Dazu gehört auch die Definition von Zugangsebenen, die Planung verschiedener Zielgruppen und ihrer Einstiegspfade sowie die Festlegung des Grades an Kontextualisierung auf Bestands-, Dossier- und Objektebene.
 
-Von Beginn des Projekts an sollte der dauerhaft lauffähige Endzustand definiert werden. Dadurch wird eine Übernahme, Versionierung und Zitierbarkeit durch Gedächtnisinstitutionen erleichtert. Eine solche Rückwärtsplanung reduziert Betriebsrisiken und erleichtert die Übergabe. (REFERENZ [https://endings.uvic.ca/principles.html\#products](https://endings.uvic.ca/principles.html#products))
+Von Beginn des Projekts an sollte der dauerhaft lauffähige Endzustand definiert werden. Dadurch wird eine Übernahme, Versionierung und Zitierbarkeit durch Gedächtnisinstitutionen erleichtert. Eine solche Rückwärtsplanung reduziert Betriebsrisiken und erleichtert die Übergabe.[@Endings_Principles_2023]
 
 Adressierbarkeit und Persistenz erfordern die Vergabe kanonischer, parameterloser URLs für alle Entitäten. Editionen sollen versioniert veröffentlicht werden, Umzüge müssen durch Weiterleitungen abgesichert sein, und Zitierempfehlungen sind sichtbar zu machen.
 
