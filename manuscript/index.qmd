@@ -4,8 +4,10 @@ subtitle: Ein Handbuch zur ethischen Auszeichnung historischer Quellen und Forsc
 authors:
   - name: Moritz Mähr
     orcid: 0000-0002-1367-1618
-    email: moritz.maehr@unibas.ch
-    affiliation: Universität Basel
+    email: moritz.maehr@gmail.com
+    affiliation:
+    - Universität Basel
+    - Univeristät Bern
     roles:
       - writing
       - project management
@@ -13,7 +15,7 @@ authors:
     corresponding: true
   - name: Noëlle Schnegg
     orcid: 0009-0008-5207-6652
-    email: noelle.schnegg@unibas.ch
+    email: noelleschnegg@gmail.com
     affiliation: Universität Basel
     roles:
       - writing
@@ -31,7 +33,7 @@ keywords:
   - Metadatenstandards
   - Digital Humanities
 abstract: |
-  Dieses Handbuch bietet eine praxisorientierte Anleitung für die diskriminierungssensible Auszeichnung von Metadaten zu historischen Quellen und Forschungsdaten. Es richtet sich an Historiker*innen, Archivar*innen, Bibliothekar*innen und Daten-Kurator*innen und verbindet theoretische Reflexionen zu Normativität, Bias und Oppression mit konkreten Handlungsempfehlungen für den gesamten Forschungsdatenlebenszyklus. Das Handbuch behandelt sowohl technische Aspekte der Metadatenmodellierung als auch ethische Fragen der Repräsentation marginalisierter Gruppen. Durch die Kombination von Theorie und Praxis unterstützt es Fachleute dabei, Diskriminierung in der Metadatenpraxis zu erkennen und diskriminierungssensible Alternativen zu entwickeln.
+  Dieses Handbuch bietet eine praxisorientierte Anleitung für die diskriminierungssensible Auszeichnung von Metadaten zu historischen Quellen und Forschungsdaten. Es richtet sich an Historiker\*innen, Archivar\*innen, Bibliothekar\*innen und Daten-Kurator\*innen und verbindet theoretische Reflexionen zu Normativität, Bias und Oppression mit konkreten Handlungsempfehlungen für den gesamten Forschungsdatenlebenszyklus. Das Handbuch behandelt sowohl technische Aspekte der Metadatenmodellierung als auch ethische Fragen der Repräsentation marginalisierter Gruppen. Durch die Kombination von Theorie und Praxis unterstützt es Fachleute dabei, Diskriminierung in der Metadatenpraxis zu erkennen und diskriminierungssensible Alternativen zu entwickeln.
 pagetitle: Diskriminierungssensible Metadatenpraxis. Ein Handbuch zur ethischen Auszeichnung historischer Quellen und Forschungsdaten.
 description-meta: |
   Handbuch zur diskriminierungssensiblen Metadatenpraxis für historische Quellen und Forschungsdaten. Eine praxisorientierte Anleitung für Historiker*innen, Archivar*innen und Bibliothekar*innen zur ethischen Auszeichnung und Kontextualisierung von Metadaten unter Berücksichtigung von FAIR- und CARE-Prinzipien.
@@ -51,6 +53,14 @@ citation:
   url: https://maehr.github.io/diskriminierungsfreie-metadaten/
 number-sections: true
 ---
+
+::: {.callout-caution title="Vorabversion"}
+Dies ist eine Vorabversion des Handbuchs, die kontinuierlich weiterentwickelt wird. Feedback, Korrekturen und Anregungen sind herzlich willkommen via E-Mail oder [GitHub](https://github.com/maehr/diskriminierungsfreie-metadaten/discussions/34). Die aktuelle veröffentlichte Version ist verfügbar unter [https://maehr.github.io/diskriminierungsfreie-metadaten/](https://maehr.github.io/diskriminierungsfreie-metadaten/).
+:::
+
+::: {.callout-warning}
+Dieses Dokument enthält Abbildungen von historischen Quellen, die diskriminierende Sprache, Bilder oder Darstellungen enthalten. Sie sind Ausdruck von Vorurteilen, Stereotypen oder Gewalt gegen bestimmte Gruppen in der Vergangenheit.
+:::
 
 # Vorwort zur zweiten Auflage
 
@@ -74,7 +84,7 @@ Warum Metadaten? In einer zunehmend digital vermittelten Welt machen Metadaten h
 
 ![Screenshot aus der Plakatsammlung Basel: Abstimmungsplakat „Frauenstimmrecht, Nein“ zur eidgenössischen Abstimmung vom 1\. Februar 1959, entworfen von Werner Nänny im Auftrag des Basler Frauenkomitees gegen das Frauenstimmrecht, gedruckt von Wassermann AG, Basel.](images/image1.png){fig-alt="Screenshot einer Webseite mit einem Abstimmungsplakat von 1959 gegen das Frauenstimmrecht in der Schweiz. Das Plakat zeigt die schwarze Silhouette einer Frau, die von mehreren grauen Händen mit der Aufschrift „Partei“ bedrängt wird. Daneben stehen Informationen zur Sammlung, Datierung, Urheber und Technik."}
 
-Ein Blick in die deutschsprachige Archive zeigt, dass vielerorts bereits auf die FAIR-Prinzipien bei Metadaten geachtet wird. Eine diskriminierungssensible Metadatenpraxis bleibt jedoch meist aus. Oft fehlen kontextualisierende Beschreibungen, in denen Diskriminierungsformen explizit benannt und in ihren jeweiligen historischen Kontext eingeordnet werden. Im Online-Katalog der «Plakatsammlung der Schule für Gestaltung» beschränkt sich die Beschreibung des Plakats «Frauenstimmrecht, Nein» auf sachliche Angaben: «Eidgenössische Abstimmung, 1\. Februar 1959». Hinweise auf den historischen, politischen und insbesondere den sexistischen Kontext fehlen.
+Ein Blick in die deutschsprachige Archive zeigt, dass vielerorts bereits auf die FAIR-Prinzipien bei Metadaten geachtet wird. Eine diskriminierungssensible Metadatenpraxis bleibt jedoch meist aus. Oft fehlen kontextualisierende Beschreibungen, in denen Diskriminierungsformen explizit benannt und in ihren jeweiligen historischen Kontext eingeordnet werden. Im Online-Katalog der «Plakatsammlung der Schule für Gestaltung» beschränkt sich die Beschreibung des Plakats [«Frauenstimmrecht, Nein»](https://www.recherche-plakatsammlungbasel.ch/objects/48228/) auf sachliche Angaben: «Eidgenössische Abstimmung, 1\. Februar 1959». Hinweise auf den historischen, politischen und insbesondere den sexistischen Kontext fehlen.
 
 Mit diesem Handbuch setzen wir uns für eine diskriminierungssensible Metadatenpraxis ein. Wir erkennen an, dass Diskriminierung tief in gesellschaftlichen und institutionellen Strukturen verankert ist und sich nicht allein durch eine wohlüberlegte Begriffswahl vermeiden lässt.
 
@@ -94,9 +104,10 @@ Im zweiten Teil behandeln wir den diskriminierungssensiblen Umgang mit Metadaten
 6. **Nachnutzung und Wiederverwendung:** Recherchierbarkeit, Interoperabilität, Kontextinformation zur Vermeidung von Fehlinterpretationen.  
 7. **Archivierung und Löschung:** Auswahl von Archivierungsstandards und Speicherorten, rechtliche und ethische Vorgaben.
 
-::: {#fig-metadata-1 fig-alt="Lineares Modell des Datenlebenszyklus mit sieben Phasen: Planung, Datensammlung, Verarbeitung, Speicherung, Veröffentlichung, Nachnutzung, Archivierung/Löschung."}
-
 ```{mermaid}
+%%| label: fig-metadata-1
+%%| fig-cap: "Darstellung des Datenlebenszyklus nach dem Curation Lifecycle Model (DCC), adaptiert in sieben linearen Phasen von der Planung bis zur Archivierung bzw. Löschung."
+%%| fig-alt: "Lineares Modell des Datenlebenszyklus mit sieben Phasen: Planung, Datensammlung, Verarbeitung, Speicherung, Veröffentlichung, Nachnutzung, Archivierung/Löschung."
 flowchart LR
     A[1 Planung und Konzeption] --> B[2 Datensammlung und Quellenkritik]
     B --> C[3 Datenverarbeitung und Anreicherung]
@@ -107,16 +118,12 @@ flowchart LR
     G -.-> B 
 ```
 
-Darstellung des Datenlebenszyklus nach dem Curation Lifecycle Model (DCC), adaptiert in sieben linearen Phasen von der Planung bis zur Archivierung bzw. Löschung.
-:::
-
-<!-- ![Darstellung des Datenlebenszyklus nach dem Curation Lifecycle Model (DCC), adaptiert in sieben linearen Phasen von der Planung bis zur Archivierung bzw. Löschung.](images/image2.png){fig-alt="Lineares Modell des Datenlebenszyklus mit sieben Phasen: Planung, Datensammlung, Verarbeitung, Speicherung, Veröffentlichung, Nachnutzung, Archivierung/Löschung."} -->
-
 Das Ziel dieses Handbuchs ist es, anhand konkreter Beispiele, Methoden und Strategien Hilfestellungen zu bieten, die es der Leser\*in erlauben sollen, Diskriminierung in der Metadatenpraxis zu erkennen und Entscheidungen in Bezug auf den eigenen Forschungskontext und auf die zur Verfügung stehenden Ressourcen fällen zu können. Zudem greifen wir konkrete Beispiele aus der deutschsprachigen, geschichtswissenschaftlichen Forschungspraxis auf, um auf wiederkehrende Stolperfallen hinzuweisen. Zur Orientierung im Handbuch dient folgende Entscheidungshilfe:
 
-::: {#fig-metadata-2 fig-alt="Ein hellviolettes Flussdiagramm. In der Mitte eine rautenförmige Startbox mit dem Text «Worum geht es konkret?». Von dort führen vier Linien zu vier Themenkästen, von links nach rechts: Erstens «Metadaten neu erstellen». Darunter zwei Ebenen: «Phase 1 bis 3: Planung, Sammlung, Verarbeitung» und darunter «Praxis Paragraph 1 bis 3 sowie Checklisten B bis D». Zweitens «Zugang und Präsentation verbessern». Darunter «Phase 5: Veröffentlichung und Zugang» und darunter «Praxis Paragraph 5 sowie Checklisten F und K». Drittens «Bestehende Metadaten nachnutzen». Darunter «Phase 6: Nachnutzung und Wiederverwendung» und darunter «Praxis Paragraph 6 sowie Checkliste G». Viertens «Begriffe und Standards klären». Darunter «Theorie und Glossar» und darunter «Schlüsselbegriffe, Bias, FAIR und CARE». Die Kästen sind horizontal ausgerichtet, die Verbindungen verlaufen von der Mitte nach aussen und dann je vertikal nach unten."}
-
 ```{mermaid}
+%%| label: fig-metadata-2
+%%| fig-cap: "Entscheidungshilfe zur Orientierung im Handbuch. Die Startfrage «Worum geht es konkret?» verzweigt in vier Pfade—Metadaten neu erstellen; Zugang/Präsentation verbessern; Bestehende Metadaten nachnutzen; Begriffe/Standards klären—mit Verweisen auf zugehörige Phasen, Praxisabschnitte und Checklisten."
+%%| fig-alt: "Ein hellviolettes Flussdiagramm. In der Mitte eine rautenförmige Startbox mit dem Text «Worum geht es konkret?». Von dort führen vier Linien zu vier Themenkästen, von links nach rechts: Erstens «Metadaten neu erstellen». Darunter zwei Ebenen: «Phase 1 bis 3: Planung, Sammlung, Verarbeitung» und darunter «Praxis Paragraph 1 bis 3 sowie Checklisten B bis D». Zweitens «Zugang und Präsentation verbessern». Darunter «Phase 5: Veröffentlichung und Zugang» und darunter «Praxis Paragraph 5 sowie Checklisten F und K». Drittens «Bestehende Metadaten nachnutzen». Darunter «Phase 6: Nachnutzung und Wiederverwendung» und darunter «Praxis Paragraph 6 sowie Checkliste G». Viertens «Begriffe und Standards klären». Darunter «Theorie und Glossar» und darunter «Schlüsselbegriffe, Bias, FAIR und CARE». Die Kästen sind horizontal ausgerichtet, die Verbindungen verlaufen von der Mitte nach aussen und dann je vertikal nach unten."
 flowchart TD
   Q{"Was möchte ich tun?"}
 
@@ -138,16 +145,11 @@ flowchart TD
   THEO --> R0["Schlüsselbegriffe • Bias • FAIR/CARE"]
 ```
 
-Entscheidungshilfe zur Orientierung im Handbuch. Die Startfrage «Worum geht es konkret?» verzweigt in vier Pfade—Metadaten neu erstellen; Zugang/Präsentation verbessern; Bestehende Metadaten nachnutzen; Begriffe/Standards klären—mit Verweisen auf zugehörige Phasen, Praxisabschnitte und Checklisten.
-:::
-
-<!-- ![Entscheidungshilfe zur Orientierung im Handbuch. Die Startfrage «Worum geht es konkret?» verzweigt in vier Pfade—Metadaten neu erstellen; Zugang/Präsentation verbessern; Bestehende Metadaten nachnutzen; Begriffe/Standards klären—mit Verweisen auf zugehörige Phasen, Praxisabschnitte und Checklisten.](images/image3.png){fig-alt="Ein hellviolettes Flussdiagramm. In der Mitte eine rautenförmige Startbox mit dem Text «Worum geht es konkret?». Von dort führen vier Linien zu vier Themenkästen, von links nach rechts: Erstens «Metadaten neu erstellen». Darunter zwei Ebenen: «Phase 1 bis 3: Planung, Sammlung, Verarbeitung» und darunter «Praxis Paragraph 1 bis 3 sowie Checklisten B bis D». Zweitens «Zugang und Präsentation verbessern». Darunter «Phase 5: Veröffentlichung und Zugang» und darunter «Praxis Paragraph 5 sowie Checklisten F und K». Drittens «Bestehende Metadaten nachnutzen». Darunter «Phase 6: Nachnutzung und Wiederverwendung» und darunter «Praxis Paragraph 6 sowie Checkliste G». Viertens «Begriffe und Standards klären». Darunter «Theorie und Glossar» und darunter «Schlüsselbegriffe, Bias, FAIR und CARE». Die Kästen sind horizontal ausgerichtet, die Verbindungen verlaufen von der Mitte nach aussen und dann je vertikal nach unten."} -->
-
 Die Autor\*innen bringen unterschiedliche fachliche und persönliche Hintergründe in das Handbuch ein. Moritz Mähr (weisser cis Mann) ist promovierter Historiker. Noëlle Schnegg (weisse cis Frau) studiert Geschichte und Nahoststudien. Beide sind in der Schweiz aufgewachsen und verfügen über privilegierte gesellschaftliche Rahmenbedingungen, wobei sich individuelle Erfahrungen, beispielsweise hinsichtlich Sexismus, unterscheiden. Diese Offenlegung dient der Transparenz und Einordnung der Perspektiven im Handbuch.
 
 Wir orientieren uns am Contributor Covenant und verpflichten uns, diskriminierende Inhalte klar zu kennzeichnen und kontextualisiert aufzuarbeiten. Reproduktion problematischer Inhalte erfolgt ausschliesslich zu notwendigen Analysezwecken.
 
-Als Living Document lebt dieses Handbuch von der Community. Antidiskriminierungsarbeit ist ein nie endender gesellschaftlicher Prozess, weshalb auch dieses Handbuch niemals abgeschlossen sein wird. Vielmehr erfordert es kontinuierliche, kritische Reflexion, Überarbeitung und Anpassung. Verbesserungsvorschläge können via [Email](https://maehr.github.io/diskriminierungsfreie-metadaten/index.html) oder als Kommentar auf [GitHub](https://github.com/maehr/diskriminierungsfreie-metadaten/discussions/4) eingereicht werden.
+Als Living Document lebt dieses Handbuch von der Community. Antidiskriminierungsarbeit ist ein nie endender gesellschaftlicher Prozess, weshalb auch dieses Handbuch niemals abgeschlossen sein wird. Vielmehr erfordert es kontinuierliche, kritische Reflexion, Überarbeitung und Anpassung. Verbesserungsvorschläge können via [Email](https://maehr.github.io/diskriminierungsfreie-metadaten/index.html) oder als Kommentar auf [GitHub](https://github.com/maehr/diskriminierungsfreie-metadaten/discussions/34) eingereicht werden.
 
 # Danksagung
 
@@ -173,15 +175,11 @@ Dieses Kapitel bestimmt die Begriffe so, dass sie sowohl analytisch tragfähig a
 
 ![Screenshot des Wikidata-Eintrags zu Crimea (Q7835), der die Halbinsel Krim beschreibt. Angezeigt werden Sprachvarianten (u. a. Englisch, Deutsch, Französisch), alternative Bezeichnungen sowie die Beschreibung als „Eastern European peninsula, in the Black Sea and Sea of Azov, disputed between Ukraine (de jure) and Russia (de facto)“.](images/image4.png){fig-alt="Screenshot einer Wikidata-Seite mit dem Eintrag Crimea (Q7835). Sichtbar sind der Titel „Crimea“, eine kurze Beschreibung der Halbinsel als umstrittenes Gebiet zwischen Ukraine und Russland sowie Sprachangaben (Englisch, Deutsch, Alemannisch, Französisch) mit verschiedenen Labels und Synonymen. Darunter der Abschnitt „Statements“ mit dem Hinweis „instance of: peninsula.“"}
 
-<!-- [](https://www.wikidata.org/wiki/Q7835) -->
-
 Daten und Metadaten erscheinen auf den ersten Blick als objektive Repräsentationen der Wirklichkeit, doch sind sie stets in historisch gewachsene Machtverhältnisse und normative Ordnungen eingebettet. Das Beispiel der Krim in Wikidata [Q7835](https://www.wikidata.org/wiki/Q7835) und die beigefügte Karte der Halbinsel illustrieren anschaulich, wie scheinbar neutrale Darstellungen in Metadaten inhärent Stellung beziehen und politische Konfliktlagen spiegeln.
 
 ![Politische Karte der Krim mit Städten, Verkehrswegen und geografischen Bezeichnungen. Die Karte zeigt die Halbinsel im Schwarzen Meer, angrenzend an die Ukraine und Russland.](images/image5.png){fig-alt="Karte der Krim mit eingezeichneten Städten, Strassen, Eisenbahnlinien und Landschaftsmerkmalen. Zu sehen sind Simferopol, Sewastopol, Jalta, Feodossija, Kertsch und Jewpatorija sowie Gebirge, Küstenlinien und angrenzende Regionen der Ukraine und Russlands."}
 
-<!-- [](https://commons.wikimedia.org/wiki/File:Karte_der_Krim.png) -->
-
-Die Karte präsentiert die Krim als „Autonome Republik Krim“ und zeigt damit explizit eine völkerrechtlich orientierte, pro ukrainische Perspektive: Die Benennung und farbliche Abgrenzung der Krim als Teil der Ukraine („Oblast“, „Autonome Republik“) betont den de-jure-Status nach ukrainischem Recht und den internationalen Menschenrechtsstandards. Es werden zentrale Orte wie Sewastopol oder Kertsch mit ihrer ukrainischen Transkription aufgeführt. Die Grenze zu Russland ist klar als Staatsgrenze markiert. In der Detaildarstellung (oben rechts) wird die Krim deutlich der Ukraine zugeordnet, wodurch der umstrittene völkerrechtliche Status als Teil Russlands nicht gleichwertig visualisiert wird.
+Die [Karte](https://commons.wikimedia.org/wiki/File:Karte_der_Krim.png) präsentiert die Krim als „Autonome Republik Krim“ und zeigt damit explizit eine völkerrechtlich orientierte, pro ukrainische Perspektive: Die Benennung und farbliche Abgrenzung der Krim als Teil der Ukraine („Oblast“, „Autonome Republik“) betont den de-jure-Status nach ukrainischem Recht und den internationalen Menschenrechtsstandards. Es werden zentrale Orte wie Sewastopol oder Kertsch mit ihrer ukrainischen Transkription aufgeführt. Die Grenze zu Russland ist klar als Staatsgrenze markiert. In der Detaildarstellung (oben rechts) wird die Krim deutlich der Ukraine zugeordnet, wodurch der umstrittene völkerrechtliche Status als Teil Russlands nicht gleichwertig visualisiert wird.
 
 Dieses kartografische Beispiel steht paradigmatisch für die normativen Setzungen, die auch digital kodierten Datenstrukturen wie Wikidata zugrunde liegen. So wird die Krim dort sowohl als Teil der Ukraine („de jure“) als auch Russlands („de facto“) geführt, jedoch übernehmen viele verknüpfte Objekte wie Städte oder administrative Einheiten diese Mehrdeutigkeit nicht konsistent oder bilden einzig die ukrainische Perspektive ab. Die Karte operiert dabei mit einem klaren Framing zugunsten der ukrainischen Souveränität und blendet alternative Klassifikationsoptionen, wie etwa die Bezeichnung „Republik Krim“ als Teil Russlands, weitgehend aus.
 
@@ -1239,11 +1237,12 @@ So werden Diskriminierungen nicht nur benannt, sondern in überprüfbaren Schrit
 
 ## Handbücher und Leitfäden  {#sec-handbücher-und-leitfäden}
 
-Dieser Entscheidungsbaum hilft bei der Orientierung der Kapitel und verlinkt auf externe Ressourcen. Vergleiche dazu auch Anhang *“A-2 Nützliche Listen, Tools und Anlaufstellen”*.
-
-::: {#fig-metadata-3 fig-alt="Flussdiagramm zur Orientierung bei fachspezifischen Fragen in der Archiv- und Metadatenforschung. Die zentrale Frage „Ich habe eine fachspezifische Frage“ verzweigt in drei Bereiche: Metadaten, Forschungs- oder Institutionskontexte sowie Spezifische Diskriminierungsformen. Unter „Metadaten“ stehen Normdaten (Breslau 2019), Open Data / Commons (Hahn 2016), Recht & Lizenzen (Weitzmann & Klimpel 2016) und Kartografische Sammlungen (Gasser & Hötea 2024). Unter „Forschungs- oder Institutionskontexte“ finden sich Kunstmuseen (Knaus 2019), Universitätsarchive (Bruckmann 2024) und Kolonialkontexte (Bruckmann 2024). Unter „Spezifische Diskriminierungsformen“ erscheinen NS-Provenienz (Baresel-Brand 2019), Sklaverei-Archive (Ahrndt 2021) und Rassismus (A4BLiP 2020)."}
+Dieser Entscheidungsbaum hilft bei der Orientierung der Kapitel und verlinkt auf externe Ressourcen.
 
 ```{mermaid}
+%%| label: fig-metadata-3
+%%| fig-cap: "Hilfestellungen für weiterführende Fragen, die über die behandelten Themen des Handbuchs hinausgehen."
+%%| fig-alt: "Flussdiagramm zur Orientierung bei fachspezifischen Fragen in der Archiv- und Metadatenforschung. Die zentrale Frage „Ich habe eine fachspezifische Frage“ verzweigt in drei Bereiche: Metadaten, Forschungs- oder Institutionskontexte sowie Spezifische Diskriminierungsformen. Unter „Metadaten“ stehen Normdaten (Breslau 2019), Open Data / Commons (Hahn 2016), Recht & Lizenzen (Weitzmann & Klimpel 2016) und Kartografische Sammlungen (Gasser & Hötea 2024). Unter „Forschungs- oder Institutionskontexte“ finden sich Kunstmuseen (Knaus 2019), Universitätsarchive (Bruckmann 2024) und Kolonialkontexte (Bruckmann 2024). Unter „Spezifische Diskriminierungsformen“ erscheinen NS-Provenienz (Baresel-Brand 2019), Sklaverei-Archive (Ahrndt 2021) und Rassismus (A4BLiP 2020)."
 flowchart TD
     Frage["Ich habe eine fachspezifische Frage"]
 
@@ -1280,11 +1279,6 @@ flowchart TD
     Sklaverei --> Ahrndt["Ahrndt (2021)"]
     Rassismus --> A4BLiP2020["A4BLiP (2020)"]
 ```
-
-Hilfestellungen für weiterführende Fragen, die über die behandelten Themen des Handbuchs hinausgehen.
-:::
-
-<!-- ![Hilfestellungen für weiterführende Fragen, die über die behandelten Themen des Handbuchs hinausgehen.](images/image9.png){fig-alt="Das Bild zeigt ein Flussdiagramm zur Navigation bei fachspezifischen Fragen zu Metadaten. Zentral steht das Feld «Ich habe eine fachspezifische Frage». Von dort führen drei Äste zu den Bereichen «Metadaten», «Forschungs- oder Institutionskontexte» und «Spezifische Diskriminierungsformen». Unter «Metadaten» gibt es die Unterpunkte: «Normdaten» (verweist auf Breslau 2019), «Open Data / Commons» (Hahn 2016), «Recht & Lizenzen» (Weitzmann & Klimpel 2016\) und «Kartografische Sammlungen» (Gasser & Hötea 2024). Unter «Forschungs- oder Institutionskontexte» erscheinen: «Kunstmuseen» (Knaus 2019), «Universitätsarchive» (Bruckmann 2024\) und «Kolonialkontexte» (Bruckmann 2024). Unter «Spezifische Diskriminierungsformen» finden sich: «NS-Provenienz» (Baresel-Brand 2019\) und «Sklaverei-Archive» (Ahrndt 2021). Alle Felder sind rechteckig und hellviolett hinterlegt. Unterpunkte sind jeweils direkt mit den entsprechenden Literaturangaben verbunden."} -->
 
 <!-- ## Glossare {#glossare}
 

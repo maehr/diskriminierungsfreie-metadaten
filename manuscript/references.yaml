@@ -1456,6 +1456,31 @@ references:
     type: article-journal
     URL: https://campus.dariah.eu/resources/hosted/grundlagen-datenmanagement
 
+  - id: weitzmann_klimpel_2016
+    author:
+      - family: Weitzmann
+        given: John H.
+      - family: Klimpel
+        given: Paul
+    citation-key: weitzmann_klimpel_2016
+    DOI: 10.12752/2.0.002.2
+    edition: 3. Auflage, Mai 2016 – Nachdruck Dezember 2016
+    event-place: Almstadtstraße 9/11, 10119 Berlin
+    genre: manual
+    issued:
+      - year: 2016
+        month: 12
+    license: CC BY-SA 3.0 DE
+    publisher: >-
+      digiS – Servicestelle Digitalisierung Berlin, Zuse Institute Berlin /
+      iRights.Law – Anwälte für die digitale Welt
+    publisher-place: Almstadtstraße 9/11, 10119 Berlin
+    title: >-
+      Rechtliche rahmenbedingungen für digitalisierungsprojekte von
+      gedächtnisinstitutionen
+    type: report
+    URL: https://www.servicestelle-digitalisierung.de
+
   - id: WerkzeugkastenGeschichte_2016
     abstract: >-
       Deutsch: Online-Handbuch des Departements Geschichte der Universität Basel

@@ -2,17 +2,16 @@ project:
   type: manuscript
 
 manuscript:
-  # article: handbuch-diskriminierungsfreie-metadaten.qmd
   code-links:
     - text: Diskussion Living Document
       href: https://github.com/maehr/diskriminierungsfreie-metadaten/discussions
     - text: Quellcode
       href: https://github.com/maehr/diskriminierungsfreie-metadaten
-  manuscript-url: https://maehr.github.io/diskriminierungsfreie-metadaten/
+  manuscript-url: https://moritz-maehr.quarto.pub/diskriminierungssensible-metadatenpraxis # https://maehr.github.io/diskriminierungsfreie-metadaten/
 
 format:
   html:
-    doi: '10.5281/zenodo.17073511'
+    # doi: '10.5281/zenodo.17073511'
     date-modified: last-modified
     link-external-icon: true
     link-external-newwindow: true
