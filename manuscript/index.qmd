@@ -232,9 +232,9 @@ Indirekte Diskriminierung liegt vor, wenn formal neutrale Kriterien, Methoden od
   * *Gegenmassnahmen:* Mehrsprachige Erschliessung, Community-basierte Übersetzungen, SKOS-Labels (Simple Knowledge Organization System) pro Sprachvarietät.  
 * **Digitale Volltextsuche**
 
-  * *Mechanismus:* Auswahl- und Digitalisierungsbias; `OCR`/`HTR` bevorzugt standardisierte Drucke.  
+  * *Mechanismus:* Auswahl- und Digitalisierungsbias; OCR/HTR bevorzugt standardisierte Drucke.  
   * *Effekt:* Unterrepräsentation von Frauen, Arbeiter\*innen, Handschriften.  
-  * *Indikatoren:* `CER`/`WER` nach Schrift/Medium; Recall-Differenzen in Korpora.  
+  * *Indikatoren:* CER/WER nach Schrift/Medium; Recall-Differenzen in Korpora.  
   * *Gegenmassnahmen:* Stratifizierte Digitalisierung, gezieltes Fine-Tuning, ausgleichendes Ranking, Query-Expansion.  
 * **Zensuskategorien**
 
@@ -261,11 +261,11 @@ Strukturelle Diskriminierung bezeichnet Benachteiligungen, die in etablierten Pr
   * *Effekt:* Unsichtbarkeit nicht-binärer Identitäten und eigenständiger Rollen.  
   * *Indikatoren:* Anteil Datensätze ohne Felder für Selbstbezeichnung; Normalisierungszwang in Normdaten.  
   * *Gegenmassnahmen:* Kontrolliert-offene Felder (`genderIdentity`, `role`), Varianten als gleichwertige Identifikatoren, versionsgeführte Entscheidungsprotokolle.  
-* **Digitale Pipeline-Bias: Auswahl, `OCR`/`HTR` und Ranking**
+* **Digitale Pipeline-Bias: Auswahl, OCR/HTR und Ranking**
 
   * *Mechanismus:* Kanonzentrierte Auswahl; Trainingsdaten für dominante Schriften/Sprachen; Indexgewichte bevorzugen gut erkannten Text.  
   * *Effekt:* Höhere Fehlerraten und schlechtere Auffindbarkeit für Minderheitensprachen und Handschriften.  
-  * *Indikatoren:* `CER`/`WER` nach Schrift/Varietät; Recall-Differenzen; Abdeckung pro Segment.  
+  * *Indikatoren:* CER/WER nach Schrift/Varietät; Recall-Differenzen; Abdeckung pro Segment.  
   * *Gegenmassnahmen:* Stratifizierte Auswahlpläne, publizierte Fehlerbilanzen, Fine-Tuning für unterrepräsentierte Schriften, re-ranking, CLIR.  
 * **Kanon- und Metrikgetriebene implizite Priorisierung**
 
@@ -362,7 +362,7 @@ Unter einem **Bias** wird eine Verzerrung – eine systematische Abweichung eine
 
 Bias, der durch fehlerhafte, unvollständige oder inadäquate Messung von Variablen entsteht.
 
-*Beispiel 1:* In digitalen Editionen historischer Texte wird „Bedeutung“ oft über die Häufigkeit bestimmter Begriffe erfasst, doch fehlerhafte `OCR`-Erkennung \- etwa wenn das historische „ſ“ nicht als „s“ erkannt wird – oder uneinheitliches Tagging führen leicht zu systematischen Verzerrungen.
+*Beispiel 1:* In digitalen Editionen historischer Texte wird „Bedeutung“ oft über die Häufigkeit bestimmter Begriffe erfasst, doch fehlerhafte OCR-Erkennung \- etwa wenn das historische „ſ“ nicht als „s“ erkannt wird – oder uneinheitliches Tagging führen leicht zu systematischen Verzerrungen.
 
 *Beispiel 2:* Erfassung von Geschlecht in historischen Volkszählungen: „Beruf: Haushaltsvorstand“ wird in digitalen Datenbanken oft als „männlich“ codiert, was weibliche Haushaltsvorstände systematisch ausschliesst.
 
@@ -521,7 +521,7 @@ Historische Daten- und Metadatenpraktiken können Unterdrückung auf mindestens 
 
 Historische Daten sind in ihrer Entstehung, Überlieferung und Digitalisierung selektiv. Retrodigitalisierte Bestände sind geprägt von den Normen ihrer Entstehungszeit, den Kriterien archivarischer Auswahl sowie den technischen Entscheidungen heutiger Digitalisierungsprozesse. Eine vollständige Überwindung dieser Vorprägungen ist nicht erreichbar; realistisch ist nur, sie sichtbar zu machen und mögliche und tatsächliche Folgen aufzuzeigen. Damit verschiebt sich der Anspruch von vermeintlicher Neutralität zu expliziter Reflexivität: Provenienzangaben, Auswahlkriterien und Erschliessungsentscheidungen werden systematisch dokumentiert, versioniert und in Analysen berücksichtigt.
 
-Messbarkeit bleibt begrenzt, weil zentrale Grössen nur über Proxy-Variablen zugänglich sind. `OCR`/`HTR`-Fehler, Normalisierungen und Kategorienschnitte erzeugen Verzerrungen, die nicht homogen über Sprachen, Schriften und Gruppen wirken. Operationalisierungen sollten deshalb mit Fehlermodellen verknüpft werden, die Unsicherheiten quantifizieren; Zum Beispiel Konfidenzintervalle für `CER`/`WER` und gruppenspezifische Recall/Precision. Fairnessbegriffe sind zudem konkurrierend: Parität in der Trefferquote, Gleichheit der Fehlerraten und Nutzenmaximierung lassen sich oft nicht gleichzeitig erreichen. Solche Zielkonflikte sind offen zu benennen und als Governance-Entscheidungen zu verantworten.
+Messbarkeit bleibt begrenzt, weil zentrale Grössen nur über Proxy-Variablen zugänglich sind. OCR/HTR-Fehler, Normalisierungen und Kategorienschnitte erzeugen Verzerrungen, die nicht homogen über Sprachen, Schriften und Gruppen wirken. Operationalisierungen sollten deshalb mit Fehlermodellen verknüpft werden, die Unsicherheiten quantifizieren; Zum Beispiel Konfidenzintervalle für CER/WER und gruppenspezifische Recall/Precision. Fairnessbegriffe sind zudem konkurrierend: Parität in der Trefferquote, Gleichheit der Fehlerraten und Nutzenmaximierung lassen sich oft nicht gleichzeitig erreichen. Solche Zielkonflikte sind offen zu benennen und als Governance-Entscheidungen zu verantworten.
 
 Die verschiedenen Formen von Verzerrung, direkt, indirekt, strukturell oder institutionell, wirken nicht isoliert, sondern greifen ineinander. Entscheidungen im Digitalisierungsprozess, etwa eine stratifizierte Auswahl, prägen dadurch unmittelbar spätere Suchergebnisse und deren Interpretation. Hinzu treten klassische Repräsentativitätsprobleme: Korpusgrenzen, Überlieferungs- und Auswahlverzerrungen sowie zeitliche Verschiebungen („dataset shift“) mindern die Übertragbarkeit von Befunden. Kausale Schlussfolgerungen aus solchen Beobachtungsdaten sind deshalb nur unter starken Zusatzannahmen belastbar. Potenzielle Störfaktoren wie Confounding, Selektions- oder Messfehler sind als zentrale Hypothesen zu behandeln – nicht als nachträgliche Randbemerkung.
 
@@ -582,7 +582,7 @@ Im Kontext der Digitalisierung ist zusätzlich von **Paradaten** bzw. **Prozessm
 Das Beispiel illustriert zudem die Differenz zwischen **physischen Objekten** und deren **digitalen Repräsentationen**:
 
 * Das physische Plakat selbst besitzt Eigenschaften wie Grösse, Material und Zustand.  
-* Das Digitalisat ist als JPEG-Datei mit spezifischer Auflösung verfügbar (`edm:isShownBy`, `edm:preview`).  
+* Das Digitalisat ist als JPEG-Datei mit spezifischer Auflösung verfügbar (`edm:isShownBy`, `edm:preview`).   
 * Der Digitalisierungsprozess erzeugt weitere Informationen, etwa zu Perspektive, Bildausschnitt und Farbwiedergabe, die für eine präzise Kontextualisierung entscheidend sind.
 
 ### Metadatenstandards {#sec-metadatenstandards}
