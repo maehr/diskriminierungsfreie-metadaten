@@ -9,6 +9,11 @@ manuscript:
       href: https://github.com/maehr/diskriminierungsfreie-metadaten
   manuscript-url: https://moritz-maehr.quarto.pub/diskriminierungssensible-metadatenpraxis # https://maehr.github.io/diskriminierungsfreie-metadaten/
 
+glossary:
+  path: glossary.yaml
+  popup: click
+  show: true
+
 format:
   html:
     # doi: '10.5281/zenodo.17073511'

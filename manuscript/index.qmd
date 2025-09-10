@@ -51,7 +51,7 @@ citation:
   type: report
   doi: TBD
   url: https://maehr.github.io/diskriminierungsfreie-metadaten/
-number-sections: true
+number-sections: false
 ---
 
 ::: {.callout-caution title="Vorabversion"}
@@ -133,13 +133,13 @@ flowchart TD
   Q --> FACH["Begriffe/Standards klären"]
 
   NEU --> P13["Phase 1–3: Planung • Sammlung • Verarbeitung"]
-  P13 --> R13["Praxis §1–3  •  Checklisten B–D"]
+  P13 --> R13["Praxis §1–3"]
 
   ZUG --> P5["Phase 5: Veröffentlichung & Zugang"]
-  P5 --> R5["Praxis §5  •  Checklisten F, K"]
+  P5 --> R5["Praxis §5"]
 
   REUSE --> P6["Phase 6: Nachnutzung & Wiederverwendung"]
-  P6 --> R6["Praxis §6  •  Checkliste G"]
+  P6 --> R6["Praxis §6"]
 
   FACH --> THEO["Theorie & Glossar"]
   THEO --> R0["Schlüsselbegriffe • Bias • FAIR/CARE"]
@@ -780,7 +780,7 @@ Der Umgang mit personenbezogenen Daten verlangt eine klare Rechtsgrundlage (Einw
 
 Für die Veröffentlichung sind Lizenzangaben und Rechteaussagen (zum Beispiel CC-Lizenzen, RightsStatements.org) maschinenlesbar zu dokumentieren. Interne Review- und Eskalationswege sichern die Nachvollziehbarkeit und Rechtssicherheit. Bei komplexen Fällen ist juristische Expertise beizuziehen.
 
-::: {.callout-important title="Checkliste rechtliche Rahmenbedingungen"}
+::: {.callout-important title="Checkliste ethische und rechtliche Rahmenbedingungen"}
 
 * Rechtslage pro Inhaltstyp dokumentiert und geklärt  
 * Einwilligungen und Einschränkungen erfasst  
@@ -995,7 +995,7 @@ Metadaten sollten nicht gelöscht, sondern in ihrer Entwicklung dokumentiert wer
 
 Die Wahl des Versionierungsmodus richtet sich nach Komplexität und Kollaborationsgrad. Für sehr kleine und kurzlebige Artefakte genügt eine konsistente Dateibenennung, ergänzt um ein zentrales **Änderungsprotokoll**, das jeweils Änderungen, Begründungen und betroffene Dateien aufführt. Für kleine Teams mit laufender Zusammenarbeit liefern Plattformen wie Nextcloud oder ownCloud automatische Dateiversionen; dennoch sollten die Entscheidungsgründe zusätzlich im **Änderungsprotokoll** festgehalten werden, da Dateiversionshistorien selten aussagekräftige Provenienzen abbilden. Für kollaborative Projekte mit Verzweigungen, Peer-Review und hohen Anforderungen an Reproduzierbarkeit ist der Einsatz von **Git** vorzuziehen.
 
-::: {.callout-important title="Checkliste Versionierung"}
+::: {.callout-important title="Checkliste Speicherung und Verwaltung"}
 
 * Repositorium und Persistent Identifiers (PIDs) gewählt  
 * Data Dictionary publiziert  
@@ -1108,7 +1108,7 @@ Die Bereitstellung von Schnittstellen (APIs) oder statischen Datenpaketen erleic
 
 Nachnutzung sollte nicht als einseitiger Prozess verstanden werden. Rückmeldungen von Nutzer\*innen müssen systematisch erfasst, geprüft und dokumentiert werden. Issue-Tracker, Feedback-Formulare oder moderierte Mailinglisten können hier als Kanäle dienen. Eine dokumentierte Änderungspolitik (Changelog, Deprecation-Policy) erhöht die Transparenz. Insbesondere Communities, die von diskriminierenden Inhalten betroffen sind, sollten in die Nachbesserung und Ko-Kuration eingebunden werden.
 
-::: {.callout-important title="Checkliste Nachnutzung"}
+::: {.callout-important title="Nachnutzung und Wiederverwendung"}
 
 * Linked-Data-Exporte, PIDs und Crosswalks verfügbar  
 * Zitations- und Lizenzrichtlinien veröffentlicht  
@@ -1231,9 +1231,111 @@ So werden Diskriminierungen nicht nur benannt, sondern in überprüfbaren Schrit
 
 # Anhang
 
-## Checklisten {#sec-checklisten}
+## Checkliste {#sec-checkliste}
 
-* [ ] TBD
+1. Planung und Konzeption  
+   1.1 Zielsetzung klären  
+   - [ ] Ziel, Zielgruppen, Nutzungsszenarien dokumentiert  
+   - [ ] Prioritäten und Mindeststandards definiert  
+   - [ ] Pilotkorpus erfasst und Aufwand gemessen  
+   - [ ] Sensible Inhalte antizipiert und gekennzeichnet  
+
+   1.2 Ethische und rechtliche Rahmenbedingungen  
+   - [ ] Rechtslage pro Inhaltstyp dokumentiert und geklärt  
+   - [ ] Einwilligungen und Einschränkungen erfasst  
+   - [ ] Personenbezug und Schutzmassnahmen geprüft  
+   - [ ] Lizenz/rights statement festgelegt  
+   - [ ] Review- und Eskalationswege definiert  
+
+   1.3 Standards und Infrastruktur festlegen  
+   - [ ] Zentrales Schema + Erweiterungen dokumentiert  
+   - [ ] Normdaten/Vokabulare ausgewählt  
+   - [ ] Plattform, Exportformate und Persistent Identifiers (DOI etc.) definiert  
+
+2. Datensammlung und Quellenkritik  
+   2.1 Primärerschliessung vs. Nachnutzung  
+   - [ ] Re-Use-Quellen bewertet und zitiert  
+   - [ ] Übernahmen, Streichungen, Korrekturen protokolliert  
+   - [ ] Bias-Befunde und Lücken sichtbar gemacht  
+
+   2.2 Kontextualisierung der Quellen  
+   - [ ] Entstehungs- und Nutzungskontext beschrieben  
+   - [ ] Relevante Akteur\*innen und Machtverhältnisse benannt  
+   - [ ] Rezeption und Deutungskonflikte referenziert  
+
+3. Datenverarbeitung und Anreicherung  
+   3.1 Technische Standards implementieren  
+   - [ ] Feldkatalog mit Definitionen erstellt  
+   - [ ] Maschinenlesbare Datentypen und Validierung gesetzt  
+   - [ ] Sichtbarkeits- und Sensitivitätslogik modelliert  
+
+   3.2 Beschreibung und Verschlagwortung  
+   - [ ] Vokabulare und Normdateien pro Feld definiert  
+   - [ ] Regeln für Intrinsisch/Extrinsisch festgelegt  
+   - [ ] Unsicherheit formalisiert und sichtbar gemacht  
+
+   3.3 KI-Unterstützung und Automatisierung  
+   - [ ] KI-Einsatzbereiche, Modelle, Trainings-/Prompt-Kontexte dokumentiert  
+   - [ ] Stufen der Qualitätskontrollen, Freigaben, Rückverfolgbarkeit definiert  
+   - [ ] KI-Anteile in Feldern gekennzeichnet  
+   - [ ] Risiko- und Bias-Assessments durchgeführt und dokumentiert  
+   - [ ] Datenschutz, Urheberrecht und FAIR/CARE-Prinzipien geprüft  
+   - [ ] Kontrollschwellen (z. B. Confidence-Scores) für menschliche Überprüfung festgelegt  
+   - [ ] Rollen, Eskalationsverfahren und Verantwortlichkeiten definiert  
+   - [ ] Modelle, Prompts und Updates versioniert und veröffentlicht  
+   - [ ] Mitarbeitende geschult und fortlaufend sensibilisiert  
+
+4. Speicherung und Verwaltung  
+   - [ ] Repositorium und Persistent Identifiers (PIDs) gewählt  
+   - [ ] Data Dictionary publiziert  
+   - [ ] Versionierungsstrategie definiert und technisch verankert  
+
+5. Veröffentlichung und Zugang  
+   5.1 Zielgruppe definieren  
+   - [ ] Zielgruppen, Einstiegspfade und Zugangsebenen definiert  
+   - [ ] Statischer Endzustand mit Rückwärtsplanung festgelegt  
+   - [ ] Kanonische, parameterlose URLs oder DOIs vergeben  
+   - [ ] Editionen versioniert, Weiterleitungen bei Umzügen vorgesehen  
+   - [ ] Zitierempfehlungen sichtbar integriert  
+
+   5.2 Umgang mit sensiblen und diskriminierenden Inhalten  
+   - [ ] Sensible Daten identifiziert und Schutzmassnahmen getroffen  
+   - [ ] Diskriminierende Inhalte benannt und kontextualisiert  
+   - [ ] Trigger- und Content-Notes formuliert  
+   - [ ] Einwilligungsfragen reflektiert und Alternativen geprüft  
+   - [ ] Governance-Regeln dokumentiert und Änderungen nachvollziehbar protokolliert  
+
+   5.3 Technische Strategien  
+   - [ ] Statischer Webauftritt ohne serverseitige Abhängigkeiten definiert  
+   - [ ] Build- und Validierungsprozess unter Versionskontrolle implementiert  
+   - [ ] Sichtbarkeitssteuerung in Export- oder Ableitungsschritten umgesetzt  
+   - [ ] Offene, verlustfreie Formate mit UTF-8-Kodierung verwendet  
+   - [ ] README und Referenzdokumente bereitgestellt und versioniert  
+   - [ ] API-Exporte abgesichert und reproduzierbare Datenbeilage integriert  
+   - [ ] Opt-in-Mechanismus für sensible Inhalte verfügbar  
+
+   5.4 Transparente Dokumentation  
+   - [ ] Publikationsdokumentation online und öffentlich zugänglich  
+   - [ ] Editionen mit Datum, Version und Zitierempfehlung publiziert  
+   - [ ] Persistente URIs stabil, Umzüge mit Weiterleitungen gesichert  
+   - [ ] Jede Edition als Paket mit Prüfsummen, Daten und Dokumentation archiviert  
+
+6. Nachnutzung und Wiederverwendung  
+   - [ ] Linked-Data-Exporte, PIDs und Crosswalks verfügbar  
+   - [ ] Zitations- und Lizenzrichtlinien veröffentlicht  
+   - [ ] API oder Dumps versioniert zugänglich  
+   - [ ] Feedback-Prozess etabliert, Nutzung dokumentiert  
+
+7. Archivierung und Löschung  
+   - [ ] Archivpakete mit dokumentierten Provenienzen und Prüfsummen erstellt  
+   - [ ] Lösch- und Rückgabeprozesse rechtlich und organisatorisch festgelegt  
+   - [ ] Tombstones und Änderungsprotokolle veröffentlicht  
+   - [ ] Zugriffskontrollen, Verschlüsselung und Logs aktiv  
+   - [ ] Redundanz- und Notfallpläne etabliert, Kosten langfristig kalkuliert  
+
+## Glossar {#sec-glossar}
+
+{{< glossary table=true >}}
 
 ## Handbücher und Leitfäden  {#sec-handbücher-und-leitfäden}
 
