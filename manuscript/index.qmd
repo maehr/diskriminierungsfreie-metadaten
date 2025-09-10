@@ -574,7 +574,7 @@ Die Metadaten des Plakats *Knie Völkerschau* machen deutlich, dass Metadaten so
 Darüber hinaus lassen sich die im Beispiel vorliegenden Metadaten verschiedenen **Funktionskategorien** zuordnen:
 
 * **Bibliographische Metadaten**: Titel (`dc:title`), Identifier (`dc:identifier`, *Europeana-ID*), Rechte (`dc:rights`).  
-* **Administrative Metadaten**: Angaben zu Datenprovidern, Aggregationsdiensten und Zugangs-URLs (*edm:provider*, *edm:isShownAt*).  
+* **Administrative Metadaten**: Angaben zu Datenprovidern, Aggregationsdiensten und Zugangs-URLs (`edm:provider`, `edm:isShownAt`).  
 * **Fachspezifisch-inhaltliche Metadaten**: thematische Schlagworte (`dc:subject`) oder die Beschreibung der dargestellten Handwerker-Szenen (`dc:description`).
 
 Im Kontext der Digitalisierung ist zusätzlich von **Paradaten** bzw. **Prozessmetadaten** zu sprechen, die im Europeana-Datensatz implizit mitschwingen, auch wenn sie nicht explizit aufgeführt sind. Dazu gehören etwa Kameraeinstellungen oder Farbprofile, die während der Erstellung des Digitalisats generiert wurden.[@FORRT_Paradata_2025]
@@ -582,7 +582,7 @@ Im Kontext der Digitalisierung ist zusätzlich von **Paradaten** bzw. **Prozessm
 Das Beispiel illustriert zudem die Differenz zwischen **physischen Objekten** und deren **digitalen Repräsentationen**:
 
 * Das physische Plakat selbst besitzt Eigenschaften wie Grösse, Material und Zustand.  
-* Das Digitalisat ist als JPEG-Datei mit spezifischer Auflösung verfügbar (*edm:isShownBy*, *edm:preview*).  
+* Das Digitalisat ist als JPEG-Datei mit spezifischer Auflösung verfügbar (`edm:isShownBy`, `edm:preview`).  
 * Der Digitalisierungsprozess erzeugt weitere Informationen, etwa zu Perspektive, Bildausschnitt und Farbwiedergabe, die für eine präzise Kontextualisierung entscheidend sind.
 
 ### Metadatenstandards {#sec-metadatenstandards}
@@ -880,7 +880,7 @@ Zentrale Grundlage einer nachhaltigen und nachvollziehbaren Datenverarbeitung is
 
 Die Automatisierung von Verarbeitungsschritten setzt atomar strukturierte Felder voraus. Freitextangaben, die nur in seltenen Fällen vorkommen, sollten hingegen möglichst zentral gebündelt werden, um Redundanzen und Validierungsprobleme zu vermeiden.
 
-**Ontologien sind nicht neutral.** Jede Festlegung von Datenmodellen, Schemata und Kontrollstrukturen impliziert Annahmen über Weltbilder, soziale Kategorien und rechtliche Rahmenbedingungen. Beispiele hierfür sind das binäre Geschlechtsmodell, rigide Namensfelder ohne kulturelle Differenzierung oder die in westlich geprägten Standards vorherrschende Urheberrechtslogik, die sich in Feldern wie *creator* oder *rights* niederschlägt. Solche Modellierungen sind niemals selbstverständlich, sondern müssen als bewusste Entscheidungen transparent dokumentiert werden. Eine präzise Aufzeichnung dieser Abwägungen ist daher verpflichtend, um die Nachvollziehbarkeit und kritische Überprüfbarkeit der Datenarchitektur sicherzustellen.
+**Ontologien sind nicht neutral.** Jede Festlegung von Datenmodellen, Schemata und Kontrollstrukturen impliziert Annahmen über Weltbilder, soziale Kategorien und rechtliche Rahmenbedingungen. Beispiele hierfür sind das binäre Geschlechtsmodell, rigide Namensfelder ohne kulturelle Differenzierung oder die in westlich geprägten Standards vorherrschende Urheberrechtslogik, die sich in Feldern wie `creator` oder `rights` niederschlägt. Solche Modellierungen sind niemals selbstverständlich, sondern müssen als bewusste Entscheidungen transparent dokumentiert werden. Eine präzise Aufzeichnung dieser Abwägungen ist daher verpflichtend, um die Nachvollziehbarkeit und kritische Überprüfbarkeit der Datenarchitektur sicherzustellen.
 
 Feldstruktur, Datentypen, Formate und Kardinalitäten festlegen. Iterativ modellieren und parallel annotieren. Ergänzende Felder für Quellenlage, Zuverlässigkeit, Präzision, Bearbeitungsstand, Veröffentlichungsstatus, Version, Lizenz, Zitiervorschlag vorsehen. Sichtbarkeitsflags für sensible Inhalte einplanen. Automatisierung erfordert atomare Felder; seltene, frei formulierte Angaben ggf. zentral bündeln.
 
