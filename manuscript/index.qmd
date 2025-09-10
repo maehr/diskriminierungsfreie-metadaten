@@ -84,7 +84,7 @@ Warum Metadaten? In einer zunehmend digital vermittelten Welt machen Metadaten h
 
 ![Screenshot aus der Plakatsammlung Basel: Abstimmungsplakat „Frauenstimmrecht, Nein“ zur eidgenössischen Abstimmung vom 1\. Februar 1959, entworfen von Werner Nänny im Auftrag des Basler Frauenkomitees gegen das Frauenstimmrecht, gedruckt von Wassermann AG, Basel.](images/image1.png){fig-alt="Screenshot einer Webseite mit einem Abstimmungsplakat von 1959 gegen das Frauenstimmrecht in der Schweiz. Das Plakat zeigt die schwarze Silhouette einer Frau, die von mehreren grauen Händen mit der Aufschrift „Partei“ bedrängt wird. Daneben stehen Informationen zur Sammlung, Datierung, Urheber und Technik."}
 
-Ein Blick in die deutschsprachige Archive zeigt, dass vielerorts bereits auf die FAIR-Prinzipien bei Metadaten geachtet wird. Eine diskriminierungssensible Metadatenpraxis bleibt jedoch meist aus. Oft fehlen kontextualisierende Beschreibungen, in denen Diskriminierungsformen explizit benannt und in ihren jeweiligen historischen Kontext eingeordnet werden. Im Online-Katalog der «Plakatsammlung der Schule für Gestaltung» beschränkt sich die Beschreibung des Plakats [«Frauenstimmrecht, Nein»](https://www.recherche-plakatsammlungbasel.ch/objects/48228/) auf sachliche Angaben: «Eidgenössische Abstimmung, 1\. Februar 1959». Hinweise auf den historischen, politischen und insbesondere den sexistischen Kontext fehlen.
+Ein Blick in die deutschsprachige Archive zeigt, dass vielerorts bereits auf die {{< glossary FAIR >}}-Prinzipien bei Metadaten geachtet wird. Eine diskriminierungssensible Metadatenpraxis bleibt jedoch meist aus. Oft fehlen kontextualisierende Beschreibungen, in denen Diskriminierungsformen explizit benannt und in ihren jeweiligen historischen Kontext eingeordnet werden. Im Online-Katalog der "Plakatsammlung der Schule für Gestaltung" beschränkt sich die Beschreibung des Plakats ["Frauenstimmrecht, Nein"](https://www.recherche-plakatsammlungbasel.ch/objects/48228/) auf sachliche Angaben: "Eidgenössische Abstimmung, 1\. Februar 1959". Hinweise auf den historischen, politischen und insbesondere den sexistischen Kontext fehlen.
 
 Mit diesem Handbuch setzen wir uns für eine diskriminierungssensible Metadatenpraxis ein. Wir erkennen an, dass Diskriminierung tief in gesellschaftlichen und institutionellen Strukturen verankert ist und sich nicht allein durch eine wohlüberlegte Begriffswahl vermeiden lässt.
 
@@ -92,7 +92,7 @@ Diskriminierungssensibilität bedeutet, aufmerksam zu bleiben für Veränderunge
 
 Im Handbuch verwenden wir bewusst eine breite Definition von Diskriminierung, um möglichst viele Anwendungsfälle abzudecken. Unter Diskriminierung verstehen wir schwerwiegende Formen der Benachteiligung. Eine Benachteiligung wird zu einer Diskriminierung, wenn sie in einem unmittelbaren Zusammenhang mit der tatsächlichen oder zugeschriebenen Zugehörigkeit zu einer bestimmten Gruppe oder einem Merkmal steht. Zu diesen Gruppenzugehörigkeiten oder Merkmalen zählen die soziale Stellung, das biologische und soziale Geschlecht sowie die Geschlechtsidentität, die ethnische Herkunft, diskriminierende Fremdzuschreibungen, die Religionszugehörigkeit, die Weltanschauung und politische Überzeugungen, die Sprache, eine Behinderung oder chronische Erkrankung, eine genetische Disposition, das Lebensalter, die sexuelle Orientierung, das Körpergewicht und die Lebensform (zum Beispiel Fahrende). Diskriminierungen entstehen laufend, weil gesellschaftliche Werte und Normen bestimmte Gruppen stigmatisieren.
 
-Der Band gliedert sich in zwei Teile: Im ersten Teil definieren wir die theoretischen und technischen Schlüsselbegriffe und verknüpfen sozial- und informationswissenschaftliche Perspektiven. Wir behandeln Normativität, Formen der Diskriminierung, Bias und Oppression sowie Grundlagen zu Forschungs- und Metadaten, Metadatenstandards und FAIR/CARE/LOUD.
+Der Band gliedert sich in zwei Teile: Im ersten Teil definieren wir die theoretischen und technischen Schlüsselbegriffe und verknüpfen sozial- und informationswissenschaftliche Perspektiven. Wir behandeln Normativität, Formen der Diskriminierung, Bias und Oppression sowie Grundlagen zu Forschungs- und Metadaten, Metadatenstandards und {{< glossary FAIR >}}/{{< glossary CARE >}}/{{< glossary LOUD >}}.
 
 Im zweiten Teil behandeln wir den diskriminierungssensiblen Umgang mit Metadaten entlang des gesamten Forschungsdatenlebenszyklus[@higgins2008]:
 
@@ -100,7 +100,7 @@ Im zweiten Teil behandeln wir den diskriminierungssensiblen Umgang mit Metadaten
 2. **Datensammlung und Quellenkritik:** Datenerzeugung und \-sammlung, Nutzung offener Formate und normierter Begrifflichkeiten zur Interoperabilität sowie Kontextualisierung der Quellen.  
 3. **Datenverarbeitung und Anreicherung:** Datenaufbereitung, Metadatenanreicherung, Dokumentation, frühzeitige Standardisierung.  
 4. **Speicherung und Verwaltung:** Strukturiertes, sicheres Speichern, Zugriffskontrolle, Pflege, Versionierung, diskriminierungssensible Zugangsregelungen.  
-5. **Veröffentlichung und Zugang:** Zugänglichmachung über Repositorien, Persistente Identifikatoren, Lizenzen, FAIR/CARE-Prinzipien.  
+5. **Veröffentlichung und Zugang:** Zugänglichmachung über Repositorien, Persistente Identifikatoren, Lizenzen, {{< glossary FAIR >}}/{{< glossary CARE >}}-Prinzipien.  
 6. **Nachnutzung und Wiederverwendung:** Recherchierbarkeit, Interoperabilität, Kontextinformation zur Vermeidung von Fehlinterpretationen.  
 7. **Archivierung und Löschung:** Auswahl von Archivierungsstandards und Speicherorten, rechtliche und ethische Vorgaben.
 
@@ -122,8 +122,8 @@ Das Ziel dieses Handbuchs ist es, anhand konkreter Beispiele, Methoden und Strat
 
 ```{mermaid}
 %%| label: fig-metadata-2
-%%| fig-cap: "Entscheidungshilfe zur Orientierung im Handbuch. Die Startfrage «Worum geht es konkret?» verzweigt in vier Pfade—Metadaten neu erstellen; Zugang/Präsentation verbessern; Bestehende Metadaten nachnutzen; Begriffe/Standards klären—mit Verweisen auf zugehörige Phasen, Praxisabschnitte und Checklisten."
-%%| fig-alt: "Ein hellviolettes Flussdiagramm. In der Mitte eine rautenförmige Startbox mit dem Text «Worum geht es konkret?». Von dort führen vier Linien zu vier Themenkästen, von links nach rechts: Erstens «Metadaten neu erstellen». Darunter zwei Ebenen: «Phase 1 bis 3: Planung, Sammlung, Verarbeitung» und darunter «Praxis Paragraph 1 bis 3 sowie Checklisten B bis D». Zweitens «Zugang und Präsentation verbessern». Darunter «Phase 5: Veröffentlichung und Zugang» und darunter «Praxis Paragraph 5 sowie Checklisten F und K». Drittens «Bestehende Metadaten nachnutzen». Darunter «Phase 6: Nachnutzung und Wiederverwendung» und darunter «Praxis Paragraph 6 sowie Checkliste G». Viertens «Begriffe und Standards klären». Darunter «Theorie und Glossar» und darunter «Schlüsselbegriffe, Bias, FAIR und CARE». Die Kästen sind horizontal ausgerichtet, die Verbindungen verlaufen von der Mitte nach aussen und dann je vertikal nach unten."
+%%| fig-cap: 'Entscheidungshilfe zur Orientierung im Handbuch. Die Startfrage "Worum geht es konkret?" verzweigt in vier Pfade—Metadaten neu erstellen; Zugang/Präsentation verbessern; Bestehende Metadaten nachnutzen; Begriffe/Standards klären—mit Verweisen auf zugehörige Phasen, Praxisabschnitte und Checklisten."
+%%| fig-alt: "Ein hellviolettes Flussdiagramm. In der Mitte eine rautenförmige Startbox mit dem Text "Worum geht es konkret?". Von dort führen vier Linien zu vier Themenkästen, von links nach rechts: Erstens "Metadaten neu erstellen". Darunter zwei Ebenen: "Phase 1 bis 3: Planung, Sammlung, Verarbeitung" und darunter "Praxis Paragraph 1 bis 3 sowie Checklisten B bis D". Zweitens "Zugang und Präsentation verbessern". Darunter "Phase 5: Veröffentlichung und Zugang" und darunter "Praxis Paragraph 5 sowie Checklisten F und K". Drittens "Bestehende Metadaten nachnutzen". Darunter "Phase 6: Nachnutzung und Wiederverwendung" und darunter "Praxis Paragraph 6 sowie Checkliste G". Viertens "Begriffe und Standards klären". Darunter "Theorie und Glossar" und darunter "Schlüsselbegriffe, Bias, FAIR und CARE". Die Kästen sind horizontal ausgerichtet, die Verbindungen verlaufen von der Mitte nach aussen und dann je vertikal nach unten.'
 flowchart TD
   Q{"Was möchte ich tun?"}
 
@@ -153,15 +153,15 @@ Als Living Document lebt dieses Handbuch von der Community. Antidiskriminierungs
 
 # Danksagung
 
-Wir danken allen Personen und Institutionen, die zur Erarbeitung der ersten Auflage 2024 und zur laufenden Überarbeitung dieses Handbuchs beigetragen haben. Ihre Hinweise, Kritik und Praxisperspektiven haben Terminologie, Beispiele, Ontologie-Mapping, Versionierung und Leitlinien zu FAIR- und CARE-Prinzipien geschärft.
+Wir danken allen Personen und Institutionen, die zur Erarbeitung der ersten Auflage 2024 und zur laufenden Überarbeitung dieses Handbuchs beigetragen haben. Ihre Hinweise, Kritik und Praxisperspektiven haben Terminologie, Beispiele, {{< glossary Ontologie >}}-Mapping, Versionierung und Leitlinien zu {{< glossary FAIR >}}- und {{< glossary CARE >}}-Prinzipien geschärft.
 
 Besonderer Dank gilt Levyn Bürki für die substanziellen Beiträge zur Neustrukturierung und Weiterentwicklung des Handbuchs. Seine Mitarbeit von September 2024 bis Juni 2025 umfasste zentrale konzeptionelle Entscheidungen und die massgebliche Ausarbeitung wesentlicher Inhalte.
 
-Für die aufmerksame Lektüre und konstruktiven Rückmeldungen zur ersten Auflage 2024 danken die Autor\*innen Eric Decker, Céline Hug, Lucie Kolb, Jonas Lendenmann, Noah Regenass und Stephanie Willi. Für inhaltliche Hinweise und Korrekturen nach der Veröffentlichung danken wir Esther Ernst-Mombelli (GND-Redaktion, Universitätsbibliothek Basel), Marc Bayard (GND-Redaktion, Universitätsbibliothek Bern), Philipp Messner (Plakatsammlung SfG Basel), Elias Zimmermann (Universität Zürich/Genf), Karin Lackner (Universitätsbibliothek Graz) sowie Roberta Flora Spano (ETH-Bibliothek Zürich, Sammlungen und Archive).
+Für die aufmerksame Lektüre und konstruktiven Rückmeldungen zur ersten Auflage 2024 danken die Autor\*innen Eric Decker, Céline Hug, Lucie Kolb, Jonas Lendenmann, Noah Regenass und Stephanie Willi. Für inhaltliche Hinweise und Korrekturen nach der Veröffentlichung danken wir Esther Ernst-Mombelli ({{< glossary GND >}}-Redaktion, Universitätsbibliothek Basel), Marc Bayard ({{< glossary GND >}}-Redaktion, Universitätsbibliothek Bern), Philipp Messner (Plakatsammlung SfG Basel), Elias Zimmermann (Universität Zürich/Genf), Karin Lackner (Universitätsbibliothek Graz) sowie Roberta Flora Spano (ETH-Bibliothek Zürich, Sammlungen und Archive).
 
-Das Handbuch profitierte von Diskussionen in folgenden Foren und Fachcommunitys: dem Roundtable «FAIR and CARE» der DARIAH-CH Study Days (22. November 2024, FHNW) mit Beiträgen von Iolanda Pensa, Elena Chestnova, Lucie Kolb und Linda Ludwig; dem Workshop «Grosse Anforderungen an kleine Textfelder – Ethische Fragen an Metadaten historischer Quellen» am Herder-Institut (21.–22. November 2024, Marburg), wo Noëlle Schnegg und Levyn Bürki Erfahrungen aus dem Handbuchprojekt vorstellten; dem Panel «Die unsichtbaren Anforderungen der digitalen Geschichtswissenschaft» an den 7\. Schweizerischen Geschichtstagen (8.–11. Juli 2025, Universität Luzern) mit einem Impuls von Noëlle Schnegg und Beiträgen aus Gedächtnisinstitutionen wie Bundesarchiv, ETH-Bibliothek, histify, Personenportal SH, SAMARA, Nationalbibliothek, Wirtschaftsarchiv, SSRQ, swisstopo und Transcriptiones; der Einladung zum 9\. Bibliothekskongress (24.–27. Juni 2025, Wien); sowie dem Panel «Diskriminierungssensible Metadaten für historische Sammlungen» an der Digital-Humanities-Konferenz 2025 (16. Juli 2025, Universidade NOVA de Lisboa) mit Beiträgen von Levyn Bürki, Joris Burla, Peggy Große, Mario Kliewer, Jonas Lendenmann, Lisa Quade, Moritz Mähr, Noëlle Schnegg und Elias Zimmermann. Für die Einladung zum SODa-Forum «Das Handbuch zur Erstellung diskriminierungsfreier Metadaten aus Perspektive der Universitätssammlungen» (11. September 2025), zum Workshop “Relativieren oder limitieren? Zum Umgang mit Dark Heritage in Sammlungen und Archiven” (13. und 14\. November; Dresden) und zum Workshop «Metadaten in den Humanities» (4. und 5\. Dezember, Zürich) danken wir den Organisator\*innen; die dortigen Rückmeldungen fliessen in die fortlaufende Überarbeitung ein.
+Das Handbuch profitierte von Diskussionen in folgenden Foren und Fachcommunitys: dem Roundtable "{{< glossary FAIR >}} and {{< glossary CARE >}}" der DARIAH-CH Study Days (22. November 2024, FHNW) mit Beiträgen von Iolanda Pensa, Elena Chestnova, Lucie Kolb und Linda Ludwig; dem Workshop "Grosse Anforderungen an kleine Textfelder – Ethische Fragen an Metadaten historischer Quellen" am Herder-Institut (21.–22. November 2024, Marburg), wo Noëlle Schnegg und Levyn Bürki Erfahrungen aus dem Handbuchprojekt vorstellten; dem Panel "Die unsichtbaren Anforderungen der digitalen Geschichtswissenschaft" an den 7\. Schweizerischen Geschichtstagen (8.–11. Juli 2025, Universität Luzern) mit einem Impuls von Noëlle Schnegg und Beiträgen aus Gedächtnisinstitutionen wie Bundesarchiv, ETH-Bibliothek, histify, Personenportal SH, SAMARA, Nationalbibliothek, Wirtschaftsarchiv, SSRQ, swisstopo und Transcriptiones; der Einladung zum 9\. Bibliothekskongress (24.–27. Juni 2025, Wien); sowie dem Panel "Diskriminierungssensible Metadaten für historische Sammlungen" an der Digital-Humanities-Konferenz 2025 (16. Juli 2025, Universidade NOVA de Lisboa) mit Beiträgen von Levyn Bürki, Joris Burla, Peggy Große, Mario Kliewer, Jonas Lendenmann, Lisa Quade, Moritz Mähr, Noëlle Schnegg und Elias Zimmermann. Für die Einladung zum SODa-Forum "Das Handbuch zur Erstellung diskriminierungsfreier Metadaten aus Perspektive der Universitätssammlungen" (11. September 2025), zum Workshop “Relativieren oder limitieren? Zum Umgang mit Dark Heritage in Sammlungen und Archiven” (13. und 14\. November; Dresden) und zum Workshop "Metadaten in den Humanities" (4. und 5\. Dezember, Zürich) danken wir den Organisator\*innen; die dortigen Rückmeldungen fliessen in die fortlaufende Überarbeitung ein.
 
-Das Handbuch ist ein «Living Document». Wir laden die Communities der Digital Humanities, der Gedächtnisinstitutionen und der Forschung ein, weitere Hinweise, Praxisbeispiele und Korrekturen beizusteuern. Für verbleibende Unschärfen und Fehler tragen die Autor\*innen die Verantwortung.
+Das Handbuch ist ein "Living Document". Wir laden die Communities der Digital Humanities, der Gedächtnisinstitutionen und der Forschung ein, weitere Hinweise, Praxisbeispiele und Korrekturen beizusteuern. Für verbleibende Unschärfen und Fehler tragen die Autor\*innen die Verantwortung.
 
 # Theorie: Schlüsselbegriffe und Konzepte
 
@@ -189,7 +189,7 @@ Eine diskriminierungssensible Metadatenpraxis setzt daher an der Schnittstelle v
 
 ### Direkte Diskriminierung {#sec-direkte-diskriminierung}
 
-Die Begriffsbestimmung von Diskriminierung erfolgt in der Einleitung (QUERVERWEIS Abschnitt «Definition von Diskriminierung»). In diesem Kapitel operationalisieren wir direkte Diskriminierung für die Metadatenpraxis: Eine Regel, Entscheidung oder Handlung ist direkt diskriminierend, wenn sie Personen aufgrund eines geschützten Merkmals ungleich behandelt und diese Ungleichbehandlung nicht durch einen legitimen, verhältnismässigen Zweck gedeckt ist. Im Fokus stehen Mechanismen, Indikatoren und Gegenmassnahmen.
+Die Begriffsbestimmung von Diskriminierung erfolgt in der Einleitung (QUERVERWEIS Abschnitt "Definition von Diskriminierung"). In diesem Kapitel operationalisieren wir direkte Diskriminierung für die Metadatenpraxis: Eine Regel, Entscheidung oder Handlung ist direkt diskriminierend, wenn sie Personen aufgrund eines geschützten Merkmals ungleich behandelt und diese Ungleichbehandlung nicht durch einen legitimen, verhältnismässigen Zweck gedeckt ist. Im Fokus stehen Mechanismen, Indikatoren und Gegenmassnahmen.
 
 **Beispiele**
 
@@ -229,13 +229,13 @@ Indirekte Diskriminierung liegt vor, wenn formal neutrale Kriterien, Methoden od
   * *Mechanismus:* Dominanz von Amtssprachen (Latein, Französisch, Hochdeutsch) in der Überlieferung.  
   * *Effekt:* Geringe Sichtbarkeit von Minderheitensprachen und \-praktiken.  
   * *Indikatoren:* Anteil nicht erfasster bzw. nicht indexierter Sprachvarietäten.  
-  * *Gegenmassnahmen:* Mehrsprachige Erschliessung, Community-basierte Übersetzungen, SKOS-Labels (Simple Knowledge Organization System) pro Sprachvarietät.  
+  * *Gegenmassnahmen:* Mehrsprachige Erschliessung, Community-basierte Übersetzungen, {{< glossary SKOS >}}-Labels (Simple Knowledge Organization System) pro Sprachvarietät.  
 * **Digitale Volltextsuche**
 
-  * *Mechanismus:* Auswahl- und Digitalisierungsbias; OCR/HTR bevorzugt standardisierte Drucke.  
+  * *Mechanismus:* Auswahl- und Digitalisierungsbias; {{< glossary OCR >}}/{{< glossary HTR >}} bevorzugt standardisierte Drucke.  
   * *Effekt:* Unterrepräsentation von Frauen, Arbeiter\*innen, Handschriften.  
-  * *Indikatoren:* CER/WER nach Schrift/Medium; Recall-Differenzen in Korpora.  
-  * *Gegenmassnahmen:* Stratifizierte Digitalisierung, gezieltes Fine-Tuning, ausgleichendes Ranking, Query-Expansion.  
+  * *Indikatoren:* {{< glossary CER >}}/{{< glossary WER >}} nach Schrift/Medium; Recall-Differenzen in Korpora.  
+  * *Gegenmassnahmen:* Stratifizierte Digitalisierung, gezieltes {{< glossary Fine-Tuning >}}, ausgleichendes Ranking, {{< glossary Query-Expansion >}}.  
 * **Zensuskategorien**
 
   * *Mechanismus:* Erfassung nur von Haushaltsvorständen.  
@@ -251,8 +251,8 @@ Strukturelle Diskriminierung bezeichnet Benachteiligungen, die in etablierten Pr
 
 * **Eurozentrische Normdaten und kontrollierte Vokabulare**
 
-  * *Mechanismus:* Authority Files privilegieren westliche Taxonomien; indigene Konzepte werden „gemappt“.  
-  * *Effekt:* Semantische Asymmetrien, Fehlklassifikation, schlechteres Retrieval.  
+  * *Mechanismus:* Normdaten privilegieren westliche Taxonomien; indigene Konzepte werden „gemappt“.  
+  * *Effekt:* Semantische Asymmetrien, Fehlklassifikation, schlechteres {{< glossary Retrieval >}}.  
   * *Indikatoren:* Hoher Anteil unscharfer Schlagwörter; geringe Mehrsprachigkeit in `skos:prefLabel/altLabel`.  
   * *Gegenmassnahmen:* Community-kuratiertes Vokabular, Mehrsprachigkeit, präzise `skos:exactMatch/closeMatch`, dokumentierte Provenienz.  
 * **Binäre Personen- und Geschlechtermodelle in Metadatenstandards**
@@ -261,12 +261,12 @@ Strukturelle Diskriminierung bezeichnet Benachteiligungen, die in etablierten Pr
   * *Effekt:* Unsichtbarkeit nicht-binärer Identitäten und eigenständiger Rollen.  
   * *Indikatoren:* Anteil Datensätze ohne Felder für Selbstbezeichnung; Normalisierungszwang in Normdaten.  
   * *Gegenmassnahmen:* Kontrolliert-offene Felder (`genderIdentity`, `role`), Varianten als gleichwertige Identifikatoren, versionsgeführte Entscheidungsprotokolle.  
-* **Digitale Pipeline-Bias: Auswahl, OCR/HTR und Ranking**
+* **Digitale {{< glossary Pipeline >}}-Bias: Auswahl, {{< glossary OCR >}}/{{< glossary HTR >}} und Ranking**
 
   * *Mechanismus:* Kanonzentrierte Auswahl; Trainingsdaten für dominante Schriften/Sprachen; Indexgewichte bevorzugen gut erkannten Text.  
   * *Effekt:* Höhere Fehlerraten und schlechtere Auffindbarkeit für Minderheitensprachen und Handschriften.  
-  * *Indikatoren:* CER/WER nach Schrift/Varietät; Recall-Differenzen; Abdeckung pro Segment.  
-  * *Gegenmassnahmen:* Stratifizierte Auswahlpläne, publizierte Fehlerbilanzen, Fine-Tuning für unterrepräsentierte Schriften, re-ranking, CLIR.  
+  * *Indikatoren:* {{< glossary CER >}}/{{< glossary WER >}} nach Schrift/Varietät; Recall-Differenzen; Abdeckung pro Segment.  
+  * *Gegenmassnahmen:* Stratifizierte Auswahlpläne, publizierte Fehlerbilanzen, {{< glossary Fine-Tuning >}} für unterrepräsentierte Schriften, re-ranking, CLIR.  
 * **Kanon- und Metrikgetriebene implizite Priorisierung**
 
   * *Mechanismus:* Mittelvergabe nach Nutzung und Zitation.  
@@ -297,7 +297,7 @@ Institutionelle Diskriminierung entsteht, wenn interne Ordnungen und Routinen vo
   * *Mechanismus:* Hohe Reproduktionskosten, restriktive Lizenzen.  
   * *Effekt:* Erschwerte Nachnutzung für Forscher\*innen ohne starke institutionelle Einbindung, besonders in ressourcenärmeren Ländern und Regionen.  
   * *Indikatoren:* Anteil Open-Access-Objekte; Gebühren pro Nutzungstyp.  
-  * *Gegenmassnahmen:* OA-First-Policy, gestaffelte Gebühren, CARE-kompatible Zugangsmodelle.  
+  * *Gegenmassnahmen:* OA-First-Policy, gestaffelte Gebühren, {{< glossary CARE >}}-kompatible Zugangsmodelle.  
 * **Metadatenstandards ohne Mehrsprachigkeit**
 
   * *Mechanismus:* bewusste Zulassung nur dominanter Amtssprachen oder standardisierter Umschriften.  
@@ -323,7 +323,7 @@ Statistische Diskriminierung bezeichnet die Benachteiligung von Individuen, wenn
   * *Effekt:* Systematische Fehlzuordnung bei nicht-westlichen, historischen oder trans Namen.  
   * *Indikatoren:* Häufung von Zuweisungen nahe dem Klassifikationsschwellenwert; überproportionale Korrekturen nach Herkunftsregion.  
   * *Gegenmassnahmen:* Enthaltungsregel bei Unsicherheit; separate Felder für Selbstangaben und Quellen; kalibrierte Schwellen; aktive Nachannotation.  
-* **Entity-Resolution nach Produktivität**
+* **{{< glossary Entity-Resolution >}} nach Produktivität**
 
   * *Mechanismus:* Zusammenführung häufiger Namen auf den produktivsten Normdatensatz.  
   * *Effekt:* False Merges löschen weniger sichtbare Personen; Zitationen und Werke werden fehlgeleitet.  
@@ -362,7 +362,7 @@ Unter einem **Bias** wird eine Verzerrung – eine systematische Abweichung eine
 
 Bias, der durch fehlerhafte, unvollständige oder inadäquate Messung von Variablen entsteht.
 
-*Beispiel 1:* In digitalen Editionen historischer Texte wird „Bedeutung“ oft über die Häufigkeit bestimmter Begriffe erfasst, doch fehlerhafte OCR-Erkennung \- etwa wenn das historische „ſ“ nicht als „s“ erkannt wird – oder uneinheitliches Tagging führen leicht zu systematischen Verzerrungen.
+*Beispiel 1:* In digitalen Editionen historischer Texte wird „Bedeutung“ oft über die Häufigkeit bestimmter Begriffe erfasst, doch fehlerhafte {{< glossary OCR >}}-Erkennung \- etwa wenn das historische „ſ“ nicht als „s“ erkannt wird – oder uneinheitliches Tagging führen leicht zu systematischen Verzerrungen.
 
 *Beispiel 2:* Erfassung von Geschlecht in historischen Volkszählungen: „Beruf: Haushaltsvorstand“ wird in digitalen Datenbanken oft als „männlich“ codiert, was weibliche Haushaltsvorstände systematisch ausschliesst.
 
@@ -420,13 +420,13 @@ Unterschiede zwischen Nutzenden der Plattform und der Zielpopulation, zum Beispi
 
 Bias, der durch algorithmische Designentscheidungen entsteht, unabhängig von Bias in den Daten (zum Beispiel durch Auswahl der Optimierungsfunktion).
 
-*Beispiel:* Topic Modeling von philosophischen Texten ergibt „Themen“, die Resultat von Wortlisten und Stoppwortdefinitionen sind, aber von Nicht-Expert\*innen als inhaltlich signifikante Topoi interpretiert werden.
+*Beispiel:* {{< glossary "Topic Modeling" >}} von philosophischen Texten ergibt „Themen“, die Resultat von Wortlisten und Stoppwortdefinitionen sind, aber von Nicht-Expert\*innen als inhaltlich signifikante Topoi interpretiert werden.
 
 #### **Evaluationsfehler (Evaluation Bias)** {#sec-evaluationsfehler-evaluation-bias}
 
 Verzerrung durch ungeeignete oder unausgewogene Benchmarks bei der Modellbewertung.
 
-*Beispiel:* Trainings- und Testsets für Named-Entity-Recognition-Modelle im Bereich Geschichte verwenden hauptsächlich Quellen des 20\. Jahrhunderts. Modelle performen deshalb schlecht bei mittelalterlichen oder frühneuzeitlichen Texten.
+*Beispiel:* Trainings- und Testsets für {{< glossary Named-Entity-Recognition >}}-Modelle im Bereich Geschichte verwenden hauptsächlich Quellen des 20\. Jahrhunderts. Modelle performen deshalb schlecht bei mittelalterlichen oder frühneuzeitlichen Texten.
 
 ### Verzerrungen durch Nutzerinteraktion (User Interaction Bias) {#sec-verzerrungen-durch-nutzerinteraktion-user-interaction-bias}
 
@@ -497,7 +497,7 @@ Historische Daten- und Metadatenpraktiken können Unterdrückung auf mindestens 
 *Beispiele*:
 
 * Binarer `dc:gender`\-Wert („male“/„female“) löscht nicht-binäre Identitäten.  
-* Koloniale Ethnonyme in Normdaten («Hottentotte») perpetuieren rassistische Klassifikationen.
+* Koloniale Ethnonyme in Normdaten ("Hottentotte") perpetuieren rassistische Klassifikationen.
 
 ### Epistemische Gewalt
 
@@ -521,17 +521,17 @@ Historische Daten- und Metadatenpraktiken können Unterdrückung auf mindestens 
 
 Historische Daten sind in ihrer Entstehung, Überlieferung und Digitalisierung selektiv. Retrodigitalisierte Bestände sind geprägt von den Normen ihrer Entstehungszeit, den Kriterien archivarischer Auswahl sowie den technischen Entscheidungen heutiger Digitalisierungsprozesse. Eine vollständige Überwindung dieser Vorprägungen ist nicht erreichbar; realistisch ist nur, sie sichtbar zu machen und mögliche und tatsächliche Folgen aufzuzeigen. Damit verschiebt sich der Anspruch von vermeintlicher Neutralität zu expliziter Reflexivität: Provenienzangaben, Auswahlkriterien und Erschliessungsentscheidungen werden systematisch dokumentiert, versioniert und in Analysen berücksichtigt.
 
-Messbarkeit bleibt begrenzt, weil zentrale Grössen nur über Proxy-Variablen zugänglich sind. OCR/HTR-Fehler, Normalisierungen und Kategorienschnitte erzeugen Verzerrungen, die nicht homogen über Sprachen, Schriften und Gruppen wirken. Operationalisierungen sollten deshalb mit Fehlermodellen verknüpft werden, die Unsicherheiten quantifizieren; Zum Beispiel Konfidenzintervalle für CER/WER und gruppenspezifische Recall/Precision. Fairnessbegriffe sind zudem konkurrierend: Parität in der Trefferquote, Gleichheit der Fehlerraten und Nutzenmaximierung lassen sich oft nicht gleichzeitig erreichen. Solche Zielkonflikte sind offen zu benennen und als Governance-Entscheidungen zu verantworten.
+Messbarkeit bleibt begrenzt, weil zentrale Grössen nur über Proxy-Variablen zugänglich sind. {{< glossary OCR >}}/{{< glossary HTR >}}-Fehler, Normalisierungen und Kategorienschnitte erzeugen Verzerrungen, die nicht homogen über Sprachen, Schriften und Gruppen wirken. Operationalisierungen sollten deshalb mit Fehlermodellen verknüpft werden, die Unsicherheiten quantifizieren; Zum Beispiel Konfidenzintervalle für {{< glossary CER >}}/{{< glossary WER >}} und gruppenspezifische Recall/Precision. Fairnessbegriffe sind zudem konkurrierend: Parität in der Trefferquote, Gleichheit der Fehlerraten und Nutzenmaximierung lassen sich oft nicht gleichzeitig erreichen. Solche Zielkonflikte sind offen zu benennen und als Governance-Entscheidungen zu verantworten.
 
 Die verschiedenen Formen von Verzerrung, direkt, indirekt, strukturell oder institutionell, wirken nicht isoliert, sondern greifen ineinander. Entscheidungen im Digitalisierungsprozess, etwa eine stratifizierte Auswahl, prägen dadurch unmittelbar spätere Suchergebnisse und deren Interpretation. Hinzu treten klassische Repräsentativitätsprobleme: Korpusgrenzen, Überlieferungs- und Auswahlverzerrungen sowie zeitliche Verschiebungen („dataset shift“) mindern die Übertragbarkeit von Befunden. Kausale Schlussfolgerungen aus solchen Beobachtungsdaten sind deshalb nur unter starken Zusatzannahmen belastbar. Potenzielle Störfaktoren wie Confounding, Selektions- oder Messfehler sind als zentrale Hypothesen zu behandeln – nicht als nachträgliche Randbemerkung.
 
-Schliesslich sind rechtlich-ethische und ökologische Grenzen mitzudenken. Re-Identifikationsrisiken steigen mit Verknüpfbarkeit; CARE-Prinzipien und Wissenssouveränität kollidieren mit radikal offener Nachnutzung. Digitale Nachhaltigkeit verlangt formatarme, langlebige Lösungen und eine Energie- und Speicherökonomie, die den wissenschaftlichen Nutzen gegen ökologische Kosten abwägt. Der methodische Mindeststandard ist deshalb „interpretative Bescheidenheit“: Ergebnisse werden als bedingt, kontextualisiert und replizierbar ausgewiesen.
+Schliesslich sind rechtlich-ethische und ökologische Grenzen mitzudenken. Re-Identifikationsrisiken steigen mit Verknüpfbarkeit; {{< glossary CARE >}}-Prinzipien und Wissenssouveränität kollidieren mit radikal offener Nachnutzung. Digitale Nachhaltigkeit verlangt formatarme, langlebige Lösungen und eine Energie- und Speicherökonomie, die den wissenschaftlichen Nutzen gegen ökologische Kosten abwägt. Der methodische Mindeststandard ist deshalb „interpretative Bescheidenheit“: Ergebnisse werden als bedingt, kontextualisiert und replizierbar ausgewiesen.
 
 ## Daten über Daten
 
 ### Was sind Forschungsdaten? {#sec-was-sind-forschungsdaten}
 
-Unter Forschungsdaten verstehen wir sämtliche digitale Repräsentationen von physischen und virtuellen Objekte, die Forscher\*innen während ihrer Forschung verwenden und produzieren und die als digitale Daten repräsentiert werden können. Dazu gehören Quellen, Transkriptionen oder Reproduktionen, Exzerpte, Zeitreihen, Tabellen, Diagramme, Karten, Modelle, Bilder, Videos, Interviews, Artikel, Sekundärliteratur, Software, Quellcode, Workflows, Forschungsprotokolle, Datensätze etc.
+Unter Forschungsdaten verstehen wir sämtliche digitale Repräsentationen von physischen und virtuellen Objekte, die Forscher\*innen während ihrer Forschung verwenden und produzieren und die als digitale Daten repräsentiert werden können. Dazu gehören Quellen, Transkriptionen oder Reproduktionen, Exzerpte, Zeitreihen, Tabellen, Diagramme, Karten, Modelle, Bilder, Videos, Interviews, Artikel, Sekundärliteratur, Software, Quellcode, {{< glossary Workflow display="Workflows" >}}, Forschungsprotokolle, Datensätze etc.
 
 Bei historischen Forschungsprojekten stammt ein grosser Teil der Forschungsdaten oft aus den Beständen von Gedächtnisinstitutionen wie Archiven, Bibliotheken und Museen oder steht in publizierter Form in Büchern oder Artikeln zur Verfügung. In vielen Fällen sorgen diese Einrichtungen für die Langzeitarchivierung der Quellen. Dann kann über die DOI oder die Signatur direkt auf die Objekte (sowie auf deren Metadaten) verwiesen werden. Meistens werden in Forschungsprojekten jedoch zusätzliche Metadaten erhoben oder bestehende Metadaten korrigiert. Dabei kann es sich um Quellenannotationen, erweiterte Beschreibungen, korrigierte Angaben etc. handeln. In diesen Fällen empfiehlt es sich, einen neuen, möglichst kompletten Metadatensatz zu erstellen und mit Verweis auf das Original  auf einer geeigneten Plattform zur Verfügung zu stellen. Redundanz ist bei Forschungsdaten wünschenswert und erhöht ihre Verfügbarkeit und Auffindbarkeit.
 
@@ -547,7 +547,7 @@ Metadaten enthalten strukturierte Informationen über Objekte, insbesondere übe
 
 Zur Illustration Begrifflichkeiten rund um Metadaten greifen wir auf die Metadaten des Beispiels [*Knie Völkerschau*](https://www.europeana.eu/de/item/92023/images_billed_2010_okt_billeder_object488811) zurück. Wir haben es ausgewählt, weil es exemplarisch für problematische, kolonial geprägte Darstellungsweisen in populärer Unterhaltungskultur des 20\. Jahrhunderts steht und über reichhaltige Metadaten verfügt.
 
-| Feld (Dublin Core / Europeana) | Wert |
+| Feld ({{< glossary "Dublin Core" >}} / Europeana) | Wert |
 | :---- | :---- |
 | **dc:title** | Knie Völkerschau |
 | **dc:description** | Litografi, flerfarvet tryk : mål: 500 x 350 mm flerfarvet tegning af tre håndværkere ved arbejdet |
@@ -565,7 +565,7 @@ Zur Illustration Begrifflichkeiten rund um Metadaten greifen wir auf die Metadat
 | **edm:preview** | <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkb-images.kb.dk%2FDAMJP2%2FDAM%2FSamlingsbilleder%2F0000%2F488%2F811%2FPL000012%2Ffull%2Ffull%2F0%2Fnative.jpg\&type=IMAGE> |
 | **Europeana-ID** | 92023/images\_billed\_2010\_okt\_billeder\_object488811 |
 | **Europeana-LandingPage** | <https://www.europeana.eu/en/item/92023/images\_billed\_2010\_okt\_billeder\_object488811> |
-| **IIIF Manifest** | <https://iiif.europeana.eu/presentation/92023/images\_billed\_2010\_okt\_billeder\_object488811/manifest> |
+| **{{< glossary IIIF >}} Manifest** | <https://iiif.europeana.eu/presentation/92023/images\_billed\_2010\_okt\_billeder\_object488811/manifest> |
 
 : "Metadaten-Tabelle für: *Knie Völkerschau*"
 
@@ -597,7 +597,7 @@ Am Beispiel *Knie Völkerschau* zeigt sich, wie einzelne Werte formal typisiert 
 
 * `dc:title` ist ein einfacher Textstring in Originalsprache→ `xsd:string@de`  
 * `dc:date` enthält den unsicheren Jahreswert `"1969?"`, typisiert als `xsd:string`, könnte aber in normierten Fällen auch `xsd:gYear` sein  
-* `edm:language` verwendet ISO 639-1 Codes (`"da"` für Dänisch)  
+* `edm:language` verwendet {{< glossary ISO >}} 639-1 Codes (`"da"` für Dänisch)  
 * `dc:identifier` oder `edm:isShownBy` sind URIs → `anyURI`
 
 #### **2\. Wertstandard *(Zulässige Werte für Felder)*** {#sec-2-wertstandard-zulässige-werte-für-felder}
@@ -606,16 +606,16 @@ Enthält normierte, kontrollierte Begriffe oder Referenzen. Diese dienen der **V
 
 Das Beispiel *Knie Völkerschau* nutzt sowohl kontrollierte als auch freie Werte:
 
-* `dc:type` enthält `"Still image"`, `"Poster"` – konform mit dem **AAT** oder **EDM Type Vocabulary**  
-* `edm:country` ist `"Denmark"` → entspricht **ISO 3166-1 Alpha-2**  
+* `dc:type` enthält `"Still image"`, `"Poster"` – konform mit dem **{{< glossary AAT >}}** oder **{{< glossary EDM >}} Type Vocabulary**  
+* `edm:country` ist `"Denmark"` → entspricht **{{< glossary ISO >}} 3166-1 Alpha-2**  
 * `dc:rights` verweist auf die **CC-Lizenz** [`http://creativecommons.org/licenses/by-nc-nd/4.0/`](http://creativecommons.org/licenses/by-nc-nd/4.0/)  
-* `dc:subject` („Knie“, „Cirkus“, „Håndværker“) könnte auf eine kontrollierte Vokabularquelle wie **GND** oder **Wikidata** gemappt werden
+* `dc:subject` („Knie“, „Cirkus“, „Håndværker“) könnte auf eine kontrollierte Vokabularquelle wie **{{< glossary GND >}}** oder **Wikidata** gemappt werden
 
 #### **3\. Inhaltsstandard *(Semantische Bedeutung von Feldern)*** {#sec-3-inhaltsstandard-semantische-bedeutung-von-feldern}
 
 Legt fest, **welche Informationen in welchen Feldern** erfasst werden sollen und was sie **semantisch bedeuten**. Dabei kann folgende Frage gestellt werden: "Wie befülle ich das Feld?"
 
-Die Belegung der Felder des Beispiels *Knie Völkerschau* folgt dem **Dublin Core Element Set (DCMES)** und dem **Europeana Data Model (EDM)**:
+Die Belegung der Felder des Beispiels *Knie Völkerschau* folgt dem **{{< glossary "Dublin Core" >}} Element Set ({{< glossary DC display="DCMES" >}})** und dem **{{< glossary EDM display="Europeana Data Model (EDM)" >}}**:
 
 * `dc:title` enthält den Titel des Plakats („Knie Völkerschau“)  
 * `dc:description` beschreibt Motiv, Technik und Masse der Lithografie  
@@ -629,7 +629,7 @@ Definiert **die erlaubten Felder und ihre Beziehungen**, oft in hierarchischen o
 
 Oft wird zwischen Strukturstandard und Schema nicht klar unterschieden. Während der Strukturstandard die allgemeine Anordnung und Bedeutung der Felder beschreibt, legt ein Schema konkret fest, wie diese umgesetzt werden; etwa welche Felder verpflichtend sind oder wie oft sie vorkommen dürfen. Ein Schema lässt sich als Bauplan verstehen, der auf einem übergeordneten, abstrakten Modell beruht.
 
-Die Datenstruktur des Beispiels *Knie Völkerschau* entspricht dem **Europeana Data Model (EDM)**:
+Die Datenstruktur des Beispiels *Knie Völkerschau* entspricht dem **{{< glossary EDM display="Europeana Data Model (EDM)" >}}**:
 
 * `ProvidedCHO` (Cultural Heritage Object) enthält zum Beipsiel `dc:title`, `dc:date`, `dc:type`  
 * `Aggregation` verknüpft mit `edm:isShownBy`, `edm:preview`, `edm:provider`  
@@ -639,12 +639,12 @@ Die Datenstruktur des Beispiels *Knie Völkerschau* entspricht dem **Europeana D
 
 Legt fest, **wie der strukturierte Metadatensatz technisch gespeichert oder übertragen** wird. Es ist die konkrete **Kodierung und Serialisierung** der Metadatenstruktur, wie sie vom Computer ausgelesen wird. Der Fokus liegt auf der einfachen und effizienten Lesbarkeit für Maschinen, nicht für Menschen.
 
-**Anmerkung:** XML oder RDF sind **Struktur- und Formatstandards zugleich**, abhängig davon, ob man ihre **logische Modellierung** oder die **Serialisierung** betont.
+**Anmerkung:** {{< glossary XML >}} oder {{< glossary RDF >}} sind **Struktur- und Formatstandards zugleich**, abhängig davon, ob man ihre **logische Modellierung** oder die **Serialisierung** betont.
 
 Im Fall von *Knie Völkerschau* liegen die Metadaten folgenden Formaten vor:
 
-* Europeana-API liefert Metadaten im **JSON-LD** (zum Beispiel via `/record/v2/...json`)  
-* Exportierbar als **RDF/XML** oder **Turtle**  
+* Europeana-API liefert Metadaten im **{{< glossary JSON-LD >}}** (zum Beispiel via `/record/v2/...json`)  
+* Exportierbar als **{{< glossary RDF >}}/{{< glossary XML >}}** oder **Turtle**  
 * URIs sind **HTTP-resolvable**, kodiert in **UTF-8**
 
 #### **6\. Präsentationsstandard *(Visualisierung, Darstellung für Menschen)*** {#sec-6-präsentationsstandard-visualisierung-darstellung-für-menschen}
@@ -664,79 +664,79 @@ Ermöglichen den **Austausch, Aggregation und Mapping** zwischen verschiedenen S
 
 Das Beispiel *Knie Völkerschau* ist vollständig eingebettet in ein interoperables Framework:
 
-* Über die maschinenlesbare Schnittstelle OAI-PMH werden die Informationen aus den lokalen Repositorien gesammelt und an einen Aggreator (zum Beispiel Europeana) übermittelt. Die Herkunftsinformation kann im Feld `edm:dataProvider` eingebettet werden.  
-* IIIF Manifest verfügbar für DeepZoom oder Bildannotation  
-* Verlinkung auf Lizenzen, Orte, Konzepte via URI (Linked Data Prinzipien)  
-* Es sind Mappings in beide Richtungen möglich: von MARC zu Dublin Core und umgekehrt, von TEI zu EDM und umgekehrt sowie von CIDOC CRM zu Europeana (EDM) und umgekehrt.
+* Über die maschinenlesbare Schnittstelle {{< glossary OAI-PMH >}} werden die Informationen aus den lokalen Repositorien gesammelt und an einen Aggreator (zum Beispiel Europeana) übermittelt. Die Herkunftsinformation kann im Feld `edm:dataProvider` eingebettet werden.  
+* {{< glossary IIIF >}} Manifest verfügbar für DeepZoom oder Bildannotation  
+* Verlinkung auf Lizenzen, Orte, Konzepte via URI {{< glossary LOUD >}}-Prinzipien)  
+* Es sind Mappings in beide Richtungen möglich: von {{< glossary MARC >}} zu {{< glossary "Dublin Core" >}} und umgekehrt, von {{< glossary TEI >}} zu {{< glossary EDM >}} und umgekehrt sowie von {{< glossary CIDOC-CRM >}} zu EDM und umgekehrt.
 
 #### **Ein Feld, sieben Ebenen**
 
 | Metadatum (Feld) | ① Datentyp | ② Wertstandard | ③ Inhaltsstandard | ④ Struktur / Schema | ⑤ Format | ⑥ Präsentation | ⑦ Interoperabilität |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| `dc:title` | `xsd:string@de` | Freitext | **Dublin Core: Title** | DCMES, EDM | JSON, RDF/XML | UI-Label: *Titel* | Europeana API, OAI-PMH |
-| `dc:description` | `xsd:string@da` | Freitext, gegebenenfalls Getty AAT-Terms | **DC: Description** | DCMES | JSON | Accordion-Feld, Tooltip | OAI-PMH, JSON-LD |
-| `dc:date` | `xsd:gYear` oder `xsd:string` | ISO 8601, „1969?“ (unsicher) | **DC: Date** | EDM Timespan, DCMES | RDF/XML, JSON-LD | Formatierter Zeitstempel | `edm:hasMet` \+ IIIF Timeline |
-| `dc:type` | URI / `xsd:string@da` | **AAT URI**, `poster`, `Still image` | **DC: Type** | DCMES, EDM \+ Europeana Vocabularies | RDF | Facette: „Medientyp“ | Linked Open Data / EDM |
-| `dc:subject` | `xsd:string@da` | **GND** / kontrollierte Schlagwörter | **DC: Subject** | DCMES | JSON | Schlagwortliste | VIAF, Wikidata, Linked Data |
-| `dc:identifier` | `anyURI` | HTTP-URL | **DC: Identifier** | DCMES, EDM Aggregation | JSON-LD | als anklickbarer Link | persistente URI (PURL/DOI) |
-| `dc:rights` | URI \+ `xsd:string` | **CC URI**, `RightsStatements.org` | **DC: Rights** | DCMES, EDM Rights | RDF, JSON | CC-Logo, Textlink | Interoperables Lizenzsystem |
-| `edm:isShownBy` | `anyURI` | IIIF Image Service URI | **EDM: isShownBy** | EDM Aggregation | RDF | Bild-Embed | IIIF Image API |
-| `edm:isShownAt` | `anyURI` | Originalquellenlink | **EDM: isShownAt** | EDM Aggregation | JSON-LD | Button „Zur Quelle“ | OAI-PMH, Europeana Portal |
-| `edm:preview` | IIIF Thumbnail URI | IIIF-compliant | **EDM: preview** | EDM Aggregation | JSON-LD | Thumbnail-Bild | IIIF Presentation API |
-| `edm:dataProvider` | URI \+ Name (String) | Europeana Org-ID | **EDM: dataProvider** | EDM | RDF | Link zur Institution | Europeana Registry / LOD |
-| `edm:language` | ISO 639-1 Code | `da`, `en`, `de`, ... | **EDM: language** | EDM | JSON | Flaggensymbol \+ Sprachname | Multilingual indexing |
-| `edm:country` | ISO 3166-1 Alpha-2 | `DK` → *Denmark* | **EDM: country** | EDM | RDF/XML | Anzeige Herkunftsland | Europeana-Facettierung |
+| `dc:title` | `xsd:string@de` | Freitext | **{{< glossary "Dublin Core" >}}: Title** | {{< glossary DC display="DCMES" >}}, {{< glossary EDM >}} | {{< glossary JSON >}}, {{< glossary RDF >}}/{{< glossary XML >}} | UI-Label: *Titel* | Europeana API, {{< glossary OAI-PMH >}} |
+| `dc:description` | `xsd:string@da` | Freitext, gegebenenfalls Getty {{< glossary AAT >}}-Terms | **{{< glossary "Dublin Core" display="DC" >}}: Description** | {{< glossary DC display="DCMES" >}} | JSON | Accordion-Feld, Tooltip | {{< glossary OAI-PMH >}}, {{< glossary JSON-LD >}} |
+| `dc:date` | `xsd:gYear` oder `xsd:string` | {{< glossary ISO >}} 8601, „1969?“ (unsicher) | **{{< glossary "Dublin Core" display="DC" >}}: Date** | {{< glossary EDM >}} Timespan, {{< glossary DC display="DCMES" >}} | {{< glossary RDF >}}/{{< glossary XML >}}, {{< glossary JSON-LD >}} | Formatierter Zeitstempel | `edm:hasMet` \+ {{< glossary IIIF >}} Timeline |
+| `dc:type` | URI / `xsd:string@da` | **{{< glossary AAT >}} URI**, `poster`, `Still image` | **{{< glossary "Dublin Core" display="DC" >}}: Type** | {{< glossary DC display="DCMES" >}}, {{< glossary EDM >}} \+ Europeana Vocabularies | {{< glossary RDF >}} | Facette: „Medientyp“ | Linked Open Data / {{< glossary EDM >}} |
+| `dc:subject` | `xsd:string@da` | **{{< glossary GND >}}** / kontrollierte Schlagwörter | **{{< glossary "Dublin Core" display="DC" >}}: Subject** | {{< glossary DC display="DCMES" >}} | {{< glossary JSON >}} | Schlagwortliste | {{< glossary "VIAF" >}}, Wikidata, Linked Data |
+| `dc:identifier` | `anyURI` | HTTP-URL | **{{< glossary "Dublin Core" display="DC" >}}: Identifier** | {{< glossary DC display="DCMES" >}}, {{< glossary EDM >}} Aggregation | {{< glossary JSON-LD >}} | als anklickbarer Link | persistente URI (PURL/DOI) |
+| `dc:rights` | URI \+ `xsd:string` | **CC URI**, `RightsStatements.org` | **{{< glossary "Dublin Core" display="DC" >}}: Rights** | {{< glossary DC display="DCMES" >}}, {{< glossary EDM >}} Rights | {{< glossary RDF >}}, {{< glossary JSON >}} | CC-Logo, Textlink | Interoperables Lizenzsystem |
+| `edm:isShownBy` | `anyURI` | {{< glossary IIIF >}} Image Service URI | **{{< glossary EDM >}}: isShownBy** | {{< glossary EDM >}} Aggregation | {{< glossary RDF >}} | Bild-Embed | {{< glossary IIIF >}} Image API |
+| `edm:isShownAt` | `anyURI` | Originalquellenlink | **{{< glossary EDM >}}: isShownAt** | {{< glossary EDM >}} Aggregation | {{< glossary JSON-LD >}} | Button „Zur Quelle“ | {{< glossary OAI-PMH >}}, Europeana Portal |
+| `edm:preview` | {{< glossary IIIF >}} Thumbnail URI | {{< glossary IIIF >}}-compliant | **{{< glossary EDM >}}: preview** | {{< glossary EDM >}} Aggregation | {{< glossary JSON-LD >}} | Thumbnail-Bild | {{< glossary IIIF >}} Presentation API |
+| `edm:dataProvider` | URI \+ Name (String) | Europeana Org-ID | **{{< glossary EDM >}}: dataProvider** | {{< glossary EDM >}} | {{< glossary RDF >}} | Link zur Institution | Europeana Registry / LOD |
+| `edm:language` | {{< glossary ISO >}} 639-1 Code | `da`, `en`, `de`, ... | **{{< glossary EDM >}}: language** | {{< glossary EDM >}} | {{< glossary JSON >}} | Flaggensymbol \+ Sprachname | Multilingual indexing |
+| `edm:country` | {{< glossary ISO >}} 3166-1 Alpha-2 | `DK` → *Denmark* | **{{< glossary EDM >}}: country** | {{< glossary EDM >}} | {{< glossary RDF >}}/{{< glossary XML >}} | Anzeige Herkunftsland | Europeana-Facettierung |
 : "Metadaten-Tabelle für: *Knie Völkerschau* mit sieben Ebenen"
 
-Im Praxisteil dieses Handbuchs gehen wir insbesondere auf Schemas, Inhalts- und Wertstandards ein und beziehen uns dabei vorwiegend auf die [Dublin Core Metadata Initiative (DCMI)](https://www.dublincore.org). Eine umfassende Übersicht weiterer verbreiteter Standards liefert etwa @sgg2023.
+Im Praxisteil dieses Handbuchs gehen wir insbesondere auf Schemas, Inhalts- und Wertstandards ein und beziehen uns dabei vorwiegend auf die {{< glossary "Dublin Core" >}} Metadata Initiative (DCMI). Eine umfassende Übersicht weiterer verbreiteter Standards liefert etwa @sgg2023.
 
-## FAIR, CARE und LOUD: Überblick und Zielsetzung
+## {{< glossary FAIR >}}, {{< glossary CARE >}} und {{< glossary LOUD >}}: Überblick und Zielsetzung
 
-Dieses Kapitel bündelt drei komplementäre Orientierungen der Forschungsdatenpraxis. **FAIR** adressiert Auffindbarkeit, Zugänglichkeit, Interoperabilität und Wiederverwendbarkeit als technische und organisatorische Leitlinien [@wilkinson2016;@gofairinitiative]. **CARE** rückt kollektiven Nutzen, Kontrollhoheit, Verantwortung und Ethik in den Fokus, insbesondere bei indigenen Daten [@GIDA_CARE_2025;@carroll2021]. **LOUD** verschiebt den Blick von der reinen Bereitstellung hin zur tatsächlichen Nutzbarkeit in Arbeitsabläufen der Geisteswissenschaften. Ziel ist eine lesbare, praxisnahe Ordnung der Prinzipien für historische Forschung und Metadatenarbeit.
+Dieses Kapitel bündelt drei komplementäre Orientierungen der Forschungsdatenpraxis. **{{< glossary FAIR >}}** adressiert Auffindbarkeit, Zugänglichkeit, Interoperabilität und Wiederverwendbarkeit als technische und organisatorische Leitlinien [@wilkinson2016;@gofairinitiative]. **{{< glossary CARE >}}** rückt kollektiven Nutzen, Kontrollhoheit, Verantwortung und Ethik in den Fokus, insbesondere bei indigenen Daten [@GIDA_CARE_2025;@carroll2021]. **{{< glossary LOUD >}}** verschiebt den Blick von der reinen Bereitstellung hin zur tatsächlichen Nutzbarkeit in Arbeitsabläufen der Geisteswissenschaften. Ziel ist eine lesbare, praxisnahe Ordnung der Prinzipien für historische Forschung und Metadatenarbeit.
 
 ### Begriffsklärungen: offen, öffentlich, Open Data
 
 „**Offen**“ bezeichnet rechtlich und technisch definierte Nachnutzbarkeit. Offenheit wird durch Lizenzierung, Standards und Dokumentation hergestellt. „**Öffentlich**“ meint faktische Sichtbarkeit ohne Zugangsbeschränkungen. Offenheit ist möglich ohne Öffentlichkeit, etwa bei Zugang auf Antrag bei offener Lizenz und klaren Metadaten; umgekehrt können öffentlich sichtbare Daten nicht offen sein, wenn Lizenz oder Nutzungsbedingungen Nachnutzung verhindern. „**Open Data**“ steht normativ für Daten, die allen zur Verfügung stehen, typischerweise unter Free-Culture-Lizenzen wie [CC0](https://creativecommons.org/publicdomain/zero/1.0/), [CC BY](https://creativecommons.org/licenses/by/4.0/) oder [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/). Offene Daten senken Zugangshürden und fördern Kollaboration; sie sind jedoch kein Selbstzweck. Sensible Quellen, personenbezogene Metadaten und schutzwürdige Kontexte erfordern abgestufte Zugänge, transparente Bedingungen und sorgfältige Abwägungen. Für Gedächtnisinstitutionen liefern die [OpenGLAM-Prinzipien](https://openglam.org/principles/), das [5-Sterne-Modell für Open Data](https://5stardata.info/de/) und die [Open-Data-Policy-Guidelines](https://sunlightfoundation.com/opendataguidelines/) zusätzliche Orientierung; zum Gemeinfreiheitsregime in der Schweiz informiert ein [Factsheet des IGE](https://www.ige.ch/en/protecting-your-ip/copyright/using-a-work/public-domain).
 
-### FAIR: Nachnutzbarkeit als Leitlinie
+### {{< glossary FAIR >}}: Nachnutzbarkeit als Leitlinie
 
-**FAIR** steht für Findable (auffindbar), Accessible (zugänglich), Interoperable (interoperabel) und Reusable (wiederverwendbar). Die Prinzipien wurden 2016 als Leitlinien für eine nachhaltige und maschinenlesbare Datenpraxis formuliert:
+**{{< glossary FAIR >}}** steht für Findable (auffindbar), Accessible (zugänglich), Interoperable (interoperabel) und Reusable (wiederverwendbar). Die Prinzipien wurden 2016 als Leitlinien für eine nachhaltige und maschinenlesbare Datenpraxis formuliert:
 
 * **Auffindbar:** Daten und Personen erhalten persistente Identifikatoren (zum Beispiel DOI, ORCID). Metadaten sind strukturiert, suchbar und beschreibend; minimal gefordert sind ein stabiler Ort und eine Zitierempfehlung.  
 * **Zugänglich:** Zugänge und Bedingungen sind dokumentiert. Auch wenn Daten nicht öffentlich sind, bleiben Metadaten frei zugänglich und der Weg zum Zugang nachvollziehbar.  
-* **Interoperabel:** Formate und Schemata folgen Standards; kontrollierte Vokabulare, Normdaten und Ontologien ermöglichen Verknüpfung und maschinelle Weiterverarbeitung.  
-* **Wiederverwendbar:** Lizenztexte, Provenienz, Versionierung, Qualitätsangaben und methodische Kontexte ermöglichen kritische Prüfung und Weiterverwendung. FAIR verlangt keine vollständige Öffentlichkeit, sondern klare Bedingungen für nachhaltige Nachnutzung.
+* **Interoperabel:** Formate und Schemata folgen Standards; kontrollierte Vokabulare, Normdaten und {{< glossary Ontologie display="Ontologien" >}} ermöglichen Verknüpfung und maschinelle Weiterverarbeitung.  
+* **Wiederverwendbar:** Lizenztexte, Provenienz, Versionierung, Qualitätsangaben und methodische Kontexte ermöglichen kritische Prüfung und Weiterverwendung. {{< glossary FAIR >}} verlangt keine vollständige Öffentlichkeit, sondern klare Bedingungen für nachhaltige Nachnutzung.
 
 ::: {.callout-note title="Erfahrungen Stadt.Geschichte.Basel"}
 
-*Stadt.Geschichte.Basel publiziert und dokumentiert Forschungsdaten mit dem [Open Research Data Template](https://github.com/maehr/open-research-data-template), um Open- und FAIR-Prinzipien operationell umzusetzen. DOIs via Zenodo sichern Zitierbarkeit und Auffindbarkeit; GitHub und GitHub Pages stellen Repositorium und lesbare Dokumentation bereit. Klare Lizenzierung (zum Beispiel CC BY 4.0 für Daten, AGPL 3.0 für Code), standardisierte Ordner- und Dateistrukturen sowie Automationen erhöhen Interoperabilität. README, CHANGELOG und CITATION.cff, Versionierung und Issue-Vorlagen fördern Transparenz und Wiederverwendbarkeit.*
+*Stadt.Geschichte.Basel publiziert und dokumentiert Forschungsdaten mit dem [Open Research Data Template](https://github.com/maehr/open-research-data-template), um Open- und {{< glossary FAIR >}}-Prinzipien operationell umzusetzen. DOIs via Zenodo sichern Zitierbarkeit und Auffindbarkeit; GitHub und GitHub Pages stellen Repositorium und lesbare Dokumentation bereit. Klare Lizenzierung (zum Beispiel CC BY 4.0 für Daten, AGPL 3.0 für Code), standardisierte Ordner- und Dateistrukturen sowie Automationen erhöhen Interoperabilität. README, CHANGELOG und CITATION.cff, Versionierung und Issue-Vorlagen fördern Transparenz und Wiederverwendbarkeit.*
 :::
 
-### Datenethik und CARE
+### Datenethik und {{< glossary CARE >}}
 
-Konventionelle Datenpraktiken vernachlässigen oft Entstehungskontexte, Machtverhältnisse und Folgewirkungen. **CARE** steht für Collective Benefit (Kollektiver Nutzen), Authority to Control (Kontrolle über die Daten), Responsibility (Verantwortung), Ethics (Ethik) und schliesst diese Lücke und richtet Datenpraxis an kollektiven Rechten und Pflichten aus:
+Konventionelle Datenpraktiken vernachlässigen oft Entstehungskontexte, Machtverhältnisse und Folgewirkungen. **{{< glossary CARE >}}** steht für Collective Benefit (Kollektiver Nutzen), Authority to Control (Kontrolle über die Daten), Responsibility (Verantwortung), Ethics (Ethik) und schliesst diese Lücke und richtet Datenpraxis an kollektiven Rechten und Pflichten aus:
 
 * **Kollektiver Nutzen** fordert, dass Datenpraxis dem kollektiven Nutzen der betroffenen Gemeinschaften dient und nicht nur externen Forschungsinteressen.  
 * **Kontrolle über die Daten** sichert Anspruchsgruppen die Hoheit über den gesamten Lebenszyklus von Daten. Ein Beispiel sind *Traditional Knowledge (TK) Labels* von [Local Contexts](https://localcontexts.org/), die Nutzungsbedingungen sichtbar machen.  
 * **Verantwortung** betont die Verantwortung von Forscher\*innen und Institutionen, Risiken zu minimieren, Transparenz zu sichern und Rechenschaft abzulegen.  
 * **Ethik** verlangt einen Umgang, der über Rechtskonformität hinausgeht und auf Respekt, kulturelle Sensibilität und Schadensvermeidung zielt.
 
-Die Prinzipien wurden 2018 im Rahmen der International Data Week entworfen und zwischen 2019 und 2020 von der Global Indigenous Data Alliance ausgearbeitet ([GIDA – CARE Principles](https://www.gida-global.org/care), [Carroll et al. 2020](https://doi.org/10.5334/dsj-2020-043)). Gedächtnisinstitutionen agieren dabei zwangsläufig als Gatekeeper; Governance-Modelle sollen Entscheidungsrechte explizit abbilden. In Kanada fassen die [OCAP®-Prinzipien](https://fnigc.ca/ocap-training/) Ownership, Control, Access und Possession als konkrete Form indigener Datenhoheit.
+Die Prinzipien wurden 2018 im Rahmen der International Data Week entworfen und zwischen 2019 und 2020 von der Global Indigenous Data Alliance ausgearbeitet [@GIDA_CARE_2025;@carroll2021]. Gedächtnisinstitutionen agieren dabei zwangsläufig als Gatekeeper; Governance-Modelle sollen Entscheidungsrechte explizit abbilden. In Kanada fassen die [OCAP®-Prinzipien](https://fnigc.ca/ocap-training/) Ownership, Control, Access und Possession als konkrete Form indigener Datenhoheit.
 
-### LOUD: Nutzungsorientierte Erweiterung
+### {{< glossary LOUD >}}: Nutzungsorientierte Erweiterung
 
-**LOUD** steht für Linked (verknüpft), Open (offen), Usable (nutzbar) Data (Daten) und schliesst die Kluft zwischen abstrakten Datenmodellen und Forschungspraxis:
+**{{< glossary LOUD >}}** steht für Linked (verknüpft), Open (offen), Usable (nutzbar) Data (Daten) und schliesst die Kluft zwischen abstrakten Datenmodellen und Forschungspraxis:
 
 * **Verknüpft** verlangt eindeutige Referenzen und semantische Verknüpfungen, damit Datensätze anschlussfähig in Wissensnetzen zirkulieren.  
 * **Offen** steht für rechtlich wie technisch barrierearme Bereitstellung, inklusive offener Formate und Schnittstellen.  
 * **Nutzbar** betont dokumentierte Provenienz, verständliche Zugänge, einfache Exporte und APIs sowie Qualitätssicherung, damit Forscher\*innen ohne Spezialwerkzeuge arbeiten können.  
 * **Daten** rückt Inhalte in den Mittelpunkt und fordert wiederverwendbare Bereitstellung statt statischer Visualisierungen.
 
-LOUD operationalisiert FAIR in Richtung Nutzung und bleibt mit CARE kompatibel, weil Nutzungsbedingungen und Rechte modelliert und kommuniziert werden.
+{{< glossary LOUD >}} operationalisiert {{< glossary FAIR >}} in Richtung Nutzung und bleibt mit {{< glossary CARE >}} kompatibel, weil Nutzungsbedingungen und Rechte modelliert und kommuniziert werden.
 
 ### Entscheiden, dokumentieren, umsetzen {#sec-entscheiden-dokumentieren-umsetzen}
 
-Für offen lizenzierte Daten und breite Nachnutzung stehen FAIR und LOUD im Vordergrund; bei sensiblen Beständen bestimmen CARE und gegebenenfalls OCAP® die Zugangs- und Governance-Modelle. In Aggregations- und Vernetzungsprojekten zählen Interoperabilität und Verlinkung, ergänzt um klare Nutzungsregeln. In jedem Fall gilt: Zuständigkeiten, Bedingungen und Grenzen schriftlich fixieren, Identifier und Metadaten konsequent vergeben, Formate und Vokabulare standardisieren, Änderungen versionieren und ethische Anforderungen explizit adressieren.
+Für offen lizenzierte Daten und breite Nachnutzung stehen {{< glossary FAIR >}} und {{< glossary LOUD >}} im Vordergrund; bei sensiblen Beständen bestimmen {{< glossary CARE >}} und gegebenenfalls OCAP® die Zugangs- und Governance-Modelle. In Aggregations- und Vernetzungsprojekten zählen Interoperabilität und Verlinkung, ergänzt um klare Nutzungsregeln. In jedem Fall gilt: Zuständigkeiten, Bedingungen und Grenzen schriftlich fixieren, Identifier und Metadaten konsequent vergeben, Formate und Vokabulare standardisieren, Änderungen versionieren und ethische Anforderungen explizit adressieren.
 
 # Praxis: Diskriminierungssensibler Umgang mit Metadaten {#sec-praxis:-diskriminierungssensibler-umgang-mit-metadaten}
 
@@ -744,7 +744,7 @@ Metadaten sind weit mehr als neutrale Beschreibungen von Forschungsdaten oder ku
 
 Ein diskriminierungssensibler Umgang mit Metadaten bedeutet, diese Wirkmacht bewusst zu reflektieren und verantwortungsvoll zu gestalten. Es geht darum, marginalisierte Stimmen sichtbar zu machen, respektvolle Sprache zu verwenden und transparente Entscheidungsprozesse zu dokumentieren. Gleichzeitig müssen historische Kontexte gewahrt und problematische Inhalte nicht beschönigt, sondern klar benannt und kontextualisiert werden.
 
-Der Praxisteil orientiert sich am DCC Curation Lifecycle nach Higgins [-@higgins2008] und führt durch alle Phasen der Metadatenerstellung – von der ersten Planung bis zur Langzeitarchivierung. Die sieben Hauptkapitel behandeln jeweils spezifische Herausforderungen und bieten konkrete Handlungsempfehlungen, Checklisten und Praxisbeispiele. Dabei werden sowohl die etablierten FAIR-Prinzipien (Findable, Accessible, Interoperable, Reusable) als auch die CARE-Prinzipien (Collective Benefit, Authority to Control, Responsibility, Ethics) berücksichtigt, die besonders bei kulturell sensiblen Inhalten von Bedeutung sind.
+Der Praxisteil orientiert sich am DCC Curation Lifecycle nach Higgins [-@higgins2008] und führt durch alle Phasen der Metadatenerstellung – von der ersten Planung bis zur Langzeitarchivierung. Die sieben Hauptkapitel behandeln jeweils spezifische Herausforderungen und bieten konkrete Handlungsempfehlungen, Checklisten und Praxisbeispiele. Dabei werden sowohl die etablierten {{< glossary FAIR >}}-Prinzipien (Findable, Accessible, Interoperable, Reusable) als auch die {{< glossary CARE >}}-Prinzipien (Collective Benefit, Authority to Control, Responsibility, Ethics) berücksichtigt, die besonders bei kulturell sensiblen Inhalten von Bedeutung sind.
 
 Die Phasen sind iterativ angelegt – Entscheidungen wirken rückkoppelnd auf frühere Schritte, und neue Erkenntnisse erfordern oft Anpassungen in der Herangehensweise. Ziel ist eine belastbare Nachvollziehbarkeit, verbesserte Auffindbarkeit und angemessene Kontextualisierung sensibler Inhalte, die sowohl wissenschaftlichen Standards genügt als auch ethischen Anforderungen entspricht.
 
@@ -792,17 +792,17 @@ Für die Veröffentlichung sind Lizenzangaben und Rechteaussagen (zum Beispiel C
 
 ### 1.3 Standards und Infrastruktur festlegen {#sec-13-standards-und-infrastruktur-festlegen}
 
-Als Ausgangspunkt sollten etablierte Schemata wie das Dublin Core Metadata Element Set (DCMES), MODS oder Schema.org geprüft werden. Ihre Verbreitung in der Fachcommunity und die Anschlussfähigkeit an bestehende Systeme sichern Interoperabilität und Nachhaltigkeit. Je nach Projekt kann es sinnvoll sein, Schemata zu erweitern oder zu kombinieren, etwa EAD oder MARC auf Sammlungsebene und Dublin Core, MODS, LIDO oder VRA Core auf Objektebene.[@Schopper_2024_Einfuehrung_Metadaten]
+Als Ausgangspunkt sollten etablierte Schemata wie das {{< glossary "Dublin Core" >}} Metadata Element Set ({{< glossary DC display="DCMES" >}}), MODS oder Schema.org geprüft werden. Ihre Verbreitung in der Fachcommunity und die Anschlussfähigkeit an bestehende Systeme sichern Interoperabilität und Nachhaltigkeit. Je nach Projekt kann es sinnvoll sein, Schemata zu erweitern oder zu kombinieren, etwa {{< glossary EAD >}} oder {{< glossary MARC >}} auf Sammlungsebene und {{< glossary "Dublin Core" >}}, MODS, {{< glossary LIDO >}} oder {{< glossary "VRA Core" >}} auf Objektebene.[@Schopper_2024_Einfuehrung_Metadaten]
 
 Darüber hinaus ist die frühzeitige Planung von Normdaten, kontrollierten Vokabularen, technischen Plattformen und Datenflüssen entscheidend. Bei der Definition der Metadatenfelder empfiehlt es sich, zunächst alle relevanten Informationen zu sammeln (zum Beispiel Zeitangaben, Geokoordinaten, Lizenzhinweise, Versionsgeschichte). Ob Angaben in eigenen Feldern oder in Kommentarfeldern erfasst werden, hängt von Automatisierbarkeit, Standardisierung und Aggregationsanforderungen ab.
 
-Ein weiterer wichtiger Aspekt in diesem Schritt ist **die Sensibilität** gegenüber impliziten Annahmen, die mit Metadatenschemata und Ontologien verbunden sind. Jede Klassifikation trifft bestimmte Aussagen über die Welt und ist daher nie neutral. Durch ihre Ordnungsstrukturen suggerieren Metadatenschemata häufig Allgemeingültigkeit und Objektivität, blenden jedoch Widersprüche, Ein- und Ausschlüsse aus. Beispiele hierfür sind die implizite Annahme eines Kernfamilienmodells in standardisierten Erhebungsbögen oder die westlich geprägten Vorstellungen von Besitz und Urheberschaft, die sich etwa in den Dublin-Core-Elementen “creator*”* und “rights” niederschlagen.
+Ein weiterer wichtiger Aspekt in diesem Schritt ist **die Sensibilität** gegenüber impliziten Annahmen, die mit Metadatenschemata und {{< glossary Ontologie display="Ontologien" >}} verbunden sind. Jede Klassifikation trifft bestimmte Aussagen über die Welt und ist daher nie neutral. Durch ihre Ordnungsstrukturen suggerieren Metadatenschemata häufig Allgemeingültigkeit und Objektivität, blenden jedoch Widersprüche, Ein- und Ausschlüsse aus. Beispiele hierfür sind die implizite Annahme eines Kernfamilienmodells in standardisierten Erhebungsbögen oder die westlich geprägten Vorstellungen von Besitz und Urheberschaft, die sich etwa in den Dublin-Core-Elementen “creator*”* und “rights” niederschlagen.
 
 Bei der Festlegung von Metadatenfeldern stellt sich häufig die Frage, ob bestimmte Angaben in eigenständigen Feldern oder in einem allgemeinen Kommentarfeld erfasst werden sollten. Die Entscheidung hängt dabei von Kriterien wie Automatisierbarkeit, Häufigkeit der Nutzung, Standardisierung, Anforderungen durch Aggregatoren sowie der gewünschten Flexibilität ab. In der Praxis erfolgt die Modellierung der Felder meist iterativ und parallel zur Quellenannotation. Dabei kann es vorkommen, dass ursprünglich geplante Felder wieder verworfen oder angepasst werden müssen, weil sich herausstellt, dass sie nur für einen Teil der Objekte relevant sind.
 
 Schliesslich ist es wichtig, sämtliche Entscheidungen und Abwägungen bei der Schemaauswahl und Felddefinition nachvollziehbar zu dokumentieren. So wird nicht nur die interne Konsistenz gewährleistet, sondern auch eine spätere Nachvollziehbarkeit durch andere Forscher\*innen und Projekte sichergestellt.
 
-Ein weiterer zentraler Punkt bei der Auswahl und Planung von Infrastrukturen ist die Abwägung zwischen proprietären Lösungen und offenen, quelloffenen Systemen. Proprietäre Software und kommerzielle Plattformen können kurzfristig Vorteile durch Benutzer\*innenfreundlichkeit, Support und Marktverbreitung bieten. Gleichzeitig bergen sie das Risiko des Vendor Lock-in: Daten und Workflows sind an ein spezifisches System gebunden, wodurch langfristige Migrationen, Interoperabilität und Kostenkontrolle erschwert werden. Gerade bei Forschungsdaten widerspricht dies den Prinzipien von Nachhaltigkeit, Offenheit und FAIR/CARE.
+Ein weiterer zentraler Punkt bei der Auswahl und Planung von Infrastrukturen ist die Abwägung zwischen proprietären Lösungen und offenen, quelloffenen Systemen. Proprietäre Software und kommerzielle Plattformen können kurzfristig Vorteile durch Benutzer\*innenfreundlichkeit, Support und Marktverbreitung bieten. Gleichzeitig bergen sie das Risiko des Vendor Lock-in: Daten und {{< glossary Workflow display="Workflows" >}} sind an ein spezifisches System gebunden, wodurch langfristige Migrationen, Interoperabilität und Kostenkontrolle erschwert werden. Gerade bei Forschungsdaten widerspricht dies den Prinzipien von Nachhaltigkeit, Offenheit und {{< glossary FAIR >}}/{{< glossary CARE >}}.
 
 ::: {.callout-important title="Checkliste Standards und Infrastruktur"}
 
@@ -814,7 +814,7 @@ Ein weiterer zentraler Punkt bei der Auswahl und Planung von Infrastrukturen ist
 
 ::: {.callout-note title="Erfahrungen Stadt.Geschichte.Basel"}
 
-Im Projekt Stadt.Geschichte.Basel wurde ein flexibles Metadatenmodell entwickelt, das unterschiedliche Objekte und Medien klar voneinander trennt. Zeitangaben werden nach dem EDTF Standard erfasst, damit auch unsichere oder mehrdeutige Daten präzise dokumentiert werden können [@SGB_Datendokumentation_2025]. Für die Arbeit wird ein Mix aus etablierten Open Source Werkzeugen (Omeka, QGIS, R, Python etc.) und kommerziellen Plattformen (GitHub, ArcGIS) eingesetzt. Die Daten werden vor Veröffentlichung geprüft, angereichert und zur Nachnutzung bereitgestellt. Für die langfristige Sicherung werden sie im DaSCH und auf Zenodo archiviert. Begleitend sorgen Schulungen, Data Stewards und die Einbindung in Lehre und Praktika für nachhaltige Nutzung. Leitlinien wie FAIR, Open Access und digitale Nachhaltigkeit prägen die Infrastruktur. Proprietäre Dienste werden durch offene Standards und Repositorien abgesichert. Zudem gibt es klare Regelungen zu Datenschutz und Barrierefreiheit. Die Dokumentation wird regelmässig aktualisiert.[@Maehr_SGB_digital_2022]
+Im Projekt Stadt.Geschichte.Basel wurde ein flexibles Metadatenmodell entwickelt, das unterschiedliche Objekte und Medien klar voneinander trennt. Zeitangaben werden nach dem {{< glossary EDTF >}} Standard erfasst, damit auch unsichere oder mehrdeutige Daten präzise dokumentiert werden können [@SGB_Datendokumentation_2025]. Für die Arbeit wird ein Mix aus etablierten Open Source Werkzeugen (Omeka, QGIS, R, Python etc.) und kommerziellen Plattformen (GitHub, ArcGIS) eingesetzt. Die Daten werden vor Veröffentlichung geprüft, angereichert und zur Nachnutzung bereitgestellt. Für die langfristige Sicherung werden sie im DaSCH und auf Zenodo archiviert. Begleitend sorgen Schulungen, Data Stewards und die Einbindung in Lehre und Praktika für nachhaltige Nutzung. Leitlinien wie {{< glossary FAIR >}}, Open Access und digitale Nachhaltigkeit prägen die Infrastruktur. Proprietäre Dienste werden durch offene Standards und Repositorien abgesichert. Zudem gibt es klare Regelungen zu Datenschutz und Barrierefreiheit. Die Dokumentation wird regelmässig aktualisiert.[@Maehr_SGB_digital_2022]
 :::
 
 ## 2\. Datensammlung und Quellenkritik {#sec-2-datensammlung-und-quellenkritik}
@@ -880,11 +880,11 @@ Zentrale Grundlage einer nachhaltigen und nachvollziehbaren Datenverarbeitung is
 
 Die Automatisierung von Verarbeitungsschritten setzt atomar strukturierte Felder voraus. Freitextangaben, die nur in seltenen Fällen vorkommen, sollten hingegen möglichst zentral gebündelt werden, um Redundanzen und Validierungsprobleme zu vermeiden.
 
-**Ontologien sind nicht neutral.** Jede Festlegung von Datenmodellen, Schemata und Kontrollstrukturen impliziert Annahmen über Weltbilder, soziale Kategorien und rechtliche Rahmenbedingungen. Beispiele hierfür sind das binäre Geschlechtsmodell, rigide Namensfelder ohne kulturelle Differenzierung oder die in westlich geprägten Standards vorherrschende Urheberrechtslogik, die sich in Feldern wie `creator` oder `rights` niederschlägt. Solche Modellierungen sind niemals selbstverständlich, sondern müssen als bewusste Entscheidungen transparent dokumentiert werden. Eine präzise Aufzeichnung dieser Abwägungen ist daher verpflichtend, um die Nachvollziehbarkeit und kritische Überprüfbarkeit der Datenarchitektur sicherzustellen.
+**{{< glossary Ontologie display="Ontologien" >}} sind nicht neutral.** Jede Festlegung von Datenmodellen, Schemata und Kontrollstrukturen impliziert Annahmen über Weltbilder, soziale Kategorien und rechtliche Rahmenbedingungen. Beispiele hierfür sind das binäre Geschlechtsmodell, rigide Namensfelder ohne kulturelle Differenzierung oder die in westlich geprägten Standards vorherrschende Urheberrechtslogik, die sich in Feldern wie `creator` oder `rights` niederschlägt. Solche Modellierungen sind niemals selbstverständlich, sondern müssen als bewusste Entscheidungen transparent dokumentiert werden. Eine präzise Aufzeichnung dieser Abwägungen ist daher verpflichtend, um die Nachvollziehbarkeit und kritische Überprüfbarkeit der Datenarchitektur sicherzustellen.
 
 Feldstruktur, Datentypen, Formate und Kardinalitäten festlegen. Iterativ modellieren und parallel annotieren. Ergänzende Felder für Quellenlage, Zuverlässigkeit, Präzision, Bearbeitungsstand, Veröffentlichungsstatus, Version, Lizenz, Zitiervorschlag vorsehen. Sichtbarkeitsflags für sensible Inhalte einplanen. Automatisierung erfordert atomare Felder; seltene, frei formulierte Angaben ggf. zentral bündeln.
 
-Ontologien sind nicht neutral Schemata treffen Annahmen über Welt und Personen.
+{{< glossary Ontologie display="Ontologien" >}} sind nicht neutral Schemata treffen Annahmen über Welt und Personen.
 
 Beispiele: binäres Geschlechtsmodell, starre Namensfelder, westliche Urheberrechtslogik in creator/rights. Dokumentation aller Abwägungen ist Pflicht.
 
@@ -898,11 +898,11 @@ Beispiele: binäres Geschlechtsmodell, starre Namensfelder, westliche Urheberrec
 
 ### 3.2 Beschreibung und Verschlagwortung {#sec-32-beschreibung-und-verschlagwortung}
 
-Nach der Wahl der Metadatenstandards (QUERVERWEIS Metadatenstandards), müssen die Felder befüllt werden. Dazu kann für jedes Feld auf eine Reihe sogenannter **kontrollierter Vokabulare** beziehungsweise **Normdatensätze** (auch Normdateien genannt) zurückgegriffen werden. Hier kann zwischen Normdatensätzen (etwa der Gemeinsamen Normdatei GND) sowie kontrollierten Vokabularen und spezifischen Schlagwortindizes (etwa thematischen Indizes wie GenderOpen) unterschieden werden. Für Ortsverzeichnisse wird oft auch **Gazetteer** verwendet. Auch Dublin Core stellt mit den [**DCIM Metadata Terms**](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/) **(DCTERMS)** übersichtliche Datenwertstandards mit einigen Dutzend Einträgen bereit. Diese sollten nicht mit dem Dublin Core *Schema* DCMES verwechselt werden.
+Nach der Wahl der Metadatenstandards (QUERVERWEIS Metadatenstandards), müssen die Felder befüllt werden. Dazu kann für jedes Feld auf eine Reihe sogenannter **kontrollierter Vokabulare** beziehungsweise **Normdatensätze** (auch Normdateien genannt) zurückgegriffen werden. Hier kann zwischen Normdatensätzen (etwa der {{< glossary GND >}}) sowie kontrollierten Vokabularen und spezifischen Schlagwortindizes (etwa thematischen Indizes wie GenderOpen) unterschieden werden. Für Ortsverzeichnisse wird oft auch **Gazetteer** verwendet. Auch {{< glossary "Dublin Core" >}} stellt mit den [**DCIM Metadata Terms**](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/) **(DCTERMS)** übersichtliche Datenwertstandards mit einigen Dutzend Einträgen bereit. Diese sollten nicht mit dem {{< glossary "Dublin Core" >}} *Schema* {{< glossary DC display="DCMES" >}} verwechselt werden.
 
-Für eine diskriminierungssensible Metadatenpraxis ist es wichtig, Normdaten und Vokabulare auch inhaltlich kritisch zu hinterfragen. So ist beispielsweise auf die Grenzen von GND hinzuweisen: Viele Begriffe fehlen, und häufig liegt eine binäre Logik zugrunde. Über lokale GND-Redaktionen können jedoch Ergänzungsanträge eingereicht werden, um diskriminierende Lücken zu schliessen oder problematische Einträge zu verändern. Als Beispiel ist der Begriff *Gender* zu nennen, der 2024 offiziell in GND aufgenommen wurde.
+Für eine diskriminierungssensible Metadatenpraxis ist es wichtig, Normdaten und Vokabulare auch inhaltlich kritisch zu hinterfragen. So ist beispielsweise auf die Grenzen von {{< glossary GND >}} hinzuweisen: Viele Begriffe fehlen, und häufig liegt eine binäre Logik zugrunde. Über lokale {{< glossary GND >}}-Redaktionen können jedoch Ergänzungsanträge eingereicht werden, um diskriminierende Lücken zu schliessen oder problematische Einträge zu verändern. Als Beispiel ist der Begriff *Gender* zu nennen, der 2024 offiziell in {{< glossary GND >}} aufgenommen wurde.
 
-Darüber hinaus sollte Mehrsprachigkeit systematisch berücksichtigt werden, nicht als nachträgliche Ergänzung, sondern als grundlegende Systemfrage. Begriffe sind stets kulturell kodiert und lassen sich nicht ohne Weiteres in andere Sprachen übertragen, wie das Beispiel *Race ≠ Rasse* verdeutlicht. Auch beim Einsatz von Mappings und Crosswalks empfiehlt es sich, mit Äquivalenzklassen zu arbeiten, deren Definitionen jedoch kritisch zu prüfen. Widersprüche oder Ausschlüsse müssen sichtbar gemacht und, falls nötig, in Anträgen an die zuständigen Redaktionen thematisiert werden.
+Darüber hinaus sollte Mehrsprachigkeit systematisch berücksichtigt werden, nicht als nachträgliche Ergänzung, sondern als grundlegende Systemfrage. Begriffe sind stets kulturell kodiert und lassen sich nicht ohne Weiteres in andere Sprachen übertragen, wie das Beispiel *Race ≠ Rasse* verdeutlicht. Auch beim Einsatz von Mappings und {{< glossary Crosswalk display="Crosswalks" >}}s empfiehlt es sich, mit Äquivalenzklassen zu arbeiten, deren Definitionen jedoch kritisch zu prüfen. Widersprüche oder Ausschlüsse müssen sichtbar gemacht und, falls nötig, in Anträgen an die zuständigen Redaktionen thematisiert werden.
 
 Es kann zwischen **intrinsischen und extrinsischen Schlagwörtern** unterschieden werden. Dabei geht es darum, ob die verwendeten Begriffe der Quelle selbst entstammen (intrinsisch), oder ob es sich um äussere Zuschreibungen oder Kontextinformationen handelt (extrinsisch). Schemata wie Dublin-Core erlauben es jedoch, intrinsische und extrinsische Schlagwörter demselben Element zuzuordnen (zum Beispiel `dc:subject`), ohne diese explizit als solche auszuzeichnen, wobei extrinsisch häufiger ist. Bei der extrinsischen Verschlagwortung sowie bei Objekt- und Bildbeschreibungen ist es nicht nur relevant, welche Begriffe gewählt werden, sondern auch, wer dabei Mitsprache erhält. Diese Entscheide sollten dokumentiert werden.
 
@@ -918,7 +918,7 @@ Es kann zwischen **intrinsischen und extrinsischen Schlagwörtern** unterschiede
 
 * **Lücken:** Fehlende Personenidentitäten explizit kennzeichnen. Keine Annahmen zu Nationalität, Geschlecht etc. treffen.  
 * **Widersprüche:** Abweichende Datierungen oder Ortsangaben parallel erfassen und Quellenlage dokumentieren.  
-* **Unsicherheit:** Unscharfe Angaben formal kennzeichnen (z. B. [EDTF](https://www.loc.gov/standards/datetime/) „\~1905“).
+* **Unsicherheit:** Unscharfe Angaben formal kennzeichnen (z. B. {{< glossary EDTF >}} „\~1905“).
 * **Häufige Fehler:**  
   * Nacktheit und Sexualität ohne Kontext sexualisieren  
   * Personen über Diskriminierungsmarker essenzialisieren  
@@ -936,7 +936,7 @@ Es kann zwischen **intrinsischen und extrinsischen Schlagwörtern** unterschiede
 * Begriffe kontextualisieren („Zwerg“ vs. „kleinwüchsige Person“)  
 * Person-first-Formulierungen verwenden („Person mit …“)  
 * Selbstbezeichnungen respektieren (z. B. „Crip“ nur als Selbstbeschreibung)  
-* Problematische LCSH- oder GND-Heading beibehalten, aber mit Bemerkung versehen
+* Problematische {{< glossary LCSH >}}- oder {{< glossary GND >}}-Heading beibehalten, aber mit Bemerkung versehen
 :::
 
 ### 3.3 KI-Unterstützung und Automatisierung {#sec-33-ki-unterstützung-und-automatisierung}
@@ -954,7 +954,7 @@ LLMs reproduzieren kulturelle und historische Prägungen, verstärken Stereotype
 
 KI-Modelle generieren im Projekt automatische Alt-Texte und verbessern so die Barrierefreiheit. Ohne systematische Qualitätskontrolle bleiben jedoch Risiken inkonsistenter oder diskriminierender Beschreibungen.[@mahr2025]
 
-„Human-in-the-loop“ ist kein Garant für Sicherheit: Fachpersonen benötigen Zeit, Schulung und klare Workflows. Definierte Rollen (z. B. Kuratierung, Technik, Ethik-Board), nachvollziehbare Versionshistorien und Eskalationsverfahren sind notwendig, ebenso wie gezielte Trainings zu Bias-Erkennung und Prompt-Design.
+„Human-in-the-loop“ ist kein Garant für Sicherheit: Fachpersonen benötigen Zeit, Schulung und klare {{< glossary Workflow display="Workflows" >}}. Definierte Rollen (z. B. Kuratierung, Technik, Ethik-Board), nachvollziehbare Versionshistorien und Eskalationsverfahren sind notwendig, ebenso wie gezielte Trainings zu Bias-Erkennung und Prompt-Design.
 :::
 
 ::: {.callout-note title="Bias-Erkennung in Metadaten mit dem DE-BIAS-Tool"}
@@ -971,7 +971,7 @@ Es müssen konkrete Einsatzszenarien definiert werden (z. B. automatische Transk
 * Stufen der Qualitätskontrollen, Freigaben, Rückverfolgbarkeit definiert  
 * KI-Anteile in Feldern gekennzeichnet  
 * Risiko- und Bias-Assessments durchgeführt und dokumentiert  
-* Datenschutz, Urheberrecht und FAIR/CARE-Prinzipien geprüft  
+* Datenschutz, Urheberrecht und {{< glossary FAIR >}}/{{< glossary CARE >}}-Prinzipien geprüft  
 * Kontrollschwellen (z. B. Confidence-Scores) für menschliche Überprüfung festgelegt  
 * Rollen, Eskalationsverfahren und Verantwortlichkeiten definiert  
 * Modelle, Prompts und Updates versioniert und veröffentlicht  
@@ -991,7 +991,7 @@ Offene Publikationsinfrastrukturen wie Zenodo bieten insbesondere kleineren Team
 
 ### 4.2 Versionierung und Historisierung {#sec-42-versionierung-und-historisierung}
 
-Metadaten sollten nicht gelöscht, sondern in ihrer Entwicklung dokumentiert werden. Jede Änderung ist mit den Angaben *Wer–Wann–Warum* zu versehen. Frühere Forschungsstände sind als Referenzen zu bewahren, um Transparenz über die eigene Institutions- und Forschungsgeschichte sicherzustellen. Dafür gilt es, geeignete Workflows in der eingesetzten Software zu nutzen. Bei kleineren Projekten bieten sich versionierte Releases in Zenodo oder GitLab an; auch der Einsatz von *Semantic Versioning* kann hier sinnvoll sein. Ein Beispiel für eine strukturierte Dokumentation findet sich unter @Europeana_EDM_Documentation.
+Metadaten sollten nicht gelöscht, sondern in ihrer Entwicklung dokumentiert werden. Jede Änderung ist mit den Angaben *Wer–Wann–Warum* zu versehen. Frühere Forschungsstände sind als Referenzen zu bewahren, um Transparenz über die eigene Institutions- und Forschungsgeschichte sicherzustellen. Dafür gilt es, geeignete {{< glossary Workflow display="Workflows" >}} in der eingesetzten Software zu nutzen. Bei kleineren Projekten bieten sich versionierte Releases in Zenodo oder GitLab an; auch der Einsatz von *Semantic Versioning* kann hier sinnvoll sein. Ein Beispiel für eine strukturierte Dokumentation findet sich unter @Europeana_EDM_Documentation.
 
 Die Wahl des Versionierungsmodus richtet sich nach Komplexität und Kollaborationsgrad. Für sehr kleine und kurzlebige Artefakte genügt eine konsistente Dateibenennung, ergänzt um ein zentrales **Änderungsprotokoll**, das jeweils Änderungen, Begründungen und betroffene Dateien aufführt. Für kleine Teams mit laufender Zusammenarbeit liefern Plattformen wie Nextcloud oder ownCloud automatische Dateiversionen; dennoch sollten die Entscheidungsgründe zusätzlich im **Änderungsprotokoll** festgehalten werden, da Dateiversionshistorien selten aussagekräftige Provenienzen abbilden. Für kollaborative Projekte mit Verzweigungen, Peer-Review und hohen Anforderungen an Reproduzierbarkeit ist der Einsatz von **Git** vorzuziehen.
 
@@ -1005,7 +1005,7 @@ Die Wahl des Versionierungsmodus richtet sich nach Komplexität und Kollaboratio
 
 ## 5\. Veröffentlichung und Zugang {#sec-5-veröffentlichung-und-zugang}
 
-In der Phase der Veröffentlichung werden die Forschungsdaten, sofern rechtlich und ethisch vertretbar, für Dritte zugänglich gemacht. Üblicherweise erfolgt dies über Repositorien, verbunden mit der Vergabe persistenter Identifikatoren wie DOIs, der Auswahl geeigneter Lizenzen sowie der Bereitstellung umfassender Metadaten. Ziel ist es, Offenheit und Nachnutzbarkeit im Sinne von *Open Data* und den FAIR-Prinzipien zu ermöglichen, zugleich aber die CARE-Prinzipien zu berücksichtigen, die gegebenenfalls Einschränkungen erfordern.
+In der Phase der Veröffentlichung werden die Forschungsdaten, sofern rechtlich und ethisch vertretbar, für Dritte zugänglich gemacht. Üblicherweise erfolgt dies über Repositorien, verbunden mit der Vergabe persistenter Identifikatoren wie DOIs, der Auswahl geeigneter Lizenzen sowie der Bereitstellung umfassender Metadaten. Ziel ist es, Offenheit und Nachnutzbarkeit im Sinne von *Open Data* und den {{< glossary FAIR >}}-Prinzipien zu ermöglichen, zugleich aber die {{< glossary CARE >}}-Prinzipien zu berücksichtigen, die gegebenenfalls Einschränkungen erfordern.
 
 ### 5.1 Zielgruppe definieren {#sec-51-zielgruppe-definieren}
 
@@ -1048,15 +1048,15 @@ Entscheidungen zu Sichtbarkeit, Trigger-Hinweisen und alternativen Darstellungsw
 
 Das Zielbild einer Veröffentlichung ist ein statischer Webauftritt, realisiert mit HTML5, CSS und minimalem JavaScript. Er soll ohne Datenbank und ohne proprietäre Dritt-Dienste auskommen. Redundanz wird bewusst in Kauf genommen, um Resilienz zu erhöhen, während statische Suchlösungen zu bevorzugen sind.
 
-Der Build- und Validierungsprozess steht unter Versionskontrolle. Quellen, Skripte und Konfigurationen müssen nachvollziehbar versioniert sein. Jeder Build validiert Ein- und Ausgaben strikt, Fehler stoppen den Prozess. Änderungen führen deterministisch zu einem Neu-Build. Die Qualitätssicherung umfasst Schematests, Linkchecks, Validierungen von HTML, CSS und XML sowie Prüfsummen.
+Der Build- und Validierungsprozess steht unter Versionskontrolle. Quellen, Skripte und Konfigurationen müssen nachvollziehbar versioniert sein. Jeder Build validiert Ein- und Ausgaben strikt, Fehler stoppen den Prozess. Änderungen führen deterministisch zu einem Neu-Build. Die Qualitätssicherung umfasst Schematests, Linkchecks, Validierungen von HTML, CSS und {{< glossary XML >}} sowie Prüfsummen.
 
 Sichtbarkeitssteuerung geschieht vor dem Export oder in Ableitungsschritten, beispielsweise durch serverseitiges Entfernen sensibler Felder, die Bereitstellung maskierter Bildvarianten, alternative Einstiegspfade mit Content-Notes oder gestufte Editionen mit klarer Kennzeichnung. Die Referenzausgabe selbst bleibt statisch.
 
-Offene, verlustfreie und nachnutzbare Formate sind zu verwenden, sofern keine Schutzgründe dagegensprechen. Dazu gehören PDF/A-1/-2 für formatierten Text, XML/HTML/MD/TXT für strukturierten Text, reines TXT für Plaintext, TIFF oder DNG für Bilder, SVG für Vektoren und CSV für Tabellen. Durchgängig wird UTF-8 ohne BOM als Zeichenkodierung empfohlen.
+Offene, verlustfreie und nachnutzbare Formate sind zu verwenden, sofern keine Schutzgründe dagegensprechen. Dazu gehören PDF/A-1/-2 für formatierten Text, {{< glossary XML >}}/HTML/MD/TXT für strukturierten Text, reines TXT für Plaintext, TIFF oder DNG für Bilder, SVG für Vektoren und {{< glossary CSV >}} für Tabellen. Durchgängig wird UTF-8 ohne BOM als Zeichenkodierung empfohlen.
 
 Ein `README.md` im Wurzelverzeichnis erläutert Zweck, Geltungsbereich, Struktur, Rollen, Benennungsregeln, Lizenzen, Rechte und Restriktionen, Versionierung und Releaseschema. Zusätzlich sind Datenmodell, kontrollierte Vokabulare und zulässige Werte als statische Referenzdokumente zu hinterlegen.
 
-Exportschnittstellen sind durch API-Keys und Rate-Limits abzusichern, und sie sollen ausschliesslich freigegebene Felder enthalten. Zur Reproduktion wird eine Datenbeilage im Paket geliefert und versioniert. Falls Plattformfunktionen wie LIDO erforderlich sind, bleiben diese auf die vorgelagerte Produktionsschicht beschränkt; das Endprodukt wird stets statisch ausgespielt. Nutzer\*innen müssen die Wahl haben, sensible Inhalte durch ein bewusstes Opt-in mit klaren Hinweisen zu aktivieren.
+Exportschnittstellen sind durch API-Keys und Rate-Limits abzusichern, und sie sollen ausschliesslich freigegebene Felder enthalten. Zur Reproduktion wird eine Datenbeilage im Paket geliefert und versioniert. Falls Plattformfunktionen wie {{< glossary LIDO >}} erforderlich sind, bleiben diese auf die vorgelagerte Produktionsschicht beschränkt; das Endprodukt wird stets statisch ausgespielt. Nutzer\*innen müssen die Wahl haben, sensible Inhalte durch ein bewusstes Opt-in mit klaren Hinweisen zu aktivieren.
 
 ::: {.callout-important title="Checkliste technische Strategien"}
 
@@ -1086,19 +1086,19 @@ Offene Prinzipien werden auf der Projektseite explizit sichtbar gemacht. Dies sc
 
 ## 6\. Nachnutzung und Wiederverwendung {#sec-6-nachnutzung-und-wiederverwendung}
 
-Die veröffentlichten Daten treten nach ihrer Bereitstellung in einen neuen Lebenszyklus ein. Sie können von der wissenschaftlichen Community, Gedächtnisinstitutionen oder zivilgesellschaftlichen Akteur\*innen recherchiert, zitiert, kombiniert und für neue Fragestellungen genutzt werden. Damit Nachnutzung nicht zur unkontrollierten Reproduktion von Diskriminierungen oder Fehlinterpretationen führt, sind klare Leitprinzipien zu formulieren. Die FAIR-Prinzipien bilden dabei die Grundlage, müssen jedoch im Sinne der CARE-Prinzipien ergänzt werden. Es gilt zu beachten, dass Nachnutzung nie neutral erfolgt: Sie schafft neue Kontexte und Bedeutungen. Ein expliziter Governance-Rahmen, der Verantwortlichkeiten und Grenzen definiert, reduziert das Risiko von schädlichen Re-Use-Szenarien.
+Die veröffentlichten Daten treten nach ihrer Bereitstellung in einen neuen Lebenszyklus ein. Sie können von der wissenschaftlichen Community, Gedächtnisinstitutionen oder zivilgesellschaftlichen Akteur\*innen recherchiert, zitiert, kombiniert und für neue Fragestellungen genutzt werden. Damit Nachnutzung nicht zur unkontrollierten Reproduktion von Diskriminierungen oder Fehlinterpretationen führt, sind klare Leitprinzipien zu formulieren. Die {{< glossary FAIR >}}-Prinzipien bilden dabei die Grundlage, müssen jedoch im Sinne der {{< glossary CARE >}}-Prinzipien ergänzt werden. Es gilt zu beachten, dass Nachnutzung nie neutral erfolgt: Sie schafft neue Kontexte und Bedeutungen. Ein expliziter Governance-Rahmen, der Verantwortlichkeiten und Grenzen definiert, reduziert das Risiko von schädlichen Re-Use-Szenarien.
 
 ### 6.1 Interoperabilität erweitern {#sec-61-interoperabilität-erweitern}
 
-Damit Daten dauerhaft anschlussfähig bleiben, ist ihre strukturelle und semantische Interoperabilität sicherzustellen. Praktisch bedeutet dies, dass Daten nicht nur in offenen Formaten vorliegen, sondern auch durch klar beschriebene Schnittstellen zugänglich sind. Neben einfachen Exporten in standardisierten Formaten (z. B. CSV oder XML) können Linked-Data-Ansätze mit RDF oder JSON-LD den Zugang erweitern. Austauschprotokolle wie OAI-PMH oder IIIF erleichtern den Bezug durch Drittinstitutionen. Persistente Identifikatoren – etwa DOIs für Datensätze oder ORCID-IDs für Autor\*innen – gewährleisten Nachvollziehbarkeit. Mappings zwischen Standards (z. B. Dublin Core, LIDO oder Europeana EDM) sollten versioniert und dokumentiert vorliegen, um die Transformation transparent zu machen.
+Damit Daten dauerhaft anschlussfähig bleiben, ist ihre strukturelle und semantische Interoperabilität sicherzustellen. Praktisch bedeutet dies, dass Daten nicht nur in offenen Formaten vorliegen, sondern auch durch klar beschriebene Schnittstellen zugänglich sind. Neben einfachen Exporten in standardisierten Formaten (z. B. {{< glossary CSV >}} oder {{< glossary XML >}}) können Linked-Data-Ansätze mit {{< glossary RDF >}} oder {{< glossary JSON-LD >}} den Zugang erweitern. Austauschprotokolle wie {{< glossary OAI-PMH >}} oder {{< glossary IIIF >}} erleichtern den Bezug durch Drittinstitutionen. Persistente Identifikatoren – etwa DOIs für Datensätze oder ORCID-IDs für Autor\*innen – gewährleisten Nachvollziehbarkeit. Mappings zwischen Standards (z. B. {{< glossary "Dublin Core" >}}, {{< glossary LIDO >}} oder {{< glossary EDM >}}) sollten versioniert und dokumentiert vorliegen, um die Transformation transparent zu machen.
 
 ### 6.2 Zitation und Provenienz {#sec-62-zitation-und-provenienz}
 
-Für die Nachnutzung ist ein klarer Zitierleitfaden erforderlich. Neben der Angabe von DOIs oder anderen Identifikatoren empfiehlt sich die Bereitstellung maschinenlesbarer Zitationsinformationen, etwa in einer `CITATION.cff`\-Datei. Provenienzangaben müssen nicht nur die Herkunft der Daten dokumentieren, sondern auch Unsicherheiten sichtbar machen – beispielsweise durch Zeitangaben im EDTF-Format oder Vertrauenswerte bei automatisierten Prozessen. So bleibt nachvollziehbar, welche Transformationen ein Datensatz durchlaufen hat.
+Für die Nachnutzung ist ein klarer Zitierleitfaden erforderlich. Neben der Angabe von DOIs oder anderen Identifikatoren empfiehlt sich die Bereitstellung maschinenlesbarer Zitationsinformationen, etwa in einer `CITATION.cff`\-Datei. Provenienzangaben müssen nicht nur die Herkunft der Daten dokumentieren, sondern auch Unsicherheiten sichtbar machen – beispielsweise durch Zeitangaben im {{< glossary EDTF >}}-Format oder Vertrauenswerte bei automatisierten Prozessen. So bleibt nachvollziehbar, welche Transformationen ein Datensatz durchlaufen hat.
 
 ### 6.3 Nutzungsbedingungen und Lizenzen {#sec-63-nutzungsbedingungen-und-lizenzen}
 
-Eine transparente Lizenzpolitik ist unabdingbar. Neben den gängigen Creative-Commons-Lizenzen sollten bei kulturell sensiblen Inhalten CARE-orientierte Einschränkungen vorgesehen werden. Hier bieten sich etwa Traditional Knowledge Labels (TK-Labels) an, die kulturelle Rechte und Einschränkungen sichtbar machen. Insbesondere bei historischen oder diskriminierenden Inhalten muss reflektiert werden, welche Formen der Nachnutzung ausgeschlossen oder eingeschränkt werden sollen, ohne den wissenschaftlichen Diskurs zu behindern.
+Eine transparente Lizenzpolitik ist unabdingbar. Neben den gängigen Creative-Commons-Lizenzen sollten bei kulturell sensiblen Inhalten {{< glossary CARE >}}-orientierte Einschränkungen vorgesehen werden. Hier bieten sich etwa Traditional Knowledge Labels (TK-Labels) an, die kulturelle Rechte und Einschränkungen sichtbar machen. Insbesondere bei historischen oder diskriminierenden Inhalten muss reflektiert werden, welche Formen der Nachnutzung ausgeschlossen oder eingeschränkt werden sollen, ohne den wissenschaftlichen Diskurs zu behindern.
 
 ### 6.4 Maschinenlesbarer Zugang {#sec-64-maschinenlesbarer-zugang}
 
@@ -1110,7 +1110,7 @@ Nachnutzung sollte nicht als einseitiger Prozess verstanden werden. Rückmeldung
 
 ::: {.callout-important title="Nachnutzung und Wiederverwendung"}
 
-* Linked-Data-Exporte, PIDs und Crosswalks verfügbar  
+* Linked-Data-Exporte, PIDs und {{< glossary Crosswalk display="Crosswalks" >}}s verfügbar  
 * Zitations- und Lizenzrichtlinien veröffentlicht  
 * API oder Dumps versioniert zugänglich  
 * Feedback-Prozess etabliert, Nutzung dokumentiert
@@ -1123,7 +1123,7 @@ Nach Abschluss des Forschungsdatenzyklus folgt entweder die dauerhafte Archivier
 
 ### 7.1 Langzeitarchivierung konkret {#sec-71-langzeitarchivierung-konkret}
 
-Eine nachhaltige Langzeitarchivierung setzt auf offene, standardisierte Verpackungs- und Dokumentationsformate. Containerformate wie BagIt oder RO-Crate erlauben es, Datenpakete mit Metadaten, Prüfsummen und Kontextinformationen zu bündeln. Standards wie METS oder PREMIS sichern die Nachvollziehbarkeit von Provenienzen und Veränderungen. Technisch sind Integritätsprüfungen mit Prüfsummen (z. B. SHA-256) und Redundanzstrategien (z. B. die 3-2-1-Regel: drei Kopien, zwei Medientypen, ein Standort ausserhalb) zentral. Neben Formaten wie PDF/A, TIFF, CSV oder XML sind auch Migrationen in neue Standards einzuplanen, um die Lesbarkeit langfristig zu gewährleisten. Ergänzend müssen Build-Informationen, Software-Umgebungen oder Containerabbilder dokumentiert werden, falls Daten nur mit spezifischen Werkzeugen reproduzierbar bleiben.
+Eine nachhaltige Langzeitarchivierung setzt auf offene, standardisierte Verpackungs- und Dokumentationsformate. Containerformate wie BagIt oder RO-Crate erlauben es, Datenpakete mit Metadaten, Prüfsummen und Kontextinformationen zu bündeln. Standards wie {{< glossary METS >}} oder {{< glossary PREMIS >}} sichern die Nachvollziehbarkeit von Provenienzen und Veränderungen. Technisch sind Integritätsprüfungen mit Prüfsummen (z. B. SHA-256) und Redundanzstrategien (z. B. die 3-2-1-Regel: drei Kopien, zwei Medientypen, ein Standort ausserhalb) zentral. Neben Formaten wie PDF/A, TIFF, {{< glossary CSV >}} oder {{< glossary XML >}} sind auch Migrationen in neue Standards einzuplanen, um die Lesbarkeit langfristig zu gewährleisten. Ergänzend müssen Build-Informationen, Software-Umgebungen oder Containerabbilder dokumentiert werden, falls Daten nur mit spezifischen Werkzeugen reproduzierbar bleiben.
 
 ### 7.2 Löschung, Rückgabe und Takedown {#sec-72-löschung-rückgabe-und-takedown}
 
@@ -1147,13 +1147,13 @@ Archivierte Daten müssen auch in Zukunft geschützt und verantwortungsvoll zug�
 
 ### 1\. **Transparenz als Infrastrukturprinzip**
 
-Jeder Arbeitsablauf (Pipeline: Schritte der Datenerhebung, \-verarbeitung und \-analyse) erhält einen öffentlich zugänglichen Entscheidungs- und Änderungslog. Dokumentiert werden: Erhebungsdesign, Auswahlrationale, Fehlerraten, Mapping-Regeln sowie abgelehnte Alternativen (versioniert).
+Jeder Arbeitsablauf ({{< glossary Pipeline >}}: Schritte der Datenerhebung, \-verarbeitung und \-analyse) erhält einen öffentlich zugänglichen Entscheidungs- und Änderungslog. Dokumentiert werden: Erhebungsdesign, Auswahlrationale, Fehlerraten, Mapping-Regeln sowie abgelehnte Alternativen (versioniert).
 
 Für Datensätze und Modelle gelten strukturierte Begleitdokumente als Standard: *Datasheets* und *Model Cards* (Steckbriefe für Daten/Modelle). Sie enthalten gruppenspezifische Qualitätsmetriken, bekannte Lücken und Nutzungseinschränkungen. Diese Dokumente sind zitierfähig und mit persistenten Identifikatoren in Repositorien verankert.
 
 ### 2\. **Varianten- und Mehrsprachigkeitsfähigkeit im Metadatenmodell**
 
-Konzepte und Namen werden als mehrsprachige, relationale Entitäten modelliert (z. B. SKOS):
+Konzepte und Namen werden als mehrsprachige, relationale Entitäten modelliert (z. B. {{< glossary SKOS >}}):
 
 * `prefLabel` \= bevorzugte Bezeichnung  
 * `altLabel` \= alternative Bezeichnung  
@@ -1169,7 +1169,7 @@ Kuratierung erfolgt gemeinsam mit betroffenen Communities. Dies umfasst:
 
 * Verfahren für Einspruch, Korrektur und Takedown  
 * klare Zuständigkeiten und angemessene Vergütung  
-* Vereinbarungen zur Wissenssouveränität (FAIR/CARE)
+* Vereinbarungen zur Wissenssouveränität ({{< glossary FAIR >}}/{{< glossary CARE >}})
 
 Für sensible Bestände werden abgestufte Zugangsmodelle (differenzierte Rechtevergabe) und Schutzkennzeichnungen eingesetzt. Alle Entscheidungen sind befristet und revidierbar.
 
@@ -1178,7 +1178,7 @@ Für sensible Bestände werden abgestufte Zugangsmodelle (differenzierte Rechtev
 Die Auswahl folgt stratifizierten Plänen mit *Equity-Buckets* (Fairness-Schichten), um unterrepräsentierte Gruppen systematisch einzubeziehen.
 
 * **Digitalisierung und Erkennung:** gezielte Feinjustierung für schwach performende Segmente; Fehlerbilanzen werden nach Schrift, Sprache, Medium und Gruppe veröffentlicht.  
-* **Retrieval-Systeme:** Einsatz von Query-Expansion (Anfrageerweiterung), Cross-Lingual IR (mehrsprachiges Informationsretrieval) und Re-Ranking (Neuanordnung der Treffer), um Recall-Differenzen zwischen Gruppen zu reduzieren. Ranking-Entscheide werden erklärt.
+* **{{< glossary Retrieval >}}-Systeme:** Einsatz von {{< glossary Query-Expansion >}} (Anfrageerweiterung), Cross-Lingual IR (mehrsprachiges Informationsretrieval) und Re-Ranking (Neuanordnung der Treffer), um Recall-Differenzen zwischen Gruppen zu reduzieren. Ranking-Entscheide werden erklärt.
 
 ### 5\. **Analytische Robustheit als Standardpraxis**
 
@@ -1205,7 +1205,7 @@ Diese Metriken fliessen in kontinuierliche Audits ein. Abweichungen lösen defin
 
 ### 7\. **Reproduzierbarkeit und digitale Nachhaltigkeit**
 
-Workflows sind:
+{{< glossary Workflow display="Workflows" >}} sind:
 
 * containerisiert (standardisierte, portable Software-Umgebungen)  
 * daten- und modellseitig versioniert  
@@ -1279,7 +1279,7 @@ So werden Diskriminierungen nicht nur benannt, sondern in überprüfbaren Schrit
    - [ ] Stufen der Qualitätskontrollen, Freigaben, Rückverfolgbarkeit definiert  
    - [ ] KI-Anteile in Feldern gekennzeichnet  
    - [ ] Risiko- und Bias-Assessments durchgeführt und dokumentiert  
-   - [ ] Datenschutz, Urheberrecht und FAIR/CARE-Prinzipien geprüft  
+   - [ ] Datenschutz, Urheberrecht und {{< glossary FAIR >}}/{{< glossary CARE >}}-Prinzipien geprüft  
    - [ ] Kontrollschwellen (z. B. Confidence-Scores) für menschliche Überprüfung festgelegt  
    - [ ] Rollen, Eskalationsverfahren und Verantwortlichkeiten definiert  
    - [ ] Modelle, Prompts und Updates versioniert und veröffentlicht  
@@ -1321,7 +1321,7 @@ So werden Diskriminierungen nicht nur benannt, sondern in überprüfbaren Schrit
    - [ ] Jede Edition als Paket mit Prüfsummen, Daten und Dokumentation archiviert  
 
 6. Nachnutzung und Wiederverwendung  
-   - [ ] Linked-Data-Exporte, PIDs und Crosswalks verfügbar  
+   - [ ] Linked-Data-Exporte, PIDs und {{< glossary Crosswalk display="Crosswalks" >}}s verfügbar  
    - [ ] Zitations- und Lizenzrichtlinien veröffentlicht  
    - [ ] API oder Dumps versioniert zugänglich  
    - [ ] Feedback-Prozess etabliert, Nutzung dokumentiert  
