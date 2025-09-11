@@ -1,0 +1,58 @@
+.glossary {
+  color: purple;
+  text-decoration: underline;
+  cursor: pointer;
+  border: none;
+  padding: 2px;
+  background: transparent;
+  font: inherit;
+}
+
+/* Focus styles for accessibility */
+.glossary:focus {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+}
+
+/* Hover styles */
+.glossary:hover {
+  background-color: rgba(128, 0, 128, 0.1);
+}
+
+/* Bootstrap popover customization */
+.popover {
+  max-width: 300px;
+}
+
+.popover-body {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .popover {
+    max-width: 250px;
+  }
+  
+  .popover-body {
+    font-size: 13px;
+  }
+}
+
+/* glossary table styles */
+.glossary_table td {
+  vertical-align: top;
+}
+
+.glossary_table td:first-child {
+  padding-right: 1em;
+}
+
+.glossary_table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.glossary_table tr:nth-child(even) {
+  background-color: #99999933;
+}
