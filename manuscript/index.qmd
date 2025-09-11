@@ -1238,55 +1238,55 @@ So werden Diskriminierungen nicht nur benannt, sondern in überprüfbaren Schrit
 
 1. Planung und Konzeption  
    1.1 Zielsetzung klären  
-   * [ ] Ziel, Zielgruppen, Nutzungsszenarien dokumentiert  
-   * [ ] Prioritäten und Mindeststandards definiert  
-   * [ ] Pilotkorpus erfasst und Aufwand gemessen  
-   * [ ] Sensible Inhalte antizipiert und gekennzeichnet  
+    * [ ] Ziel, Zielgruppen, Nutzungsszenarien dokumentiert  
+    * [ ] Prioritäten und Mindeststandards definiert  
+    * [ ] Pilotkorpus erfasst und Aufwand gemessen  
+    * [ ] Sensible Inhalte antizipiert und gekennzeichnet  
 
    1.2 Ethische und rechtliche Rahmenbedingungen  
-   * [ ] Rechtslage pro Inhaltstyp dokumentiert und geklärt  
-   * [ ] Einwilligungen und Einschränkungen erfasst  
-   * [ ] Personenbezug und Schutzmassnahmen geprüft  
-   * [ ] Lizenz/rights statement festgelegt  
-   * [ ] Review- und Eskalationswege definiert  
+    * [ ] Rechtslage pro Inhaltstyp dokumentiert und geklärt  
+    * [ ] Einwilligungen und Einschränkungen erfasst  
+    * [ ] Personenbezug und Schutzmassnahmen geprüft  
+    * [ ] Lizenz/rights statement festgelegt  
+    * [ ] Review- und Eskalationswege definiert  
 
    1.3 Standards und Infrastruktur festlegen  
-   * [ ] Zentrales Schema + Erweiterungen dokumentiert  
-   * [ ] Normdaten/Vokabulare ausgewählt  
-   * [ ] Plattform, Exportformate und Persistent Identifiers (DOI etc.) definiert  
+    * [ ] Zentrales Schema + Erweiterungen dokumentiert  
+    * [ ] Normdaten/Vokabulare ausgewählt  
+    * [ ] Plattform, Exportformate und Persistent Identifiers (DOI etc.) definiert  
 
 2. Datensammlung und Quellenkritik  
    2.1 Primärerschliessung vs. Nachnutzung  
-   * [ ] Re-Use-Quellen bewertet und zitiert  
-   * [ ] Übernahmen, Streichungen, Korrekturen protokolliert  
-   * [ ] Bias-Befunde und Lücken sichtbar gemacht  
+    * [ ] Re-Use-Quellen bewertet und zitiert  
+    * [ ] Übernahmen, Streichungen, Korrekturen protokolliert  
+    * [ ] Bias-Befunde und Lücken sichtbar gemacht  
 
    2.2 Kontextualisierung der Quellen  
-   * [ ] Entstehungs- und Nutzungskontext beschrieben  
-   * [ ] Relevante Akteur\*innen und Machtverhältnisse benannt  
-   * [ ] Rezeption und Deutungskonflikte referenziert  
+    * [ ] Entstehungs- und Nutzungskontext beschrieben  
+    * [ ] Relevante Akteur\*innen und Machtverhältnisse benannt  
+    * [ ] Rezeption und Deutungskonflikte referenziert  
 
 3. Datenverarbeitung und Anreicherung  
    3.1 Technische Standards implementieren  
-   * [ ] Feldkatalog mit Definitionen erstellt  
-   * [ ] Maschinenlesbare Datentypen und Validierung gesetzt  
-   * [ ] Sichtbarkeits- und Sensitivitätslogik modelliert  
+    * [ ] Feldkatalog mit Definitionen erstellt  
+    * [ ] Maschinenlesbare Datentypen und Validierung gesetzt  
+    * [ ] Sichtbarkeits- und Sensitivitätslogik modelliert  
 
    3.2 Beschreibung und Verschlagwortung  
-   * [ ] Vokabulare und Normdateien pro Feld definiert  
-   * [ ] Regeln für Intrinsisch/Extrinsisch festgelegt  
-   * [ ] Unsicherheit formalisiert und sichtbar gemacht  
+    * [ ] Vokabulare und Normdateien pro Feld definiert  
+    * [ ] Regeln für Intrinsisch/Extrinsisch festgelegt  
+    * [ ] Unsicherheit formalisiert und sichtbar gemacht  
 
    3.3 KI-Unterstützung und Automatisierung  
-   * [ ] KI-Einsatzbereiche, Modelle, Trainings-/Prompt-Kontexte dokumentiert  
-   * [ ] Stufen der Qualitätskontrollen, Freigaben, Rückverfolgbarkeit definiert  
-   * [ ] KI-Anteile in Feldern gekennzeichnet  
-   * [ ] Risiko- und Bias-Assessments durchgeführt und dokumentiert  
-   * [ ] Datenschutz, Urheberrecht und {{< glossary FAIR >}}/{{< glossary CARE >}}-Prinzipien geprüft  
-   * [ ] Kontrollschwellen (z. B. Confidence-Scores) für menschliche Überprüfung festgelegt  
-   * [ ] Rollen, Eskalationsverfahren und Verantwortlichkeiten definiert  
-   * [ ] Modelle, Prompts und Updates versioniert und veröffentlicht  
-   * [ ] Mitarbeitende geschult und fortlaufend sensibilisiert  
+    * [ ] KI-Einsatzbereiche, Modelle, Trainings-/Prompt-Kontexte dokumentiert  
+    * [ ] Stufen der Qualitätskontrollen, Freigaben, Rückverfolgbarkeit definiert  
+    * [ ] KI-Anteile in Feldern gekennzeichnet  
+    * [ ] Risiko- und Bias-Assessments durchgeführt und dokumentiert  
+    * [ ] Datenschutz, Urheberrecht und {{< glossary FAIR >}}/{{< glossary CARE >}}-Prinzipien geprüft  
+    * [ ] Kontrollschwellen (z. B. Confidence-Scores) für menschliche Überprüfung festgelegt  
+    * [ ] Rollen, Eskalationsverfahren und Verantwortlichkeiten definiert  
+    * [ ] Modelle, Prompts und Updates versioniert und veröffentlicht  
+    * [ ] Mitarbeitende geschult und fortlaufend sensibilisiert  
 
 4. Speicherung und Verwaltung  
    * [ ] Repositorium und Persistent Identifiers (PIDs) gewählt  
@@ -1295,33 +1295,33 @@ So werden Diskriminierungen nicht nur benannt, sondern in überprüfbaren Schrit
 
 5. Veröffentlichung und Zugang  
    5.1 Zielgruppe definieren  
-   * [ ] Zielgruppen, Einstiegspfade und Zugangsebenen definiert  
-   * [ ] Statischer Endzustand mit Rückwärtsplanung festgelegt  
-   * [ ] Kanonische, parameterlose URLs oder DOIs vergeben  
-   * [ ] Editionen versioniert, Weiterleitungen bei Umzügen vorgesehen  
-   * [ ] Zitierempfehlungen sichtbar integriert  
+    * [ ] Zielgruppen, Einstiegspfade und Zugangsebenen definiert  
+    * [ ] Statischer Endzustand mit Rückwärtsplanung festgelegt  
+    * [ ] Kanonische, parameterlose URLs oder DOIs vergeben  
+    * [ ] Editionen versioniert, Weiterleitungen bei Umzügen vorgesehen  
+    * [ ] Zitierempfehlungen sichtbar integriert  
 
    5.2 Umgang mit sensiblen und diskriminierenden Inhalten  
-   * [ ] Sensible Daten identifiziert und Schutzmassnahmen getroffen  
-   * [ ] Diskriminierende Inhalte benannt und kontextualisiert  
-   * [ ] Trigger- und Content-Notes formuliert  
-   * [ ] Einwilligungsfragen reflektiert und Alternativen geprüft  
-   * [ ] Governance-Regeln dokumentiert und Änderungen nachvollziehbar protokolliert  
+    * [ ] Sensible Daten identifiziert und Schutzmassnahmen getroffen  
+    * [ ] Diskriminierende Inhalte benannt und kontextualisiert  
+    * [ ] Trigger- und Content-Notes formuliert  
+    * [ ] Einwilligungsfragen reflektiert und Alternativen geprüft  
+    * [ ] Governance-Regeln dokumentiert und Änderungen nachvollziehbar protokolliert  
 
    5.3 Technische Strategien  
-   * [ ] Statischer Webauftritt ohne serverseitige Abhängigkeiten definiert  
-   * [ ] Build- und Validierungsprozess unter Versionskontrolle implementiert  
-   * [ ] Sichtbarkeitssteuerung in Export- oder Ableitungsschritten umgesetzt  
-   * [ ] Offene, verlustfreie Formate mit UTF-8-Kodierung verwendet  
-   * [ ] README und Referenzdokumente bereitgestellt und versioniert  
-   * [ ] API-Exporte abgesichert und reproduzierbare Datenbeilage integriert  
-   * [ ] Opt-in-Mechanismus für sensible Inhalte verfügbar  
+    * [ ] Statischer Webauftritt ohne serverseitige Abhängigkeiten definiert  
+    * [ ] Build- und Validierungsprozess unter Versionskontrolle implementiert  
+    * [ ] Sichtbarkeitssteuerung in Export- oder Ableitungsschritten umgesetzt  
+    * [ ] Offene, verlustfreie Formate mit UTF-8-Kodierung verwendet  
+    * [ ] README und Referenzdokumente bereitgestellt und versioniert  
+    * [ ] API-Exporte abgesichert und reproduzierbare Datenbeilage integriert  
+    * [ ] Opt-in-Mechanismus für sensible Inhalte verfügbar  
 
    5.4 Transparente Dokumentation  
-   * [ ] Publikationsdokumentation online und öffentlich zugänglich  
-   * [ ] Editionen mit Datum, Version und Zitierempfehlung publiziert  
-   * [ ] Persistente URIs stabil, Umzüge mit Weiterleitungen gesichert  
-   * [ ] Jede Edition als Paket mit Prüfsummen, Daten und Dokumentation archiviert  
+    * [ ] Publikationsdokumentation online und öffentlich zugänglich  
+    * [ ] Editionen mit Datum, Version und Zitierempfehlung publiziert  
+    * [ ] Persistente URIs stabil, Umzüge mit Weiterleitungen gesichert  
+    * [ ] Jede Edition als Paket mit Prüfsummen, Daten und Dokumentation archiviert  
 
 6. Nachnutzung und Wiederverwendung  
    * [ ] Linked-Data-Exporte, PIDs und {{< glossary Crosswalk display="Crosswalks" >}} verfügbar  
