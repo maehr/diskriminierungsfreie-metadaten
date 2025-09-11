@@ -159,7 +159,7 @@ Besonderer Dank gilt Levyn Bürki für die substanziellen Beiträge zur Neustruk
 
 Für die aufmerksame Lektüre und konstruktiven Rückmeldungen zur ersten Auflage 2024 danken die Autor\*innen Eric Decker, Céline Hug, Lucie Kolb, Jonas Lendenmann, Noah Regenass und Stephanie Willi. Für inhaltliche Hinweise und Korrekturen nach der Veröffentlichung danken wir Esther Ernst-Mombelli ({{< glossary GND >}}-Redaktion, Universitätsbibliothek Basel), Marc Bayard ({{< glossary GND >}}-Redaktion, Universitätsbibliothek Bern), Philipp Messner (Plakatsammlung SfG Basel), Elias Zimmermann (Universität Zürich/Genf), Karin Lackner (Universitätsbibliothek Graz) sowie Roberta Flora Spano (ETH-Bibliothek Zürich, Sammlungen und Archive).
 
-Das Handbuch profitierte von Diskussionen in folgenden Foren und Fachcommunitys: dem Roundtable "{{< glossary FAIR >}} and {{< glossary CARE >}}" der DARIAH-CH Study Days (22. November 2024, FHNW) mit Beiträgen von Iolanda Pensa, Elena Chestnova, Lucie Kolb und Linda Ludwig; dem Workshop "Grosse Anforderungen an kleine Textfelder – Ethische Fragen an Metadaten historischer Quellen" am Herder-Institut (21.–22. November 2024, Marburg), wo Noëlle Schnegg und Levyn Bürki Erfahrungen aus dem Handbuchprojekt vorstellten; dem Panel "Die unsichtbaren Anforderungen der digitalen Geschichtswissenschaft" an den 7\. Schweizerischen Geschichtstagen (8.–11. Juli 2025, Universität Luzern) mit einem Impuls von Noëlle Schnegg und Beiträgen aus Gedächtnisinstitutionen wie Bundesarchiv, ETH-Bibliothek, histify, Personenportal SH, SAMARA, Nationalbibliothek, Wirtschaftsarchiv, SSRQ, swisstopo und Transcriptiones; der Einladung zum 9\. Bibliothekskongress (24.–27. Juni 2025, Wien); sowie dem Panel "Diskriminierungssensible Metadaten für historische Sammlungen" an der Digital-Humanities-Konferenz 2025 (16. Juli 2025, Universidade NOVA de Lisboa) mit Beiträgen von Levyn Bürki, Joris Burla, Peggy Große, Mario Kliewer, Jonas Lendenmann, Lisa Quade, Moritz Mähr, Noëlle Schnegg und Elias Zimmermann. Für die Einladung zum SODa-Forum "Das Handbuch zur Erstellung diskriminierungsfreier Metadaten aus Perspektive der Universitätssammlungen" (11. September 2025), zum Workshop “Relativieren oder limitieren? Zum Umgang mit Dark Heritage in Sammlungen und Archiven” (13. und 14\. November; Dresden) und zum Workshop "Metadaten in den Humanities" (4. und 5\. Dezember, Zürich) danken wir den Organisator\*innen; die dortigen Rückmeldungen fliessen in die fortlaufende Überarbeitung ein.
+Das Handbuch profitierte von Diskussionen in folgenden Foren und Fachcommunitys: dem Roundtable "FAIR and CARE" der DARIAH-CH Study Days (22. November 2024, FHNW) mit Beiträgen von Iolanda Pensa, Elena Chestnova, Lucie Kolb und Linda Ludwig; dem Workshop "Grosse Anforderungen an kleine Textfelder – Ethische Fragen an Metadaten historischer Quellen" am Herder-Institut (21.–22. November 2024, Marburg), wo Noëlle Schnegg und Levyn Bürki Erfahrungen aus dem Handbuchprojekt vorstellten; dem Panel "Die unsichtbaren Anforderungen der digitalen Geschichtswissenschaft" an den 7\. Schweizerischen Geschichtstagen (8.–11. Juli 2025, Universität Luzern) mit einem Impuls von Noëlle Schnegg und Beiträgen aus Gedächtnisinstitutionen wie Bundesarchiv, ETH-Bibliothek, histify, Personenportal SH, SAMARA, Nationalbibliothek, Wirtschaftsarchiv, SSRQ, swisstopo und Transcriptiones; der Einladung zum 9\. Bibliothekskongress (24.–27. Juni 2025, Wien); sowie dem Panel "Diskriminierungssensible Metadaten für historische Sammlungen" an der Digital-Humanities-Konferenz 2025 (16. Juli 2025, Universidade NOVA de Lisboa) mit Beiträgen von Levyn Bürki, Joris Burla, Peggy Große, Mario Kliewer, Jonas Lendenmann, Lisa Quade, Moritz Mähr, Noëlle Schnegg und Elias Zimmermann. Für die Einladung zum SODa-Forum "Das Handbuch zur Erstellung diskriminierungsfreier Metadaten aus Perspektive der Universitätssammlungen" (11. September 2025), zum Workshop “Relativieren oder limitieren? Zum Umgang mit Dark Heritage in Sammlungen und Archiven” (13. und 14\. November; Dresden) und zum Workshop "Metadaten in den Humanities" (4. und 5\. Dezember, Zürich) danken wir den Organisator\*innen; die dortigen Rückmeldungen fliessen in die fortlaufende Überarbeitung ein.
 
 Das Handbuch ist ein "Living Document". Wir laden die Communities der Digital Humanities, der Gedächtnisinstitutionen und der Forschung ein, weitere Hinweise, Praxisbeispiele und Korrekturen beizusteuern. Für verbleibende Unschärfen und Fehler tragen die Autor\*innen die Verantwortung.
 
@@ -492,27 +492,27 @@ Historische Daten- und Metadatenpraktiken können Unterdrückung auf mindestens 
 
 ### Ontologische Gewalt
 
-*Wirkmechanismus*: Erzwingt Kategorien, die der Selbstbeschreibung der Betroffenen widersprechen oder sie auf defizitäre Merkmale reduziert.[@bowker1999]
+*Wirkmechanismus:* Erzwingt Kategorien, die der Selbstbeschreibung der Betroffenen widersprechen oder sie auf defizitäre Merkmale reduziert.[@bowker1999]
 
-*Beispiele*:
+*Beispiele:*
 
 * Binarer `dc:gender`\-Wert („male“/„female“) löscht nicht-binäre Identitäten.  
 * Koloniale Ethnonyme in Normdaten ("Hottentotte") perpetuieren rassistische Klassifikationen.
 
 ### Epistemische Gewalt
 
-*Wirkmechanismus*: Verunmöglicht Wissen, indem es bestimmte Perspektiven ausschliesst oder als „Rauschen“ markiert.[@spivak_subaltern_1988]
+*Wirkmechanismus:* Verunmöglicht Wissen, indem es bestimmte Perspektiven ausschliesst oder als „Rauschen“ markiert.[@spivak_subaltern_1988]
 
-*Beispiele*:
+*Beispiele:*
 
 * Aggregations-Metadaten, die Briefe von Dienstbotinnen als „miscellaneous“ ablegen.  
 * Diplomatenschriftverkehr wird dagegen fein granular erschlossen.
 
 ### Infrastrukturelle Gewalt
 
-*Wirkmechanismus*: Fixiert Benachteiligungen durch technische Standards, die schwer veränderbar sind (lock-in).[@rodgers_oneill_infrastructural_2012]
+*Wirkmechanismus:* Fixiert Benachteiligungen durch technische Standards, die schwer veränderbar sind (lock-in).[@rodgers_oneill_infrastructural_2012]
 
-*Beispiele*:
+*Beispiele:*
 
 * Vorgabefelder in Sammlungssoftware ohne Mehrsprachigkeit erzwingen englischsprachige Schlagwörter und verdrängen indigene Begriffe.  
 * Unveränderbare Feldlängen lassen traditionelle Namen abschneiden.
