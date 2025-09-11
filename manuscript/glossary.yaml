@@ -1,0 +1,189 @@
+AAT: >
+  Art & Architecture Thesaurus ist ein strukturiertes Vokabular des Getty
+  Research Institute für Kunst-, Architektur- und Kulturgeschichte. Bietet
+  hierarchisch organisierte Begriffe und mehrsprachige Synonyme für die
+  konsistente Beschreibung kultureller Objekte.
+API: >
+  Application Programming Interfaces sind Schnittstellen zwischen verschiedenen
+  Softwareanwendungen, die den strukturierten Datenaustausch ermöglichen. In der
+  Metadatenpraxis wichtig für die automatisierte Übertragung und Synchronisation
+  von Datenbeständen.
+CARE: >
+  Ethische Grundsätze für Forschungsdaten indigener und marginalisierter
+  Gemeinschaften. Collective Benefit (Kollektiver Nutzen), Authority to Control
+  (Kontrollbefugnis), Responsibility (Verantwortung), Ethics (Ethik). Ergänzen
+  die FAIR-Prinzipien um Aspekte der Datensouveränität.
+CER: >
+  Character Error Rate ist die Fehlerrate bei der automatischen Texterkennung
+  (OCR/HTR), gemessen als Anteil falsch erkannter Zeichen. Wichtige Metrik zur
+  Bewertung der Qualität digitalisierter Texte.
+CIDOC-CRM: >
+  Conceptual Reference Model ist ein internationaler Standard (ISO 21127) für
+  die konzeptuelle Modellierung von Kulturerbe-Informationen. Ermöglicht die
+  semantische Verknüpfung heterogener Datenquellen aus Museen, Archiven und
+  Bibliotheken.
+Content-Note: >
+  Freitextfeld zur ergänzenden Beschreibung des Inhalts einer Ressource. Dient
+  der Kontextualisierung und Auffindbarkeit, sollte diskriminierungsfreie und
+  inklusive Sprache verwenden.
+Content-Warning: >
+  Hinweis auf sensible oder potenziell belastende Inhalte in einer Ressource.
+  Dient dem Schutz vulnerabler Gruppen und der informierten Nutzung von Daten.
+CSV: >
+  Comma-Separated Values ist ein einfaches, textbasiertes Dateiformat zur
+  strukturierten Speicherung tabellarischer Daten. Weit verbreitet für den
+  Datenaustausch zwischen verschiedenen Systemen.
+Crosswalk: >
+  Verfahren zur Zuordnung von Datenelementen zwischen verschiedenen
+  Metadatenstandards. Ermöglicht die Migration und Interoperabilität von
+  Metadaten.
+Dublin Core: >
+  Weit verbreiteter Metadatenstandard mit 15 Kernelementen (Title, Creator,
+  Subject, Description, Publisher, Contributor, Date, Type, Format, Identifier,
+  Source, Language, Relation, Coverage, Rights) zur grundlegenden Beschreibung
+  digitaler Ressourcen.
+EAD: >
+  Encoded Archival Description ist ein XML-Standard für die strukturierte
+  Beschreibung von Archivbeständen. Ermöglicht hierarchische Darstellung von
+  Findmitteln und unterstützt komplexe Provenienz- und Kontextinformationen.
+EDM: >
+  Europeana Data Model ist das Datenmodell der Europeana für die Aggregation und
+  Bereitstellung europäischer Kulturobjekte. Basiert auf Linked Data-Prinzipien
+  und ermöglicht semantische Verknüpfungen zwischen verschiedenen Sammlungen.
+EDTF: >
+  [Extended Date/Time Format](https://www.loc.gov/standards/datetime/) ist ein
+  Standard für die Darstellung unsicherer, approximativer oder komplexer
+  Datumsangaben in historischen Quellen. Unterstützt Zeiträume,
+  Unsicherheitsmarkierungen und alternative Kalendersysteme.
+Entity-Resolution: >
+  Automatisiertes Verfahren zur Identifikation und Zusammenführung von
+  Datensätzen, die sich auf dieselbe Entität (Person, Ort, Organisation)
+  beziehen. Zentral für die Erstellung konsistenter Normdaten.
+FAIR: >
+  Grundsätze für Forschungsdatenmanagement. Findable (Auffindbar), Accessible
+  (Zugänglich), Interoperable (Interoperabel), Reusable (Nachnutzbar). Fördern
+  die offene und nachhaltige Nutzung wissenschaftlicher Daten.
+Fine-Tuning: >
+  Anpassung vortrainierter Machine Learning-Modelle an spezifische Datensätze
+  oder Aufgaben. In der Metadatenpraxis relevant für OCR/HTR-Verbesserung oder
+  Named Entity Recognition.
+GND: >
+  Gemeinsame Normdatei ist eine kooperativ gepflegte Normdatei deutschsprachiger
+  Bibliotheken für Personen, Körperschaften, Kongresse, Geografika,
+  Sachschlagwörter und Werktitel. Zentrale Infrastruktur für die Vernetzung
+  bibliographischer Daten.
+HTR: >
+  Handwritten Text Recognition ist die automatische Erkennung handschriftlicher
+  Texte mittels Machine Learning. Spezialisierte Weiterentwicklung der
+  OCR-Technologie für historische Handschriften und Dokumente.
+IIIF: >
+  International Image Interoperability Framework sind Standards für die
+  interoperable Bereitstellung von Bildern und audiovisuellen Medien. Ermöglicht
+  einheitliche Darstellung, Annotation und Manipulation digitaler Objekte
+  unabhängig vom Hosting-System.
+ISO: >
+  International Organization for Standardization ist eine internationale
+  Organisation für Normung, die technische Standards für verschiedene Bereiche
+  entwickelt, einschließlich Informationsmanagement und Dokumentation.
+JSON: >
+  JavaScript Object Notation ist ein leichtgewichtiges, textbasiertes
+  Datenformat für den strukturierten Datenaustausch. Weit verbreitet in Web-APIs
+  und zunehmend auch für Metadaten verwendet.
+JSON-LD: >
+  JSON for Linking Data ist eine Erweiterung von JSON für Linked
+  Data-Anwendungen. Ermöglicht die semantische Annotation von JSON-Strukturen
+  durch Verweise auf kontrollierte Vokabulare.
+LCSH: >
+  Library of Congress Subject Headings ist ein umfangreiches, hierarchisch
+  strukturiertes Schlagwortsystem der Library of Congress. Internationaler
+  Standard für die sachliche Erschließung in Bibliotheken.
+LIDO: >
+  Lightweight Information Describing Objects ist ein XML-Schema für die
+  Beschreibung von Museumsobjekten. Ermöglicht detaillierte Erfassung von
+  Provenienz, Materialien, Techniken und kulturhistorischen Kontexten.
+LOUD: >
+  Linked Open Usable Data ist eine Weiterentwicklung der Linked Data-Prinzipien
+  mit Fokus auf praktische Nutzbarkeit. Betont entwicklerfreundliche APIs,
+  JSON-LD-Format und ausführliche Dokumentation.
+MARC: >
+  Machine-Readable Cataloging ist ein internationaler Standard für die
+  maschinelle Verarbeitung bibliographischer Daten. Grundlage der meisten
+  Bibliothekskataloge, zunehmend durch flexiblere RDF-basierte Formate ergänzt.
+METS: >
+  Metadata Encoding and Transmission Standard ist ein XML-Schema für die
+  Strukturierung und Verknüpfung von Metadaten digitaler Objekte. Weit
+  verbreitet in digitalen Bibliotheken und Archiven.
+Named-Entity-Recognition: >
+  Automatisierte Identifikation und Klassifikation von Entitäten (Personen,
+  Orte, Organisationen) in Texten. Wichtig für die Anreicherung von Metadaten
+  und die Verknüpfung mit Normdaten.
+OAI-PMH: >
+  Open Archives Initiative Protocol for Metadata Harvesting ist ein Protokoll
+  für die automatisierte Sammlung von Metadaten aus verteilten Repositorien.
+  Ermöglicht die Aggregation von Metadaten ohne Duplikation der eigentlichen
+  Inhalte.
+OAIS: >
+  Open Archival Information System ist ein Referenzmodell für digitale
+  Langzeitarchivierung (ISO 14721). Definiert Rollen, Funktionen und
+  Informationsmodelle für vertrauenswürdige digitale Repositorien.
+OCR: >
+  Optical Character Recognition ist die automatische Erkennung von Zeichen in
+  digitalisierten Texten. Grundlage für die Volltextsuche in historischen
+  Dokumenten, unterliegt aber systematischen Fehlern bei historischen Schriften.
+Ontologie: >
+  Formale Beschreibung von Konzepten und ihren Beziehungen in einem bestimmten
+  Wissensbereich. In der Metadatenpraxis Grundlage für semantische Verknüpfungen
+  und automatisierte Inferenzen.
+PREMIS: >
+  Preservation Metadata Implementation Strategies ist ein Datenmodell für
+  Bewahrungsmetadaten in digitalen Archiven. Dokumentiert Herkunft,
+  Authentizität, Bewahrungsaktivitäten und technische Eigenschaften digitaler
+  Objekte.
+Pipeline: >
+  Abfolge automatisierter Verarbeitungsschritte zur Transformation, Anreicherung
+  oder Analyse von Daten. In der Metadatenpraxis häufig genutzt für ETL-Prozesse
+  (Extract, Transform, Load).
+Query-Expansion: >
+  Automatische Erweiterung von Suchanfragen durch semantisch verwandte Begriffe.
+  Verbessert die Vollständigkeit von Suchergebnissen, besonders bei heterogenen
+  Metadaten.
+RDF: >
+  Resource Description Framework ist ein Standard des World Wide Web Consortium
+  für die strukturierte Beschreibung von Ressourcen. Grundlage des Semantic Web
+  und von Linked Data-Anwendungen.
+Retrieval: >
+  Prozess der Suche und des Abrufs relevanter Informationen aus Datenbeständen.
+  In der Metadatenpraxis entscheidend für die Nutzerzufriedenheit und
+  Auffindbarkeit von Ressourcen.
+SKOS: >
+  Simple Knowledge Organization System ist ein Standard für die Repräsentation
+  von Klassifikationssystemen, Thesauri und anderen kontrollierten Vokabularen
+  als Linked Data. Ermöglicht die Verknüpfung verschiedener Begriffssysteme.
+TEI: >
+  Text Encoding Initiative ist ein internationaler Standard für die digitale
+  Kodierung literarischer und historischer Texte. Basiert auf XML und ermöglicht
+  detaillierte strukturelle und inhaltliche Annotation.
+Topic Modeling: >
+  Computergestützte Methode zur automatischen Identifikation thematischer Muster
+  in Textsammlungen. Hilfreich für die Analyse großer Korpora, erfordert aber
+  kritische Interpretation der Ergebnisse.
+VIAF: >
+  Virtual International Authority File ist eine internationale Normdatei, die
+  Normdaten von Nationalbibliotheken weltweit verknüpft. Ermöglicht die
+  eindeutige Identifikation von Personen und Körperschaften über Sprachgrenzen
+  hinweg.
+VRA Core: >
+  Visual Resources Association Core ist ein Metadatenstandard für die
+  Beschreibung visueller Kulturobjekte. Speziell entwickelt für Bilder,
+  Kunstwerke und architektonische Objekte.
+WER: >
+  Word Error Rate ist die Fehlerrate bei der automatischen Texterkennung,
+  gemessen als Anteil falsch erkannter Wörter. Ergänzt die Character Error Rate
+  (CER) bei der Bewertung von OCR/HTR-Qualität.
+Workflow: >
+  Systematische Abfolge von Arbeitsschritten in der Datenverarbeitung. In der
+  Metadatenpraxis wichtig für Qualitätssicherung und Konsistenz.
+XML: >
+  eXtensible Markup Language ist eine strukturierte Auszeichnungssprache für die
+  plattformunabhängige Darstellung hierarchisch organisierter Daten. Grundlage
+  vieler Metadatenstandards wie METS, EAD und TEI.

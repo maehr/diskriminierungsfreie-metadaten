@@ -2,19 +2,21 @@ project:
   type: manuscript
 
 manuscript:
-  article: handbuch-diskriminierungsfreie-metadaten.qmd
-  resources:
-    - data/genderopen_gnd_mapping.csv
   code-links:
     - text: Diskussion Living Document
       href: https://github.com/maehr/diskriminierungsfreie-metadaten/discussions
     - text: Quellcode
       href: https://github.com/maehr/diskriminierungsfreie-metadaten
-  manuscript-url: https://maehr.github.io/diskriminierungsfreie-metadaten/
+  manuscript-url: https://moritz-maehr.quarto.pub/diskriminierungssensible-metadatenpraxis # https://maehr.github.io/diskriminierungsfreie-metadaten/
+
+glossary:
+  path: glossary.yaml
+  popup: click
+  show: true
 
 format:
   html:
-    doi: '10.5281/zenodo.17073511'
+    # doi: '10.5281/zenodo.17073511'
     date-modified: last-modified
     link-external-icon: true
     link-external-newwindow: true
@@ -27,14 +29,14 @@ format:
       - custom-header.html
     page-layout: full
     license: CC BY-SA
-  docx:
-    reference-doc: custom-reference.docx
-    fig-align: left
-    subject: Diskriminierungsfreie Metadaten
-    category: Handbuch
-    toc: true
-    toc-depth: 3
-    toc-title: Inhaltsverzeichnis
-  pdf:
-    pdf-engine: xelatex
-    keep-tex: false
+  # docx:
+  #   reference-doc: custom-reference.docx
+  #   fig-align: left
+  #   subject: Diskriminierungsfreie Metadaten
+  #   category: Handbuch
+  #   toc: true
+  #   toc-depth: 3
+  #   toc-title: Inhaltsverzeichnis
+  # pdf:
+  #   pdf-engine: xelatex
+  #   keep-tex: false
