@@ -70,7 +70,7 @@ Die erste Fassung des Handbuchs entstand 2023 im Rahmen des Forschungsprojekts [
 
 Zugleich haben wir den Praxisteil deutlich ausgebaut und klar vom theoretischen Teil getrennt. Stadt.Geschichte.Basel bleibt ein wichtiges Fallbeispiel, steht jedoch nicht mehr im Zentrum des Handbuchs. Unser Zielpublikum sind historische Forschungsprojekte im gesamten deutschsprachigen Raum: von universitären Editionsvorhaben bis hin zu digital zugänglichen Sammlungen von GLAM-Institutionen.
 
-Wir laden alle Leser\*innen ein, dieses „Living Document“ mit uns gemeinsam weiterzuentwickeln und durch Feedback, Ergänzungen oder Fallbeispiele zu bereichern.
+Wir laden alle Leser\*innen ein, dieses "Living Document" mit uns gemeinsam weiterzuentwickeln und durch Feedback, Ergänzungen oder Fallbeispiele zu bereichern.
 
 Basel, 8\. September 2025
 
@@ -82,7 +82,7 @@ Dieses Handbuch ist eine praxisorientierte Anleitung für die diskriminierungsse
 
 Warum Metadaten? In einer zunehmend digital vermittelten Welt machen Metadaten historische Bestände auffindbar, zugänglich, interoperabel und nachnutzbar. Frei zugängliche, maschinenlesbare Metadaten ermöglichen die Integration in Suchmaschinen, Datenportale und virtuelle Forschungsumgebungen. Dadurch verändert sich, wie Historiker\*innen Quellen erforschen, interpretieren und verstehen.
 
-![Screenshot aus der Plakatsammlung Basel: Abstimmungsplakat „Frauenstimmrecht, Nein“ zur eidgenössischen Abstimmung vom 1\. Februar 1959, entworfen von Werner Nänny im Auftrag des Basler Frauenkomitees gegen das Frauenstimmrecht, gedruckt von Wassermann AG, Basel.](images/image1.png){fig-alt="Screenshot einer Webseite mit einem Abstimmungsplakat von 1959 gegen das Frauenstimmrecht in der Schweiz. Das Plakat zeigt die schwarze Silhouette einer Frau, die von mehreren grauen Händen mit der Aufschrift „Partei“ bedrängt wird. Daneben stehen Informationen zur Sammlung, Datierung, Urheber und Technik." width="1801" height="964" .img-fluid }
+![Screenshot aus der Plakatsammlung Basel: Abstimmungsplakat "Frauenstimmrecht, Nein" zur eidgenössischen Abstimmung vom 1\. Februar 1959, entworfen von Werner Nänny im Auftrag des Basler Frauenkomitees gegen das Frauenstimmrecht, gedruckt von Wassermann AG, Basel.](images/image1.png){fig-alt="Screenshot einer Webseite mit einem Abstimmungsplakat von 1959 gegen das Frauenstimmrecht in der Schweiz. Das Plakat zeigt die schwarze Silhouette einer Frau, die von mehreren grauen Händen mit der Aufschrift "Partei" bedrängt wird. Daneben stehen Informationen zur Sammlung, Datierung, Urheber und Technik." width="1801" height="964" .img-fluid }
 
 Ein Blick in die deutschsprachige Archive zeigt, dass vielerorts bereits auf die {{< glossary FAIR >}}-Prinzipien bei Metadaten geachtet wird. Eine diskriminierungssensible Metadatenpraxis bleibt jedoch meist aus. Oft fehlen kontextualisierende Beschreibungen, in denen Diskriminierungsformen explizit benannt und in ihren jeweiligen historischen Kontext eingeordnet werden. Im Online-Katalog der "Plakatsammlung der Schule für Gestaltung" beschränkt sich die Beschreibung des Plakats ["Frauenstimmrecht, Nein"](https://www.recherche-plakatsammlungbasel.ch/objects/48228/) auf sachliche Angaben: "Eidgenössische Abstimmung, 1\. Februar 1959". Hinweise auf den historischen, politischen und insbesondere den sexistischen Kontext fehlen.
 
@@ -159,7 +159,7 @@ Besonderer Dank gilt Levyn Bürki für die substanziellen Beiträge zur Neustruk
 
 Für die aufmerksame Lektüre und konstruktiven Rückmeldungen zur ersten Auflage 2024 danken die Autor\*innen Eric Decker, Céline Hug, Lucie Kolb, Jonas Lendenmann, Noah Regenass und Stephanie Willi. Für inhaltliche Hinweise und Korrekturen nach der Veröffentlichung danken wir Esther Ernst-Mombelli ({{< glossary GND >}}-Redaktion, Universitätsbibliothek Basel), Marc Bayard ({{< glossary GND >}}-Redaktion, Universitätsbibliothek Bern), Philipp Messner (Plakatsammlung SfG Basel), Elias Zimmermann (Universität Zürich/Genf), Karin Lackner (Universitätsbibliothek Graz) sowie Roberta Flora Spano (ETH-Bibliothek Zürich, Sammlungen und Archive).
 
-Das Handbuch profitierte von Diskussionen in folgenden Foren und Fachcommunitys: dem Roundtable "FAIR and CARE" der DARIAH-CH Study Days (22. November 2024, FHNW) mit Beiträgen von Iolanda Pensa, Elena Chestnova, Lucie Kolb und Linda Ludwig; dem Workshop "Grosse Anforderungen an kleine Textfelder – Ethische Fragen an Metadaten historischer Quellen" am Herder-Institut (21.–22. November 2024, Marburg), wo Noëlle Schnegg und Levyn Bürki Erfahrungen aus dem Handbuchprojekt vorstellten; dem Panel "Die unsichtbaren Anforderungen der digitalen Geschichtswissenschaft" an den 7\. Schweizerischen Geschichtstagen (8.–11. Juli 2025, Universität Luzern) mit einem Impuls von Noëlle Schnegg und Beiträgen aus Gedächtnisinstitutionen wie Bundesarchiv, ETH-Bibliothek, histify, Personenportal SH, SAMARA, Nationalbibliothek, Wirtschaftsarchiv, SSRQ, swisstopo und Transcriptiones; der Einladung zum 9\. Bibliothekskongress (24.–27. Juni 2025, Wien); sowie dem Panel "Diskriminierungssensible Metadaten für historische Sammlungen" an der Digital-Humanities-Konferenz 2025 (16. Juli 2025, Universidade NOVA de Lisboa) mit Beiträgen von Levyn Bürki, Joris Burla, Peggy Große, Mario Kliewer, Jonas Lendenmann, Lisa Quade, Moritz Mähr, Noëlle Schnegg und Elias Zimmermann. Für die Einladung zum SODa-Forum "Das Handbuch zur Erstellung diskriminierungsfreier Metadaten aus Perspektive der Universitätssammlungen" (11. September 2025), zum Workshop “Relativieren oder limitieren? Zum Umgang mit Dark Heritage in Sammlungen und Archiven” (13. und 14\. November; Dresden) und zum Workshop "Metadaten in den Humanities" (4. und 5\. Dezember, Zürich) danken wir den Organisator\*innen; die dortigen Rückmeldungen fliessen in die fortlaufende Überarbeitung ein.
+Das Handbuch profitierte von Diskussionen in folgenden Foren und Fachcommunitys: dem Roundtable "FAIR and CARE" der DARIAH-CH Study Days (22. November 2024, FHNW) mit Beiträgen von Iolanda Pensa, Elena Chestnova, Lucie Kolb und Linda Ludwig; dem Workshop "Grosse Anforderungen an kleine Textfelder – Ethische Fragen an Metadaten historischer Quellen" am Herder-Institut (21.–22. November 2024, Marburg), wo Noëlle Schnegg und Levyn Bürki Erfahrungen aus dem Handbuchprojekt vorstellten; dem Panel "Die unsichtbaren Anforderungen der digitalen Geschichtswissenschaft" an den 7\. Schweizerischen Geschichtstagen (8.–11. Juli 2025, Universität Luzern) mit einem Impuls von Noëlle Schnegg und Beiträgen aus Gedächtnisinstitutionen wie Bundesarchiv, ETH-Bibliothek, histify, Personenportal SH, SAMARA, Nationalbibliothek, Wirtschaftsarchiv, SSRQ, swisstopo und Transcriptiones; der Einladung zum 9\. Bibliothekskongress (24.–27. Juni 2025, Wien); sowie dem Panel "Diskriminierungssensible Metadaten für historische Sammlungen" an der Digital-Humanities-Konferenz 2025 (16. Juli 2025, Universidade NOVA de Lisboa) mit Beiträgen von Levyn Bürki, Joris Burla, Peggy Große, Mario Kliewer, Jonas Lendenmann, Lisa Quade, Moritz Mähr, Noëlle Schnegg und Elias Zimmermann. Für die Einladung zum SODa-Forum "Das Handbuch zur Erstellung diskriminierungsfreier Metadaten aus Perspektive der Universitätssammlungen" (11. September 2025), zum Workshop "Relativieren oder limitieren? Zum Umgang mit Dark Heritage in Sammlungen und Archiven" (13. und 14\. November; Dresden) und zum Workshop "Metadaten in den Humanities" (4. und 5\. Dezember, Zürich) danken wir den Organisator\*innen; die dortigen Rückmeldungen fliessen in die fortlaufende Überarbeitung ein.
 
 Das Handbuch ist ein "Living Document". Wir laden die Communities der Digital Humanities, der Gedächtnisinstitutionen und der Forschung ein, weitere Hinweise, Praxisbeispiele und Korrekturen beizusteuern. Für verbleibende Unschärfen und Fehler tragen die Autor\*innen die Verantwortung.
 
@@ -179,13 +179,13 @@ Daten und Metadaten erscheinen auf den ersten Blick als objektive Repräsentatio
 
 ![Politische Karte der Krim mit Städten, Verkehrswegen und geografischen Bezeichnungen. Die Karte zeigt die Halbinsel im Schwarzen Meer, angrenzend an die Ukraine und Russland.](images/image5.png){fig-alt="Karte der Krim mit eingezeichneten Städten, Strassen, Eisenbahnlinien und Landschaftsmerkmalen. Zu sehen sind Simferopol, Sewastopol, Jalta, Feodossija, Kertsch und Jewpatorija sowie Gebirge, Küstenlinien und angrenzende Regionen der Ukraine und Russlands." width="1929" height="1249" .img-fluid }
 
-Die [Karte](https://commons.wikimedia.org/wiki/File:Karte_der_Krim.png) präsentiert die Krim als „Autonome Republik Krim“ und zeigt damit explizit eine völkerrechtlich orientierte, pro ukrainische Perspektive: Die Benennung und farbliche Abgrenzung der Krim als Teil der Ukraine („Oblast“, „Autonome Republik“) betont den de-jure-Status nach ukrainischem Recht und den internationalen Menschenrechtsstandards. Es werden zentrale Orte wie Sewastopol oder Kertsch mit ihrer ukrainischen Transkription aufgeführt. Die Grenze zu Russland ist klar als Staatsgrenze markiert. In der Detaildarstellung (oben rechts) wird die Krim deutlich der Ukraine zugeordnet, wodurch der umstrittene völkerrechtliche Status als Teil Russlands nicht gleichwertig visualisiert wird.
+Die [Karte](https://commons.wikimedia.org/wiki/File:Karte_der_Krim.png) präsentiert die Krim als "Autonome Republik Krim" und zeigt damit explizit eine völkerrechtlich orientierte, pro ukrainische Perspektive: Die Benennung und farbliche Abgrenzung der Krim als Teil der Ukraine ("Oblast", "Autonome Republik") betont den de-jure-Status nach ukrainischem Recht und den internationalen Menschenrechtsstandards. Es werden zentrale Orte wie Sewastopol oder Kertsch mit ihrer ukrainischen Transkription aufgeführt. Die Grenze zu Russland ist klar als Staatsgrenze markiert. In der Detaildarstellung (oben rechts) wird die Krim deutlich der Ukraine zugeordnet, wodurch der umstrittene völkerrechtliche Status als Teil Russlands nicht gleichwertig visualisiert wird.
 
-Dieses kartografische Beispiel steht paradigmatisch für die normativen Setzungen, die auch digital kodierten Datenstrukturen wie Wikidata zugrunde liegen. So wird die Krim dort sowohl als Teil der Ukraine („de jure“) als auch Russlands („de facto“) geführt, jedoch übernehmen viele verknüpfte Objekte wie Städte oder administrative Einheiten diese Mehrdeutigkeit nicht konsistent oder bilden einzig die ukrainische Perspektive ab. Die Karte operiert dabei mit einem klaren Framing zugunsten der ukrainischen Souveränität und blendet alternative Klassifikationsoptionen, wie etwa die Bezeichnung „Republik Krim“ als Teil Russlands, weitgehend aus.
+Dieses kartografische Beispiel steht paradigmatisch für die normativen Setzungen, die auch digital kodierten Datenstrukturen wie Wikidata zugrunde liegen. So wird die Krim dort sowohl als Teil der Ukraine ("de jure") als auch Russlands ("de facto") geführt, jedoch übernehmen viele verknüpfte Objekte wie Städte oder administrative Einheiten diese Mehrdeutigkeit nicht konsistent oder bilden einzig die ukrainische Perspektive ab. Die Karte operiert dabei mit einem klaren Framing zugunsten der ukrainischen Souveränität und blendet alternative Klassifikationsoptionen, wie etwa die Bezeichnung "Republik Krim" als Teil Russlands, weitgehend aus.
 
-Dies verdeutlicht, dass jede Form von Daten- und Metadatenmodellierung – sei sie visuell, textuell oder strukturell – auf normativen Entscheidungen beruht, die oft unsichtbar bleiben. Die Auswahl von Bezeichnungen, die Sichtbarkeit von Grenzen oder die Hierarchisierung von Souveränitätsansprüchen spiegeln und stabilisieren bestehende Machtasymmetrien und wirken als „invisible hand of classification“ [@bowker1999]. Für Nutzer\*innen entsteht der Eindruck technischer Neutralität, obwohl sowohl die Karte als auch digitale Datenbanken politische Aushandlungsprozesse und Interessen materialisieren.
+Dies verdeutlicht, dass jede Form von Daten- und Metadatenmodellierung – sei sie visuell, textuell oder strukturell – auf normativen Entscheidungen beruht, die oft unsichtbar bleiben. Die Auswahl von Bezeichnungen, die Sichtbarkeit von Grenzen oder die Hierarchisierung von Souveränitätsansprüchen spiegeln und stabilisieren bestehende Machtasymmetrien und wirken als "invisible hand of classification" [@bowker1999]. Für Nutzer\*innen entsteht der Eindruck technischer Neutralität, obwohl sowohl die Karte als auch digitale Datenbanken politische Aushandlungsprozesse und Interessen materialisieren.
 
-Eine diskriminierungssensible Metadatenpraxis setzt daher an der Schnittstelle von Technik und Gesellschaft an: Sie verlangt die konsequente Offenlegung und Reflexion der eigenen Klassifikationsschemata, Entscheidungslogiken und Datenstrukturen. In der Umsetzung heisst das: transparente Dokumentation von Modellierungsentscheidungen (Schema, Version, Geltungsbereich), parallele Felder für Mehrperspektivität (*de jure*/*de facto*, Selbst- und Fremdbezeichnungen), überprüfbare Quellen- und Provenienzangaben sowie die explizite, maschinenlesbare Markierung von Konflikten und Unsicherheiten in den Metadaten (Status, Zeitraum, räumliche Gültigkeit). Die Beschreibung durch Metadaten und ihre Repräsentation in digitalen Datenbanken sind bewusst gestaltete, nachvollziehbare Praktiken, die nie lediglich „abbilden“, sondern normativ wirken.
+Eine diskriminierungssensible Metadatenpraxis setzt daher an der Schnittstelle von Technik und Gesellschaft an: Sie verlangt die konsequente Offenlegung und Reflexion der eigenen Klassifikationsschemata, Entscheidungslogiken und Datenstrukturen. In der Umsetzung heisst das: transparente Dokumentation von Modellierungsentscheidungen (Schema, Version, Geltungsbereich), parallele Felder für Mehrperspektivität (*de jure*/*de facto*, Selbst- und Fremdbezeichnungen), überprüfbare Quellen- und Provenienzangaben sowie die explizite, maschinenlesbare Markierung von Konflikten und Unsicherheiten in den Metadaten (Status, Zeitraum, räumliche Gültigkeit). Die Beschreibung durch Metadaten und ihre Repräsentation in digitalen Datenbanken sind bewusst gestaltete, nachvollziehbare Praktiken, die nie lediglich "abbilden", sondern normativ wirken.
 
 ### Direkte Diskriminierung {#sec-direkte-diskriminierung}
 
@@ -201,13 +201,13 @@ Die Begriffsbestimmung von Diskriminierung erfolgt in der Einleitung (QUERVERWEI
   * *Gegenmassnahmen:* Retrospektive Dokumentation von Ausschlüssen, Priorisierung von Erschliessungslücken, inklusionsorientierte Benutzungsordnungen.  
 * **Staatliche Register**
 
-  * *Mechanismus:* Kategorisierung nach „Rasse“, „Stamm“, „Religion“ zur Hierarchisierung.  
+  * *Mechanismus:* Kategorisierung nach "Rasse", "Stamm", "Religion" zur Hierarchisierung.  
   * *Effekt:* Ungleichbehandlung durch Verwaltung und Recht.  
   * *Indikatoren:* Kategorien mit sanktions- oder leistungsrelevanter Wirkung.  
   * *Gegenmassnahmen:* Historisierung und Kontextualisierung problematischer Kategorien, Schutzkennzeichnungen, restriktive Nachnutzungsbedingungen.  
 * **Berufsrollen in amtlichen Dokumenten**
 
-  * *Mechanismus:* Erfassung von Frauen nur relational („Frau des Schmieds“) statt als eigenständige Akteurinnen.  
+  * *Mechanismus:* Erfassung von Frauen nur relational ("Frau des Schmieds") statt als eigenständige Akteurinnen.  
   * *Effekt:* Unsichtbarmachung ökonomischer Tätigkeit.  
   * *Indikatoren:* Geringer Anteil eigenständiger Berufsangaben bei Frauen.  
   * *Gegenmassnahmen:* Nachträgliche Normalisierung, alternatives Namens- und Rollenmodell, Varianten als gleichwertige Identifikatoren pflegen.
@@ -222,7 +222,7 @@ Indirekte Diskriminierung liegt vor, wenn formal neutrale Kriterien, Methoden od
 
   * *Mechanismus:* Ordnung nach Familiennamen mit Relationen über Haushaltsvorstände; Witwen unter Namen des Ehemannes.  
   * *Effekt:* Systematische Unauffindbarkeit von Frauen, Kindern und Menschen aus Kulturen ohne Familiennamen.  
-  * *Indikatoren:* Hoher Anteil von „siehe“-Verweisen statt eigener Einträge.  
+  * *Indikatoren:* Hoher Anteil von "siehe"-Verweisen statt eigener Einträge.  
   * *Gegenmassnahmen:* Sekundärregister nach Vornamen/Rollen, relationale Verknüpfungen, Namensvarianten als Primärschlüssel.  
 * **Sprachliche Dokumentation**
 
@@ -251,7 +251,7 @@ Strukturelle Diskriminierung bezeichnet Benachteiligungen, die in etablierten Pr
 
 * **Eurozentrische Normdaten und kontrollierte Vokabulare**
 
-  * *Mechanismus:* Normdaten privilegieren westliche Taxonomien; indigene Konzepte werden „gemappt“.  
+  * *Mechanismus:* Normdaten privilegieren westliche Taxonomien; indigene Konzepte werden "gemappt".  
   * *Effekt:* Semantische Asymmetrien, Fehlklassifikation, schlechteres {{< glossary Retrieval >}}.  
   * *Indikatoren:* Hoher Anteil unscharfer Schlagwörter; geringe Mehrsprachigkeit in `skos:prefLabel/altLabel`.  
   * *Gegenmassnahmen:* Community-kuratiertes Vokabular, Mehrsprachigkeit, präzise `skos:exactMatch/closeMatch`, dokumentierte Provenienz.  
@@ -271,7 +271,7 @@ Strukturelle Diskriminierung bezeichnet Benachteiligungen, die in etablierten Pr
 
   * *Mechanismus:* Mittelvergabe nach Nutzung und Zitation.  
   * *Effekt:* Sichtbarkeitsspirale zugunsten von Eliten und Zentren.  
-  * *Indikatoren:* Budget- und Seitenzahlen pro Gruppe/Region; „Anfragen vs. unerschlossene Bestände“.  
+  * *Indikatoren:* Budget- und Seitenzahlen pro Gruppe/Region; "Anfragen vs. unerschlossene Bestände".  
   * *Gegenmassnahmen:* Equity-Buckets, Social-Impact-KPIs, kooperative Digitalisierung, transparente Trade-offs.
 
 ### Institutionelle Diskriminierung {#sec-institutionelle-diskriminierung}
@@ -288,7 +288,7 @@ Institutionelle Diskriminierung entsteht, wenn interne Ordnungen und Routinen vo
   * *Gegenmassnahmen:* Quoten für unterrepräsentierte Bestände, partizipative Auswahlprozesse.  
 * **Katalogisierungsrichtlinien mit normativen Kategorien**
 
-  * *Mechanismus:* obligatorische Felder wie „männlich/weiblich“; beschränkte Auswahl von kolonial geprägten Schlagwörter.  
+  * *Mechanismus:* obligatorische Felder wie "männlich/weiblich"; beschränkte Auswahl von kolonial geprägten Schlagwörter.  
   * *Effekt:* Fehlklassifikation, Reproduktion diskriminierender Vokabulare.  
   * *Indikatoren:* Anteil problematischer Pflichtfelder, Korrekturhistorien.  
   * *Gegenmassnahmen:* Revision von Richtlinien, optionale Felder, Governance für Vokabularänderungen.  
@@ -334,10 +334,10 @@ Statistische Diskriminierung bezeichnet die Benachteiligung von Individuen, wenn
   * *Mechanismus:* Ambige Toponyme werden auf heutige Mehrheitsorte gemappt. Gazetteers sind strukturierte Ortsnamendatenbanken, die meist gegenwärtige Ortsinformationen priorisieren.  
   * *Effekt:* Verdrängung historischer Minderheitensiedlungen; Fehlkontexte in Karten.  
   * *Indikatoren:* Hoher Anteil Default-Zuordnungen ohne Jahrgang; Dominanz grosser Orte bei kurzen Ortsnamen.  
-  * *Gegenmassnahmen:* Zeitgeslicte Gazetteers (d. h. nach historischen Epochen getrennt); Unsicherheitsgeometrien; „unresolved“ statt Zwangszuordnung; expliziter Quellenhinweis im Datensatz.  
+  * *Gegenmassnahmen:* Zeitgeslicte Gazetteers (d. h. nach historischen Epochen getrennt); Unsicherheitsgeometrien; "unresolved" statt Zwangszuordnung; expliziter Quellenhinweis im Datensatz.  
 * **Digitisierungsauswahl nach Zitationsmetriken**
 
-  * *Mechanismus:* Auswahl via globalem Impact-Score als Proxy für „Wert“.  
+  * *Mechanismus:* Auswahl via globalem Impact-Score als Proxy für "Wert".  
   * *Effekt:* Periphere Stimmen bleiben analog; selbstverstärkende Sichtbarkeit etablierter Kanons.  
   * *Indikatoren:* Schiefe Verteilungen zugunsten kanonisierter Autorinnen und Autoren sowie Orte; geringe Diversität an den Sample-Rändern.  
   * *Gegenmassnahmen:* Stratifizierte Sampling-Pläne; Equity-Buckets (gezielt definierte Auswahlkategorien, um Diversität sicherzustellen); Offenlegung der Auswahlfunktion; Simulation und Vergleich alternativer Auswahlregeln.  
@@ -362,9 +362,9 @@ Unter einem **Bias** wird eine Verzerrung – eine systematische Abweichung eine
 
 Bias, der durch fehlerhafte, unvollständige oder inadäquate Messung von Variablen entsteht.
 
-*Beispiel 1:* In digitalen Editionen historischer Texte wird „Bedeutung“ oft über die Häufigkeit bestimmter Begriffe erfasst, doch fehlerhafte {{< glossary OCR >}}-Erkennung \- etwa wenn das historische „ſ“ nicht als „s“ erkannt wird – oder uneinheitliches Tagging führen leicht zu systematischen Verzerrungen.
+*Beispiel 1:* In digitalen Editionen historischer Texte wird "Bedeutung" oft über die Häufigkeit bestimmter Begriffe erfasst, doch fehlerhafte {{< glossary OCR >}}-Erkennung \- etwa wenn das historische "ſ" nicht als "s" erkannt wird – oder uneinheitliches Tagging führen leicht zu systematischen Verzerrungen.
 
-*Beispiel 2:* Erfassung von Geschlecht in historischen Volkszählungen: „Beruf: Haushaltsvorstand“ wird in digitalen Datenbanken oft als „männlich“ codiert, was weibliche Haushaltsvorstände systematisch ausschliesst.
+*Beispiel 2:* Erfassung von Geschlecht in historischen Volkszählungen: "Beruf: Haushaltsvorstand" wird in digitalen Datenbanken oft als "männlich" codiert, was weibliche Haushaltsvorstände systematisch ausschliesst.
 
 #### **Auslassungsfehler (Omitted Variable Bias)** {#sec-auslassungsfehler-omitted-variable-bias}
 
@@ -388,7 +388,7 @@ Fehlerhafte Verallgemeinerung von Gruppenergebnissen auf Individuen oder Subgrup
 
 **Modifiable Areal Unit Problem (MAUP)**: Ergebnisse hängen von der gewählten räumlichen Aggregation ab.
 
-*Beispiel:* Zusammenfassung von unterschiedlichen Sozialstrukturen (zum Beispiel alle „Arbeiter“ im 19\. Jh.) überdeckt regionale Unterschiede – etwa zwischen Textilarbeiterinnen im Ruhrgebiet und Landarbeitern in Ostpreussen.
+*Beispiel:* Zusammenfassung von unterschiedlichen Sozialstrukturen (zum Beispiel alle "Arbeiter" im 19\. Jh.) überdeckt regionale Unterschiede – etwa zwischen Textilarbeiterinnen im Ruhrgebiet und Landarbeitern in Ostpreussen.
 
 #### **Stichprobenfehler (Sampling Bias)** {#sec-stichprobenfehler-sampling-bias}
 
@@ -406,7 +406,7 @@ Fehlschluss durch Vermischung von Kohorten in Querschnittsdaten, anstatt echte z
 
 Bias, der bereits in der gesellschaftlichen Realität existiert und sich in den Daten widerspiegelt, auch bei perfekter Stichprobe.
 
-*Beispiel:* Digitale Repositorien, die historische Demografie abbilden, spiegeln patriarchale Strukturen wider: Die geringe Zahl von „Frauen in Führungspositionen“ ist kein Datenfehler, sondern gesellschaftliche Realität.
+*Beispiel:* Digitale Repositorien, die historische Demografie abbilden, spiegeln patriarchale Strukturen wider: Die geringe Zahl von "Frauen in Führungspositionen" ist kein Datenfehler, sondern gesellschaftliche Realität.
 
 #### **Populationsfehler (Population Bias)** {#sec-populationsfehler-population-bias}
 
@@ -420,7 +420,7 @@ Unterschiede zwischen Nutzenden der Plattform und der Zielpopulation, zum Beispi
 
 Bias, der durch algorithmische Designentscheidungen entsteht, unabhängig von Bias in den Daten (zum Beispiel durch Auswahl der Optimierungsfunktion).
 
-*Beispiel:* {{< glossary "Topic Modeling" >}} von philosophischen Texten ergibt „Themen“, die Resultat von Wortlisten und Stoppwortdefinitionen sind, aber von Nicht-Expert\*innen als inhaltlich signifikante Topoi interpretiert werden.
+*Beispiel:* {{< glossary "Topic Modeling" >}} von philosophischen Texten ergibt "Themen", die Resultat von Wortlisten und Stoppwortdefinitionen sind, aber von Nicht-Expert\*innen als inhaltlich signifikante Topoi interpretiert werden.
 
 #### **Evaluationsfehler (Evaluation Bias)** {#sec-evaluationsfehler-evaluation-bias}
 
@@ -440,7 +440,7 @@ Ungleichgewicht, das durch visuelle, typografische oder layoutbezogene Hervorheb
 
 Systematische Verzerrung durch Sortierlogiken, die Klicks, Zitationszahlen oder Metadatenfülle belohnen. Höhere Position führt zu mehr Aufmerksamkeit, was die ursprüngliche Rangordnung verstärkt, unabhängig von Relevanz.
 
-*Beispiel:* Museumsportal sortiert nach „Meist betrachtet“. Kolonialzeitliche Exponate mit früher Social-Media-Reichweite dominieren, während neu katalogisierte Objekte aus dem Globalen Süden kaum Sichtbarkeit erhalten.
+*Beispiel:* Museumsportal sortiert nach "Meist betrachtet". Kolonialzeitliche Exponate mit früher Social-Media-Reichweite dominieren, während neu katalogisierte Objekte aus dem Globalen Süden kaum Sichtbarkeit erhalten.
 
 #### **Popularitätsfehler (Popularity Bias)** {#sec-popularitätsfehler-popularity-bias}
 
@@ -476,7 +476,7 @@ Unterschiedliches Verhalten von Nutzenden je nach Plattform, Kontext oder Zeit.
 
 Verzerrungen, die sich aus zeitlichen Veränderungen in Verhalten oder Population ergeben.
 
-*Beispiel:* Die Häufigkeit von Suchbegriffen in Archiven schwankt mit Debatten (zum Beispiel „Pandemie“ 2020/21), was langfristige Analysen verzerrt.
+*Beispiel:* Die Häufigkeit von Suchbegriffen in Archiven schwankt mit Debatten (zum Beispiel "Pandemie" 2020/21), was langfristige Analysen verzerrt.
 
 #### **Inhaltsproduktionsfehler (Content Production Bias)** {#sec-inhaltsproduktionsfehler-content-production-bias}
 
@@ -486,7 +486,7 @@ Verzerrungen, die auf Unterschieden in Struktur, Lexik, Semantik und Syntax nutz
 
 ## Unterdrückung in Daten (Oppression in Data)
 
-Oppression ist nicht bloss eine einzelne Handlung der Benachteiligung, sondern das Zusammenspiel von Praktiken, Diskursen und Institutionen, die Handlungsspielräume ganzer Gruppen systematisch einengen. In der feministischen Machttheorie wird Unterdrückung als **strukturelles „power-over“** verstanden: eine dauerhafte, nicht-zufällige Konstellation, in der Institutionen, Normen und symbolische Ordnungen bestimmte Gruppen in ihren Optionen einschränken, während andere privilegiert werden.[@young_justice_1990] Unterdrückung wirkt **materiell** (physisch, ökonomisch), **symbolisch** (Stigmatisierung, Unsichtbarmachung) und **epistemisch** (Festlegung dessen, was als Wissen gilt).
+Oppression ist nicht bloss eine einzelne Handlung der Benachteiligung, sondern das Zusammenspiel von Praktiken, Diskursen und Institutionen, die Handlungsspielräume ganzer Gruppen systematisch einengen. In der feministischen Machttheorie wird Unterdrückung als **strukturelles "power-over"** verstanden: eine dauerhafte, nicht-zufällige Konstellation, in der Institutionen, Normen und symbolische Ordnungen bestimmte Gruppen in ihren Optionen einschränken, während andere privilegiert werden.[@young_justice_1990] Unterdrückung wirkt **materiell** (physisch, ökonomisch), **symbolisch** (Stigmatisierung, Unsichtbarmachung) und **epistemisch** (Festlegung dessen, was als Wissen gilt).
 
 Historische Daten- und Metadatenpraktiken können Unterdrückung auf mindestens drei Ebenen reproduzieren: ontologisch, epistemisch und infrastrukturell. Diese Formen wirken kumulativ: Jede einzelne Drahtstrebe, beispielsweise ein kontrolliertes Vokabular, scheint zunächst harmlos. Doch im Zusammenspiel entsteht ein Käfig, der die Bewegungsfreiheit bestimmter Gruppen systematisch einschränkt.[@frye_politics_1983]
 
@@ -496,16 +496,16 @@ Historische Daten- und Metadatenpraktiken können Unterdrückung auf mindestens 
 
 *Beispiele:*
 
-* Binarer `dc:gender`\-Wert („male“/„female“) löscht nicht-binäre Identitäten.  
+* Binarer `dc:gender`\-Wert ("male"/"female") löscht nicht-binäre Identitäten.  
 * Koloniale Ethnonyme in Normdaten ("Hottentotte") perpetuieren rassistische Klassifikationen.
 
 ### Epistemische Gewalt
 
-*Wirkmechanismus:* Verunmöglicht Wissen, indem es bestimmte Perspektiven ausschliesst oder als „Rauschen“ markiert.[@spivak_subaltern_1988]
+*Wirkmechanismus:* Verunmöglicht Wissen, indem es bestimmte Perspektiven ausschliesst oder als "Rauschen" markiert.[@spivak_subaltern_1988]
 
 *Beispiele:*
 
-* Aggregations-Metadaten, die Briefe von Dienstbotinnen als „miscellaneous“ ablegen.  
+* Aggregations-Metadaten, die Briefe von Dienstbotinnen als "miscellaneous" ablegen.  
 * Diplomatenschriftverkehr wird dagegen fein granular erschlossen.
 
 ### Infrastrukturelle Gewalt
@@ -523,9 +523,9 @@ Historische Daten sind in ihrer Entstehung, Überlieferung und Digitalisierung s
 
 Messbarkeit bleibt begrenzt, weil zentrale Grössen nur über Proxy-Variablen zugänglich sind. {{< glossary OCR >}}/{{< glossary HTR >}}-Fehler, Normalisierungen und Kategorienschnitte erzeugen Verzerrungen, die nicht homogen über Sprachen, Schriften und Gruppen wirken. Operationalisierungen sollten deshalb mit Fehlermodellen verknüpft werden, die Unsicherheiten quantifizieren; Zum Beispiel Konfidenzintervalle für {{< glossary CER >}}/{{< glossary WER >}} und gruppenspezifische Recall/Precision. Fairnessbegriffe sind zudem konkurrierend: Parität in der Trefferquote, Gleichheit der Fehlerraten und Nutzenmaximierung lassen sich oft nicht gleichzeitig erreichen. Solche Zielkonflikte sind offen zu benennen und als Governance-Entscheidungen zu verantworten.
 
-Die verschiedenen Formen von Verzerrung, direkt, indirekt, strukturell oder institutionell, wirken nicht isoliert, sondern greifen ineinander. Entscheidungen im Digitalisierungsprozess, etwa eine stratifizierte Auswahl, prägen dadurch unmittelbar spätere Suchergebnisse und deren Interpretation. Hinzu treten klassische Repräsentativitätsprobleme: Korpusgrenzen, Überlieferungs- und Auswahlverzerrungen sowie zeitliche Verschiebungen („dataset shift“) mindern die Übertragbarkeit von Befunden. Kausale Schlussfolgerungen aus solchen Beobachtungsdaten sind deshalb nur unter starken Zusatzannahmen belastbar. Potenzielle Störfaktoren wie Confounding, Selektions- oder Messfehler sind als zentrale Hypothesen zu behandeln – nicht als nachträgliche Randbemerkung.
+Die verschiedenen Formen von Verzerrung, direkt, indirekt, strukturell oder institutionell, wirken nicht isoliert, sondern greifen ineinander. Entscheidungen im Digitalisierungsprozess, etwa eine stratifizierte Auswahl, prägen dadurch unmittelbar spätere Suchergebnisse und deren Interpretation. Hinzu treten klassische Repräsentativitätsprobleme: Korpusgrenzen, Überlieferungs- und Auswahlverzerrungen sowie zeitliche Verschiebungen ("dataset shift") mindern die Übertragbarkeit von Befunden. Kausale Schlussfolgerungen aus solchen Beobachtungsdaten sind deshalb nur unter starken Zusatzannahmen belastbar. Potenzielle Störfaktoren wie Confounding, Selektions- oder Messfehler sind als zentrale Hypothesen zu behandeln – nicht als nachträgliche Randbemerkung.
 
-Schliesslich sind rechtlich-ethische und ökologische Grenzen mitzudenken. Re-Identifikationsrisiken steigen mit Verknüpfbarkeit; {{< glossary CARE >}}-Prinzipien und Wissenssouveränität kollidieren mit radikal offener Nachnutzung. Digitale Nachhaltigkeit verlangt formatarme, langlebige Lösungen und eine Energie- und Speicherökonomie, die den wissenschaftlichen Nutzen gegen ökologische Kosten abwägt. Der methodische Mindeststandard ist deshalb „interpretative Bescheidenheit“: Ergebnisse werden als bedingt, kontextualisiert und replizierbar ausgewiesen.
+Schliesslich sind rechtlich-ethische und ökologische Grenzen mitzudenken. Re-Identifikationsrisiken steigen mit Verknüpfbarkeit; {{< glossary CARE >}}-Prinzipien und Wissenssouveränität kollidieren mit radikal offener Nachnutzung. Digitale Nachhaltigkeit verlangt formatarme, langlebige Lösungen und eine Energie- und Speicherökonomie, die den wissenschaftlichen Nutzen gegen ökologische Kosten abwägt. Der methodische Mindeststandard ist deshalb "interpretative Bescheidenheit": Ergebnisse werden als bedingt, kontextualisiert und replizierbar ausgewiesen.
 
 ## Daten über Daten
 
@@ -543,7 +543,7 @@ Da viele textuelle Forschungsdaten nur auf Papier oder in unstrukturierter digit
 
 Metadaten enthalten strukturierte Informationen über Objekte, insbesondere über deren Inhalt, Kontext und Struktur. Dabei ermöglichen bzw. erleichtern sie deren Identifikation, Auffindbarkeit, Organisation, Verwaltung, Kontextualisierung und Nutzung. Metadaten sollten so strukturiert sein, dass sie die wichtigsten Attribute des beschriebenen Objekttyps modellieren. Ihre Speicherung erfolgt entweder unabhängig von oder auch zusammen mit den ihnen zugeordneten Daten.
 
-![Plakat des Circus Knie für eine „Völkerschau“, Darstellung von stereotypisierten Szenen mit Männern beim Handwerk, Schweiz, 20\. Jahrhundert.](images/image6.jpg){fig-alt="Plakat mit rotem Hintergrund: Drei Männer in bunten Gewändern und Turbanen führen Handarbeiten aus – einer webt, einer hält Schmuck, einer arbeitet mit Tongefässen. Darunter steht gross „KNIE“ und kleiner „Völkerschau“." width="1393" height="1999" .img-fluid }
+![Plakat des Circus Knie für eine "Völkerschau", Darstellung von stereotypisierten Szenen mit Männern beim Handwerk, Schweiz, 20\. Jahrhundert.](images/image6.jpg){fig-alt="Plakat mit rotem Hintergrund: Drei Männer in bunten Gewändern und Turbanen führen Handarbeiten aus – einer webt, einer hält Schmuck, einer arbeitet mit Tongefässen. Darunter steht gross "KNIE" und kleiner "Völkerschau"." width="1393" height="1999" .img-fluid }
 
 Zur Illustration Begrifflichkeiten rund um Metadaten greifen wir auf die Metadaten des Beispiels [*Knie Völkerschau*](https://www.europeana.eu/de/item/92023/images_billed_2010_okt_billeder_object488811) zurück. Wir haben es ausgewählt, weil es exemplarisch für problematische, kolonial geprägte Darstellungsweisen in populärer Unterhaltungskultur des 20\. Jahrhunderts steht und über reichhaltige Metadaten verfügt.
 
@@ -609,7 +609,7 @@ Das Beispiel *Knie Völkerschau* nutzt sowohl kontrollierte als auch freie Werte
 * `dc:type` enthält `"Still image"`, `"Poster"` – konform mit dem **{{< glossary AAT >}}** oder **{{< glossary EDM >}} Type Vocabulary**  
 * `edm:country` ist `"Denmark"` → entspricht **{{< glossary ISO >}} 3166-1 Alpha-2**  
 * `dc:rights` verweist auf die **CC-Lizenz** [`http://creativecommons.org/licenses/by-nc-nd/4.0/`](http://creativecommons.org/licenses/by-nc-nd/4.0/)  
-* `dc:subject` („Knie“, „Cirkus“, „Håndværker“) könnte auf eine kontrollierte Vokabularquelle wie **{{< glossary GND >}}** oder **Wikidata** gemappt werden
+* `dc:subject` ("Knie", "Cirkus", "Håndværker") könnte auf eine kontrollierte Vokabularquelle wie **{{< glossary GND >}}** oder **Wikidata** gemappt werden
 
 #### **3\. Inhaltsstandard *(Semantische Bedeutung von Feldern)*** {#sec-3-inhaltsstandard-semantische-bedeutung-von-feldern}
 
@@ -617,7 +617,7 @@ Legt fest, **welche Informationen in welchen Feldern** erfasst werden sollen und
 
 Die Belegung der Felder des Beispiels *Knie Völkerschau* folgt dem **{{< glossary "Dublin Core" >}} Element Set ({{< glossary "Dublin Core" display="DCMES" >}})** und dem **{{< glossary EDM display="Europeana Data Model (EDM)" >}}**:
 
-* `dc:title` enthält den Titel des Plakats („Knie Völkerschau“)  
+* `dc:title` enthält den Titel des Plakats ("Knie Völkerschau")  
 * `dc:description` beschreibt Motiv, Technik und Masse der Lithografie  
 * `dc:subject` benennt thematische Schlagwörter  
 * `dc:rights` informiert über urheberrechtliche Bedingungen  
@@ -675,13 +675,13 @@ Das Beispiel *Knie Völkerschau* ist vollständig eingebettet in ein interoperab
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
 | `dc:title` | `xsd:string@de` | Freitext | **{{< glossary "Dublin Core" >}}: Title** | {{< glossary "Dublin Core" display="DCMES" >}}, {{< glossary EDM >}} | {{< glossary JSON >}}, {{< glossary RDF >}}/{{< glossary XML >}} | UI-Label: *Titel* | Europeana API, {{< glossary OAI-PMH >}} |
 | `dc:description` | `xsd:string@da` | Freitext, gegebenenfalls Getty {{< glossary AAT >}}-Terms | **{{< glossary "Dublin Core" display="DC" >}}: Description** | {{< glossary "Dublin Core" display="DCMES" >}} | JSON | Accordion-Feld, Tooltip | {{< glossary OAI-PMH >}}, {{< glossary JSON-LD >}} |
-| `dc:date` | `xsd:gYear` oder `xsd:string` | {{< glossary ISO >}} 8601, „1969?“ (unsicher) | **{{< glossary "Dublin Core" display="DC" >}}: Date** | {{< glossary EDM >}} Timespan, {{< glossary "Dublin Core" display="DCMES" >}} | {{< glossary RDF >}}/{{< glossary XML >}}, {{< glossary JSON-LD >}} | Formatierter Zeitstempel | `edm:hasMet` \+ {{< glossary IIIF >}} Timeline |
-| `dc:type` | URI / `xsd:string@da` | **{{< glossary AAT >}} URI**, `poster`, `Still image` | **{{< glossary "Dublin Core" display="DC" >}}: Type** | {{< glossary "Dublin Core" display="DCMES" >}}, {{< glossary EDM >}} \+ Europeana Vocabularies | {{< glossary RDF >}} | Facette: „Medientyp“ | Linked Open Data / {{< glossary EDM >}} |
+| `dc:date` | `xsd:gYear` oder `xsd:string` | {{< glossary ISO >}} 8601, "1969?" (unsicher) | **{{< glossary "Dublin Core" display="DC" >}}: Date** | {{< glossary EDM >}} Timespan, {{< glossary "Dublin Core" display="DCMES" >}} | {{< glossary RDF >}}/{{< glossary XML >}}, {{< glossary JSON-LD >}} | Formatierter Zeitstempel | `edm:hasMet` \+ {{< glossary IIIF >}} Timeline |
+| `dc:type` | URI / `xsd:string@da` | **{{< glossary AAT >}} URI**, `poster`, `Still image` | **{{< glossary "Dublin Core" display="DC" >}}: Type** | {{< glossary "Dublin Core" display="DCMES" >}}, {{< glossary EDM >}} \+ Europeana Vocabularies | {{< glossary RDF >}} | Facette: "Medientyp" | Linked Open Data / {{< glossary EDM >}} |
 | `dc:subject` | `xsd:string@da` | **{{< glossary GND >}}** / kontrollierte Schlagwörter | **{{< glossary "Dublin Core" display="DC" >}}: Subject** | {{< glossary "Dublin Core" display="DCMES" >}} | {{< glossary JSON >}} | Schlagwortliste | {{< glossary "VIAF" >}}, Wikidata, Linked Data |
 | `dc:identifier` | `anyURI` | HTTP-URL | **{{< glossary "Dublin Core" display="DC" >}}: Identifier** | {{< glossary "Dublin Core" display="DCMES" >}}, {{< glossary EDM >}} Aggregation | {{< glossary JSON-LD >}} | als anklickbarer Link | persistente URI (PURL/DOI) |
 | `dc:rights` | URI \+ `xsd:string` | **CC URI**, `RightsStatements.org` | **{{< glossary "Dublin Core" display="DC" >}}: Rights** | {{< glossary "Dublin Core" display="DCMES" >}}, {{< glossary EDM >}} Rights | {{< glossary RDF >}}, {{< glossary JSON >}} | CC-Logo, Textlink | Interoperables Lizenzsystem |
 | `edm:isShownBy` | `anyURI` | {{< glossary IIIF >}} Image Service URI | **{{< glossary EDM >}}: isShownBy** | {{< glossary EDM >}} Aggregation | {{< glossary RDF >}} | Bild-Embed | {{< glossary IIIF >}} Image API |
-| `edm:isShownAt` | `anyURI` | Originalquellenlink | **{{< glossary EDM >}}: isShownAt** | {{< glossary EDM >}} Aggregation | {{< glossary JSON-LD >}} | Button „Zur Quelle“ | {{< glossary OAI-PMH >}}, Europeana Portal |
+| `edm:isShownAt` | `anyURI` | Originalquellenlink | **{{< glossary EDM >}}: isShownAt** | {{< glossary EDM >}} Aggregation | {{< glossary JSON-LD >}} | Button "Zur Quelle" | {{< glossary OAI-PMH >}}, Europeana Portal |
 | `edm:preview` | {{< glossary IIIF >}} Thumbnail URI | {{< glossary IIIF >}}-compliant | **{{< glossary EDM >}}: preview** | {{< glossary EDM >}} Aggregation | {{< glossary JSON-LD >}} | Thumbnail-Bild | {{< glossary IIIF >}} Presentation API |
 | `edm:dataProvider` | URI \+ Name (String) | Europeana Org-ID | **{{< glossary EDM >}}: dataProvider** | {{< glossary EDM >}} | {{< glossary RDF >}} | Link zur Institution | Europeana Registry / LOD |
 | `edm:language` | {{< glossary ISO >}} 639-1 Code | `da`, `en`, `de`, ... | **{{< glossary EDM >}}: language** | {{< glossary EDM >}} | {{< glossary JSON >}} | Flaggensymbol \+ Sprachname | Multilingual indexing |
@@ -696,7 +696,7 @@ Dieses Kapitel bündelt drei komplementäre Orientierungen der Forschungsdatenpr
 
 ### Begriffsklärungen: offen, öffentlich, Open Data
 
-„**Offen**“ bezeichnet rechtlich und technisch definierte Nachnutzbarkeit. Offenheit wird durch Lizenzierung, Standards und Dokumentation hergestellt. „**Öffentlich**“ meint faktische Sichtbarkeit ohne Zugangsbeschränkungen. Offenheit ist möglich ohne Öffentlichkeit, etwa bei Zugang auf Antrag bei offener Lizenz und klaren Metadaten; umgekehrt können öffentlich sichtbare Daten nicht offen sein, wenn Lizenz oder Nutzungsbedingungen Nachnutzung verhindern. „**Open Data**“ steht normativ für Daten, die allen zur Verfügung stehen, typischerweise unter Free-Culture-Lizenzen wie [CC0](https://creativecommons.org/publicdomain/zero/1.0/), [CC BY](https://creativecommons.org/licenses/by/4.0/) oder [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/). Offene Daten senken Zugangshürden und fördern Kollaboration; sie sind jedoch kein Selbstzweck. Sensible Quellen, personenbezogene Metadaten und schutzwürdige Kontexte erfordern abgestufte Zugänge, transparente Bedingungen und sorgfältige Abwägungen. Für Gedächtnisinstitutionen liefern die [OpenGLAM-Prinzipien](https://openglam.org/principles/), das [5-Sterne-Modell für Open Data](https://5stardata.info/de/) und die [Open-Data-Policy-Guidelines](https://sunlightfoundation.com/opendataguidelines/) zusätzliche Orientierung; zum Gemeinfreiheitsregime in der Schweiz informiert ein [Factsheet des IGE](https://www.ige.ch/en/protecting-your-ip/copyright/using-a-work/public-domain).
+"**Offen**" bezeichnet rechtlich und technisch definierte Nachnutzbarkeit. Offenheit wird durch Lizenzierung, Standards und Dokumentation hergestellt. "**Öffentlich**" meint faktische Sichtbarkeit ohne Zugangsbeschränkungen. Offenheit ist möglich ohne Öffentlichkeit, etwa bei Zugang auf Antrag bei offener Lizenz und klaren Metadaten; umgekehrt können öffentlich sichtbare Daten nicht offen sein, wenn Lizenz oder Nutzungsbedingungen Nachnutzung verhindern. "**Open Data**" steht normativ für Daten, die allen zur Verfügung stehen, typischerweise unter Free-Culture-Lizenzen wie [CC0](https://creativecommons.org/publicdomain/zero/1.0/), [CC BY](https://creativecommons.org/licenses/by/4.0/) oder [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/). Offene Daten senken Zugangshürden und fördern Kollaboration; sie sind jedoch kein Selbstzweck. Sensible Quellen, personenbezogene Metadaten und schutzwürdige Kontexte erfordern abgestufte Zugänge, transparente Bedingungen und sorgfältige Abwägungen. Für Gedächtnisinstitutionen liefern die [OpenGLAM-Prinzipien](https://openglam.org/principles/), das [5-Sterne-Modell für Open Data](https://5stardata.info/de/) und die [Open-Data-Policy-Guidelines](https://sunlightfoundation.com/opendataguidelines/) zusätzliche Orientierung; zum Gemeinfreiheitsregime in der Schweiz informiert ein [Factsheet des IGE](https://www.ige.ch/en/protecting-your-ip/copyright/using-a-work/public-domain).
 
 ### {{< glossary FAIR >}}: Nachnutzbarkeit als Leitlinie
 
@@ -796,7 +796,7 @@ Als Ausgangspunkt sollten etablierte Schemata wie das {{< glossary "Dublin Core"
 
 Darüber hinaus ist die frühzeitige Planung von Normdaten, kontrollierten Vokabularen, technischen Plattformen und Datenflüssen entscheidend. Bei der Definition der Metadatenfelder empfiehlt es sich, zunächst alle relevanten Informationen zu sammeln (zum Beispiel Zeitangaben, Geokoordinaten, Lizenzhinweise, Versionsgeschichte). Ob Angaben in eigenen Feldern oder in Kommentarfeldern erfasst werden, hängt von Automatisierbarkeit, Standardisierung und Aggregationsanforderungen ab.
 
-Ein weiterer wichtiger Aspekt in diesem Schritt ist **die Sensibilität** gegenüber impliziten Annahmen, die mit Metadatenschemata und {{< glossary Ontologie display="Ontologien" >}} verbunden sind. Jede Klassifikation trifft bestimmte Aussagen über die Welt und ist daher nie neutral. Durch ihre Ordnungsstrukturen suggerieren Metadatenschemata häufig Allgemeingültigkeit und Objektivität, blenden jedoch Widersprüche, Ein- und Ausschlüsse aus. Beispiele hierfür sind die implizite Annahme eines Kernfamilienmodells in standardisierten Erhebungsbögen oder die westlich geprägten Vorstellungen von Besitz und Urheberschaft, die sich etwa in den Dublin-Core-Elementen “creator*”* und “rights” niederschlagen.
+Ein weiterer wichtiger Aspekt in diesem Schritt ist **die Sensibilität** gegenüber impliziten Annahmen, die mit Metadatenschemata und {{< glossary Ontologie display="Ontologien" >}} verbunden sind. Jede Klassifikation trifft bestimmte Aussagen über die Welt und ist daher nie neutral. Durch ihre Ordnungsstrukturen suggerieren Metadatenschemata häufig Allgemeingültigkeit und Objektivität, blenden jedoch Widersprüche, Ein- und Ausschlüsse aus. Beispiele hierfür sind die implizite Annahme eines Kernfamilienmodells in standardisierten Erhebungsbögen oder die westlich geprägten Vorstellungen von Besitz und Urheberschaft, die sich etwa in den Dublin-Core-Elementen "creator*"* und "rights" niederschlagen.
 
 Bei der Festlegung von Metadatenfeldern stellt sich häufig die Frage, ob bestimmte Angaben in eigenständigen Feldern oder in einem allgemeinen Kommentarfeld erfasst werden sollten. Die Entscheidung hängt dabei von Kriterien wie Automatisierbarkeit, Häufigkeit der Nutzung, Standardisierung, Anforderungen durch Aggregatoren sowie der gewünschten Flexibilität ab. In der Praxis erfolgt die Modellierung der Felder meist iterativ und parallel zur Quellenannotation. Dabei kann es vorkommen, dass ursprünglich geplante Felder wieder verworfen oder angepasst werden müssen, weil sich herausstellt, dass sie nur für einen Teil der Objekte relevant sind.
 
@@ -825,17 +825,17 @@ In dieser Phase werden die eigentlichen Forschungsdaten erzeugt oder gesammelt. 
 
 In der Praxis findet oftmals eine Kombination aus Primärerschliesung und Re-Use statt. So kann es von Vorteil sein, jeweils bei den Gedächtnisinstitutionen und Portalen nachzuschauen. Beispielsweise liegen bei Europeana oftmals schon Metadaten bereit, die ganz oder in Teilen übernommen werden können. Im Idealfall sind diese Datensätze bereits miteinander kompatibel (beziehungsweise interoperabel) und können reibungs- und verlustarm ineinander überführt werden. In der Realität muss jedoch beim Zusammenführen, Anreichern, Ausdünnen und Korrigieren bestehender Metadatensätze meist eine Reihe von Entscheidungen, Abwägungen und Anpassungen getroffen werden. Ausserdem ist im Blick auf eine diskriminierungssensible Metadatenpraxis zu beachten, dass Archive stets einen selektiven Einblick auf Geschichte geben, dem man sich bei deren Verwendung stets bewusst sein sollte. Ein Rückgriff auf bestehende Metadaten birgt deshalb stets auch das Risiko einer unbewussten Reproduktion potenziell diskriminierender Inhalte.
 
-![Screenshot aus Europeana: Metadaten zum “Genozid-Denkmal” in Ejmiacin, Armenien. ](images/image7.png){fig-alt="Screenshot eines Metadateneintrags in Europeana zum Objekt “Genozid-Denkmal” mit Angaben wie “Betreff”, “Datenpartner” oder “Rechtehinweise”." width="949" height="964" .img-fluid }
+![Screenshot aus Europeana: Metadaten zum "Genozid-Denkmal" in Ejmiacin, Armenien. ](images/image7.png){fig-alt="Screenshot eines Metadateneintrags in Europeana zum Objekt "Genozid-Denkmal" mit Angaben wie "Betreff", "Datenpartner" oder "Rechtehinweise"." width="949" height="964" .img-fluid }
 
-Zum Objekt [“Genozid-Denkmal”](https://www.europeana.eu/de/item/199/item_EIXXGS4W5AVJLCA556YUS4IRIS2CRMF5?page=2) aus Europeana liegen schon einige Metadaten bereit. Erfasst sind der **Betreff** (Skulptur) und die **Objektart** (memorials/monuments). Als **Datenpartner** wird das Deutsche Dokumentationszentrum für Kunstgeschichte \- Bildarchiv Foto Marburg angegeben, während die **Deutsche Digitale Bibliothek** als Aggregator fungiert und die Metadaten zusammenzog. Weitere Angaben betreffen das **Erstellungsdatum** (1965), den **Ort** (Ejmiacin), die **Sammlung** (199 DDB BildarchivFotoMarburg) sowie die **Rechteinformation** nach rightsstatements.org.
+Zum Objekt ["Genozid-Denkmal"](https://www.europeana.eu/de/item/199/item_EIXXGS4W5AVJLCA556YUS4IRIS2CRMF5?page=2) aus Europeana liegen schon einige Metadaten bereit. Erfasst sind der **Betreff** (Skulptur) und die **Objektart** (memorials/monuments). Als **Datenpartner** wird das Deutsche Dokumentationszentrum für Kunstgeschichte \- Bildarchiv Foto Marburg angegeben, während die **Deutsche Digitale Bibliothek** als Aggregator fungiert und die Metadaten zusammenzog. Weitere Angaben betreffen das **Erstellungsdatum** (1965), den **Ort** (Ejmiacin), die **Sammlung** (199 DDB BildarchivFotoMarburg) sowie die **Rechteinformation** nach rightsstatements.org.
 
 Im Beispiel wird deutlich, dass die Metadaten zwar formale Metadaten enthalten, jedoch wesentliche Aspekte einer diskriminierungssensiblen Metadatenpraxins fehlen. So bleibt die Beschreibung auf einer technischen, oberflächlichen Ebene, ohne den historischen Kontext, also den Genozid an den Armenier\*innen, zu benennen. Auch die Betroffenenperspektive findet nirgends Ausdruck: Weder werden anerkannte Selbstbezeichnungen verwendet, noch gibt es Verweise auf Ressourcen der armenischen Community. Stattdessen stehen ausschliesslich die beteiligten Institutionen als Datenpartner im Vordergrund. Zudem beschränken sich die Metadaten auf Deutsch und Englisch; eine Mehrsprachigkeit unter Einbezug der armenischen Sprache wäre jedoch zentral, um kulturelle Kontexte sichtbar zu machen. Schliesslich behandelt der Rechtehinweis lediglich die Nachnutzung des Fotos, nicht aber die kulturelle Sensibilität des Denkmals selbst. Eine diskriminierungssensible Metadatenpraxis sollte im Gegensatz über die rein formale Erfassung hinausgehen, indem sie präzisere Benennungen wählt, historische Einordnungen in einem Beschreibungsfeld ergänzt, Mehrsprachigkeit ermöglicht und vor allem die Perspektiven und Stimmen der betroffenen Communities einbezieht. Dies müsste bei der Erstellung alles berücksichtigt und neu erfasst werden.
 
 Beim Zusammenführen von Metadaten sollten in einem letzten Schritt alle **Fehlstellen, Unstimmigkeiten und möglichen Informationsverluste** transparent gemacht werden. Zudem ist es wichtig, die **getroffenen Entscheidungen nachvollziehbar zu dokumentieren**, um den Prozess für andere überprüfbar und weiterführbar zu halten. Dazu gehört auch, **kontaminiertes Archivgut** (Diskriminierungen, Lücken, Biases oder ethische Konflikte) zu dokumentieren und in den neuen Metadaten oder Paradaten auszuweisen.
 
-![Screenshot aus dem Online-Zugang des Schweizerischen Bundesarchivs zur Akte „Zigeuner-Problem“ (Signatur E4001E\#1991/200\#143\*), erstellt 1972–1982, abgelegt beim Generalsekretariat des Eidgenössischen Justiz- und Polizeidepartements.](images/image8.png){fig-alt="Webseite des Schweizerischen Bundesarchivs mit Informationen zur Akte „Zigeuner-Problem“. Angezeigt werden Signatur, Titel, Entstehungszeitraum (1972–1982), Zugänglichkeit („frei zugänglich“), Aktenzeichen (0172), Provenienz (Generalsekretariat EJPD, 1953–1983) sowie der Archivplan mit Verlinkungen." width="1152" height="1134" .img-fluid }
+![Screenshot aus dem Online-Zugang des Schweizerischen Bundesarchivs zur Akte "Zigeuner-Problem" (Signatur E4001E\#1991/200\#143\*), erstellt 1972–1982, abgelegt beim Generalsekretariat des Eidgenössischen Justiz- und Polizeidepartements.](images/image8.png){fig-alt="Webseite des Schweizerischen Bundesarchivs mit Informationen zur Akte "Zigeuner-Problem". Angezeigt werden Signatur, Titel, Entstehungszeitraum (1972–1982), Zugänglichkeit ("frei zugänglich"), Aktenzeichen (0172), Provenienz (Generalsekretariat EJPD, 1953–1983) sowie der Archivplan mit Verlinkungen." width="1152" height="1134" .img-fluid }
 
-Das Dossier [“Zigeuner-Problem”](https://www.recherche.bar.admin.ch/recherche/#/en/archive/unit/3187803) im Schweizer Bundesarchiv macht deutlich, wie selbst Archivtitel Diskriminierung reproduzieren können. Diese stigmatisierende Fremdbezeichnung entstand in der damaligen Behördenpraxis und sollte zwar für heutige Nutzer\*innen zur Sicherung der Authentizität erhalten bleiben, gleichzeitig jedoch in den Metadaten oder Paradaten klar als diskriminierende Bezeichnung markiert und kontextualisiert werden. Konkret könnte beispielsweise in den Metadaten ein Hinweis auf die Verfolgung von Sinti und Roma sowie alternative Suchbegriffe respektive Selbstbezeichnungen stehen.
+Das Dossier ["Zigeuner-Problem"](https://www.recherche.bar.admin.ch/recherche/#/en/archive/unit/3187803) im Schweizer Bundesarchiv macht deutlich, wie selbst Archivtitel Diskriminierung reproduzieren können. Diese stigmatisierende Fremdbezeichnung entstand in der damaligen Behördenpraxis und sollte zwar für heutige Nutzer\*innen zur Sicherung der Authentizität erhalten bleiben, gleichzeitig jedoch in den Metadaten oder Paradaten klar als diskriminierende Bezeichnung markiert und kontextualisiert werden. Konkret könnte beispielsweise in den Metadaten ein Hinweis auf die Verfolgung von Sinti und Roma sowie alternative Suchbegriffe respektive Selbstbezeichnungen stehen.
 
 ::: {.callout-tip title="Kritische Fragen an bestehende Metadaten"}
 
@@ -857,7 +857,7 @@ Das Dossier [“Zigeuner-Problem”](https://www.recherche.bar.admin.ch/recherch
 
 ### 2.2 Kontextualisierung der Quellen {#sec-22-kontextualisierung-der-quellen}
 
-Wenn wie in den Beispielen “Genozid-Denkmal” oder “Zigeuner-Problem” eine Kontextualisierung fehlt, muss in diesem Schritt eine Analyse des Entstehungs- sowie des Verwendungskontextes vorgenommen werden. Mit Blick auf einen diskriminierungssensiblen Umgang mit historischen Quellen gilt es zu beachten, dass sich diskriminierende Ideologien im Lauf der Zeit verändert haben. Eine fundierte Analyse der historischen Überlieferungsgeschichte erlaubt es, die Wirkungsmacht dieser Ideologien zum Zeitpunkt der Objekterstellung zu rekonstruieren und damit kritisch zu reflektieren. Im Zentrum steht dabei die Frage “Unter welchen Umständen und mit welcher Absicht wurde die Quelle verfasst?”.[@WerkzeugkastenGeschichte_2016]
+Wenn wie in den Beispielen "Genozid-Denkmal" oder "Zigeuner-Problem" eine Kontextualisierung fehlt, muss in diesem Schritt eine Analyse des Entstehungs- sowie des Verwendungskontextes vorgenommen werden. Mit Blick auf einen diskriminierungssensiblen Umgang mit historischen Quellen gilt es zu beachten, dass sich diskriminierende Ideologien im Lauf der Zeit verändert haben. Eine fundierte Analyse der historischen Überlieferungsgeschichte erlaubt es, die Wirkungsmacht dieser Ideologien zum Zeitpunkt der Objekterstellung zu rekonstruieren und damit kritisch zu reflektieren. Im Zentrum steht dabei die Frage "Unter welchen Umständen und mit welcher Absicht wurde die Quelle verfasst?".[@WerkzeugkastenGeschichte_2016]
 
 Zudem helfen bei der Kontextualisierung die acht W-Fragen: Wer? Wann? Wo? Welche Quelle? Warum? An wen? Wie/wer überlieferte? Wovon zeugt sie, wovon schweigt sie?
 
@@ -919,7 +919,7 @@ Es kann zwischen **intrinsischen und extrinsischen Schlagwörtern** unterschiede
 
 * **Lücken:** Fehlende Personenidentitäten explizit kennzeichnen. Keine Annahmen zu Nationalität, Geschlecht etc. treffen.  
 * **Widersprüche:** Abweichende Datierungen oder Ortsangaben parallel erfassen und Quellenlage dokumentieren.  
-* **Unsicherheit:** Unscharfe Angaben formal kennzeichnen (z. B. {{< glossary EDTF >}} „\~1905“).
+* **Unsicherheit:** Unscharfe Angaben formal kennzeichnen (z. B. {{< glossary EDTF >}} "\~1905").
 * **Häufige Fehler:**  
   * Nacktheit und Sexualität ohne Kontext sexualisieren  
   * Personen über Diskriminierungsmarker essenzialisieren  
@@ -929,14 +929,14 @@ Es kann zwischen **intrinsischen und extrinsischen Schlagwörtern** unterschiede
 ::: {.callout-tip title="Freitext-Beschreibung und bewusste Begriffsentscheidungen**"}
 
 * Respektvolle, auf Care ausgerichtete Sprache statt vermeintlicher Neutralität  
-* Aktive und präzise Ausdrucksweise („X tötete Y“ statt Passivformen)  
+* Aktive und präzise Ausdrucksweise ("X tötete Y" statt Passivformen)  
 * Machtverhältnisse benennen, wenn kontextrelevant  
 * Keine heroisierenden Darstellungen von Bestandsbildner\*innen  
 * Problematische Ereignisse klar benennen: Lynching, Vergewaltigung, Mord  
 * Sprachspezifika berücksichtigen (z. B. *Race* ≠ *Rasse*)  
-* Begriffe kontextualisieren („Zwerg“ vs. „kleinwüchsige Person“)  
-* Person-first-Formulierungen verwenden („Person mit …“)  
-* Selbstbezeichnungen respektieren (z. B. „Crip“ nur als Selbstbeschreibung)  
+* Begriffe kontextualisieren ("Zwerg" vs. "kleinwüchsige Person")  
+* Person-first-Formulierungen verwenden ("Person mit …")  
+* Selbstbezeichnungen respektieren (z. B. "Crip" nur als Selbstbeschreibung)  
 * Problematische {{< glossary LCSH >}}- oder {{< glossary GND >}}-Heading beibehalten, aber mit Bemerkung versehen
 :::
 
@@ -946,7 +946,7 @@ Die Integration von Large Language Models (LLMs) in die Metadatenerstellung ver�
 
 ::: {.callout-note title="Künstliche Intelligenz bei der automatischen Verschlagwortung bei der DNB"}
 
-Die Deutsche Nationalbibliothek setzt seit 2012 KI für die automatische Verschlagwortung ein. Während grosse Datenmengen effizient erschlossen werden, zeigen sich Grenzen im „Long Tail“ und bei komplexen Themen. Bei einer sozialwissenschaftlichen Reihe musste die Automatisierung wegen hoher Fehlerquoten eingestellt werden.[@junger2021]
+Die Deutsche Nationalbibliothek setzt seit 2012 KI für die automatische Verschlagwortung ein. Während grosse Datenmengen effizient erschlossen werden, zeigen sich Grenzen im "Long Tail" und bei komplexen Themen. Bei einer sozialwissenschaftlichen Reihe musste die Automatisierung wegen hoher Fehlerquoten eingestellt werden.[@junger2021]
 
 LLMs reproduzieren kulturelle und historische Prägungen, verstärken Stereotypen und verschleiern Unsicherheiten durch Halluzinationen. Ohne redaktionelle Kontrolle drohen fehlerhafte oder spekulative Inhalte, die sich in Katalogen verfestigen.
 :::
@@ -955,7 +955,7 @@ LLMs reproduzieren kulturelle und historische Prägungen, verstärken Stereotype
 
 KI-Modelle generieren im Projekt automatische Alt-Texte und verbessern so die Barrierefreiheit. Ohne systematische Qualitätskontrolle bleiben jedoch Risiken inkonsistenter oder diskriminierender Beschreibungen.[@mahr2025]
 
-„Human-in-the-loop“ ist kein Garant für Sicherheit: Fachpersonen benötigen Zeit, Schulung und klare {{< glossary Workflow display="Workflows" >}}. Definierte Rollen (z. B. Kuratierung, Technik, Ethik-Board), nachvollziehbare Versionshistorien und Eskalationsverfahren sind notwendig, ebenso wie gezielte Trainings zu Bias-Erkennung und Prompt-Design.
+"Human-in-the-loop" ist kein Garant für Sicherheit: Fachpersonen benötigen Zeit, Schulung und klare {{< glossary Workflow display="Workflows" >}}. Definierte Rollen (z. B. Kuratierung, Technik, Ethik-Board), nachvollziehbare Versionshistorien und Eskalationsverfahren sind notwendig, ebenso wie gezielte Trainings zu Bias-Erkennung und Prompt-Design.
 :::
 
 ::: {.callout-note title="Bias-Erkennung in Metadaten mit dem DE-BIAS-Tool"}
@@ -1074,7 +1074,7 @@ Exportschnittstellen sind durch API-Keys und Rate-Limits abzusichern, und sie so
 
 ### 5.4 Transparente Dokumentation {#sec-54-transparente-dokumentation}
 
-Die Dokumentation bleibt öffentlich zugänglich und macht Entscheidungsprozesse, Mitbestimmungen, Konflikte, Lücken und Versionen sichtbar. Beispielhaft dient die Dokumentation der Stadtgeschichte Basel. Jede Edition sollte statt eines „rolling release“ fixiert vorliegen, ein Build-Datum und eine Versionsbezeichnung tragen und eine Zitierempfehlung enthalten. Persistente URIs müssen stabil bleiben, Umzüge sind durch Weiterleitungen abzusichern. Jede Edition wird als fixiertes Paket archiviert, das Webartefakte, Datenkopien, Dokumentationen, Prüfsummen, Lizenzdateien und optional eine `CITATION.cff`\-Datei umfasst.
+Die Dokumentation bleibt öffentlich zugänglich und macht Entscheidungsprozesse, Mitbestimmungen, Konflikte, Lücken und Versionen sichtbar. Beispielhaft dient die Dokumentation der Stadtgeschichte Basel. Jede Edition sollte statt eines "rolling release" fixiert vorliegen, ein Build-Datum und eine Versionsbezeichnung tragen und eine Zitierempfehlung enthalten. Persistente URIs müssen stabil bleiben, Umzüge sind durch Weiterleitungen abzusichern. Jede Edition wird als fixiertes Paket archiviert, das Webartefakte, Datenkopien, Dokumentationen, Prüfsummen, Lizenzdateien und optional eine `CITATION.cff`\-Datei umfasst.
 
 Offene Prinzipien werden auf der Projektseite explizit sichtbar gemacht. Dies schliesst eine Verlinkung auf die *Endings Principles* sowie die Veröffentlichung von Compliance-Checklisten und Diagnosetools ein, welche die Qualitätssicherung und die Abschlussreife dokumentieren.
 
@@ -1238,55 +1238,55 @@ So werden Diskriminierungen nicht nur benannt, sondern in überprüfbaren Schrit
 
 1. Planung und Konzeption  
    1.1 Zielsetzung klären  
-    * [ ] Ziel, Zielgruppen, Nutzungsszenarien dokumentiert  
-    * [ ] Prioritäten und Mindeststandards definiert  
-    * [ ] Pilotkorpus erfasst und Aufwand gemessen  
-    * [ ] Sensible Inhalte antizipiert und gekennzeichnet  
+      * [ ] Ziel, Zielgruppen, Nutzungsszenarien dokumentiert  
+      * [ ] Prioritäten und Mindeststandards definiert  
+      * [ ] Pilotkorpus erfasst und Aufwand gemessen  
+      * [ ] Sensible Inhalte antizipiert und gekennzeichnet  
 
    1.2 Ethische und rechtliche Rahmenbedingungen  
-    * [ ] Rechtslage pro Inhaltstyp dokumentiert und geklärt  
-    * [ ] Einwilligungen und Einschränkungen erfasst  
-    * [ ] Personenbezug und Schutzmassnahmen geprüft  
-    * [ ] Lizenz/rights statement festgelegt  
-    * [ ] Review- und Eskalationswege definiert  
+      * [ ] Rechtslage pro Inhaltstyp dokumentiert und geklärt  
+      * [ ] Einwilligungen und Einschränkungen erfasst  
+      * [ ] Personenbezug und Schutzmassnahmen geprüft  
+      * [ ] Lizenz/rights statement festgelegt  
+      * [ ] Review- und Eskalationswege definiert  
 
    1.3 Standards und Infrastruktur festlegen  
-    * [ ] Zentrales Schema + Erweiterungen dokumentiert  
-    * [ ] Normdaten/Vokabulare ausgewählt  
-    * [ ] Plattform, Exportformate und Persistent Identifiers (DOI etc.) definiert  
+      * [ ] Zentrales Schema + Erweiterungen dokumentiert  
+      * [ ] Normdaten/Vokabulare ausgewählt  
+      * [ ] Plattform, Exportformate und Persistent Identifiers (DOI etc.) definiert  
 
 2. Datensammlung und Quellenkritik  
    2.1 Primärerschliessung vs. Nachnutzung  
-    * [ ] Re-Use-Quellen bewertet und zitiert  
-    * [ ] Übernahmen, Streichungen, Korrekturen protokolliert  
-    * [ ] Bias-Befunde und Lücken sichtbar gemacht  
+      * [ ] Re-Use-Quellen bewertet und zitiert  
+      * [ ] Übernahmen, Streichungen, Korrekturen protokolliert  
+      * [ ] Bias-Befunde und Lücken sichtbar gemacht  
 
    2.2 Kontextualisierung der Quellen  
-    * [ ] Entstehungs- und Nutzungskontext beschrieben  
-    * [ ] Relevante Akteur\*innen und Machtverhältnisse benannt  
-    * [ ] Rezeption und Deutungskonflikte referenziert  
+      * [ ] Entstehungs- und Nutzungskontext beschrieben  
+      * [ ] Relevante Akteur\*innen und Machtverhältnisse benannt  
+      * [ ] Rezeption und Deutungskonflikte referenziert  
 
 3. Datenverarbeitung und Anreicherung  
    3.1 Technische Standards implementieren  
-    * [ ] Feldkatalog mit Definitionen erstellt  
-    * [ ] Maschinenlesbare Datentypen und Validierung gesetzt  
-    * [ ] Sichtbarkeits- und Sensitivitätslogik modelliert  
+      * [ ] Feldkatalog mit Definitionen erstellt  
+      * [ ] Maschinenlesbare Datentypen und Validierung gesetzt  
+      * [ ] Sichtbarkeits- und Sensitivitätslogik modelliert  
 
    3.2 Beschreibung und Verschlagwortung  
-    * [ ] Vokabulare und Normdateien pro Feld definiert  
-    * [ ] Regeln für Intrinsisch/Extrinsisch festgelegt  
-    * [ ] Unsicherheit formalisiert und sichtbar gemacht  
+      * [ ] Vokabulare und Normdateien pro Feld definiert  
+      * [ ] Regeln für Intrinsisch/Extrinsisch festgelegt  
+      * [ ] Unsicherheit formalisiert und sichtbar gemacht  
 
    3.3 KI-Unterstützung und Automatisierung  
-    * [ ] KI-Einsatzbereiche, Modelle, Trainings-/Prompt-Kontexte dokumentiert  
-    * [ ] Stufen der Qualitätskontrollen, Freigaben, Rückverfolgbarkeit definiert  
-    * [ ] KI-Anteile in Feldern gekennzeichnet  
-    * [ ] Risiko- und Bias-Assessments durchgeführt und dokumentiert  
-    * [ ] Datenschutz, Urheberrecht und {{< glossary FAIR >}}/{{< glossary CARE >}}-Prinzipien geprüft  
-    * [ ] Kontrollschwellen (z. B. Confidence-Scores) für menschliche Überprüfung festgelegt  
-    * [ ] Rollen, Eskalationsverfahren und Verantwortlichkeiten definiert  
-    * [ ] Modelle, Prompts und Updates versioniert und veröffentlicht  
-    * [ ] Mitarbeitende geschult und fortlaufend sensibilisiert  
+      * [ ] KI-Einsatzbereiche, Modelle, Trainings-/Prompt-Kontexte dokumentiert  
+      * [ ] Stufen der Qualitätskontrollen, Freigaben, Rückverfolgbarkeit definiert  
+      * [ ] KI-Anteile in Feldern gekennzeichnet  
+      * [ ] Risiko- und Bias-Assessments durchgeführt und dokumentiert  
+      * [ ] Datenschutz, Urheberrecht und {{< glossary FAIR >}}/{{< glossary CARE >}}-Prinzipien geprüft  
+      * [ ] Kontrollschwellen (z. B. Confidence-Scores) für menschliche Überprüfung festgelegt  
+      * [ ] Rollen, Eskalationsverfahren und Verantwortlichkeiten definiert  
+      * [ ] Modelle, Prompts und Updates versioniert und veröffentlicht  
+      * [ ] Mitarbeitende geschult und fortlaufend sensibilisiert  
 
 4. Speicherung und Verwaltung  
    * [ ] Repositorium und Persistent Identifiers (PIDs) gewählt  
@@ -1295,33 +1295,33 @@ So werden Diskriminierungen nicht nur benannt, sondern in überprüfbaren Schrit
 
 5. Veröffentlichung und Zugang  
    5.1 Zielgruppe definieren  
-    * [ ] Zielgruppen, Einstiegspfade und Zugangsebenen definiert  
-    * [ ] Statischer Endzustand mit Rückwärtsplanung festgelegt  
-    * [ ] Kanonische, parameterlose URLs oder DOIs vergeben  
-    * [ ] Editionen versioniert, Weiterleitungen bei Umzügen vorgesehen  
-    * [ ] Zitierempfehlungen sichtbar integriert  
+      * [ ] Zielgruppen, Einstiegspfade und Zugangsebenen definiert  
+      * [ ] Statischer Endzustand mit Rückwärtsplanung festgelegt  
+      * [ ] Kanonische, parameterlose URLs oder DOIs vergeben  
+      * [ ] Editionen versioniert, Weiterleitungen bei Umzügen vorgesehen  
+      * [ ] Zitierempfehlungen sichtbar integriert  
 
    5.2 Umgang mit sensiblen und diskriminierenden Inhalten  
-    * [ ] Sensible Daten identifiziert und Schutzmassnahmen getroffen  
-    * [ ] Diskriminierende Inhalte benannt und kontextualisiert  
-    * [ ] Trigger- und Content-Notes formuliert  
-    * [ ] Einwilligungsfragen reflektiert und Alternativen geprüft  
-    * [ ] Governance-Regeln dokumentiert und Änderungen nachvollziehbar protokolliert  
+      * [ ] Sensible Daten identifiziert und Schutzmassnahmen getroffen  
+      * [ ] Diskriminierende Inhalte benannt und kontextualisiert  
+      * [ ] Trigger- und Content-Notes formuliert  
+      * [ ] Einwilligungsfragen reflektiert und Alternativen geprüft  
+      * [ ] Governance-Regeln dokumentiert und Änderungen nachvollziehbar protokolliert  
 
    5.3 Technische Strategien  
-    * [ ] Statischer Webauftritt ohne serverseitige Abhängigkeiten definiert  
-    * [ ] Build- und Validierungsprozess unter Versionskontrolle implementiert  
-    * [ ] Sichtbarkeitssteuerung in Export- oder Ableitungsschritten umgesetzt  
-    * [ ] Offene, verlustfreie Formate mit UTF-8-Kodierung verwendet  
-    * [ ] README und Referenzdokumente bereitgestellt und versioniert  
-    * [ ] API-Exporte abgesichert und reproduzierbare Datenbeilage integriert  
-    * [ ] Opt-in-Mechanismus für sensible Inhalte verfügbar  
+      * [ ] Statischer Webauftritt ohne serverseitige Abhängigkeiten definiert  
+      * [ ] Build- und Validierungsprozess unter Versionskontrolle implementiert  
+      * [ ] Sichtbarkeitssteuerung in Export- oder Ableitungsschritten umgesetzt  
+      * [ ] Offene, verlustfreie Formate mit UTF-8-Kodierung verwendet  
+      * [ ] README und Referenzdokumente bereitgestellt und versioniert  
+      * [ ] API-Exporte abgesichert und reproduzierbare Datenbeilage integriert  
+      * [ ] Opt-in-Mechanismus für sensible Inhalte verfügbar  
 
    5.4 Transparente Dokumentation  
-    * [ ] Publikationsdokumentation online und öffentlich zugänglich  
-    * [ ] Editionen mit Datum, Version und Zitierempfehlung publiziert  
-    * [ ] Persistente URIs stabil, Umzüge mit Weiterleitungen gesichert  
-    * [ ] Jede Edition als Paket mit Prüfsummen, Daten und Dokumentation archiviert  
+      * [ ] Publikationsdokumentation online und öffentlich zugänglich  
+      * [ ] Editionen mit Datum, Version und Zitierempfehlung publiziert  
+      * [ ] Persistente URIs stabil, Umzüge mit Weiterleitungen gesichert  
+      * [ ] Jede Edition als Paket mit Prüfsummen, Daten und Dokumentation archiviert  
 
 6. Nachnutzung und Wiederverwendung  
    * [ ] Linked-Data-Exporte, PIDs und {{< glossary Crosswalk display="Crosswalks" >}} verfügbar  
@@ -1347,7 +1347,7 @@ Dieser Entscheidungsbaum hilft bei der Orientierung der Kapitel und verlinkt auf
 ```{mermaid}
 %%| label: fig-metadata-3
 %%| fig-cap: "Hilfestellungen für weiterführende Fragen, die über die behandelten Themen des Handbuchs hinausgehen."
-%%| fig-alt: "Flussdiagramm zur Orientierung bei fachspezifischen Fragen in der Archiv- und Metadatenforschung. Die zentrale Frage „Ich habe eine fachspezifische Frage“ verzweigt in drei Bereiche: Metadaten, Forschungs- oder Institutionskontexte sowie Spezifische Diskriminierungsformen. Unter „Metadaten“ stehen Normdaten (Breslau 2019), Open Data / Commons (Hahn 2016), Recht & Lizenzen (Weitzmann & Klimpel 2016) und Kartografische Sammlungen (Gasser & Hötea 2024). Unter „Forschungs- oder Institutionskontexte“ finden sich Kunstmuseen (Knaus 2019), Universitätsarchive (Bruckmann 2024) und Kolonialkontexte (Bruckmann 2024). Unter „Spezifische Diskriminierungsformen“ erscheinen NS-Provenienz (Baresel-Brand 2019), Sklaverei-Archive (Ahrndt 2021) und Rassismus (A4BLiP 2020)."
+%%| fig-alt: "Flussdiagramm zur Orientierung bei fachspezifischen Fragen in der Archiv- und Metadatenforschung. Die zentrale Frage "Ich habe eine fachspezifische Frage" verzweigt in drei Bereiche: Metadaten, Forschungs- oder Institutionskontexte sowie Spezifische Diskriminierungsformen. Unter "Metadaten" stehen Normdaten (Breslau 2019), Open Data / Commons (Hahn 2016), Recht & Lizenzen (Weitzmann & Klimpel 2016) und Kartografische Sammlungen (Gasser & Hötea 2024). Unter "Forschungs- oder Institutionskontexte" finden sich Kunstmuseen (Knaus 2019), Universitätsarchive (Bruckmann 2024) und Kolonialkontexte (Bruckmann 2024). Unter "Spezifische Diskriminierungsformen" erscheinen NS-Provenienz (Baresel-Brand 2019), Sklaverei-Archive (Ahrndt 2021) und Rassismus (A4BLiP 2020)."
 flowchart TD
     Frage["Ich habe eine fachspezifische Frage"]
 
