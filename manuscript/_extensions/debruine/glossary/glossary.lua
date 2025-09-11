@@ -10,7 +10,8 @@ local function addHTMLDeps()
   -- add the HTML requirements for the library used
     quarto.doc.add_html_dependency({
     name = 'glossary',
-    stylesheets = {'glossary.css'}
+    stylesheets = {'glossary.css'},
+    scripts = {'glossary.js'}
   })
 end
 
@@ -68,7 +69,7 @@ end
 local function mergeOptions(userOptions, meta)
   local defaultOptions = {
     path = "glossary.yml",
-    popup = "hover",
+    popup = "click",
     show = true,
     add_to_table = true
   }
@@ -159,12 +160,33 @@ return {
     globalGlossaryTable[term] = def
   end
 
-  if options.popup == "hover" then
-    glosstext = "<button class='glossary' title='" .. def .."'>" .. display .. "</button>"
-  elseif options.popup == "click" then
-    glosstext = "<button class='glossary'><span class='def'>" .. def .."</span>" .. display .. "</button>"
+  -- Generate unique ID for this glossary term (still needed for potential future use)
+  local glossary_id = "glossary-" .. term:gsub("%s+", "-"):gsub("[^%w%-]", "") .. "-" .. math.random(1000, 9999)
+
+  if options.popup == "click" then
+    -- Use Bootstrap popover with accessible attributes
+    glosstext = "<button class='glossary' " ..
+                "id='" .. glossary_id .. "' " ..
+                "data-bs-toggle='popover' " ..
+                "data-bs-content='" .. def:gsub("'", "&apos;") .. "' " ..
+                "data-bs-trigger='click' " ..
+                "data-bs-placement='top' " ..
+                "tabindex='0' " ..
+                "data-glossary-term='" .. term .. "'>" ..
+                display .. "</button>"
   elseif options.popup == "none" then
-    glosstext = "<button class='glossary'>" .. display .. "</button>"
+    glosstext = "<span class='glossary'>" .. display .. "</span>"
+  else
+    -- Default to click behavior for any other option (including former "hover")
+    glosstext = "<button class='glossary' " ..
+                "id='" .. glossary_id .. "' " ..
+                "data-bs-toggle='popover' " ..
+                "data-bs-content='" .. def:gsub("'", "&apos;") .. "' " ..
+                "data-bs-trigger='click' " ..
+                "data-bs-placement='top' " ..
+                "tabindex='0' " ..
+                "data-glossary-term='" .. term .. "'>" ..
+                display .. "</button>"
   end
 
   return pandoc.RawInline("html", glosstext)

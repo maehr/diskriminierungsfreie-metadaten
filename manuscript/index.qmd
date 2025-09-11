@@ -82,7 +82,7 @@ Dieses Handbuch ist eine praxisorientierte Anleitung für die diskriminierungsse
 
 Warum Metadaten? In einer zunehmend digital vermittelten Welt machen Metadaten historische Bestände auffindbar, zugänglich, interoperabel und nachnutzbar. Frei zugängliche, maschinenlesbare Metadaten ermöglichen die Integration in Suchmaschinen, Datenportale und virtuelle Forschungsumgebungen. Dadurch verändert sich, wie Historiker\*innen Quellen erforschen, interpretieren und verstehen.
 
-![Screenshot aus der Plakatsammlung Basel: Abstimmungsplakat „Frauenstimmrecht, Nein“ zur eidgenössischen Abstimmung vom 1\. Februar 1959, entworfen von Werner Nänny im Auftrag des Basler Frauenkomitees gegen das Frauenstimmrecht, gedruckt von Wassermann AG, Basel.](images/image1.png){fig-alt="Screenshot einer Webseite mit einem Abstimmungsplakat von 1959 gegen das Frauenstimmrecht in der Schweiz. Das Plakat zeigt die schwarze Silhouette einer Frau, die von mehreren grauen Händen mit der Aufschrift „Partei“ bedrängt wird. Daneben stehen Informationen zur Sammlung, Datierung, Urheber und Technik."}
+![Screenshot aus der Plakatsammlung Basel: Abstimmungsplakat „Frauenstimmrecht, Nein“ zur eidgenössischen Abstimmung vom 1\. Februar 1959, entworfen von Werner Nänny im Auftrag des Basler Frauenkomitees gegen das Frauenstimmrecht, gedruckt von Wassermann AG, Basel.](images/image1.png){fig-alt="Screenshot einer Webseite mit einem Abstimmungsplakat von 1959 gegen das Frauenstimmrecht in der Schweiz. Das Plakat zeigt die schwarze Silhouette einer Frau, die von mehreren grauen Händen mit der Aufschrift „Partei“ bedrängt wird. Daneben stehen Informationen zur Sammlung, Datierung, Urheber und Technik." width="1801" height="964" .img-fluid }
 
 Ein Blick in die deutschsprachige Archive zeigt, dass vielerorts bereits auf die {{< glossary FAIR >}}-Prinzipien bei Metadaten geachtet wird. Eine diskriminierungssensible Metadatenpraxis bleibt jedoch meist aus. Oft fehlen kontextualisierende Beschreibungen, in denen Diskriminierungsformen explizit benannt und in ihren jeweiligen historischen Kontext eingeordnet werden. Im Online-Katalog der "Plakatsammlung der Schule für Gestaltung" beschränkt sich die Beschreibung des Plakats ["Frauenstimmrecht, Nein"](https://www.recherche-plakatsammlungbasel.ch/objects/48228/) auf sachliche Angaben: "Eidgenössische Abstimmung, 1\. Februar 1959". Hinweise auf den historischen, politischen und insbesondere den sexistischen Kontext fehlen.
 
@@ -122,8 +122,8 @@ Das Ziel dieses Handbuchs ist es, anhand konkreter Beispiele, Methoden und Strat
 
 ```{mermaid}
 %%| label: fig-metadata-2
-%%| fig-cap: 'Entscheidungshilfe zur Orientierung im Handbuch. Die Startfrage "Worum geht es konkret?" verzweigt in vier Pfade—Metadaten neu erstellen; Zugang/Präsentation verbessern; Bestehende Metadaten nachnutzen; Begriffe/Standards klären—mit Verweisen auf zugehörige Phasen, Praxisabschnitte und Checklisten."
-%%| fig-alt: "Ein hellviolettes Flussdiagramm. In der Mitte eine rautenförmige Startbox mit dem Text "Worum geht es konkret?". Von dort führen vier Linien zu vier Themenkästen, von links nach rechts: Erstens "Metadaten neu erstellen". Darunter zwei Ebenen: "Phase 1 bis 3: Planung, Sammlung, Verarbeitung" und darunter "Praxis Paragraph 1 bis 3 sowie Checklisten B bis D". Zweitens "Zugang und Präsentation verbessern". Darunter "Phase 5: Veröffentlichung und Zugang" und darunter "Praxis Paragraph 5 sowie Checklisten F und K". Drittens "Bestehende Metadaten nachnutzen". Darunter "Phase 6: Nachnutzung und Wiederverwendung" und darunter "Praxis Paragraph 6 sowie Checkliste G". Viertens "Begriffe und Standards klären". Darunter "Theorie und Glossar" und darunter "Schlüsselbegriffe, Bias, FAIR und CARE". Die Kästen sind horizontal ausgerichtet, die Verbindungen verlaufen von der Mitte nach aussen und dann je vertikal nach unten.'
+%%| fig-cap: "Entscheidungshilfe zur Orientierung im Handbuch. Die Startfrage 'Worum geht es konkret?' verzweigt in vier Pfade—Metadaten neu erstellen; Zugang/Präsentation verbessern; Bestehende Metadaten nachnutzen; Begriffe/Standards klären—mit Verweisen auf zugehörige Phasen, Praxisabschnitte und Checklisten."
+%%| fig-alt: "Ein hellviolettes Flussdiagramm. In der Mitte eine rautenförmige Startbox mit dem Text 'Worum geht es konkret?'. Von dort führen vier Linien zu vier Themenkästen, von links nach rechts: Erstens 'Metadaten neu erstellen'. Darunter zwei Ebenen: 'Phase 1 bis 3: Planung, Sammlung, Verarbeitung' und darunter 'Praxis Paragraph 1 bis 3 sowie Checklisten B bis D'. Zweitens 'Zugang und Präsentation verbessern'. Darunter 'Phase 5: Veröffentlichung und Zugang' und darunter 'Praxis Paragraph 5 sowie Checklisten F und K'. Drittens 'Bestehende Metadaten nachnutzen'. Darunter 'Phase 6: Nachnutzung und Wiederverwendung' und darunter 'Praxis Paragraph 6 sowie Checkliste G'. Viertens 'Begriffe und Standards klären'. Darunter 'Theorie und Glossar' und darunter 'Schlüsselbegriffe, Bias, FAIR und CARE'. Die Kästen sind horizontal ausgerichtet, die Verbindungen verlaufen von der Mitte nach aussen und dann je vertikal nach unten."
 flowchart TD
   Q{"Was möchte ich tun?"}
 
@@ -173,11 +173,11 @@ Dieses Kapitel bestimmt die Begriffe so, dass sie sowohl analytisch tragfähig a
 
 ### Daten sind nicht neutral (Normativität) {#sec-daten-sind-nicht-neutral-normativität}
 
-![Screenshot des Wikidata-Eintrags zu Crimea (Q7835), der die Halbinsel Krim beschreibt. Angezeigt werden Sprachvarianten (u. a. Englisch, Deutsch, Französisch), alternative Bezeichnungen sowie die Beschreibung als „Eastern European peninsula, in the Black Sea and Sea of Azov, disputed between Ukraine (de jure) and Russia (de facto)“.](images/image4.png){fig-alt="Screenshot einer Wikidata-Seite mit dem Eintrag Crimea (Q7835). Sichtbar sind der Titel „Crimea“, eine kurze Beschreibung der Halbinsel als umstrittenes Gebiet zwischen Ukraine und Russland sowie Sprachangaben (Englisch, Deutsch, Alemannisch, Französisch) mit verschiedenen Labels und Synonymen. Darunter der Abschnitt „Statements“ mit dem Hinweis „instance of: peninsula.“"}
+![Screenshot des Wikidata-Eintrags zu Crimea (Q7835), der die Halbinsel Krim beschreibt. Angezeigt werden Sprachvarianten (u. a. Englisch, Deutsch, Französisch), alternative Bezeichnungen sowie die Beschreibung als "Eastern European peninsula, in the Black Sea and Sea of Azov, disputed between Ukraine (de jure) and Russia (de facto)".](images/image4.png){fig-alt='Screenshot einer Wikidata-Seite mit dem Eintrag Crimea (Q7835). Sichtbar sind der Titel "Crimea", eine kurze Beschreibung der Halbinsel als umstrittenes Gebiet zwischen Ukraine und Russland sowie Sprachangaben (Englisch, Deutsch, Alemannisch, Französisch) mit verschiedenen Labels und Synonymen. Darunter der Abschnitt "Statements" mit dem Hinweis "instance of: peninsula."' width="1393" height="1999" .img-fluid }
 
 Daten und Metadaten erscheinen auf den ersten Blick als objektive Repräsentationen der Wirklichkeit, doch sind sie stets in historisch gewachsene Machtverhältnisse und normative Ordnungen eingebettet. Das Beispiel der Krim in Wikidata [Q7835](https://www.wikidata.org/wiki/Q7835) und die beigefügte Karte der Halbinsel illustrieren anschaulich, wie scheinbar neutrale Darstellungen in Metadaten inhärent Stellung beziehen und politische Konfliktlagen spiegeln.
 
-![Politische Karte der Krim mit Städten, Verkehrswegen und geografischen Bezeichnungen. Die Karte zeigt die Halbinsel im Schwarzen Meer, angrenzend an die Ukraine und Russland.](images/image5.png){fig-alt="Karte der Krim mit eingezeichneten Städten, Strassen, Eisenbahnlinien und Landschaftsmerkmalen. Zu sehen sind Simferopol, Sewastopol, Jalta, Feodossija, Kertsch und Jewpatorija sowie Gebirge, Küstenlinien und angrenzende Regionen der Ukraine und Russlands."}
+![Politische Karte der Krim mit Städten, Verkehrswegen und geografischen Bezeichnungen. Die Karte zeigt die Halbinsel im Schwarzen Meer, angrenzend an die Ukraine und Russland.](images/image5.png){fig-alt="Karte der Krim mit eingezeichneten Städten, Strassen, Eisenbahnlinien und Landschaftsmerkmalen. Zu sehen sind Simferopol, Sewastopol, Jalta, Feodossija, Kertsch und Jewpatorija sowie Gebirge, Küstenlinien und angrenzende Regionen der Ukraine und Russlands." width="1929" height="1249" .img-fluid }
 
 Die [Karte](https://commons.wikimedia.org/wiki/File:Karte_der_Krim.png) präsentiert die Krim als „Autonome Republik Krim“ und zeigt damit explizit eine völkerrechtlich orientierte, pro ukrainische Perspektive: Die Benennung und farbliche Abgrenzung der Krim als Teil der Ukraine („Oblast“, „Autonome Republik“) betont den de-jure-Status nach ukrainischem Recht und den internationalen Menschenrechtsstandards. Es werden zentrale Orte wie Sewastopol oder Kertsch mit ihrer ukrainischen Transkription aufgeführt. Die Grenze zu Russland ist klar als Staatsgrenze markiert. In der Detaildarstellung (oben rechts) wird die Krim deutlich der Ukraine zugeordnet, wodurch der umstrittene völkerrechtliche Status als Teil Russlands nicht gleichwertig visualisiert wird.
 
@@ -543,7 +543,7 @@ Da viele textuelle Forschungsdaten nur auf Papier oder in unstrukturierter digit
 
 Metadaten enthalten strukturierte Informationen über Objekte, insbesondere über deren Inhalt, Kontext und Struktur. Dabei ermöglichen bzw. erleichtern sie deren Identifikation, Auffindbarkeit, Organisation, Verwaltung, Kontextualisierung und Nutzung. Metadaten sollten so strukturiert sein, dass sie die wichtigsten Attribute des beschriebenen Objekttyps modellieren. Ihre Speicherung erfolgt entweder unabhängig von oder auch zusammen mit den ihnen zugeordneten Daten.
 
-![Plakat des Circus Knie für eine „Völkerschau“, Darstellung von stereotypisierten Szenen mit Männern beim Handwerk, Schweiz, 20\. Jahrhundert.](images/image6.jpg){fig-alt="Plakat mit rotem Hintergrund: Drei Männer in bunten Gewändern und Turbanen führen Handarbeiten aus – einer webt, einer hält Schmuck, einer arbeitet mit Tongefässen. Darunter steht gross „KNIE“ und kleiner „Völkerschau“." width="50%"}
+![Plakat des Circus Knie für eine „Völkerschau“, Darstellung von stereotypisierten Szenen mit Männern beim Handwerk, Schweiz, 20\. Jahrhundert.](images/image6.jpg){fig-alt="Plakat mit rotem Hintergrund: Drei Männer in bunten Gewändern und Turbanen führen Handarbeiten aus – einer webt, einer hält Schmuck, einer arbeitet mit Tongefässen. Darunter steht gross „KNIE“ und kleiner „Völkerschau“." width="1393" height="1999" .img-fluid }
 
 Zur Illustration Begrifflichkeiten rund um Metadaten greifen wir auf die Metadaten des Beispiels [*Knie Völkerschau*](https://www.europeana.eu/de/item/92023/images_billed_2010_okt_billeder_object488811) zurück. Wir haben es ausgewählt, weil es exemplarisch für problematische, kolonial geprägte Darstellungsweisen in populärer Unterhaltungskultur des 20\. Jahrhunderts steht und über reichhaltige Metadaten verfügt.
 
@@ -582,7 +582,7 @@ Im Kontext der Digitalisierung ist zusätzlich von **Paradaten** bzw. **Prozessm
 Das Beispiel illustriert zudem die Differenz zwischen **physischen Objekten** und deren **digitalen Repräsentationen**:
 
 * Das physische Plakat selbst besitzt Eigenschaften wie Grösse, Material und Zustand.  
-* Das Digitalisat ist als JPEG-Datei mit spezifischer Auflösung verfügbar (`edm:isShownBy`, `edm:preview`).   
+* Das Digitalisat ist als JPEG-Datei mit spezifischer Auflösung verfügbar (`edm:isShownBy`, `edm:preview`).
 * Der Digitalisierungsprozess erzeugt weitere Informationen, etwa zu Perspektive, Bildausschnitt und Farbwiedergabe, die für eine präzise Kontextualisierung entscheidend sind.
 
 ### Metadatenstandards {#sec-metadatenstandards}
@@ -615,7 +615,7 @@ Das Beispiel *Knie Völkerschau* nutzt sowohl kontrollierte als auch freie Werte
 
 Legt fest, **welche Informationen in welchen Feldern** erfasst werden sollen und was sie **semantisch bedeuten**. Dabei kann folgende Frage gestellt werden: "Wie befülle ich das Feld?"
 
-Die Belegung der Felder des Beispiels *Knie Völkerschau* folgt dem **{{< glossary "Dublin Core" >}} Element Set ({{< glossary DC display="DCMES" >}})** und dem **{{< glossary EDM display="Europeana Data Model (EDM)" >}}**:
+Die Belegung der Felder des Beispiels *Knie Völkerschau* folgt dem **{{< glossary "Dublin Core" >}} Element Set ({{< glossary "Dublin Core" display="DCMES" >}})** und dem **{{< glossary EDM display="Europeana Data Model (EDM)" >}}**:
 
 * `dc:title` enthält den Titel des Plakats („Knie Völkerschau“)  
 * `dc:description` beschreibt Motiv, Technik und Masse der Lithografie  
@@ -673,13 +673,13 @@ Das Beispiel *Knie Völkerschau* ist vollständig eingebettet in ein interoperab
 
 | Metadatum (Feld) | ① Datentyp | ② Wertstandard | ③ Inhaltsstandard | ④ Struktur / Schema | ⑤ Format | ⑥ Präsentation | ⑦ Interoperabilität |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| `dc:title` | `xsd:string@de` | Freitext | **{{< glossary "Dublin Core" >}}: Title** | {{< glossary DC display="DCMES" >}}, {{< glossary EDM >}} | {{< glossary JSON >}}, {{< glossary RDF >}}/{{< glossary XML >}} | UI-Label: *Titel* | Europeana API, {{< glossary OAI-PMH >}} |
-| `dc:description` | `xsd:string@da` | Freitext, gegebenenfalls Getty {{< glossary AAT >}}-Terms | **{{< glossary "Dublin Core" display="DC" >}}: Description** | {{< glossary DC display="DCMES" >}} | JSON | Accordion-Feld, Tooltip | {{< glossary OAI-PMH >}}, {{< glossary JSON-LD >}} |
-| `dc:date` | `xsd:gYear` oder `xsd:string` | {{< glossary ISO >}} 8601, „1969?“ (unsicher) | **{{< glossary "Dublin Core" display="DC" >}}: Date** | {{< glossary EDM >}} Timespan, {{< glossary DC display="DCMES" >}} | {{< glossary RDF >}}/{{< glossary XML >}}, {{< glossary JSON-LD >}} | Formatierter Zeitstempel | `edm:hasMet` \+ {{< glossary IIIF >}} Timeline |
-| `dc:type` | URI / `xsd:string@da` | **{{< glossary AAT >}} URI**, `poster`, `Still image` | **{{< glossary "Dublin Core" display="DC" >}}: Type** | {{< glossary DC display="DCMES" >}}, {{< glossary EDM >}} \+ Europeana Vocabularies | {{< glossary RDF >}} | Facette: „Medientyp“ | Linked Open Data / {{< glossary EDM >}} |
-| `dc:subject` | `xsd:string@da` | **{{< glossary GND >}}** / kontrollierte Schlagwörter | **{{< glossary "Dublin Core" display="DC" >}}: Subject** | {{< glossary DC display="DCMES" >}} | {{< glossary JSON >}} | Schlagwortliste | {{< glossary "VIAF" >}}, Wikidata, Linked Data |
-| `dc:identifier` | `anyURI` | HTTP-URL | **{{< glossary "Dublin Core" display="DC" >}}: Identifier** | {{< glossary DC display="DCMES" >}}, {{< glossary EDM >}} Aggregation | {{< glossary JSON-LD >}} | als anklickbarer Link | persistente URI (PURL/DOI) |
-| `dc:rights` | URI \+ `xsd:string` | **CC URI**, `RightsStatements.org` | **{{< glossary "Dublin Core" display="DC" >}}: Rights** | {{< glossary DC display="DCMES" >}}, {{< glossary EDM >}} Rights | {{< glossary RDF >}}, {{< glossary JSON >}} | CC-Logo, Textlink | Interoperables Lizenzsystem |
+| `dc:title` | `xsd:string@de` | Freitext | **{{< glossary "Dublin Core" >}}: Title** | {{< glossary "Dublin Core" display="DCMES" >}}, {{< glossary EDM >}} | {{< glossary JSON >}}, {{< glossary RDF >}}/{{< glossary XML >}} | UI-Label: *Titel* | Europeana API, {{< glossary OAI-PMH >}} |
+| `dc:description` | `xsd:string@da` | Freitext, gegebenenfalls Getty {{< glossary AAT >}}-Terms | **{{< glossary "Dublin Core" display="DC" >}}: Description** | {{< glossary "Dublin Core" display="DCMES" >}} | JSON | Accordion-Feld, Tooltip | {{< glossary OAI-PMH >}}, {{< glossary JSON-LD >}} |
+| `dc:date` | `xsd:gYear` oder `xsd:string` | {{< glossary ISO >}} 8601, „1969?“ (unsicher) | **{{< glossary "Dublin Core" display="DC" >}}: Date** | {{< glossary EDM >}} Timespan, {{< glossary "Dublin Core" display="DCMES" >}} | {{< glossary RDF >}}/{{< glossary XML >}}, {{< glossary JSON-LD >}} | Formatierter Zeitstempel | `edm:hasMet` \+ {{< glossary IIIF >}} Timeline |
+| `dc:type` | URI / `xsd:string@da` | **{{< glossary AAT >}} URI**, `poster`, `Still image` | **{{< glossary "Dublin Core" display="DC" >}}: Type** | {{< glossary "Dublin Core" display="DCMES" >}}, {{< glossary EDM >}} \+ Europeana Vocabularies | {{< glossary RDF >}} | Facette: „Medientyp“ | Linked Open Data / {{< glossary EDM >}} |
+| `dc:subject` | `xsd:string@da` | **{{< glossary GND >}}** / kontrollierte Schlagwörter | **{{< glossary "Dublin Core" display="DC" >}}: Subject** | {{< glossary "Dublin Core" display="DCMES" >}} | {{< glossary JSON >}} | Schlagwortliste | {{< glossary "VIAF" >}}, Wikidata, Linked Data |
+| `dc:identifier` | `anyURI` | HTTP-URL | **{{< glossary "Dublin Core" display="DC" >}}: Identifier** | {{< glossary "Dublin Core" display="DCMES" >}}, {{< glossary EDM >}} Aggregation | {{< glossary JSON-LD >}} | als anklickbarer Link | persistente URI (PURL/DOI) |
+| `dc:rights` | URI \+ `xsd:string` | **CC URI**, `RightsStatements.org` | **{{< glossary "Dublin Core" display="DC" >}}: Rights** | {{< glossary "Dublin Core" display="DCMES" >}}, {{< glossary EDM >}} Rights | {{< glossary RDF >}}, {{< glossary JSON >}} | CC-Logo, Textlink | Interoperables Lizenzsystem |
 | `edm:isShownBy` | `anyURI` | {{< glossary IIIF >}} Image Service URI | **{{< glossary EDM >}}: isShownBy** | {{< glossary EDM >}} Aggregation | {{< glossary RDF >}} | Bild-Embed | {{< glossary IIIF >}} Image API |
 | `edm:isShownAt` | `anyURI` | Originalquellenlink | **{{< glossary EDM >}}: isShownAt** | {{< glossary EDM >}} Aggregation | {{< glossary JSON-LD >}} | Button „Zur Quelle“ | {{< glossary OAI-PMH >}}, Europeana Portal |
 | `edm:preview` | {{< glossary IIIF >}} Thumbnail URI | {{< glossary IIIF >}}-compliant | **{{< glossary EDM >}}: preview** | {{< glossary EDM >}} Aggregation | {{< glossary JSON-LD >}} | Thumbnail-Bild | {{< glossary IIIF >}} Presentation API |
@@ -690,7 +690,7 @@ Das Beispiel *Knie Völkerschau* ist vollständig eingebettet in ein interoperab
 
 Im Praxisteil dieses Handbuchs gehen wir insbesondere auf Schemas, Inhalts- und Wertstandards ein und beziehen uns dabei vorwiegend auf die {{< glossary "Dublin Core" >}} Metadata Initiative (DCMI). Eine umfassende Übersicht weiterer verbreiteter Standards liefert etwa @sgg2023.
 
-## {{< glossary FAIR >}}, {{< glossary CARE >}} und {{< glossary LOUD >}}: Überblick und Zielsetzung
+## FAIR, CARE und LOUD: Überblick und Zielsetzung
 
 Dieses Kapitel bündelt drei komplementäre Orientierungen der Forschungsdatenpraxis. **{{< glossary FAIR >}}** adressiert Auffindbarkeit, Zugänglichkeit, Interoperabilität und Wiederverwendbarkeit als technische und organisatorische Leitlinien [@wilkinson2016;@gofairinitiative]. **{{< glossary CARE >}}** rückt kollektiven Nutzen, Kontrollhoheit, Verantwortung und Ethik in den Fokus, insbesondere bei indigenen Daten [@GIDA_CARE_2025;@carroll2021]. **{{< glossary LOUD >}}** verschiebt den Blick von der reinen Bereitstellung hin zur tatsächlichen Nutzbarkeit in Arbeitsabläufen der Geisteswissenschaften. Ziel ist eine lesbare, praxisnahe Ordnung der Prinzipien für historische Forschung und Metadatenarbeit.
 
@@ -792,7 +792,7 @@ Für die Veröffentlichung sind Lizenzangaben und Rechteaussagen (zum Beispiel C
 
 ### 1.3 Standards und Infrastruktur festlegen {#sec-13-standards-und-infrastruktur-festlegen}
 
-Als Ausgangspunkt sollten etablierte Schemata wie das {{< glossary "Dublin Core" >}} Metadata Element Set ({{< glossary DC display="DCMES" >}}), MODS oder Schema.org geprüft werden. Ihre Verbreitung in der Fachcommunity und die Anschlussfähigkeit an bestehende Systeme sichern Interoperabilität und Nachhaltigkeit. Je nach Projekt kann es sinnvoll sein, Schemata zu erweitern oder zu kombinieren, etwa {{< glossary EAD >}} oder {{< glossary MARC >}} auf Sammlungsebene und {{< glossary "Dublin Core" >}}, MODS, {{< glossary LIDO >}} oder {{< glossary "VRA Core" >}} auf Objektebene.[@Schopper_2024_Einfuehrung_Metadaten]
+Als Ausgangspunkt sollten etablierte Schemata wie das {{< glossary "Dublin Core" >}} Metadata Element Set ({{< glossary "Dublin Core" display="DCMES" >}}), MODS oder Schema.org geprüft werden. Ihre Verbreitung in der Fachcommunity und die Anschlussfähigkeit an bestehende Systeme sichern Interoperabilität und Nachhaltigkeit. Je nach Projekt kann es sinnvoll sein, Schemata zu erweitern oder zu kombinieren, etwa {{< glossary EAD >}} oder {{< glossary MARC >}} auf Sammlungsebene und {{< glossary "Dublin Core" >}}, MODS, {{< glossary LIDO >}} oder {{< glossary "VRA Core" >}} auf Objektebene.[@Schopper_2024_Einfuehrung_Metadaten]
 
 Darüber hinaus ist die frühzeitige Planung von Normdaten, kontrollierten Vokabularen, technischen Plattformen und Datenflüssen entscheidend. Bei der Definition der Metadatenfelder empfiehlt es sich, zunächst alle relevanten Informationen zu sammeln (zum Beispiel Zeitangaben, Geokoordinaten, Lizenzhinweise, Versionsgeschichte). Ob Angaben in eigenen Feldern oder in Kommentarfeldern erfasst werden, hängt von Automatisierbarkeit, Standardisierung und Aggregationsanforderungen ab.
 
@@ -825,7 +825,7 @@ In dieser Phase werden die eigentlichen Forschungsdaten erzeugt oder gesammelt. 
 
 In der Praxis findet oftmals eine Kombination aus Primärerschliesung und Re-Use statt. So kann es von Vorteil sein, jeweils bei den Gedächtnisinstitutionen und Portalen nachzuschauen. Beispielsweise liegen bei Europeana oftmals schon Metadaten bereit, die ganz oder in Teilen übernommen werden können. Im Idealfall sind diese Datensätze bereits miteinander kompatibel (beziehungsweise interoperabel) und können reibungs- und verlustarm ineinander überführt werden. In der Realität muss jedoch beim Zusammenführen, Anreichern, Ausdünnen und Korrigieren bestehender Metadatensätze meist eine Reihe von Entscheidungen, Abwägungen und Anpassungen getroffen werden. Ausserdem ist im Blick auf eine diskriminierungssensible Metadatenpraxis zu beachten, dass Archive stets einen selektiven Einblick auf Geschichte geben, dem man sich bei deren Verwendung stets bewusst sein sollte. Ein Rückgriff auf bestehende Metadaten birgt deshalb stets auch das Risiko einer unbewussten Reproduktion potenziell diskriminierender Inhalte.
 
-![Screenshot aus Europeana: Metadaten zum “Genozid-Denkmal” in Ejmiacin, Armenien. ](images/image7.png){fig-alt="Screenshot eines Metadateneintrags in Europeana zum Objekt “Genozid-Denkmal” mit Angaben wie “Betreff”, “Datenpartner” oder “Rechtehinweise”."}
+![Screenshot aus Europeana: Metadaten zum “Genozid-Denkmal” in Ejmiacin, Armenien. ](images/image7.png){fig-alt="Screenshot eines Metadateneintrags in Europeana zum Objekt “Genozid-Denkmal” mit Angaben wie “Betreff”, “Datenpartner” oder “Rechtehinweise”." width="949" height="964" .img-fluid }
 
 Zum Objekt [“Genozid-Denkmal”](https://www.europeana.eu/de/item/199/item_EIXXGS4W5AVJLCA556YUS4IRIS2CRMF5?page=2) aus Europeana liegen schon einige Metadaten bereit. Erfasst sind der **Betreff** (Skulptur) und die **Objektart** (memorials/monuments). Als **Datenpartner** wird das Deutsche Dokumentationszentrum für Kunstgeschichte \- Bildarchiv Foto Marburg angegeben, während die **Deutsche Digitale Bibliothek** als Aggregator fungiert und die Metadaten zusammenzog. Weitere Angaben betreffen das **Erstellungsdatum** (1965), den **Ort** (Ejmiacin), die **Sammlung** (199 DDB BildarchivFotoMarburg) sowie die **Rechteinformation** nach rightsstatements.org.
 
@@ -833,7 +833,7 @@ Im Beispiel wird deutlich, dass die Metadaten zwar formale Metadaten enthalten, 
 
 Beim Zusammenführen von Metadaten sollten in einem letzten Schritt alle **Fehlstellen, Unstimmigkeiten und möglichen Informationsverluste** transparent gemacht werden. Zudem ist es wichtig, die **getroffenen Entscheidungen nachvollziehbar zu dokumentieren**, um den Prozess für andere überprüfbar und weiterführbar zu halten. Dazu gehört auch, **kontaminiertes Archivgut** (Diskriminierungen, Lücken, Biases oder ethische Konflikte) zu dokumentieren und in den neuen Metadaten oder Paradaten auszuweisen.
 
-![Screenshot aus dem Online-Zugang des Schweizerischen Bundesarchivs zur Akte „Zigeuner-Problem“ (Signatur E4001E\#1991/200\#143\*), erstellt 1972–1982, abgelegt beim Generalsekretariat des Eidgenössischen Justiz- und Polizeidepartements.](images/image8.png){fig-alt="Webseite des Schweizerischen Bundesarchivs mit Informationen zur Akte „Zigeuner-Problem“. Angezeigt werden Signatur, Titel, Entstehungszeitraum (1972–1982), Zugänglichkeit („frei zugänglich“), Aktenzeichen (0172), Provenienz (Generalsekretariat EJPD, 1953–1983) sowie der Archivplan mit Verlinkungen."}
+![Screenshot aus dem Online-Zugang des Schweizerischen Bundesarchivs zur Akte „Zigeuner-Problem“ (Signatur E4001E\#1991/200\#143\*), erstellt 1972–1982, abgelegt beim Generalsekretariat des Eidgenössischen Justiz- und Polizeidepartements.](images/image8.png){fig-alt="Webseite des Schweizerischen Bundesarchivs mit Informationen zur Akte „Zigeuner-Problem“. Angezeigt werden Signatur, Titel, Entstehungszeitraum (1972–1982), Zugänglichkeit („frei zugänglich“), Aktenzeichen (0172), Provenienz (Generalsekretariat EJPD, 1953–1983) sowie der Archivplan mit Verlinkungen." width="1152" height="1134" .img-fluid }
 
 Das Dossier [“Zigeuner-Problem”](https://www.recherche.bar.admin.ch/recherche/#/en/archive/unit/3187803) im Schweizer Bundesarchiv macht deutlich, wie selbst Archivtitel Diskriminierung reproduzieren können. Diese stigmatisierende Fremdbezeichnung entstand in der damaligen Behördenpraxis und sollte zwar für heutige Nutzer\*innen zur Sicherung der Authentizität erhalten bleiben, gleichzeitig jedoch in den Metadaten oder Paradaten klar als diskriminierende Bezeichnung markiert und kontextualisiert werden. Konkret könnte beispielsweise in den Metadaten ein Hinweis auf die Verfolgung von Sinti und Roma sowie alternative Suchbegriffe respektive Selbstbezeichnungen stehen.
 
@@ -898,11 +898,11 @@ Beispiele: binäres Geschlechtsmodell, starre Namensfelder, westliche Urheberrec
 
 ### 3.2 Beschreibung und Verschlagwortung {#sec-32-beschreibung-und-verschlagwortung}
 
-Nach der Wahl der Metadatenstandards (QUERVERWEIS Metadatenstandards), müssen die Felder befüllt werden. Dazu kann für jedes Feld auf eine Reihe sogenannter **kontrollierter Vokabulare** beziehungsweise **Normdatensätze** (auch Normdateien genannt) zurückgegriffen werden. Hier kann zwischen Normdatensätzen (etwa der {{< glossary GND >}}) sowie kontrollierten Vokabularen und spezifischen Schlagwortindizes (etwa thematischen Indizes wie GenderOpen) unterschieden werden. Für Ortsverzeichnisse wird oft auch **Gazetteer** verwendet. Auch {{< glossary "Dublin Core" >}} stellt mit den [**DCIM Metadata Terms**](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/) **(DCTERMS)** übersichtliche Datenwertstandards mit einigen Dutzend Einträgen bereit. Diese sollten nicht mit dem {{< glossary "Dublin Core" >}} *Schema* {{< glossary DC display="DCMES" >}} verwechselt werden.
+Nach der Wahl der Metadatenstandards (QUERVERWEIS Metadatenstandards), müssen die Felder befüllt werden. Dazu kann für jedes Feld auf eine Reihe sogenannter **kontrollierter Vokabulare** beziehungsweise **Normdatensätze** (auch Normdateien genannt) zurückgegriffen werden. Hier kann zwischen Normdatensätzen (etwa der {{< glossary GND >}}) sowie kontrollierten Vokabularen und spezifischen Schlagwortindizes (etwa thematischen Indizes wie GenderOpen) unterschieden werden. Für Ortsverzeichnisse wird oft auch **Gazetteer** verwendet. Auch {{< glossary "Dublin Core" >}} stellt mit den [**DCIM Metadata Terms**](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/) **(DCTERMS)** übersichtliche Datenwertstandards mit einigen Dutzend Einträgen bereit. Diese sollten nicht mit dem {{< glossary "Dublin Core" >}} *Schema* {{< glossary "Dublin Core" display="DCMES" >}} verwechselt werden.
 
 Für eine diskriminierungssensible Metadatenpraxis ist es wichtig, Normdaten und Vokabulare auch inhaltlich kritisch zu hinterfragen. So ist beispielsweise auf die Grenzen von {{< glossary GND >}} hinzuweisen: Viele Begriffe fehlen, und häufig liegt eine binäre Logik zugrunde. Über lokale {{< glossary GND >}}-Redaktionen können jedoch Ergänzungsanträge eingereicht werden, um diskriminierende Lücken zu schliessen oder problematische Einträge zu verändern. Als Beispiel ist der Begriff *Gender* zu nennen, der 2024 offiziell in {{< glossary GND >}} aufgenommen wurde.
 
-Darüber hinaus sollte Mehrsprachigkeit systematisch berücksichtigt werden, nicht als nachträgliche Ergänzung, sondern als grundlegende Systemfrage. Begriffe sind stets kulturell kodiert und lassen sich nicht ohne Weiteres in andere Sprachen übertragen, wie das Beispiel *Race ≠ Rasse* verdeutlicht. Auch beim Einsatz von Mappings und {{< glossary Crosswalk display="Crosswalks" >}}s empfiehlt es sich, mit Äquivalenzklassen zu arbeiten, deren Definitionen jedoch kritisch zu prüfen. Widersprüche oder Ausschlüsse müssen sichtbar gemacht und, falls nötig, in Anträgen an die zuständigen Redaktionen thematisiert werden.
+Darüber hinaus sollte Mehrsprachigkeit systematisch berücksichtigt werden, nicht als nachträgliche Ergänzung, sondern als grundlegende Systemfrage. Begriffe sind stets kulturell kodiert und lassen sich nicht ohne Weiteres in andere Sprachen übertragen, wie das Beispiel *Race ≠ Rasse* verdeutlicht. Auch beim Einsatz von Mappings und {{< glossary Crosswalk display="Crosswalks" >}} empfiehlt es sich, mit Äquivalenzklassen zu arbeiten, deren Definitionen jedoch kritisch zu prüfen. Widersprüche oder Ausschlüsse müssen sichtbar gemacht und, falls nötig, in Anträgen an die zuständigen Redaktionen thematisiert werden.
 
 Es kann zwischen **intrinsischen und extrinsischen Schlagwörtern** unterschieden werden. Dabei geht es darum, ob die verwendeten Begriffe der Quelle selbst entstammen (intrinsisch), oder ob es sich um äussere Zuschreibungen oder Kontextinformationen handelt (extrinsisch). Schemata wie Dublin-Core erlauben es jedoch, intrinsische und extrinsische Schlagwörter demselben Element zuzuordnen (zum Beispiel `dc:subject`), ohne diese explizit als solche auszuzeichnen, wobei extrinsisch häufiger ist. Bei der extrinsischen Verschlagwortung sowie bei Objekt- und Bildbeschreibungen ist es nicht nur relevant, welche Begriffe gewählt werden, sondern auch, wer dabei Mitsprache erhält. Diese Entscheide sollten dokumentiert werden.
 
@@ -1110,7 +1110,7 @@ Nachnutzung sollte nicht als einseitiger Prozess verstanden werden. Rückmeldung
 
 ::: {.callout-important title="Nachnutzung und Wiederverwendung"}
 
-* Linked-Data-Exporte, PIDs und {{< glossary Crosswalk display="Crosswalks" >}}s verfügbar  
+* Linked-Data-Exporte, PIDs und {{< glossary Crosswalk display="Crosswalks" >}} verfügbar  
 * Zitations- und Lizenzrichtlinien veröffentlicht  
 * API oder Dumps versioniert zugänglich  
 * Feedback-Prozess etabliert, Nutzung dokumentiert
@@ -1235,103 +1235,103 @@ So werden Diskriminierungen nicht nur benannt, sondern in überprüfbaren Schrit
 
 1. Planung und Konzeption  
    1.1 Zielsetzung klären  
-   - [ ] Ziel, Zielgruppen, Nutzungsszenarien dokumentiert  
-   - [ ] Prioritäten und Mindeststandards definiert  
-   - [ ] Pilotkorpus erfasst und Aufwand gemessen  
-   - [ ] Sensible Inhalte antizipiert und gekennzeichnet  
+   * [ ] Ziel, Zielgruppen, Nutzungsszenarien dokumentiert  
+   * [ ] Prioritäten und Mindeststandards definiert  
+   * [ ] Pilotkorpus erfasst und Aufwand gemessen  
+   * [ ] Sensible Inhalte antizipiert und gekennzeichnet  
 
    1.2 Ethische und rechtliche Rahmenbedingungen  
-   - [ ] Rechtslage pro Inhaltstyp dokumentiert und geklärt  
-   - [ ] Einwilligungen und Einschränkungen erfasst  
-   - [ ] Personenbezug und Schutzmassnahmen geprüft  
-   - [ ] Lizenz/rights statement festgelegt  
-   - [ ] Review- und Eskalationswege definiert  
+   * [ ] Rechtslage pro Inhaltstyp dokumentiert und geklärt  
+   * [ ] Einwilligungen und Einschränkungen erfasst  
+   * [ ] Personenbezug und Schutzmassnahmen geprüft  
+   * [ ] Lizenz/rights statement festgelegt  
+   * [ ] Review- und Eskalationswege definiert  
 
    1.3 Standards und Infrastruktur festlegen  
-   - [ ] Zentrales Schema + Erweiterungen dokumentiert  
-   - [ ] Normdaten/Vokabulare ausgewählt  
-   - [ ] Plattform, Exportformate und Persistent Identifiers (DOI etc.) definiert  
+   * [ ] Zentrales Schema + Erweiterungen dokumentiert  
+   * [ ] Normdaten/Vokabulare ausgewählt  
+   * [ ] Plattform, Exportformate und Persistent Identifiers (DOI etc.) definiert  
 
 2. Datensammlung und Quellenkritik  
    2.1 Primärerschliessung vs. Nachnutzung  
-   - [ ] Re-Use-Quellen bewertet und zitiert  
-   - [ ] Übernahmen, Streichungen, Korrekturen protokolliert  
-   - [ ] Bias-Befunde und Lücken sichtbar gemacht  
+   * [ ] Re-Use-Quellen bewertet und zitiert  
+   * [ ] Übernahmen, Streichungen, Korrekturen protokolliert  
+   * [ ] Bias-Befunde und Lücken sichtbar gemacht  
 
    2.2 Kontextualisierung der Quellen  
-   - [ ] Entstehungs- und Nutzungskontext beschrieben  
-   - [ ] Relevante Akteur\*innen und Machtverhältnisse benannt  
-   - [ ] Rezeption und Deutungskonflikte referenziert  
+   * [ ] Entstehungs- und Nutzungskontext beschrieben  
+   * [ ] Relevante Akteur\*innen und Machtverhältnisse benannt  
+   * [ ] Rezeption und Deutungskonflikte referenziert  
 
 3. Datenverarbeitung und Anreicherung  
    3.1 Technische Standards implementieren  
-   - [ ] Feldkatalog mit Definitionen erstellt  
-   - [ ] Maschinenlesbare Datentypen und Validierung gesetzt  
-   - [ ] Sichtbarkeits- und Sensitivitätslogik modelliert  
+   * [ ] Feldkatalog mit Definitionen erstellt  
+   * [ ] Maschinenlesbare Datentypen und Validierung gesetzt  
+   * [ ] Sichtbarkeits- und Sensitivitätslogik modelliert  
 
    3.2 Beschreibung und Verschlagwortung  
-   - [ ] Vokabulare und Normdateien pro Feld definiert  
-   - [ ] Regeln für Intrinsisch/Extrinsisch festgelegt  
-   - [ ] Unsicherheit formalisiert und sichtbar gemacht  
+   * [ ] Vokabulare und Normdateien pro Feld definiert  
+   * [ ] Regeln für Intrinsisch/Extrinsisch festgelegt  
+   * [ ] Unsicherheit formalisiert und sichtbar gemacht  
 
    3.3 KI-Unterstützung und Automatisierung  
-   - [ ] KI-Einsatzbereiche, Modelle, Trainings-/Prompt-Kontexte dokumentiert  
-   - [ ] Stufen der Qualitätskontrollen, Freigaben, Rückverfolgbarkeit definiert  
-   - [ ] KI-Anteile in Feldern gekennzeichnet  
-   - [ ] Risiko- und Bias-Assessments durchgeführt und dokumentiert  
-   - [ ] Datenschutz, Urheberrecht und {{< glossary FAIR >}}/{{< glossary CARE >}}-Prinzipien geprüft  
-   - [ ] Kontrollschwellen (z. B. Confidence-Scores) für menschliche Überprüfung festgelegt  
-   - [ ] Rollen, Eskalationsverfahren und Verantwortlichkeiten definiert  
-   - [ ] Modelle, Prompts und Updates versioniert und veröffentlicht  
-   - [ ] Mitarbeitende geschult und fortlaufend sensibilisiert  
+   * [ ] KI-Einsatzbereiche, Modelle, Trainings-/Prompt-Kontexte dokumentiert  
+   * [ ] Stufen der Qualitätskontrollen, Freigaben, Rückverfolgbarkeit definiert  
+   * [ ] KI-Anteile in Feldern gekennzeichnet  
+   * [ ] Risiko- und Bias-Assessments durchgeführt und dokumentiert  
+   * [ ] Datenschutz, Urheberrecht und {{< glossary FAIR >}}/{{< glossary CARE >}}-Prinzipien geprüft  
+   * [ ] Kontrollschwellen (z. B. Confidence-Scores) für menschliche Überprüfung festgelegt  
+   * [ ] Rollen, Eskalationsverfahren und Verantwortlichkeiten definiert  
+   * [ ] Modelle, Prompts und Updates versioniert und veröffentlicht  
+   * [ ] Mitarbeitende geschult und fortlaufend sensibilisiert  
 
 4. Speicherung und Verwaltung  
-   - [ ] Repositorium und Persistent Identifiers (PIDs) gewählt  
-   - [ ] Data Dictionary publiziert  
-   - [ ] Versionierungsstrategie definiert und technisch verankert  
+   * [ ] Repositorium und Persistent Identifiers (PIDs) gewählt  
+   * [ ] Data Dictionary publiziert  
+   * [ ] Versionierungsstrategie definiert und technisch verankert  
 
 5. Veröffentlichung und Zugang  
    5.1 Zielgruppe definieren  
-   - [ ] Zielgruppen, Einstiegspfade und Zugangsebenen definiert  
-   - [ ] Statischer Endzustand mit Rückwärtsplanung festgelegt  
-   - [ ] Kanonische, parameterlose URLs oder DOIs vergeben  
-   - [ ] Editionen versioniert, Weiterleitungen bei Umzügen vorgesehen  
-   - [ ] Zitierempfehlungen sichtbar integriert  
+   * [ ] Zielgruppen, Einstiegspfade und Zugangsebenen definiert  
+   * [ ] Statischer Endzustand mit Rückwärtsplanung festgelegt  
+   * [ ] Kanonische, parameterlose URLs oder DOIs vergeben  
+   * [ ] Editionen versioniert, Weiterleitungen bei Umzügen vorgesehen  
+   * [ ] Zitierempfehlungen sichtbar integriert  
 
    5.2 Umgang mit sensiblen und diskriminierenden Inhalten  
-   - [ ] Sensible Daten identifiziert und Schutzmassnahmen getroffen  
-   - [ ] Diskriminierende Inhalte benannt und kontextualisiert  
-   - [ ] Trigger- und Content-Notes formuliert  
-   - [ ] Einwilligungsfragen reflektiert und Alternativen geprüft  
-   - [ ] Governance-Regeln dokumentiert und Änderungen nachvollziehbar protokolliert  
+   * [ ] Sensible Daten identifiziert und Schutzmassnahmen getroffen  
+   * [ ] Diskriminierende Inhalte benannt und kontextualisiert  
+   * [ ] Trigger- und Content-Notes formuliert  
+   * [ ] Einwilligungsfragen reflektiert und Alternativen geprüft  
+   * [ ] Governance-Regeln dokumentiert und Änderungen nachvollziehbar protokolliert  
 
    5.3 Technische Strategien  
-   - [ ] Statischer Webauftritt ohne serverseitige Abhängigkeiten definiert  
-   - [ ] Build- und Validierungsprozess unter Versionskontrolle implementiert  
-   - [ ] Sichtbarkeitssteuerung in Export- oder Ableitungsschritten umgesetzt  
-   - [ ] Offene, verlustfreie Formate mit UTF-8-Kodierung verwendet  
-   - [ ] README und Referenzdokumente bereitgestellt und versioniert  
-   - [ ] API-Exporte abgesichert und reproduzierbare Datenbeilage integriert  
-   - [ ] Opt-in-Mechanismus für sensible Inhalte verfügbar  
+   * [ ] Statischer Webauftritt ohne serverseitige Abhängigkeiten definiert  
+   * [ ] Build- und Validierungsprozess unter Versionskontrolle implementiert  
+   * [ ] Sichtbarkeitssteuerung in Export- oder Ableitungsschritten umgesetzt  
+   * [ ] Offene, verlustfreie Formate mit UTF-8-Kodierung verwendet  
+   * [ ] README und Referenzdokumente bereitgestellt und versioniert  
+   * [ ] API-Exporte abgesichert und reproduzierbare Datenbeilage integriert  
+   * [ ] Opt-in-Mechanismus für sensible Inhalte verfügbar  
 
    5.4 Transparente Dokumentation  
-   - [ ] Publikationsdokumentation online und öffentlich zugänglich  
-   - [ ] Editionen mit Datum, Version und Zitierempfehlung publiziert  
-   - [ ] Persistente URIs stabil, Umzüge mit Weiterleitungen gesichert  
-   - [ ] Jede Edition als Paket mit Prüfsummen, Daten und Dokumentation archiviert  
+   * [ ] Publikationsdokumentation online und öffentlich zugänglich  
+   * [ ] Editionen mit Datum, Version und Zitierempfehlung publiziert  
+   * [ ] Persistente URIs stabil, Umzüge mit Weiterleitungen gesichert  
+   * [ ] Jede Edition als Paket mit Prüfsummen, Daten und Dokumentation archiviert  
 
 6. Nachnutzung und Wiederverwendung  
-   - [ ] Linked-Data-Exporte, PIDs und {{< glossary Crosswalk display="Crosswalks" >}}s verfügbar  
-   - [ ] Zitations- und Lizenzrichtlinien veröffentlicht  
-   - [ ] API oder Dumps versioniert zugänglich  
-   - [ ] Feedback-Prozess etabliert, Nutzung dokumentiert  
+   * [ ] Linked-Data-Exporte, PIDs und {{< glossary Crosswalk display="Crosswalks" >}} verfügbar  
+   * [ ] Zitations- und Lizenzrichtlinien veröffentlicht  
+   * [ ] API oder Dumps versioniert zugänglich  
+   * [ ] Feedback-Prozess etabliert, Nutzung dokumentiert  
 
 7. Archivierung und Löschung  
-   - [ ] Archivpakete mit dokumentierten Provenienzen und Prüfsummen erstellt  
-   - [ ] Lösch- und Rückgabeprozesse rechtlich und organisatorisch festgelegt  
-   - [ ] Tombstones und Änderungsprotokolle veröffentlicht  
-   - [ ] Zugriffskontrollen, Verschlüsselung und Logs aktiv  
-   - [ ] Redundanz- und Notfallpläne etabliert, Kosten langfristig kalkuliert  
+   * [ ] Archivpakete mit dokumentierten Provenienzen und Prüfsummen erstellt  
+   * [ ] Lösch- und Rückgabeprozesse rechtlich und organisatorisch festgelegt  
+   * [ ] Tombstones und Änderungsprotokolle veröffentlicht  
+   * [ ] Zugriffskontrollen, Verschlüsselung und Logs aktiv  
+   * [ ] Redundanz- und Notfallpläne etabliert, Kosten langfristig kalkuliert  
 
 ## Glossar {#sec-glossar}
 

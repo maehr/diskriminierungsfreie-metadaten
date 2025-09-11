@@ -1,19 +1,22 @@
 @media print {
 	img {
-		max-height: 8cm;
 		object-fit: contain;
+		max-height: 8cm;
 	}
-
 	@page {
 		size: A4;
 		margin: 1cm;
 	}
-
 	body {
 		margin: 0;
 	}
-
 	.level1 {
 		page-break-before: always;
 	}
+}
+.img-fluid {
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	max-height: clamp(240px, 80dvh, 960px);
 }
