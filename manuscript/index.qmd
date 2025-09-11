@@ -760,10 +760,10 @@ Die Phasen sind iterativ angelegt – Entscheidungen wirken rückkoppelnd auf fr
 
 ::: {.callout-important title="Checkliste Zielsetzung"}
 
-* Ziel, Zielgruppen, Nutzungsszenarien dokumentiert  
-* Prioritäten und Mindeststandards definiert  
-* Pilotkorpus erfasst und Aufwand gemessen  
-* Sensible Inhalte antizipiert und gekennzeichnet
+* [ ] Ziel, Zielgruppen, Nutzungsszenarien dokumentiert  
+* [ ] Prioritäten und Mindeststandards definiert  
+* [ ] Pilotkorpus erfasst und Aufwand gemessen  
+* [ ] Sensible Inhalte antizipiert und gekennzeichnet
 
 :::
 
@@ -782,11 +782,11 @@ Für die Veröffentlichung sind Lizenzangaben und Rechteaussagen (zum Beispiel C
 
 ::: {.callout-important title="Checkliste ethische und rechtliche Rahmenbedingungen"}
 
-* Rechtslage pro Inhaltstyp dokumentiert und geklärt  
-* Einwilligungen und Einschränkungen erfasst  
-* Personenbezug und Schutzmassnahmen geprüft  
-* Lizenz/rights statement festgelegt  
-* Review- und Eskalationswege definiert
+* [ ] Rechtslage pro Inhaltstyp dokumentiert und geklärt  
+* [ ] Einwilligungen und Einschränkungen erfasst  
+* [ ] Personenbezug und Schutzmassnahmen geprüft  
+* [ ] Lizenz/rights statement festgelegt  
+* [ ] Review- und Eskalationswege definiert
 
 :::
 
@@ -806,9 +806,9 @@ Ein weiterer zentraler Punkt bei der Auswahl und Planung von Infrastrukturen ist
 
 ::: {.callout-important title="Checkliste Standards und Infrastruktur"}
 
-* Zentrales Schema \+ Erweiterungen dokumentiert  
-* Normdaten/Vokabulare ausgewählt  
-* Plattform, Exportformate und Persistent Identifiers (DOI etc.) definiert
+* [ ] Zentrales Schema \+ Erweiterungen dokumentiert  
+* [ ] Normdaten/Vokabulare ausgewählt  
+* [ ] Plattform, Exportformate und Persistent Identifiers (DOI etc.) definiert
 
 :::
 
@@ -849,9 +849,10 @@ Das Dossier [“Zigeuner-Problem”](https://www.recherche.bar.admin.ch/recherch
 
 ::: {.callout-important title="Checkliste Re-Use"}
 
-* Re-Use-Quellen bewertet und zitiert  
-* Übernahmen, Streichungen, Korrekturen protokolliert  
-* Bias-Befunde und Lücken sichtbar gemacht
+* [ ] Re-Use-Quellen bewertet und zitiert  
+* [ ] Übernahmen, Streichungen, Korrekturen protokolliert  
+* [ ] Bias-Befunde und Lücken sichtbar gemacht
+
 :::
 
 ### 2.2 Kontextualisierung der Quellen {#sec-22-kontextualisierung-der-quellen}
@@ -866,9 +867,9 @@ Neben dem Entstehungskontext muss auch der **Verwendungskontext der Quelle** erm
 
 ::: {.callout-important title="Checkliste Kontextualisierung"}
 
-* Entstehungs- und Nutzungskontext beschrieben  
-* Relevante Akteur\*innen und Machtverhältnisse benannt  
-* Rezeption und Deutungskonflikte referenziert
+* [ ] Entstehungs- und Nutzungskontext beschrieben  
+* [ ] Relevante Akteur\*innen und Machtverhältnisse benannt  
+* [ ] Rezeption und Deutungskonflikte referenziert
 
 :::
 
@@ -890,9 +891,9 @@ Beispiele: binäres Geschlechtsmodell, starre Namensfelder, westliche Urheberrec
 
 ::: {.callout-important title="Checkliste Technische Standards"}
 
-* Feldkatalog mit Definitionen erstellt  
-* Maschinenlesbare Datentypen und Validierung gesetzt  
-* Sichtbarkeits- und Sensitivitätslogik modelliert
+* [ ] Feldkatalog mit Definitionen erstellt  
+* [ ] Maschinenlesbare Datentypen und Validierung gesetzt  
+* [ ] Sichtbarkeits- und Sensitivitätslogik modelliert
 
 :::
 
@@ -908,9 +909,9 @@ Es kann zwischen **intrinsischen und extrinsischen Schlagwörtern** unterschiede
 
 ::: {.callout-important title="Checkliste Beschreibung"}
 
-* Vokabulare und Normdateien pro Feld definiert  
-* Regeln für Intrinsisch/Extrinsisch festgelegt  
-* Unsicherheit formalisiert und sichtbar gemacht
+* [ ] Vokabulare und Normdateien pro Feld definiert  
+* [ ] Regeln für Intrinsisch/Extrinsisch festgelegt  
+* [ ] Unsicherheit formalisiert und sichtbar gemacht
 
 :::
 
@@ -967,15 +968,15 @@ Es müssen konkrete Einsatzszenarien definiert werden (z. B. automatische Transk
 
 ::: {.callout-important title="Checkliste KI-Einsatz"}
 
-* KI-Einsatzbereiche, Modelle, Trainings-/Prompt-Kontexte dokumentiert  
-* Stufen der Qualitätskontrollen, Freigaben, Rückverfolgbarkeit definiert  
-* KI-Anteile in Feldern gekennzeichnet  
-* Risiko- und Bias-Assessments durchgeführt und dokumentiert  
-* Datenschutz, Urheberrecht und {{< glossary FAIR >}}/{{< glossary CARE >}}-Prinzipien geprüft  
-* Kontrollschwellen (z. B. Confidence-Scores) für menschliche Überprüfung festgelegt  
-* Rollen, Eskalationsverfahren und Verantwortlichkeiten definiert  
-* Modelle, Prompts und Updates versioniert und veröffentlicht  
-* Mitarbeitende geschult und fortlaufend sensibilisiert
+* [ ] KI-Einsatzbereiche, Modelle, Trainings-/Prompt-Kontexte dokumentiert  
+* [ ] Stufen der Qualitätskontrollen, Freigaben, Rückverfolgbarkeit definiert  
+* [ ] KI-Anteile in Feldern gekennzeichnet  
+* [ ] Risiko- und Bias-Assessments durchgeführt und dokumentiert  
+* [ ] Datenschutz, Urheberrecht und {{< glossary FAIR >}}/{{< glossary CARE >}}-Prinzipien geprüft  
+* [ ] Kontrollschwellen (z. B. Confidence-Scores) für menschliche Überprüfung festgelegt  
+* [ ] Rollen, Eskalationsverfahren und Verantwortlichkeiten definiert  
+* [ ] Modelle, Prompts und Updates versioniert und veröffentlicht  
+* [ ] Mitarbeitende geschult und fortlaufend sensibilisiert
 
 :::
 
@@ -997,9 +998,9 @@ Die Wahl des Versionierungsmodus richtet sich nach Komplexität und Kollaboratio
 
 ::: {.callout-important title="Checkliste Speicherung und Verwaltung"}
 
-* Repositorium und Persistent Identifiers (PIDs) gewählt  
-* Data Dictionary publiziert  
-* Versionierungsstrategie definiert und technisch verankert
+* [ ] Repositorium und Persistent Identifiers (PIDs) gewählt  
+* [ ] Data Dictionary publiziert  
+* [ ] Versionierungsstrategie definiert und technisch verankert
 
 :::
 
@@ -1017,11 +1018,12 @@ Adressierbarkeit und Persistenz erfordern die Vergabe kanonischer, parameterlose
 
 ::: {.callout-important title="Checkliste Zielgruppe"}
 
-* Zielgruppen, Einstiegspfade und Zugangsebenen definiert  
-* Statischer Endzustand mit Rückwärtsplanung festgelegt  
-* Kanonische, parameterlose URLs oder DOIs vergeben  
-* Editionen versioniert, Weiterleitungen bei Umzügen vorgesehen  
-* Zitierempfehlungen sichtbar integriert
+* [ ] Zielgruppen, Einstiegspfade und Zugangsebenen definiert  
+* [ ] Statischer Endzustand mit Rückwärtsplanung festgelegt  
+* [ ] Kanonische, parameterlose URLs oder DOIs vergeben  
+* [ ] Editionen versioniert, Weiterleitungen bei Umzügen vorgesehen  
+* [ ] Zitierempfehlungen sichtbar integriert
+
 :::
 
 ### 5.2 Umgang mit sensiblen und diskriminierenden Inhalten {#sec-52-umgang-mit-sensiblen-und-diskriminierenden-inhalten}
@@ -1036,11 +1038,11 @@ Entscheidungen zu Sichtbarkeit, Trigger-Hinweisen und alternativen Darstellungsw
 
 ::: {.callout-important title="Checkliste sensible und diskriminierende Inhalte"}
 
-* Sensible Daten identifiziert und Schutzmassnahmen getroffen  
-* Diskriminierende Inhalte benannt und kontextualisiert  
-* Trigger- und Content-Notes formuliert  
-* Einwilligungsfragen reflektiert und Alternativen geprüft  
-* Governance-Regeln dokumentiert und Änderungen nachvollziehbar protokolliert
+* [ ] Sensible Daten identifiziert und Schutzmassnahmen getroffen  
+* [ ] Diskriminierende Inhalte benannt und kontextualisiert  
+* [ ] Trigger- und Content-Notes formuliert  
+* [ ] Einwilligungsfragen reflektiert und Alternativen geprüft  
+* [ ] Governance-Regeln dokumentiert und Änderungen nachvollziehbar protokolliert
 
 :::
 
@@ -1060,13 +1062,14 @@ Exportschnittstellen sind durch API-Keys und Rate-Limits abzusichern, und sie so
 
 ::: {.callout-important title="Checkliste technische Strategien"}
 
-* Statischer Webauftritt ohne serverseitige Abhängigkeiten definiert  
-* Build- und Validierungsprozess unter Versionskontrolle implementiert  
-* Sichtbarkeitssteuerung in Export- oder Ableitungsschritten umgesetzt  
-* Offene, verlustfreie Formate mit UTF-8-Kodierung verwendet  
-* README und Referenzdokumente bereitgestellt und versioniert  
-* API-Exporte abgesichert und reproduzierbare Datenbeilage integriert  
-* Opt-in-Mechanismus für sensible Inhalte verfügbar
+* [ ] Statischer Webauftritt ohne serverseitige Abhängigkeiten definiert  
+* [ ] Build- und Validierungsprozess unter Versionskontrolle implementiert  
+* [ ] Sichtbarkeitssteuerung in Export- oder Ableitungsschritten umgesetzt  
+* [ ] Offene, verlustfreie Formate mit UTF-8-Kodierung verwendet  
+* [ ] README und Referenzdokumente bereitgestellt und versioniert  
+* [ ] API-Exporte abgesichert und reproduzierbare Datenbeilage integriert  
+* [ ] Opt-in-Mechanismus für sensible Inhalte verfügbar
+
 :::
 
 ### 5.4 Transparente Dokumentation {#sec-54-transparente-dokumentation}
@@ -1077,10 +1080,10 @@ Offene Prinzipien werden auf der Projektseite explizit sichtbar gemacht. Dies sc
 
 ::: {.callout-important title="Checkliste Dokumentation"}
 
-* Publikationsdokumentation online und öffentlich zugänglich  
-* Editionen mit Datum, Version und Zitierempfehlung publiziert  
-* Persistente URIs stabil, Umzüge mit Weiterleitungen gesichert  
-* Jede Edition als Paket mit Prüfsummen, Daten und Dokumentation archiviert
+* [ ] Publikationsdokumentation online und öffentlich zugänglich  
+* [ ] Editionen mit Datum, Version und Zitierempfehlung publiziert  
+* [ ] Persistente URIs stabil, Umzüge mit Weiterleitungen gesichert  
+* [ ] Jede Edition als Paket mit Prüfsummen, Daten und Dokumentation archiviert
 
 :::
 
@@ -1108,12 +1111,12 @@ Die Bereitstellung von Schnittstellen (APIs) oder statischen Datenpaketen erleic
 
 Nachnutzung sollte nicht als einseitiger Prozess verstanden werden. Rückmeldungen von Nutzer\*innen müssen systematisch erfasst, geprüft und dokumentiert werden. Issue-Tracker, Feedback-Formulare oder moderierte Mailinglisten können hier als Kanäle dienen. Eine dokumentierte Änderungspolitik (Changelog, Deprecation-Policy) erhöht die Transparenz. Insbesondere Communities, die von diskriminierenden Inhalten betroffen sind, sollten in die Nachbesserung und Ko-Kuration eingebunden werden.
 
-::: {.callout-important title="Nachnutzung und Wiederverwendung"}
+::: {.callout-important title="Checkliste Nachnutzung und Wiederverwendung"}
 
-* Linked-Data-Exporte, PIDs und {{< glossary Crosswalk display="Crosswalks" >}} verfügbar  
-* Zitations- und Lizenzrichtlinien veröffentlicht  
-* API oder Dumps versioniert zugänglich  
-* Feedback-Prozess etabliert, Nutzung dokumentiert
+* [ ] Linked-Data-Exporte, PIDs und {{< glossary Crosswalk display="Crosswalks" >}} verfügbar  
+* [ ] Zitations- und Lizenzrichtlinien veröffentlicht  
+* [ ] API oder Dumps versioniert zugänglich  
+* [ ] Feedback-Prozess etabliert, Nutzung dokumentiert
 
 :::
 
@@ -1135,11 +1138,11 @@ Archivierte Daten müssen auch in Zukunft geschützt und verantwortungsvoll zug�
 
 ::: {.callout-important title="Checkliste Archivierung und Löschung"}
 
-* Archivpakete mit dokumentierten Provenienzen und Prüfsummen erstellt  
-* Lösch- und Rückgabeprozesse rechtlich und organisatorisch festgelegt  
-* Tombstones und Änderungsprotokolle veröffentlicht  
-* Zugriffskontrollen, Verschlüsselung und Logs aktiv  
-* Redundanz- und Notfallpläne etabliert, Kosten langfristig kalkuliert
+* [ ] Archivpakete mit dokumentierten Provenienzen und Prüfsummen erstellt  
+* [ ] Lösch- und Rückgabeprozesse rechtlich und organisatorisch festgelegt  
+* [ ] Tombstones und Änderungsprotokolle veröffentlicht  
+* [ ] Zugriffskontrollen, Verschlüsselung und Logs aktiv  
+* [ ] Redundanz- und Notfallpläne etabliert, Kosten langfristig kalkuliert
 
 :::
 
