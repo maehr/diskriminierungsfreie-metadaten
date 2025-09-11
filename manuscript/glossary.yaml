@@ -22,6 +22,13 @@ CIDOC-CRM: >
   die konzeptuelle Modellierung von Kulturerbe-Informationen. Ermöglicht die
   semantische Verknüpfung heterogener Datenquellen aus Museen, Archiven und
   Bibliotheken.
+Content-Note: >
+  Freitextfeld zur ergänzenden Beschreibung des Inhalts einer Ressource. Dient
+  der Kontextualisierung und Auffindbarkeit, sollte diskriminierungsfreie und
+  inklusive Sprache verwenden.
+Content-Warning: >
+  Hinweis auf sensible oder potenziell belastende Inhalte in einer Ressource.
+  Dient dem Schutz vulnerabler Gruppen und der informierten Nutzung von Daten.
 CSV: >
   Comma-Separated Values ist ein einfaches, textbasiertes Dateiformat zur
   strukturierten Speicherung tabellarischer Daten. Weit verbreitet für den
