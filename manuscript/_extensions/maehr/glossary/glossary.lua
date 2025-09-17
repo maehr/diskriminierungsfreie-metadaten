@@ -116,12 +116,36 @@ return {
     local gt = "<table class='glossary_table'>\n"
     gt = gt .. "<tr><th> Term </th><th> Definition </th></tr>\n"
 
-    local sortedTable = sortByKeys(globalGlossaryTable)
+    -- Load all terms from glossary file for table display
+    local options = mergeOptions(kwargs, meta)
+    local metafile = io.open(options.path, 'r')
+    if metafile then
+      local content = "---\n" .. metafile:read("*a") .. "\n---\n"
+      metafile:close()
+      local glossary = pandoc.read(content, "markdown").meta
+      local allTerms = {}
+      
+      -- Populate allTerms with all glossary entries
+      for key, value in pairs(glossary) do
+        allTerms[key] = pandoc.utils.stringify(value)
+      end
+      
+      local sortedTable = sortByKeys(allTerms)
 
-    for key, value in pairs(sortedTable) do
-        gt = gt .. "<tr><td>" .. key
-        gt = gt .. "</td><td>" .. value .. "</td></tr>\n"
+      for key, value in pairs(sortedTable) do
+          gt = gt .. "<tr><td>" .. key
+          gt = gt .. "</td><td>" .. value .. "</td></tr>\n"
+      end
+    else
+      -- Fallback to globalGlossaryTable if file can't be read
+      local sortedTable = sortByKeys(globalGlossaryTable)
+
+      for key, value in pairs(sortedTable) do
+          gt = gt .. "<tr><td>" .. key
+          gt = gt .. "</td><td>" .. value .. "</td></tr>\n"
+      end
     end
+    
     gt = gt .. "</table>"
 
     return pandoc.RawBlock('html', gt)
