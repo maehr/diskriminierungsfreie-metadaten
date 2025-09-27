@@ -108,7 +108,7 @@ Im zweiten Teil behandeln wir den diskriminierungssensiblen Umgang mit Metadaten
 %%| label: fig-metadata-1
 %%| fig-cap: "Darstellung des Datenlebenszyklus nach dem Curation Lifecycle Model (DCC), adaptiert in sieben linearen Phasen von der Planung bis zur Archivierung bzw. Löschung."
 %%| fig-alt: "Lineares Modell des Datenlebenszyklus mit sieben Phasen: Planung, Datensammlung, Verarbeitung, Speicherung, Veröffentlichung, Nachnutzung, Archivierung/Löschung."
-flowchart LR
+flowchart TD
     A[1 Planung und Konzeption] --> B[2 Datensammlung und Quellenkritik]
     B --> C[3 Datenverarbeitung und Anreicherung]
     C --> D[4 Speicherung und Verwaltung]
@@ -124,7 +124,7 @@ Das Ziel dieses Handbuchs ist es, anhand konkreter Beispiele, Methoden und Strat
 %%| label: fig-metadata-2
 %%| fig-cap: "Entscheidungshilfe zur Orientierung im Handbuch. Die Startfrage 'Was möchte ich tun??' verzweigt in vier Pfade—Metadaten neu erstellen; Zugang/Präsentation verbessern; Bestehende Metadaten nachnutzen; Begriffe/Standards klären—mit Verweisen auf zugehörige Phasen, Praxisabschnitte und Checklisten."
 %%| fig-alt: "Ein hellviolettes Flussdiagramm. In der Mitte eine rautenförmige Startbox mit dem Text 'Was möchte ich tun??'. Von dort führen vier Linien zu vier Themenkästen, von links nach rechts: Erstens 'Metadaten neu erstellen'. Darunter zwei Ebenen: 'Phase 1 bis 3: Planung, Sammlung, Verarbeitung' und darunter 'Praxis Paragraph 1 bis 3'. Zweitens 'Zugang und Präsentation verbessern'. Darunter 'Phase 5: Veröffentlichung und Zugang' und darunter 'Praxis Paragraph 5'. Drittens 'Bestehende Metadaten nachnutzen'. Darunter 'Phase 6: Nachnutzung und Wiederverwendung' und darunter 'Praxis Paragraph 6'. Viertens 'Begriffe und Standards klären'. Darunter 'Theorie und Glossar' und darunter 'Schlüsselbegriffe, Bias, FAIR und CARE'. Die Kästen sind horizontal ausgerichtet, die Verbindungen verlaufen von der Mitte nach aussen und dann je vertikal nach unten."
-flowchart TD
+flowchart LR
   Q{"Was möchte ich tun?"}
 
   Q --> NEU["Metadaten neu erstellen"]
@@ -702,7 +702,7 @@ Dieses Kapitel bündelt drei komplementäre Orientierungen der Forschungsdatenpr
 *Stadt.Geschichte.Basel publiziert und dokumentiert Forschungsdaten mit dem [Open Research Data Template](https://github.com/maehr/open-research-data-template), um Open- und {{< glossary FAIR >}}-Prinzipien operationell umzusetzen. DOIs via Zenodo sichern Zitierbarkeit und Auffindbarkeit; GitHub und GitHub Pages stellen Repositorium und lesbare Dokumentation bereit. Klare Lizenzierung (zum Beispiel CC BY 4.0 für Daten, AGPL 3.0 für Code), standardisierte Ordner- und Dateistrukturen sowie Automationen erhöhen Interoperabilität. README, CHANGELOG und CITATION.cff, Versionierung und Issue-Vorlagen fördern Transparenz und Wiederverwendbarkeit.*
 :::
 
-### Datenethik und {{< glossary CARE >}}
+### Datenethik und CARE
 
 Konventionelle Datenpraktiken vernachlässigen oft Entstehungskontexte, Machtverhältnisse und Folgewirkungen. **{{< glossary CARE >}}** steht für Collective Benefit (Kollektiver Nutzen), Authority to Control (Kontrolle über die Daten), Responsibility (Verantwortung), Ethics (Ethik) und schliesst diese Lücke und richtet Datenpraxis an kollektiven Rechten und Pflichten aus:
 
@@ -713,7 +713,7 @@ Konventionelle Datenpraktiken vernachlässigen oft Entstehungskontexte, Machtver
 
 Die Prinzipien wurden 2018 im Rahmen der International Data Week entworfen und zwischen 2019 und 2020 von der Global Indigenous Data Alliance ausgearbeitet [@GIDA_CARE_2025;@carroll2021]. Gedächtnisinstitutionen agieren dabei zwangsläufig als Gatekeeper; Governance-Modelle sollen Entscheidungsrechte explizit abbilden. In Kanada fassen die [OCAP®-Prinzipien](https://fnigc.ca/ocap-training/) Ownership, Control, Access und Possession als konkrete Form indigener Datenhoheit.
 
-### {{< glossary LOUD >}}: Nutzungsorientierte Erweiterung
+### LOUD: Nutzungsorientierte Erweiterung
 
 **{{< glossary LOUD >}}** steht für Linked (verknüpft), Open (offen), Usable (nutzbar) Data (Daten) und schliesst die Kluft zwischen abstrakten Datenmodellen und Forschungspraxis:
 
@@ -1138,13 +1138,13 @@ Archivierte Daten müssen auch in Zukunft geschützt und verantwortungsvoll zug�
 
 ## Handlungsleitende Prinzipien
 
-### 1\. **Transparenz als Infrastrukturprinzip**
+### 1\. Transparenz als Infrastrukturprinzip
 
 Jeder Arbeitsablauf ({{< glossary Pipeline >}}: Schritte der Datenerhebung, \-verarbeitung und \-analyse) erhält einen öffentlich zugänglichen Entscheidungs- und Änderungslog. Dokumentiert werden: Erhebungsdesign, Auswahlrationale, Fehlerraten, Mapping-Regeln sowie abgelehnte Alternativen (versioniert).
 
 Für Datensätze und Modelle gelten strukturierte Begleitdokumente als Standard: *Datasheets* und *Model Cards* (Steckbriefe für Daten/Modelle). Sie enthalten gruppenspezifische Qualitätsmetriken, bekannte Lücken und Nutzungseinschränkungen. Diese Dokumente sind zitierfähig und mit persistenten Identifikatoren in Repositorien verankert.
 
-### 2\. **Varianten- und Mehrsprachigkeitsfähigkeit im Metadatenmodell**
+### 2\. Varianten- und Mehrsprachigkeitsfähigkeit im Metadatenmodell
 
 Konzepte und Namen werden als mehrsprachige, relationale Entitäten modelliert (z. B. {{< glossary SKOS >}}):
 
@@ -1156,7 +1156,7 @@ Konzepte und Namen werden als mehrsprachige, relationale Entitäten modelliert (
 
 Identitäten und Rollen erhalten kontrolliert-offene Felder statt binärer Pflichtangaben. Selbstbezeichnungen und Schreibvarianten gelten als gleichwertige, abfragbare Identifikatoren. Unsicherheiten werden in eigenen Feldern mit standardisierten, maschinenlesbaren Qualifikatoren vermerkt.
 
-### 3\. **Partizipative Kuratierung und Governance**
+### 3\. Partizipative Kuratierung und Governance
 
 Kuratierung erfolgt gemeinsam mit betroffenen Communities. Dies umfasst:
 
@@ -1166,14 +1166,14 @@ Kuratierung erfolgt gemeinsam mit betroffenen Communities. Dies umfasst:
 
 Für sensible Bestände werden abgestufte Zugangsmodelle (differenzierte Rechtevergabe) und Schutzkennzeichnungen eingesetzt. Alle Entscheidungen sind befristet und revidierbar.
 
-### 4\. **Ausgleichende Technik entlang der gesamten Prozesskette**
+### 4\. Ausgleichende Technik entlang der gesamten Prozesskette
 
 Die Auswahl folgt stratifizierten Plänen mit *Equity-Buckets* (Fairness-Schichten), um unterrepräsentierte Gruppen systematisch einzubeziehen.
 
 * **Digitalisierung und Erkennung:** gezielte Feinjustierung für schwach performende Segmente; Fehlerbilanzen werden nach Schrift, Sprache, Medium und Gruppe veröffentlicht.  
 * **{{< glossary Retrieval >}}-Systeme:** Einsatz von {{< glossary Query-Expansion >}} (Anfrageerweiterung), Cross-Lingual IR (mehrsprachiges Informationsretrieval) und Re-Ranking (Neuanordnung der Treffer), um Recall-Differenzen zwischen Gruppen zu reduzieren. Ranking-Entscheide werden erklärt.
 
-### 5\. **Analytische Robustheit als Standardpraxis**
+### 5\. Analytische Robustheit als Standardpraxis
 
 Studien verpflichten sich zu:
 
@@ -1184,7 +1184,7 @@ Studien verpflichten sich zu:
 
 Fehlende Daten werden transparent behandelt, z. B. durch Mehrfachimputation mit Diagnose der MAR/MNAR-Annahmen (zufälliges/nicht-zufälliges Fehlen). Für kausale Aussagen sind kontrafaktische Szenarien, Instrumentvariablen oder natürliche Experimente zu prüfen. Alle Limitierungen sind offen zu deklarieren.
 
-### 6\. **Gerechtigkeitsmetriken und Monitoring**
+### 6\. Gerechtigkeitsmetriken und Monitoring
 
 Erfolg wird anhand equity-orientierter Kennzahlen gemessen:
 
@@ -1196,7 +1196,7 @@ Erfolg wird anhand equity-orientierter Kennzahlen gemessen:
 
 Diese Metriken fliessen in kontinuierliche Audits ein. Abweichungen lösen definierte Korrekturpfade aus. Ein öffentliches Issue-Tracking ermöglicht externe Prüfung und Nachsteuerung.
 
-### 7\. **Reproduzierbarkeit und digitale Nachhaltigkeit**
+### 7\. Reproduzierbarkeit und digitale Nachhaltigkeit
 
 {{< glossary Workflow display="Workflows" >}} sind:
 
@@ -1350,7 +1350,7 @@ Dieser Entscheidungsbaum hilft bei der Orientierung der Kapitel und verlinkt auf
 %%| label: fig-metadata-3
 %%| fig-cap: "Hilfestellungen für weiterführende Fragen, die über die behandelten Themen des Handbuchs hinausgehen."
 %%| fig-alt: "Flussdiagramm zur Orientierung bei fachspezifischen Fragen in der Archiv- und Metadatenforschung. Die zentrale Frage 'Ich habe eine fachspezifische Frage' verzweigt in drei Bereiche: Metadaten, Forschungs- oder Institutionskontexte sowie Spezifische Diskriminierungsformen. Unter 'Metadaten' stehen Normdaten (Breslau 2019), Open Data / Commons (Hahn 2016), Recht & Lizenzen (Weitzmann & Klimpel 2016) und Kartografische Sammlungen (Gasser & Hötea 2024). Unter 'Forschungs- oder Institutionskontexte' finden sich Kunstmuseen (Knaus 2019), Universitätsarchive (Bruckmann 2024) und Kolonialkontexte (Bruckmann 2024). Unter 'Spezifische Diskriminierungsformen' erscheinen NS-Provenienz (Baresel-Brand 2019), Sklaverei-Archive (Ahrndt 2021) und Rassismus (A4BLiP 2020)."
-flowchart TD
+flowchart LR
     Frage["Ich habe eine fachspezifische Frage"]
 
     Frage --> SpezMeta["Metadaten"]
