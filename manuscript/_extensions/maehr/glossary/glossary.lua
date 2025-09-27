@@ -24,7 +24,7 @@ local function kwExists(kwargs, keyword)
     return false
 end
 
--- Function to sort a Lua table by keys
+-- Function to sort a Lua table by keys (case-insensitive)
 function sortByKeys(tbl)
     local sortedKeys = {}
 
@@ -33,8 +33,10 @@ function sortByKeys(tbl)
         table.insert(sortedKeys, key)
     end
 
-    -- Sort the keys alphabetically
-    table.sort(sortedKeys)
+    -- Sort the keys alphabetically (case-insensitive)
+    table.sort(sortedKeys, function(a, b)
+        return string.lower(a) < string.lower(b)
+    end)
 
     -- Create a new table with the sorted keys
     local sortedTable = {}
@@ -113,12 +115,37 @@ return {
 
   -- create glossary table
   if kwExists(kwargs, "table") then
+    local options = mergeOptions(kwargs, meta)
     local gt = "<table class='glossary_table'>\n"
     gt = gt .. "<tr><th> Term </th><th> Definition </th></tr>\n"
 
-    local sortedTable = sortByKeys(globalGlossaryTable)
+    -- Load all terms from glossary file, not just referenced ones
+    local allTerms = {}
+    local metafile = io.open(options.path, 'r')
+    if metafile then
+      local content = "---\n" .. metafile:read("*a") .. "\n---\n"
+      metafile:close()
+      local glossary = pandoc.read(content, "markdown").meta
+      
+      -- Preserve original capitalization of keys
+      for key, value in pairs(glossary) do
+        allTerms[key] = pandoc.utils.stringify(value)
+      end
+    end
 
-    for key, value in pairs(sortedTable) do
+    -- Sort keys alphabetically (case-insensitive)
+    local sortedKeys = {}
+    for key, _ in pairs(allTerms) do
+        table.insert(sortedKeys, key)
+    end
+    
+    table.sort(sortedKeys, function(a, b)
+        return string.lower(a) < string.lower(b)
+    end)
+
+    -- Use sorted keys to maintain alphabetical order
+    for _, key in ipairs(sortedKeys) do
+        local value = allTerms[key]
         gt = gt .. "<tr><td>" .. key
         gt = gt .. "</td><td>" .. value .. "</td></tr>\n"
     end

@@ -21,8 +21,8 @@ format:
     link-external-icon: true
     link-external-newwindow: true
     comments:
-      giscus:
-        repo: maehr/diskriminierungsfreie-metadaten
+      hypothesis:
+        theme: clean
     css:
       - custom.css
     include-in-header:
