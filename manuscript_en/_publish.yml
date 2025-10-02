@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: 30e0ac62-f0f0-423a-8545-db4cb6d833d1
+      url: https://moritz-maehr.quarto.pub/discrimination-sensitive-metadata-practice

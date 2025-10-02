@@ -1,0 +1,42 @@
+project:
+  type: manuscript
+
+manuscript:
+  code-links:
+    - text: Discussion
+      href: https://github.com/maehr/diskriminierungsfreie-metadaten/discussions
+    - text: Source Code
+      href: https://github.com/maehr/diskriminierungsfreie-metadaten
+  manuscript-url: https://moritz-maehr.quarto.pub/discrimination-sensitive-metadata-practice
+
+glossary:
+  path: glossary.yaml
+  popup: click
+  show: true
+
+format:
+  html:
+    # doi: '10.5281/zenodo.17073511'
+    date-modified: last-modified
+    link-external-icon: true
+    link-external-newwindow: true
+    comments:
+      hypothesis:
+        theme: clean
+    css:
+      - custom.css
+    include-in-header:
+      - custom-header.html
+    page-layout: full
+    license: CC BY-SA
+  # docx:
+  #   reference-doc: custom-reference.docx
+  #   fig-align: left
+  #   subject: Diskriminierungsfreie Metadaten
+  #   category: Handbuch
+  #   toc: true
+  #   toc-depth: 3
+  #   toc-title: Inhaltsverzeichnis
+  # pdf:
+  #   pdf-engine: xelatex
+  #   keep-tex: false
