@@ -276,7 +276,8 @@ Strukturelle Diskriminierung bezeichnet Benachteiligungen, die in etablierten Pr
 
 ### Institutionelle Diskriminierung {#sec-institutionelle-diskriminierung}
 
-Institutionelle Diskriminierung entsteht, wenn interne Ordnungen und Routinen von einer spezifischen Gedächtnisinstitution systematisch bestimmte Gruppen benachteiligen. Sie verschränkt sich oft mit struktureller Diskriminierung. QUERVERWEIS
+Institutionelle Diskriminierung entsteht, wenn interne Ordnungen und Routinen von einer spezifischen Gedächtnisinstitution systematisch bestimmte Gruppen benachteiligen. Sie verschränkt sich oft mit struktureller Diskriminierung.
+<!-- FIXME QUERVERWEIS -->
 
 **Beispiele**
 
@@ -1339,8 +1340,6 @@ Schliesslich sind rechtlich-ethische und ökologische Grenzen mitzudenken. Re-Id
 ## Glossar {#sec-glossar}
 
 {{< glossary table=true >}}
-
-<!-- FIXME Glossar wird nicht angezeigt ganz -->
 
 ## Handbücher und Leitfäden  {#sec-handbücher-und-leitfäden}
 

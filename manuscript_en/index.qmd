@@ -87,7 +87,7 @@ This handbook is a practical guide to the discrimination-sensitive labeling of m
 
 Why metadata? In an increasingly digitally mediated world, metadata makes historical collections discoverable, accessible, interoperable, and reusable. Freely accessible, machine-readable metadata enables integration into search engines, data portals, and virtual research environments. This is changing the way historians research, interpret, and understand sources.
 
-![Screenshot from the Basel poster collection: Referendum poster "Women's suffrage, No" for the federal referendum of February 1, 1959, designed by Werner Nänny on behalf of the Basel Women's Committee against Women's Suffrage, printed by Wassermann AG, Basel.](images/image1.png){fig-alt="Screenshot of a website showing a 1959 poster campaigning against women's suffrage in Switzerland. The poster shows the black silhouette of a woman being harassed by several gray hands bearing the inscription "Party." Next to it is information about the collection, date, author, and technique." width="1801" height="964" .img-fluid }
+![Screenshot from the Basel poster collection: Referendum poster "Women's suffrage, No" for the federal referendum of February 1, 1959, designed by Werner Nänny on behalf of the Basel Women's Committee against Women's Suffrage, printed by Wassermann AG, Basel.](images/image1.png){fig-alt="Screenshot of a website showing a 1959 poster campaigning against women's suffrage in Switzerland. The poster shows the black silhouette of a woman being harassed by several gray hands bearing the inscription 'Party'. Next to it is information about the collection, date, author, and technique." width="1801" height="964" .img-fluid }
 
 A look at German-language archives shows that in many places, {{< glossary FAIR >}} principles are already being applied to metadata. However, metadata practices that are sensitive to discrimination are still largely absent. Contextualizing descriptions that explicitly name forms of discrimination and place them in their respective historical contexts are often lacking. In the online catalog of the "Plakatsammlung der Schule für Gestaltung" (School of Design Poster Collection), the description of the poster ["Frauenstimmrecht, Nein" (Women's Suffrage, No)](https://www.recherche-plakatsammlungbasel.ch/objects/48228/) is limited to factual information: "Federal referendum, February 1, 1959." There are no references to the historical, political, and, in particular, sexist context.
 
@@ -140,7 +140,7 @@ flowchart LR
   NEW --> P13["Phase 1–3: Planning • Collection • Processing"]
   P13 --> R13["Practice §1–3"]
 
-  ZUG --> P5["Phase 5: Publication &amp; Access"]
+  ACCESS --> P5["Phase 5: Publication &amp; Access"]
   P5 --> R5["Practice §5"]
 
   REUSE --> P6["Phase 6: Reuse &amp; Repurposing"]
@@ -283,9 +283,7 @@ Structural discrimination refers to disadvantages that are embedded in establish
 
 ### Institutional discrimination {#sec-institutional-discrimination}
 
-Institutional discrimination occurs when internal rules and routines of a specific memory institution systematically disadvantage certain groups. It is often intertwined with structural discrimination. CROSS-REFERENCE
-
-**Examples**
+Institutional discrimination occurs when internal rules and routines of a specific memory institution systematically disadvantage certain groups. It is often intertwined with structural discrimination.
 
 **Examples**
 
@@ -332,7 +330,7 @@ Statistical discrimination refers to the disadvantage of individuals when decisi
   * *Effect:* Systematic misclassification of non-Western, historical, or trans names.  
   * *Indicators:* Clustering of assignments close to the classification threshold; disproportionate corrections based on region of origin.  
   * *Countermeasures:* Abstention rule in case of uncertainty; separate fields for self-reported data and sources; calibrated thresholds; active post-annotation.  
-* **{{< glossary Entity Resolution >}} by productivity**
+* **{{< glossary "Entity Resolution" >}} by productivity**
 
   * *Mechanism:* Merging of frequent names into the most productive standard data set.  
   * *Effect:* False merges delete less visible persons; citations and works are misdirected.  
@@ -572,7 +570,6 @@ To illustrate concepts related to metadata, we refer to the metadata of the exam
 | **Europeana Landing Page** | <https://www.europeana.eu/en/item/92023/images_billed_2010_okt_billeder_object488811> |
 | **{{< glossary IIIF >}} Manifest** | <https://iiif.europeana.eu/presentation/92023/images_billed_2010_okt_billeder_object488811/manifest> |
 |
-
 
 : "Metadata table for: *Knie Völkerschau*"
 
@@ -1217,8 +1214,6 @@ These metrics are incorporated into continuous audits. Deviations trigger define
 
 ### 7\. Reproducibility and digital sustainability
 
-### 7\. Reproducibility and digital sustainability
-
 {{< glossary Workflow display="Workflows" >}} are:
 
 * containerized (standardized, portable software environments)  
@@ -1361,47 +1356,45 @@ Finally, legal, ethical, and ecological boundaries must also be considered. Re-i
 
 {{< glossary table=true >}}
 
-<!-- FIXME Glossary is not displayed completely -->
-
 ## Manuals and guides  {#sec-manuals-and-guides}
 
 This decision tree helps you navigate the chapters and links to external resources.
 
 ```{mermaid}
 %%| label: fig-metadata-3
-%%| fig-cap: "Help for further questions that go beyond the topics covered in the manual."
-%%| fig-alt: "Flowchart for guidance on subject-specific questions in archive and metadata research. The central question 'I have a subject-specific question' branches into three areas: metadata, research or institutional contexts, and specific forms of discrimination. 'Metadata' refers to standard data (Breslau 2019), open data/commons (Hahn 2016), law & licenses (Weitzmann & Klimpel 2016), and cartographic collections (Gasser & Hötea 2024). 'Research or institutional contexts' includes art museums (Knaus 2019), university archives (Bruckmann 2024), and colonial contexts (Bruckmann 2024). Under 'Specific forms of discrimination', there are Nazi provenance (Baresel-Brand 2019), slavery archives (Ahrndt 2021), and racism (A4BLiP 2020)."
+%%| fig-cap: "Guidance for further questions beyond the topics covered in this handbook."
+%%| fig-alt: "Flowchart for orientation on subject-specific questions in archival and metadata research. The central question 'I have a subject-specific question' branches into three areas: Metadata, Research or Institutional Contexts, and Specific Forms of Discrimination. Under 'Metadata' appear Authority Data (Breslau 2019), Open Data / Commons (Hahn 2016), Law & Licenses (Weitzmann & Klimpel 2016), and Cartographic Collections (Gasser & Hötea 2024). Under 'Research or Institutional Contexts' are Art Museums (Knaus 2019), University Archives (Bruckmann 2024), and Colonial Contexts (Bruckmann 2024). Under 'Specific Forms of Discrimination' are Nazi Provenance (Baresel-Brand 2019), Slavery Archives (Ahrndt 2021), and Racism (A4BLiP 2020)."
 flowchart LR
     Question["I have a subject-specific question"]
 
-    Question --> SpezMeta["Metadata"]
-    Question --> SpecResearch["Research or institutional contexts"]
-    Question --> SpecDisc["Specific forms of discrimination"]
+    Question --> SpecMeta["Metadata"]
+    Question --> SpecResearch["Research or Institutional Contexts"]
+    Question --> SpecDisc["Specific Forms of Discrimination"]
 
     %% Specific questions about metadata
-    SpecMeta --> StandardData["Standard data"]
-    SpezMeta --> OpenData["Open Data / Commons"]
-    SpezMeta --> Law["Law & Licenses"]
-    SpezMeta --> Maps["Cartographic collections"]
+    SpecMeta --> AuthorityData["Authority Data"]
+    SpecMeta --> OpenData["Open Data / Commons"]
+    SpecMeta --> Law["Law & Licenses"]
+    SpecMeta --> Maps["Cartographic Collections"]
 
-    Standard data --> Breslau["Breslau (2019)"]
+    AuthorityData --> Breslau["Breslau (2019)"]
     OpenData --> Hahn["Hahn (2016)"]
     Law --> Weitzmann["Weitzmann & Klimpel (2016)"]
-    Maps --> Gasser["Gasser &amp; Hötea (2024)"]
+    Maps --> Gasser["Gasser & Hötea (2024)"]
 
     %% Specific research or institutional contexts
-    SpecResearch --> Art["Art museums"]
-    SpezForschung --> UniArchive["University archives"]
-    SpecResearch --> Colonial["Colonial contexts"]
+    SpecResearch --> Art["Art Museums"]
+    SpecResearch --> UnivArchives["University Archives"]
+    SpecResearch --> Colonial["Colonial Contexts"]
 
     Art --> Knaus["Knaus (2019)"]
-    UniArchive --> Bruckmann["Bruckmann (2024)"]
+    UnivArchives --> Bruckmann["Bruckmann (2024)"]
     Colonial --> Bruckmann2["Bruckmann (2024)"]
 
     %% Specific forms of discrimination
-    SpezDisk --> NSProvenance["NS Provenance"]
-    SpezDisk --> Slavery["Slavery Archives"]
-    SpezDisk --> Racism["Racism"]
+    SpecDisc --> NSProvenance["Nazi Provenance"]
+    SpecDisc --> Slavery["Slavery Archives"]
+    SpecDisc --> Racism["Racism"]
 
     NSProvenance --> Baresel["Baresel-Brand (2019)"]
     Slavery --> Ahrndt["Ahrndt (2021)"]

@@ -55,7 +55,7 @@ EDTF: >
   standard for representing uncertain, approximate, or complex
   dates in historical sources. Supports time periods,
   uncertainty markers, and alternative calendar systems.
-Entity resolution: >
+Entity Resolution: >
   Automated process for identifying and merging
   data records that refer to the same entity (person, place, organization)
   . Central to the creation of consistent standard data.
