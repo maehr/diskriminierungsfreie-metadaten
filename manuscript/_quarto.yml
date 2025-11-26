@@ -8,6 +8,8 @@ manuscript:
     - text: Quellcode
       href: https://github.com/maehr/diskriminierungsfreie-metadaten
   manuscript-url: https://moritz-maehr.quarto.pub/diskriminierungssensible-metadatenpraxis # https://maehr.github.io/diskriminierungsfreie-metadaten/
+  resources:
+    - data/
 
 glossary:
   path: glossary.yaml
@@ -40,3 +42,5 @@ format:
   # pdf:
   #   pdf-engine: xelatex
   #   keep-tex: false
+  json:
+    output-file: data/manuscript.json

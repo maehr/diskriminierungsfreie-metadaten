@@ -12,6 +12,10 @@
 		"prepare": "husky",
 		"changelog": "pnpm exec git-cliff -- --config cliff.toml",
 		"jampack": "pnpm exec jampack manuscript/_manuscript",
+		"build:quarto": "cd manuscript && quarto render index.qmd --to json",
+		"build:elm": "cd app && pnpm exec elm make src/Main.elm --optimize --output=public/app.js",
+		"build:css": "cd app && pnpm exec tailwindcss -i styles/input.css -o public/tailwind.css --minify",
+		"build:app": "pnpm run build:quarto && pnpm run build:elm && pnpm run build:css",
 		"validate-doi": "node scripts/fetch-latest-doi.js"
 	},
 	"devDependencies": {
@@ -21,7 +25,11 @@
 		"git-cliff": "^2.10.0",
 		"husky": "^9.1.7",
 		"prettier": "^3.6.2",
-		"@divriots/jampack": "^0.33.1"
+		"@divriots/jampack": "^0.33.1",
+		"@tailwindcss/typography": "^0.5.15",
+		"elm": "^0.19.1-6",
+		"elm-live": "^4.0.2",
+		"tailwindcss": "^3.4.14"
 	},
 	"type": "module",
 	"config": {

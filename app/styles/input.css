@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	/* Tufte-style sidenotes */
+	.sidenote-ref {
+		@apply relative cursor-pointer text-blue-600;
+	}
+
+	.sidenote-ref::after {
+		content: counter(sidenote-counter);
+		@apply text-xs align-super;
+	}
+
+	.sidenote {
+		@apply absolute text-sm text-gray-600 leading-relaxed;
+		right: -22ch;
+		width: 20ch;
+		margin-top: 0.3rem;
+	}
+
+	/* Callout styles matching Quarto */
+	.callout-warning {
+		@apply border-l-4 border-yellow-500 bg-yellow-50 p-4 my-4 rounded-r;
+	}
+
+	.callout-important {
+		@apply border-l-4 border-red-500 bg-red-50 p-4 my-4 rounded-r;
+	}
+
+	.callout-tip {
+		@apply border-l-4 border-green-500 bg-green-50 p-4 my-4 rounded-r;
+	}
+
+	/* Mobile: collapse sidenotes */
+	@media (max-width: 1280px) {
+		.sidenote {
+			@apply static block bg-gray-100 p-3 my-2 rounded w-full;
+		}
+	}
+}
