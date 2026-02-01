@@ -1,4 +1,4 @@
-# Argument Review
+# Content Review
 
 Status: pending
 Reviewer: Epistemic Auditor
@@ -12,5 +12,5 @@ Date: 2026-01-23
 
 ## Approval Criteria Met
 
-- [ ] Claims in manuscript exist in claim ledger
-- [ ] No uncited strong claims
+- [ ] No uncited strong assertions
+- [ ] No fabricated or unverifiable citations

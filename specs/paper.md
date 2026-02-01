@@ -1,43 +1,29 @@
 # Paper Specification
 
-## Contribution Statement
+Handbook-level project spec (not a journal paper).
 
-<!-- 1-3 sentences: what this paper contributes to the field -->
+## Work Type
 
-## Central Question
+- genre: handbook / practice guide
+- title: Diskriminierungssensible Metadatenpraxis
+- subtitle: Ein Handbuch zur ethischen Auszeichnung historischer Quellen und Forschungsdaten
+- language: de-CH
 
-<!-- The problem or question this paper addresses -->
+## Scope
 
-## Thesis
+- Covers theory (key concepts) and practice (workflow-oriented guidance) for discrimination-sensitive metadata work on historical sources and research data.
 
-<!-- The position this paper defends -->
+## Publication Mode
 
-## Claims List
-
-<!-- Numbered list of all claims made in the paper -->
-
-1. C1: The template enforces claim traceability through explicit anchors and a claim ledger.
-
-## Non-Claims / Out of Scope
-
-<!-- What this paper explicitly does NOT argue -->
-
-## Audience and Register
-
-<!-- Target readership and appropriate tone/style -->
-
-## Method and Material Commitments
-
-<!-- Archives, corpora, theoretical frameworks, etc. -->
+- Self-published (Zenodo + GitHub Pages / Quarto publish)
+- No enforced word count constraints
 
 ## Structure Invariants
 
-<!-- What must appear and where -->
+- `manuscript/index.qmd` is the entry point and includes section files from `manuscript/sections/`.
+- Bibliography source of truth is `manuscript/references.yaml`.
 
 ## Acceptance Criteria
 
-- [ ] All claims supported in claim-ledger
-- [ ] Citation audit passes
-- [ ] Word count within limits
-- [ ] Structure review approved
-- [ ] Style pass complete
+- [ ] `npm run validate` passes locally and in CI
+- [ ] All citations used in `manuscript/sections/*.qmd` exist in `manuscript/references.yaml`

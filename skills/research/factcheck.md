@@ -2,7 +2,7 @@
 
 ## Allowed
 
-- Verify that each claim in the manuscript has citations
+- Verify that strong assertions in the manuscript have citations
 - Flag missing or inconsistent references
 
 ## Forbidden
@@ -12,7 +12,7 @@
 ## Inputs
 
 - `manuscript/sections/*.qmd`
-- `manuscript/references.bib`
+- `manuscript/references.yaml`
 
 ## Outputs
 

@@ -7,7 +7,7 @@
 
 ## Forbidden
 
-- Add new claims not present in `specs/paper.md`
+- Introduce strong factual assertions without citations
 - Remove required claims without updating specs
 
 ## Inputs

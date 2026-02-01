@@ -27,3 +27,9 @@ style-pass:
   agent: Style Editor
   last_updated: null
   issues: []
+
+external-review:
+  status: pending
+  agent: Human
+  last_updated: null
+  issues: []

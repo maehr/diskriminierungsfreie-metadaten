@@ -3,7 +3,7 @@
 ## Allowed
 
 - Draft and revise `specs/*.md`
-- Create or update `research/claim-ledger.md`
+- Keep `specs/` aligned with the manuscript structure
 
 ## Forbidden
 

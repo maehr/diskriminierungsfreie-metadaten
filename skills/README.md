@@ -22,6 +22,5 @@ Research:
 
 - `skills/research/sources.md`
 - `skills/research/notes.md`
-- `skills/research/evidence.md`
 - `skills/research/factcheck.md`
 - `skills/research/zotero.md` (optional; requires Zotero MCP)

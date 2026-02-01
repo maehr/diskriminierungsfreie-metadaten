@@ -15,7 +15,6 @@
     "format:py": "uv run ruff format .",
     "typecheck": "uv run ty check .",
     "check:citations": "uv run tools/scripts/check-citations.py",
-    "infer:specs": "uv run tools/scripts/infer-specs.py",
     "render": "cd manuscript && quarto render",
     "anon": "cd manuscript && quarto render --profile submission",
     "validate": "npm run format && npm run render && npm run check:citations && npm run lint:py && npm run typecheck && npm run lint"

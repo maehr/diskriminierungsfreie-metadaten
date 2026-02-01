@@ -12,6 +12,5 @@ Date: 2026-01-23
 
 ## Approval Criteria Met
 
-- [ ] Journal spec complete
-- [ ] Paper spec complete
-- [ ] Section specs complete
+- [ ] Project spec complete (`specs/journal.md`, `specs/submission.md`)
+- [ ] Outline + section specs exist (`specs/outline.md`, `specs/sections/*.md`)

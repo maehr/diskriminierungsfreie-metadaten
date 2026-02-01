@@ -12,4 +12,4 @@ Date: 2026-01-23
 
 ## Approval Criteria Met
 
-- [ ] All citations resolve to keys in `manuscript/references.bib`
+- [ ] All citations resolve to keys in `manuscript/references.yaml`

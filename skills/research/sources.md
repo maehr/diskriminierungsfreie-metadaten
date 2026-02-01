@@ -2,7 +2,7 @@
 
 ## Allowed
 
-- Add bibliographic entries to `manuscript/references.bib`
+- Add bibliographic entries to `manuscript/references.yaml`
 - Store reading notes in `research/sources/reading-notes/`
 
 ## Forbidden
@@ -15,5 +15,5 @@
 
 ## Outputs
 
-- `manuscript/references.bib`
+- `manuscript/references.yaml`
 - `research/sources/reading-notes/*`

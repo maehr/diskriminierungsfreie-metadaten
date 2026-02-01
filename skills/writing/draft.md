@@ -2,23 +2,20 @@
 
 ## Allowed
 
-- Write prose implementing claims from specs
-- Insert citations from `manuscript/references.bib`
-- Add claim anchors (`<!-- claim:CX -->`)
+- Write and revise section prose based on the section specs
+- Insert citations from `manuscript/references.yaml`
 - Use terminology from `research/terminology-glossary.md`
 
 ## Forbidden
 
-- Invent new claims not in `specs/paper.md`
+- Introduce strong factual assertions without citations
 - Fabricate citations
-- Exceed word count limits
 - Skip required citations from section spec
 
 ## Inputs
 
 - `specs/sections/[section].md`
-- `research/claim-ledger.md`
-- `manuscript/references.bib`
+- `manuscript/references.yaml`
 
 ## Outputs
 
