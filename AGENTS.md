@@ -9,7 +9,7 @@ Optional tooling: Zotero MCP
 This repo can be used with `zotero-mcp` (an MCP server for Zotero) when your agent runtime supports MCP.
 
 - Zotero is a retrieval layer only: agents MAY search/fetch bibliographic metadata, notes, and annotations from a Zotero library.
-- Canonical citations live in `manuscript/references.bib`: agents MUST NOT cite items that are not present in `manuscript/references.bib`.
+- Canonical citations live in `manuscript/references.yaml`: agents MUST NOT cite items that are not present in `manuscript/references.yaml`.
 - Source hygiene still applies: agents MUST NOT fabricate sources or bibliographic metadata.
 
 ## Planner
@@ -17,32 +17,30 @@ This repo can be used with `zotero-mcp` (an MCP server for Zotero) when your age
 Purpose: Creates and maintains specifications; does not write manuscript text.
 
 - Allowed inputs: `specs/*`, `research/sources/*`, user requirements, Zotero library (via Zotero MCP)
-- Required outputs: `specs/*.md`, `research/claim-ledger.md`
+- Required outputs: `specs/*.md`
 - Constraints:
   - MUST NOT write manuscript text
   - MUST NOT fabricate sources
-  - MUST ensure every claim in `specs/paper.md` has a corresponding row in `research/claim-ledger.md`
+  - MUST keep `specs/` aligned with the manuscript structure
 
 ## Drafter
 
 Purpose: Implements manuscript text strictly against specifications.
 
-- Allowed inputs: `specs/*`, `research/*`, `manuscript/references.bib`
+- Allowed inputs: `specs/*`, `research/*`, `manuscript/references.yaml`
 - Required outputs: `manuscript/sections/*.qmd`
 - Constraints:
-  - MUST satisfy section spec constraints (length, required citations)
-  - MUST NOT add claims not in `specs/paper.md`
+  - MUST satisfy section spec constraints (structure, required citations)
   - MUST NOT invent citations
-  - MUST include `<!-- claim:C1 -->` anchors for traceability
+  - MUST avoid introducing strong factual assertions without citations
 
 ## Epistemic Auditor
 
-Purpose: Verifies claim-evidence traceability; flags uncited assertions.
+Purpose: Verifies citation coverage and claim-evidence traceability; flags uncited assertions.
 
 - Allowed inputs: `manuscript/*`, `research/*`, `specs/*`, Zotero library (via Zotero MCP)
 - Required outputs: `reviews/argument-review.md`, `reviews/citation-audit.md`
 - Constraints:
-  - MUST verify every `<!-- claim:CX -->` has an entry in `research/claim-ledger.md`
   - MUST flag assertions lacking citation
   - MUST NOT modify manuscript text
 
@@ -69,12 +67,11 @@ Purpose: Enforces register, clarity, and genre compliance.
 
 ## Submission Manager
 
-Purpose: Handles anonymization, final formatting, and checklist verification.
+Purpose: Handles self-publishing (rendering, publishing, release checklist verification).
 
 - Allowed inputs: `manuscript/*`, `specs/submission.md`, `tools/scripts/*`
-- Required outputs: `outputs/*`, anonymized manuscript
+- Required outputs: `outputs/*`, published release artifacts
 - Constraints:
-  - MUST render with the submission profile (anonymize-submission filter)
-  - MAY run `tools/scripts/anonymize.py` when file-based anonymization is required
   - MUST verify all checklist items in `specs/submission.md`
   - MUST render final outputs
+  - MAY use anonymization tooling only when `specs/submission.md` requires it

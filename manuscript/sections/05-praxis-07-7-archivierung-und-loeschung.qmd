@@ -1,0 +1,25 @@
+## 7\. Archivierung und Löschung {#sec-7-archivierung-und-löschung}
+
+Nach Abschluss des Forschungsdatenzyklus folgt entweder die dauerhafte Archivierung oder – wo rechtlich oder ethisch geboten – die Löschung von Daten. Beide Prozesse erfordern institutionalisierte Strategien, die auf internationalen Standards aufbauen, rechtliche Rahmenbedingungen einhalten und eine transparente Governance etablieren. Das OAIS-Referenzmodell bietet einen Orientierungsrahmen für die Organisation der digitalen Langzeitarchivierung, während Leitlinien wie die NDSA Preservation Levels konkrete Schwellenwerte und Anforderungen formulieren.
+
+### 7.1 Langzeitarchivierung konkret {#sec-71-langzeitarchivierung-konkret}
+
+Eine nachhaltige Langzeitarchivierung setzt auf offene, standardisierte Verpackungs- und Dokumentationsformate. Containerformate wie BagIt oder RO-Crate erlauben es, Datenpakete mit Metadaten, Prüfsummen und Kontextinformationen zu bündeln. Standards wie {{< glossary METS >}} oder {{< glossary PREMIS >}} sichern die Nachvollziehbarkeit von Provenienzen und Veränderungen. Technisch sind Integritätsprüfungen mit Prüfsummen (z. B. SHA-256) und Redundanzstrategien (z. B. die 3-2-1-Regel: drei Kopien, zwei Medientypen, ein Standort ausserhalb) zentral. Neben Formaten wie PDF/A, TIFF, {{< glossary CSV >}} oder {{< glossary XML >}} sind auch Migrationen in neue Standards einzuplanen, um die Lesbarkeit langfristig zu gewährleisten. Ergänzend müssen Build-Informationen, Software-Umgebungen oder Containerabbilder dokumentiert werden, falls Daten nur mit spezifischen Werkzeugen reproduzierbar bleiben.
+
+### 7.2 Löschung, Rückgabe und Takedown {#sec-72-löschung-rückgabe-und-takedown}
+
+Nicht alle Daten können oder dürfen unbegrenzt aufbewahrt werden. Rechtliche Löschfristen, datenschutzrechtliche Ansprüche oder Rückgaberechte von Datensubjekten erfordern kontrollierte Verfahren. Löschungen sollten nicht stillschweigend erfolgen, sondern durch sogenannte Tombstone-Seiten sichtbar bleiben, die auf die frühere Existenz des Datensatzes hinweisen. Wo möglich, sollte Löschung durch selektive Redaktion (z. B. Anonymisierung oder Einschränkung einzelner Felder) ersetzt werden, um die Kontextintegrität zu wahren. Ein formelles Deletions-Audit sowie nachvollziehbare Änderungsprotokolle sichern die Transparenz. Für sensible Kulturdaten kann auch eine Rückgabe an betroffene Communities (Repatriierung) erforderlich sein.
+
+### 7.3 Zugriff und Schutz {#sec-73-zugriff-und-schutz}
+
+Archivierte Daten müssen auch in Zukunft geschützt und verantwortungsvoll zugänglich bleiben. Zugriffsstufen und Embargoregelungen steuern, wer Daten unter welchen Bedingungen einsehen kann. Verschlüsselung während der Speicherung und Übertragung ist ebenso obligatorisch wie eine sichere Schlüsselverwaltung. Audit-Logs machen Zugriffe nachvollziehbar, während Notfallpläne sicherstellen, dass Daten auch bei Systemausfällen oder institutionellen Veränderungen erhalten bleiben.
+
+::: {.callout-important title="Checkliste Archivierung und Löschung"}
+
+- [ ] Archivpakete mit dokumentierten Provenienzen und Prüfsummen erstellt
+- [ ] Lösch- und Rückgabeprozesse rechtlich und organisatorisch festgelegt
+- [ ] Tombstones und Änderungsprotokolle veröffentlicht
+- [ ] Zugriffskontrollen, Verschlüsselung und Logs aktiv
+- [ ] Redundanz- und Notfallpläne etabliert, Kosten langfristig kalkuliert
+
+:::

@@ -1,0 +1,131 @@
+## Verzerrungen und Fehler (Bias) {#sec-verzerrungen-und-fehler-bias}
+
+Unter einem **Bias** wird eine Verzerrung – eine systematische Abweichung einer objektiven Darstellung – verstanden. Technisch kann ein Bias in Forschungsdaten etwa durch eine unausgewogene Datenauswahl, eine stereotypisierende Begriffsauswahl oder durch algorithmische Vorannahmen entstehen. Inhaltlich äussert sich ein Bias in verschiedenen Formen wie in der Auswahl dessen, was überhaupt als erzählenswert gilt, in der Art und Weise der Beschreibung historischer Ereignisse oder in den moralischen oder interpretativen Bewertungen, die Historiker\*innen vornehmen. Diese Voreingenommenheit ist nicht nur ein Fehler, sondern ergibt sich aus der grundlegenden Tatsache, dass jede historische Darstellung selektiv und perspektivisch ist. In der Metadatenerstellung ist oftmals ein Bias in den Beschreibungstexten zu finden. So werden beispielsweise Frauen in historischen Quellen oftmals auf ihr äusseres Erscheinungsbild reduziert, während bei Männern häufig zuerst ihre beruflichen Tätigkeiten erwähnt werden. Diese Reduktion der Frau auf ihr äusseres Erscheinungsbild steht in einer langen Tradition der Objektivierung weiblicher Körper. Wenn im Kontext der Überarbeitung der Metadaten nicht nur der Bias kritisch reflektiert wird, sondern der Fehler als Reproduktion von Geschlechterstereotypen dargestellt wird, werden diskriminierende Strukturen sichtbar und können so schrittweise abgebaut werden. Hier setzt das Konzept der **Oppression** (Unterdrückung) an. Es geht über die Bias-Kritik hinaus, indem es diesen als Ausdruck struktureller Machtverhältnisse deutet und in grössere gesellschaftliche Zusammenhänge einordnet.
+
+### Verzerrung und Fehler in Daten (Data Bias) {#sec-verzerrung-und-fehler-in-daten-data-bias}
+
+#### **Messfehler (Measurement Bias)** {#sec-messfehler-measurement-bias}
+
+Bias, der durch fehlerhafte, unvollständige oder inadäquate Messung von Variablen entsteht.
+
+_Beispiel 1:_ In digitalen Editionen historischer Texte wird "Bedeutung" oft über die Häufigkeit bestimmter Begriffe erfasst, doch fehlerhafte {{< glossary OCR >}}-Erkennung \- etwa wenn das historische "ſ" nicht als "s" erkannt wird – oder uneinheitliches Tagging führen leicht zu systematischen Verzerrungen.
+
+_Beispiel 2:_ Erfassung von Geschlecht in historischen Volkszählungen: "Beruf: Haushaltsvorstand" wird in digitalen Datenbanken oft als "männlich" codiert, was weibliche Haushaltsvorstände systematisch ausschliesst.
+
+#### **Auslassungsfehler (Omitted Variable Bias)** {#sec-auslassungsfehler-omitted-variable-bias}
+
+Entsteht, wenn relevante Variablen im Modell fehlen, was zu verzerrten Ergebnissen führt.
+
+_Beispiel:_ Eine digitale Netzwerkanalyse historischer Korrespondenz lässt informelle Kommunikationswege (zum Beispiel persönliche Treffen, mündliche Überlieferung) aus, was zu verzerrten Interpretationen von Kommunikationsnetzwerken führt.
+
+#### **Repräsentationsfehler (Representation Bias)** {#sec-repräsentationsfehler-representation-bias}
+
+Bias durch nicht-repräsentative Stichproben, zum Beispiel geografische oder demografische Unterrepräsentation im Datensatz.
+
+_Beispiel:_ Digitalisierte Zeitungsarchive decken meist nur bestimmte (oft bürgerliche oder urbane) Presse ab; Arbeiterzeitungen, marginalisierte Gruppen oder nicht-deutschsprachige Publikationen fehlen und werden in der Forschung unsichtbar.
+
+#### **Aggregationsfehler (Aggregation Bias)** {#sec-aggregationsfehler-aggregation-bias}
+
+Fehlerhafte Verallgemeinerung von Gruppenergebnissen auf Individuen oder Subgruppen.
+
+**Simpson’s Paradox**: Aggregierte Trends können täuschen, weil sich Zusammenhänge auf Subgruppenebene ins Gegenteil verkehren.
+
+_Beispiel:_ Eine Methode scheint insgesamt erfolgreicher, ist aber in allen Teilgruppen weniger erfolgreich, die Aggregation verschleiert dies.
+
+**Modifiable Areal Unit Problem (MAUP)**: Ergebnisse hängen von der gewählten räumlichen Aggregation ab.
+
+_Beispiel:_ Zusammenfassung von unterschiedlichen Sozialstrukturen (zum Beispiel alle "Arbeiter" im 19\. Jh.) überdeckt regionale Unterschiede – etwa zwischen Textilarbeiterinnen im Ruhrgebiet und Landarbeitern in Ostpreussen.
+
+#### **Stichprobenfehler (Sampling Bias)** {#sec-stichprobenfehler-sampling-bias}
+
+Bias durch nicht-zufällige Auswahl von Stichproben führt zu mangelnder Generalisierbarkeit.
+
+_Beispiel:_ Oral History-Projekte, die ausschliesslich mit Zeitzeugen arbeiten, die aktiv Kontakt zu Forscher\*innen aufnehmen, erfassen tendenziell eher politisch engagierte oder bildungsnahe Akteur\*innen.
+
+#### **Längsschnittfehler (Longitudinal Data Fallacy)** {#sec-längsschnittfehler-longitudinal-data-fallacy}
+
+Fehlschluss durch Vermischung von Kohorten in Querschnittsdaten, anstatt echte zeitliche Entwicklung zu betrachten.
+
+_Beispiel:_ Analyse von Wikidata-Einträgen zu historischen Persönlichkeiten über Jahrzehnte hinweg, ohne zu berücksichtigen, dass sich die Erfassungsregeln oder Community-Praktiken im Zeitverlauf ändern.
+
+#### **Historische Verzerrung (Historical Bias)** {#sec-historische-verzerrung-historical-bias}
+
+Bias, der bereits in der gesellschaftlichen Realität existiert und sich in den Daten widerspiegelt, auch bei perfekter Stichprobe.
+
+_Beispiel:_ Digitale Repositorien, die historische Demografie abbilden, spiegeln patriarchale Strukturen wider: Die geringe Zahl von "Frauen in Führungspositionen" ist kein Datenfehler, sondern gesellschaftliche Realität.
+
+#### **Populationsfehler (Population Bias)** {#sec-populationsfehler-population-bias}
+
+Unterschiede zwischen Nutzenden der Plattform und der Zielpopulation, zum Beispiel durch Demografie.
+
+_Beispiel:_ Wikidata-Einträge zu Historiker\*innen stammen überproportional von männlichen, westlichen Beitragenden, was sich in der Sichtbarkeit und Kategorisierung niederschlägt.
+
+### Verzerrungen in und durch Algorithmen (Bias in Algorithms) {#sec-verzerrungen-in-und-durch-algorithmen-bias-in-algorithms}
+
+#### **Algorithmischer Fehler (Algorithmic Bias)** {#sec-algorithmischer-fehler-algorithmic-bias}
+
+Bias, der durch algorithmische Designentscheidungen entsteht, unabhängig von Bias in den Daten (zum Beispiel durch Auswahl der Optimierungsfunktion).
+
+_Beispiel:_ {{< glossary "Topic Modeling" >}} von philosophischen Texten ergibt "Themen", die Resultat von Wortlisten und Stoppwortdefinitionen sind, aber von Nicht-Expert\*innen als inhaltlich signifikante Topoi interpretiert werden.
+
+#### **Evaluationsfehler (Evaluation Bias)** {#sec-evaluationsfehler-evaluation-bias}
+
+Verzerrung durch ungeeignete oder unausgewogene Benchmarks bei der Modellbewertung.
+
+_Beispiel:_ Trainings- und Testsets für {{< glossary Named-Entity-Recognition >}}-Modelle im Bereich Geschichte verwenden hauptsächlich Quellen des 20\. Jahrhunderts. Modelle performen deshalb schlecht bei mittelalterlichen oder frühneuzeitlichen Texten.
+
+### Verzerrungen durch Nutzerinteraktion (User Interaction Bias) {#sec-verzerrungen-durch-nutzerinteraktion-user-interaction-bias}
+
+#### **Darstellungsfehler (Presentation Bias)** {#sec-darstellungsfehler-presentation-bias}
+
+Ungleichgewicht, das durch visuelle, typografische oder layoutbezogene Hervorhebungen entsteht. Interface-Entscheide lenken Aufmerksamkeit und Interpretationsrahmen, bevor inhaltliche Qualität bewertet wird.
+
+_Beispiel:_ Quellen, die ohne Einschränkungen zugänglich sind, werden farblich hervorgehoben im Archivkatalog. Damit werden sie häufiger angeklickt und verdrängen, die weniger zugänglichen Quellen überdurchschnittlich.
+
+#### **Rangfolgenfehler (Ranking Bias)** {#sec-rangfolgenfehler-ranking-bias}
+
+Systematische Verzerrung durch Sortierlogiken, die Klicks, Zitationszahlen oder Metadatenfülle belohnen. Höhere Position führt zu mehr Aufmerksamkeit, was die ursprüngliche Rangordnung verstärkt, unabhängig von Relevanz.
+
+_Beispiel:_ Museumsportal sortiert nach "Meist betrachtet". Kolonialzeitliche Exponate mit früher Social-Media-Reichweite dominieren, während neu katalogisierte Objekte aus dem Globalen Süden kaum Sichtbarkeit erhalten.
+
+#### **Popularitätsfehler (Popularity Bias)** {#sec-popularitätsfehler-popularity-bias}
+
+Beliebtere Objekte werden häufiger gezeigt und verstärken dadurch ihre Popularität, unabhängig von Qualität.
+
+_Beispiel:_ In Crowdsourcing-Projekten zu alten Handschriften dominieren wenige besonders aktive User, sodass ihre Lesarten überproportional häufig übernommen werden.
+
+#### **Emergenter Fehler (Emergent Bias)** {#sec-emergenter-fehler-emergent-bias}
+
+Bias, der erst durch langfristige Interaktion mit Nutzenden oder gesellschaftlichen Wandel entsteht.
+
+_Beispiel:_ Ein digitales Editionsprojekt zu mittelalterlichen Urkunden wird ursprünglich als Forschungsinfrastruktur für Editionsphilologie konzipiert. Mit der Zeit beginnen jedoch genealogische Communities, die Daten für Familienforschung zu nutzen. Dadurch verschiebt sich die Nachfrage in Richtung Namens- und Ortsindexierung. Die Infrastrukturbetreiber passen ihre Metadatenstrukturen und Suchfunktionen an diese Nutzergruppen an, was wiederum philologische Tiefeninformationen (zum Beispiel Variantenkritik) systematisch marginalisiert.
+
+#### **Selbstselektionsverzerrung (Self-Selection Bias)** {#sec-selbstselektionsverzerrung-self-selection-bias}
+
+Bias durch selbstselektierende Teilnehmende, zum Beispiel in Umfragen.
+
+_Beispiel:_ Digitalisierungsprojekte zu Privatarchiven werden eher von Familien mit hohem kulturellem Kapital initiiert, während marginalisierte Familien seltener teilnehmen.
+
+#### **Soziale Verzerrung (Social Bias)** {#sec-soziale-verzerrung-social-bias}
+
+Individuelle Entscheidungen werden durch soziale Einflüsse verzerrt.
+
+_Beispiel:_ Bei kollaborativen Transkriptionsprojekten orientieren sich neue User\*innen an den Lesegewohnheiten erfahrener Transkribierender und übernehmen deren Fehler.
+
+#### **Verhaltensverzerrung (Behavioral Bias)** {#sec-verhaltensverzerrung-behavioral-bias}
+
+Unterschiedliches Verhalten von Nutzenden je nach Plattform, Kontext oder Zeit.
+
+_Beispiel:_ Historiker\*innen recherchieren systematischer, während Lai\*innen häufig nach Familiennamen oder spektakulären Ereignissen suchen. Dies beeinflusst Zugriffszahlen.
+
+#### **Zeitliche Verzerrung (Temporal Bias)** {#sec-zeitliche-verzerrung-temporal-bias}
+
+Verzerrungen, die sich aus zeitlichen Veränderungen in Verhalten oder Population ergeben.
+
+_Beispiel:_ Die Häufigkeit von Suchbegriffen in Archiven schwankt mit Debatten (zum Beispiel "Pandemie" 2020/21), was langfristige Analysen verzerrt.
+
+#### **Inhaltsproduktionsfehler (Content Production Bias)** {#sec-inhaltsproduktionsfehler-content-production-bias}
+
+Verzerrungen, die auf Unterschieden in Struktur, Lexik, Semantik und Syntax nutzergenerierter Inhalte beruhen.
+
+_Beispiel:_ Digitale Foren zur Wissenschaftsgeschichte werden auf Englisch dominiert; andere Sprachen sind unterrepräsentiert.

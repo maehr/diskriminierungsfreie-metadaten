@@ -1,0 +1,32 @@
+## Unterdrückung in Daten (Oppression in Data)
+
+Oppression ist nicht bloss eine einzelne Handlung der Benachteiligung, sondern das Zusammenspiel von Praktiken, Diskursen und Institutionen, die Handlungsspielräume ganzer Gruppen systematisch einengen. In der feministischen Machttheorie wird Unterdrückung als **strukturelles "power-over"** verstanden: eine dauerhafte, nicht-zufällige Konstellation, in der Institutionen, Normen und symbolische Ordnungen bestimmte Gruppen in ihren Optionen einschränken, während andere privilegiert werden [@young_justice_1990]. Unterdrückung wirkt **materiell** (physisch, ökonomisch), **symbolisch** (Stigmatisierung, Unsichtbarmachung) und **epistemisch** (Festlegung dessen, was als Wissen gilt).
+
+Historische Daten- und Metadatenpraktiken können Unterdrückung auf mindestens drei Ebenen reproduzieren: ontologisch, epistemisch und infrastrukturell. Diese Formen wirken kumulativ: Jede einzelne Drahtstrebe, beispielsweise ein kontrolliertes Vokabular, scheint zunächst harmlos. Doch im Zusammenspiel entsteht ein Käfig, der die Bewegungsfreiheit bestimmter Gruppen systematisch einschränkt [@frye_politics_1983].
+
+### Ontologische Gewalt
+
+_Wirkmechanismus:_ Erzwingt Kategorien, die der Selbstbeschreibung der Betroffenen widersprechen oder sie auf defizitäre Merkmale reduziert [@bowker1999].
+
+_Beispiele:_
+
+- Binarer `gndo:gender`\-Wert ("male"/"female") löscht nicht-binäre Identitäten.
+- Koloniale Ethnonyme in Normdaten ("Hottentotte") perpetuieren rassistische Klassifikationen.
+
+### Epistemische Gewalt
+
+_Wirkmechanismus:_ Verunmöglicht Wissen, indem es bestimmte Perspektiven ausschliesst oder als "Rauschen" markiert [@spivak_subaltern_1988].
+
+_Beispiele:_
+
+- Aggregations-Metadaten, die Briefe von Dienstbotinnen als "miscellaneous" ablegen.
+- Diplomatenschriftverkehr wird dagegen fein granular erschlossen.
+
+### Infrastrukturelle Gewalt
+
+_Wirkmechanismus:_ Fixiert Benachteiligungen durch technische Standards, die schwer veränderbar sind (lock-in) [@rodgers_oneill_infrastructural_2012].
+
+_Beispiele:_
+
+- Vorgabefelder in Sammlungssoftware ohne Mehrsprachigkeit erzwingen englischsprachige Schlagwörter und verdrängen indigene Begriffe.
+- Unveränderbare Feldlängen lassen traditionelle Namen abschneiden.

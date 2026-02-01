@@ -1,0 +1,13 @@
+# Vorwort zur zweiten Auflage
+
+_Diskriminierungssensible Metadatenpraxis. Ein Handbuch zur ethischen Auszeichnung historischer Quellen und Forschungsdaten_ liegt nun in einer überarbeiteten, zweiten Auflage vor. Dieses Handbuch ist neu in zwei Teile gegliedert: Der theoretische Teil bietet begriffliche und konzeptionelle Überlegungen zu Sprache, Klassifikation, Repräsentation und Macht. Im Praxisteil finden sich Anleitungen, Checklisten und Beispiele für die Erstellung und Pflege von Metadaten. Somit können Leser\*innen wahlweise mit der konzeptionellen Rahmung oder mit der direkten Anwendung beginnen. Beide Teile verweisen aufeinander und können im Zusammenspiel genutzt werden.
+
+Die erste Fassung des Handbuchs entstand 2023 im Rahmen des Forschungsprojekts [Stadt.Geschichte.Basel](https://stadtgeschichtebasel.ch/) als Hilfestellung zur Auszeichnung von Objekten auf der [Forschungsdatenplattform](https://forschung.stadtgeschichtebasel.ch/) und erschien am 3\. Juni 2024\. Diskussionen, Workshops und Rückmeldungen aus der Community machten jedoch deutlich, dass der ursprüngliche Anspruch, zu diskriminierungsfreien Metadaten anzuleiten, nicht einlösbar war. In der zweiten Auflage korrigieren wir diesen Anspruch: Im Zentrum steht nun die Anleitung zu einem diskriminierungssensiblen Umgang mit Machtverhältnissen und Kontexten.
+
+Zugleich haben wir den Praxisteil deutlich ausgebaut und klar vom theoretischen Teil getrennt. Stadt.Geschichte.Basel bleibt ein wichtiges Fallbeispiel, steht jedoch nicht mehr im Zentrum des Handbuchs. Unser Zielpublikum sind historische Forschungsprojekte im gesamten deutschsprachigen Raum: von universitären Editionsvorhaben bis hin zu digital zugänglichen Sammlungen von GLAM-Institutionen.
+
+Wir laden alle Leser\*innen ein, dieses "Living Document" mit uns gemeinsam weiterzuentwickeln und durch Feedback, Ergänzungen oder Fallbeispiele zu bereichern.
+
+Basel, 8\. September 2025
+
+Moritz Mähr & Noëlle Sarah Schnegg

@@ -1,0 +1,54 @@
+## Handbücher und Leitfäden {#sec-handbücher-und-leitfäden}
+
+Dieser Entscheidungsbaum hilft bei der Orientierung der Kapitel und verlinkt auf externe Ressourcen.
+
+```{mermaid}
+%%| label: fig-metadata-3
+%%| fig-cap: "Hilfestellungen für weiterführende Fragen, die über die behandelten Themen des Handbuchs hinausgehen."
+%%| fig-alt: "Flussdiagramm zur Orientierung bei fachspezifischen Fragen in der Archiv- und Metadatenforschung. Die zentrale Frage 'Ich habe eine fachspezifische Frage' verzweigt in drei Bereiche: Metadaten, Forschungs- oder Institutionskontexte sowie Spezifische Diskriminierungsformen. Unter 'Metadaten' stehen Normdaten (Breslau 2019), Open Data / Commons (Hahn 2016), Recht & Lizenzen (Weitzmann & Klimpel 2016) und Kartografische Sammlungen (Gasser & Hötea 2024). Unter 'Forschungs- oder Institutionskontexte' finden sich Kunstmuseen (Knaus 2019), Universitätsarchive (Bruckmann 2024) und Kolonialkontexte (Bruckmann 2024). Unter 'Spezifische Diskriminierungsformen' erscheinen NS-Provenienz (Baresel-Brand 2019), Sklaverei-Archive (Ahrndt 2021) und Rassismus (A4BLiP 2020)."
+flowchart LR
+    Frage["Ich habe eine fachspezifische Frage"]
+
+    Frage --> SpezMeta["Metadaten"]
+    Frage --> SpezForschung["Forschungs- oder Institutionskontexte"]
+    Frage --> SpezDisk["Spezifische Diskriminierungsformen"]
+
+    %% Spezifische Fragen an Metadaten
+    SpezMeta --> Normdaten["Normdaten"]
+    SpezMeta --> OpenData["Open Data / Commons"]
+    SpezMeta --> Recht["Recht & Lizenzen"]
+    SpezMeta --> Karten["Kartografische Sammlungen"]
+
+    Normdaten --> Breslau["Breslau (2019)"]
+    OpenData --> Hahn["Hahn (2016)"]
+    Recht --> Weitzmann["Weitzmann & Klimpel (2016)"]
+    Karten --> Gasser["Gasser & Hötea (2024)"]
+
+    %% Spezifische Forschungs- oder Institutionskontexte
+    SpezForschung --> Kunst["Kunstmuseen"]
+    SpezForschung --> UniArchive["Universitätsarchive"]
+    SpezForschung --> Kolonial["Kolonialkontexte"]
+
+    Kunst --> Knaus["Knaus (2019)"]
+    UniArchive --> Bruckmann["Bruckmann (2024)"]
+    Kolonial --> Bruckmann2["Bruckmann (2024)"]
+
+    %% Spezifische Diskriminierungsformen
+    SpezDisk --> NSProvenienz["NS-Provenienz"]
+    SpezDisk --> Sklaverei["Sklaverei-Archive"]
+    SpezDisk --> Rassismus["Rassismus"]
+
+    NSProvenienz --> Baresel["Baresel-Brand (2019)"]
+    Sklaverei --> Ahrndt["Ahrndt (2021)"]
+    Rassismus --> A4BLiP2020["A4BLiP (2020)"]
+```
+
+<!-- ## Glossare {#glossare}
+
+(aus ETH-Handbuch)
+
+* [Sprache schafft Wirklichkeit](https://www.uni-hamburg.de/gleichstellung/download/antirassistische-sprache.pdf)
+* [Words matter. An unfinished Guide to Word Choices in the Cultural Sector](https://www.materialculture.nl/en/publications/words-matter)
+* [Wörterbuch Verein Diversum](https://www.verein-diversum.ch/worterbuch)
+* [Glossar notoracism](https://www.notoracism.ch/glossar)
+* ... -->

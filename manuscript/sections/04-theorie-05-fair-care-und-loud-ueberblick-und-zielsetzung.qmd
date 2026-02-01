@@ -1,0 +1,47 @@
+## FAIR, CARE und LOUD: Überblick und Zielsetzung
+
+Dieses Kapitel bündelt drei komplementäre Orientierungen der Forschungsdatenpraxis. **{{< glossary FAIR >}}** adressiert Auffindbarkeit, Zugänglichkeit, Interoperabilität und Wiederverwendbarkeit als technische und organisatorische Leitlinien [@wilkinson2016;@gofairinitiative]. **{{< glossary CARE >}}** rückt kollektiven Nutzen, Kontrollhoheit, Verantwortung und Ethik in den Fokus, insbesondere bei indigenen Daten [@GIDA_CARE_2025;@carroll2021]. **{{< glossary LOUD >}}** verschiebt den Blick von der reinen Bereitstellung hin zur tatsächlichen Nutzbarkeit in Arbeitsabläufen der Geisteswissenschaften. Ziel ist eine lesbare, praxisnahe Ordnung der Prinzipien für historische Forschung und Metadatenarbeit.
+
+### Begriffsklärungen: offen, öffentlich, Open Data
+
+"**Offen**" bezeichnet rechtlich und technisch definierte Nachnutzbarkeit. Offenheit wird durch Lizenzierung, Standards und Dokumentation hergestellt. "**Öffentlich**" meint faktische Sichtbarkeit ohne Zugangsbeschränkungen. Offenheit ist möglich ohne Öffentlichkeit, etwa bei Zugang auf Antrag bei offener Lizenz und klaren Metadaten; umgekehrt können öffentlich sichtbare Daten nicht offen sein, wenn Lizenz oder Nutzungsbedingungen Nachnutzung verhindern. "**Open Data**" steht normativ für Daten, die allen zur Verfügung stehen, typischerweise unter Free-Culture-Lizenzen wie [CC0](https://creativecommons.org/publicdomain/zero/1.0/), [CC BY](https://creativecommons.org/licenses/by/4.0/) oder [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/). Offene Daten senken Zugangshürden und fördern Kollaboration; sie sind jedoch kein Selbstzweck. Sensible Quellen, personenbezogene Metadaten und schutzwürdige Kontexte erfordern abgestufte Zugänge, transparente Bedingungen und sorgfältige Abwägungen. Für Gedächtnisinstitutionen liefern die [OpenGLAM-Prinzipien](https://openglam.org/principles/), das [5-Sterne-Modell für Open Data](https://5stardata.info/de/) und die [Open-Data-Policy-Guidelines](https://sunlightfoundation.com/opendataguidelines/) zusätzliche Orientierung; zum Gemeinfreiheitsregime in der Schweiz informiert ein [Factsheet des IGE](https://www.ige.ch/en/protecting-your-ip/copyright/using-a-work/public-domain).
+
+### FAIR: Nachnutzbarkeit als Leitlinie
+
+**{{< glossary FAIR >}}** steht für Findable (auffindbar), Accessible (zugänglich), Interoperable (interoperabel) und Reusable (wiederverwendbar). Die Prinzipien wurden 2016 als Leitlinien für eine nachhaltige und maschinenlesbare Datenpraxis formuliert:
+
+- **Auffindbar:** Daten und Personen erhalten persistente Identifikatoren (zum Beispiel DOI, ORCID). Metadaten sind strukturiert, suchbar und beschreibend; minimal gefordert sind ein stabiler Ort und eine Zitierempfehlung.
+- **Zugänglich:** Zugänge und Bedingungen sind dokumentiert. Auch wenn Daten nicht öffentlich sind, bleiben Metadaten frei zugänglich und der Weg zum Zugang nachvollziehbar.
+- **Interoperabel:** Formate und Schemata folgen Standards; kontrollierte Vokabulare, Normdaten und {{< glossary Ontologie display="Ontologien" >}} ermöglichen Verknüpfung und maschinelle Weiterverarbeitung.
+- **Wiederverwendbar:** Lizenztexte, Provenienz, Versionierung, Qualitätsangaben und methodische Kontexte ermöglichen kritische Prüfung und Weiterverwendung. {{< glossary FAIR >}} verlangt keine vollständige Öffentlichkeit, sondern klare Bedingungen für nachhaltige Nachnutzung.
+
+::: {.callout-note title="Praxisbeispiel: Stadt.Geschichte.Basel"}
+
+_Stadt.Geschichte.Basel publiziert und dokumentiert Forschungsdaten mit dem [Open Research Data Template](https://github.com/maehr/open-research-data-template), um Open- und {{< glossary FAIR >}}-Prinzipien operationell umzusetzen. DOIs via Zenodo sichern Zitierbarkeit und Auffindbarkeit; GitHub und GitHub Pages stellen Repositorium und lesbare Dokumentation bereit. Klare Lizenzierung (zum Beispiel CC BY 4.0 für Daten, AGPL 3.0 für Code), standardisierte Ordner- und Dateistrukturen sowie Automationen erhöhen Interoperabilität. README, CHANGELOG und CITATION.cff, Versionierung und Issue-Vorlagen fördern Transparenz und Wiederverwendbarkeit._
+:::
+
+### Datenethik und CARE
+
+Konventionelle Datenpraktiken vernachlässigen oft Entstehungskontexte, Machtverhältnisse und Folgewirkungen. **{{< glossary CARE >}}** steht für Collective Benefit (Kollektiver Nutzen), Authority to Control (Kontrolle über die Daten), Responsibility (Verantwortung), Ethics (Ethik) und schliesst diese Lücke und richtet Datenpraxis an kollektiven Rechten und Pflichten aus:
+
+- **Kollektiver Nutzen** fordert, dass Datenpraxis dem kollektiven Nutzen der betroffenen Gemeinschaften dient und nicht nur externen Forschungsinteressen.
+- **Kontrolle über die Daten** sichert Anspruchsgruppen die Hoheit über den gesamten Lebenszyklus von Daten. Ein Beispiel sind _Traditional Knowledge (TK) Labels_ von [Local Contexts](https://localcontexts.org/), die Nutzungsbedingungen sichtbar machen.
+- **Verantwortung** betont die Verantwortung von Forscher\*innen und Institutionen, Risiken zu minimieren, Transparenz zu sichern und Rechenschaft abzulegen.
+- **Ethik** verlangt einen Umgang, der über Rechtskonformität hinausgeht und auf Respekt, kulturelle Sensibilität und Schadensvermeidung zielt.
+
+Die Prinzipien wurden 2018 im Rahmen der International Data Week entworfen und zwischen 2019 und 2020 von der Global Indigenous Data Alliance ausgearbeitet [@GIDA_CARE_2025;@carroll2021]. Gedächtnisinstitutionen agieren dabei zwangsläufig als Gatekeeper; Governance-Modelle sollen Entscheidungsrechte explizit abbilden. In Kanada fassen die [OCAP®-Prinzipien](https://fnigc.ca/ocap-training/) Ownership, Control, Access und Possession als konkrete Form indigener Datenhoheit.
+
+### LOUD: Nutzungsorientierte Erweiterung
+
+**{{< glossary LOUD >}}** steht für Linked (verknüpft), Open (offen), Usable (nutzbar) Data (Daten) und schliesst die Kluft zwischen abstrakten Datenmodellen und Forschungspraxis:
+
+- **Verknüpft** verlangt eindeutige Referenzen und semantische Verknüpfungen, damit Datensätze anschlussfähig in Wissensnetzen zirkulieren.
+- **Offen** steht für rechtlich wie technisch barrierearme Bereitstellung, inklusive offener Formate und Schnittstellen.
+- **Nutzbar** betont dokumentierte Provenienz, verständliche Zugänge, einfache Exporte und APIs sowie Qualitätssicherung, damit Forscher\*innen ohne Spezialwerkzeuge arbeiten können.
+- **Daten** rückt Inhalte in den Mittelpunkt und fordert wiederverwendbare Bereitstellung statt statischer Visualisierungen.
+
+{{< glossary LOUD >}} operationalisiert {{< glossary FAIR >}} in Richtung Nutzung und bleibt mit {{< glossary CARE >}} kompatibel, weil Nutzungsbedingungen und Rechte modelliert und kommuniziert werden.
+
+### Entscheiden, dokumentieren, umsetzen {#sec-entscheiden-dokumentieren-umsetzen}
+
+Für offen lizenzierte Daten und breite Nachnutzung stehen {{< glossary FAIR >}} und {{< glossary LOUD >}} im Vordergrund; bei sensiblen Beständen bestimmen {{< glossary CARE >}} und gegebenenfalls OCAP® die Zugangs- und Governance-Modelle. In Aggregations- und Vernetzungsprojekten zählen Interoperabilität und Verlinkung, ergänzt um klare Nutzungsregeln. In jedem Fall gilt: Zuständigkeiten, Bedingungen und Grenzen schriftlich fixieren, Identifier und Metadaten konsequent vergeben, Formate und Vokabulare standardisieren, Änderungen versionieren und ethische Anforderungen explizit adressieren.

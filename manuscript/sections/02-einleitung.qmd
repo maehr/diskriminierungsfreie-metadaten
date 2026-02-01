@@ -1,0 +1,74 @@
+# Einleitung
+
+Dieses Handbuch ist eine praxisorientierte Anleitung für die diskriminierungssensible Auszeichnung von Metadaten zu historischen Quellen und Forschungsdaten. Es richtet sich an forschende Historiker\*innen, Archivar\*innen, Bibliothekar\*innen und Daten-Kurator\*innen an Universitäten sowie in GLAM-Institutionen (Galleries, Libraries, Archives, Museums). Das Handbuch adressiert sowohl Einsteiger\*innen als auch erfahrene Fachleute und stellt Best Practices bereit.
+
+Warum Metadaten? In einer zunehmend digital vermittelten Welt machen Metadaten historische Bestände auffindbar, zugänglich, interoperabel und nachnutzbar. Frei zugängliche, maschinenlesbare Metadaten ermöglichen die Integration in Suchmaschinen, Datenportale und virtuelle Forschungsumgebungen. Dadurch verändert sich, wie Historiker\*innen Quellen erforschen, interpretieren und verstehen.
+
+![Screenshot aus der Plakatsammlung Basel: Abstimmungsplakat "Frauenstimmrecht, Nein" zur eidgenössischen Abstimmung vom 1. Februar 1959, entworfen von Werner Nänny im Auftrag des Basler Frauenkomitees gegen das Frauenstimmrecht, gedruckt von Wassermann AG, Basel.](../images/image1.png){fig-alt='Screenshot einer Webseite mit einem Abstimmungsplakat von 1959 gegen das Frauenstimmrecht in der Schweiz. Das Plakat zeigt die schwarze Silhouette einer Frau, die von mehreren grauen Händen mit der Aufschrift "Partei" bedrängt wird. Daneben stehen Informationen zur Sammlung, Datierung, Urheber und Technik.' width="1801" height="964" .img-fluid }
+
+Ein Blick in die deutschsprachige Archive zeigt, dass vielerorts bereits auf die {{< glossary FAIR >}}-Prinzipien bei Metadaten geachtet wird. Eine diskriminierungssensible Metadatenpraxis bleibt jedoch meist aus. Oft fehlen kontextualisierende Beschreibungen, in denen Diskriminierungsformen explizit benannt und in ihren jeweiligen historischen Kontext eingeordnet werden. Im Online-Katalog der "Plakatsammlung der Schule für Gestaltung" beschränkt sich die Beschreibung des Plakats ["Frauenstimmrecht, Nein"](https://www.recherche-plakatsammlungbasel.ch/objects/48228/) auf sachliche Angaben: "Eidgenössische Abstimmung, 1\. Februar 1959". Hinweise auf den historischen, politischen und insbesondere den sexistischen Kontext fehlen.
+
+Mit diesem Handbuch setzen wir uns für eine diskriminierungssensible Metadatenpraxis ein. Wir erkennen an, dass Diskriminierung tief in gesellschaftlichen und institutionellen Strukturen verankert ist und sich nicht allein durch eine wohlüberlegte Begriffswahl vermeiden lässt.
+
+Diskriminierungssensibilität bedeutet, aufmerksam zu bleiben für Veränderungen von Normen, die Vielfalt von Diskriminierungserfahrungen und die Unabgeschlossenheit von Dekolonisierungsprozessen. Sie fordert uns auf, unsere eigene Positionierung und bestehende Machtverhältnisse kritisch zu hinterfragen und zu reflektieren.
+
+Im Handbuch verwenden wir bewusst eine breite Definition von Diskriminierung, um möglichst viele Anwendungsfälle abzudecken. Unter Diskriminierung verstehen wir schwerwiegende Formen der Benachteiligung. Eine Benachteiligung wird zu einer Diskriminierung, wenn sie in einem unmittelbaren Zusammenhang mit der tatsächlichen oder zugeschriebenen Zugehörigkeit zu einer bestimmten Gruppe oder einem Merkmal steht. Zu diesen Gruppenzugehörigkeiten oder Merkmalen zählen die soziale Stellung, das biologische und soziale Geschlecht sowie die Geschlechtsidentität, die ethnische Herkunft, diskriminierende Fremdzuschreibungen, die Religionszugehörigkeit, die Weltanschauung und politische Überzeugungen, die Sprache, eine Behinderung oder chronische Erkrankung, eine genetische Disposition, das Lebensalter, die sexuelle Orientierung, das Körpergewicht und die Lebensform (zum Beispiel Fahrende). Diskriminierungen entstehen laufend, weil gesellschaftliche Werte und Normen bestimmte Gruppen stigmatisieren.
+
+Der Band gliedert sich in zwei Teile: Im ersten Teil definieren wir die theoretischen und technischen Schlüsselbegriffe und verknüpfen sozial- und informationswissenschaftliche Perspektiven. Wir behandeln Normativität, Formen der Diskriminierung, Bias und Oppression sowie Grundlagen zu Forschungs- und Metadaten, Metadatenstandards und {{< glossary FAIR >}}/{{< glossary CARE >}}/{{< glossary LOUD >}}.
+
+Im zweiten Teil behandeln wir den diskriminierungssensiblen Umgang mit Metadaten entlang des gesamten Forschungsdatenlebenszyklus[@higgins2008]:
+
+1. **Planung und Konzeption:** Konzeptionelle Grundentscheidungen, Auswahl von Standards, Rollen, ethische und rechtliche Aspekte, Fokus auf Einwilligung und Schutz vulnerabler Gruppen.
+2. **Datensammlung und Quellenkritik:** Datenerzeugung und \-sammlung, Nutzung offener Formate und normierter Begrifflichkeiten zur Interoperabilität sowie Kontextualisierung der Quellen.
+3. **Datenverarbeitung und Anreicherung:** Datenaufbereitung, Metadatenanreicherung, Dokumentation, frühzeitige Standardisierung.
+4. **Speicherung und Verwaltung:** Strukturiertes, sicheres Speichern, Zugriffskontrolle, Pflege, Versionierung, diskriminierungssensible Zugangsregelungen.
+5. **Veröffentlichung und Zugang:** Zugänglichmachung über Repositorien, Persistente Identifikatoren, Lizenzen, {{< glossary FAIR >}}/{{< glossary CARE >}}-Prinzipien.
+6. **Nachnutzung und Wiederverwendung:** Recherchierbarkeit, Interoperabilität, Kontextinformation zur Vermeidung von Fehlinterpretationen.
+7. **Archivierung und Löschung:** Auswahl von Archivierungsstandards und Speicherorten, rechtliche und ethische Vorgaben.
+
+```{mermaid}
+%%| label: fig-metadata-1
+%%| fig-cap: "Darstellung des Datenlebenszyklus nach dem Curation Lifecycle Model (DCC), adaptiert in sieben linearen Phasen von der Planung bis zur Archivierung bzw. Löschung."
+%%| fig-alt: "Lineares Modell des Datenlebenszyklus mit sieben Phasen: Planung, Datensammlung, Verarbeitung, Speicherung, Veröffentlichung, Nachnutzung, Archivierung/Löschung."
+flowchart TD
+    A[1 Planung und Konzeption] --> B[2 Datensammlung und Quellenkritik]
+    B --> C[3 Datenverarbeitung und Anreicherung]
+    C --> D[4 Speicherung und Verwaltung]
+    D --> E[5 Veröffentlichung und Zugang]
+    E --> F[6 Nachnutzung und Wiederverwendung]
+    F --> G[7 Archivierung und Löschung]
+    G -.-> B
+```
+
+Das Ziel dieses Handbuchs ist es, anhand konkreter Beispiele, Methoden und Strategien Hilfestellungen zu bieten, die es der Leser\*in erlauben sollen, Diskriminierung in der Metadatenpraxis zu erkennen und Entscheidungen in Bezug auf den eigenen Forschungskontext und auf die zur Verfügung stehenden Ressourcen fällen zu können. Zudem greifen wir konkrete Beispiele aus der deutschsprachigen, geschichtswissenschaftlichen Forschungspraxis auf, um auf wiederkehrende Stolperfallen hinzuweisen. Zur Orientierung im Handbuch dient folgende Entscheidungshilfe:
+
+```{mermaid}
+%%| label: fig-metadata-2
+%%| fig-cap: "Entscheidungshilfe zur Orientierung im Handbuch. Die Startfrage 'Was möchte ich tun??' verzweigt in vier Pfade—Metadaten neu erstellen; Zugang/Präsentation verbessern; Bestehende Metadaten nachnutzen; Begriffe/Standards klären—mit Verweisen auf zugehörige Phasen, Praxisabschnitte und Checklisten."
+%%| fig-alt: "Ein hellviolettes Flussdiagramm. In der Mitte eine rautenförmige Startbox mit dem Text 'Was möchte ich tun??'. Von dort führen vier Linien zu vier Themenkästen, von links nach rechts: Erstens 'Metadaten neu erstellen'. Darunter zwei Ebenen: 'Phase 1 bis 3: Planung, Sammlung, Verarbeitung' und darunter 'Praxis Paragraph 1 bis 3'. Zweitens 'Zugang und Präsentation verbessern'. Darunter 'Phase 5: Veröffentlichung und Zugang' und darunter 'Praxis Paragraph 5'. Drittens 'Bestehende Metadaten nachnutzen'. Darunter 'Phase 6: Nachnutzung und Wiederverwendung' und darunter 'Praxis Paragraph 6'. Viertens 'Begriffe und Standards klären'. Darunter 'Theorie und Glossar' und darunter 'Schlüsselbegriffe, Bias, FAIR und CARE'. Die Kästen sind horizontal ausgerichtet, die Verbindungen verlaufen von der Mitte nach aussen und dann je vertikal nach unten."
+flowchart LR
+  Q{"Was möchte ich tun?"}
+
+  Q --> NEU["Metadaten neu erstellen"]
+  Q --> ZUG["Zugang/Präsentation verbessern"]
+  Q --> REUSE["Bestehende Metadaten nachnutzen"]
+  Q --> FACH["Begriffe/Standards klären"]
+
+  NEU --> P13["Phase 1–3: Planung • Sammlung • Verarbeitung"]
+  P13 --> R13["Praxis §1–3"]
+
+  ZUG --> P5["Phase 5: Veröffentlichung & Zugang"]
+  P5 --> R5["Praxis §5"]
+
+  REUSE --> P6["Phase 6: Nachnutzung & Wiederverwendung"]
+  P6 --> R6["Praxis §6"]
+
+  FACH --> THEO["Theorie & Glossar"]
+  THEO --> R0["Schlüsselbegriffe • Bias • FAIR/CARE"]
+```
+
+Die Autor\*innen bringen unterschiedliche fachliche und persönliche Hintergründe in das Handbuch ein. Moritz Mähr (weisser cis Mann) ist promovierter Historiker. Noëlle Schnegg (weisse cis Frau) studiert Geschichte und Nahoststudien. Beide sind in der Schweiz aufgewachsen und verfügen über privilegierte gesellschaftliche Rahmenbedingungen, wobei sich individuelle Erfahrungen, beispielsweise hinsichtlich Sexismus, unterscheiden. Diese Offenlegung dient der Transparenz und Einordnung der Perspektiven im Handbuch.
+
+Wir orientieren uns am Contributor Covenant und verpflichten uns, diskriminierende Inhalte klar zu kennzeichnen und kontextualisiert aufzuarbeiten. Reproduktion problematischer Inhalte erfolgt ausschliesslich zu notwendigen Analysezwecken.
+
+Als Living Document lebt dieses Handbuch von der Community. Antidiskriminierungsarbeit ist ein nie endender gesellschaftlicher Prozess, weshalb auch dieses Handbuch niemals abgeschlossen sein wird. Vielmehr erfordert es kontinuierliche, kritische Reflexion, Überarbeitung und Anpassung. Verbesserungsvorschläge können via [Email](https://maehr.github.io/diskriminierungsfreie-metadaten/index.html) oder als Kommentar auf [GitHub](https://github.com/maehr/diskriminierungsfreie-metadaten/discussions/34) eingereicht werden.

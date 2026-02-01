@@ -1,0 +1,82 @@
+## 5\. Veröffentlichung und Zugang {#sec-5-veröffentlichung-und-zugang}
+
+In der Phase der Veröffentlichung werden die Forschungsdaten, sofern rechtlich und ethisch vertretbar, für Dritte zugänglich gemacht. Üblicherweise erfolgt dies über Repositorien, verbunden mit der Vergabe persistenter Identifikatoren wie DOIs, der Auswahl geeigneter Lizenzen sowie der Bereitstellung umfassender Metadaten. Ziel ist es, Offenheit und Nachnutzbarkeit im Sinne von _Open Data_ und den {{< glossary FAIR >}}-Prinzipien zu ermöglichen, zugleich aber die {{< glossary CARE >}}-Prinzipien zu berücksichtigen, die gegebenenfalls Einschränkungen erfordern.
+
+### 5.1 Zielgruppe definieren {#sec-51-zielgruppe-definieren}
+
+Metadaten erfüllen die Funktion von Findhilfen und Kontextträgern. Im Rahmen der Publikation müssen Ort, Vermittlungsstrategien und Mechanismen zur Langzeitkontrolle geklärt werden. Dazu gehört auch die Definition von Zugangsebenen, die Planung verschiedener Zielgruppen und ihrer Einstiegspfade sowie die Festlegung des Grades an Kontextualisierung auf Bestands-, Dossier- und Objektebene.
+
+Von Beginn des Projekts an sollte der dauerhaft lauffähige Endzustand definiert werden. Dadurch wird eine Übernahme, Versionierung und Zitierbarkeit durch Gedächtnisinstitutionen erleichtert. Eine solche Rückwärtsplanung reduziert Betriebsrisiken und erleichtert die Übergabe [@Endings_Principles_2023].
+
+Adressierbarkeit und Persistenz erfordern die Vergabe kanonischer, parameterloser URLs für alle Entitäten. Editionen sollen versioniert veröffentlicht werden, Umzüge müssen durch Weiterleitungen abgesichert sein, und Zitierempfehlungen sind sichtbar zu machen.
+
+::: {.callout-important title="Checkliste Zielgruppe"}
+
+- [ ] Zielgruppen, Einstiegspfade und Zugangsebenen definiert
+- [ ] Statischer Endzustand mit Rückwärtsplanung festgelegt
+- [ ] Kanonische, parameterlose URLs oder DOIs vergeben
+- [ ] Editionen versioniert, Weiterleitungen bei Umzügen vorgesehen
+- [ ] Zitierempfehlungen sichtbar integriert
+
+:::
+
+### 5.2 Umgang mit sensiblen und diskriminierenden Inhalten {#sec-52-umgang-mit-sensiblen-und-diskriminierenden-inhalten}
+
+Sensible Daten wie Informationen zu Personen, Kulturgut oder Fundorten erfordern besonderen Schutz. Ebenso gilt es, diskriminierende Inhalte (Querverweis Diskriminierung in und durch Daten) klar zu benennen, kontextualisiert zu präsentieren und nicht zu beschönigen. Trigger- und Content-Notes bieten dabei eine Möglichkeit, Zugänge zu moderieren und gleichzeitig Transparenz herzustellen.
+
+Bei sensiblen Daten können Geodaten archäologischer Fundorte, personenbezogene Abbildungen lebender oder identifizierbarer Menschen sowie Kontaktdaten von Bearbeiter\*innen problematisch sein. Bei diskriminierenden Inhalten sollte stets die Wirkung geprüft und die Reproduktion schädlicher Anschauungen vermieden werden.
+
+Einwilligungen sind insbesondere bei historischen Bildern häufig nicht vorhanden. Dies erfordert eine bewusste Reflexion des Veröffentlichungswegs sowie gegebenenfalls Alternativen wie Verpixelungen, Kontextlayer oder eingeschränkten Zugang.
+
+Entscheidungen zu Sichtbarkeit, Trigger-Hinweisen und alternativen Darstellungsweisen sind pro Edition zu dokumentieren. Eingriffe in Daten oder Medien sollen reversibel sein, und Änderungen sind mit Begründungen im Änderungsprotokoll auszuweisen.
+
+::: {.callout-important title="Checkliste sensible und diskriminierende Inhalte"}
+
+- [ ] Sensible Daten identifiziert und Schutzmassnahmen getroffen
+- [ ] Diskriminierende Inhalte benannt und kontextualisiert
+- [ ] Trigger- und Content-Notes formuliert
+- [ ] Einwilligungsfragen reflektiert und Alternativen geprüft
+- [ ] Governance-Regeln dokumentiert und Änderungen nachvollziehbar protokolliert
+
+:::
+
+### 5.3 Technische Strategien {#sec-53-technische-strategien}
+
+Das Zielbild einer Veröffentlichung ist ein statischer Webauftritt, realisiert mit HTML5, CSS und minimalem JavaScript. Er soll ohne Datenbank und ohne proprietäre Dritt-Dienste auskommen. Redundanz wird bewusst in Kauf genommen, um Resilienz zu erhöhen, während statische Suchlösungen zu bevorzugen sind.
+
+Der Build- und Validierungsprozess steht unter Versionskontrolle. Quellen, Skripte und Konfigurationen müssen nachvollziehbar versioniert sein. Jeder Build validiert Ein- und Ausgaben strikt, Fehler stoppen den Prozess. Änderungen führen deterministisch zu einem Neu-Build. Die Qualitätssicherung umfasst Schematests, Linkchecks, Validierungen von HTML, CSS und {{< glossary XML >}} sowie Prüfsummen.
+
+Sichtbarkeitssteuerung geschieht vor dem Export oder in Ableitungsschritten, beispielsweise durch serverseitiges Entfernen sensibler Felder, die Bereitstellung maskierter Bildvarianten, alternative Einstiegspfade mit Content-Notes oder gestufte Editionen mit klarer Kennzeichnung. Die Referenzausgabe selbst bleibt statisch.
+
+Offene, verlustfreie und nachnutzbare Formate sind zu verwenden, sofern keine Schutzgründe dagegensprechen. Dazu gehören PDF/A-1/-2 für formatierten Text, {{< glossary XML >}}/HTML/MD/TXT für strukturierten Text, reines TXT für Plaintext, TIFF oder DNG für Bilder, SVG für Vektoren und {{< glossary CSV >}} für Tabellen. Durchgängig wird UTF-8 ohne BOM als Zeichenkodierung empfohlen.
+
+Ein `README.md` im Wurzelverzeichnis erläutert Zweck, Geltungsbereich, Struktur, Rollen, Benennungsregeln, Lizenzen, Rechte und Restriktionen, Versionierung und Releaseschema. Zusätzlich sind Datenmodell, kontrollierte Vokabulare und zulässige Werte als statische Referenzdokumente zu hinterlegen.
+
+Exportschnittstellen sind durch API-Keys und Rate-Limits abzusichern, und sie sollen ausschliesslich freigegebene Felder enthalten. Zur Reproduktion wird eine Datenbeilage im Paket geliefert und versioniert. Falls Plattformfunktionen wie {{< glossary LIDO >}} erforderlich sind, bleiben diese auf die vorgelagerte Produktionsschicht beschränkt; das Endprodukt wird stets statisch ausgespielt. Nutzer\*innen müssen die Wahl haben, sensible Inhalte durch ein bewusstes Opt-in mit klaren Hinweisen zu aktivieren.
+
+::: {.callout-important title="Checkliste technische Strategien"}
+
+- [ ] Statischer Webauftritt ohne serverseitige Abhängigkeiten definiert
+- [ ] Build- und Validierungsprozess unter Versionskontrolle implementiert
+- [ ] Sichtbarkeitssteuerung in Export- oder Ableitungsschritten umgesetzt
+- [ ] Offene, verlustfreie Formate mit UTF-8-Kodierung verwendet
+- [ ] README und Referenzdokumente bereitgestellt und versioniert
+- [ ] API-Exporte abgesichert und reproduzierbare Datenbeilage integriert
+- [ ] Opt-in-Mechanismus für sensible Inhalte verfügbar
+
+:::
+
+### 5.4 Transparente Dokumentation {#sec-54-transparente-dokumentation}
+
+Die Dokumentation bleibt öffentlich zugänglich und macht Entscheidungsprozesse, Mitbestimmungen, Konflikte, Lücken und Versionen sichtbar. Beispielhaft dient die Dokumentation der Stadtgeschichte Basel. Jede Edition sollte statt eines "rolling release" fixiert vorliegen, ein Build-Datum und eine Versionsbezeichnung tragen und eine Zitierempfehlung enthalten. Persistente URIs müssen stabil bleiben, Umzüge sind durch Weiterleitungen abzusichern. Jede Edition wird als fixiertes Paket archiviert, das Webartefakte, Datenkopien, Dokumentationen, Prüfsummen, Lizenzdateien und optional eine `CITATION.cff`\-Datei umfasst.
+
+Offene Prinzipien werden auf der Projektseite explizit sichtbar gemacht. Dies schliesst eine Verlinkung auf die _Endings Principles_ sowie die Veröffentlichung von Compliance-Checklisten und Diagnosetools ein, welche die Qualitätssicherung und die Abschlussreife dokumentieren.
+
+::: {.callout-important title="Checkliste Dokumentation"}
+
+- [ ] Publikationsdokumentation online und öffentlich zugänglich
+- [ ] Editionen mit Datum, Version und Zitierempfehlung publiziert
+- [ ] Persistente URIs stabil, Umzüge mit Weiterleitungen gesichert
+- [ ] Jede Edition als Paket mit Prüfsummen, Daten und Dokumentation archiviert
+
+:::

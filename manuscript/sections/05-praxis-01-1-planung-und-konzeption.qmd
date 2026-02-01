@@ -1,0 +1,68 @@
+## 1\. Planung und Konzeption {#sec-1-planung-und-konzeption}
+
+### 1.1 Zielsetzung klären {#sec-11-zielsetzung-klären}
+
+**Warum beschreibe ich?** Die Herkunft, Erhebungsbedingungen und Weitergabe der Metadaten müssen nachvollziehbar sein. Zudem müssen Metadaten in Archiven und Repositorien auffindbar sein. Ihre Entstehung, ihr Erwerb und ihre Rezeption sollten klar kontextualisiert werden, damit sie richtig verstanden und eingeordnet werden können, denn die Qualität von Metadaten steuert Interoperabilität und Nachhaltigkeit.
+
+**Für wen beschreibe ich?** Um die Zielgruppen definieren zu können, müssen Informationsbedürfnisse und Arbeitskontexte erhoben werden. Auch potenziell diskriminierungserfahrene Nutzer\*innen müssen (insbesondere bei der Veröffentlichung) berücksichtigt werden.
+
+**Was beschreibe ich?** Dazu muss der Umfang der zu erfassenden Forschungsdaten, die zur Verfügung stehenden Ressourcen und Prioritäten festgelegt werden. Damit einher geht auch die Bestimmung, wie einheitlich die Metadaten aussehen sollen. Dazu kann ein Pilot mit zufällig gezogenen Quellen durchgeführt werden, um Aufwand, Tiefe und Lücken realistisch zu schätzen.
+
+::: {.callout-important title="Checkliste Zielsetzung"}
+
+- [ ] Ziel, Zielgruppen, Nutzungsszenarien dokumentiert
+- [ ] Prioritäten und Mindeststandards definiert
+- [ ] Pilotkorpus erfasst und Aufwand gemessen
+- [ ] Sensible Inhalte antizipiert und gekennzeichnet
+
+:::
+
+::: {.callout-note title="Praxisbeispiel: Stadt.Geschichte.Basel"}
+
+Eine frühe Klärung von Objekttypen, Zielgruppen und Kontexten war zentral. Das Schema blieb bewusst flexibel und wurde iterativ angepasst. Neben technischen Angaben waren kontextualisierende Informationen nötig. Diskriminierende Inhalte wurden historisch, sozial und politisch eingebettet. Fehlende Urheber\*innen erforderten eigene Recherche. Dabei halfen verlinkte Nachschlagewerke (zum Beispiel Basler Stadtbuch). Der Überblick über diskriminierende Themen entstand jedoch erst nach vielen Annotationen [@Maehr_SGB_digital_2022].
+:::
+
+### 1.2 Ethische und rechtliche Rahmenbedingungen {#sec-12-ethische-und-rechtliche-rahmenbedingungen}
+
+Frühzeitige Klärung ist entscheidend: Urheber- und Leistungsschutzrechte, Datenschutz und Persönlichkeitsrechte, Rechte Dritter sowie der Schutz vulnerabler Gruppen müssen berücksichtigt werden. Grundlage bildet ein Rechteinventar, das pro Objekt Herkunft, Urheber\*in, Rechteketten und Personenbezug dokumentiert [@weitzmann_klimpel_2016].
+
+Der Umgang mit personenbezogenen Daten verlangt eine klare Rechtsgrundlage (Einwilligung, Vertrag, gesetzliche Grundlage, berechtigtes Interesse) und gegebenenfalls Schutzmassnahmen wie Anonymisierung, Zugriffsstufen oder {{< glossary Content-Warning display="Content Warnings" >}} [@sec-5-veröffentlichung-und-zugang].
+
+Für die Veröffentlichung sind Lizenzangaben und Rechteaussagen (zum Beispiel CC-Lizenzen, RightsStatements.org) maschinenlesbar zu dokumentieren. Interne Review- und Eskalationswege sichern die Nachvollziehbarkeit und Rechtssicherheit. Bei komplexen Fällen ist juristische Expertise beizuziehen.
+
+::: {.callout-important title="Checkliste ethische und rechtliche Rahmenbedingungen"}
+
+- [ ] Rechtslage pro Inhaltstyp dokumentiert und geklärt
+- [ ] Einwilligungen und Einschränkungen erfasst
+- [ ] Personenbezug und Schutzmassnahmen geprüft
+- [ ] Lizenz/rights statement festgelegt
+- [ ] Review- und Eskalationswege definiert
+
+:::
+
+### 1.3 Standards und Infrastruktur festlegen {#sec-13-standards-und-infrastruktur-festlegen}
+
+Als Ausgangspunkt sollten etablierte Schemata wie das {{< glossary "Dublin Core" >}} Metadata Element Set ({{< glossary "Dublin Core" display="DCMES" >}}), MODS oder Schema.org geprüft werden. Ihre Verbreitung in der Fachcommunity und die Anschlussfähigkeit an bestehende Systeme sichern Interoperabilität und Nachhaltigkeit. Je nach Projekt kann es sinnvoll sein, Schemata zu erweitern oder zu kombinieren, etwa {{< glossary EAD >}} oder {{< glossary MARC >}} auf Sammlungsebene und {{< glossary "Dublin Core" >}}, MODS, {{< glossary LIDO >}} oder {{< glossary "VRA Core" >}} auf Objektebene [@Schopper_2024_Einfuehrung_Metadaten].
+
+Darüber hinaus ist die frühzeitige Planung von Normdaten, kontrollierten Vokabularen, technischen Plattformen und Datenflüssen entscheidend. Bei der Definition der Metadatenfelder empfiehlt es sich, zunächst alle relevanten Informationen zu sammeln (zum Beispiel Zeitangaben, Geokoordinaten, Lizenzhinweise, Versionsgeschichte). Ob Angaben in eigenen Feldern oder in Kommentarfeldern erfasst werden, hängt von Automatisierbarkeit, Standardisierung und Aggregationsanforderungen ab.
+
+Ein weiterer wichtiger Aspekt in diesem Schritt ist **die Sensibilität** gegenüber impliziten Annahmen, die mit Metadatenschemata und {{< glossary Ontologie display="Ontologien" >}} verbunden sind. Jede Klassifikation trifft bestimmte Aussagen über die Welt und ist daher nie neutral. Durch ihre Ordnungsstrukturen suggerieren Metadatenschemata häufig Allgemeingültigkeit und Objektivität, blenden jedoch Widersprüche, Ein- und Ausschlüsse aus. Beispiele hierfür sind die implizite Annahme eines Kernfamilienmodells in standardisierten Erhebungsbögen oder die westlich geprägten Vorstellungen von Besitz und Urheberschaft, die sich etwa in den Dublin-Core-Elementen "creator*"* und "rights" niederschlagen.
+
+Bei der Festlegung von Metadatenfeldern stellt sich häufig die Frage, ob bestimmte Angaben in eigenständigen Feldern oder in einem allgemeinen Kommentarfeld erfasst werden sollten. Die Entscheidung hängt dabei von Kriterien wie Automatisierbarkeit, Häufigkeit der Nutzung, Standardisierung, Anforderungen durch Aggregatoren sowie der gewünschten Flexibilität ab. In der Praxis erfolgt die Modellierung der Felder meist iterativ und parallel zur Quellenannotation. Dabei kann es vorkommen, dass ursprünglich geplante Felder wieder verworfen oder angepasst werden müssen, weil sich herausstellt, dass sie nur für einen Teil der Objekte relevant sind.
+
+Schliesslich ist es wichtig, sämtliche Entscheidungen und Abwägungen bei der Schemaauswahl und Felddefinition nachvollziehbar zu dokumentieren. So wird nicht nur die interne Konsistenz gewährleistet, sondern auch eine spätere Nachvollziehbarkeit durch andere Forscher\*innen und Projekte sichergestellt.
+
+Ein weiterer zentraler Punkt bei der Auswahl und Planung von Infrastrukturen ist die Abwägung zwischen proprietären Lösungen und offenen, quelloffenen Systemen. Proprietäre Software und kommerzielle Plattformen können kurzfristig Vorteile durch Benutzer\*innenfreundlichkeit, Support und Marktverbreitung bieten. Gleichzeitig bergen sie das Risiko des Vendor Lock-in: Daten und {{< glossary Workflow display="Workflows" >}} sind an ein spezifisches System gebunden, wodurch langfristige Migrationen, Interoperabilität und Kostenkontrolle erschwert werden. Gerade bei Forschungsdaten widerspricht dies den Prinzipien von Nachhaltigkeit, Offenheit und {{< glossary FAIR >}}/{{< glossary CARE >}}.
+
+::: {.callout-important title="Checkliste Standards und Infrastruktur"}
+
+- [ ] Zentrales Schema \+ Erweiterungen dokumentiert
+- [ ] Normdaten/Vokabulare ausgewählt
+- [ ] Plattform, Exportformate und Persistent Identifiers (DOI etc.) definiert
+
+:::
+
+::: {.callout-note title="Praxisbeispiel: Stadt.Geschichte.Basel"}
+
+Im Projekt Stadt.Geschichte.Basel wurde ein flexibles Metadatenmodell entwickelt, das unterschiedliche Objekte und Medien klar voneinander trennt. Zeitangaben werden nach dem {{< glossary EDTF >}} Standard erfasst, damit auch unsichere oder mehrdeutige Daten präzise dokumentiert werden können [@SGB_Datendokumentation_2025]. Für die Arbeit wird ein Mix aus etablierten Open Source Werkzeugen (Omeka, QGIS, R, Python etc.) und kommerziellen Plattformen (GitHub, ArcGIS) eingesetzt. Die Daten werden vor Veröffentlichung geprüft, angereichert und zur Nachnutzung bereitgestellt. Für die langfristige Sicherung werden sie im DaSCH und auf Zenodo archiviert. Begleitend sorgen Schulungen, Data Stewards und die Einbindung in Lehre und Praktika für nachhaltige Nutzung. Leitlinien wie {{< glossary FAIR >}}, Open Access und digitale Nachhaltigkeit prägen die Infrastruktur. Proprietäre Dienste werden durch offene Standards und Repositorien abgesichert. Zudem gibt es klare Regelungen zu Datenschutz und Barrierefreiheit. Die Dokumentation wird regelmässig aktualisiert [@Maehr_SGB_digital_2022].
+:::

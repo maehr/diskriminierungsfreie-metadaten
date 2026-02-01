@@ -7,21 +7,18 @@
   "scripts": {
     "format:md": "prettier --write \"**/*.{md,yml,yaml,json}\"",
     "format:qmd": "prettier --write --parser markdown \"**/*.qmd\"",
-    "format:bib": "bibtex-tidy manuscript/references.bib --omit=abstract,file,doi,issn --sort=author --curly --numeric --modify",
-    "format": "npm run format:md && npm run format:qmd && npm run format:bib",
+    "format": "npm run format:md && npm run format:qmd",
     "lint:md": "prettier --check \"**/*.{md,yml,yaml,json}\"",
     "lint:qmd": "prettier --check --parser markdown \"**/*.qmd\"",
-    "lint:bib": "bibtex-tidy manuscript/references.bib --omit=abstract,file,doi,issn --sort=author --curly --numeric --modify",
-    "lint": "npm run lint:md && npm run lint:qmd && npm run lint:bib",
+    "lint": "npm run lint:md && npm run lint:qmd",
     "lint:py": "uv run ruff check .",
     "format:py": "uv run ruff format .",
     "typecheck": "uv run ty check .",
-    "check:claims": "uv run tools/scripts/validate-claims.py",
     "check:citations": "uv run tools/scripts/check-citations.py",
+    "infer:specs": "uv run tools/scripts/infer-specs.py",
     "render": "cd manuscript && quarto render",
-    "wordcount": "node tools/scripts/wordcount.js",
     "anon": "cd manuscript && quarto render --profile submission",
-    "validate": "npm run format && npm run render && npm run check:claims && npm run check:citations && npm run lint:py && npm run typecheck && npm run lint"
+    "validate": "npm run format && npm run render && npm run check:citations && npm run lint:py && npm run typecheck && npm run lint"
   },
   "repository": {
     "type": "git",
@@ -36,7 +33,6 @@
   },
   "homepage": "TODO: set homepage URL",
   "devDependencies": {
-    "bibtex-tidy": "^1.14.0",
     "prettier": "^3.8.1"
   }
 }

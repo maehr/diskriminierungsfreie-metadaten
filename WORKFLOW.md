@@ -2,72 +2,54 @@
 
 This repository uses an explicit, file-defined workflow state machine.
 
+This project is a self-published handbook (Zenodo + GitHub Pages / Quarto publish).
+It does not use the template's claim-ledger / evidence-matrix machinery.
+
 ```yaml
 states:
   - id: INIT
     description: Repository initialized, no content
-    next: [SPEC_JOURNAL]
+    next: [SPEC_PROJECT]
 
-  - id: SPEC_JOURNAL
-    description: Journal constraints defined
+  - id: SPEC_PROJECT
+    description: Project constraints and publication mode defined
     agent: Planner
     inputs: [specs/journal.md, specs/submission.md]
-    validation: journal-spec-complete
-    next: [SPEC_PAPER]
+    validation: project-spec-complete
+    next: [SPEC_SYNC]
 
-  - id: SPEC_PAPER
-    description: Paper specification complete
-    agent: Planner
-    inputs: [specs/paper.md]
-    validation: paper-spec-complete
-    next: [SPEC_OUTLINE]
-
-  - id: SPEC_OUTLINE
-    description: Section specifications complete
+  - id: SPEC_SYNC
+    description: Specs inferred and synced to manuscript outline
     agent: Planner
     inputs: [specs/outline.md, specs/sections/*.md]
-    validation: all-section-specs-exist
-    next: [RESEARCH]
-
-  - id: RESEARCH
-    description: Research layer populated
-    agent: Planner
-    inputs: [research/claim-ledger.md, research/evidence-matrix.csv]
-    validation: claims-have-evidence
+    validation: specs-in-sync
     next: [DRAFT]
 
   - id: DRAFT
-    description: All sections drafted
+    description: Manuscript sections written/edited
     agent: Drafter
     inputs: [manuscript/sections/*.qmd]
-    validation: all-sections-drafted
-    next: [REVIEW_EPISTEMIC]
+    validation: manuscript-renders
+    next: [REVIEW_INTERNAL]
 
-  - id: REVIEW_EPISTEMIC
-    description: Claim-evidence audit complete
+  - id: REVIEW_INTERNAL
+    description: Internal review complete (citations, structure, style)
     agent: Epistemic Auditor
-    inputs: [reviews/argument-review.md, reviews/citation-audit.md]
-    validation: no-uncited-claims
-    next: [REVIEW_STRUCTURE]
+    inputs: [reviews/citation-audit.md, reviews/structure-review.md, reviews/style-pass.md]
+    validation: internal-review-complete
+    next: [REVIEW_EXTERNAL]
 
-  - id: REVIEW_STRUCTURE
-    description: Structure review complete
-    agent: Structure Editor
-    inputs: [reviews/structure-review.md]
-    validation: structure-approved
-    next: [REVIEW_STYLE]
+  - id: REVIEW_EXTERNAL
+    description: External expert review captured
+    agent: Human
+    inputs: [reviews/external/*.md]
+    validation: external-review-captured
+    next: [RELEASE_READY]
 
-  - id: REVIEW_STYLE
-    description: Style pass complete
-    agent: Style Editor
-    inputs: [reviews/style-pass.md]
-    validation: style-approved
-    next: [SUBMISSION_READY]
-
-  - id: SUBMISSION_READY
-    description: Ready for anonymization and render
+  - id: RELEASE_READY
+    description: Ready to render and publish
     agent: Submission Manager
-    validation: submission-checklist-complete
+    validation: release-checklist-complete
     next: [COMPLETE]
 
   - id: COMPLETE
@@ -80,44 +62,26 @@ transitions:
     action: log-failure-and-remediate
 
 validations:
-  journal-spec-complete:
+  project-spec-complete:
     - file_exists: specs/journal.md
     - file_exists: specs/submission.md
-    - contains: specs/journal.md -> "word_count_limit:"
-    - contains: specs/submission.md -> "anonymization_required:"
+    - contains: specs/submission.md -> "publication_mode:"
 
-  paper-spec-complete:
-    - file_exists: specs/paper.md
-    - contains: specs/paper.md -> "## Contribution Statement"
-    - contains: specs/paper.md -> "## Thesis"
-    - contains: specs/paper.md -> "## Claims List"
+  specs-in-sync:
+    - file_exists: specs/outline.md
+    - file_exists: specs/sections/*.md
 
-  all-section-specs-exist:
-    - file_exists: specs/sections/01-introduction.md
-    - file_exists: specs/sections/02-related-work.md
-    - file_exists: specs/sections/03-methods-materials.md
-    - file_exists: specs/sections/04-analysis.md
-    - file_exists: specs/sections/05-discussion.md
-    - file_exists: specs/sections/06-conclusion.md
-
-  claims-have-evidence:
-    - script: tools/scripts/validate-claims.py
+  manuscript-renders:
+    - script: npm run render
     - exit_code: 0
 
-  all-sections-drafted:
-    - file_exists: manuscript/sections/01-introduction.qmd
-    - file_not_empty: manuscript/sections/*.qmd
-
-  no-uncited-claims:
+  internal-review-complete:
     - script: tools/scripts/check-citations.py
     - exit_code: 0
 
-  structure-approved:
-    - contains: reviews/structure-review.md -> "Status: approved"
+  external-review-captured:
+    - file_exists: reviews/external/*.md
 
-  style-approved:
-    - contains: reviews/style-pass.md -> "Status: approved"
-
-  submission-checklist-complete:
+  release-checklist-complete:
     - contains: specs/submission.md -> "[x]" (all items)
 ```

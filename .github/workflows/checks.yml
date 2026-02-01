@@ -23,11 +23,8 @@ jobs:
       - name: Lint Markdown
         run: npx prettier@3.3.3 --check "**/*.md"
 
-      - name: Check bibliography
-        run: npx bibtex-tidy@1.14.0 manuscript/references.bib --omit=abstract,file,doi,issn --sort=author --curly --numeric --modify
-
-      - name: Validate claims
-        run: uv run tools/scripts/validate-claims.py
+      - name: Check bibliography file formatting
+        run: npx prettier@3.3.3 --check manuscript/references.yaml
 
       - name: Check citations
         run: uv run tools/scripts/check-citations.py

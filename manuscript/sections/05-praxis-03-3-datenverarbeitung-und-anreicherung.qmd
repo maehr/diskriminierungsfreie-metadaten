@@ -1,0 +1,108 @@
+## 3\. Datenverarbeitung und Anreicherung {#sec-3-datenverarbeitung-und-anreicherung}
+
+### 3.1 Technische Standards implementieren {#sec-31-technische-standards-implementieren}
+
+Zentrale Grundlage einer nachhaltigen und nachvollziehbaren Datenverarbeitung ist die Festlegung von Feldstrukturen, Datentypen, Formaten und Kardinalitäten. Diese Elemente sollten in einem iterativen Prozess modelliert werden, der eng mit der fortlaufenden Annotation verknüpft ist. Ergänzend sind Metafelder vorzusehen, die Auskunft geben über Quellenlage, Zuverlässigkeit, Präzision, Bearbeitungsstand, Veröffentlichungsstatus, Versionierung, Lizenz sowie Zitiervorschläge. Für sensible Inhalte sind Sichtbarkeits- und Zugriffskontrollen (Flags) einzuplanen, um eine differenzierte Steuerung zwischen interner Verarbeitung und externer Veröffentlichung zu ermöglichen.
+
+Die Automatisierung von Verarbeitungsschritten setzt atomar strukturierte Felder voraus. Freitextangaben, die nur in seltenen Fällen vorkommen, sollten hingegen möglichst zentral gebündelt werden, um Redundanzen und Validierungsprobleme zu vermeiden.
+
+**{{< glossary Ontologie display="Ontologien" >}} sind nicht neutral.** Jede Festlegung von Datenmodellen, Schemata und Kontrollstrukturen impliziert Annahmen über Weltbilder, soziale Kategorien und rechtliche Rahmenbedingungen. Beispiele hierfür sind das binäre Geschlechtsmodell, rigide Namensfelder ohne kulturelle Differenzierung oder die in westlich geprägten Standards vorherrschende Urheberrechtslogik, die sich in Feldern wie `creator` oder `rights` niederschlägt. Solche Modellierungen sind niemals selbstverständlich, sondern müssen als bewusste Entscheidungen transparent dokumentiert werden. Eine präzise Aufzeichnung dieser Abwägungen ist daher verpflichtend, um die Nachvollziehbarkeit und kritische Überprüfbarkeit der Datenarchitektur sicherzustellen.
+
+Feldstruktur, Datentypen, Formate und Kardinalitäten festlegen. Iterativ modellieren und parallel annotieren. Ergänzende Felder für Quellenlage, Zuverlässigkeit, Präzision, Bearbeitungsstand, Veröffentlichungsstatus, Version, Lizenz, Zitiervorschlag vorsehen. Sichtbarkeitsflags für sensible Inhalte einplanen. Automatisierung erfordert atomare Felder; seltene, frei formulierte Angaben ggf. zentral bündeln.
+
+{{< glossary Ontologie display="Ontologien" >}} sind nicht neutral Schemata treffen Annahmen über Welt und Personen.
+
+Beispiele: binäres Geschlechtsmodell, starre Namensfelder, westliche Urheberrechtslogik in creator/rights. Dokumentation aller Abwägungen ist Pflicht.
+
+::: {.callout-important title="Checkliste Technische Standards"}
+
+- [ ] Feldkatalog mit Definitionen erstellt
+- [ ] Maschinenlesbare Datentypen und Validierung gesetzt
+- [ ] Sichtbarkeits- und Sensitivitätslogik modelliert
+
+:::
+
+### 3.2 Beschreibung und Verschlagwortung {#sec-32-beschreibung-und-verschlagwortung}
+
+Nach der Wahl der Metadatenstandards (QUERVERWEIS Metadatenstandards), müssen die Felder befüllt werden. Dazu kann für jedes Feld auf eine Reihe sogenannter **kontrollierter Vokabulare** beziehungsweise **Normdatensätze** (auch Normdateien genannt) zurückgegriffen werden. Hier kann zwischen Normdatensätzen (etwa der {{< glossary GND >}}) sowie kontrollierten Vokabularen und spezifischen Schlagwortindizes (etwa thematischen Indizes wie GenderOpen) unterschieden werden. Für Ortsverzeichnisse wird oft auch **Gazetteer** verwendet. Auch {{< glossary "Dublin Core" >}} stellt mit den [**DCIM Metadata Terms**](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/) **(DCTERMS)** übersichtliche Datenwertstandards mit einigen Dutzend Einträgen bereit. Diese sollten nicht mit dem {{< glossary "Dublin Core" >}} _Schema_ {{< glossary "Dublin Core" display="DCMES" >}} verwechselt werden.
+
+Für eine diskriminierungssensible Metadatenpraxis ist es wichtig, Normdaten und Vokabulare auch inhaltlich kritisch zu hinterfragen. So ist beispielsweise auf die Grenzen von {{< glossary GND >}} hinzuweisen: Viele Begriffe fehlen, und häufig liegt eine binäre Logik zugrunde. Über lokale {{< glossary GND >}}-Redaktionen können jedoch Ergänzungsanträge eingereicht werden, um diskriminierende Lücken zu schliessen oder problematische Einträge zu verändern. Als Beispiel ist der Begriff _Gender_ zu nennen, der 2024 offiziell in {{< glossary GND >}} aufgenommen wurde.
+
+Darüber hinaus sollte Mehrsprachigkeit systematisch berücksichtigt werden, nicht als nachträgliche Ergänzung, sondern als grundlegende Systemfrage. Begriffe sind stets kulturell kodiert und lassen sich nicht ohne Weiteres in andere Sprachen übertragen, wie das Beispiel _Race ≠ Rasse_ verdeutlicht. Auch beim Einsatz von Mappings und {{< glossary Crosswalk display="Crosswalks" >}} empfiehlt es sich, mit Äquivalenzklassen zu arbeiten, deren Definitionen jedoch kritisch zu prüfen. Widersprüche oder Ausschlüsse müssen sichtbar gemacht und, falls nötig, in Anträgen an die zuständigen Redaktionen thematisiert werden.
+
+Es kann zwischen **intrinsischen und extrinsischen Schlagwörtern** unterschieden werden. Dabei geht es darum, ob die verwendeten Begriffe der Quelle selbst entstammen (intrinsisch), oder ob es sich um äussere Zuschreibungen oder Kontextinformationen handelt (extrinsisch). Schemata wie Dublin-Core erlauben es jedoch, intrinsische und extrinsische Schlagwörter demselben Element zuzuordnen (zum Beispiel `dc:subject`), ohne diese explizit als solche auszuzeichnen, wobei extrinsisch häufiger ist. Bei der extrinsischen Verschlagwortung sowie bei Objekt- und Bildbeschreibungen ist es nicht nur relevant, welche Begriffe gewählt werden, sondern auch, wer dabei Mitsprache erhält. Diese Entscheide sollten dokumentiert werden.
+
+::: {.callout-important title="Checkliste Beschreibung"}
+
+- [ ] Vokabulare und Normdateien pro Feld definiert
+- [ ] Regeln für Intrinsisch/Extrinsisch festgelegt
+- [ ] Unsicherheit formalisiert und sichtbar gemacht
+
+:::
+
+::: {.callout-tip title="Lücken, Widersprüche, Unsicherheiten und häufige Fehler"}
+
+- **Lücken:** Fehlende Personenidentitäten explizit kennzeichnen. Keine Annahmen zu Nationalität, Geschlecht etc. treffen.
+- **Widersprüche:** Abweichende Datierungen oder Ortsangaben parallel erfassen und Quellenlage dokumentieren.
+- **Unsicherheit:** Unscharfe Angaben formal kennzeichnen (z. B. {{< glossary EDTF >}} "\~1905").
+- **Häufige Fehler:**
+  - Nacktheit und Sexualität ohne Kontext sexualisieren
+  - Personen über Diskriminierungsmarker essenzialisieren
+  - Koloniale Namensformen unkritisch übernehmen; stattdessen Synonyme und Alternativnamen pflegen
+
+:::
+
+::: {.callout-tip title="Freitext-Beschreibung und bewusste Begriffsentscheidungen"}
+
+- Respektvolle, auf Care ausgerichtete Sprache statt vermeintlicher Neutralität
+- Aktive und präzise Ausdrucksweise ("X tötete Y" statt Passivformen)
+- Machtverhältnisse benennen, wenn kontextrelevant
+- Keine heroisierenden Darstellungen von Bestandsbildner\*innen
+- Problematische Ereignisse klar benennen: Lynching, Vergewaltigung, Mord
+- Sprachspezifika berücksichtigen (z. B. _Race_ ≠ _Rasse_)
+- Begriffe kontextualisieren ("Zwerg" vs. "kleinwüchsige Person")
+- Person-first-Formulierungen verwenden ("Person mit …")
+- Selbstbezeichnungen respektieren (z. B. "Crip" nur als Selbstbeschreibung)
+- Problematische {{< glossary LCSH >}}- oder {{< glossary GND >}}-Heading beibehalten, aber mit Bemerkung versehen
+
+:::
+
+### 3.3 KI-Unterstützung und Automatisierung {#sec-33-ki-unterstützung-und-automatisierung}
+
+Die Integration von Large Language Models (LLMs) in die Metadatenerstellung verändert die Arbeit in Gedächtnisinstitutionen und Forschungsprojekten grundlegend. Entscheidend ist nicht Effizienz, sondern der kontrollierte Umgang mit Risiken wie Verzerrung, Halluzinationen und Intransparenz. KI-generierte Inhalte müssen klar gekennzeichnet werden, ergänzt durch Risiko- und Bias-Assessments sowie eine dokumentierte Entscheidungsgrundlage (Impact-Assessment). Transparenz und Nachvollziehbarkeit von Modellen, Prompts und Versionen sind zwingend.
+
+::: {.callout-note title="Künstliche Intelligenz bei der automatischen Verschlagwortung bei der DNB"}
+
+Die Deutsche Nationalbibliothek setzt seit 2012 KI für die automatische Verschlagwortung ein. Während grosse Datenmengen effizient erschlossen werden, zeigen sich Grenzen im "Long Tail" und bei komplexen Themen. Bei einer sozialwissenschaftlichen Reihe musste die Automatisierung wegen hoher Fehlerquoten eingestellt werden [@junger2021].
+
+LLMs reproduzieren kulturelle und historische Prägungen, verstärken Stereotypen und verschleiern Unsicherheiten durch Halluzinationen. Ohne redaktionelle Kontrolle drohen fehlerhafte oder spekulative Inhalte, die sich in Katalogen verfestigen.
+:::
+
+::: {.callout-note title="Multimodale KI für automatische Alt-Texte bei Stadt.Geschichte.Basel"}
+
+KI-Modelle generieren im Projekt automatische Alt-Texte und verbessern so die Barrierefreiheit. Ohne systematische Qualitätskontrolle bleiben jedoch Risiken inkonsistenter oder diskriminierender Beschreibungen [@mahr2025].
+
+"Human-in-the-loop" ist kein Garant für Sicherheit: Fachpersonen benötigen Zeit, Schulung und klare {{< glossary Workflow display="Workflows" >}}. Definierte Rollen (z. B. Kuratierung, Technik, Ethik-Board), nachvollziehbare Versionshistorien und Eskalationsverfahren sind notwendig, ebenso wie gezielte Trainings zu Bias-Erkennung und Prompt-Design.
+:::
+
+::: {.callout-note title="Bias-Erkennung in Metadaten mit dem DE-BIAS-Tool"}
+
+Das europäische Projekt DE-BIAS entwickelte Werkzeuge zur automatisierten Erkennung diskriminierender oder historisch belasteter Begriffe in Metadaten von Kulturerbeinstitutionen. Kernstück ist ein KI-gestütztes Webtool, das Sammlungsdaten analysiert, problematische Ausdrücke markiert und kontextualisierte Alternativvorschläge anbietet – gestützt auf ein kontrolliertes, mehrsprachiges Vokabular (derzeit in fünf Sprachen verfügbar).  
+Besonders relevant ist DE-BIAS für Gedächtnisinstitutionen, die historische Metadatenbestände pflegen, deren Begriffe aus kolonialen, rassistischen oder sexistischen Diskursen stammen können. Durch transparente Annotation und Exportfunktionen lassen sich Korrekturläufe effizient planen. Doch auch hier gilt: Die maschinelle Erkennung ersetzt keine kritische Auseinandersetzung, wie auch die verhältnismässig tiefe Erkennungsrate von DE-BIAS zeigt.
+
+Es müssen konkrete Einsatzszenarien definiert werden (z. B. automatische Transkription, Übersetzungen, Vorschläge für Schlagwörter) und es ist klarzustellen, wann ausschliesslich menschliche Expertise erforderlich ist (z. B. Kontextualisierung oder Bewertung kontroverser Inhalte). Ergänzend können Ansätze der Explainable AI (xAI) und Metriken wie Fairness, Precision und Recall helfen, die Qualität systematisch zu evaluieren.
+:::
+
+::: {.callout-important title="Checkliste KI-Einsatz"}
+
+- [ ] KI-Einsatzbereiche, Modelle, Trainings-/Prompt-Kontexte dokumentiert
+- [ ] Stufen der Qualitätskontrollen, Freigaben, Rückverfolgbarkeit definiert
+- [ ] KI-Anteile in Feldern gekennzeichnet
+- [ ] Risiko- und Bias-Assessments durchgeführt und dokumentiert
+- [ ] Datenschutz, Urheberrecht und {{< glossary FAIR >}}/{{< glossary CARE >}}-Prinzipien geprüft
+- [ ] Kontrollschwellen (z. B. Confidence-Scores) für menschliche Überprüfung festgelegt
+- [ ] Rollen, Eskalationsverfahren und Verantwortlichkeiten definiert
+- [ ] Modelle, Prompts und Updates versioniert und veröffentlicht
+- [ ] Mitarbeitende geschult und fortlaufend sensibilisiert
+
+:::

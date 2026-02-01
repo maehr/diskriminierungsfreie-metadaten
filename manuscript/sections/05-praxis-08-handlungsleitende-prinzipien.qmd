@@ -1,0 +1,80 @@
+## Handlungsleitende Prinzipien
+
+### 1\. Transparenz als Infrastrukturprinzip
+
+Jeder Arbeitsablauf ({{< glossary Pipeline >}}: Schritte der Datenerhebung, \-verarbeitung und \-analyse) erhält einen öffentlich zugänglichen Entscheidungs- und Änderungslog. Dokumentiert werden: Erhebungsdesign, Auswahlrationale, Fehlerraten, Mapping-Regeln sowie abgelehnte Alternativen (versioniert).
+
+Für Datensätze und Modelle gelten strukturierte Begleitdokumente als Standard: _Datasheets_ und _Model Cards_ (Steckbriefe für Daten/Modelle). Sie enthalten gruppenspezifische Qualitätsmetriken, bekannte Lücken und Nutzungseinschränkungen. Diese Dokumente sind zitierfähig und mit persistenten Identifikatoren in Repositorien verankert.
+
+### 2\. Varianten- und Mehrsprachigkeitsfähigkeit im Metadatenmodell
+
+Konzepte und Namen werden als mehrsprachige, relationale Entitäten modelliert (z. B. {{< glossary SKOS >}}):
+
+- `prefLabel` \= bevorzugte Bezeichnung
+- `altLabel` \= alternative Bezeichnung
+- `hiddenLabel` \= versteckte Schreibweisen
+- `exactMatch/closeMatch` \= präzise oder nahe Entsprechungen
+- Provenienz \= dokumentierte Herkunft
+
+Identitäten und Rollen erhalten kontrolliert-offene Felder statt binärer Pflichtangaben. Selbstbezeichnungen und Schreibvarianten gelten als gleichwertige, abfragbare Identifikatoren. Unsicherheiten werden in eigenen Feldern mit standardisierten, maschinenlesbaren Qualifikatoren vermerkt.
+
+### 3\. Partizipative Kuratierung und Governance
+
+Kuratierung erfolgt gemeinsam mit betroffenen Communities. Dies umfasst:
+
+- Verfahren für Einspruch, Korrektur und Takedown
+- klare Zuständigkeiten und angemessene Vergütung
+- Vereinbarungen zur Wissenssouveränität ({{< glossary FAIR >}}/{{< glossary CARE >}})
+
+Für sensible Bestände werden abgestufte Zugangsmodelle (differenzierte Rechtevergabe) und Schutzkennzeichnungen eingesetzt. Alle Entscheidungen sind befristet und revidierbar.
+
+### 4\. Ausgleichende Technik entlang der gesamten Prozesskette
+
+Die Auswahl folgt stratifizierten Plänen mit _Equity-Buckets_ (Fairness-Schichten), um unterrepräsentierte Gruppen systematisch einzubeziehen.
+
+- **Digitalisierung und Erkennung:** gezielte Feinjustierung für schwach performende Segmente; Fehlerbilanzen werden nach Schrift, Sprache, Medium und Gruppe veröffentlicht.
+- **{{< glossary Retrieval >}}-Systeme:** Einsatz von {{< glossary Query-Expansion >}} (Anfrageerweiterung), Cross-Lingual IR (mehrsprachiges Informationsretrieval) und Re-Ranking (Neuanordnung der Treffer), um Recall-Differenzen zwischen Gruppen zu reduzieren. Ranking-Entscheide werden erklärt.
+
+### 5\. Analytische Robustheit als Standardpraxis
+
+Studien verpflichten sich zu:
+
+- Vorabdefinition von Annahmen
+- Sensitivitätsanalysen (Reaktion auf kleine Änderungen)
+- Tests alternativer Operationalisierungen
+- Gewichtung bekannter Erhebungs- und Selektionsfehler
+
+Fehlende Daten werden transparent behandelt, z. B. durch Mehrfachimputation mit Diagnose der MAR/MNAR-Annahmen (zufälliges/nicht-zufälliges Fehlen). Für kausale Aussagen sind kontrafaktische Szenarien, Instrumentvariablen oder natürliche Experimente zu prüfen. Alle Limitierungen sind offen zu deklarieren.
+
+### 6\. Gerechtigkeitsmetriken und Monitoring
+
+Erfolg wird anhand equity-orientierter Kennzahlen gemessen:
+
+- gruppenspezifischer Recall/Precision (Trefferquote/Vollständigkeit und Genauigkeit)
+- Fehlerratenparität (Vergleichbarkeit der Fehlerquoten)
+- Exposure-Anteile im Ranking (Sichtbarkeit in Trefferlisten)
+- Bearbeitungszeiten für Korrekturen
+- Community-Zufriedenheit
+
+Diese Metriken fliessen in kontinuierliche Audits ein. Abweichungen lösen definierte Korrekturpfade aus. Ein öffentliches Issue-Tracking ermöglicht externe Prüfung und Nachsteuerung.
+
+### 7\. Reproduzierbarkeit und digitale Nachhaltigkeit
+
+{{< glossary Workflow display="Workflows" >}} sind:
+
+- containerisiert (standardisierte, portable Software-Umgebungen)
+- daten- und modellseitig versioniert
+- in offenen, langfristigen Formaten und Schnittstellen zugänglich
+
+Abhängigkeiten werden minimiert. Rechenaufwände werden bilanziert und, wo möglich, durch _Minimal Computing_ (ressourcenschonende Verfahren) ersetzt. Langzeitarchivierung und Wiederverwendbarkeit sind von Beginn an Designkriterien.
+
+### Zusammenfassung
+
+Handlungsleitend ist ein zyklisches Vorgehen:
+
+1. **Planen** (Ziele, Risiken, Metriken)
+2. **Umsetzen** (bei der Annotation mit einer diversen Auswahl an Beispielen beginnen)
+3. **Prüfen** (Audits, Robustheit, Community-Feedback)
+4. **Anpassen** (Governance-Entscheide revidieren, restliche Objekte auszeichnen)
+
+So werden Diskriminierungen nicht nur benannt, sondern in überprüfbaren Schritten reduziert. Zugleich wird die Nachvollziehbarkeit und Integrität der Forschung gestärkt.
