@@ -1,3 +1,0 @@
-## Methods and Materials {#sec-methods-materials}
-
-This section is a placeholder describing the method/material commitments from `specs/paper.md`.

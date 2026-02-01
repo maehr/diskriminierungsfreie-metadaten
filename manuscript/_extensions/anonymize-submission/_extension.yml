@@ -1,8 +1,0 @@
-title: Anonymize Submission
-author: Moritz Mähr
-url: https://github.com/maehr/log
-license: AGPL-3.0-only
-version: 0.1.0
-contributes:
-  filters:
-    - anonymize-submission.lua

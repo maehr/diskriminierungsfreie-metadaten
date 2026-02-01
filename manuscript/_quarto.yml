@@ -1,23 +1,42 @@
 project:
   type: manuscript
-  output-dir: _outputs/manuscript
 
 manuscript:
-  article: paper.qmd
+  code-links:
+    - text: Diskussion Living Document
+      href: https://github.com/maehr/diskriminierungsfreie-metadaten/discussions
+    - text: Quellcode
+      href: https://github.com/maehr/diskriminierungsfreie-metadaten
+  manuscript-url: https://moritz-maehr.quarto.pub/diskriminierungssensible-metadatenpraxis # https://maehr.github.io/diskriminierungsfreie-metadaten/
+
+glossary:
+  path: glossary.yaml
+  popup: click
+  show: true
 
 format:
-  docx:
-    reference-doc: templates/journal-reference.docx
   html:
-    toc: true
-
-bibliography: references.bib
-csl: csl/journal.csl
-
-metadata-files:
-  - frontmatter.yml
-
-execute:
-  echo: false
-  warning: false
-  message: false
+    # doi: '10.5281/zenodo.17073511'
+    date-modified: last-modified
+    link-external-icon: true
+    link-external-newwindow: true
+    comments:
+      hypothesis:
+        theme: clean
+    css:
+      - custom.css
+    include-in-header:
+      - custom-header.html
+    page-layout: full
+    license: CC BY-SA
+  # docx:
+  #   reference-doc: custom-reference.docx
+  #   fig-align: left
+  #   subject: Diskriminierungsfreie Metadaten
+  #   category: Handbuch
+  #   toc: true
+  #   toc-depth: 3
+  #   toc-title: Inhaltsverzeichnis
+  # pdf:
+  #   pdf-engine: xelatex
+  #   keep-tex: false

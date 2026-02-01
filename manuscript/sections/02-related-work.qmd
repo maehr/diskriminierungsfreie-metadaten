@@ -1,3 +1,0 @@
-## Related Work {#sec-related-work}
-
-This section is a placeholder to be replaced with field-specific positioning once `specs/sections/02-related-work.md` is filled in.
