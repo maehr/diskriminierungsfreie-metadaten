@@ -1,0 +1,15 @@
+# Build artifacts
+outputs/
+_manuscript/
+manuscript/_outputs/
+
+# Tooling
+node_modules/
+.venv/
+.ruff_cache/
+
+# Quarto caches
+manuscript/.quarto/
+
+# Vendored Quarto extensions
+manuscript/_extensions/andrewheiss/

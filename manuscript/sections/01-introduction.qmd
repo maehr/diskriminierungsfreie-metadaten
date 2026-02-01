@@ -1,0 +1,7 @@
+## Introduction {#sec-introduction}
+
+This repository is a template for a spec-driven, agentic workflow around Quarto manuscripts.
+
+<!-- claim:C1 -->
+
+The workflow is designed to keep every manuscript claim traceable to a ledger entry and a citable source (@doe2020).

@@ -1,0 +1,3 @@
+## Analysis {#sec-analysis}
+
+This section is a placeholder for analysis structured by the outline and section specs.

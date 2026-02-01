@@ -1,0 +1,23 @@
+project:
+  type: manuscript
+  output-dir: _outputs/manuscript
+
+manuscript:
+  article: paper.qmd
+
+format:
+  docx:
+    reference-doc: templates/journal-reference.docx
+  html:
+    toc: true
+
+bibliography: references.bib
+csl: csl/journal.csl
+
+metadata-files:
+  - frontmatter.yml
+
+execute:
+  echo: false
+  warning: false
+  message: false

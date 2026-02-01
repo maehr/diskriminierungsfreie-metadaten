@@ -1,0 +1,7 @@
+This repository contains multiple components with different rights.
+
+1) Template code is licensed under AGPL-3.0-only.
+   See SPDX headers in code files, `NOTICE.md`, and `LICENSES/AGPL-3.0-only.txt`.
+
+2) Paper contents (data, code, and text that are part of the paper) are all rights reserved by default.
+   See `COPYRIGHT-PAPER.md`.

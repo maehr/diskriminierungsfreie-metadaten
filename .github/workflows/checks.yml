@@ -1,0 +1,33 @@
+name: Quality Checks
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v4
+
+      - name: Lint Markdown
+        run: npx prettier@3.3.3 --check "**/*.md"
+
+      - name: Check bibliography
+        run: npx bibtex-tidy@1.14.0 manuscript/references.bib --omit=abstract,file,doi,issn --sort=author --curly --numeric --modify
+
+      - name: Validate claims
+        run: uv run tools/scripts/validate-claims.py
+
+      - name: Check citations
+        run: uv run tools/scripts/check-citations.py

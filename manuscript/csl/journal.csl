@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0" class="in-text" default-locale="en-US">
+  <info>
+    <title>Minimal Author-Date</title>
+    <id>http://www.zotero.org/styles/minimal-author-date</id>
+    <link href="http://www.zotero.org/styles/minimal-author-date" rel="self"/>
+    <category citation-format="author-date"/>
+    <updated>2026-01-23T00:00:00+00:00</updated>
+  </info>
+
+  <macro name="author">
+    <names variable="author">
+      <name name-as-sort-order="first" sort-separator=", " initialize-with="." delimiter=", " delimiter-precedes-last="always"/>
+      <et-al term="et-al"/>
+    </names>
+  </macro>
+
+  <macro name="issued">
+    <date variable="issued">
+      <date-part name="year"/>
+    </date>
+  </macro>
+
+  <citation>
+    <layout prefix="(" suffix=")" delimiter="; ">
+      <group delimiter=", ">
+        <text macro="author"/>
+        <text macro="issued"/>
+      </group>
+    </layout>
+  </citation>
+
+  <bibliography hanging-indent="true" entry-spacing="0" line-spacing="1">
+    <sort>
+      <key macro="author"/>
+      <key macro="issued"/>
+    </sort>
+    <layout>
+      <text macro="author" suffix=". "/>
+      <text macro="issued" suffix=". "/>
+      <text variable="title" suffix=". "/>
+      <text variable="container-title"/>
+    </layout>
+  </bibliography>
+</style>

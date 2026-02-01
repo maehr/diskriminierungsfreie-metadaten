@@ -1,0 +1,42 @@
+title: "Working Title"
+
+rights: "Copyright (c) YYYY TODO: Rights Holder. All rights reserved."
+
+author:
+  - name: "TODO: First Author"
+    orcid: "0000-0000-0000-0000"
+    email: "TODO: corresponding.author@example.com"
+    affiliations:
+      - id: affil-1
+    roles:
+      - Conceptualization
+      - Methodology
+      - Writing - Original Draft
+  - name: "TODO: Second Author"
+    orcid: "0000-0000-0000-0000"
+    affiliations:
+      - id: affil-1
+      - id: affil-2
+    roles:
+      - Investigation
+      - Writing - Review & Editing
+
+affiliations:
+  - id: affil-1
+    name: "TODO University"
+    department: "TODO Department"
+    city: "TODO City"
+    country: "TODO Country"
+  - id: affil-2
+    name: "TODO Institution"
+    department: "TODO Department"
+    city: "TODO City"
+    country: "TODO Country"
+
+# Declarations (best-practice placeholders; replace or delete as required)
+author_contributions: "TODO: CRediT author statement (can be auto-derived from roles above if your venue supports it)."
+funding: "TODO: Funding statement."
+competing_interests: "TODO: Competing interests statement."
+data_availability: "TODO: Data/code availability statement."
+ethics: "TODO: Ethics statement (if applicable)."
+acknowledgements: "TODO: Acknowledgements."

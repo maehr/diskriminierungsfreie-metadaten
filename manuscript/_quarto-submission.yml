@@ -1,0 +1,13 @@
+project:
+  output-dir: _outputs/submission
+
+format:
+  docx:
+    reference-doc: templates/journal-reference-anon.docx
+
+# Avoid emitting HTML citation meta tags (which include authors).
+google-scholar: false
+
+filters:
+  - quarto
+  - anonymize-submission

@@ -1,0 +1,10 @@
+# Profile for word count runs.
+#
+# Uses the quarto-wordcount extension (vendored in `manuscript/_extensions/`).
+
+# Keep wordcount renders separate from normal outputs.
+project:
+  output-dir: _outputs/wordcount
+
+format:
+  wordcount-html: default

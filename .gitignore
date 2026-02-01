@@ -1,0 +1,24 @@
+# Outputs
+outputs/
+manuscript/_outputs/
+_manuscript/
+
+# Dependencies
+node_modules/
+.venv/
+.ruff_cache/
+__pycache__/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Quarto
+/.quarto/
+manuscript/.quarto/

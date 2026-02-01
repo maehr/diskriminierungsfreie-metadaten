@@ -1,0 +1,25 @@
+## Declarations {#sec-declarations}
+
+### Author contributions (CRediT)
+
+TODO: Provide a CRediT-style author contributions statement (or remove this block if your venue does not require it).
+
+### Funding
+
+TODO: Funding statement.
+
+### Competing interests
+
+TODO: Competing interests statement.
+
+### Data and code availability
+
+TODO: Data/code availability statement.
+
+### Ethics
+
+TODO: Ethics statement (if applicable).
+
+### Acknowledgements
+
+TODO: Acknowledgements (remove for anonymous submission).

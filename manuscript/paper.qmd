@@ -1,0 +1,14 @@
+---
+title: "Working Title"
+---
+
+{{< include sections/01-introduction.qmd >}}
+{{< include sections/02-related-work.qmd >}}
+{{< include sections/03-methods-materials.qmd >}}
+{{< include sections/04-analysis.qmd >}}
+{{< include sections/05-discussion.qmd >}}
+{{< include sections/06-conclusion.qmd >}}
+
+{{< include sections/07-declarations.qmd >}}
+
+{{< include appendix/appendix-a.qmd >}}

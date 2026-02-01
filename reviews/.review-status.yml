@@ -1,0 +1,29 @@
+spec-review:
+  status: pending
+  agent: Planner
+  last_updated: null
+  issues: []
+
+structure-review:
+  status: pending
+  agent: Structure Editor
+  last_updated: null
+  issues: []
+
+argument-review:
+  status: pending
+  agent: Epistemic Auditor
+  last_updated: null
+  issues: []
+
+citation-audit:
+  status: pending
+  agent: Epistemic Auditor
+  last_updated: null
+  issues: []
+
+style-pass:
+  status: pending
+  agent: Style Editor
+  last_updated: null
+  issues: []

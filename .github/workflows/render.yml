@@ -1,0 +1,29 @@
+name: Render Manuscript
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "manuscript/**"
+      - "specs/**"
+  workflow_dispatch:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render manuscript
+        run: |
+          cd manuscript
+          quarto render
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: manuscript-outputs
+          path: outputs/
