@@ -36,14 +36,37 @@ Der Theorieteil geht derzeit zu wenig auf den wissenschaftlichen Diskurs und akt
 
 Folgende Einträge aus Zotero sind relevant und müssen in `manuscript/references.yaml` aufgenommen werden:
 
+**Debatte 1 (Bias vs. Diskriminierung):**
+
 - [ ] `buolamwini_gender_2018` - Gender Shades: Intersectional Accuracy Disparities
-- [ ] `caswell_dusting_2019` - Dusting for Fingerprints: Feminist Standpoint Appraisal
-- [ ] `sparber_whats_2016` - (Queer)feministische Kritik an Sexismen und Rassismen im Schlagwortkatalog
+- [ ] `noble_algorithms_2018` - Algorithms of Oppression
+- [ ] `drage_does_2022` - Does AI Debias Recruitment?
+- [ ] `kasirzadeh_counterfactuals` - The Use and Misuse of Counterfactuals
+- [ ] `tsamados_ethics` - The ethics of algorithms
+- [ ] `caliskan_semantics` - Semantics derived automatically from language corpora
+- [ ] `gebru_datasheets` - Datasheets for Datasets
+- [ ] `mitchell_stable_bias` - Stable Bias
+
+**Debatte 2 (Intersektionalität):**
+
+- [ ] `noble_future_2016` - A Future for Intersectional Black Feminist Technology Studies
+- [ ] `noble_intersectional_internet` - The Intersectional Internet
+- [ ] `wernimont_bodies_2018` - Bodies of Information
+- [ ] `bailey_misogynoir` - Misogynoir Transformed
+
+**Debatte 3 (Historische Begriffe):**
+
+- [ ] `caswell_survivor` - Toward a survivor-centered approach
+- [ ] `caswell_dusting_2019` - Dusting for Fingerprints
+- [ ] `caswell_ghaddar_decolonial` - "To go beyond": decolonial archival praxis
+- [ ] `sparber_whats_2016` - (Queer)feministische Kritik im Schlagwortkatalog
 - [ ] `gruber_knuepfen_2020` - Vom Knüpfen feministischer Begriffsnetze
 - [ ] `farnel_unsettling_2018` - Unsettling our practices: Decolonizing description
-- [ ] `drage_does_2022` - Does AI Debias Recruitment?
-- [ ] `petz_evaluating_2023` - Evaluating bias within an epistemological framework
-- [ ] DE-BIAS Projekt-Dokumentation (Europeana)
+- [ ] `stoler_archival_grain` - Along the Archival Grain
+- [ ] `risam_decolonizing` - Decolonizing The Digital Humanities
+- [ ] `brown_transmediation` - Transmediation as Radical Pedagogy
+- [ ] `rawson_auditing` - Auditing the Digital Transgender Archive
+- [ ] `flinn_community` - Community Histories, Community Archives
 
 ### 0.2 Debatte 1: Bias vs. Diskriminierung
 
@@ -68,14 +91,16 @@ Folgende Einträge aus Zotero sind relevant und müssen in `manuscript/reference
   - Demographic Parity
   - Equalized Odds
   - Individual Fairness
-    [Quellenangaben: @mehrabi2021]
+- Counterfactual Fairness (Kasirzadeh & Smart)
+  [Quellenangaben: @mehrabi2021, @kasirzadeh_counterfactuals, @tsamados_ethics]
 
 #### Position B: Bias als Symptom struktureller Diskriminierung
 
 - Critical Data Studies (D'Ignazio & Klein)
 - Bias ist nicht "der Fehler", sondern Symptom
 - Technische Fixes = "Harm Reduction", nicht Lösung
-  [Quellenangaben: @dignazio2020, @buolamwini_gender_2018]
+- Algorithmen verstärken bestehende Ungleichheiten (Noble)
+  [Quellenangaben: @dignazio2020, @buolamwini_gender_2018, @noble_algorithms_2018, @drage_does_2022]
 
 #### Positionierung des Handbuchs
 
@@ -111,7 +136,10 @@ aber nicht hinreichend für eine diskriminierungssensible Praxis."
 
 - Crenshaw 1989: Schwarze Frauen fielen durch das Raster
 - Collins' "Matrix of Domination": Rasse, Klasse, Geschlecht als verwobene Systeme
-  [Quellenangaben: @crenshaw1989, @collins2000]
+- Noble: Intersektionale Ansätze in der Technologiekritik
+  [Quellenangaben: @crenshaw1989, @collins2000, @noble_future_2016, @wernimont_bodies_2018]
+
+**Hinweis:** Crenshaw 1989 und Collins 2000 müssen noch in Zotero ergänzt werden!
 
 #### Relevanz für Metadatenpraxis
 
@@ -178,7 +206,9 @@ Gruppen an der Kreuzung mehrerer Merkmale besonders betroffen sind."
 - Critical Archival Studies: Archive sind nie neutral
 - Argument: Weitergabe von Verletzungen ohne Korrektur ist aktive Entscheidung
 - Metadaten sind nicht die Quelle, sondern Zugangsschicht
-  [Quellenangaben: @caswell_dusting_2019, @A4BLiP2020, @farnel_unsettling_2018]
+- Feminist Standpoint Appraisal (Caswell)
+- Dekoloniale Archivpraxis (Caswell & Ghaddar, Risam)
+  [Quellenangaben: @caswell_dusting_2019, @caswell_ghaddar_decolonial, @A4BLiP2020, @farnel_unsettling_2018, @stoler_archival_grain, @risam_decolonizing]
 
 #### Kompromissmodelle in der Praxis
 
@@ -188,9 +218,13 @@ Gruppen an der Kreuzung mehrerer Merkmale besonders betroffen sind."
    - Beispiel: DE-BIAS Projekt (Europeana)
 3. **Community-Involvement**: Betroffene Communities entscheiden
    - Beispiel: Traditional Knowledge Labels, Homosaurus
+   - Beispiel: Digital Transgender Archive (Rawson et al.)
 4. **Versionierte Beschreibung**: Alle Änderungen nachvollziehbar dokumentieren
+5. **Community Archives**: Selbstbestimmte Dokumentation (Flinn)
 
-[Quellenangaben: @sparber_whats_2016, @gruber_knuepfen_2020, @drabinski2013]
+[Quellenangaben: @sparber_whats_2016, @gruber_knuepfen_2020, @rottmann2023, @rawson_auditing, @brown_transmediation, @flinn_community]
+
+**Hinweis:** Drabinski 2013 und Olson 2002 für vertiefte LCSH-Kritik empfohlen, aber nicht zwingend.
 
 #### Positionierung des Handbuchs
 
@@ -216,17 +250,19 @@ Vorschlag: "Dieses Handbuch empfiehlt ein kontextsensitives Vorgehen:
 
 ### 0.5 Zeitschätzung Phase 0
 
-| Nr. | Aufgabe                                              | Geschätzte Zeit |
-| --- | ---------------------------------------------------- | --------------- |
-| 1   | Fehlende Literatur in Zotero ergänzen (4-8 Einträge) | 30 min          |
-| 2   | Zotero-Einträge in references.yaml exportieren       | 15 min          |
-| 3   | Debatte 1 (Bias vs. Diskriminierung) schreiben       | 45 min          |
-| 4   | Debatte 2 (Intersektionalität) schreiben             | 30 min          |
-| 5   | Debatte 3 (Historische Begriffe) schreiben           | 45 min          |
-| 6   | Querverweise und Pandoc-Crossref                     | 20 min          |
-| 7   | npm run validate                                     | 5 min           |
+| Nr. | Aufgabe                                                                                        | Geschätzte Zeit |
+| --- | ---------------------------------------------------------------------------------------------- | --------------- |
+| 1   | Fehlende Literatur in Zotero ergänzen (2-4 Einträge: Crenshaw, Collins, ggf. Olson, Drabinski) | 20 min          |
+| 2   | Zotero-Einträge in references.yaml exportieren (~23 Einträge)                                  | 30 min          |
+| 3   | Debatte 1 (Bias vs. Diskriminierung) schreiben                                                 | 45 min          |
+| 4   | Debatte 2 (Intersektionalität) schreiben                                                       | 30 min          |
+| 5   | Debatte 3 (Historische Begriffe) schreiben                                                     | 45 min          |
+| 6   | Querverweise und Pandoc-Crossref                                                               | 20 min          |
+| 7   | npm run validate                                                                               | 5 min           |
 
-**Gesamtgeschätzte Zeit Phase 0: ca. 3 Stunden**
+**Gesamtgeschätzte Zeit Phase 0: ca. 3.5 Stunden**
+
+**Hinweis:** Die Zotero-Bibliothek enthält bereits reichhaltige Literatur für alle drei Debatten. Nur die Gründungstexte für Intersektionalität (Crenshaw, Collins) fehlen zwingend.
 
 ---
 
@@ -402,28 +438,66 @@ Finale Akzeptanzkriterien:
 
 ---
 
-## Anhang: Relevante Literatur in Zotero (Bestandsaufnahme)
+## Anhang: Zotero Semantic Search Ergebnisse (2026-02-02)
 
-### Für Debatte 1 (Bias vs. Diskriminierung) - vorhanden:
+### Für Debatte 1 (Bias vs. Diskriminierung) - in Zotero vorhanden:
 
-- Mehrabi et al. 2021 - "A Survey on Bias and Fairness in Machine Learning"
-- D'Ignazio & Klein 2020 - "Data Feminism"
-- Buolamwini & Gebru - "Gender Shades"
-- Drage & Mackereth - "Does AI Debias Recruitment?"
-- Petz & Oberbichler - "Evaluating bias within an epistemological framework"
-- DE-BIAS Projekt (Europeana)
-- Mitchell et al. - "Stable Bias"
+| Autor                   | Titel                                                 | Citation Key                     |
+| ----------------------- | ----------------------------------------------------- | -------------------------------- |
+| Mehrabi et al. 2021     | A Survey on Bias and Fairness in Machine Learning     | `mehrabi2021` (bereits in refs)  |
+| D'Ignazio & Klein 2020  | Data Feminism                                         | `dignazio2020` (bereits in refs) |
+| Buolamwini & Gebru 2018 | Gender Shades: Intersectional Accuracy Disparities    | `buolamwini_gender_2018`         |
+| Noble 2018              | Algorithms of Oppression                              | `noble_algorithms_2018`          |
+| Drage & Mackereth 2022  | Does AI Debias Recruitment?                           | `drage_does_2022`                |
+| Kasirzadeh & Smart      | The Use and Misuse of Counterfactuals in Ethical ML   | `kasirzadeh_counterfactuals`     |
+| Tsamados et al.         | The ethics of algorithms: key problems and solutions  | `tsamados_ethics`                |
+| Caliskan et al.         | Semantics derived automatically from language corpora | `caliskan_semantics`             |
+| Gebru et al.            | Datasheets for Datasets                               | `gebru_datasheets`               |
+| Mitchell et al.         | Stable Bias: Analyzing Societal Representations       | `mitchell_stable_bias`           |
 
-### Für Debatte 2 (Intersektionalität) - vorhanden:
+### Für Debatte 2 (Intersektionalität) - in Zotero vorhanden:
 
-- Buolamwini & Gebru - "Gender Shades: Intersectional Accuracy Disparities"
-- Young 1990 - "Justice and the Politics of Difference"
+| Autor                   | Titel                                                         | Citation Key                           |
+| ----------------------- | ------------------------------------------------------------- | -------------------------------------- |
+| Buolamwini & Gebru 2018 | Gender Shades: Intersectional Accuracy Disparities            | `buolamwini_gender_2018`               |
+| Noble 2016              | A Future for Intersectional Black Feminist Technology Studies | `noble_future_2016`                    |
+| Noble & Tynes           | The Intersectional Internet                                   | `noble_intersectional_internet`        |
+| Wernimont & Losh        | Bodies of Information: Intersectional Feminism and DH         | `wernimont_bodies_2018`                |
+| Bailey 2021             | Misogynoir Transformed: Black Women's Digital Resistance      | `bailey_misogynoir`                    |
+| Young 1990              | Justice and the Politics of Difference                        | `young_justice_1990` (bereits in refs) |
 
-### Für Debatte 3 (Historische Begriffe) - vorhanden:
+### Für Debatte 3 (Historische Begriffe) - in Zotero vorhanden:
 
-- Caswell - "Toward a survivor-centered approach"
-- Caswell - "Dusting for Fingerprints: Feminist Standpoint Appraisal"
-- Sparber - "(queer)feministische Kritik an Sexismen und Rassismen im Schlagwortkatalog"
-- Gruber - "Vom Knüpfen feministischer Begriffsnetze"
-- DE-BIAS - "Detecting and cur(at)ing harmful language"
-- Farnel et al. - "Unsettling our practices: Decolonizing description"
+| Autor                    | Titel                                                        | Citation Key                     |
+| ------------------------ | ------------------------------------------------------------ | -------------------------------- |
+| Caswell                  | Toward a survivor-centered approach                          | `caswell_survivor`               |
+| Caswell                  | Dusting for Fingerprints: Feminist Standpoint Appraisal      | `caswell_dusting_2019`           |
+| Caswell & Ghaddar        | "To go beyond": towards a decolonial archival praxis         | `caswell_ghaddar_decolonial`     |
+| Sparber                  | (queer)feministische Kritik an Sexismen im Schlagwortkatalog | `sparber_whats_2016`             |
+| Gruber                   | Vom Knüpfen feministischer Begriffsnetze                     | `gruber_knuepfen_2020`           |
+| Farnel et al.            | Unsettling our practices: Decolonizing description           | `farnel_unsettling_2018`         |
+| Archives for Black Lives | Anti-racist description resources                            | `A4BLiP2020` (bereits in refs)   |
+| Stoler                   | Along the Archival Grain                                     | `stoler_archival_grain`          |
+| Rottmann                 | Que/e/r zur Ordnung des Archivs?                             | `rottmann2023` (bereits in refs) |
+| Risam                    | Decolonizing The Digital Humanities                          | `risam_decolonizing`             |
+| Brown et al.             | Transmediation as Radical Pedagogy: Queer/Trans Archives     | `brown_transmediation`           |
+| Rawson et al.            | Auditing the Digital Transgender Archive                     | `rawson_auditing`                |
+| Flinn                    | Community Histories, Community Archives                      | `flinn_community`                |
+
+### NICHT in Zotero - muss ergänzt werden:
+
+| Priorität | Autor                  | Titel                                            | Fundstelle                            |
+| --------- | ---------------------- | ------------------------------------------------ | ------------------------------------- |
+| **HOCH**  | Crenshaw 1989          | Demarginalizing the Intersection of Race and Sex | U Chicago Legal Forum 1989(1), Art. 8 |
+| **HOCH**  | Collins 2000           | Black Feminist Thought                           | Routledge, ISBN 978-0-415-92484-2     |
+| MITTEL    | Olson 2002             | The Power to Name                                | Kluwer Academic                       |
+| MITTEL    | Drabinski 2013         | Queering the Catalog                             | Library Quarterly 83(2), 94-111       |
+| NIEDRIG   | Berman 1971            | Prejudices and Antipathies                       | Scarecrow Press                       |
+| NIEDRIG   | Cifor & Gilliland 2016 | Affect and the archive                           | Archival Science 16(1), 1-28          |
+
+### Workflow-Empfehlung
+
+1. **Zwingend vor Textproduktion:** Crenshaw 1989 und Collins 2000 in Zotero ergänzen
+2. **Empfohlen:** Olson 2002 und Drabinski 2013 ergänzen
+3. **Export:** Vorhandene Zotero-Einträge (siehe Tabellen oben) in `references.yaml` überführen
+4. **Schreiben:** Mit verfügbaren Quellen arbeiten, Platzhalter für fehlende setzen
