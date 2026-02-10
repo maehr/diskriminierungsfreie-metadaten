@@ -52,6 +52,8 @@ citation:
   doi: TBD
   url: https://maehr.github.io/diskriminierungsfreie-metadaten/
 number-sections: false
+# quarto render manuscript && chromium --headless --disable-gpu --print-to-pdf=manuscript/_manuscript/handbuch-diskriminierungssensible-metadatenpraxis.pdf  --scale=1.0 --no-pdf-header-footer --print-background --virtual-time-budget=10000 file:///$(pwd)/manuscript/_manuscript/index.html && npx @divriots/jampack ./manuscript/_manuscript/ && quarto publish quarto-pub manuscript --no-render
+# quarto render manuscript && npx @divriots/jampack ./manuscript/_manuscript/ && quarto publish quarto-pub manuscript --no-render
 ---
 
 ::: {.callout-caution title="Vorabversion"}

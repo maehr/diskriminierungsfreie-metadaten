@@ -1,12 +1,53 @@
 ---
 references:
+  - id: '2019'
+    accessed:
+      - year: 2025
+        month: 9
+        day: 9
+    citation-key: '2019'
+    DOI: 10.21428/16ac48ec.f54af6ae
+    edition: '1'
+    issued:
+      - year: 2019
+        month: 10
+        day: 29
+    publisher: PubPub
+    source: DOI.org (Crossref)
+    title: Open a GLAM Lab
+    type: book
+    URL: https://glamlabs.pubpub.org/collection/f54af6ae
+
+  - id: 2019a
+    abstract: >-
+      This chapter covers identifying collections and assessing their suitability
+      for Labs, how to describe them, make them accessible and reusable. It also
+      touches on strategies for dealing with messy data as well as some useful
+      basic concepts.
+    accessed:
+      - year: 2025
+        month: 9
+        day: 9
+    citation-key: 2019a
+    container-title: Open a Glam Lab
+    DOI: 10.21428/16ac48ec.f54af6ae
+    issued:
+      - year: 2019
+        month: 10
+        day: 30
+    language: en
+    source: glamlabs.pubpub.org
+    title: Rethinking Collections as Data
+    type: article-journal
+    URL: https://glamlabs.pubpub.org/pub/urhm68yr/release/1
+
   - id: '2025'
     citation-key: '2025'
     genre: Antidiskriminierungsgesetz ADG - Dossier
     issued:
       - year: 2025
-        month: 12
-        day: 3
+        month: 3
+        day: 12
     publisher: Humanrights.ch
     title: 'Ausgangslage: Inwieweit schützt das aktuelle Recht vor Diskriminierung?'
     type: report
@@ -254,7 +295,7 @@ references:
     event-place: Berlin
     issued:
       - year: 2008
-    page: 52-69
+    page: 52–69
     publisher-place: Berlin
     title: Quellen, Quellen, Quellen ...
     type: chapter
@@ -335,7 +376,7 @@ references:
         month: 3
         day: 16
     language: english
-    page: 2-41
+    page: 2–41
     publisher: The MIT Press
     title: Collect, Analyze, Imagine, Teach
     type: chapter
@@ -644,7 +685,7 @@ references:
         month: 12
         day: 2
     license: http://creativecommons.org/licenses/by/4.0
-    page: 134-140
+    page: 134–140
     publisher: University of Edinburgh
     source: Crossref
     title: The DCC Curation Lifecycle Model
@@ -736,7 +777,7 @@ references:
         day: 4
     language: de
     license: http://creativecommons.org/licenses/by/4.0
-    page: 55-70
+    page: 55–70
     publisher: De Gruyter Saur
     source: www.degruyterbrill.com
     title: >-
@@ -787,7 +828,7 @@ references:
       - year: 2023
         month: 2
         day: 7
-    page: 13-25
+    page: 13–25
     source: ResearchGate
     title: >-
       Promises of mass digitisation and the colonial realities of natural history
@@ -1126,7 +1167,7 @@ references:
       - year: 2023
         month: 11
     language: de
-    page: 21-24
+    page: 21–24
     title: >-
       Que/e/r zur Ordnung des Archivs? Queere Geschichte in staatlichen Archiven
       erforschen
@@ -1745,3 +1786,13 @@ references:
     title: Metadata Resources | Steven Jack Miller
     type: post-weblog
     URL: https://sites.uwm.edu/mll/metadata-resources/
+
+  - id: zotero-item-22995
+    accessed:
+      - year: 2025
+        month: 9
+        day: 9
+    citation-key: zotero-item-22995
+    title: '| OpenGLAM Principles'
+    type: post-weblog
+    URL: https://openglam.org/how/
