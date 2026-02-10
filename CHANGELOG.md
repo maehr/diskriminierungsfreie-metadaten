@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://github.com/maehr/diskriminierungsfreie-metadaten/compare/v1.0.1...HEAD)
 
+## [v2.0.0-alpha.0] - TBD
+
+### Repository Setup
+
+- Created v2.0.0alpha branch for handbook v2.0.0alpha development
+- Updated versioning strategy to support semantic versioning with alpha releases
+- Enhanced contribution guidelines with v2.0.0alpha development workflow
+- Configured git-cliff for pre-release version support
+- Established foundation for handbook restructuring and content development
+
 ## [v1.0.1](https://github.com/maehr/diskriminierungsfreie-metadaten/releases/tag/v1.0.1) - 2025-01-23
 
 ### Features

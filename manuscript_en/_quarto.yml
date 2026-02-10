@@ -3,11 +3,11 @@ project:
 
 manuscript:
   code-links:
-    - text: Diskussion Living Document
+    - text: Discussion
       href: https://github.com/maehr/diskriminierungsfreie-metadaten/discussions
-    - text: Quellcode
+    - text: Source Code
       href: https://github.com/maehr/diskriminierungsfreie-metadaten
-  manuscript-url: https://moritz-maehr.quarto.pub/diskriminierungssensible-metadatenpraxis # https://maehr.github.io/diskriminierungsfreie-metadaten/
+  manuscript-url: https://moritz-maehr.quarto.pub/discrimination-sensitive-metadata-practice
 
 glossary:
   path: glossary.yaml
