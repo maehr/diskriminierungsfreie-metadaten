@@ -1,7 +1,7 @@
-::: {.callout-caution title="Vorabversion"}
+::: {.callout-caution title="Living Handbook (Vorabversion)"}
 Dies ist eine Vorabversion des Handbuchs, die kontinuierlich weiterentwickelt wird. Feedback, Korrekturen und Anregungen sind herzlich willkommen via E-Mail oder [GitHub](https://github.com/maehr/diskriminierungsfreie-metadaten/discussions/34). Die aktuelle veröffentlichte Version ist verfügbar unter [https://maehr.github.io/diskriminierungsfreie-metadaten/](https://maehr.github.io/diskriminierungsfreie-metadaten/).
 :::
 
-::: {.callout-warning}
+::: {.callout-warning title="Content-Note"}
 Dieses Dokument enthält Abbildungen von historischen Quellen, die diskriminierende Sprache, Bilder oder Darstellungen enthalten. Sie sind Ausdruck von Vorurteilen, Stereotypen oder Gewalt gegen bestimmte Gruppen in der Vergangenheit.
 :::

@@ -6,7 +6,7 @@ Handbook-level project spec (not a journal paper).
 
 - genre: handbook / practice guide
 - title: Diskriminierungssensible Metadatenpraxis
-- subtitle: Ein Handbuch zur ethischen Auszeichnung historischer Quellen und Forschungsdaten
+- subtitle: Ein Handbuch zur ethischen Beschreibung historischer Quellen und Forschungsdaten
 - language: de-CH
 
 ## Scope
@@ -25,5 +25,5 @@ Handbook-level project spec (not a journal paper).
 
 ## Acceptance Criteria
 
-- [ ] `npm run validate` passes locally and in CI
-- [ ] All citations used in `manuscript/sections/*.qmd` exist in `manuscript/references.yaml`
+- Authoritative release gate lives in `specs/submission.md` under `## Authoritative Release Gate`.
+- Additional paper-level invariant: all citations used in `manuscript/sections/*.qmd` exist in `manuscript/references.yaml`.

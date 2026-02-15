@@ -16,13 +16,15 @@ source: `manuscript/sections/04-theorie-01-diskriminierung-in-und-durch-daten.qm
 - Strukturelle Diskriminierung
 - Institutionelle Diskriminierung
 - Statistische Diskriminierung
-- Spezifische Diskriminierungen in historischen Quellen und Forschungsdaten
+- Intersektionalitaet: Verflechtung von Diskriminierungsformen
+- Historische Begriffe: Bewahren oder Korrigieren?
 
 ## Required Elements
 
 - Keep the Wikidata Crimea example and the argument that classification decisions are normative.
 - Keep the "Beispiele" format for each discrimination type (mechanism/effect/indicators/countermeasures).
 - Keep explicit practice implications (documentation, provenance, multi-perspectivity, uncertainty marking).
+- Integrate cross-cutting discrimination patterns in historical sources/research data into the relevant discrimination subsections (do not keep a standalone block for this).
 
 ## Required Figures/Links
 
@@ -36,8 +38,7 @@ source: `manuscript/sections/04-theorie-01-diskriminierung-in-und-durch-daten.qm
 
 ## Known TODOs to Resolve
 
-- Replace QUERVERWEIS placeholders with real internal cross-references.
-- Resolve/remove the `<!-- FIXME QUERVERWEIS -->` marker.
+- None currently open in this section spec (last checked: 2026-02-10).
 
 ## Citation Expectations
 

@@ -2,13 +2,13 @@
 
 ### 1\. Transparenz als Infrastrukturprinzip
 
-Jeder Arbeitsablauf ({{< glossary Pipeline >}}: Schritte der Datenerhebung, \-verarbeitung und \-analyse) erhält einen öffentlich zugänglichen Entscheidungs- und Änderungslog. Dokumentiert werden: Erhebungsdesign, Auswahlrationale, Fehlerraten, Mapping-Regeln sowie abgelehnte Alternativen (versioniert).
+Jeder Arbeitsablauf einer {{< glossary Pipeline >}} erhält einen öffentlich zugänglichen Entscheidungs- und Änderungslog. Dokumentiert werden: Erhebungsdesign, Auswahlrationale, Fehlerraten, Mapping-Regeln sowie abgelehnte Alternativen (versioniert).
 
-Für Datensätze und Modelle gelten strukturierte Begleitdokumente als Standard: _Datasheets_ und _Model Cards_ (Steckbriefe für Daten/Modelle). Sie enthalten gruppenspezifische Qualitätsmetriken, bekannte Lücken und Nutzungseinschränkungen. Diese Dokumente sind zitierfähig und mit persistenten Identifikatoren in Repositorien verankert.
+Für Datensätze und Modelle gelten strukturierte Begleitdokumente als Standard: {{< glossary "Data Sheets" display="Datasheets" >}} und {{< glossary "Model Cards" >}} (Steckbriefe für Daten/Modelle). Sie enthalten gruppenspezifische Qualitätsmetriken, bekannte Lücken und Nutzungseinschränkungen. Diese Dokumente sind zitierfähig und mit persistenten Identifikatoren in Repositorien verankert.
 
 ### 2\. Varianten- und Mehrsprachigkeitsfähigkeit im Metadatenmodell
 
-Konzepte und Namen werden als mehrsprachige, relationale Entitäten modelliert (z. B. {{< glossary SKOS >}}):
+Konzepte und Namen werden als mehrsprachige, relationale Entitäten modelliert (zum Beispiel {{< glossary SKOS >}}):
 
 - `prefLabel` \= bevorzugte Bezeichnung
 - `altLabel` \= alternative Bezeichnung
@@ -18,7 +18,7 @@ Konzepte und Namen werden als mehrsprachige, relationale Entitäten modelliert (
 
 Identitäten und Rollen erhalten kontrolliert-offene Felder statt binärer Pflichtangaben. Selbstbezeichnungen und Schreibvarianten gelten als gleichwertige, abfragbare Identifikatoren. Unsicherheiten werden in eigenen Feldern mit standardisierten, maschinenlesbaren Qualifikatoren vermerkt.
 
-### 3\. Partizipative Kuratierung und Governance
+### 3\. Partizipative Kuratierung und Governance {#sec-governance}
 
 Kuratierung erfolgt gemeinsam mit betroffenen Communities. Dies umfasst:
 
@@ -33,7 +33,7 @@ Für sensible Bestände werden abgestufte Zugangsmodelle (differenzierte Rechtev
 Die Auswahl folgt stratifizierten Plänen mit _Equity-Buckets_ (Fairness-Schichten), um unterrepräsentierte Gruppen systematisch einzubeziehen.
 
 - **Digitalisierung und Erkennung:** gezielte Feinjustierung für schwach performende Segmente; Fehlerbilanzen werden nach Schrift, Sprache, Medium und Gruppe veröffentlicht.
-- **{{< glossary Retrieval >}}-Systeme:** Einsatz von {{< glossary Query-Expansion >}} (Anfrageerweiterung), Cross-Lingual IR (mehrsprachiges Informationsretrieval) und Re-Ranking (Neuanordnung der Treffer), um Recall-Differenzen zwischen Gruppen zu reduzieren. Ranking-Entscheide werden erklärt.
+- **{{< glossary "Retrieval-System" display="Retrieval-Systeme" >}}:** Einsatz von {{< glossary Query-Expansion >}} (Anfrageerweiterung), Cross-Lingual IR (mehrsprachiges Informationsretrieval) und Re-Ranking (Neuanordnung der Treffer), um {{< glossary Recall >}}-Differenzen zwischen Gruppen zu reduzieren. {{< glossary Ranking >}}-Entscheide werden erklärt.
 
 ### 5\. Analytische Robustheit als Standardpraxis
 
@@ -44,15 +44,15 @@ Studien verpflichten sich zu:
 - Tests alternativer Operationalisierungen
 - Gewichtung bekannter Erhebungs- und Selektionsfehler
 
-Fehlende Daten werden transparent behandelt, z. B. durch Mehrfachimputation mit Diagnose der MAR/MNAR-Annahmen (zufälliges/nicht-zufälliges Fehlen). Für kausale Aussagen sind kontrafaktische Szenarien, Instrumentvariablen oder natürliche Experimente zu prüfen. Alle Limitierungen sind offen zu deklarieren.
+Fehlende Daten werden transparent behandelt, zum Beispiel durch Mehrfachimputation mit Diagnose der {{< glossary "MAR/MNAR" >}}-Annahmen (zufälliges/nicht-zufälliges Fehlen). Für kausale Aussagen sind kontrafaktische Szenarien, Instrumentvariablen oder natürliche Experimente zu prüfen. Alle Limitierungen sind offen zu deklarieren.
 
 ### 6\. Gerechtigkeitsmetriken und Monitoring
 
 Erfolg wird anhand equity-orientierter Kennzahlen gemessen:
 
-- gruppenspezifischer Recall/Precision (Trefferquote/Vollständigkeit und Genauigkeit)
+- gruppenspezifischer {{< glossary Recall >}}/{{< glossary Precision >}} (Trefferquote/Vollständigkeit und Genauigkeit)
 - Fehlerratenparität (Vergleichbarkeit der Fehlerquoten)
-- Exposure-Anteile im Ranking (Sichtbarkeit in Trefferlisten)
+- Exposure-Anteile im {{< glossary Ranking >}} (Sichtbarkeit in Trefferlisten)
 - Bearbeitungszeiten für Korrekturen
 - Community-Zufriedenheit
 
@@ -66,7 +66,7 @@ Diese Metriken fliessen in kontinuierliche Audits ein. Abweichungen lösen defin
 - daten- und modellseitig versioniert
 - in offenen, langfristigen Formaten und Schnittstellen zugänglich
 
-Abhängigkeiten werden minimiert. Rechenaufwände werden bilanziert und, wo möglich, durch _Minimal Computing_ (ressourcenschonende Verfahren) ersetzt. Langzeitarchivierung und Wiederverwendbarkeit sind von Beginn an Designkriterien.
+Abhängigkeiten werden minimiert. Rechenaufwände werden bilanziert und, wo möglich, durch {{< glossary "Minimal Computing" >}} (ressourcenschonende Verfahren) ersetzt. Langzeitarchivierung und Wiederverwendbarkeit sind von Beginn an Designkriterien.
 
 ### Zusammenfassung
 

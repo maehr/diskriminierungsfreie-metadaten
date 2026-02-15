@@ -2,7 +2,7 @@
 
 Wir danken allen Personen und Institutionen, die zur Erarbeitung der ersten Auflage 2024 und zur laufenden Überarbeitung dieses Handbuchs beigetragen haben. Ihre Hinweise, Kritik und Praxisperspektiven haben Terminologie, Beispiele, {{< glossary Ontologie >}}-Mapping, Versionierung und Leitlinien zu {{< glossary FAIR >}}- und {{< glossary CARE >}}-Prinzipien geschärft.
 
-Besonderer Dank gilt Levyn Bürki für die substanziellen Beiträge zur Neustrukturierung und Weiterentwicklung des Handbuchs. Seine Mitarbeit von September 2024 bis Juni 2025 umfasste zentrale konzeptionelle Entscheidungen und die massgebliche Ausarbeitung wesentlicher Inhalte.
+Besonderer Dank gilt Levyn Bürki für die substanziellen Beiträge zur Neustrukturierung und Weiterentwicklung des Handbuchs. Die Mitarbeit von September 2024 bis Juni 2025 umfasste zentrale konzeptionelle Entscheidungen und die massgebliche Ausarbeitung wesentlicher Inhalte.
 
 Für die aufmerksame Lektüre und konstruktiven Rückmeldungen zur ersten Auflage 2024 danken die Autor\*innen Eric Decker, Céline Hug, Lucie Kolb, Jonas Lendenmann, Noah Regenass und Stephanie Willi. Für inhaltliche Hinweise und Korrekturen nach der Veröffentlichung danken wir Esther Ernst-Mombelli ({{< glossary GND >}}-Redaktion, Universitätsbibliothek Basel), Marc Bayard ({{< glossary GND >}}-Redaktion, Universitätsbibliothek Bern), Philipp Messner (Plakatsammlung SfG Basel), Elias Zimmermann (Universität Zürich/Genf), Karin Lackner (Universitätsbibliothek Graz) sowie Roberta Flora Spano (ETH-Bibliothek Zürich, Sammlungen und Archive).
 

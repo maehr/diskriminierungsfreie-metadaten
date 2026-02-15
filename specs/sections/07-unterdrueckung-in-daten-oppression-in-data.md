@@ -2,17 +2,18 @@
 
 source: `manuscript/sections/04-theorie-03-unterdrueckung-in-daten-oppression-in-data.qmd`
 
+status: integrated (no longer included as standalone in `manuscript/index.qmd`)
+
 ## Purpose
 
 - Introduce oppression as structural "power-over" and connect it to data/metadata practice.
 - Provide an actionable three-part lens: ontological, epistemic, infrastructural violence.
+- This content is now integrated into `manuscript/sections/04-theorie-02-verzerrungen-und-fehler-bias.qmd` (footnote/closing note) and should not be reintroduced as a standalone navigation entry.
 
 ## Required Structure
 
-- `## Unterdrueckung in Daten (Oppression in Data)`
-- `### Ontologische Gewalt`
-- `### Epistemische Gewalt`
-- `### Infrastrukturelle Gewalt`
+- Integrated format only (no standalone `##` section in the rendered manuscript).
+- Preserve the three-part lens (ontological/epistemic/infrastructural violence) and the cumulative "cage" framing.
 
 ## Required Elements
 

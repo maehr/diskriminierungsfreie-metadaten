@@ -20,7 +20,7 @@ source: `manuscript/sections/05-praxis-05-5-veroeffentlichung-und-zugang.qmd`
 - Keep the requirement for canonical, parameterless URLs and versioned editions.
 - Keep the explicit handling of sensitive/discriminatory content (naming + contextualizing; trigger/content notes; consent reflection; reversible interventions).
 - Keep the static-site target architecture guidance and the strict build/validation framing.
-- Keep the recommended format list (PDF/A, XML/HTML/MD/TXT, TIFF/DNG/SVG, CSV) and UTF-8 recommendation.
+- Keep the recommended format list (PDF/A, XML/HTML/MD/TXT, TIFF/PNG/SVG, CSV) and UTF-8 recommendation.
 - Keep the requirements around README/reference docs, versioned API/dumps, and opt-in for sensitive content.
 - Keep all four checklists as callout blocks.
 

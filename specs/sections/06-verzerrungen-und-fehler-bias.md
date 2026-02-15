@@ -6,11 +6,13 @@ source: `manuscript/sections/04-theorie-02-verzerrungen-und-fehler-bias.qmd`
 
 - Define bias as systematic deviation and show how bias appears in historical data work.
 - Provide a practical taxonomy across data, algorithms, and user interaction.
-- Prepare the conceptual hand-off to "oppression" as a structural framing.
+- Clarify the relationship between bias and discrimination for metadata practice.
+- Provide a short integrated oppression lens (not a standalone section).
 
 ## Required Structure
 
 - `## Verzerrungen und Fehler (Bias)`
+- `### Verhaeltnis von Bias und Diskriminierung`
 - `### Verzerrung und Fehler in Daten (Data Bias)` with the listed bias types (measurement, omitted variable, representation, aggregation, sampling, longitudinal, historical, population).
 - `### Verzerrungen in und durch Algorithmen (Bias in Algorithms)` with at least algorithmic bias and evaluation bias.
 - `### Verzerrungen durch Nutzerinteraktion (User Interaction Bias)` with the listed interaction biases (presentation, ranking, popularity, emergent, self-selection, social, behavioral, temporal, content production).
@@ -18,7 +20,7 @@ source: `manuscript/sections/04-theorie-02-verzerrungen-und-fehler-bias.qmd`
 ## Required Elements
 
 - Preserve the short definition per bias type and at least one concrete example per type.
-- Keep the explicit bridge sentence that positions oppression as going beyond bias critique.
+- Keep the explicit bridge sentence that positions oppression as going beyond bias critique; integrate the three-part lens as a footnote/closing note (ontological, epistemic, infrastructural violence).
 
 ## Citation Expectations
 

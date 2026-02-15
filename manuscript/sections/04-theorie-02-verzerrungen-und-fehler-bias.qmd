@@ -1,6 +1,67 @@
 ## Verzerrungen und Fehler (Bias) {#sec-verzerrungen-und-fehler-bias}
 
-Unter einem **Bias** wird eine Verzerrung – eine systematische Abweichung einer objektiven Darstellung – verstanden. Technisch kann ein Bias in Forschungsdaten etwa durch eine unausgewogene Datenauswahl, eine stereotypisierende Begriffsauswahl oder durch algorithmische Vorannahmen entstehen. Inhaltlich äussert sich ein Bias in verschiedenen Formen wie in der Auswahl dessen, was überhaupt als erzählenswert gilt, in der Art und Weise der Beschreibung historischer Ereignisse oder in den moralischen oder interpretativen Bewertungen, die Historiker\*innen vornehmen. Diese Voreingenommenheit ist nicht nur ein Fehler, sondern ergibt sich aus der grundlegenden Tatsache, dass jede historische Darstellung selektiv und perspektivisch ist. In der Metadatenerstellung ist oftmals ein Bias in den Beschreibungstexten zu finden. So werden beispielsweise Frauen in historischen Quellen oftmals auf ihr äusseres Erscheinungsbild reduziert, während bei Männern häufig zuerst ihre beruflichen Tätigkeiten erwähnt werden. Diese Reduktion der Frau auf ihr äusseres Erscheinungsbild steht in einer langen Tradition der Objektivierung weiblicher Körper. Wenn im Kontext der Überarbeitung der Metadaten nicht nur der Bias kritisch reflektiert wird, sondern der Fehler als Reproduktion von Geschlechterstereotypen dargestellt wird, werden diskriminierende Strukturen sichtbar und können so schrittweise abgebaut werden. Hier setzt das Konzept der **Oppression** (Unterdrückung) an. Es geht über die Bias-Kritik hinaus, indem es diesen als Ausdruck struktureller Machtverhältnisse deutet und in grössere gesellschaftliche Zusammenhänge einordnet.
+Unter einem **Bias** wird eine Verzerrung – eine systematische Abweichung einer objektiven Darstellung – verstanden. Technisch kann ein Bias in Forschungsdaten etwa durch eine unausgewogene Datenauswahl, eine stereotypisierende Begriffsauswahl oder durch algorithmische Vorannahmen entstehen. Inhaltlich äussert sich ein Bias in verschiedenen Formen wie in der Auswahl dessen, was überhaupt als erzählenswert gilt, in der Art und Weise der Beschreibung historischer Ereignisse oder in den moralischen oder interpretativen Bewertungen, die Historiker\*innen vornehmen. Diese Voreingenommenheit ist nicht nur ein Fehler, sondern ergibt sich aus der grundlegenden Tatsache, dass jede historische Darstellung selektiv und perspektivisch ist. In der Metadatenerstellung ist oftmals ein Bias in den Beschreibungstexten zu finden. So werden beispielsweise Frauen in historischen Quellen oftmals auf ihr äusseres Erscheinungsbild reduziert, während bei Männern häufig zuerst ihre beruflichen Tätigkeiten erwähnt werden. Diese Reduktion der Frau auf ihr äusseres Erscheinungsbild steht in einer langen Tradition der Objektivierung weiblicher Körper. Wenn im Kontext der Überarbeitung der Metadaten nicht nur der Bias kritisch reflektiert wird, sondern der Fehler als Reproduktion von Geschlechterstereotypen dargestellt wird, werden diskriminierende Strukturen sichtbar und können so schrittweise abgebaut werden.
+
+### Verhältnis von Bias und Diskriminierung {#sec-verhaeltnis-bias-diskriminierung}
+
+#### Das Problem der Begriffsverwirrung
+
+In der Forschung wie auch in praktischen Debatten wird **Bias** häufig als Sammelbegriff verwendet: mal als neutral-technische Bezeichnung für Verzerrungen, mal als moralische Kurzformel für „Ungerechtigkeit“ oder „Diskriminierung“. Diese Doppelverwendung führt zu zwei wiederkehrenden Problemen. Erstens werden Phänomene vermischt, die sich analytisch trennen lassen: Verzerrungen in Daten, Modellen und Interfaces einerseits und Diskriminierung als soziale Praxis bzw. als Ergebnis ungleicher Macht- und Teilhabeverhältnisse andererseits. Zweitens wird dadurch die Verantwortung verschoben: Was als „Bias“ benannt wird, erscheint oft als technisches Qualitätsproblem, selbst wenn die Ursachen (und Folgen) in Kategorienwahl, institutionellen Routinen, Normdaten, Ausschlüssen und historischen Machtverhältnissen liegen.
+
+Für eine diskriminierungssensible Metadatenpraxis ist diese Unschärfe besonders relevant, weil Metadaten sowohl **Beschreibung** (eine technische Zugriffsschicht) als auch **Deutung** (eine historisch-soziale Perspektive) enthalten. Ein und derselbe Befund – etwa stereotype oder auslassende Beschreibungen – kann daher als „Bias“ (Verzerrung) beschrieben werden, aber zugleich als Form von Diskriminierung wirken, wenn er bestimmte Gruppen systematisch unsichtbar macht, herabsetzt oder ihre Handlungsmacht verzerrt.
+
+#### Bias als technischer Fehler
+
+Eine einflussreiche Position – prominent in Fairness- und Bias-Forschung zu maschinellem Lernen – versteht Bias primär als **mess- und modellierbare Abweichung**, die sich diagnostizieren und (zumindest teilweise) korrigieren lässt. In diesem Zugriff ist Bias ein Problem der Datenqualität, der Messung, der Modellannahmen oder der Evaluation: Man sucht nach Quellen der Verzerrung (zum Beispiel nicht-repräsentative Datensätze, ungeeignete Benchmarks, fehlerhafte Proxy-Variablen) und nach Verfahren zur Reduktion (zum Beispiel Re-Sampling, Re-Weighting, Regularisierung, Post-Processing). Surveys wie Mehrabi et al. ordnen solche Bias-Quellen systematisch und machen sichtbar, dass „Bias“ je nach {{< glossary Pipeline >}}-Stufe sehr unterschiedliche technische Ursachen haben kann [@mehrabi2021].
+
+Wichtig ist: Selbst innerhalb dieses technisch orientierten Zugriffs ist „Fairness“ kein einfacher Zielwert. Verschiedene Fairness-Definitionen (zum Beispiel Demographic Parity, Equalized Odds, Individual Fairness) können sich gegenseitig ausschliessen, sodass Korrekturen immer auch **Trade-offs** erzeugen [@chouldechova2017; @kleinberg2017]. Für die Praxis heisst das: Bias-Reduktion ist ein sinnvolles Instrument, aber sie löst nicht automatisch die Frage, welche Norm (Gleichheit, Chancengleichheit, Schadensminimierung, Rechenschaft) im jeweiligen Kontext gilt.
+
+Gerade hier liegt der Unterschied zur Diskriminierung: Bias beschreibt in erster Linie eine diagnostizierbare Verzerrung in einem technischen oder methodischen Prozess; Diskriminierung bezeichnet die sozial wirksame Benachteiligung von Personen und Gruppen in ungleichen Machtverhältnissen. Ein System kann damit statistisch "fairer" werden und dennoch diskriminierend wirken, wenn es historisch belastete Kategorien fortschreibt, Ausschlüsse reproduziert oder nur dominante Nutzergruppen als implizite Norm behandelt [@buolamwini_gender_2018; @noble_algorithms_2018].
+
+#### Bias als Symptom struktureller Diskriminierung
+
+Eine zweite Position – anschlussfähig an Critical Data Studies und feministische/antirassistische Technik- und Wissenskritik – versteht Bias nicht primär als "Fehler im System", sondern als **Symptom**: Daten und Modelle reproduzieren gesellschaftliche Ungleichheiten, weil sie in Institutionen, Klassifikationen, Quellenlagen und epistemischen Routinen eingebettet sind. Aus dieser Perspektive ist es irreführend, Diskriminierung als Ausnahme zu behandeln, die „aus den Daten entfernt“ werden kann. Vielmehr sind Kategorien, Trainingsdaten, Normvokabulare, Such- und Sortierlogiken und auch das, was als „gute“ Daten gilt, historisch geprägt und sozial umkämpft [@noble_algorithms_2018; @buolamwini_gender_2018].
+
+Data Feminism betont in diesem Sinn, dass Datenarbeit immer auch Machtarbeit ist: Wer wird gezählt, wer wird beschrieben, welche Klassifikationen werden als neutral ausgegeben, und wessen Perspektiven fehlen in der Infrastruktur? [@dignazio2020] Für Metadaten heisst das: Selbst wenn einzelne Verzerrungen technisch reduziert werden, kann die Praxis weiterhin diskriminierend wirken – etwa wenn die zugrunde liegenden Kategorien Gruppen unsichtbar machen, wenn historische Fremdbezeichnungen unkritisch fortgeschrieben werden oder wenn institutionelle Routinen bestimmte Quellen systematisch ausschliessen.
+
+#### Bias, Diskriminierung und Unterdrückung: Ein integrativer Blick
+
+Dieses Handbuch unterscheidet Bias und Diskriminierung analytisch, hält sie aber praktisch für eng verschränkt.
+
+Erstens: Die Bias-Taxonomie in diesem Kapitel ist als **Diagnose- und Handlungsinstrument** gedacht. Sie hilft, Verzerrungen in Daten (zum Beispiel Auswahl- und Messfehler), in Algorithmen (zum Beispiel Evaluations- oder Optimierungsartefakte) und in Nutzerinteraktionen (zum Beispiel {{< glossary Ranking >}}- und Popularitätslogiken) zu lokalisieren und gezielt anzugehen.
+
+Zweitens: Bias wird hier zugleich als **operationalisierte, analysierbare Form** von Diskriminierung verstanden – im Sinne von „sichtbaren Spuren“ ungleicher Macht- und Teilhabeverhältnisse in Daten- und Metadatenpraktiken. Bias-Korrekturen sind daher oft notwendig (zum Beispiel um unmittelbare Schäden zu reduzieren), aber sie sind selten hinreichend, wenn Kategorien, institutionelle Ziele und Verantwortlichkeiten unberührt bleiben.
+
+Hier setzt das Konzept der **Oppression** (Unterdrückung) an. Oppression ist nicht bloss eine einzelne Handlung der Benachteiligung, sondern das Zusammenspiel von Praktiken, Diskursen und Institutionen, die Handlungsspielräume ganzer Gruppen systematisch einengen. In der feministischen Machttheorie wird Unterdrückung als **strukturelles "power-over"** verstanden: eine dauerhafte, nicht-zufällige Konstellation, in der Institutionen, Normen und symbolische Ordnungen bestimmte Gruppen in ihren Optionen einschränken, während andere privilegiert werden [@young_justice_1990]. Unterdrückung wirkt **materiell** (physisch, ökonomisch), **symbolisch** (Stigmatisierung, Unsichtbarmachung) und **epistemisch** (Festlegung dessen, was als Wissen gilt).
+
+Historische Daten- und Metadatenpraktiken können Unterdrückung auf mindestens drei Ebenen reproduzieren: ontologisch, epistemisch und infrastrukturell. Diese Formen wirken kumulativ: Jede einzelne Drahtstrebe, beispielsweise ein kontrolliertes Vokabular, scheint zunächst harmlos. Doch im Zusammenspiel entsteht ein Käfig, der die Bewegungsfreiheit bestimmter Gruppen systematisch einschränkt [@frye_politics_1983].
+
+**Ontologische Gewalt**
+
+_Wirkmechanismus:_ Erzwingt Kategorien, die der Selbstbeschreibung der Betroffenen widersprechen oder sie auf defizitäre Merkmale reduziert [@bowker1999].
+
+_Beispiele:_
+
+- Binarer `gndo:gender`\-Wert ("male"/"female") löscht nicht-binäre Identitäten.
+- Koloniale Ethnonyme in Normdaten ("Hottentotte") perpetuieren rassistische Klassifikationen.
+
+**Epistemische Gewalt**
+
+_Wirkmechanismus:_ Verunmöglicht Wissen, indem es bestimmte Perspektiven ausschliesst oder als "Rauschen" markiert [@spivak_subaltern_1988].
+
+_Beispiele:_
+
+- Aggregations-Metadaten, die Briefe von Dienstbotinnen als "miscellaneous" ablegen.
+- Diplomatenschriftverkehr wird dagegen fein granular erschlossen.
+
+**Infrastrukturelle Gewalt**
+
+_Wirkmechanismus:_ Fixiert Benachteiligungen durch technische Standards, die schwer veränderbar sind (lock-in) [@rodgers_oneill_infrastructural_2012].
+
+_Beispiele:_
+
+- Vorgabefelder in Sammlungssoftware ohne Mehrsprachigkeit erzwingen englischsprachige Schlagwörter und verdrängen indigene Begriffe.
+- Unveränderbare Feldlängen lassen traditionelle Namen abschneiden.
 
 ### Verzerrung und Fehler in Daten (Data Bias) {#sec-verzerrung-und-fehler-in-daten-data-bias}
 

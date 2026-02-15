@@ -2,23 +2,29 @@
 
 ### Daten sind nicht neutral (Normativität) {#sec-daten-sind-nicht-neutral-normativität}
 
-![Screenshot des Wikidata-Eintrags zu Crimea (Q7835), der die Halbinsel Krim beschreibt. Angezeigt werden Sprachvarianten (u. a. Englisch, Deutsch, Französisch), alternative Bezeichnungen sowie die Beschreibung als "Eastern European peninsula, in the Black Sea and Sea of Azov, disputed between Ukraine (de jure) and Russia (de facto)".](../images/image4.png){fig-alt='Screenshot einer Wikidata-Seite mit dem Eintrag Crimea (Q7835). Sichtbar sind der Titel "Crimea", eine kurze Beschreibung der Halbinsel als umstrittenes Gebiet zwischen Ukraine und Russland sowie Sprachangaben (Englisch, Deutsch, Alemannisch, Französisch) mit verschiedenen Labels und Synonymen. Darunter der Abschnitt "Statements" mit dem Hinweis "instance of: peninsula."' width="1393" height="1999" .img-fluid }
+![Screenshot des Wikidata-Eintrags zu Crimea (Q7835), der die Halbinsel Krim beschreibt. Angezeigt werden Sprachvarianten (unter anderem Englisch, Deutsch, Französisch), alternative Bezeichnungen sowie die Beschreibung als "Eastern European peninsula, in the Black Sea and Sea of Azov, disputed between Ukraine (de jure) and Russia (de facto)".](images/image4.png){fig-alt='Screenshot einer Wikidata-Seite mit dem Eintrag Crimea (Q7835). Sichtbar sind der Titel "Crimea", eine kurze Beschreibung der Halbinsel als umstrittenes Gebiet zwischen Ukraine und Russland sowie Sprachangaben (Englisch, Deutsch, Alemannisch, Französisch) mit verschiedenen Labels und Synonymen. Darunter der Abschnitt "Statements" mit dem Hinweis "instance of: peninsula."' width="951" height="1009" .img-fluid }
 
 Daten und Metadaten erscheinen auf den ersten Blick als objektive Repräsentationen der Wirklichkeit, doch sind sie stets in historisch gewachsene Machtverhältnisse und normative Ordnungen eingebettet. Das Beispiel der Krim in Wikidata [Q7835](https://www.wikidata.org/wiki/Q7835) und die beigefügte Karte der Halbinsel illustrieren anschaulich, wie scheinbar neutrale Darstellungen in Metadaten inhärent Stellung beziehen und politische Konfliktlagen spiegeln.
 
-![Politische Karte der Krim mit Städten, Verkehrswegen und geografischen Bezeichnungen. Die Karte zeigt die Halbinsel im Schwarzen Meer, angrenzend an die Ukraine und Russland.](../images/image5.png){fig-alt="Karte der Krim mit eingezeichneten Städten, Strassen, Eisenbahnlinien und Landschaftsmerkmalen. Zu sehen sind Simferopol, Sewastopol, Jalta, Feodossija, Kertsch und Jewpatorija sowie Gebirge, Küstenlinien und angrenzende Regionen der Ukraine und Russlands." width="1929" height="1249" .img-fluid }
+![Politische Karte der Krim mit Städten, Verkehrswegen und geografischen Bezeichnungen. Die Karte zeigt die Halbinsel im Schwarzen Meer, angrenzend an die Ukraine und Russland.](images/image5.png){fig-alt="Karte der Krim mit eingezeichneten Städten, Strassen, Eisenbahnlinien und Landschaftsmerkmalen. Zu sehen sind Simferopol, Sewastopol, Jalta, Feodossija, Kertsch und Jewpatorija sowie Gebirge, Küstenlinien und angrenzende Regionen der Ukraine und Russlands." width="1929" height="1249" .img-fluid }
 
 Die [Karte](https://commons.wikimedia.org/wiki/File:Karte_der_Krim.png) präsentiert die Krim als "Autonome Republik Krim" und zeigt damit explizit eine völkerrechtlich orientierte, pro ukrainische Perspektive: Die Benennung und farbliche Abgrenzung der Krim als Teil der Ukraine ("Oblast", "Autonome Republik") betont den de-jure-Status nach ukrainischem Recht und den internationalen Menschenrechtsstandards. Es werden zentrale Orte wie Sewastopol oder Kertsch mit ihrer ukrainischen Transkription aufgeführt. Die Grenze zu Russland ist klar als Staatsgrenze markiert. In der Detaildarstellung (oben rechts) wird die Krim deutlich der Ukraine zugeordnet, wodurch der umstrittene völkerrechtliche Status als Teil Russlands nicht gleichwertig visualisiert wird.
 
 Dieses kartografische Beispiel steht paradigmatisch für die normativen Setzungen, die auch digital kodierten Datenstrukturen wie Wikidata zugrunde liegen. So wird die Krim dort sowohl als Teil der Ukraine ("de jure") als auch Russlands ("de facto") geführt, jedoch übernehmen viele verknüpfte Objekte wie Städte oder administrative Einheiten diese Mehrdeutigkeit nicht konsistent oder bilden einzig die ukrainische Perspektive ab. Die Karte operiert dabei mit einem klaren Framing zugunsten der ukrainischen Souveränität und blendet alternative Klassifikationsoptionen, wie etwa die Bezeichnung "Republik Krim" als Teil Russlands, weitgehend aus.
 
-Dies verdeutlicht, dass jede Form von Daten- und Metadatenmodellierung – sei sie visuell, textuell oder strukturell – auf normativen Entscheidungen beruht, die oft unsichtbar bleiben. Die Auswahl von Bezeichnungen, die Sichtbarkeit von Grenzen oder die Hierarchisierung von Souveränitätsansprüchen spiegeln und stabilisieren bestehende Machtasymmetrien und wirken als "invisible hand of classification" [@bowker1999]. Für Nutzer\*innen entsteht der Eindruck technischer Neutralität, obwohl sowohl die Karte als auch digitale Datenbanken politische Aushandlungsprozesse und Interessen materialisieren.
+Dies verdeutlicht, dass jede Form von Daten- und Metadatenmodellierung – sei sie visuell, textuell oder strukturell – auf normativen Entscheidungen beruht, die oft unsichtbar bleiben. Die Auswahl von Bezeichnungen, die Sichtbarkeit von Grenzen oder die Hierarchisierung von Souveränitätsansprüchen spiegeln und stabilisieren bestehende Machtasymmetrien und wirken als "invisible hand of classification" [@bowker1999]. Für Nutzer\*innen entsteht der Eindruck technischer Neutralität, obwohl sowohl die Karte als auch digitale Datenbanken politische Aushandlungsprozesse und Interessen materialisieren. Mit technischer Neutralität ist hier gemeint, dass Entscheidungen in Interface, Datenmodell und Standardisierung als rein technische Notwendigkeiten erscheinen, obwohl sie normative Setzungen enthalten.
 
 Eine diskriminierungssensible Metadatenpraxis setzt daher an der Schnittstelle von Technik und Gesellschaft an: Sie verlangt die konsequente Offenlegung und Reflexion der eigenen Klassifikationsschemata, Entscheidungslogiken und Datenstrukturen. In der Umsetzung heisst das: transparente Dokumentation von Modellierungsentscheidungen (Schema, Version, Geltungsbereich), parallele Felder für Mehrperspektivität (_de jure_/_de facto_, Selbst- und Fremdbezeichnungen), überprüfbare Quellen- und Provenienzangaben sowie die explizite, maschinenlesbare Markierung von Konflikten und Unsicherheiten in den Metadaten (Status, Zeitraum, räumliche Gültigkeit). Die Beschreibung durch Metadaten und ihre Repräsentation in digitalen Datenbanken sind bewusst gestaltete, nachvollziehbare Praktiken, die nie lediglich "abbilden", sondern normativ wirken.
 
 ### Direkte Diskriminierung {#sec-direkte-diskriminierung}
 
-Die Begriffsbestimmung von Diskriminierung erfolgt in der Einleitung (QUERVERWEIS Abschnitt "Definition von Diskriminierung"). In diesem Kapitel operationalisieren wir direkte Diskriminierung für die Metadatenpraxis: Eine Regel, Entscheidung oder Handlung ist direkt diskriminierend, wenn sie Personen aufgrund eines geschützten Merkmals ungleich behandelt und diese Ungleichbehandlung nicht durch einen legitimen, verhältnismässigen Zweck gedeckt ist. Im Fokus stehen Mechanismen, Indikatoren und Gegenmassnahmen.
+Die Begriffsbestimmung von Diskriminierung erfolgt in der Einleitung (@sec-einleitung). In diesem Kapitel operationalisieren wir direkte Diskriminierung für die Metadatenpraxis: Eine Regel, Entscheidung oder Handlung ist direkt diskriminierend, wenn sie Personen aufgrund eines geschützten Merkmals ungleich behandelt und diese Ungleichbehandlung nicht durch einen legitimen, verhältnismässigen Zweck gedeckt ist. Im Fokus stehen Mechanismen, Indikatoren und Gegenmassnahmen.
+
+**Kernelemente**
+
+- _Unmittelbare Ungleichbehandlung:_ Eine Regel oder Praxis behandelt Personen explizit unterschiedlich.
+- _Merkmalsbezug:_ Die Ungleichbehandlung knüpft an ein tatsächliches oder zugeschriebenes (geschütztes) Merkmal an.
+- _Fehlende Rechtfertigung:_ Es gibt keinen legitimen, verhältnismässigen Zweck, der die Ungleichbehandlung trägt.
 
 **Beispiele**
 
@@ -40,9 +46,21 @@ Die Begriffsbestimmung von Diskriminierung erfolgt in der Einleitung (QUERVERWEI
   - _Indikatoren:_ Geringer Anteil eigenständiger Berufsangaben bei Frauen.
   - _Gegenmassnahmen:_ Nachträgliche Normalisierung, alternatives Namens- und Rollenmodell, Varianten als gleichwertige Identifikatoren pflegen.
 
+- **Diskriminierende Beschreibungen und Zuschreibungen**
+  - _Mechanismus:_ Abwertende oder stereotypisierende Formulierungen in Katalogtexten, Abstracts und Schlagwörtern sowie unkommentierte Übernahme diskriminierender Fremdbezeichnungen aus Quellen oder Altmetadaten.
+  - _Effekt:_ Stigmatisierung und Verletzung; Reproduktion historischer Hierarchien; Verzerrung von Deutung und Auffindbarkeit.
+  - _Indikatoren:_ Wertende Adjektive als Default, Täterperspektive ohne Kontext, problematische Begriffe als bevorzugte Benennung, fehlende Kontext- und Provenienzfelder.
+  - _Gegenmassnahmen:_ Trennung von Quellzitat und Beschreibungsebene; Kontextualisierung über Hinweise/{{< glossary Content-Note display="Content-Notes" >}}; dokumentierte Redaktionsregeln, Versionierung und Feedbackwege (siehe @sec-historische-begriffe).
+
 ### Indirekte Diskriminierung {#sec-indirekte-diskriminierung}
 
 Indirekte Diskriminierung liegt vor, wenn formal neutrale Kriterien, Methoden oder Regelungen zur Erhebung, Auswahl, Beschreibung oder Interpretation historischer Daten in ihrer Wirkung systematisch bestimmte Gruppen benachteiligen. Das betrifft zum Beispiel unterdokumentierte Gruppen oder Praktiken, die durch etablierte Routineprozesse weiter marginalisiert werden.
+
+**Kernelemente**
+
+- _Formale Neutralität:_ Kriterien oder Prozesse wirken auf den ersten Blick allgemeingültig.
+- _Ungleichwirkung:_ In der Anwendung entstehen systematische Nachteile für bestimmte Gruppen (Disparate Impact).
+- _Alternative Gestaltung:_ Es gäbe weniger benachteiligende, fachlich gleichwertige Verfahren oder Ausnahmen.
 
 **Beispiele**
 
@@ -56,13 +74,13 @@ Indirekte Diskriminierung liegt vor, wenn formal neutrale Kriterien, Methoden od
   - _Mechanismus:_ Dominanz von Amtssprachen (Latein, Französisch, Hochdeutsch) in der Überlieferung.
   - _Effekt:_ Geringe Sichtbarkeit von Minderheitensprachen und \-praktiken.
   - _Indikatoren:_ Anteil nicht erfasster bzw. nicht indexierter Sprachvarietäten.
-  - _Gegenmassnahmen:_ Mehrsprachige Erschliessung, Community-basierte Übersetzungen, {{< glossary SKOS >}}-Labels (Simple Knowledge Organization System) pro Sprachvarietät.
+  - _Gegenmassnahmen:_ Mehrsprachige Erschliessung, Community-basierte Übersetzungen, {{< glossary SKOS >}}-Labels pro Sprachvarietät.
 
 - **Digitale Volltextsuche**
   - _Mechanismus:_ Auswahl- und Digitalisierungsbias; {{< glossary OCR >}}/{{< glossary HTR >}} bevorzugt standardisierte Drucke.
   - _Effekt:_ Unterrepräsentation von Frauen, Arbeiter\*innen, Handschriften.
-  - _Indikatoren:_ {{< glossary CER >}}/{{< glossary WER >}} nach Schrift/Medium; Recall-Differenzen in Korpora.
-  - _Gegenmassnahmen:_ Stratifizierte Digitalisierung, gezieltes {{< glossary Fine-Tuning >}}, ausgleichendes Ranking, {{< glossary Query-Expansion >}}.
+  - _Indikatoren:_ {{< glossary CER >}}/{{< glossary WER >}} nach Schrift/Medium; {{< glossary Recall >}}-Differenzen in Korpora.
+  - _Gegenmassnahmen:_ Stratifizierte Digitalisierung, gezieltes {{< glossary Fine-Tuning >}}, ausgleichendes {{< glossary Ranking >}}, {{< glossary Query-Expansion >}}.
 
 - **Zensuskategorien**
   - _Mechanismus:_ Erfassung nur von Haushaltsvorständen.
@@ -70,11 +88,29 @@ Indirekte Diskriminierung liegt vor, wenn formal neutrale Kriterien, Methoden od
   - _Indikatoren:_ Fehlende Individualdatensätze für Nicht-Vorstände.
   - _Gegenmassnahmen:_ Rekonstruktion von Haushalten, Metadaten zu Erhebungsdesigns, methodische Gewichtung in Analysen.
 
+- **Unzureichende Findmittel und Zugangsbarrieren**
+  - _Mechanismus:_ Formal "neutrale" Find- und Zugriffspfade (Fachsprache, fehlende Barrierefreiheit, technische Hürden, unvollständige Erschliessung) begünstigen geübte Nutzergruppen und etablierte Forschungspraktiken.
+  - _Effekt:_ Bestände und Perspektiven marginalisierter Gruppen bleiben praktisch unzugänglich; Nachnutzung konzentriert sich auf gut erschlossene, kanonisierte Quellen.
+  - _Indikatoren:_ Hoher Anteil von 0-Treffer-Suchen, geringe Nutzung bestimmter Bestände, fehlende barrierefreie Metadaten/Interfaces.
+  - _Gegenmassnahmen:_ Barrierearme Sprache, mehrere Einstiegspfade, bessere Findmittel und Dokumentation von Lücken, nutzerzentrierte Tests mit diversen Gruppen.
+
 ### Strukturelle Diskriminierung {#sec-strukturelle-diskriminierung}
 
 Strukturelle Diskriminierung bezeichnet Benachteiligungen, die in etablierten Praktiken der Sammlung, Dokumentation, Bewahrung und Zugänglichmachung verankert sind. Ordnungen des Archivierens, Katalogisierens und Kuratierens reproduzieren häufig patriarchale, koloniale und heteronormative Sichtweisen. Diese wirken sich auf Auswahlprozesse, die Sprache der Erschliessung und institutionelle Routinen aus. Zahlreiche digitale Infrastrukturen orientieren Sprache, Usability und Standards primär an westlichen Forschungstraditionen; indigene und nicht-westliche Perspektiven bleiben dadurch marginalisiert.
 
+**Kernelemente**
+
+- _Einbettung in Routinen und Infrastrukturen:_ Benachteiligungen entstehen nicht primär durch einzelne Akte, sondern durch gewachsene Standards, Prozesse und Klassifikationen.
+- _Kumulativität und Pfadabhängigkeit:_ Viele kleine Entscheidungen verstärken sich über Zeit und werden schwer revidierbar.
+- _Unsichtbarkeit als Normalform:_ Ungleichheiten erscheinen als "Datenlage" oder "Sachzwang" und werden dadurch stabilisiert.
+
 **Beispiele**
+
+- **Überlieferungs- und Erschliessungslücken**
+  - _Mechanismus:_ Selektive Sammlung, Archivierung und Beschreibung; marginalisierte Gruppen werden als "nicht relevant" klassifiziert, nur am Rand dokumentiert oder in Sammelkategorien aufgelöst.
+  - _Effekt:_ Aktive oder fortgeschriebene Unsichtbarkeit in Archiven und Geschichtsschreibung; die "Datenlage" erscheint neutral, ist aber Ergebnis von Machtverhältnissen.
+  - _Indikatoren:_ Leere oder stark ungleich verteilte Facetten, Sammelrubriken ("miscellaneous"), geringe Granularität bei marginalisierten Akteur\*innen, systematische Lücken nach Region/Status.
+  - _Gegenmassnahmen:_ Gap-Analysen, partizipative Sammlungs- und Erschliessungsstrategien, dokumentierte Erschliessungslücken, gezielte Erschliessungs- und Redescription-Projekte.
 
 - **Eurozentrische Normdaten und kontrollierte Vokabulare**
   - _Mechanismus:_ Normdaten privilegieren westliche Taxonomien; indigene Konzepte werden "gemappt".
@@ -88,10 +124,10 @@ Strukturelle Diskriminierung bezeichnet Benachteiligungen, die in etablierten Pr
   - _Indikatoren:_ Anteil Datensätze ohne Felder für Selbstbezeichnung; Normalisierungszwang in Normdaten.
   - _Gegenmassnahmen:_ Kontrolliert-offene Felder (`genderIdentity`, `role`), Varianten als gleichwertige Identifikatoren, versionsgeführte Entscheidungsprotokolle.
 
-- **Digitale {{< glossary Pipeline >}}-Bias: Auswahl, {{< glossary OCR >}}/{{< glossary HTR >}} und Ranking**
+- **Digitale {{< glossary Pipeline >}}-Bias: Auswahl, {{< glossary OCR >}}/{{< glossary HTR >}} und {{< glossary Ranking >}}**
   - _Mechanismus:_ Kanonzentrierte Auswahl; Trainingsdaten für dominante Schriften/Sprachen; Indexgewichte bevorzugen gut erkannten Text.
   - _Effekt:_ Höhere Fehlerraten und schlechtere Auffindbarkeit für Minderheitensprachen und Handschriften.
-  - _Indikatoren:_ {{< glossary CER >}}/{{< glossary WER >}} nach Schrift/Varietät; Recall-Differenzen; Abdeckung pro Segment.
+  - _Indikatoren:_ {{< glossary CER >}}/{{< glossary WER >}} nach Schrift/Varietät; {{< glossary Recall >}}-Differenzen; Abdeckung pro Segment.
   - _Gegenmassnahmen:_ Stratifizierte Auswahlpläne, publizierte Fehlerbilanzen, {{< glossary Fine-Tuning >}} für unterrepräsentierte Schriften, re-ranking, CLIR.
 
 - **Kanon- und Metrikgetriebene implizite Priorisierung**
@@ -104,7 +140,11 @@ Strukturelle Diskriminierung bezeichnet Benachteiligungen, die in etablierten Pr
 
 Institutionelle Diskriminierung entsteht, wenn interne Ordnungen und Routinen von einer spezifischen Gedächtnisinstitution systematisch bestimmte Gruppen benachteiligen. Sie verschränkt sich oft mit struktureller Diskriminierung.
 
-<!-- FIXME QUERVERWEIS -->
+**Kernelemente**
+
+- _Organisationsspezifische Regeln:_ Benachteiligung wird durch interne Policies, Zuständigkeiten, Budgets oder Systementscheidungen erzeugt.
+- _Reproduzierbarkeit im Betrieb:_ Effekte sind wiederkehrend (nicht zufällig), weil sie in Prozessen, Rollen und Steuerung verankert sind.
+- _Verantwortung und Governance:_ Gegenmassnahmen erfordern klare Zuständigkeiten, Dokumentation und überprüfbare Entscheidungswege.
 
 **Beispiele**
 
@@ -132,6 +172,18 @@ Institutionelle Diskriminierung entsteht, wenn interne Ordnungen und Routinen vo
   - _Indikatoren:_ Sprachenabdeckung in Feldern und Indizes.
   - _Gegenmassnahmen:_ Mehrsprachige Felder, lokale Namensformen als gleichberechtigte Labels, Such-Unterstützung für Varianten.
 
+- **Ausschluss aus Entscheidungsprozessen**
+  - _Mechanismus:_ Metadaten-Governance (Vokabularpflege, Redaktionsregeln, Sperrentscheidungen, Priorisierung) wird ohne marginalisierte Gruppen gestaltet oder ihre Beteiligung bleibt symbolisch.
+  - _Effekt:_ Kategorien, Prioritäten und Korrekturen reproduzieren Dominanz; Konflikte um Begriffe und Darstellung eskalieren, Vertrauen sinkt.
+  - _Indikatoren:_ Keine dokumentierten Beteiligungsformate, fehlende Beschwerde-/Feedbackwege, wiederkehrende Auseinandersetzungen um "legacy metadata".
+  - _Gegenmassnahmen:_ Partizipative Gremien/Advisory Boards, transparente Entscheidungsprotokolle, klare Änderungs- und Eskalationsprozesse.
+
+- **Präsentation sensibler Inhalte ohne Schutzkonzept**
+  - _Mechanismus:_ Veröffentlichung und Interface-Design ohne sichtbare Kontextualisierung, Hinweise oder abgestufte Zugänge für diskriminierende und personenbezogene Inhalte.
+  - _Effekt:_ (Re-)Traumatisierung, Stigmatisierung und Missbrauchsrisiken; Abschreckung bestimmter Nutzergruppen.
+  - _Indikatoren:_ Fehlende {{< glossary Content-Note display="Content-Notes" >}}/Hinweise, keine Zugriffsstufen, keine dokumentierten Risikoabwägungen.
+  - _Gegenmassnahmen:_ Hinweis- und Kontextlayer, abgestufte Zugänge/Opt-in, dokumentierte Review-Prozesse (siehe Praxisteil, Abschnitt 5.2).
+
 ### Statistische Diskriminierung
 
 Statistische Diskriminierung bezeichnet die Benachteiligung von Individuen, wenn unter unvollständiger Information Entscheidungen auf gruppenbezogenen Durchschnittswerten beruhen.
@@ -156,24 +208,83 @@ Statistische Diskriminierung bezeichnet die Benachteiligung von Individuen, wenn
   - _Indikatoren:_ Unplausible Sprünge in Grad- und Zitationsverteilungen; Cluster mit hoher Namensähnlichkeit und heterogener Provenienz.
   - _Gegenmassnahmen:_ Konservative Blocking-Regeln (Vorabfilter in Record-Linkage-Verfahren, um Vergleichsmenge einzuschränken); zeit- und ortsgebundene harte Constraints; gezieltes Review kleiner oder minorisierter Cluster; vollständige Provenienzspeicherung.
 
-- **Historische Geokodierung mit modernen Gazetteers**
-  - _Mechanismus:_ Ambige Toponyme werden auf heutige Mehrheitsorte gemappt. Gazetteers sind strukturierte Ortsnamendatenbanken, die meist gegenwärtige Ortsinformationen priorisieren.
+- **Historische Geokodierung mit modernen {{< glossary Gazetteer display="Gazetteers" >}}**
+  - _Mechanismus:_ Ambige Toponyme werden auf heutige Mehrheitsorte gemappt. {{< glossary Gazetteer display="Gazetteers" >}} sind strukturierte Ortsnamendatenbanken, die meist gegenwärtige Ortsinformationen priorisieren.
   - _Effekt:_ Verdrängung historischer Minderheitensiedlungen; Fehlkontexte in Karten.
   - _Indikatoren:_ Hoher Anteil Default-Zuordnungen ohne Jahrgang; Dominanz grosser Orte bei kurzen Ortsnamen.
-  - _Gegenmassnahmen:_ Zeitgeslicte Gazetteers (d. h. nach historischen Epochen getrennt); Unsicherheitsgeometrien; "unresolved" statt Zwangszuordnung; expliziter Quellenhinweis im Datensatz.
+  - _Gegenmassnahmen:_ Zeitgeschichtliche {{< glossary Gazetteer display="Gazetteers" >}} (das heisst nach historischen Epochen getrennt); Unsicherheitsgeometrien; "unresolved" statt Zwangszuordnung; expliziter Quellenhinweis im Datensatz.
 
-- **Digitisierungsauswahl nach Zitationsmetriken**
+- **Digitalisierungspolitik nach Zitationsmetriken**
   - _Mechanismus:_ Auswahl via globalem Impact-Score als Proxy für "Wert".
   - _Effekt:_ Periphere Stimmen bleiben analog; selbstverstärkende Sichtbarkeit etablierter Kanons.
   - _Indikatoren:_ Schiefe Verteilungen zugunsten kanonisierter Autorinnen und Autoren sowie Orte; geringe Diversität an den Sample-Rändern.
   - _Gegenmassnahmen:_ Stratifizierte Sampling-Pläne; Equity-Buckets (gezielt definierte Auswahlkategorien, um Diversität sicherzustellen); Offenlegung der Auswahlfunktion; Simulation und Vergleich alternativer Auswahlregeln.
 
-### Spezifische Diskriminierungen in historischen Quellen und Forschungsdaten {#sec-spezifische-diskriminierungen-in-historischen-quellen-und-forschungsdaten}
+### Intersektionalität: Verflechtung von Diskriminierungsformen {#sec-intersektionalitaet}
 
-Diskriminierung kann bei der Arbeit mit historischen Quellen und Forschungsdaten in mehreren Formen auftreten<!-- [@A4BLiP2020] -->:
+#### Begriff und Herkunft
 
-1. **Diskriminierende Aussagen über marginalisierte Gruppen produzieren oder reproduzieren**, sei es durch eigene Formulierungen oder durch unterkomplexe Weitergabe von Forschungsdaten.
-2. **Marginalisierte Gruppen systematisch von Entscheidungsprozessen ausschliessen oder unterrepräsentieren** bzw. solche Zustände fortschreiben.
-3. **Marginalisierte Gruppen in Archiven oder der Geschichtsschreibung aktiv unsichtbar machen** oder diese Unsichtbarkeit unreflektiert bestehen lassen.
-4. **Die Verletzbarkeit marginalisierter Gruppen bei der Präsentation von Daten in Kauf nehmen**, zum Beispiel ohne {{< glossary Content‑Note display="Content‑Notes" >}} oder Sensibilitätshinweise.
-5. **Den Zugang zu Daten, Archiven und Ergebnissen erschweren**, zum Beispiel durch unzureichende Findmittel, barrierearme Sprache, oder technische Hürden.
+Intersektionalität bezeichnet einen Analyseansatz, der Diskriminierung nicht als isolierte Einzelphänomene (zum Beispiel nur Sexismus oder nur Rassismus) versteht, sondern als **verflochtene, sich wechselseitig konstituierende** Macht- und Ungleichheitsverhältnisse. Der Begriff wurde in der juristischen und feministischen Theorie prominent, um genau die Fälle zu beschreiben, in denen Personen durch das Raster einer Single-Axis-Logik (einachsige Perspektive) fallen: Wer nur nach „Geschlecht“ oder nur nach „Rasse“ fragt, übersieht die spezifischen Erfahrungen an der Kreuzung mehrerer Kategorien [@crenshaw1989; @collins2000].
+
+Für die Daten- und Metadatenpraxis ist daran besonders wichtig, dass Intersektionalität nicht einfach „Mehrfachzugehörigkeit“ meint. Es geht nicht darum, Diskriminierungen additiv zu summieren, sondern darum, dass Kategorienwahl, Modellierung und Beschreibung oft so angelegt sind, dass bestimmte Gruppen **weder in der Kategorie A noch in der Kategorie B** sichtbar werden, sondern zwischen beiden verschwinden. Diese Problemlage ist auch in datengetriebenen Systemen empirisch gut belegt: Fehlerraten und Sichtbarkeit unterscheiden sich nicht nur zwischen Einzelkategorien, sondern besonders stark an deren Schnittstellen [@buolamwini_gender_2018; @noble_algorithms_2018].
+
+#### Relevanz für Metadatenpraxis
+
+Metadaten entstehen durch Entscheidungen darüber, welche Merkmale erfasst werden, wie sie benannt werden und welche Beziehungen zwischen Entitäten modelliert werden. Wenn diese Entscheidungen nur auf einer Achse (einachsige Perspektive) getroffen werden, sind intersektionale Effekte naheliegend:
+
+- **Klassifikationslogik:** Facetten oder Normdaten sind so strukturiert, dass „Frauen“ implizit als „weiss“ und „Schwarze Menschen“ implizit als „männlich“ gelesen werden [@crenshaw1989].
+- **Retrieval-Logik:** Such- und Filterfunktionen behandeln Kategorien als unabhängig. Eine Suche nach „Frauen“ liefert dann vor allem Datensätze, die in dominanten Kontexten bereits gut beschrieben wurden.
+- **Quellenlage und Erschliessung:** Historische Überlieferung und institutionelle Sammelpraktiken sind ungleich verteilt. Wenn diese Asymmetrien nicht explizit dokumentiert werden, erscheinen sie als „Datenlage“ statt als Ergebnis von Machtverhältnissen.
+
+**Beispiel:** Historische Volkszählungsdaten erfassen „Geschlecht“ und „Ethnie“ als getrennte Variablen. Eine einachsige Auswertung kann nahelegen, dass „Frauen“ im Datensatz ausreichend sichtbar sind, weil viele weibliche Einträge existieren, oder dass „Schwarze Personen“ sichtbar sind, weil viele Einträge als „Black“ markiert sind. Eine intersektionale Perspektive fragt dagegen gezielt nach der Schnittmenge und kann zeigen, dass Schwarze Frauen in bestimmten Erhebungs- oder Auswertungslogiken systematisch unterrepräsentiert sind (zum Beispiel durch Haushaltsvorstandslogik, Namensnormalisierung, fehlende Berufsangaben, oder durch „unbestimmte“ Restkategorien).
+
+#### Praktische Implikationen
+
+Intersektionalität ist in der Praxis kein „zusätzlicher Tag“, sondern eine Anforderung an Datenmodell, Arbeitsabläufe und Auswertung:
+
+- **Mehrfachkategorisierung ermöglichen:** Wo Kategorien erfasst werden, sollten Kombinationen nicht technisch ausgeschlossen werden (zum Beispiel „nicht-binär“ und „trans“ und „historische Fremdbezeichnung“ als unterschiedliche, kontextgebundene Felder statt als exklusive Auswahl).
+- **Schnittmengen prüfen:** Qualitätskontrollen sollten nicht nur pro Kategorie („Frauen“, „Minderheitensprache“) erfolgen, sondern auch für Kreuzungen (zum Beispiel „Frauen + Minderheitensprache“, „Migrantisch + Arbeiterklasse“, „indigen + Archivzugang“).
+- **Granularität vs. Schutz:** Je granularer Merkmale kombiniert werden, desto leichter kann Re-Identifikation werden. Intersektionale Sichtbarkeit muss daher mit Datenschutz- und Schutzkonzepten zusammen gedacht werden (@sec-5-veroeffentlichung-und-zugang).
+
+Diskriminierungsformen sollten nicht isoliert betrachtet werden. Jede Analyse sollte prüfen, ob bestimmte Gruppen an der Kreuzung mehrerer Merkmale besonders betroffen sind. Praktisch heisst das: Intersektionalität als Prüffrage in Planung, Datensammlung, Beschreibung und Veröffentlichung verankern (@sec-1-planung-und-konzeption und @sec-5-veroeffentlichung-und-zugang).
+
+### Historische Begriffe: Bewahren oder Korrigieren? {#sec-historische-begriffe}
+
+#### Das Dilemma
+
+Historische Quellen enthalten häufig diskriminierende Begriffe und Kategorisierungen. Für eine diskriminierungssensible Metadatenpraxis entsteht daraus ein Spannungsfeld zwischen zwei Ansprüchen:
+
+1. **Quellentreue und historischer Kontext:** Begriffe sind Teil der Überlieferung, sie können für Forschung, Provenienz und Rekonstruktion historischer Semantiken relevant sein.
+2. **Schutz vor Verletzung und Perpetuierung:** Begriffe können beim Wiedergeben, Indexieren und Sichtbarmachen erneut verletzen und diskriminierende Ordnungen stabilisieren.
+
+Diese Spannung ist nicht rein sprachlich. Sie betrifft Arbeitsabläufe, Suchbarkeit, Normdatenpflege, Zugangsentscheidungen und die Frage, wer über Begriffe mitentscheiden darf.
+
+#### Archivische Provenienz (Bewahrungsprinzip)
+
+Archivische Provenienz betont Bewahrung und dokumentarische Integrität: Beschreibung solle die Überlieferung nicht "korrigieren", um keine Geschichtsfälschung zu betreiben. Problematische Begriffe werden als historische Dokumente verstanden, deren Veränderung Kontext zerstören kann. Zusätzlich wird argumentiert, dass Forschende Originalbegriffe benötigen, um Quellen zu finden und historische Sprachgebrauche nachzuvollziehen [@jenkinson1922].
+
+Für Metadatenpraxis kann daraus eine Strategie folgen, die auf minimale Eingriffe setzt: Originaltermini werden beibehalten, allenfalls ergänzt um Erläuterungen.
+
+#### Reparative Beschreibung
+
+Reparative Beschreibung argumentiert, dass Archive, Kataloge und Metadaten nie neutral sind: Sie sind eine Zugriffsschicht, die aktiv steuert, was sichtbar, auffindbar und legitim erscheint. Problematische Begriffe unkommentiert fortzuführen, ist daher selbst eine Entscheidung mit Folgen. Reparative bzw. kritische Beschreibung zielt darauf, diskriminierende Beschreibungspraktiken zu erkennen, zu kontextualisieren und zu verändern. Leitfäden wie die Anti-Racist Description Resources und Rassismuskritische Dokumentation betonen dabei Transparenz, Kontext, Community-Einbindung und den bewussten Umgang mit „legacy metadata“ [@A4BLiP2020; @critical_glam_handbook_2025]. Die dekoloniale Archivdebatte formuliert dazu explizit, dass Beschreibungspraxis nicht nur Dokumentation, sondern politische Praxis ist und daher revidierbare Verantwortungsentscheidungen braucht [@caswell_ghaddar_decolonial; @caswell_dusting_2019].
+
+In deutschsprachigen Archivdebatten wird diese Spannung unter anderem im Kontext queerfeministischer Kritik an Katalog- und Ordnungspraktiken diskutiert [@sparber2016; @gruber2022; @rottmann2023].
+
+#### Kompromissmodelle in der Praxis
+
+In der Praxis existieren Ansätze, die Quellentreue und Gegenwartssensibilität kombinieren:
+
+1. **Dual Cataloging:** Historische und aktuelle Begriffe parallel führen (zum Beispiel in getrennten Feldern oder über Varianten), sodass sowohl Recherche nach historischen Termini als auch respektvolle Darstellung möglich ist.
+2. **Kontextualisierung:** Problematische Begriffe markieren und erklären (zum Beispiel über Content Notes, Hinweise zur Terminologie und kurze Einordnungen).
+3. **Community Involvement:** Betroffene Communities in Entscheidungen einbeziehen (zum Beispiel bei Vokabularen, Korrekturen, Sperrfristen oder Kontexttexten).
+4. **Versionierte Beschreibung:** Änderungen nachvollziehbar dokumentieren (Wer hat wann warum geändert? Welche Varianten bleiben recherchierbar?).
+5. **Community Archives:** Selbstbestimmte Dokumentationspraktiken respektieren und nicht durch institutionelle Normdatenlogik „glattziehen“ [@flinn2007].
+
+Wenn diese Ansätze aus Ressourcen- oder Governance-Gründen nicht vollständig umgesetzt werden können, empfiehlt sich als Minimalstrategie ein kontextsensitives Vorgehen, das klar zwischen Überlieferungs- und Beschreibungsebene unterscheidet:
+
+- Für **Metadaten** (Beschreibungsebene): aktuelle, respektvolle Begriffe verwenden und historische Varianten dokumentieren (zum Beispiel als Varianten/Altlabels) statt sie als bevorzugte Benennung auszugeben.
+- Für **Transkriptionen/Editionen**: Originalwortlaut beibehalten, aber kontextualisieren (zum Beispiel mit Content Notes und eindeutigen Hinweisen auf diskriminierende Sprache).
+- Für **Normdaten**: Änderungen versionieren und begründen; die Provenienz von Begriffen und Korrekturen dokumentieren.
+
+Zentral ist dabei die Frage der Verantwortung: Wer entscheidet über Begriffe, wer trägt Risiken, und wie werden Betroffene beteiligt? (@sec-54-transparente-dokumentation, @sec-governance und @sec-5-veroeffentlichung-und-zugang).

@@ -6,3 +6,4 @@
 
 # This project uses references.yaml as source of truth.
 /references.bib
+.jampack/

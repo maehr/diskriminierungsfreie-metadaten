@@ -8,7 +8,9 @@ publication_targets:
 - github-pages
 - zenodo
 
-## Checklist
+## Authoritative Release Gate
+
+This section is the authoritative release gate for publication readiness.
 
 - [ ] `npm run validate` passes
 - [ ] Version + date reviewed (CHANGELOG/CITATION metadata as applicable)

@@ -29,12 +29,12 @@ source: `manuscript/sections/05-praxis-01-1-planung-und-konzeption.qmd`
 - Retain:
   - `@Maehr_SGB_digital_2022`
   - `@weitzmann_klimpel_2016`
-  - `@Schopper_2024_Einfuehrung_Metadaten`
+  - `@schopper_2024_einfuehrung_metadaten`
   - `@SGB_Datendokumentation_2025`
 
 ## Known TODOs to Resolve
 
-- Replace the placeholder cross-reference `[@sec-5-veroeffentlichung-und-zugang]` with a real internal cross-reference.
+- None currently open in this section spec (last checked: 2026-02-10).
 
 ## Citation Expectations
 

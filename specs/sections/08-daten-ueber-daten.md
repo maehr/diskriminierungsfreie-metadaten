@@ -6,19 +6,19 @@ source: `manuscript/sections/04-theorie-04-daten-ueber-daten.qmd`
 
 - Define "research data" and "metadata" for historical research contexts.
 - Explain intrinsic vs. extrinsic metadata and functional categories.
-- Introduce metadata standards as layered (type/value/content/schema/format/presentation/interoperability).
+- Introduce metadata standards as layered (type/value/content/schema/format/presentation/interoperability) and point to the appendix for the detailed seven-level breakdown.
 
 ## Required Structure
 
 - `### Was sind Forschungsdaten?`
 - `### Was sind Metadaten?`
 - A worked example using the Europeana record "Knie Voelkerschau" including the metadata table.
-- `### Metadatenstandards` with the seven levels (1-7) plus the "Ein Feld, sieben Ebenen" table.
+- `### Metadatenstandards` as a short introduction + forward reference to the appendix section on the seven levels.
 
 ## Required Figures/Tables
 
 - Keep the "Knie Voelkerschau" poster figure.
-- Keep the metadata table for the example and the extended seven-level table.
+- Keep the metadata table for the example. The extended seven-level table lives in the appendix.
 
 ## Required Citations
 

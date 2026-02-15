@@ -15,9 +15,10 @@
     "format:py": "uv run ruff format .",
     "typecheck": "uv run ty check .",
     "check:citations": "uv run tools/scripts/check-citations.py",
+    "check:glossary": "node tools/scripts/check-glossary.js",
     "render": "cd manuscript && quarto render",
     "anon": "cd manuscript && quarto render --profile submission",
-    "validate": "npm run format && npm run render && npm run check:citations && npm run lint:py && npm run typecheck && npm run lint"
+    "validate": "npm run format && npm run render && npm run check:citations && npm run check:glossary && npm run lint:py && npm run typecheck && npm run lint"
   },
   "repository": {
     "type": "git",

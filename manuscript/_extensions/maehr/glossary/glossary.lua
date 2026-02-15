@@ -24,7 +24,7 @@ local function kwExists(kwargs, keyword)
     return false
 end
 
--- Function to sort a Lua table by keys (case-insensitive)
+-- Function to sort a Lua table by keys
 function sortByKeys(tbl)
     local sortedKeys = {}
 
@@ -33,10 +33,8 @@ function sortByKeys(tbl)
         table.insert(sortedKeys, key)
     end
 
-    -- Sort the keys alphabetically (case-insensitive)
-    table.sort(sortedKeys, function(a, b)
-        return string.lower(a) < string.lower(b)
-    end)
+    -- Sort the keys alphabetically
+    table.sort(sortedKeys)
 
     -- Create a new table with the sorted keys
     local sortedTable = {}
@@ -64,6 +62,53 @@ local function readGlossary(path)
     f:close()
     return(lines)
   end
+end
+
+local function parseInlines(text)
+  local ok, doc = pcall(pandoc.read, text, "markdown")
+  if ok and doc ~= nil and #doc.blocks > 0 then
+    local first = doc.blocks[1]
+    if first.t == "Para" or first.t == "Plain" then
+      return first.content
+    end
+  end
+  return { pandoc.Str(text) }
+end
+
+local function parseBlocks(text)
+  if text == nil or text == "" then
+    return {}
+  end
+  local ok, doc = pcall(pandoc.read, text, "markdown")
+  if ok and doc ~= nil and doc.blocks ~= nil then
+    return doc.blocks
+  end
+  return { pandoc.Para({ pandoc.Str(text) }) }
+end
+
+local function loadGlossaryLookup(path)
+  local metafile = io.open(path, "r")
+  if not metafile then
+    io.stderr:write("Cannot open file " .. path .. "\n")
+    return {}
+  end
+
+  local content = "---\n" .. metafile:read("*a") .. "\n---\n"
+  metafile:close()
+
+  local ok, parsed = pcall(pandoc.read, content, "markdown")
+  if not ok or parsed == nil or parsed.meta == nil then
+    io.stderr:write("Cannot parse glossary file " .. path .. "\n")
+    return {}
+  end
+
+  local lookup = {}
+  for key, value in pairs(parsed.meta) do
+    local normalized = string.lower(key)
+    lookup[normalized] = pandoc.utils.stringify(value)
+  end
+
+  return lookup
 end
 
 ---Merge user provided options with defaults
@@ -106,52 +151,37 @@ return {
 
 ["glossary"] = function(args, kwargs, meta)
 
-  -- this will only run for HTML documents
-  if not quarto.doc.isFormat("html:js") then
-    return pandoc.Null()
-  end
+  local is_html = quarto.doc.isFormat("html:js")
 
-  addHTMLDeps()
+  if is_html then
+    addHTMLDeps()
+  end
 
   -- create glossary table
   if kwExists(kwargs, "table") then
-    local options = mergeOptions(kwargs, meta)
-    local gt = "<table class='glossary_table'>\n"
-    gt = gt .. "<tr><th> Term </th><th> Definition </th></tr>\n"
+    local sortedTable = sortByKeys(globalGlossaryTable)
 
-    -- Load all terms from glossary file, not just referenced ones
-    local allTerms = {}
-    local metafile = io.open(options.path, 'r')
-    if metafile then
-      local content = "---\n" .. metafile:read("*a") .. "\n---\n"
-      metafile:close()
-      local glossary = pandoc.read(content, "markdown").meta
-      
-      -- Preserve original capitalization of keys
-      for key, value in pairs(glossary) do
-        allTerms[key] = pandoc.utils.stringify(value)
+    if is_html then
+      local gt = "<table class='glossary_table'>\n"
+      gt = gt .. "<tr><th> Term </th><th> Definition </th></tr>\n"
+
+      for key, value in pairs(sortedTable) do
+          gt = gt .. "<tr><td>" .. key
+          gt = gt .. "</td><td>" .. value .. "</td></tr>\n"
       end
+      gt = gt .. "</table>"
+
+      return pandoc.RawBlock('html', gt)
     end
 
-    -- Sort keys alphabetically (case-insensitive)
-    local sortedKeys = {}
-    for key, _ in pairs(allTerms) do
-        table.insert(sortedKeys, key)
+    local entries = {}
+    for key, value in pairs(sortedTable) do
+      local termInlines = parseInlines(key)
+      local definitionBlocks = parseBlocks(value)
+      table.insert(entries, { termInlines, { definitionBlocks } })
     end
-    
-    table.sort(sortedKeys, function(a, b)
-        return string.lower(a) < string.lower(b)
-    end)
 
-    -- Use sorted keys to maintain alphabetical order
-    for _, key in ipairs(sortedKeys) do
-        local value = allTerms[key]
-        gt = gt .. "<tr><td>" .. key
-        gt = gt .. "</td><td>" .. value .. "</td></tr>\n"
-    end
-    gt = gt .. "</table>"
-
-    return pandoc.RawBlock('html', gt)
+    return pandoc.DefinitionList(entries)
   end
 
   -- or set up in-text term
@@ -169,16 +199,9 @@ return {
   if kwExists(kwargs, "def") then
     def = pandoc.utils.stringify(kwargs.def)
   else
-    local metafile = io.open(options.path, 'r')
-    local content = "---\n" .. metafile:read("*a") .. "\n---\n"
-    metafile:close()
-    local glossary = pandoc.read(content, "markdown").meta
-    for key, value in pairs(glossary) do
-      glossary[string.lower(key)] = value
-    end
-    -- quarto.log.output()
+    local glossary = loadGlossaryLookup(options.path)
     if kwExists(glossary, term) then
-      def = pandoc.utils.stringify(glossary[term])
+      def = glossary[term]
     end
   end
 
@@ -187,36 +210,46 @@ return {
     globalGlossaryTable[term] = def
   end
 
-  -- Generate unique ID for this glossary term (still needed for potential future use)
-  local glossary_id = "glossary-" .. term:gsub("%s+", "-"):gsub("[^%w%-]", "") .. "-" .. math.random(1000, 9999)
+  if is_html then
+    -- Generate unique ID for this glossary term (still needed for potential future use)
+    local glossary_id = "glossary-" .. term:gsub("%s+", "-"):gsub("[^%w%-]", "") .. "-" .. math.random(1000, 9999)
 
-  if options.popup == "click" then
-    -- Use Bootstrap popover with accessible attributes
-    glosstext = "<button class='glossary' " ..
-                "id='" .. glossary_id .. "' " ..
-                "data-bs-toggle='popover' " ..
-                "data-bs-content='" .. def:gsub("'", "&apos;") .. "' " ..
-                "data-bs-trigger='click' " ..
-                "data-bs-placement='top' " ..
-                "tabindex='0' " ..
-                "data-glossary-term='" .. term .. "'>" ..
-                display .. "</button>"
-  elseif options.popup == "none" then
-    glosstext = "<span class='glossary'>" .. display .. "</span>"
-  else
-    -- Default to click behavior for any other option (including former "hover")
-    glosstext = "<button class='glossary' " ..
-                "id='" .. glossary_id .. "' " ..
-                "data-bs-toggle='popover' " ..
-                "data-bs-content='" .. def:gsub("'", "&apos;") .. "' " ..
-                "data-bs-trigger='click' " ..
-                "data-bs-placement='top' " ..
-                "tabindex='0' " ..
-                "data-glossary-term='" .. term .. "'>" ..
-                display .. "</button>"
+    if options.popup == "click" then
+      -- Use Bootstrap popover with accessible attributes
+      glosstext = "<button class='glossary' " ..
+                  "id='" .. glossary_id .. "' " ..
+                  "data-bs-toggle='popover' " ..
+                  "data-bs-content='" .. def:gsub("'", "&apos;") .. "' " ..
+                  "data-bs-trigger='click' " ..
+                  "data-bs-placement='top' " ..
+                  "tabindex='0' " ..
+                  "data-glossary-term='" .. term .. "'>" ..
+                  display .. "</button>"
+    elseif options.popup == "none" then
+      glosstext = "<span class='glossary'>" .. display .. "</span>"
+    else
+      -- Default to click behavior for any other option (including former "hover")
+      glosstext = "<button class='glossary' " ..
+                  "id='" .. glossary_id .. "' " ..
+                  "data-bs-toggle='popover' " ..
+                  "data-bs-content='" .. def:gsub("'", "&apos;") .. "' " ..
+                  "data-bs-trigger='click' " ..
+                  "data-bs-placement='top' " ..
+                  "tabindex='0' " ..
+                  "data-glossary-term='" .. term .. "'>" ..
+                  display .. "</button>"
+    end
+
+    return pandoc.RawInline("html", glosstext)
   end
 
-  return pandoc.RawInline("html", glosstext)
+  local inlines = parseInlines(display)
+  if options.popup == "none" or def == nil or def == "" then
+    return pandoc.Span(inlines)
+  end
+
+  table.insert(inlines, pandoc.Note(parseBlocks(def)))
+  return pandoc.Span(inlines)
 
 end
 

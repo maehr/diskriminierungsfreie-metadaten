@@ -4,7 +4,7 @@
 
 Unter Forschungsdaten verstehen wir sämtliche digitale Repräsentationen von physischen und virtuellen Objekte, die Forscher\*innen während ihrer Forschung verwenden und produzieren und die als digitale Daten repräsentiert werden können. Dazu gehören Quellen, Transkriptionen oder Reproduktionen, Exzerpte, Zeitreihen, Tabellen, Diagramme, Karten, Modelle, Bilder, Videos, Interviews, Artikel, Sekundärliteratur, Software, Quellcode, {{< glossary Workflow display="Workflows" >}}, Forschungsprotokolle, Datensätze etc.
 
-Bei historischen Forschungsprojekten stammt ein grosser Teil der Forschungsdaten oft aus den Beständen von Gedächtnisinstitutionen wie Archiven, Bibliotheken und Museen oder steht in publizierter Form in Büchern oder Artikeln zur Verfügung. In vielen Fällen sorgen diese Einrichtungen für die Langzeitarchivierung der Quellen. Dann kann über die DOI oder die Signatur direkt auf die Objekte (sowie auf deren Metadaten) verwiesen werden. Meistens werden in Forschungsprojekten jedoch zusätzliche Metadaten erhoben oder bestehende Metadaten korrigiert. Dabei kann es sich um Quellenannotationen, erweiterte Beschreibungen, korrigierte Angaben etc. handeln. In diesen Fällen empfiehlt es sich, einen neuen, möglichst kompletten Metadatensatz zu erstellen und mit Verweis auf das Original auf einer geeigneten Plattform zur Verfügung zu stellen. Redundanz ist bei Forschungsdaten wünschenswert und erhöht ihre Verfügbarkeit und Auffindbarkeit.
+Bei historischen Forschungsprojekten stammt ein grosser Teil der Forschungsdaten oft aus den Beständen von Gedächtnisinstitutionen wie Archiven, Bibliotheken und Museen oder steht in publizierter Form in Büchern oder Artikeln zur Verfügung. In vielen Fällen sorgen diese Einrichtungen für die Langzeitarchivierung der Quellen. Dann kann über die {{< glossary DOI >}} oder die Signatur direkt auf die Objekte (sowie auf deren Metadaten) verwiesen werden. Meistens werden in Forschungsprojekten jedoch zusätzliche Metadaten erhoben oder bestehende Metadaten korrigiert. Dabei kann es sich um Quellenannotationen, erweiterte Beschreibungen, korrigierte Angaben etc. handeln. In diesen Fällen empfiehlt es sich, einen neuen, möglichst kompletten Metadatensatz zu erstellen und mit Verweis auf das Original auf einer geeigneten Plattform zur Verfügung zu stellen. Redundanz ist bei Forschungsdaten wünschenswert und erhöht ihre Verfügbarkeit und Auffindbarkeit.
 
 Im Rahmen der Forschung werden oft Daten aus historischen Quellen abgeleitet und zusammengestellt. Dazu gehören etwa Textdaten (zum Beispiel Forschungsprotokolle), Zeitreihen (gegebenenfalls dargestellt als Diagramme oder Tabellen) oder georeferenzierte Karten und Netzwerkdarstellungen (zum Beispiel basierend auf Grabungsdaten oder Briefwechseln).
 
@@ -14,7 +14,7 @@ Da viele textuelle Forschungsdaten nur auf Papier oder in unstrukturierter digit
 
 Metadaten enthalten strukturierte Informationen über Objekte, insbesondere über deren Inhalt, Kontext und Struktur. Dabei ermöglichen bzw. erleichtern sie deren Identifikation, Auffindbarkeit, Organisation, Verwaltung, Kontextualisierung und Nutzung. Metadaten sollten so strukturiert sein, dass sie die wichtigsten Attribute des beschriebenen Objekttyps modellieren. Ihre Speicherung erfolgt entweder unabhängig von oder auch zusammen mit den ihnen zugeordneten Daten.
 
-![Plakat des Circus Knie für eine "Völkerschau", Darstellung von stereotypisierten Szenen mit Männern beim Handwerk, Schweiz, 20. Jahrhundert.](../images/image6.jpg){fig-alt='Plakat mit rotem Hintergrund: Drei Männer in bunten Gewändern und Turbanen führen Handarbeiten aus – einer webt, einer hält Schmuck, einer arbeitet mit Tongefässen. Darunter steht gross "KNIE" und kleiner "Völkerschau".' width="1393" height="1999" .img-fluid }
+![Plakat des Circus Knie für eine "Völkerschau", Darstellung von stereotypisierten Szenen mit Männern beim Handwerk, Schweiz, 20. Jahrhundert.](images/image6.jpg){fig-alt='Plakat mit rotem Hintergrund: Drei Männer in bunten Gewändern und Turbanen führen Handarbeiten aus – einer webt, einer hält Schmuck, einer arbeitet mit Tongefässen. Darunter steht gross "KNIE" und kleiner "Völkerschau".' width="1393" height="1999" .img-fluid }
 
 Zur Illustration Begrifflichkeiten rund um Metadaten greifen wir auf die Metadaten des Beispiels [_Knie Völkerschau_](https://www.europeana.eu/de/item/92023/images_billed_2010_okt_billeder_object488811) zurück. Wir haben es ausgewählt, weil es exemplarisch für problematische, kolonial geprägte Darstellungsweisen in populärer Unterhaltungskultur des 20\. Jahrhunderts steht und über reichhaltige Metadaten verfügt.
 
@@ -26,7 +26,7 @@ Zur Illustration Begrifflichkeiten rund um Metadaten greifen wir auf die Metadat
 | **dc:type**                                       | Billede, Todimensionalt billedmateriale Still image, poster                                                                                                                                        |
 | **dc:subject**                                    | Knie Cirkus Håndværker                                                                                                                                                                             |
 | **dc:identifier**                                 | [http://www.kb.dk/images/billed/2010/okt/billeder/object488811/en/](http://www.kb.dk/images/billed/2010/okt/billeder/object488811/en/)                                                             |
-| **dc:rights**                                     | Billedet er muligvis beskyttet af loven om ophavsret \[CC BY-NC-ND 4.0\](<http://creativecommons.org/licenses/by-nc-nd/4.0/>)                                                                      |
+| **dc:rights**                                     | Billedet er muligvis beskyttet af loven om ophavsret {{< glossary CC >}} [BY-NC-ND 4.0](http://creativecommons.org/licenses/by-nc-nd/4.0/)                                                         |
 | **edm:isShownBy**                                 | [http://kb-images.kb.dk/DAMJP2/DAM/Samlingsbilleder/0000/488/811/PL000012/full/full/0/native.jpg](http://kb-images.kb.dk/DAMJP2/DAM/Samlingsbilleder/0000/488/811/PL000012/full/full/0/native.jpg) |
 | **edm:isShownAt**                                 | [http://www.kb.dk/images/billed/2010/okt/billeder/object488811/en/](http://www.kb.dk/images/billed/2010/okt/billeder/object488811/en/)                                                             |
 | **edm:provider**                                  | DK-National Aggregation Service                                                                                                                                                                    |
@@ -58,106 +58,8 @@ Das Beispiel illustriert zudem die Differenz zwischen **physischen Objekten** un
 
 ### Metadatenstandards {#sec-metadatenstandards}
 
-Zur Strukturierung von Metadaten existieren verschiedene **Standards und Verfahren**, die meistens durch eine Fachcommunity entwickelt und gepflegt werden. Sie dienen der Sicherung von **Qualität, Konsistenz und Interoperabilität**, bringen jedoch auch Herausforderungen wie **Standardisierungsdruck, mögliche Auslassungen**, und **Semantisierungsverluste** mit sich. Dabei lassen sich sieben Ebenen oder Typen von Standards unterscheiden, die wir ebenfalls anhand des Beispiels oben illustrieren.
+Zur Strukturierung von Metadaten existieren verschiedene **Standards und Verfahren**, die meistens durch eine Fachcommunity entwickelt und gepflegt werden. Sie dienen der Sicherung von **Qualität, Konsistenz und Interoperabilität**, bringen jedoch auch Herausforderungen wie **Standardisierungsdruck, mögliche Auslassungen** und **Semantisierungsverluste** mit sich. Dabei lassen sich sieben Ebenen oder Typen von Standards unterscheiden.
 
-#### **1\. Datentypstandard _(Feld- oder Attributniveau)_** {#sec-1-datentypstandard-feld--oder-attributniveau}
-
-Legt fest, **in welchem Format einzelne Werte** codiert oder dargestellt sein müssen – zum Beispiel Zahlen, Datumsangaben, Zeichenketten, Booleans (Wahrheitswerte wie wahr oder falsch beziehungsweise 1 und 0).
-
-Am Beispiel _Knie Völkerschau_ zeigt sich, wie einzelne Werte formal typisiert werden:
-
-- `dc:title` ist ein einfacher Textstring in Originalsprache→ `xsd:string@de`
-- `dc:date` enthält den unsicheren Jahreswert `"1969?"`, typisiert als `xsd:string`, könnte aber in normierten Fällen auch `xsd:gYear` sein
-- `edm:language` verwendet {{< glossary ISO >}} 639-1 Codes (`"da"` für Dänisch)
-- `dc:identifier` oder `edm:isShownBy` sind URIs → `anyURI`
-
-#### **2\. Wertstandard _(Zulässige Werte für Felder)_** {#sec-2-wertstandard-zulässige-werte-für-felder}
-
-Enthält normierte, kontrollierte Begriffe oder Referenzen. Diese dienen der **Vergleichbarkeit, Suche und Aggregation**.
-
-Das Beispiel _Knie Völkerschau_ nutzt sowohl kontrollierte als auch freie Werte:
-
-- `dc:type` enthält `"Still image"`, `"Poster"` – konform mit dem **{{< glossary AAT >}}** oder **{{< glossary EDM >}} Type Vocabulary**
-- `edm:country` ist `"Denmark"` → entspricht **{{< glossary ISO >}} 3166-1 Alpha-2**
-- `dc:rights` verweist auf die **CC-Lizenz** [`http://creativecommons.org/licenses/by-nc-nd/4.0/`](http://creativecommons.org/licenses/by-nc-nd/4.0/)
-- `dc:subject` ("Knie", "Cirkus", "Håndværker") könnte auf eine kontrollierte Vokabularquelle wie **{{< glossary GND >}}** oder **Wikidata** gemappt werden
-
-#### **3\. Inhaltsstandard _(Semantische Bedeutung von Feldern)_** {#sec-3-inhaltsstandard-semantische-bedeutung-von-feldern}
-
-Legt fest, **welche Informationen in welchen Feldern** erfasst werden sollen und was sie **semantisch bedeuten**. Dabei kann folgende Frage gestellt werden: "Wie befülle ich das Feld?"
-
-Die Belegung der Felder des Beispiels _Knie Völkerschau_ folgt dem **{{< glossary "Dublin Core" >}} Element Set ({{< glossary "Dublin Core" display="DCMES" >}})** und dem **{{< glossary EDM display="Europeana Data Model (EDM)" >}}**:
-
-- `dc:title` enthält den Titel des Plakats ("Knie Völkerschau")
-- `dc:description` beschreibt Motiv, Technik und Masse der Lithografie
-- `dc:subject` benennt thematische Schlagwörter
-- `dc:rights` informiert über urheberrechtliche Bedingungen
-- `edm:isShownBy` verweist auf das direkt eingebettete Digitalisat
-
-#### **4\. Strukturstandard / Schema _(Datenmodellierung)_** {#sec-4-strukturstandard-schema-datenmodellierung}
-
-Definiert **die erlaubten Felder und ihre Beziehungen**, oft in hierarchischen oder relationalen Strukturen. Ein Schema kann sowohl inhaltlich als auch formal spezifiziert sein.
-
-Oft wird zwischen Strukturstandard und Schema nicht klar unterschieden. Während der Strukturstandard die allgemeine Anordnung und Bedeutung der Felder beschreibt, legt ein Schema konkret fest, wie diese umgesetzt werden; etwa welche Felder verpflichtend sind oder wie oft sie vorkommen dürfen. Ein Schema lässt sich als Bauplan verstehen, der auf einem übergeordneten, abstrakten Modell beruht.
-
-Die Datenstruktur des Beispiels _Knie Völkerschau_ entspricht dem **{{< glossary EDM display="Europeana Data Model (EDM)" >}}**:
-
-- `ProvidedCHO` (Cultural Heritage Object) enthält zum Beipsiel `dc:title`, `dc:date`, `dc:type`
-- `Aggregation` verknüpft mit `edm:isShownBy`, `edm:preview`, `edm:provider`
-- `Proxy` erlaubt Mehrsprachigkeit, etwa in `dc:description` (da) und `dc:title` (de)
-
-#### **5\. Formatstandard _(maschinenlesbare Serialisierung & Kodierung)_** {#sec-5-formatstandard-maschinenlesbare-serialisierung-kodierung}
-
-Legt fest, **wie der strukturierte Metadatensatz technisch gespeichert oder übertragen** wird. Es ist die konkrete **Kodierung und Serialisierung** der Metadatenstruktur, wie sie vom Computer ausgelesen wird. Der Fokus liegt auf der einfachen und effizienten Lesbarkeit für Maschinen, nicht für Menschen.
-
-**Anmerkung:** {{< glossary XML >}} oder {{< glossary RDF >}} sind **Struktur- und Formatstandards zugleich**, abhängig davon, ob man ihre **logische Modellierung** oder die **Serialisierung** betont.
-
-Im Fall von _Knie Völkerschau_ liegen die Metadaten folgenden Formaten vor:
-
-- Europeana-API liefert Metadaten im **{{< glossary JSON-LD >}}** (zum Beispiel via `/record/v2/...json`)
-- Exportierbar als **{{< glossary RDF >}}/{{< glossary XML >}}** oder **Turtle**
-- URIs sind **HTTP-resolvable**, kodiert in **UTF-8**
-
-#### **6\. Präsentationsstandard _(Visualisierung, Darstellung für Menschen)_** {#sec-6-präsentationsstandard-visualisierung-darstellung-für-menschen}
-
-Definiert die **Gestaltung und Darstellung von Metadaten für Endnutzer\*innen**, zum Beispiel in Web-Interfaces, Katalogsystemen, oder PDFs. Diese Standards betreffen **Layout, Labels, Reihenfolge**, aber nicht die maschinenlesbare Struktur.
-
-Die Europeana-Oberfläche stellt die Metadaten des Objekts in einer klaren, mehrsprachigen Ansicht dar:
-
-- `dc:title` wird als **Titel** angezeigt
-- `dc:rights` erscheint mit CC-Icons und verlinkter Lizenz
-- `edm:preview` zeigt ein **Thumbnail**, während `edm:isShownBy` das hochauflösende Bild öffnet
-- Schlagwörter (aus `dc:subject`) werden als **Filterfacetten** nutzbar gemacht
-
-#### **7\. Interoperabilitäts- und Austauschstandards _(Systemvernetzung)_** {#sec-7-interoperabilitäts--und-austauschstandards-systemvernetzung}
-
-Ermöglichen den **Austausch, Aggregation und Mapping** zwischen verschiedenen Standards, Datenmodellen oder Plattformen. Der Fokus liegt wie bereits bei den Formatstandards auf der Maschinenlesbarkeit.
-
-Das Beispiel _Knie Völkerschau_ ist vollständig eingebettet in ein interoperables Framework:
-
-- Über die maschinenlesbare Schnittstelle {{< glossary OAI-PMH >}} werden die Informationen aus den lokalen Repositorien gesammelt und an einen Aggreator (zum Beispiel Europeana) übermittelt. Die Herkunftsinformation kann im Feld `edm:dataProvider` eingebettet werden.
-- {{< glossary IIIF >}} Manifest verfügbar für DeepZoom oder Bildannotation
-- Verlinkung auf Lizenzen, Orte, Konzepte via URI {{< glossary LOUD >}}-Prinzipien)
-- Es sind Mappings in beide Richtungen möglich: von {{< glossary MARC >}} zu {{< glossary "Dublin Core" >}} und umgekehrt, von {{< glossary TEI >}} zu {{< glossary EDM >}} und umgekehrt sowie von {{< glossary CIDOC-CRM >}} zu EDM und umgekehrt.
-
-#### **Ein Feld, sieben Ebenen**
-
-| Metadatum (Feld)   | ① Datentyp                          | ② Wertstandard                                            | ③ Inhaltsstandard                                            | ④ Struktur / Schema                                                                            | ⑤ Format                                                            | ⑥ Präsentation              | ⑦ Interoperabilität                                |
-| :----------------- | :---------------------------------- | :-------------------------------------------------------- | :----------------------------------------------------------- | :--------------------------------------------------------------------------------------------- | :------------------------------------------------------------------ | :-------------------------- | :------------------------------------------------- |
-| `dc:title`         | `xsd:string@de`                     | Freitext                                                  | **{{< glossary "Dublin Core" >}}: Title**                    | {{< glossary "Dublin Core" display="DCMES" >}}, {{< glossary EDM >}}                           | {{< glossary JSON >}}, {{< glossary RDF >}}/{{< glossary XML >}}    | UI-Label: _Titel_           | Europeana API, {{< glossary OAI-PMH >}}            |
-| `dc:description`   | `xsd:string@da`                     | Freitext, gegebenenfalls Getty {{< glossary AAT >}}-Terms | **{{< glossary "Dublin Core" display="DC" >}}: Description** | {{< glossary "Dublin Core" display="DCMES" >}}                                                 | JSON                                                                | Accordion-Feld, Tooltip     | {{< glossary OAI-PMH >}}, {{< glossary JSON-LD >}} |
-| `dc:date`          | `xsd:gYear` oder `xsd:string`       | {{< glossary ISO >}} 8601, "1969?" (unsicher)             | **{{< glossary "Dublin Core" display="DC" >}}: Date**        | {{< glossary EDM >}} Timespan, {{< glossary "Dublin Core" display="DCMES" >}}                  | {{< glossary RDF >}}/{{< glossary XML >}}, {{< glossary JSON-LD >}} | Formatierter Zeitstempel    | `edm:hasMet` \+ {{< glossary IIIF >}} Timeline     |
-| `dc:type`          | URI / `xsd:string@da`               | **{{< glossary AAT >}} URI**, `poster`, `Still image`     | **{{< glossary "Dublin Core" display="DC" >}}: Type**        | {{< glossary "Dublin Core" display="DCMES" >}}, {{< glossary EDM >}} \+ Europeana Vocabularies | {{< glossary RDF >}}                                                | Facette: "Medientyp"        | Linked Open Data / {{< glossary EDM >}}            |
-| `dc:subject`       | `xsd:string@da`                     | **{{< glossary GND >}}** / kontrollierte Schlagwörter     | **{{< glossary "Dublin Core" display="DC" >}}: Subject**     | {{< glossary "Dublin Core" display="DCMES" >}}                                                 | {{< glossary JSON >}}                                               | Schlagwortliste             | {{< glossary "VIAF" >}}, Wikidata, Linked Data     |
-| `dc:identifier`    | `anyURI`                            | HTTP-URL                                                  | **{{< glossary "Dublin Core" display="DC" >}}: Identifier**  | {{< glossary "Dublin Core" display="DCMES" >}}, {{< glossary EDM >}} Aggregation               | {{< glossary JSON-LD >}}                                            | als anklickbarer Link       | persistente URI (PURL/DOI)                         |
-| `dc:rights`        | URI \+ `xsd:string`                 | **CC URI**, `RightsStatements.org`                        | **{{< glossary "Dublin Core" display="DC" >}}: Rights**      | {{< glossary "Dublin Core" display="DCMES" >}}, {{< glossary EDM >}} Rights                    | {{< glossary RDF >}}, {{< glossary JSON >}}                         | CC-Logo, Textlink           | Interoperables Lizenzsystem                        |
-| `edm:isShownBy`    | `anyURI`                            | {{< glossary IIIF >}} Image Service URI                   | **{{< glossary EDM >}}: isShownBy**                          | {{< glossary EDM >}} Aggregation                                                               | {{< glossary RDF >}}                                                | Bild-Embed                  | {{< glossary IIIF >}} Image API                    |
-| `edm:isShownAt`    | `anyURI`                            | Originalquellenlink                                       | **{{< glossary EDM >}}: isShownAt**                          | {{< glossary EDM >}} Aggregation                                                               | {{< glossary JSON-LD >}}                                            | Button "Zur Quelle"         | {{< glossary OAI-PMH >}}, Europeana Portal         |
-| `edm:preview`      | {{< glossary IIIF >}} Thumbnail URI | {{< glossary IIIF >}}-compliant                           | **{{< glossary EDM >}}: preview**                            | {{< glossary EDM >}} Aggregation                                                               | {{< glossary JSON-LD >}}                                            | Thumbnail-Bild              | {{< glossary IIIF >}} Presentation API             |
-| `edm:dataProvider` | URI \+ Name (String)                | Europeana Org-ID                                          | **{{< glossary EDM >}}: dataProvider**                       | {{< glossary EDM >}}                                                                           | {{< glossary RDF >}}                                                | Link zur Institution        | Europeana Registry / LOD                           |
-| `edm:language`     | {{< glossary ISO >}} 639-1 Code     | `da`, `en`, `de`, ...                                     | **{{< glossary EDM >}}: language**                           | {{< glossary EDM >}}                                                                           | {{< glossary JSON >}}                                               | Flaggensymbol \+ Sprachname | Multilingual indexing                              |
-| `edm:country`      | {{< glossary ISO >}} 3166-1 Alpha-2 | `DK` → _Denmark_                                          | **{{< glossary EDM >}}: country**                            | {{< glossary EDM >}}                                                                           | {{< glossary RDF >}}/{{< glossary XML >}}                           | Anzeige Herkunftsland       | Europeana-Facettierung                             |
-
-: "Metadaten-Tabelle für: _Knie Völkerschau_ mit sieben Ebenen"
+Eine detaillierte Aufschlüsselung dieser sieben Ebenen mit Beispieltabelle ist in den Anhang ausgelagert (siehe @sec-metadatenstandards-sieben-ebenen).
 
 Im Praxisteil dieses Handbuchs gehen wir insbesondere auf Schemas, Inhalts- und Wertstandards ein und beziehen uns dabei vorwiegend auf die {{< glossary "Dublin Core" >}} Metadata Initiative (DCMI). Eine umfassende Übersicht weiterer verbreiteter Standards liefert etwa @sgg2023.

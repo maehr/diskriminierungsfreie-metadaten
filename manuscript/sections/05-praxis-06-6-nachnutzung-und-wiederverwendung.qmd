@@ -4,29 +4,29 @@ Die veröffentlichten Daten treten nach ihrer Bereitstellung in einen neuen Lebe
 
 ### 6.1 Interoperabilität erweitern {#sec-61-interoperabilität-erweitern}
 
-Damit Daten dauerhaft anschlussfähig bleiben, ist ihre strukturelle und semantische Interoperabilität sicherzustellen. Praktisch bedeutet dies, dass Daten nicht nur in offenen Formaten vorliegen, sondern auch durch klar beschriebene Schnittstellen zugänglich sind. Neben einfachen Exporten in standardisierten Formaten (z. B. {{< glossary CSV >}} oder {{< glossary XML >}}) können Linked-Data-Ansätze mit {{< glossary RDF >}} oder {{< glossary JSON-LD >}} den Zugang erweitern. Austauschprotokolle wie {{< glossary OAI-PMH >}} oder {{< glossary IIIF >}} erleichtern den Bezug durch Drittinstitutionen. Persistente Identifikatoren – etwa DOIs für Datensätze oder ORCID-IDs für Autor\*innen – gewährleisten Nachvollziehbarkeit. Mappings zwischen Standards (z. B. {{< glossary "Dublin Core" >}}, {{< glossary LIDO >}} oder {{< glossary EDM >}}) sollten versioniert und dokumentiert vorliegen, um die Transformation transparent zu machen.
+Damit Daten dauerhaft anschlussfähig bleiben, ist ihre strukturelle und semantische Interoperabilität sicherzustellen. Praktisch bedeutet dies, dass Daten nicht nur in offenen Formaten vorliegen, sondern auch durch klar beschriebene Schnittstellen zugänglich sind. Neben einfachen Exporten in standardisierten Formaten (zum Beispiel {{< glossary CSV >}} oder {{< glossary XML >}}) können Linked-Data-Ansätze mit {{< glossary RDF >}} oder {{< glossary JSON-LD >}} den Zugang erweitern. Austauschprotokolle wie {{< glossary OAI-PMH >}} oder {{< glossary IIIF >}} erleichtern den Bezug durch Drittinstitutionen. Persistente Identifikatoren – etwa {{< glossary DOI display="DOIs" >}} für Datensätze oder {{< glossary ORCID >}}-IDs für Autor\*innen – gewährleisten Nachvollziehbarkeit. Mappings zwischen Standards (zum Beispiel {{< glossary "Dublin Core" >}}, {{< glossary LIDO >}} oder {{< glossary EDM >}}) sollten versioniert und dokumentiert vorliegen, um die Transformation transparent zu machen.
 
 ### 6.2 Zitation und Provenienz {#sec-62-zitation-und-provenienz}
 
-Für die Nachnutzung ist ein klarer Zitierleitfaden erforderlich. Neben der Angabe von DOIs oder anderen Identifikatoren empfiehlt sich die Bereitstellung maschinenlesbarer Zitationsinformationen, etwa in einer `CITATION.cff`\-Datei. Provenienzangaben müssen nicht nur die Herkunft der Daten dokumentieren, sondern auch Unsicherheiten sichtbar machen – beispielsweise durch Zeitangaben im {{< glossary EDTF >}}-Format oder Vertrauenswerte bei automatisierten Prozessen. So bleibt nachvollziehbar, welche Transformationen ein Datensatz durchlaufen hat.
+Für die Nachnutzung ist ein klarer Zitierleitfaden erforderlich. Neben der Angabe von {{< glossary DOI display="DOIs" >}} oder anderen Identifikatoren empfiehlt sich die Bereitstellung maschinenlesbarer Zitationsinformationen, etwa in einer {{< glossary "CITATION.cff" >}}-Datei. Provenienzangaben müssen nicht nur die Herkunft der Daten dokumentieren, sondern auch Unsicherheiten sichtbar machen – beispielsweise durch Zeitangaben im {{< glossary EDTF >}}-Format oder Vertrauenswerte bei automatisierten Prozessen. So bleibt nachvollziehbar, welche Transformationen ein Datensatz durchlaufen hat.
 
 ### 6.3 Nutzungsbedingungen und Lizenzen {#sec-63-nutzungsbedingungen-und-lizenzen}
 
-Eine transparente Lizenzpolitik ist unabdingbar. Neben den gängigen Creative-Commons-Lizenzen sollten bei kulturell sensiblen Inhalten {{< glossary CARE >}}-orientierte Einschränkungen vorgesehen werden. Hier bieten sich etwa Traditional Knowledge Labels (TK-Labels) an, die kulturelle Rechte und Einschränkungen sichtbar machen. Insbesondere bei historischen oder diskriminierenden Inhalten muss reflektiert werden, welche Formen der Nachnutzung ausgeschlossen oder eingeschränkt werden sollen, ohne den wissenschaftlichen Diskurs zu behindern.
+Eine transparente Lizenzpolitik ist unabdingbar. Neben den gängigen Creative-Commons-Lizenzen sollten bei kulturell sensiblen Inhalten {{< glossary CARE >}}-orientierte Einschränkungen vorgesehen werden. Hier bieten sich etwa {{< glossary TK-Labels >}} an, die kulturelle Rechte und Einschränkungen sichtbar machen. Insbesondere bei historischen oder diskriminierenden Inhalten muss reflektiert werden, welche Formen der Nachnutzung ausgeschlossen oder eingeschränkt werden sollen, ohne den wissenschaftlichen Diskurs zu behindern.
 
 ### 6.4 Maschinenlesbarer Zugang {#sec-64-maschinenlesbarer-zugang}
 
-Die Bereitstellung von Schnittstellen (APIs) oder statischen Datenpaketen erleichtert die Weiterverwendung. Dabei sind klare Nutzungsregeln, Fair-Use-Begrenzungen und versionierte Snapshots wichtig, um Konsistenz zu gewährleisten. Nutzer\*innen müssen erkennen können, ob sie mit einer stabilen Version oder einem fortlaufend veränderlichen Datensatz arbeiten.
+Die Bereitstellung von Schnittstellen ({{< glossary API display="APIs" >}}) oder statischen Datenpaketen erleichtert die Weiterverwendung. Dabei sind klare Nutzungsregeln, Fair-Use-Begrenzungen und versionierte Snapshots wichtig, um Konsistenz zu gewährleisten. Nutzer\*innen müssen erkennen können, ob sie mit einer stabilen Version oder einem fortlaufend veränderlichen Datensatz arbeiten.
 
 ### 6.5 Feedback und Korrekturschleifen {#sec-65-feedback-und-korrekturschleifen}
 
-Nachnutzung sollte nicht als einseitiger Prozess verstanden werden. Rückmeldungen von Nutzer\*innen müssen systematisch erfasst, geprüft und dokumentiert werden. Issue-Tracker, Feedback-Formulare oder moderierte Mailinglisten können hier als Kanäle dienen. Eine dokumentierte Änderungspolitik (Changelog, Deprecation-Policy) erhöht die Transparenz. Insbesondere Communities, die von diskriminierenden Inhalten betroffen sind, sollten in die Nachbesserung und Ko-Kuration eingebunden werden.
+Nachnutzung sollte nicht als einseitiger Prozess verstanden werden. Rückmeldungen von Nutzer\*innen müssen systematisch erfasst, geprüft und dokumentiert werden. Issue-Tracker, Feedback-Formulare oder moderierte Mailinglisten können hier als Kanäle dienen. Eine dokumentierte Änderungspolitik ({{< glossary "CHANGELOG.md" display="Changelog" >}}, {{< glossary "Deprecation-Policy" >}}) erhöht die Transparenz. Insbesondere Communities, die von diskriminierenden Inhalten betroffen sind, sollten in die Nachbesserung und Ko-Kuration eingebunden werden.
 
 ::: {.callout-important title="Checkliste Nachnutzung und Wiederverwendung"}
 
-- [ ] Linked-Data-Exporte, PIDs und {{< glossary Crosswalk display="Crosswalks" >}} verfügbar
+- [ ] Linked-Data-Exporte, {{< glossary PID display="PIDs" >}} und {{< glossary Crosswalk display="Crosswalks" >}} verfügbar
 - [ ] Zitations- und Lizenzrichtlinien veröffentlicht
-- [ ] API oder Dumps versioniert zugänglich
+- [ ] {{< glossary API >}} oder {{< glossary Dump display="Dumps" >}} versioniert zugänglich
 - [ ] Feedback-Prozess etabliert, Nutzung dokumentiert
 
 :::

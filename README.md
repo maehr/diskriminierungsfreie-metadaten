@@ -1,6 +1,6 @@
 # Diskriminierungssensible Metadatenpraxis
 
-Source repository for the handbook "Diskriminierungssensible Metadatenpraxis. Ein Handbuch zur ethischen Auszeichnung historischer Quellen und Forschungsdaten".
+Source repository for the handbook "Diskriminierungssensible Metadatenpraxis. Ein Handbuch zur ethischen Beschreibung historischer Quellen und Forschungsdaten".
 
 ## Repository Structure
 

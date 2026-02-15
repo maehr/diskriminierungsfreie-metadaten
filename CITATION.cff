@@ -1,13 +1,14 @@
 cff-version: 1.2.0
 title: >-
-  Handbuch zur Erstellung diskriminierungsfreier Metadaten
-  für historische Quellen und Forschungsdaten
+  Diskriminierungssensible Metadatenpraxis: Ein Handbuch zur ethischen
+  Beschreibung historischer Quellen und Forschungsdaten
 message: 'If you use this guide, please cite it as below.'
 type: software
 authors:
   - family-names: Mähr
     given-names: Moritz
-    affiliation: University of Basel
+    email: moritz.maehr@faculty.unibe.ch
+    affiliation: University of Bern; ETH Zurich
     orcid: 'https://orcid.org/0000-0002-1367-1618'
   - family-names: Schnegg
     given-names: Noëlle
@@ -15,20 +16,20 @@ authors:
     orcid: 'https://orcid.org/0009-0008-5207-6652'
 identifiers:
   - type: doi
-    value: '10.5281/zenodo.17073511'
+    value: '10.5281/zenodo.11124719'
 repository-code: 'https://github.com/maehr/diskriminierungsfreie-metadaten'
-url: 'https://maehr.github.io/diskriminierungsfreie-metadaten/'
+url: 'https://moritz-maehr.quarto.pub/diskriminierungssensible-metadatenpraxis'
 abstract: >-
-  Dieses Handbuch ist ein Leitfaden zur Erstellung von diskriminierungsfreien Metadaten für historische Quellen und Forschungsdaten, der im Rahmen des Forschungsprojekts Stadt.Geschichte.Basel entwickelt wurde. Es richtet sich an professionelle Historiker\*innen, Archivar\*innen, Bibliothekar\*innen und alle, die sich mit Open Research Data in den Geschichtswissenschaften beschäftigen. Die Autor\*innen Moritz Mähr und Noëlle Schnegg führen durch die praktischen Aspekte der Erstellung von Metadaten, basierend auf den FAIR-Prinzipien, um Forschungsdaten auffindbar, zugänglich, interoperabel und nachnutzbar zu machen. Durch praktische Anleitungen und illustrierte Fallbeispiele zeigt das Handbuch, wie maschinenlesbare Metadaten Forschung und Lehre bereichern und die Interpretation historischer Quellen beeinflussen können. Als öffentlich zugängliches "Living Document" ist es auf eine kontinuierliche Weiterentwicklung durch die Community ausgelegt und verpflichtet sich zu einer inklusiven und diskriminierungsfreien Darstellung historischer Inhalte. Das Handbuch ist eine grundlegende Ressource für alle, die sich mit moderner digitaler Geschichtswissenschaft und Open Research Data beschäftigen wollen.
+  Dieses Handbuch bietet eine praxisorientierte Anleitung für die diskriminierungssensible Beschreibung von Metadaten zu historischen Quellen und Forschungsdaten. Es richtet sich an Historiker\*innen, Archivar\*innen, Bibliothekar\*innen und Daten-Kurator\*innen und verbindet theoretische Reflexionen zu Normativität, Bias und Oppression mit konkreten Handlungsempfehlungen für den gesamten Forschungsdatenlebenszyklus.
 keywords:
-  - Diskriminierungsfreie Metadaten
+  - Diskriminierungssensible Metadaten
   - Historische Quellen und Forschungsdaten
   - FAIR-Prinzipien
-  - Stadt.Geschichte.Basel
+  - CARE-Prinzipien
   - Open Research Data
   - Code of Conduct
   - Dublin Core
-  - Schlagwortindex GenderOpen
+  - Digital Humanities
 license: CC-BY-SA-4.0
-version: '1.0.1'
-date-released: '2025-09-07'
+version: '2.0.0-alpha.0'
+date-released: '2026-02-10'

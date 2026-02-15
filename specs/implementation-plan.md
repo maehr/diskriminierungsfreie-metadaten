@@ -1,503 +1,72 @@
-# Implementationsplan: Diskriminierungssensible Metadatenpraxis
-
-**Konsolidiert aus:** `reviews/external/review-meeting-notes.md`, `reviews/external/review-summary.md`, `notes.md`  
-**Datum:** 2026-02-02  
-**Ziel:** Vollständige Überarbeitung für Publikation (Zenodo + GitHub Pages)
-
----
-
-## Phase 0: Wissenschaftliche Debatten im Theorieteil (Priorität: HOCH)
-
-Der Theorieteil geht derzeit zu wenig auf den wissenschaftlichen Diskurs und aktuelle Debatten ein. Drei zentrale Debatten sollen integriert werden, wobei das Handbuch jeweils eine eigenständige Position vertritt (mit Platzhaltern, falls die Positionierung noch unklar ist).
-
-### 0.1 Literaturrecherche und -beschaffung
-
-#### Fehlende Schlüsselliteratur in Zotero ergänzen
-
-**Priorität HOCH (zwingend erforderlich):**
-
-| Nr. | Quelle                                                                                                                                                                           | Debatte              | Fundstelle                                        |
-| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | ------------------------------------------------- |
-| 1   | Crenshaw, Kimberlé (1989): "Demarginalizing the Intersection of Race and Sex: A Black Feminist Critique of Antidiscrimination Doctrine, Feminist Theory and Antiracist Politics" | Intersektionalität   | University of Chicago Legal Forum 1989(1), Art. 8 |
-| 2   | Collins, Patricia Hill (2000/2022): "Black Feminist Thought: Knowledge, Consciousness, and the Politics of Empowerment"                                                          | Intersektionalität   | ISBN 978-0-415-92484-2                            |
-| 3   | Olson, Hope A. (2002): "The Power to Name: Locating the Limits of Subject Representation in Libraries"                                                                           | Historische Begriffe | Kluwer Academic Publishers                        |
-| 4   | Drabinski, Emily (2013): "Queering the Catalog: Queer Theory and the Politics of Correction"                                                                                     | Historische Begriffe | The Library Quarterly 83(2), 94-111               |
-
-**Priorität MITTEL (empfohlen):**
-
-| Nr. | Quelle                                                                                                  | Debatte              | Fundstelle                   |
-| --- | ------------------------------------------------------------------------------------------------------- | -------------------- | ---------------------------- |
-| 5   | Berman, Sanford (1971): "Prejudices and Antipathies: A Tract on the LC Subject Heads Concerning People" | Historische Begriffe | Scarecrow Press              |
-| 6   | Cifor, Marika & Gilliland, Anne (2016): "Affect and the archive, archives and their affects"            | Historische Begriffe | Archival Science 16(1), 1-28 |
-| 7   | Library of Congress (2016): Policy Statement zu "Illegal aliens" → "Noncitizens"                        | Historische Begriffe | LC Policy                    |
-| 8   | Homosaurus Editorial Board: Homosaurus Vocabulary                                                       | Historische Begriffe | https://homosaurus.org       |
-
-#### Vorhandene Zotero-Einträge in references.yaml überführen
-
-Folgende Einträge aus Zotero sind relevant und müssen in `manuscript/references.yaml` aufgenommen werden:
-
-**Debatte 1 (Bias vs. Diskriminierung):**
-
-- [ ] `buolamwini_gender_2018` - Gender Shades: Intersectional Accuracy Disparities
-- [ ] `noble_algorithms_2018` - Algorithms of Oppression
-- [ ] `drage_does_2022` - Does AI Debias Recruitment?
-- [ ] `kasirzadeh_counterfactuals` - The Use and Misuse of Counterfactuals
-- [ ] `tsamados_ethics` - The ethics of algorithms
-- [ ] `caliskan_semantics` - Semantics derived automatically from language corpora
-- [ ] `gebru_datasheets` - Datasheets for Datasets
-- [ ] `mitchell_stable_bias` - Stable Bias
-
-**Debatte 2 (Intersektionalität):**
-
-- [ ] `noble_future_2016` - A Future for Intersectional Black Feminist Technology Studies
-- [ ] `noble_intersectional_internet` - The Intersectional Internet
-- [ ] `wernimont_bodies_2018` - Bodies of Information
-- [ ] `bailey_misogynoir` - Misogynoir Transformed
-
-**Debatte 3 (Historische Begriffe):**
-
-- [ ] `caswell_survivor` - Toward a survivor-centered approach
-- [ ] `caswell_dusting_2019` - Dusting for Fingerprints
-- [ ] `caswell_ghaddar_decolonial` - "To go beyond": decolonial archival praxis
-- [ ] `sparber_whats_2016` - (Queer)feministische Kritik im Schlagwortkatalog
-- [ ] `gruber_knuepfen_2020` - Vom Knüpfen feministischer Begriffsnetze
-- [ ] `farnel_unsettling_2018` - Unsettling our practices: Decolonizing description
-- [ ] `stoler_archival_grain` - Along the Archival Grain
-- [ ] `risam_decolonizing` - Decolonizing The Digital Humanities
-- [ ] `brown_transmediation` - Transmediation as Radical Pedagogy
-- [ ] `rawson_auditing` - Auditing the Digital Transgender Archive
-- [ ] `flinn_community` - Community Histories, Community Archives
-
-### 0.2 Debatte 1: Bias vs. Diskriminierung
-
-**Datei:** `04-theorie-02-verzerrungen-und-fehler-bias.qmd`  
-**Position:** Neue Einleitung/Erweiterung des bestehenden Einleitungsabsatzes  
-**Umfang:** 800-1000 Wörter
-
-**Gliederung:**
-
-```markdown
-### Verhältnis von Bias und Diskriminierung {#sec-verhaeltnis-bias-diskriminierung}
-
-#### Das Problem der Begriffsverwirrung
-
-[Einleitung: Warum werden Bias und Diskriminierung oft verwechselt?]
-
-#### Position A: Bias als technischer Fehler
-
-- Fairness-ML-Forschung (Mehrabi et al. 2021)
-- Messbarkeit, Korrigierbarkeit
-- Verschiedene Fairness-Definitionen (mathematisch unvereinbar!)
-  - Demographic Parity
-  - Equalized Odds
-  - Individual Fairness
-- Counterfactual Fairness (Kasirzadeh & Smart)
-  [Quellenangaben: @mehrabi2021, @kasirzadeh_counterfactuals, @tsamados_ethics]
-
-#### Position B: Bias als Symptom struktureller Diskriminierung
-
-- Critical Data Studies (D'Ignazio & Klein)
-- Bias ist nicht "der Fehler", sondern Symptom
-- Technische Fixes = "Harm Reduction", nicht Lösung
-- Algorithmen verstärken bestehende Ungleichheiten (Noble)
-  [Quellenangaben: @dignazio2020, @buolamwini_gender_2018, @noble_algorithms_2018, @drage_does_2022]
-
-#### Positionierung des Handbuchs
-
-[PLATZHALTER falls Positionierung noch offen]
-
-Vorschlag: "Dieses Handbuch versteht Bias als operationalisierte,
-analysierbare Form von Diskriminierung. Bias-Kategorien bieten
-technische Handgriffe, die strukturelle Kritik nicht ersetzen,
-sondern ergänzen. Die Korrektur einzelner Biases ist notwendig,
-aber nicht hinreichend für eine diskriminierungssensible Praxis."
-```
-
-**Aufgaben:**
-
-- [ ] Einleitungsabsatz in `04-theorie-02` erweitern
-- [ ] Position A (technisch) mit Quellen ausarbeiten
-- [ ] Position B (kritisch) mit Quellen ausarbeiten
-- [ ] Eigenständige Position des Handbuchs formulieren (oder Platzhalter)
-- [ ] Querverweise zur bestehenden Bias-Taxonomie
-
-### 0.3 Debatte 2: Intersektionalität
-
-**Datei:** `04-theorie-01-diskriminierung-in-und-durch-daten.qmd`  
-**Position:** Neuer Unterabschnitt nach "Statistische Diskriminierung", vor "Spezifische Diskriminierungen"  
-**Umfang:** 600-800 Wörter
-
-**Gliederung:**
-
-```markdown
-### Intersektionalität: Verflechtung von Diskriminierungsformen {#sec-intersektionalitaet}
-
-#### Begriff und Herkunft
-
-- Crenshaw 1989: Schwarze Frauen fielen durch das Raster
-- Collins' "Matrix of Domination": Rasse, Klasse, Geschlecht als verwobene Systeme
-- Noble: Intersektionale Ansätze in der Technologiekritik
-  [Quellenangaben: @crenshaw1989, @collins2000, @noble_future_2016, @wernimont_bodies_2018]
-
-**Hinweis:** Crenshaw 1989 und Collins 2000 müssen noch in Zotero ergänzt werden!
-
-#### Relevanz für Metadatenpraxis
-
-- Diskriminierungen wirken nicht additiv, sondern multiplikativ
-- Single-Axis-Analyse erfasst nicht die Realität
-
-**Beispiel:**
-Historische Volkszählungsdaten erfassen "Geschlecht" und "Ethnie"
-als separate Variablen. Eine intersektionale Analyse zeigt jedoch,
-dass Schwarze Frauen im 19. Jahrhundert weder als "typische Frauen"
-(bürgerliches Frauenbild) noch als "typische Schwarze"
-(männlich konnotierter Widerstand) sichtbar werden.
-
-#### Praktische Implikationen
-
-- Mehrfachkategorisierung ermöglichen (nicht: entweder/oder)
-- Analyse-Tools für Kreuzungen entwickeln
-- Vorsicht: Granularität vs. Datenschutz/Re-Identifikation
-
-#### Positionierung des Handbuchs
-
-[PLATZHALTER falls Positionierung noch offen]
-
-Vorschlag: "Dieses Handbuch empfiehlt, Diskriminierungsformen nicht
-isoliert zu betrachten. Jede Analyse sollte prüfen, ob bestimmte
-Gruppen an der Kreuzung mehrerer Merkmale besonders betroffen sind."
-```
-
-**Aufgaben:**
-
-- [ ] Neuen Unterabschnitt in `04-theorie-01` einfügen
-- [ ] Crenshaw und Collins korrekt zitieren
-- [ ] Konkretes Beispiel aus Metadatenpraxis entwickeln
-- [ ] Eigenständige Position formulieren (oder Platzhalter)
-- [ ] Querverweise zu bestehenden Diskriminierungsformen
-
-### 0.4 Debatte 3: Historische Treue vs. Gegenwartssensibilität
-
-**Datei:** `04-theorie-01-diskriminierung-in-und-durch-daten.qmd`  
-**Position:** Neuer Unterabschnitt am Ende, als konzeptionelle Brücke zur Praxis  
-**Umfang:** 800-1000 Wörter
-
-**Gliederung:**
-
-```markdown
-### Historische Begriffe: Bewahren oder Korrigieren? {#sec-historische-begriffe}
-
-#### Das Dilemma
-
-- Historische Quellen enthalten diskriminierende Begriffe
-- Zwei scheinbar unvereinbare Ansprüche:
-  1. Quellentreue und historischer Kontext
-  2. Schutz vor Verletzung und Perpetuierung
-
-#### Position A: Archivische Provenienz (Bewahrungsprinzip)
-
-- Jenkinson-Tradition: Archivar*innen als neutrale Hüter*innen
-- Argument: Änderung = Geschichtsfälschung
-- Historischer Kontext geht verloren
-- Forschende brauchen Originalbegriffe für Quellensuche
-
-#### Position B: Reparative Beschreibung
-
-- Critical Archival Studies: Archive sind nie neutral
-- Argument: Weitergabe von Verletzungen ohne Korrektur ist aktive Entscheidung
-- Metadaten sind nicht die Quelle, sondern Zugangsschicht
-- Feminist Standpoint Appraisal (Caswell)
-- Dekoloniale Archivpraxis (Caswell & Ghaddar, Risam)
-  [Quellenangaben: @caswell_dusting_2019, @caswell_ghaddar_decolonial, @A4BLiP2020, @farnel_unsettling_2018, @stoler_archival_grain, @risam_decolonizing]
-
-#### Kompromissmodelle in der Praxis
-
-1. **Dual-Cataloging**: Historische + aktuelle Begriffe parallel führen
-   - Beispiel: Library of Congress "Illegal aliens" → "Noncitizens" (2016)
-2. **Kontextualisierung**: Problematische Begriffe markieren + erklären
-   - Beispiel: DE-BIAS Projekt (Europeana)
-3. **Community-Involvement**: Betroffene Communities entscheiden
-   - Beispiel: Traditional Knowledge Labels, Homosaurus
-   - Beispiel: Digital Transgender Archive (Rawson et al.)
-4. **Versionierte Beschreibung**: Alle Änderungen nachvollziehbar dokumentieren
-5. **Community Archives**: Selbstbestimmte Dokumentation (Flinn)
-
-[Quellenangaben: @sparber_whats_2016, @gruber_knuepfen_2020, @rottmann2023, @rawson_auditing, @brown_transmediation, @flinn_community]
-
-**Hinweis:** Drabinski 2013 und Olson 2002 für vertiefte LCSH-Kritik empfohlen, aber nicht zwingend.
-
-#### Positionierung des Handbuchs
-
-[PLATZHALTER falls Positionierung noch offen]
-
-Vorschlag: "Dieses Handbuch empfiehlt ein kontextsensitives Vorgehen:
-
-- Für **Metadaten** (Beschreibungsebene): Aktuelle, respektvolle Begriffe
-  mit Verweis auf historische Varianten
-- Für **Transkriptionen/Editionen**: Originalwortlaut mit Content Notes
-- Für **Normdaten**: Versionierte Änderungen mit dokumentierter Provenienz
-- Grundsatz: Betroffene Communities einbeziehen, wo möglich"
-```
-
-**Aufgaben:**
-
-- [ ] Neuen Unterabschnitt in `04-theorie-01` einfügen
-- [ ] Position A (Bewahrung) fair darstellen
-- [ ] Position B (Reparativ) mit Quellen ausarbeiten
-- [ ] Kompromissmodelle mit konkreten Beispielen
-- [ ] Eigenständige Position formulieren (oder Platzhalter)
-- [ ] Querverweise zum Praxisteil
-
-### 0.5 Zeitschätzung Phase 0
-
-| Nr. | Aufgabe                                                                                        | Geschätzte Zeit |
-| --- | ---------------------------------------------------------------------------------------------- | --------------- |
-| 1   | Fehlende Literatur in Zotero ergänzen (2-4 Einträge: Crenshaw, Collins, ggf. Olson, Drabinski) | 20 min          |
-| 2   | Zotero-Einträge in references.yaml exportieren (~23 Einträge)                                  | 30 min          |
-| 3   | Debatte 1 (Bias vs. Diskriminierung) schreiben                                                 | 45 min          |
-| 4   | Debatte 2 (Intersektionalität) schreiben                                                       | 30 min          |
-| 5   | Debatte 3 (Historische Begriffe) schreiben                                                     | 45 min          |
-| 6   | Querverweise und Pandoc-Crossref                                                               | 20 min          |
-| 7   | npm run validate                                                                               | 5 min           |
-
-**Gesamtgeschätzte Zeit Phase 0: ca. 3.5 Stunden**
-
-**Hinweis:** Die Zotero-Bibliothek enthält bereits reichhaltige Literatur für alle drei Debatten. Nur die Gründungstexte für Intersektionalität (Crenshaw, Collins) fehlen zwingend.
-
----
-
-## Phase 1: Strukturelle Änderungen (Priorität: HOCH)
-
-### 1.1 Reihenfolge umstellen
-
-- [ ] **Praxisteil vor Theorieteil**: Umstrukturierung so, dass praktische Anwendung zuerst kommt, dann theoretische Hintergründe
-- [ ] Entsprechende Umbenennung der Sektionen (ggf. neue Nummerierung in `specs/outline.md`)
-
-### 1.2 Danksagung verschieben
-
-- [ ] `03-danksagung.qmd` verschieben: nach Praxis/Theorie, vor Literatur
-- [ ] Pronomen bei "Levyn" entfernen
-
-### 1.3 Abschnitte integrieren/verschieben
-
-- [ ] **"Unterdrückung in Daten (Oppression in Data)"** (`04-theorie-03-unterdrueckung-in-daten-oppression-in-data.qmd`): Als abschliessenden Kommentar oder in Fussnoten integrieren, nicht als separaten Abschnitt belassen
-- [ ] **"Spezifische Diskriminierungen in historischen Quellen und Forschungsdaten"**: Direkt in die jeweiligen Diskriminierungsformen-Unterkapitel integrieren, Abschnitt entfernen
-- [ ] **Detaillierte Metadatenebenen (7 Ebenen)**: In den Anhang verschieben
-
----
-
-## Phase 2: Inhaltliche Überarbeitungen (Priorität: HOCH)
-
-### 2.1 Begriffliche Klärungen
-
-- [ ] **Bias vs. Diskriminierung**: Verhältnis klären → siehe **Phase 0.2** (Debatte 1)
-- [ ] **Content Note vs. Content Warning**: Konsequent "Content Note" (oder "Hinweis") verwenden, nicht "Warnung"
-- [ ] **"diskriminierende Fremdzuschreibungen"**: Erklärung hinzufügen
-- [ ] **"technischer Neutralität"**: Kurz erklären, was damit gemeint ist
-- [ ] **Historische Verzerrung (Historical Bias)**: Besser erklären, wissenschaftlich belegen und von Diskriminierung abgrenzen → siehe **Phase 0.2** (Debatte 1)
-
-### 2.2 Erweiterungen der Diskriminierungsformen
-
-- [ ] **Kernelemente** für alle Diskriminierungsformen ergänzen (analog "Statistische Diskriminierung")
-- [ ] **Intersektionalität**: Hinweis ergänzen → siehe **Phase 0.3** (Debatte 2)
-- [ ] Mehr wissenschaftliche Literatur zu Diskriminierungsdefinition und -formen → siehe **Phase 0.1** (Literatur)
-
-### 2.3 Zugangsbeschränkungen in Archiven
-
-- [ ] Zwei Aspekte trennen:
-  1. Zugang/Nutzung von Forschenden
-  2. Eingang/Ausschluss von Quellen
-
-### 2.4 Argumentativer Stil
-
-- [ ] Theoretische Abschnitte argumentativer gestalten (weniger deskriptiv)
-- [ ] Deutlicher herausarbeiten, warum das Thema für die Geschichtswissenschaft zentral ist
-- [ ] Mehr Orientierung und Lenkung für Lesende
-- [ ] Komplexe Passagen vereinfachen
-
----
-
-## Phase 3: Textuelle Korrekturen (Priorität: MITTEL)
-
-### 3.1 Untertitel und globale Änderungen
-
-- [ ] Untertitel ändern: "Ein Handbuch zur ethischen **Beschreibung** historischer Quellen und Forschungsdaten" (statt "Auszeichnung")
-- [ ] Alle Vorkommen im Text anpassen
-
-### 3.2 Zielgruppe erweitern
-
-- [ ] "Es richtet sich an Historiker*innen, Archivar*innen, Bibliothekar*innen und Daten-Kurator*innen" → Alle wissenschaftlichen GLAM-Mitarbeitenden mit historischem Hintergrund adressieren
-
-### 3.3 Spezifische Textkorrekturen
-
-| Stelle          | Alt                                                        | Neu                                                                           |
-| --------------- | ---------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| Einleitung      | "Ein Blick in die deutschsprachige Archive"                | "Ein Blick in die deutschsprachig**en** Archive"                              |
-| Einleitung      | "Veränderungen von Normen"                                 | "Veränderungen von **gesellschaftlichen** Normen"                             |
-| Einleitung      | "entlang des gesamten Forschungsdatenlebenszyklus"         | "entlang **der Phasen** des Forschungsdatenlebenszyklus"                      |
-| Einleitung      | "Persistente Identifikatoren"                              | "persistente Identifikatoren **(PIDs)**"                                      |
-| FAIR-Abschnitt  | (implizit)                                                 | FAIR explizit benennen bei Auffindbar, Zugänglich, Interoperabel, Nachnutzbar |
-| LOUD-Abschnitt  | "Nutzbarkeit in Arbeitsabläufen der Geisteswissenschaften" | "Nutzbarkeit in **wissenschaftlichen** Arbeitsabläufen"                       |
-| Diskriminierung | "Digitisierungsauswahl nach Zitationsmetriken"             | "**Digitalisierungspolitik** nach Zitationsmetriken"                          |
-| Standards       | "CIDOC-CRM"                                                | "CIDOC CRM" (ohne Bindestrich)                                                |
-
-### 3.4 Erklärungen hinzufügen
-
-- [ ] **Contributor Covenant**: Erklären, was es ist
-- [ ] **dc:description**: Früher erklären, dass es um Dublin-Core-Werte handelt und woher diese Nomenklatur kommt
-- [ ] **Europeana**: Kurz erklären, was Europeana ist (beim Europeana-Datensatz-Beispiel)
-
-### 3.5 Redundanzen entfernen
-
-- [ ] Überarbeiten: "Das Ziel dieses Handbuchs ist es, anhand konkreter Beispiele, Methoden und Strategien Hilfestellungen zu bieten, die es der Leser\*in erlauben sollen, Diskriminierung in der Metadatenpraxis zu erkennen und Entscheidungen in Bezug auf den eigenen Forschungskontext und auf die zur Verfügung stehenden Ressourcen fällen zu können."
-- [ ] Falls keine Handbuch-eigene Ontologie-Map vorhanden: Verweise auf Ontologien entfernen/klären
-
----
-
-## Phase 4: Sprachregeln (Priorität: MITTEL)
-
-- [ ] Abkürzungen wie "z.B." oder "ggf." immer ausschreiben
-- [ ] Eindeutige Begriffe konsequent verwenden:
-  - Hist. Quellen und FD
-  - Objekt (in Abgrenzung zu Quelle oder Material)
-  - Quelle
-  - Material
-  - Forschungsdaten
-
----
-
-## Phase 5: Technische Änderungen (Priorität: MITTEL)
-
-### 5.1 Glossar
-
-- [ ] Glossar prüfen und vereinheitlichen (funktioniert manchmal nicht)
-- [ ] Neue Einträge hinzufügen:
-  - DOI
-  - ORCID
-  - OCAP
-  - Traditional Knowledge Labels (TK-Labels)
-
-### 5.2 Querverweise (Pandoc Crossref)
-
-- [ ] QUERVERWEISE mit pandoc crossref implementieren
-- [ ] Abbildung 1 (Datenlebenszyklus): Sektionen im Text verlinken
-- [ ] Abbildung 2 (Entscheidungshilfe): Sektionen im Text verlinken
-- [ ] Abbildung 3 (Hilfestellungen): Pandoc citekeys für Referenzen hinzufügen
-
-### 5.3 Checkliste
-
-- [ ] Checkliste als eigenständiges PDF/DOCX mit Download-Link am Anfang des Handbuchs
-- [ ] Entscheidungsbaum zu Beginn der Handbuchversion belassen
-- [ ] Falls möglich: Checkbox-Links zwischen Sektionen und Spiegel-Checkliste am Ende
-
-### 5.4 Darstellung
-
-- [ ] Längere Beispiele zu Diskriminierungsformen als aufklappbare Elemente gestalten (collapsible)
-- [ ] Engere Anbindung an den Theorieteil durch Verlinkungen und Querverweise
-
----
-
-## Phase 6: Formalia vor Publikation (Priorität: NIEDRIG)
-
-- [ ] Workshop Dezember (ISGV) streichen
-- [ ] Review-Phase (Hypothes.is) dokumentieren
-- [ ] Zitation aktualisieren:
-  > Mähr, Moritz, und Noëlle Schnegg. 2026. Diskriminierungssensible Metadatenpraxis: Ein Handbuch zur ethischen Beschreibung historischer Quellen und Forschungsdaten. Zenodo. https://doi.org/10.5281/zenodo.11124719
-- [ ] Online-Version-Link: https://maehr.github.io/diskriminierungssensible-metadatenpraxis/
-
----
-
-## Validierung
-
-Nach jeder Änderungsbatch:
+# Implementation Plan v3
+
+Canonical execution plan for handbook completion and release.
+
+Last updated: 2026-02-10
+Supersedes: `specs/implementation-plan-2.md`
+Sources consolidated: `reviews/external/review-meeting-notes.md`, `reviews/missing-references.md`, section specs in `specs/sections/*.md`
+
+## Scope
+
+- Keep one canonical implementation tracker in this file.
+- Align specs, reviews, and release checklist.
+- Close remaining citation, structure, and consistency gaps before publication.
+
+## Action Register
+
+| ID  | Priority | Source                          | Target files                                                                                                                                                            | Action                                                                                       | Status | Done criteria                                                     |
+| --- | -------- | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | ------ | ----------------------------------------------------------------- |
+| A1  | High     | Planning audit                  | `specs/implementation-plan.md`                                                                                                                                          | Consolidate all active work into one plan with explicit status and closure criteria.         | Done   | This file is canonical; no parallel implementation plan exists.   |
+| A2  | High     | External review + section specs | `specs/sections/00-frontmatter.md`, `specs/sections/03-danksagung.md`                                                                                                   | Resolve conflicting guidance (content-note wording; acknowledgement event retention policy). | Done   | Section specs and plan no longer prescribe contradictory edits.   |
+| A3  | High     | Citation backlog                | `reviews/missing-references.md`, `manuscript/references.yaml`                                                                                                           | Rebaseline missing citekeys and split must-have vs optional references.                      | Done   | Missing-reference tracker is current and prioritized.             |
+| A4  | High     | Internal reviews                | `reviews/spec-review.md`, `reviews/argument-review.md`, `reviews/citation-audit.md`, `reviews/structure-review.md`, `reviews/style-pass.md`                             | Replace placeholder templates with dated snapshot reviews and concrete findings.             | Done   | No core review file remains a blank pending template.             |
+| A5  | Medium   | External review + section specs | `specs/sections/11-1-planung-und-konzeption.md`, `specs/sections/13-3-datenverarbeitung-und-anreicherung.md`, `specs/sections/05-diskriminierung-in-und-durch-daten.md` | Reconcile stale TODO wording with current manuscript state (crossrefs/markers).              | Done   | TODO notes reflect only still-open work.                          |
+| A6  | Medium   | Orphaned planning artifacts     | `reviews/external/review-summary.md`                                                                                                                                    | Remove duplicated external review summary after migration to canonical plan.                 | Done   | Duplicate summary removed; meeting notes remain canonical source. |
+| A7  | Medium   | Acceptance criteria drift       | `specs/paper.md`, `specs/submission.md`                                                                                                                                 | Keep one release gate definition and cross-link from supporting specs.                       | Done   | Release gate is unambiguous across specs.                         |
+| A8  | Medium   | Release execution               | `specs/submission.md` and render outputs                                                                                                                                | Complete release checklist (validate/render/publish/Zenodo).                                 | Open   | All submission checklist items complete.                          |
+
+## Action Register (Series B: Content & Refinement)
+
+| ID  | Priority | Source                      | Target files                                                                                                                                     | Action                                                                                                                               | Status | Done criteria                                                                                           |
+| --- | -------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ------ | ------------------------------------------------------------------------------------------------------- |
+| B1  | High     | External review + ref audit | `manuscript/sections/04-theorie-01-diskriminierung-in-und-durch-daten.qmd`, `manuscript/sections/04-theorie-02-verzerrungen-und-fehler-bias.qmd` | Implement scientific debate sections (Bias vs. Diskriminierung; Intersektionalitaet; historische Begriffe) with must-have citations. | Open   | Sections contain argumentatively complete text with traceable citations and no unresolved placeholders. |
+| B2  | High     | Structural review           | `manuscript/index.qmd`, `specs/outline.md`                                                                                                       | Ensure manuscript order follows practice-first sequence before theory.                                                               | Done   | Index and outline are aligned on practice-before-theory ordering.                                       |
+| B3  | Medium   | Editorial review            | `manuscript/index.qmd`, frontmatter files                                                                                                        | Apply wording fixes (subtitle, target audience framing, phrasing cleanups).                                                          | Done   | Required wording updates integrated and consistent across frontmatter/index.                            |
+| B4  | Medium   | Technical debt review       | glossary and cross-reference touchpoints in `manuscript/sections/*.qmd`                                                                          | Resolve glossary and cross-reference debt (broken/unclear refs, missing glossary consistency).                                       | Done   | `npm run validate` passes with no glossary/cross-reference errors.                                      |
+| B5  | Medium   | Literature coverage review  | `reviews/missing-references.md`, `manuscript/references.yaml`, theory sections                                                                   | Expand German- and Europe-focused literature coverage and align citations in theory/practice chapters.                               | Open   | Coverage gaps are documented and key German/European references are integrated in relevant sections.    |
+
+## Current Priorities (Execution Order)
+
+1. Execute B1 (scientific debates in theory chapters).
+2. Execute B5 (German/European literature coverage expansion).
+3. Execute release gate checklist (A8).
+
+## Decision Log
+
+- 2026-02-10: `specs/implementation-plan-2.md` retired; this file is now the only implementation plan.
+- 2026-02-10: External review meeting notes remain source-of-truth; derived duplicate summary removed.
+- 2026-02-10: Citation tracker split into must-have vs optional tiers in `reviews/missing-references.md`.
+- 2026-02-10: `specs/submission.md` designated as authoritative release gate; `specs/paper.md` now cross-links it.
+- 2026-02-10: Stale section-spec TODO markers reconciled in section specs 05/11/13.
+- 2026-02-10: Series B action register added; B2 marked done because manuscript and outline already follow practice-before-theory order.
+- 2026-02-10: B3 completed (subtitle and target-audience wording aligned in index/frontmatter).
+- 2026-02-10: B5 added and kept open to address German and European literature coverage gaps.
+- 2026-02-10: B4 completed after glossary shortcode normalization and cross-reference consistency check.
+- 2026-02-10: B5 first pass completed (German/European references integrated in theory and practice introductions); B5 remains open for further source expansion.
+
+## Validation Rule
+
+After every change batch, run:
 
 ```bash
 npm run validate
 ```
 
-Finale Akzeptanzkriterien:
+## Release Gate
 
 - [ ] `npm run validate` passes
-- [ ] Alle Zitationen in `manuscript/sections/*.qmd` existieren in `manuscript/references.yaml`
-- [ ] Version + Datum reviewed
-- [ ] Render handbook (Quarto)
-- [ ] Publish web build (GitHub Pages)
-- [ ] Create Zenodo release
-
----
-
-## Empfohlene Reihenfolge für OpenCode-Session
-
-1. **Phase 0** (Wissenschaftliche Debatten) - Zuerst, da inhaltlich grundlegend
-2. **Phase 1** (Strukturelle Änderungen) - Dateistruktur anpassen
-3. **Phase 2** (Inhaltliche Überarbeitungen) - Kernarbeit
-4. **Phase 3** (Textuelle Korrekturen) - Search & Replace + manuelle Edits
-5. **Phase 4** (Sprachregeln) - Kann parallel zu Phase 3
-6. **Phase 5** (Technische Änderungen) - Quarto/Pandoc-spezifisch
-7. **Phase 6** (Formalia) - Abschluss vor Publikation
-
----
-
-## Anhang: Zotero Semantic Search Ergebnisse (2026-02-02)
-
-### Für Debatte 1 (Bias vs. Diskriminierung) - in Zotero vorhanden:
-
-| Autor                   | Titel                                                 | Citation Key                     |
-| ----------------------- | ----------------------------------------------------- | -------------------------------- |
-| Mehrabi et al. 2021     | A Survey on Bias and Fairness in Machine Learning     | `mehrabi2021` (bereits in refs)  |
-| D'Ignazio & Klein 2020  | Data Feminism                                         | `dignazio2020` (bereits in refs) |
-| Buolamwini & Gebru 2018 | Gender Shades: Intersectional Accuracy Disparities    | `buolamwini_gender_2018`         |
-| Noble 2018              | Algorithms of Oppression                              | `noble_algorithms_2018`          |
-| Drage & Mackereth 2022  | Does AI Debias Recruitment?                           | `drage_does_2022`                |
-| Kasirzadeh & Smart      | The Use and Misuse of Counterfactuals in Ethical ML   | `kasirzadeh_counterfactuals`     |
-| Tsamados et al.         | The ethics of algorithms: key problems and solutions  | `tsamados_ethics`                |
-| Caliskan et al.         | Semantics derived automatically from language corpora | `caliskan_semantics`             |
-| Gebru et al.            | Datasheets for Datasets                               | `gebru_datasheets`               |
-| Mitchell et al.         | Stable Bias: Analyzing Societal Representations       | `mitchell_stable_bias`           |
-
-### Für Debatte 2 (Intersektionalität) - in Zotero vorhanden:
-
-| Autor                   | Titel                                                         | Citation Key                           |
-| ----------------------- | ------------------------------------------------------------- | -------------------------------------- |
-| Buolamwini & Gebru 2018 | Gender Shades: Intersectional Accuracy Disparities            | `buolamwini_gender_2018`               |
-| Noble 2016              | A Future for Intersectional Black Feminist Technology Studies | `noble_future_2016`                    |
-| Noble & Tynes           | The Intersectional Internet                                   | `noble_intersectional_internet`        |
-| Wernimont & Losh        | Bodies of Information: Intersectional Feminism and DH         | `wernimont_bodies_2018`                |
-| Bailey 2021             | Misogynoir Transformed: Black Women's Digital Resistance      | `bailey_misogynoir`                    |
-| Young 1990              | Justice and the Politics of Difference                        | `young_justice_1990` (bereits in refs) |
-
-### Für Debatte 3 (Historische Begriffe) - in Zotero vorhanden:
-
-| Autor                    | Titel                                                        | Citation Key                     |
-| ------------------------ | ------------------------------------------------------------ | -------------------------------- |
-| Caswell                  | Toward a survivor-centered approach                          | `caswell_survivor`               |
-| Caswell                  | Dusting for Fingerprints: Feminist Standpoint Appraisal      | `caswell_dusting_2019`           |
-| Caswell & Ghaddar        | "To go beyond": towards a decolonial archival praxis         | `caswell_ghaddar_decolonial`     |
-| Sparber                  | (queer)feministische Kritik an Sexismen im Schlagwortkatalog | `sparber_whats_2016`             |
-| Gruber                   | Vom Knüpfen feministischer Begriffsnetze                     | `gruber_knuepfen_2020`           |
-| Farnel et al.            | Unsettling our practices: Decolonizing description           | `farnel_unsettling_2018`         |
-| Archives for Black Lives | Anti-racist description resources                            | `A4BLiP2020` (bereits in refs)   |
-| Stoler                   | Along the Archival Grain                                     | `stoler_archival_grain`          |
-| Rottmann                 | Que/e/r zur Ordnung des Archivs?                             | `rottmann2023` (bereits in refs) |
-| Risam                    | Decolonizing The Digital Humanities                          | `risam_decolonizing`             |
-| Brown et al.             | Transmediation as Radical Pedagogy: Queer/Trans Archives     | `brown_transmediation`           |
-| Rawson et al.            | Auditing the Digital Transgender Archive                     | `rawson_auditing`                |
-| Flinn                    | Community Histories, Community Archives                      | `flinn_community`                |
-
-### NICHT in Zotero - muss ergänzt werden:
-
-| Priorität | Autor                  | Titel                                            | Fundstelle                            |
-| --------- | ---------------------- | ------------------------------------------------ | ------------------------------------- |
-| **HOCH**  | Crenshaw 1989          | Demarginalizing the Intersection of Race and Sex | U Chicago Legal Forum 1989(1), Art. 8 |
-| **HOCH**  | Collins 2000           | Black Feminist Thought                           | Routledge, ISBN 978-0-415-92484-2     |
-| MITTEL    | Olson 2002             | The Power to Name                                | Kluwer Academic                       |
-| MITTEL    | Drabinski 2013         | Queering the Catalog                             | Library Quarterly 83(2), 94-111       |
-| NIEDRIG   | Berman 1971            | Prejudices and Antipathies                       | Scarecrow Press                       |
-| NIEDRIG   | Cifor & Gilliland 2016 | Affect and the archive                           | Archival Science 16(1), 1-28          |
-
-### Workflow-Empfehlung
-
-1. **Zwingend vor Textproduktion:** Crenshaw 1989 und Collins 2000 in Zotero ergänzen
-2. **Empfohlen:** Olson 2002 und Drabinski 2013 ergänzen
-3. **Export:** Vorhandene Zotero-Einträge (siehe Tabellen oben) in `references.yaml` überführen
-4. **Schreiben:** Mit verfügbaren Quellen arbeiten, Platzhalter für fehlende setzen
+- [ ] All citations in `manuscript/sections/*.qmd` resolve in `manuscript/references.yaml`
+- [ ] Version/date metadata reviewed
+- [ ] Quarto render completes successfully
+- [ ] Web build published
+- [ ] Zenodo release created or updated with DOI

@@ -1,18 +1,33 @@
 ---
 title: Diskriminierungssensible Metadatenpraxis
-subtitle: Ein Handbuch zur ethischen Auszeichnung historischer Quellen und Forschungsdaten
+subtitle: Ein Handbuch zur ethischen Beschreibung historischer Quellen und Forschungsdaten
 authors:
   - name: Moritz Mähr
     orcid: 0000-0002-1367-1618
     email: moritz.maehr@gmail.com
-    affiliation:
-      - Universität Basel
-      - Universität Bern
-    roles:
-      - writing
-      - project management
-      - research data management
     corresponding: true
+    affiliations:
+      - id: unibe
+        name: University of Bern
+        department: Walter Benjamin Kolleg
+        group: Digital Humanities
+        address: Muesmattstrasse 45
+        city: Bern
+        region: Bern
+        country: Switzerland
+        postal-code: 3012
+        # url: https://www.dh.unibe.ch/about_us/team/index_eng.html
+        role: Associate Researcher
+      - id: ethz
+        name: ETH Zurich
+        department: ETH Library
+        group: Research Analytics Services
+        address: Rämistrasse 101
+        city: Zurich
+        region: Zurich
+        country: Switzerland
+        postal-code: 8092
+        # url: https://ethz.ch/staffnet/de/organisation/abteilungen/eth-bibliothek/mitarbeitende-der-eth-bibliothek/profil.moritz-maehr.html
   - name: Noëlle Schnegg
     orcid: 0009-0008-5207-6652
     email: noelleschnegg@gmail.com
@@ -33,23 +48,23 @@ keywords:
   - Metadatenstandards
   - Digital Humanities
 abstract: |
-  Dieses Handbuch bietet eine praxisorientierte Anleitung für die diskriminierungssensible Auszeichnung von Metadaten zu historischen Quellen und Forschungsdaten. Es richtet sich an Historiker\*innen, Archivar\*innen, Bibliothekar\*innen und Daten-Kurator\*innen und verbindet theoretische Reflexionen zu Normativität, Bias und Oppression mit konkreten Handlungsempfehlungen für den gesamten Forschungsdatenlebenszyklus. Das Handbuch behandelt sowohl technische Aspekte der Metadatenmodellierung als auch ethische Fragen der Repräsentation marginalisierter Gruppen. Durch die Kombination von Theorie und Praxis unterstützt es Fachleute dabei, Diskriminierung in der Metadatenpraxis zu erkennen und diskriminierungssensible Alternativen zu entwickeln.
-pagetitle: Diskriminierungssensible Metadatenpraxis. Ein Handbuch zur ethischen Auszeichnung historischer Quellen und Forschungsdaten.
+  Dieses Handbuch bietet eine praxisorientierte Anleitung für die diskriminierungssensible Beschreibung  von Metadaten zu historischen Quellen und Forschungsdaten. Es richtet sich an Forschende Historiker\*innen, Archivar\*innen, Bibliothekar\*innen und Daten-Kurator\*innen in der Geschichtswissenschaft und in Gedächtnisinstitutionen (GLAM). Das Handbuch verbindet theoretische Reflexionen zu Normativität, Bias und Oppression mit konkreten Handlungsempfehlungen für den gesamten Forschungsdatenlebenszyklus. Es behandelt sowohl technische Aspekte der Metadatenmodellierung als auch ethische Fragen der Repräsentation marginalisierter Gruppen. Durch die Kombination von Theorie und Praxis unterstützt es Institutionen und Projekte dabei, Diskriminierung in der Metadatenpraxis zu erkennen und diskriminierungssensible Alternativen umzusetzen.
+pagetitle: Diskriminierungssensible Metadatenpraxis. Ein Handbuch zur ethischen Beschreibung historischer Quellen und Forschungsdaten.
 description-meta: |
-  Handbuch zur diskriminierungssensiblen Metadatenpraxis für historische Quellen und Forschungsdaten. Eine praxisorientierte Anleitung für Historiker*innen, Archivar*innen und Bibliothekar*innen zur ethischen Auszeichnung und Kontextualisierung von Metadaten unter Berücksichtigung von FAIR- und CARE-Prinzipien.
+  Handbuch zur diskriminierungssensiblen Metadatenpraxis für historische Quellen und Forschungsdaten. Eine praxisorientierte Anleitung für Forschende Historiker*innen, Archivar*innen, Bibliothekar*innen und Daten-Kurator*innen in Geschichtswissenschaft und GLAM-Institutionen zur ethischen Auszeichnung, Beschreibung und Kontextualisierung von Metadaten unter Berücksichtigung von FAIR- und CARE-Prinzipien.
 key-points:
   - Inhalt: Theoretische Grundlagen zu Diskriminierung, Bias und Oppression in Daten sowie praktische Anleitungen für alle Phasen des Forschungsdatenlebenszyklus von der Planung bis zur Archivierung.
   - Zielsetzung: Sensibilisierung für diskriminierende Strukturen in Metadaten und Bereitstellung konkreter Methoden und Strategien für eine diskriminierungssensible Metadatenpraxis.
-  - Zielgruppe: Historiker*innen, Archivar*innen, Bibliothekar*innen, Daten-Kurator*innen und alle Fachleute, die mit der Erstellung, Verwaltung und Bereitstellung von Metadaten zu historischen Quellen arbeiten.
+  - Zielgruppe: Forschende Historiker*innen, Archivar*innen, Bibliothekar*innen und Daten-Kurator*innen in Geschichtswissenschaft und GLAM-Institutionen, die Metadaten zu historischen Quellen erstellen, verwalten oder bereitstellen.
   - Praxisnahe Fallbeispiele: Konkrete Beispiele aus der deutschsprachigen Forschungslandschaft, Checklisten für verschiedene Arbeitsphasen und Lösungsansätze für wiederkehrende Herausforderungen in der Metadatenpraxis.
   - Living Document: Das Handbuch wird als offenes Dokument auf GitHub veröffentlicht und steht der Community zur Weiterentwicklung zur Verfügung.
-date: 2025-09-08
+date: 2026-02-10
 bibliography: references.yaml
 nocite: |
   @*
 citation:
   type: report
-  doi: TBD
+  doi: 10.5281/zenodo.17073511
   url: https://maehr.github.io/diskriminierungsfreie-metadaten/
 number-sections: false
 # quarto render manuscript && chromium --headless --disable-gpu --print-to-pdf=manuscript/_manuscript/handbuch-diskriminierungssensible-metadatenpraxis.pdf  --scale=1.0 --no-pdf-header-footer --print-background --virtual-time-budget=10000 file:///$(pwd)/manuscript/_manuscript/index.html && npx @divriots/jampack ./manuscript/_manuscript/ && quarto publish quarto-pub manuscript --no-render
@@ -59,13 +74,6 @@ number-sections: false
 {{< include sections/00-frontmatter.qmd >}}
 {{< include sections/01-vorwort.qmd >}}
 {{< include sections/02-einleitung.qmd >}}
-{{< include sections/03-danksagung.qmd >}}
-{{< include sections/04-theorie-00.qmd >}}
-{{< include sections/04-theorie-01-diskriminierung-in-und-durch-daten.qmd >}}
-{{< include sections/04-theorie-02-verzerrungen-und-fehler-bias.qmd >}}
-{{< include sections/04-theorie-03-unterdrueckung-in-daten-oppression-in-data.qmd >}}
-{{< include sections/04-theorie-04-daten-ueber-daten.qmd >}}
-{{< include sections/04-theorie-05-fair-care-und-loud-ueberblick-und-zielsetzung.qmd >}}
 {{< include sections/05-praxis-00.qmd >}}
 {{< include sections/05-praxis-01-1-planung-und-konzeption.qmd >}}
 {{< include sections/05-praxis-02-2-datensammlung-und-quellenkritik.qmd >}}
@@ -76,8 +84,15 @@ number-sections: false
 {{< include sections/05-praxis-07-7-archivierung-und-loeschung.qmd >}}
 {{< include sections/05-praxis-08-handlungsleitende-prinzipien.qmd >}}
 {{< include sections/05-praxis-09-methodische-grenzen-einer-diskriminierungssensiblen-praxis.qmd >}}
+{{< include sections/04-theorie-00.qmd >}}
+{{< include sections/04-theorie-01-diskriminierung-in-und-durch-daten.qmd >}}
+{{< include sections/04-theorie-02-verzerrungen-und-fehler-bias.qmd >}}
+{{< include sections/04-theorie-04-daten-ueber-daten.qmd >}}
+{{< include sections/04-theorie-05-fair-care-und-loud-ueberblick-und-zielsetzung.qmd >}}
+{{< include sections/03-danksagung.qmd >}}
 {{< include sections/06-literatur.qmd >}}
 {{< include sections/07-anhang-00.qmd >}}
 {{< include sections/07-anhang-01-checkliste.qmd >}}
 {{< include sections/07-anhang-02-glossar.qmd >}}
 {{< include sections/07-anhang-03-handbuecher-und-leitfaeden.qmd >}}
+{{< include sections/07-anhang-04-metadatenstandards-sieben-ebenen.qmd >}}

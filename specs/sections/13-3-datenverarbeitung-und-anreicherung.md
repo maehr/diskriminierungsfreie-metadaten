@@ -34,7 +34,7 @@ source: `manuscript/sections/05-praxis-03-3-datenverarbeitung-und-anreicherung.q
 
 ## Known TODOs to Resolve
 
-- Replace the QUERVERWEIS placeholder near metadata standards with a real internal cross-reference.
+- None currently open in this section spec (last checked: 2026-02-10).
 
 ## Citation Expectations
 

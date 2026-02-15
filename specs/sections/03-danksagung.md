@@ -10,7 +10,7 @@ source: `manuscript/sections/03-danksagung.qmd`
 ## Required Content
 
 - Preserve named acknowledgements (individuals and institutions).
-- Preserve the list of relevant events/venues where feedback was received.
+- Keep event/venue mentions only if they are still current for the release metadata and not explicitly deprecated elsewhere.
 - Preserve the final statement inviting further contributions and assigning responsibility for remaining errors.
 
 ## Structure

@@ -1,11 +1,11 @@
 ---
 references:
-  - id: "2019"
+  - id: openglam_2019
     accessed:
       - year: 2025
         month: 9
         day: 9
-    citation-key: "2019"
+    citation-key: openglam_2019
     DOI: 10.21428/16ac48ec.f54af6ae
     edition: "1"
     issued:
@@ -41,8 +41,8 @@ references:
     type: article-journal
     URL: https://glamlabs.pubpub.org/pub/urhm68yr/release/1
 
-  - id: "2025"
-    citation-key: "2025"
+  - id: humanrightsch_adg_2025
+    citation-key: humanrightsch_adg_2025
     genre: Antidiskriminierungsgesetz ADG - Dossier
     issued:
       - year: 2025
@@ -86,36 +86,75 @@ references:
     issued:
       - year: 2020
         month: 9
-    language: english
+    language: en
     publisher: Archives for Black Lives in Philadelphia
     publisher-place: Philadelphia
-    title: "Archives for black lives in philadelphia: Anti-racist description resources"
+    title: "Archives for Black Lives in Philadelphia: Anti-racist Description Resources"
     type: report
     URL: https://archivesforblacklives.files.wordpress.com/2020/10/ardr_202010.pdf
 
-  - id: baroncini_access_2025
+  - id: critical_glam_handbook_2025
+    abstract: >-
+      Die Auseinandersetzung mit Dekolonisierung und der kritischen Reflexion
+      von Sammlungs- und Dokumentationspraktiken hat im GLAM-Sektor an
+      Bedeutung gewonnen. Aufbauend auf der Provenienzforschung zu
+      NS-verfolgungsbedingt entzogenen Kulturgütern rücken zunehmend auch
+      koloniale Kontexte in den Fokus verschiedenster Museums- und
+      Sammlungstypen. Vor diesem Hintergrund gründeten mehrere Schweizer
+      Gedächtnisinstitutionen 2022 die Arbeitsgruppe «Critical GLAM», um ein
+      praxisorientiertes Handbuch für eine rassismuskritische
+      Dokumentationspraxis zu erarbeiten. Das Handbuch richtet sich an
+      Mitarbeitende in Dokumentation, Sammlung und Archiv und legt in seiner
+      ersten Version einen Schwerpunkt auf koloniale Formen von Rassismus,
+      insbesondere Anti-Schwarzen-Rassismus. Es zeigt auf, wie
+      Dokumentationsprozesse historische Narrative prägen,
+      Selektionsmechanismen verstärken und Repräsentation sowie Teilhabe
+      beeinflussen. Beiträge aus der Forschung ordnen diese Herausforderungen
+      in den breiteren Diskurs der Dekolonisierung ein und beleuchten die
+      historischen kolonialen Prägungen von GLAM-Institutionen. Auf Basis der
+      ICOM-Richtlinien bietet das Handbuch Orientierung im Umgang mit sensiblen
+      Begriffen, historischen Bezeichnungen und kolonial geprägten
+      Wissensordnungen. Es formuliert praktische Handlungsoptionen, macht auf
+      strukturelle Verzerrungen aufmerksam und unterstützt Institutionen dabei,
+      ihre Praxis kontinuierlich zu reflektieren. Als offenes Instrument soll es
+      langfristig zu einer inklusiveren, diskriminierungskritischen und
+      gesellschaftlich verantwortungsvollen Dokumentationsarbeit beitragen.
     author:
-      - family: Baroncini
-        given: S.
-      - family: Buyken
-        given: C.
-      - family: Garzón Rodríguez
-        given: J.
-      - family: Marino
-        given: I. K.
-      - family: Oberbichler
-        given: S.
-      - family: Petz
-        given: C.
-    citation-key: baroncini_access_2025
+      - literal: Schweizerisches Nationalmuseum
+      - family: Lee
+        given: Chonja
+      - family: Ligtenberg
+        given: Monique
+      - family: Isler
+        given: Danielle
+      - family: Etienne
+        given: Noémie
+      - family: Satele
+        given: Ruby
+      - literal: Bernisches Historisches Museum
+      - literal: Stiftung für Kunst, Kultur und Geschichte
+      - literal: Historisches Museum Basel
+      - literal: Eidgenössische Technische Hochschule Zürich. Bibliothek
+      - literal: Archiv der ETH Zürich
+      - literal: Kunsthaus Zürich
+      - literal: Fotostiftung Schweiz
+      - literal: Museum für Kommunikation Bern
+      - family: De Brinto Henn
+        given: Mariama
+    citation-key: critical_glam_handbook_2025
+    DOI: 10.5281/zenodo.17657486
     issued:
       - year: 2025
-        month: 8
-        day: 1
-    publisher: DH Lab
-    title: From access to ethics. Data discussions at the DH2025 conference in lisbon
-    type: webpage
-    URL: https://dhlab.hypotheses.org/7355
+        month: 11
+    language: de
+    keyword: >-
+      documentation, antiracism, museums, archives, library, critical, GLAM,
+      colonialism, history, Dokumentation, Anti-Rassismus, Museen, Archive,
+      Bibliotheken, Kolonialismus, historisch-belastetes Kulturerbe
+    publisher: Zenodo
+    title: Rassismuskritische Dokumentation. Ein Handbuch für GLAM-Institutionen
+    type: report
+    URL: https://doi.org/10.5281/zenodo.17657486
 
   - id: baroncini2025
     abstract: >-
@@ -132,7 +171,17 @@ references:
         day: 7
     author:
       - family: Baroncini
-        given: Sofia
+        given: S.
+      - family: Buyken
+        given: C.
+      - family: Garzón Rodríguez
+        given: J.
+      - family: Marino
+        given: I. K.
+      - family: Oberbichler
+        given: S.
+      - family: Petz
+        given: C.
     citation-key: baroncini2025
     container-title: DH Lab
     DOI: 10.58079/14gdf
@@ -251,36 +300,6 @@ references:
     URL: >-
       https://direct.mit.edu/books/monograph/4738/Sorting-Things-OutClassification-and-Its
 
-  - id: bowker1999a
-    abstract: >-
-      A revealing and surprising look at how classification systems can shape both
-      worldviews and social interactions.What do a seventeenth-century mortality
-      tab
-    accessed:
-      - year: 2025
-        month: 9
-        day: 7
-    author:
-      - family: Bowker
-        given: Geoffrey C.
-      - family: Star
-        given: Susan Leigh
-    citation-key: bowker1999a
-    DOI: 10.7551/mitpress/6352.001.0001
-    ISBN: 978-0-262-26907-0
-    issued:
-      - year: 1999
-        month: 9
-        day: 29
-    language: en
-    publisher: The MIT Press
-    source: direct.mit.edu
-    title: "Sorting Things Out: Classification and Its Consequences"
-    title-short: Sorting Things Out
-    type: book
-    URL: >-
-      https://direct.mit.edu/books/monograph/4738/Sorting-Things-OutClassification-and-Its
-
   - id: budde2008
     author:
       - family: Budde
@@ -301,6 +320,28 @@ references:
     type: chapter
     URL: >-
       https://elearning.uni-oldenburg.de/sendfile.php?type=0&file_id=5435fe2c79f320a9d7465f0f61851ca5&file_name=budde_quellen-quellen-quellen.pdf&set_language=de_DE
+
+  - id: buolamwini_gender_2018
+    author:
+      - family: Buolamwini
+        given: Joy
+      - family: Gebru
+        given: Timnit
+    citation-key: buolamwini_gender_2018
+    container-title: >-
+      Proceedings of the 1st Conference on Fairness, Accountability and
+      Transparency
+    issued:
+      - year: 2018
+    language: en
+    page: 77–91
+    publisher: PMLR
+    title: >-
+      Gender Shades: Intersectional Accuracy Disparities in Commercial Gender
+      Classification
+    type: paper-conference
+    URL: https://proceedings.mlr.press/v81/buolamwini18a.html
+    volume: "81"
 
   - id: carroll2021
     author:
@@ -324,11 +365,80 @@ references:
       - year: 2021
         month: 4
         day: 16
-    language: english
+    language: en
     page: "108"
     title: Operationalizing the CARE and FAIR Principles for Indigenous data futures
     type: article-journal
     volume: "8"
+
+  - id: caswell_dusting_2019
+    author:
+      - family: Caswell
+        given: Michelle
+    citation-key: caswell_dusting_2019
+    container-title: Archival Science
+    DOI: 10.1007/s10502-019-09316-w
+    issued:
+      - year: 2019
+    language: en
+    title: "Dusting for Fingerprints: Introducing Feminist Standpoint Appraisal"
+    type: article-journal
+    URL: https://doi.org/10.1007/s10502-019-09316-w
+
+  - id: caswell_ghaddar_decolonial
+    author:
+      - family: Ghaddar
+        given: J. J.
+      - family: Caswell
+        given: Michelle
+    citation-key: caswell_ghaddar_decolonial
+    container-title: Archival Science
+    DOI: 10.1007/s10502-019-09311-1
+    issue: "2"
+    issued:
+      - year: 2019
+    language: en
+    page: 71–85
+    title: '"To go beyond": towards a decolonial archival praxis'
+    type: article-journal
+    URL: https://doi.org/10.1007/s10502-019-09311-1
+    volume: "19"
+
+  - id: chouldechova2017
+    author:
+      - family: Chouldechova
+        given: Alexandra
+    citation-key: chouldechova2017
+    container-title: Big Data
+    DOI: 10.1089/big.2016.0047
+    issue: "2"
+    issued:
+      - year: 2017
+    language: en
+    page: 153–163
+    title: >-
+      Fair prediction with disparate impact: A study of bias in recidivism
+      prediction instruments
+    type: article-journal
+    volume: "5"
+
+  - id: collins2000
+    author:
+      - family: Collins
+        given: Patricia Hill
+    citation-key: collins2000
+    edition: 2nd ed.
+    event-place: New York
+    ISBN: 978-0-415-92484-2
+    issued:
+      - year: 2000
+    publisher: Routledge
+    publisher-place: New York
+    title: >-
+      Black Feminist Thought: Knowledge, Consciousness, and the Politics of
+      Empowerment
+    title-short: Black Feminist Thought
+    type: book
 
   - id: costa-jussa2022
     accessed:
@@ -363,6 +473,24 @@ references:
     URL: https://ojs.aaai.org/index.php/AAAI/article/view/21442
     volume: "36"
 
+  - id: crenshaw1989
+    author:
+      - family: Crenshaw
+        given: Kimberlé
+    citation-key: crenshaw1989
+    container-title: University of Chicago Legal Forum
+    issue: "1"
+    issued:
+      - year: 1989
+    page: 139–167
+    title: >-
+      Demarginalizing the Intersection of Race and Sex: A Black Feminist
+      Critique of Antidiscrimination Doctrine, Feminist Theory and Antiracist
+      Politics
+    type: article-journal
+    URL: https://chicagounbound.uchicago.edu/uclf/vol1989/iss1/8
+    volume: "1989"
+
   - id: dignazio2020
     author:
       - family: D'Ignazio
@@ -375,7 +503,7 @@ references:
       - year: 2020
         month: 3
         day: 16
-    language: english
+    language: en
     page: 2–41
     publisher: The MIT Press
     title: Collect, Analyze, Imagine, Teach
@@ -414,7 +542,7 @@ references:
       - year: 2023
         month: 3
         day: 3
-    language: english
+    language: en
     title: Endings principles for digital longevity
     type: webpage
     URL: https://endings.uvic.ca/principles.html
@@ -443,7 +571,7 @@ references:
         day: 9
     authority: Europeana Foundation
     citation-key: Europeana_EDM_Documentation
-    language: english
+    language: en
     title: Europeana data model. EDM documentation
     type: webpage
     URL: https://pro.europeana.eu/page/edm-documentation
@@ -467,6 +595,24 @@ references:
     title: "Managing and sharing data: best practice for researchers"
     title-short: Managing and sharing data
     type: book
+
+  - id: flinn2007
+    author:
+      - family: Flinn
+        given: Andrew
+    citation-key: flinn2007
+    container-title: Journal of the Society of Archivists
+    DOI: 10.1080/00379810701611936
+    issue: "2"
+    issued:
+      - year: 2007
+    language: en
+    page: 151–176
+    title: >-
+      Community Histories, Community Archives: Some Opportunities and
+      Challenges
+    type: article-journal
+    volume: "28"
 
   - id: FORRT_Paradata_2025
     abstract: >-
@@ -504,7 +650,7 @@ references:
       - year: 2025
         month: 2
         day: 7
-    language: german
+    language: de
     title: Paradata (Paradaten)
     type: webpage
     URL: https://forrt.org/glossary/german/paradata/
@@ -540,7 +686,7 @@ references:
       - year: 2024
         month: 4
         day: 25
-    language: german
+    language: de
     title: Metadaten und Metadatenstandards
     type: webpage
     URL: >-
@@ -584,7 +730,7 @@ references:
       - literal: Global Indigenous Data Alliance
     authority: Global Indigenous Data Alliance (GIDA)
     citation-key: GIDA_CARE_2025
-    language: english
+    language: en
     title: CARE principles for indigenous data governance
     type: webpage
     URL: https://www.gida-global.org/care
@@ -648,7 +794,7 @@ references:
     ISBN: 978-1-78330-658-9
     issued:
       - year: 2025
-    language: eng
+    language: en
     note: "OCLC: 1474008533"
     publisher: Facet Publishing
     publisher-place: Place of publication not identified
@@ -656,6 +802,25 @@ references:
     title: "Library catalogues as data: research, practice and usage"
     title-short: Library catalogues as data
     type: book
+
+  - id: gruber2022
+    author:
+      - family: Gruber
+        given: Anastasia
+    citation-key: gruber2022
+    container-title: >-
+      Mitteilungen der Vereinigung Österreichischer Bibliothekarinnen und
+      Bibliothekare
+    DOI: 10.31263/voebm.v75i2.7327
+    issue: "2"
+    issued:
+      - year: 2022
+    language: de
+    title: >-
+      Vom Knüpfen feministischer Begriffsnetze: Ariadnes Faden &
+      geschlechtersensible Normdaten
+    type: article-journal
+    volume: "75"
 
   - id: higgins2008
     abstract: >-
@@ -716,7 +881,7 @@ references:
       - literal: humanrights.ch
     authority: humanrights.ch
     citation-key: humanrightsCH_FormenDiskriminierung
-    language: german
+    language: de
     title: Formen der Diskriminierung
     type: webpage
     URL: >-
@@ -747,6 +912,19 @@ references:
     title: Navigating artificial intelligence for cultural heritage organisations
     type: book
     URL: https://doi.org/10.14324/111.9781800088375
+
+  - id: jenkinson1922
+    author:
+      - family: Jenkinson
+        given: Hilary
+    citation-key: jenkinson1922
+    event-place: Oxford
+    issued:
+      - year: 1922
+    publisher: Clarendon Press
+    publisher-place: Oxford
+    title: A Manual of Archive Administration
+    type: book
 
   - id: junger2021
     accessed:
@@ -835,6 +1013,26 @@ references:
       collections
     type: article-journal
     volume: "11"
+
+  - id: kleinberg2017
+    author:
+      - family: Kleinberg
+        given: Jon
+      - family: Mullainathan
+        given: Sendhil
+      - family: Raghavan
+        given: Manish
+    citation-key: kleinberg2017
+    container-title: >-
+      Proceedings of the 8th Innovations in Theoretical Computer Science
+      Conference
+    DOI: 10.4230/LIPIcs.ITCS.2017.43
+    issued:
+      - year: 2017
+    language: en
+    title: >-
+      Inherent Trade-Offs in the Fair Determination of Risk Scores
+    type: paper-conference
 
   - id: koenig2024
     abstract: >-
@@ -927,7 +1125,7 @@ references:
     issued:
       - year: 2022
         month: 4
-    language: german
+    language: de
     title: >-
       Konzept „Stadt.Geschichte.Basel digital“: Zusammenfassung des Konzepts
       (April 2022) und des Zwischenberichts (Dezember 2022)
@@ -958,6 +1156,42 @@ references:
     title: Dublin Core Metadata Enhancer
     type: software
     URL: https://github.com/Stadt-Geschichte-Basel/dublin-core-metadata-enhancer
+
+  - id: mahr2025y
+    accessed:
+      - year: 2025
+        month: 11
+        day: 17
+    author:
+      - family: Mähr
+        given: Moritz
+      - family: Twente
+        given: Moritz
+    citation-key: mahr2025y
+    container-title: Anthology of Computers and the Humanities
+    container-title-short: ACH
+    DOI: 10.63744/njQVYcLndSPE
+    editor:
+      - family: Arnold
+        given: Taylor
+      - family: Fantoli
+        given: Margherita
+      - family: Ros
+        given: Ruben
+    issued:
+      - year: 2025
+        month: 11
+        day: 21
+    language: en
+    page: 1148–1168
+    title: >-
+      Seeing History Unseen: Evaluating Vision-Language Models for WCAG-Compliant
+      Alt-Text in Digital Heritage Collections
+    title-short: Seeing History Unseen
+    type: article-journal
+    URL: >-
+      https://anthology.ach.org/volumes/vol0003/seeing-history-unseen-evaluating-vision-language/
+    volume: "3"
 
   - id: mehrabi2021
     abstract: >-
@@ -1120,6 +1354,23 @@ references:
     type: article
     URL: http://arxiv.org/abs/2406.02380
 
+  - id: noble_algorithms_2018
+    author:
+      - family: Noble
+        given: Safiya Umoja
+    citation-key: noble_algorithms_2018
+    DOI: 10.2307/j.ctt1pwt9w5
+    event-place: New York
+    ISBN: 978-1-4798-3724-3
+    issued:
+      - year: 2018
+        month: 2
+    publisher: NYU Press
+    publisher-place: New York
+    title: "Algorithms of Oppression: How Search Engines Reinforce Racism"
+    title-short: Algorithms of Oppression
+    type: book
+
   - id: researchdataallianceinternationalindigenousdatasovereigntyinterestgroup2019
     accessed:
       - year: 2022
@@ -1176,7 +1427,7 @@ references:
       https://www.archive.nrw.de/sites/default/files/media/files/Archiv.theoriepraxis23-4-Internet.pdf
     volume: "04"
 
-  - id: Schopper_2024_Einfuehrung_Metadaten
+  - id: schopper_2024_einfuehrung_metadaten
     abstract: >-
       Deutsch: Das DARIAH-Campus-Training führt in Metadaten und Dokumentation
       ein. Lernziele: Nutzen und Bedeutung guter Metadaten erkennen, Komponenten
@@ -1200,41 +1451,15 @@ references:
       - family: Schopper
         given: Daniel
     authority: DARIAH Campus
-    citation-key: Schopper_2024_Einfuehrung_Metadaten
+    citation-key: schopper_2024_einfuehrung_metadaten
     contributor:
       - family: Wiencek
         given: Florian
     issued:
       - year: 2024
-    language: german
+    language: de
     title: Einführung in Metadaten und Dokumentation
     type: webpage
-    URL: https://campus.dariah.eu/resources/hosted/einfuehrung-metadaten
-
-  - id: schopper2024
-    abstract: >-
-      Anschließend an die "Grundlagen des Datenmanagements" und der praktischen
-      Übung zu Datenmanagement bietet dieser Kurs eine Einführung in das Thema
-      Metadaten. Was sind Metadaten? Aus welchen Komponenten bestehen sie? Und
-      welche Typen von Metadaten können wir unterscheiden?
-    accessed:
-      - year: 2025
-        month: 9
-        day: 7
-    author:
-      - family: Schopper
-        given: Daniel
-    citation-key: schopper2024
-    container-title: DARIAH-Campus
-    issued:
-      - year: 2024
-        month: 9
-        day: 18
-    language: de
-    publisher: DARIAH-Campus
-    source: campus.dariah.eu
-    title: Einführung in Metadaten und Dokumentation
-    type: article-journal
     URL: https://campus.dariah.eu/resources/hosted/einfuehrung-metadaten
 
   - id: schweiz
@@ -1308,7 +1533,7 @@ references:
     citation-key: SGB_Datendokumentation_2025
     issued:
       - year: 2025
-    language: german
+    language: de
     title: Datendokumentation. Forschungsdatenplattform Stadt.Geschichte.Basel
     type: webpage
     URL: https://forschung.stadtgeschichtebasel.ch/data.html
@@ -1351,6 +1576,26 @@ references:
       Datenstandards für die historische Forschung – Ein White-Paper der
       Schweizerischen Gesellschaft für Geschichte
     type: article-journal
+
+  - id: sparber2016
+    author:
+      - family: Sparber
+        given: Sandra
+    citation-key: sparber2016
+    container-title: >-
+      Mitteilungen der Vereinigung Österreichischer Bibliothekarinnen und
+      Bibliothekare
+    DOI: 10.31263/voebm.v69i2.1629
+    issue: "2"
+    issued:
+      - year: 2016
+    language: de
+    page: 216–235
+    title: >-
+      What’s the frequency, Kenneth? – Eine (queer)feministische Kritik an
+      Sexismen und Rassismen im Schlagwortkatalog
+    type: article-journal
+    volume: "69"
 
   - id: spivak_subaltern_1988
     author:
@@ -1441,7 +1686,7 @@ references:
     publisher: DARIAH-Campus
     source: campus.dariah.eu
     title: DARIAH Pathfinder to Data Management Best Practices in the Humanities
-    type: article-journal
+    type: webpage
     URL: >-
       https://campus.dariah.eu/resources/pathfinders/dariah-pathfinder-to-data-management-best-practices-in-the-humanities
 
@@ -1467,7 +1712,7 @@ references:
     publisher: DARIAH-Campus
     source: campus.dariah.eu
     title: Langzeitarchivierung
-    type: article-journal
+    type: webpage
     URL: https://campus.dariah.eu/resources/hosted/langzeitarchivierung
 
   - id: trognitz2024a
@@ -1494,7 +1739,7 @@ references:
     publisher: DARIAH-Campus
     source: campus.dariah.eu
     title: Grundlagen des Datenmanagements
-    type: article-journal
+    type: webpage
     URL: https://campus.dariah.eu/resources/hosted/grundlagen-datenmanagement
 
   - id: weitzmann_klimpel_2016
@@ -1517,8 +1762,8 @@ references:
       iRights.Law – Anwälte für die digitale Welt
     publisher-place: Almstadtstraße 9/11, 10119 Berlin
     title: >-
-      Rechtliche rahmenbedingungen für digitalisierungsprojekte von
-      gedächtnisinstitutionen
+      Rechtliche Rahmenbedingungen für Digitalisierungsprojekte von
+      Gedächtnisinstitutionen
     type: report
     URL: https://www.servicestelle-digitalisierung.de
 
@@ -1552,7 +1797,7 @@ references:
     citation-key: WerkzeugkastenGeschichte_2016
     issued:
       - year: 2016
-    language: german
+    language: de
     title: >-
       Werkzeugkasten Geschichte. Online-Handbuch für Studium und
       wissenschaftliches Arbeiten & PDF-Ausgabe
@@ -1771,7 +2016,7 @@ references:
         day: 14
     citation-key: zotero-item-22813
     container-title: Debora Nozza
-    language: en-us
+    language: en
     title: Debora Nozza
     type: webpage
     URL: https://www.deboranozza.com/
@@ -1782,7 +2027,7 @@ references:
         month: 9
         day: 7
     citation-key: zotero-item-22940
-    language: en-US
+    language: en
     title: Metadata Resources | Steven Jack Miller
     type: post-weblog
     URL: https://sites.uwm.edu/mll/metadata-resources/
