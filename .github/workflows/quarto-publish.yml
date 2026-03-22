@@ -72,6 +72,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-brew-
 
+      - name: Update TinyTeX
+        run: quarto update tinytex
+
       - name: Set up TeX dependencies
         run: |
           tlmgr install hyphen-german
