@@ -37,4 +37,7 @@ format:
     toc-title: Inhaltsverzeichnis
   pdf:
     pdf-engine: xelatex
+    include-in-header:
+      text: |
+        \babelprovide[import]{ngerman}
     keep-tex: false
