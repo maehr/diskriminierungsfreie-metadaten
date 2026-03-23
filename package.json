@@ -15,13 +15,13 @@
 		"validate-doi": "node scripts/fetch-latest-doi.js"
 	},
 	"devDependencies": {
+		"@divriots/jampack": "^0.34.1",
 		"commitizen": "^4.3.1",
 		"cz": "^1.8.2",
 		"cz-conventional-changelog": "^3.3.0",
-		"git-cliff": "^2.10.0",
+		"git-cliff": "^2.12.0",
 		"husky": "^9.1.7",
-		"prettier": "^3.6.2",
-		"@divriots/jampack": "^0.33.1"
+		"prettier": "^3.8.1"
 	},
 	"type": "module",
 	"config": {
