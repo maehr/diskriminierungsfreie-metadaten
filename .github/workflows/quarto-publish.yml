@@ -72,9 +72,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-brew-
 
-      - name: Update TinyTeX
-        run: quarto update tinytex
-
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
         with:
