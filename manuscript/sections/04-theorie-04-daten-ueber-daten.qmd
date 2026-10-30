@@ -1,0 +1,65 @@
+## Daten über Daten
+
+### Was sind Forschungsdaten? {#sec-was-sind-forschungsdaten}
+
+Unter Forschungsdaten verstehen wir sämtliche digitale Repräsentationen von physischen und virtuellen Objekte, die Forscher\*innen während ihrer Forschung verwenden und produzieren und die als digitale Daten repräsentiert werden können. Dazu gehören Quellen, Transkriptionen oder Reproduktionen, Exzerpte, Zeitreihen, Tabellen, Diagramme, Karten, Modelle, Bilder, Videos, Interviews, Artikel, Sekundärliteratur, Software, Quellcode, {{< glossary Workflow display="Workflows" >}}, Forschungsprotokolle, Datensätze und Ähnliches.
+
+Bei historischen Forschungsprojekten stammt ein grosser Teil der Forschungsdaten oft aus den Beständen von Gedächtnisinstitutionen wie Archiven, Bibliotheken und Museen oder steht in publizierter Form in Büchern oder Artikeln zur Verfügung. In vielen Fällen sorgen diese Einrichtungen für die Langzeitarchivierung der Quellen. Dann kann über die {{< glossary DOI >}} oder die Signatur direkt auf die Objekte (sowie auf deren Metadaten) verwiesen werden. Meistens werden in Forschungsprojekten jedoch zusätzliche Metadaten erhoben oder bestehende Metadaten korrigiert. Dabei kann es sich etwa um Quellenannotationen, erweiterte Beschreibungen oder korrigierte Angaben handeln. In diesen Fällen empfiehlt es sich, einen neuen, möglichst kompletten Metadatensatz zu erstellen und mit Verweis auf das Original auf einer geeigneten Plattform zur Verfügung zu stellen. Redundanz ist bei Forschungsdaten wünschenswert und erhöht ihre Verfügbarkeit und Auffindbarkeit.
+
+Im Rahmen der Forschung werden oft Daten aus historischen Quellen abgeleitet und zusammengestellt. Dazu gehören etwa Textdaten (zum Beispiel Forschungsprotokolle), Zeitreihen (gegebenenfalls dargestellt als Diagramme oder Tabellen) oder georeferenzierte Karten und Netzwerkdarstellungen (zum Beispiel basierend auf Grabungsdaten oder Briefwechseln).
+
+Da viele textuelle Forschungsdaten nur auf Papier oder in unstrukturierter digitaler Form vorliegen, ist die Extraktion strukturierter Daten aus diesen Materialien oft sehr aufwändig (scannen, bereinigen, annotieren und so weiter). Neben den für die Forschung relevanten Daten müssen auch die dazugehörigen Prozessinformationen und unterstützenden Daten (Software, Algorithmen, Protokolle und so weiter) dokumentiert, archiviert und zugänglich gemacht werden. Diese Informationen sind unerlässlich, um die Nachvollziehbarkeit und Reproduzierbarkeit der Forschungsergebnisse zu gewährleisten.
+
+### Was sind Metadaten? {#sec-was-sind-metadaten}
+
+Metadaten enthalten strukturierte Informationen über Objekte, insbesondere über deren Inhalt, Kontext und Struktur. Dabei ermöglichen beziehungsweise erleichtern sie deren Identifikation, Auffindbarkeit, Organisation, Verwaltung, Kontextualisierung und Nutzung. Metadaten sollten so strukturiert sein, dass sie die wichtigsten Attribute des beschriebenen Objekttyps modellieren. Ihre Speicherung erfolgt entweder unabhängig von oder auch zusammen mit den ihnen zugeordneten Daten.
+
+![Plakat des Circus Knie für eine "Völkerschau", Darstellung von stereotypisierten Szenen mit Männern beim Handwerk, Schweiz, 20. Jahrhundert.](images/image6.jpg){fig-alt='Plakat mit rotem Hintergrund: Drei Männer in bunten Gewändern und Turbanen führen Handarbeiten aus – einer webt, einer hält Schmuck, einer arbeitet mit Tongefässen. Darunter steht gross "KNIE" und kleiner "Völkerschau".' width="1393" height="1999" .img-fluid }
+
+Zur Illustration Begrifflichkeiten rund um Metadaten greifen wir auf die Metadaten des Beispiels [_Knie Völkerschau_](https://www.europeana.eu/de/item/92023/images_billed_2010_okt_billeder_object488811) zurück. Wir haben es ausgewählt, weil es exemplarisch für problematische, kolonial geprägte Darstellungsweisen in populärer Unterhaltungskultur des 20\. Jahrhunderts steht und über reichhaltige Metadaten verfügt.
+
+| Feld ({{< glossary "Dublin Core" >}} / Europeana) | Wert                                                                                                                                                                                               |
+| :------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **dc:title**                                      | Knie Völkerschau                                                                                                                                                                                   |
+| **dc:description**                                | Litografi, flerfarvet tryk : mål: 500 x 350 mm flerfarvet tegning af tre håndværkere ved arbejdet                                                                                                  |
+| **dc:date**                                       | 1969?                                                                                                                                                                                              |
+| **dc:type**                                       | Billede, Todimensionalt billedmateriale Still image, poster                                                                                                                                        |
+| **dc:subject**                                    | Knie Cirkus Håndværker                                                                                                                                                                             |
+| **dc:identifier**                                 | [http://www.kb.dk/images/billed/2010/okt/billeder/object488811/en/](http://www.kb.dk/images/billed/2010/okt/billeder/object488811/en/)                                                             |
+| **dc:rights**                                     | Billedet er muligvis beskyttet af loven om ophavsret {{< glossary CC >}} [BY-NC-ND 4.0](http://creativecommons.org/licenses/by-nc-nd/4.0/)                                                         |
+| **edm:isShownBy**                                 | [http://kb-images.kb.dk/DAMJP2/DAM/Samlingsbilleder/0000/488/811/PL000012/full/full/0/native.jpg](http://kb-images.kb.dk/DAMJP2/DAM/Samlingsbilleder/0000/488/811/PL000012/full/full/0/native.jpg) |
+| **edm:isShownAt**                                 | [http://www.kb.dk/images/billed/2010/okt/billeder/object488811/en/](http://www.kb.dk/images/billed/2010/okt/billeder/object488811/en/)                                                             |
+| **edm:provider**                                  | DK-National Aggregation Service                                                                                                                                                                    |
+| **edm:dataProvider**                              | Det Kongelige Bibliotek, Nationalbibliotek og Kobenhavns Universitetsbibliotek                                                                                                                     |
+| **edm:country**                                   | Denmark                                                                                                                                                                                            |
+| **edm:language**                                  | da (Dänisch)                                                                                                                                                                                       |
+| **edm:preview**                                   | <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkb-images.kb.dk%2FDAMJP2%2FDAM%2FSamlingsbilleder%2F0000%2F488%2F811%2FPL000012%2Ffull%2Ffull%2F0%2Fnative.jpg\&type=IMAGE>       |
+| **Europeana-ID**                                  | 92023/images_billed_2010_okt_billeder_object488811                                                                                                                                                 |
+| **Europeana-LandingPage**                         | <https://www.europeana.eu/en/item/92023/images\_billed\_2010\_okt\_billeder\_object488811>                                                                                                         |
+| **{{< glossary IIIF >}} Manifest**                | <https://iiif.europeana.eu/presentation/92023/images\_billed\_2010\_okt\_billeder\_object488811/manifest>                                                                                          |
+
+: "Metadaten-Tabelle für: _Knie Völkerschau_"
+
+Die Metadaten des Plakats _Knie Völkerschau_ machen deutlich, dass Metadaten sowohl **intrinsische** (dem Objekt selbst inhärente) als auch **extrinsische** (dem Objekt zugeschriebene) **Informationen** enthalten können. So verweist etwa `dc:description` auf intrinsische Eigenschaften wie Format, Material und Gestaltung des Drucks, während Felder wie `dc:subject` oder `edm:provider` extrinsische Klassifikationen und institutionelle Zuschreibungen dokumentieren [@forschungsdateninfo_metadaten_2024].
+
+Darüber hinaus lassen sich die im Beispiel vorliegenden Metadaten verschiedenen **Funktionskategorien** zuordnen:
+
+- **Bibliographische Metadaten**: Titel (`dc:title`), Identifier (`dc:identifier`, _Europeana-ID_), Rechte (`dc:rights`).
+- **Administrative Metadaten**: Angaben zu Datenprovidern, Aggregationsdiensten und Zugangs-URLs (`edm:provider`, `edm:isShownAt`).
+- **Fachspezifisch-inhaltliche Metadaten**: thematische Schlagworte (`dc:subject`) oder die Beschreibung der dargestellten Handwerker-Szenen (`dc:description`).
+
+Im Kontext der Digitalisierung ist zusätzlich von **Paradaten** beziehungsweise **Prozessmetadaten** zu sprechen, die im Europeana-Datensatz implizit mitschwingen, auch wenn sie nicht explizit aufgeführt sind. Dazu gehören etwa Kameraeinstellungen oder Farbprofile, die während der Erstellung des Digitalisats generiert wurden [@FORRT_Paradata_2025].
+
+Das Beispiel illustriert zudem die Differenz zwischen **physischen Objekten** und deren **digitalen Repräsentationen**:
+
+- Das physische Plakat selbst besitzt Eigenschaften wie Grösse, Material und Zustand.
+- Das Digitalisat ist als JPEG-Datei mit spezifischer Auflösung verfügbar (`edm:isShownBy`, `edm:preview`).
+- Der Digitalisierungsprozess erzeugt weitere Informationen, etwa zu Perspektive, Bildausschnitt und Farbwiedergabe, die für eine präzise Kontextualisierung entscheidend sind.
+
+### Metadatenstandards {#sec-metadatenstandards}
+
+Zur Strukturierung von Metadaten existieren verschiedene **Standards und Verfahren**, die meistens durch eine Fachcommunity entwickelt und gepflegt werden. Sie dienen der Sicherung von **Qualität, Konsistenz und Interoperabilität**, bringen jedoch auch Herausforderungen wie **Standardisierungsdruck, mögliche Auslassungen** und **Semantisierungsverluste** mit sich. Dabei lassen sich sieben Ebenen oder Typen von Standards unterscheiden.
+
+Eine detaillierte Aufschlüsselung dieser sieben Ebenen mit Beispieltabelle ist in den Anhang ausgelagert (siehe @sec-metadatenstandards-sieben-ebenen).
+
+Im Praxisteil dieses Handbuchs gehen wir insbesondere auf Schemas, Inhalts- und Wertstandards ein und beziehen uns dabei vorwiegend auf die {{< glossary "Dublin Core" >}} Metadata Initiative (DCMI). Eine umfassende Übersicht weiterer verbreiteter Standards liefert etwa @sgg2023.

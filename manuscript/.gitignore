@@ -1,4 +1,9 @@
 # Quarto
 /_manuscript/
 /.quarto/
+
 **/*.quarto_ipynb
+
+# This project uses references.yaml as source of truth.
+/references.bib
+.jampack/

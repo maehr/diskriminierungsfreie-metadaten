@@ -1,0 +1,15 @@
+---
+title: Das Handbuch ist umgezogen
+lang: de-CH
+format:
+  html:
+    include-in-header:
+      text: |
+        <script>location.replace('https://maehr.github.io/diskriminierungsfreie-metadaten/' + location.hash);</script>
+        <meta http-equiv="refresh" content="3; url=https://maehr.github.io/diskriminierungsfreie-metadaten/">
+        <link rel="canonical" href="https://maehr.github.io/diskriminierungsfreie-metadaten/">
+---
+
+Das Handbuch _Diskriminierungssensible Metadatenpraxis. Ein Handbuch zur ethischen Beschreibung historischer Quellen und Forschungsdaten_ ist umgezogen.
+
+Die aktuelle Fassung finden Sie unter <https://maehr.github.io/diskriminierungsfreie-metadaten/>.

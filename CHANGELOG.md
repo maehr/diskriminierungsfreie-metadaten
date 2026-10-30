@@ -7,7 +7,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://github.com/maehr/diskriminierungsfreie-metadaten/compare/v1.0.1...HEAD)
 
-## [v1.0.1](https://github.com/maehr/diskriminierungsfreie-metadaten/releases/tag/v1.0.1) - 2025-01-23
+### Changed
+
+- Moved the current edition (2.0.0-alpha.0) to GitHub Pages: <https://maehr.github.io/diskriminierungsfreie-metadaten/>. Quarto Pub is retired and redirects there.
+- The first edition (v1.0.1) is now at <https://maehr.github.io/diskriminierungsfreie-metadaten/v1/>. This web copy is the last GitHub Pages build (`gh-pages` commit `34355b6`, tag `site-v1.0.1`). It includes two notice edits after the release (`bcf1ee7`, `f99c33f`).
+- The website shows a fixed revision date. The build no longer sets it from file times.
+- Corrected the release date of v1.0.1 to 2025-09-07.
+
+## [v2.0.0-alpha.0] - 2026-02-10
+
+Pre-release of the revised second edition, first published on Quarto Pub. It has no DOI of its own.
+
+### Changed
+
+- New title: _Diskriminierungssensible Metadatenpraxis. Ein Handbuch zur ethischen Beschreibung historischer Quellen und Forschungsdaten_.
+- New structure: the practice part comes first, the theory part follows.
+- New glossary, checklist and appendix on seven levels of metadata standards.
+
+## [v1.0.1](https://github.com/maehr/diskriminierungsfreie-metadaten/releases/tag/v1.0.1) - 2025-09-07
 
 ### Features
 
