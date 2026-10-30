@@ -19,21 +19,21 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
       - name: Set up pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@b906affcce14559ad1aafd4ab0e942779e9f58b1 # v4
         with:
           version: 10
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: '22'
           cache: 'pnpm'
 
       - name: Set up uv
-        uses: astral-sh/setup-uv@v6
+        uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e # v6
 
       - name: Install dependencies
         run: pnpm install
@@ -57,15 +57,15 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
       - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
+        uses: quarto-dev/quarto-actions/setup@8a96df13519ee81fd526f2dfca5962811136661b # v2
         with:
           version: 1.10.19
 
       - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@v2
+        uses: quarto-dev/quarto-actions/render@8a96df13519ee81fd526f2dfca5962811136661b # v2
         with:
           path: manuscript
 
@@ -84,14 +84,14 @@ jobs:
           perl -0pi -e 's{</head>}{<link rel="canonical" href="https://maehr.github.io/diskriminierungsfreie-metadaten/v1/">\n</head>}; s{(<body[^>]*>)}{$1\n<div role="note" style="background:#fff3cd;color:#3d2e00;border-bottom:1px solid #e0c36b;padding:0.75rem 1rem;font:16px/1.4 system-ui,sans-serif;text-align:center">Historische Fassung: erste Auflage, Version 1.0.1. Archiviert unter <a href="https://doi.org/10.5281/zenodo.17073511">DOI 10.5281/zenodo.17073511</a>. <a href="https://maehr.github.io/diskriminierungsfreie-metadaten/">Zur aktuellen Fassung</a></div>}' manuscript/_manuscript/v1/index.html
 
       - name: Upload site
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: site
           path: manuscript/_manuscript
           retention-days: 7
 
       - name: Publish to GitHub Pages
-        uses: quarto-dev/quarto-actions/publish@v2
+        uses: quarto-dev/quarto-actions/publish@8a96df13519ee81fd526f2dfca5962811136661b # v2
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         with:
           path: manuscript
