@@ -33,7 +33,8 @@ def load_yaml_citation_keys(yaml_path: Path) -> set[str]:
     for ref in refs:
         if not isinstance(ref, dict):
             continue
-        key = ref.get("citation-key") or ref.get("id")
+        # Pandoc resolves citations by id, not by citation-key.
+        key = ref.get("id")
         if key is None:
             continue
         key_str = str(key).strip()
