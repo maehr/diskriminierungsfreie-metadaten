@@ -76,6 +76,7 @@ flowchart LR
   FACH --> THEO["Theorie & Glossar"]
   THEO --> R0["Schlüsselbegriffe • Bias • FAIR/CARE"]
   click R0 "#sec-theorie"
+  click THEO "#sec-glossar"
 ```
 
 Die Autor\*innen bringen unterschiedliche fachliche und persönliche Hintergründe in das Handbuch ein. Moritz Mähr (weisser cis Mann) ist promovierter Historiker. Noëlle Schnegg (weisse cis Frau) studiert Geschichte und Nahoststudien. Beide sind in der Schweiz aufgewachsen und verfügen über privilegierte gesellschaftliche Rahmenbedingungen, wobei sich individuelle Erfahrungen, beispielsweise hinsichtlich Sexismus, unterscheiden. Diese Offenlegung dient der Transparenz und Einordnung der Perspektiven im Handbuch.
