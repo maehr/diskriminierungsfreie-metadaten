@@ -74,3 +74,4 @@ Kleine Befunde sind im PR behoben. Diese Punkte bleiben offen.
 - [ ] `glossary.lua`: Ein Inline-Shortcode ohne Begriff bricht das Rendering ab, statt einen Fehler zu melden.
 - [ ] `check-glossary.cjs`: Shortcodes mit `name=value` als erstem Argument werden ohne Prüfung übersprungen.
 - [ ] `check-citations.py`: Code-Blöcke und Code-Spans vor der Suche entfernen. Sonst gilt `@` in Code als Zitat.
+- [ ] CI `build-deploy`: Den Checkout mit `persist-credentials: false` ausführen. Rendern und Veröffentlichen in zwei Jobs trennen, damit Render-Code kein schreibberechtigtes Token sieht.
