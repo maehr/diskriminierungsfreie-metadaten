@@ -17,13 +17,13 @@
 		"check:glossary": "node tools/scripts/check-glossary.cjs"
 	},
 	"devDependencies": {
-		"@divriots/jampack": "^0.34.1",
-		"commitizen": "^4.3.1",
+		"@divriots/jampack": "^0.34.2",
+		"commitizen": "^4.3.2",
 		"cz": "^1.8.2",
 		"cz-conventional-changelog": "^3.3.0",
-		"git-cliff": "^2.12.0",
+		"git-cliff": "^2.14.2",
 		"husky": "^9.1.7",
-		"prettier": "^3.8.1"
+		"prettier": "^3.9.10"
 	},
 	"type": "module",
 	"config": {
