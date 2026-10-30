@@ -30,7 +30,7 @@ source: `manuscript/sections/05-praxis-03-3-datenverarbeitung-und-anreicherung.q
 
 - Retain citations inside the AI practice notes:
   - `@junger2021`
-  - `@mahr2025`
+  - `@mahr2025y`
 
 ## Known TODOs to Resolve
 

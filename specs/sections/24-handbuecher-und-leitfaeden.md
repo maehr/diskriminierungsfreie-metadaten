@@ -14,7 +14,7 @@ source: `manuscript/sections/07-anhang-03-handbuecher-und-leitfaeden.qmd`
 
 ## Structure
 
-- `## Handbuecher und Leitfaeden`.
+- `## Handbücher und Leitfäden`.
 - Mermaid block only; any future resource lists should remain clearly separated.
 
 ## Citation Expectations
