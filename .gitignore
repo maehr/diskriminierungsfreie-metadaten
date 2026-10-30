@@ -244,3 +244,6 @@ __pycache__/
 # Quarto Pub redirect build output
 redirect/index.html
 redirect/index_files/
+
+# Quarto render leftovers
+manuscript/*_files/

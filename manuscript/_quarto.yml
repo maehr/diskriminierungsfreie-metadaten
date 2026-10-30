@@ -36,14 +36,3 @@ format:
     page-layout: full
     license: CC BY-SA
   docx: default
-  # docx:
-  #   reference-doc: custom-reference.docx
-  #   fig-align: left
-  #   subject: Diskriminierungsfreie Metadaten
-  #   category: Handbuch
-  #   toc: true
-  #   toc-depth: 3
-  #   toc-title: Inhaltsverzeichnis
-  # pdf:
-  #   pdf-engine: xelatex
-  #   keep-tex: false
