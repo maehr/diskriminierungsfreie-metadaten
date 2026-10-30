@@ -176,7 +176,7 @@ IIIF: >
 ISO: >
   International Organization for Standardization ist eine internationale
   Organisation für Normung, die technische Standards für verschiedene Bereiche
-  entwickelt, einschließlich Informationsmanagement und Dokumentation.
+  entwickelt, einschliesslich Informationsmanagement und Dokumentation.
 
 JavaScript: >
   Programmiersprache für interaktive Webanwendungen und dynamische Inhalte.
@@ -194,7 +194,7 @@ JSON-LD: >
 LCSH: >
   Library of Congress Subject Headings ist ein umfangreiches, hierarchisch
   strukturiertes Schlagwortsystem der Library of Congress. Internationaler
-  Standard für die sachliche Erschließung in Bibliotheken.
+  Standard für die sachliche Erschliessung in Bibliotheken.
 
 LIDO: >
   Lightweight Information Describing Objects ist ein XML-Schema für die
@@ -233,7 +233,7 @@ Minimal Computing: >
   Ansatz für digitale Praxis mit möglichst geringem Ressourcenverbrauch.
 
 Model Cards: >
-  Strukturierte Dokumente zur Beschreibung von KI-Modellen, einschließlich
+  Strukturierte Dokumente zur Beschreibung von KI-Modellen, einschliesslich
   Einsatzzweck, Leistungsgrenzen und Risiken.
 
 MODS: >
@@ -377,7 +377,7 @@ TK-Labels: >
 
 Topic Modeling: >
   Computergestützte Methode zur automatischen Identifikation thematischer Muster
-  in Textsammlungen. Hilfreich für die Analyse großer Korpora, erfordert aber
+  in Textsammlungen. Hilfreich für die Analyse grosser Korpora, erfordert aber
   kritische Interpretation der Ergebnisse.
 
 URI: >

@@ -40,7 +40,7 @@ Es kann zwischen **intrinsischen und extrinsischen Schlagwörtern** unterschiede
 
 ::: {.callout-tip title="Lücken, Widersprüche, Unsicherheiten und häufige Fehler"}
 
-- **Lücken:** Fehlende Personenidentitäten explizit kennzeichnen. Keine Annahmen zu Nationalität, Geschlecht etc. treffen.
+- **Lücken:** Fehlende Personenidentitäten explizit kennzeichnen. Keine Annahmen zu Nationalität, Geschlecht oder anderen Merkmalen treffen.
 - **Widersprüche:** Abweichende Datierungen oder Ortsangaben parallel erfassen und Quellenlage dokumentieren.
 - **Unsicherheit:** Unscharfe Angaben formal kennzeichnen (zum Beispiel {{< glossary EDTF >}} "\~1905").
 - **Häufige Fehler:**

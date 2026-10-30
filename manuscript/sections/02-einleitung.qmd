@@ -26,7 +26,7 @@ Der Band gliedert sich in zwei Teile. Er beginnt mit der Praxis. Im Praxisteil b
 
 ```{mermaid}
 %%| label: fig-metadata-1
-%%| fig-cap: "Darstellung des Datenlebenszyklus nach dem Curation Lifecycle Model (DCC), adaptiert in sieben linearen Phasen von der Planung bis zur Archivierung bzw. Löschung."
+%%| fig-cap: "Darstellung des Datenlebenszyklus nach dem Curation Lifecycle Model (DCC), adaptiert in sieben linearen Phasen von der Planung bis zur Archivierung beziehungsweise Löschung."
 %%| fig-alt: "Lineares Modell des Datenlebenszyklus mit sieben Phasen: Planung, Datensammlung, Verarbeitung, Speicherung, Veröffentlichung, Nachnutzung, Archivierung/Löschung."
 flowchart TD
     A[1 Planung und Konzeption] --> B[2 Datensammlung und Quellenkritik]

@@ -73,7 +73,7 @@ Indirekte Diskriminierung liegt vor, wenn formal neutrale Kriterien, Methoden od
 - **Sprachliche Dokumentation**
   - _Mechanismus:_ Dominanz von Amtssprachen (Latein, Französisch, Hochdeutsch) in der Überlieferung.
   - _Effekt:_ Geringe Sichtbarkeit von Minderheitensprachen und \-praktiken.
-  - _Indikatoren:_ Anteil nicht erfasster bzw. nicht indexierter Sprachvarietäten.
+  - _Indikatoren:_ Anteil nicht erfasster beziehungsweise nicht indexierter Sprachvarietäten.
   - _Gegenmassnahmen:_ Mehrsprachige Erschliessung, Community-basierte Übersetzungen, {{< glossary SKOS >}}-Labels pro Sprachvarietät.
 
 - **Digitale Volltextsuche**
@@ -267,7 +267,7 @@ Für Metadatenpraxis kann daraus eine Strategie folgen, die auf minimale Eingrif
 
 #### Reparative Beschreibung
 
-Reparative Beschreibung argumentiert, dass Archive, Kataloge und Metadaten nie neutral sind: Sie sind eine Zugriffsschicht, die aktiv steuert, was sichtbar, auffindbar und legitim erscheint. Problematische Begriffe unkommentiert fortzuführen, ist daher selbst eine Entscheidung mit Folgen. Reparative bzw. kritische Beschreibung zielt darauf, diskriminierende Beschreibungspraktiken zu erkennen, zu kontextualisieren und zu verändern. Leitfäden wie die Anti-Racist Description Resources und Rassismuskritische Dokumentation betonen dabei Transparenz, Kontext, Community-Einbindung und den bewussten Umgang mit „legacy metadata“ [@A4BLiP2020; @critical_glam_handbook_2025]. Die dekoloniale Archivdebatte formuliert dazu explizit, dass Beschreibungspraxis nicht nur Dokumentation, sondern politische Praxis ist und daher revidierbare Verantwortungsentscheidungen braucht [@caswell_ghaddar_decolonial; @caswell_dusting_2019].
+Reparative Beschreibung argumentiert, dass Archive, Kataloge und Metadaten nie neutral sind: Sie sind eine Zugriffsschicht, die aktiv steuert, was sichtbar, auffindbar und legitim erscheint. Problematische Begriffe unkommentiert fortzuführen, ist daher selbst eine Entscheidung mit Folgen. Reparative beziehungsweise kritische Beschreibung zielt darauf, diskriminierende Beschreibungspraktiken zu erkennen, zu kontextualisieren und zu verändern. Leitfäden wie die Anti-Racist Description Resources und Rassismuskritische Dokumentation betonen dabei Transparenz, Kontext, Community-Einbindung und den bewussten Umgang mit „legacy metadata“ [@A4BLiP2020; @critical_glam_handbook_2025]. Die dekoloniale Archivdebatte formuliert dazu explizit, dass Beschreibungspraxis nicht nur Dokumentation, sondern politische Praxis ist und daher revidierbare Verantwortungsentscheidungen braucht [@caswell_ghaddar_decolonial; @caswell_dusting_2019].
 
 In deutschsprachigen Archivdebatten wird diese Spannung unter anderem im Kontext queerfeministischer Kritik an Katalog- und Ordnungspraktiken diskutiert [@sparber2016; @gruber2022; @rottmann2023].
 
