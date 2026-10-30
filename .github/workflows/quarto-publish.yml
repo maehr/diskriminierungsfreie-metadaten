@@ -19,21 +19,21 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Set up pnpm
-        uses: pnpm/action-setup@b906affcce14559ad1aafd4ab0e942779e9f58b1 # v4
+        uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
         with:
           version: 10
 
       - name: Set up Node.js
-        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: '22'
           cache: 'pnpm'
 
       - name: Set up uv
-        uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e # v6
+        uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
 
       - name: Install dependencies
         run: pnpm install
@@ -57,15 +57,15 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@8a96df13519ee81fd526f2dfca5962811136661b # v2
+        uses: quarto-dev/quarto-actions/setup@8a96df13519ee81fd526f2dfca5962811136661b # v2.2.0
         with:
           version: 1.10.19
 
       - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@8a96df13519ee81fd526f2dfca5962811136661b # v2
+        uses: quarto-dev/quarto-actions/render@8a96df13519ee81fd526f2dfca5962811136661b # v2.2.0
         with:
           path: manuscript
 
@@ -74,7 +74,7 @@ jobs:
           google-chrome --headless --disable-gpu --no-sandbox --print-to-pdf=manuscript/_manuscript/index.pdf --no-pdf-header-footer --print-background --virtual-time-budget=10000 "file://$PWD/manuscript/_manuscript/index.html"
 
       - name: JamPack
-        run: npx --yes @divriots/jampack@0.34.1 manuscript/_manuscript
+        run: npx --yes @divriots/jampack@0.34.2 manuscript/_manuscript
 
       - name: Add first edition under v1/
         run: |
@@ -84,14 +84,14 @@ jobs:
           perl -0pi -e 's{</head>}{<link rel="canonical" href="https://maehr.github.io/diskriminierungsfreie-metadaten/v1/">\n</head>}; s{(<body[^>]*>)}{$1\n<div role="note" style="background:#fff3cd;color:#3d2e00;border-bottom:1px solid #e0c36b;padding:0.75rem 1rem;font:16px/1.4 system-ui,sans-serif;text-align:center">Historische Fassung: erste Auflage, Version 1.0.1. Archiviert unter <a href="https://doi.org/10.5281/zenodo.17073511">DOI 10.5281/zenodo.17073511</a>. <a href="https://maehr.github.io/diskriminierungsfreie-metadaten/">Zur aktuellen Fassung</a></div>}' manuscript/_manuscript/v1/index.html
 
       - name: Upload site
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: site
           path: manuscript/_manuscript
           retention-days: 7
 
       - name: Publish to GitHub Pages
-        uses: quarto-dev/quarto-actions/publish@8a96df13519ee81fd526f2dfca5962811136661b # v2
+        uses: quarto-dev/quarto-actions/publish@8a96df13519ee81fd526f2dfca5962811136661b # v2.2.0
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         with:
           path: manuscript
