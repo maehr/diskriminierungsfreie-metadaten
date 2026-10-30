@@ -11,95 +11,95 @@ files. This script renders to stdout and extracts only the wordcount summary,
 discarding the rendered document output.
 */
 
-const fs = require("node:fs");
-const path = require("node:path");
-const readline = require("node:readline");
-const { spawn } = require("node:child_process");
+const fs = require('node:fs');
+const path = require('node:path');
+const readline = require('node:readline');
+const { spawn } = require('node:child_process');
 
 function stripAnsi(s) {
-  return s.replace(/\x1b\[[0-9;]*m/g, "");
+	return s.replace(/\x1b\[[0-9;]*m/g, '');
 }
 
 function rmIfExists(p) {
-  try {
-    fs.rmSync(p, { recursive: true, force: true });
-  } catch {
-    // ignore
-  }
+	try {
+		fs.rmSync(p, { recursive: true, force: true });
+	} catch {
+		// ignore
+	}
 }
 
 function main() {
-  const repoRoot = path.resolve(__dirname, "..", "..");
-  const manuscriptDir = path.join(repoRoot, "manuscript");
-  const tmpOutDir = path.join(manuscriptDir, ".wordcount_tmp_out");
+	const repoRoot = path.resolve(__dirname, '..', '..');
+	const manuscriptDir = path.join(repoRoot, 'manuscript');
+	const tmpOutDir = path.join(manuscriptDir, '.wordcount_tmp_out');
 
-  rmIfExists(tmpOutDir);
+	rmIfExists(tmpOutDir);
 
-  const args = [
-    "render",
-    "paper.qmd",
-    "--profile",
-    "wordcount",
-    "--to",
-    "wordcount-html",
-    "--output-dir",
-    ".wordcount_tmp_out",
-  ];
+	const args = [
+		'render',
+		'paper.qmd',
+		'--profile',
+		'wordcount',
+		'--to',
+		'wordcount-html',
+		'--output-dir',
+		'.wordcount_tmp_out'
+	];
 
-  const child = spawn("quarto", args, {
-    cwd: manuscriptDir,
-    stdio: ["ignore", "pipe", "pipe"],
-  });
+	const child = spawn('quarto', args, {
+		cwd: manuscriptDir,
+		stdio: ['ignore', 'pipe', 'pipe']
+	});
 
-  let inBlock = false;
-  let sawOverall = false;
-  let printed = false;
-  const lines = [];
+	let inBlock = false;
+	let sawOverall = false;
+	let printed = false;
+	const lines = [];
 
-  // quarto-wordcount prints to stderr (Quarto log stream).
-  const rl = readline.createInterface({ input: child.stderr });
-  rl.on("line", (raw) => {
-    const line = stripAnsi(raw);
+	// quarto-wordcount prints to stderr (Quarto log stream).
+	const rl = readline.createInterface({ input: child.stderr });
+	rl.on('line', (raw) => {
+		const line = stripAnsi(raw);
 
-    if (!inBlock && line.startsWith("Manuscript totals:")) {
-      inBlock = true;
-    }
+		if (!inBlock && line.startsWith('Manuscript totals:')) {
+			inBlock = true;
+		}
 
-    if (!inBlock) return;
+		if (!inBlock) return;
 
-    lines.push(line);
+		lines.push(line);
 
-    if (line.startsWith("Overall totals:")) {
-      sawOverall = true;
-      return;
-    }
+		if (line.startsWith('Overall totals:')) {
+			sawOverall = true;
+			return;
+		}
 
-    // Print once we hit the blank line after the overall totals section.
-    if (sawOverall && line.trim() === "" && !printed) {
-      printed = true;
-      process.stdout.write(lines.join("\n").trimEnd() + "\n");
-    }
-  });
+		// Print once we hit the blank line after the overall totals section.
+		if (sawOverall && line.trim() === '' && !printed) {
+			printed = true;
+			process.stdout.write(lines.join('\n').trimEnd() + '\n');
+		}
+	});
 
-  // Keep a full copy for error reporting.
-  let stderrAll = "";
-  child.stderr.on("data", (chunk) => {
-    stderrAll += chunk.toString("utf8");
-  });
+	// Keep a full copy for error reporting.
+	let stderrAll = '';
+	child.stderr.on('data', (chunk) => {
+		stderrAll += chunk.toString('utf8');
+	});
 
-  child.on("close", (code) => {
-    rl.close();
-    rmIfExists(tmpOutDir);
+	child.on('close', (code) => {
+		rl.close();
+		rmIfExists(tmpOutDir);
 
-    if (code !== 0) {
-      process.stderr.write(stderrAll);
-      process.exit(code);
-    }
+		if (code !== 0) {
+			process.stderr.write(stderrAll);
+			process.exit(code);
+		}
 
-    if (!printed && lines.length > 0) {
-      process.stdout.write(lines.join("\n").trimEnd() + "\n");
-    }
-  });
+		if (!printed && lines.length > 0) {
+			process.stdout.write(lines.join('\n').trimEnd() + '\n');
+		}
+	});
 }
 
 main();

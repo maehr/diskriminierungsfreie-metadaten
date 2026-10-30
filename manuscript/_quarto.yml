@@ -10,7 +10,7 @@ manuscript:
       href: https://github.com/maehr/diskriminierungsfreie-metadaten/discussions
     - text: Quellcode
       href: https://github.com/maehr/diskriminierungsfreie-metadaten
-  manuscript-url: https://moritz-maehr.quarto.pub/diskriminierungssensible-metadatenpraxis # https://maehr.github.io/diskriminierungsfreie-metadaten/
+  manuscript-url: https://maehr.github.io/diskriminierungsfreie-metadaten/
 
 glossary:
   path: glossary.yaml
@@ -19,8 +19,11 @@ glossary:
 
 format:
   html:
-    # doi: '10.5281/zenodo.17073511'
-    date-modified: last-modified
+    format-links:
+      - docx
+      - text: PDF
+        href: index.pdf
+        icon: file-pdf
     link-external-icon: true
     link-external-newwindow: true
     comments:

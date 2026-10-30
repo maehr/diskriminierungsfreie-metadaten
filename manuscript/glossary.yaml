@@ -1,4 +1,4 @@
-"CIDOC CRM": >
+'CIDOC CRM': >
   Conceptual Reference Model ist ein internationaler Standard (ISO 21127) für
   die konzeptuelle Modellierung von Kulturerbe-Informationen. Ermöglicht die
   semantische Verknüpfung heterogener Datenquellen aus Museen, Archiven und
@@ -339,7 +339,7 @@ Retrieval-System: >
   Technisches System zum Auffinden und Abrufen von Informationen aus
   Datenbeständen.
 
-"rights statement": >
+'rights statement': >
   Standardisierte Rechteaussage zur Kennzeichnung von Nutzungsstatus,
   Zugangsbedingungen oder rechtlichen Einschränkungen digitaler Objekte.
   Häufig umgesetzt über kontrollierte URI-Sets wie RightsStatements.org.

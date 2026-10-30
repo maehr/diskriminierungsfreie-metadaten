@@ -1,7 +1,7 @@
 {
 	"name": "diskriminierungsfreie-metadaten",
-	"version": "1.0.1",
-	"description": "Handbuch zur Erstellung diskriminierungsfreier Metadaten für historische Quellen und Forschungsdaten. Erfahrungen aus dem geschichtswissenschaftlichen Forschungsprojekt Stadt.Geschichte.Basel",
+	"version": "2.0.0-alpha.0",
+	"description": "Diskriminierungssensible Metadatenpraxis. Ein Handbuch zur ethischen Beschreibung historischer Quellen und Forschungsdaten",
 	"author": "Moritz Mähr <moritz.maehr@unibas.ch>",
 	"url": "https://github.com/maehr/diskriminierungsfreie-metadaten/issues",
 	"license": "AGPL-3.0",
@@ -12,7 +12,9 @@
 		"prepare": "husky",
 		"changelog": "pnpm exec git-cliff -- --config cliff.toml",
 		"jampack": "pnpm exec jampack manuscript/_manuscript",
-		"validate-doi": "node scripts/fetch-latest-doi.js"
+		"render": "cd manuscript && quarto render",
+		"check:citations": "uv run tools/scripts/check-citations.py",
+		"check:glossary": "node tools/scripts/check-glossary.cjs"
 	},
 	"devDependencies": {
 		"@divriots/jampack": "^0.34.1",

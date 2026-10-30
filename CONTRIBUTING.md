@@ -5,41 +5,13 @@ email, or any other method with the owners of this repository before making a ch
 
 Please note we have a [code of conduct](CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
 
-## DOI and Date Management
+## Versions, Dates and DOIs
 
-This repository manages DOI and publication date consistency across all metadata files. The system works as follows:
+Each version has one version date. Keep it the same in `CHANGELOG.md`, `CITATION.cff` (`date-released`) and `manuscript/index.qmd` (`date`).
 
-### How it works
+`date-modified` in `manuscript/index.qmd` is the date of the last editorial change. Change it by hand only for an editorial change. A new build does not change it.
 
-1. **Hardcoded Values**: DOI and dates are hardcoded directly in source files for reliability
-2. **Validation Script**: A validation script (`scripts/fetch-latest-doi.js`) checks consistency across files
-3. **Quality Assurance**: Ensures all metadata files reference the correct DOI and dates
-
-### Files with DOI information
-
-- `README.md`: Zenodo badge with DOI link
-- `manuscript/handbuch-diskriminierungsfreie-metadaten.qmd`: Citation DOI
-- `manuscript/_quarto.yml`: Format DOI
-- `CITATION.cff`: Official citation DOI and release date
-
-### Manual DOI and date validation
-
-To validate DOI and date consistency across all files:
-
-```bash
-npm run validate-doi
-# or
-node scripts/fetch-latest-doi.js
-```
-
-### Technical details
-
-- **Current DOI**: `10.5281/zenodo.17073511` (v1.0.1 release)
-- **Release Date**: `2024-06-03`
-- **Script Location**: `scripts/fetch-latest-doi.js` (validation mode)
-- **Expected Values**: Script validates against hardcoded expected values for each release
-
-This ensures that all documentation and citations reference the correct published version and date consistently across all files.
+A version gets a DOI only after a GitHub release that Zenodo archives. Do not add a DOI to a version that Zenodo has not archived.
 
 ## Pull Request Process
 

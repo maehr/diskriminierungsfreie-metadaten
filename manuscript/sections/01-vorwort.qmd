@@ -1,6 +1,6 @@
 # Vorwort zur zweiten Auflage
 
-_Diskriminierungssensible Metadatenpraxis. Ein Handbuch zur ethischen Beschreibung historischer Quellen und Forschungsdaten_ liegt nun in einer überarbeiteten, zweiten Auflage vor. Dieses Handbuch ist neu in zwei Teile gegliedert. Der Praxisteil ist vorangestellt und führt entlang des Forschungsdatenlebenszyklus durch Entscheidungen, Checklisten und Beispiele für die Erstellung und Pflege von Metadaten. Der theoretische Teil bündelt die begrifflichen und konzeptionellen Überlegungen zu Sprache, Klassifikation, Repräsentation und Macht. Leser\*innen können dennoch wahlweise mit der konzeptionellen Rahmung oder mit der direkten Anwendung beginnen: Beide Teile verweisen aufeinander und können im Zusammenspiel genutzt werden.
+_Diskriminierungssensible Metadatenpraxis. Ein Handbuch zur ethischen Beschreibung historischer Quellen und Forschungsdaten_ liegt nun als Vorabversion der überarbeiteten zweiten Auflage vor. Dieses Handbuch ist neu in zwei Teile gegliedert. Der Praxisteil ist vorangestellt und führt entlang des Forschungsdatenlebenszyklus durch Entscheidungen, Checklisten und Beispiele für die Erstellung und Pflege von Metadaten. Der theoretische Teil bündelt die begrifflichen und konzeptionellen Überlegungen zu Sprache, Klassifikation, Repräsentation und Macht. Leser\*innen können dennoch wahlweise mit der konzeptionellen Rahmung oder mit der direkten Anwendung beginnen: Beide Teile verweisen aufeinander und können im Zusammenspiel genutzt werden.
 
 Die erste Fassung des Handbuchs entstand 2023 im Rahmen des Forschungsprojekts [Stadt.Geschichte.Basel](https://stadtgeschichtebasel.ch/) als Hilfestellung zur Beschreibung von Objekten auf der [Forschungsdatenplattform](https://forschung.stadtgeschichtebasel.ch/) und erschien am 3\. Juni 2024\. Diskussionen, Workshops und Rückmeldungen aus der Community machten jedoch deutlich, dass der ursprüngliche Anspruch, zu diskriminierungsfreien Metadaten anzuleiten, nicht einlösbar war. In der zweiten Auflage korrigieren wir diesen Anspruch: Im Zentrum steht nun die Anleitung zu einem diskriminierungssensiblen Umgang mit Machtverhältnissen und Kontexten.
 
@@ -8,6 +8,6 @@ Zugleich haben wir den Praxisteil deutlich ausgebaut und klar vom theoretischen 
 
 Wir laden alle Leser\*innen ein, dieses "Living Document" mit uns gemeinsam weiterzuentwickeln und durch Feedback, Ergänzungen oder Fallbeispiele zu bereichern.
 
-Basel, X\. X 2026
+Basel, 10\. Februar 2026
 
 Moritz Mähr & Noëlle Sarah Schnegg

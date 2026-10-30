@@ -1,5 +1,7 @@
-::: {.callout-caution title="Living Handbook (Vorabversion)"}
-Dies ist eine Vorabversion des Handbuchs, die kontinuierlich weiterentwickelt wird. Feedback, Korrekturen und Anregungen sind herzlich willkommen via E-Mail oder [GitHub](https://github.com/maehr/diskriminierungsfreie-metadaten/discussions/34). Die aktuelle veröffentlichte Version ist verfügbar unter [https://maehr.github.io/diskriminierungsfreie-metadaten/](https://maehr.github.io/diskriminierungsfreie-metadaten/).
+::: {.callout-caution title="Aktuelle Fassung – Vorabversion 2.0.0-alpha.0"}
+Dies ist die aktuell veröffentlichte Fassung des Handbuchs _Diskriminierungssensible Metadatenpraxis_. Sie ist eine Vorabversion der überarbeiteten zweiten Auflage und noch nicht redaktionell abgeschlossen. Feedback, Korrekturen und Ergänzungen sind willkommen via E-Mail oder [GitHub](https://github.com/maehr/diskriminierungsfreie-metadaten/discussions/34).
+
+Frühere Fassungen: [Erste Auflage, Version 1.0.1](https://maehr.github.io/diskriminierungsfreie-metadaten/v1/) (archiviert unter der {{< glossary DOI >}} [10.5281/zenodo.17073511](https://doi.org/10.5281/zenodo.17073511)) und Version 1.0.0 (archiviert unter [10.5281/zenodo.11124720](https://doi.org/10.5281/zenodo.11124720)).
 :::
 
 ::: {.callout-warning title="Content-Note"}

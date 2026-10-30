@@ -7,7 +7,7 @@ references:
         day: 9
     citation-key: openglam_2019
     DOI: 10.21428/16ac48ec.f54af6ae
-    edition: "1"
+    edition: '1'
     issued:
       - year: 2019
         month: 10
@@ -49,7 +49,7 @@ references:
         month: 3
         day: 12
     publisher: Humanrights.ch
-    title: "Ausgangslage: Inwieweit schützt das aktuelle Recht vor Diskriminierung?"
+    title: 'Ausgangslage: Inwieweit schützt das aktuelle Recht vor Diskriminierung?'
     type: report
     URL: >-
       https://www.humanrights.ch/de/ipf/menschenrechte/diskriminierung/antidiskriminierungsgesetz/adg-ausgangslage/
@@ -89,7 +89,7 @@ references:
     language: en
     publisher: Archives for Black Lives in Philadelphia
     publisher-place: Philadelphia
-    title: "Archives for Black Lives in Philadelphia: Anti-racist Description Resources"
+    title: 'Archives for Black Lives in Philadelphia: Anti-racist Description Resources'
     type: report
     URL: https://archivesforblacklives.files.wordpress.com/2020/10/ardr_202010.pdf
 
@@ -192,7 +192,7 @@ references:
         month: 8
         day: 1
     language: de
-    title: "From Access to Ethics: Data Discussions at the DH2025 Conference in Lisbon"
+    title: 'From Access to Ethics: Data Discussions at the DH2025 Conference in Lisbon'
     title-short: From Access to Ethics
     type: post-weblog
     URL: https://dhlab.hypotheses.org/7355
@@ -294,7 +294,7 @@ references:
     language: en
     publisher: The MIT Press
     source: direct.mit.edu
-    title: "Sorting Things Out: Classification and Its Consequences"
+    title: 'Sorting Things Out: Classification and Its Consequences'
     title-short: Sorting Things Out
     type: book
     URL: >-
@@ -341,7 +341,7 @@ references:
       Classification
     type: paper-conference
     URL: https://proceedings.mlr.press/v81/buolamwini18a.html
-    volume: "81"
+    volume: '81'
 
   - id: carroll2021
     author:
@@ -360,16 +360,16 @@ references:
     container-title-short: Sci Data
     DOI: 10.1038/s41597-021-00892-0
     ISSN: 2052-4463
-    issue: "1"
+    issue: '1'
     issued:
       - year: 2021
         month: 4
         day: 16
     language: en
-    page: "108"
+    page: '108'
     title: Operationalizing the CARE and FAIR Principles for Indigenous data futures
     type: article-journal
-    volume: "8"
+    volume: '8'
 
   - id: caswell_dusting_2019
     author:
@@ -381,7 +381,7 @@ references:
     issued:
       - year: 2019
     language: en
-    title: "Dusting for Fingerprints: Introducing Feminist Standpoint Appraisal"
+    title: 'Dusting for Fingerprints: Introducing Feminist Standpoint Appraisal'
     type: article-journal
     URL: https://doi.org/10.1007/s10502-019-09316-w
 
@@ -394,7 +394,7 @@ references:
     citation-key: caswell_ghaddar_decolonial
     container-title: Archival Science
     DOI: 10.1007/s10502-019-09311-1
-    issue: "2"
+    issue: '2'
     issued:
       - year: 2019
     language: en
@@ -402,7 +402,7 @@ references:
     title: '"To go beyond": towards a decolonial archival praxis'
     type: article-journal
     URL: https://doi.org/10.1007/s10502-019-09311-1
-    volume: "19"
+    volume: '19'
 
   - id: chouldechova2017
     author:
@@ -411,7 +411,7 @@ references:
     citation-key: chouldechova2017
     container-title: Big Data
     DOI: 10.1089/big.2016.0047
-    issue: "2"
+    issue: '2'
     issued:
       - year: 2017
     language: en
@@ -420,7 +420,7 @@ references:
       Fair prediction with disparate impact: A study of bias in recidivism
       prediction instruments
     type: article-journal
-    volume: "5"
+    volume: '5'
 
   - id: collins2000
     author:
@@ -460,7 +460,7 @@ references:
         given: Ksenia
     citation-key: costa-jussa2022
     container-title: Proceedings of the aaai conference on artificial intelligence
-    issue: "11"
+    issue: '11'
     issued:
       - year: 2022
     page: 11855–11863
@@ -471,7 +471,7 @@ references:
     title-short: Interpreting gender bias in neural machine translation
     type: paper-conference
     URL: https://ojs.aaai.org/index.php/AAAI/article/view/21442
-    volume: "36"
+    volume: '36'
 
   - id: crenshaw1989
     author:
@@ -479,7 +479,7 @@ references:
         given: Kimberlé
     citation-key: crenshaw1989
     container-title: University of Chicago Legal Forum
-    issue: "1"
+    issue: '1'
     issued:
       - year: 1989
     page: 139–167
@@ -489,7 +489,7 @@ references:
       Politics
     type: article-journal
     URL: https://chicagounbound.uchicago.edu/uclf/vol1989/iss1/8
-    volume: "1989"
+    volume: '1989'
 
   - id: dignazio2020
     author:
@@ -588,11 +588,11 @@ references:
     issued:
       - year: 2011
     language: en
-    note: "OCLC: 731028890"
+    note: 'OCLC: 731028890'
     publisher: UK Data Archive
     publisher-place: Colchester
     source: Open WorldCat
-    title: "Managing and sharing data: best practice for researchers"
+    title: 'Managing and sharing data: best practice for researchers'
     title-short: Managing and sharing data
     type: book
 
@@ -603,7 +603,7 @@ references:
     citation-key: flinn2007
     container-title: Journal of the Society of Archivists
     DOI: 10.1080/00379810701611936
-    issue: "2"
+    issue: '2'
     issued:
       - year: 2007
     language: en
@@ -612,7 +612,7 @@ references:
       Community Histories, Community Archives: Some Opportunities and
       Challenges
     type: article-journal
-    volume: "28"
+    volume: '28'
 
   - id: FORRT_Paradata_2025
     abstract: >-
@@ -703,7 +703,7 @@ references:
       - year: 1983
     publisher: Crossing Press
     publisher-place: Trumansburg, NY
-    title: "The politics of reality: Essays in feminist theory"
+    title: 'The politics of reality: Essays in feminist theory'
     type: book
 
   - id: GIDA_CARE_2025
@@ -795,11 +795,11 @@ references:
     issued:
       - year: 2025
     language: en
-    note: "OCLC: 1474008533"
+    note: 'OCLC: 1474008533'
     publisher: Facet Publishing
     publisher-place: Place of publication not identified
     source: Open WorldCat
-    title: "Library catalogues as data: research, practice and usage"
+    title: 'Library catalogues as data: research, practice and usage'
     title-short: Library catalogues as data
     type: book
 
@@ -812,7 +812,7 @@ references:
       Mitteilungen der Vereinigung Österreichischer Bibliothekarinnen und
       Bibliothekare
     DOI: 10.31263/voebm.v75i2.7327
-    issue: "2"
+    issue: '2'
     issued:
       - year: 2022
     language: de
@@ -820,7 +820,7 @@ references:
       Vom Knüpfen feministischer Begriffsnetze: Ariadnes Faden &
       geschlechtersensible Normdaten
     type: article-journal
-    volume: "75"
+    volume: '75'
 
   - id: higgins2008
     abstract: >-
@@ -844,7 +844,7 @@ references:
     container-title-short: IJDC
     DOI: 10.2218/ijdc.v3i1.48
     ISSN: 1746-8256
-    issue: "1"
+    issue: '1'
     issued:
       - year: 2008
         month: 12
@@ -856,7 +856,7 @@ references:
     title: The DCC Curation Lifecycle Model
     type: article-journal
     URL: https://ijdc.net/index.php/ijdc/article/view/48
-    volume: "3"
+    volume: '3'
 
   - id: humanrightsCH_FormenDiskriminierung
     abstract: >-
@@ -1012,7 +1012,7 @@ references:
       Promises of mass digitisation and the colonial realities of natural history
       collections
     type: article-journal
-    volume: "11"
+    volume: '11'
 
   - id: kleinberg2017
     author:
@@ -1086,7 +1086,7 @@ references:
     language: en
     publisher: The MIT Press
     source: direct.mit.edu
-    title: "All Data Are Local: Thinking Critically in a Data-Driven Society"
+    title: 'All Data Are Local: Thinking Critically in a Data-Driven Society'
     title-short: All Data Are Local
     type: book
     URL: >-
@@ -1191,7 +1191,7 @@ references:
     type: article-journal
     URL: >-
       https://anthology.ach.org/volumes/vol0003/seeing-history-unseen-evaluating-vision-language/
-    volume: "3"
+    volume: '3'
 
   - id: mehrabi2021
     abstract: >-
@@ -1237,7 +1237,7 @@ references:
     container-title-short: ACM Comput. Surv.
     DOI: 10.1145/3457607
     ISSN: 0360-0300, 1557-7341
-    issue: "6"
+    issue: '6'
     issued:
       - year: 2021
         month: 7
@@ -1250,7 +1250,7 @@ references:
     title: A Survey on Bias and Fairness in Machine Learning
     type: article-journal
     URL: https://doi.org/10.1145/3457607
-    volume: "54"
+    volume: '54'
 
   - id: nayak2024
     abstract: >-
@@ -1367,7 +1367,7 @@ references:
         month: 2
     publisher: NYU Press
     publisher-place: New York
-    title: "Algorithms of Oppression: How Search Engines Reinforce Racism"
+    title: 'Algorithms of Oppression: How Search Engines Reinforce Racism'
     title-short: Algorithms of Oppression
     type: book
 
@@ -1399,13 +1399,13 @@ references:
     citation-key: rodgers_oneill_infrastructural_2012
     container-title: Ethnography
     DOI: 10.1177/1466138111435738
-    issue: "4"
+    issue: '4'
     issued:
       - year: 2012
     page: 401–412
-    title: "Infrastructural violence: Introduction to the special issue"
+    title: 'Infrastructural violence: Introduction to the special issue'
     type: article-journal
-    volume: "13"
+    volume: '13'
 
   - id: rottmann2023
     author:
@@ -1425,7 +1425,7 @@ references:
     type: article-journal
     URL: >-
       https://www.archive.nrw.de/sites/default/files/media/files/Archiv.theoriepraxis23-4-Internet.pdf
-    volume: "04"
+    volume: '04'
 
   - id: schopper_2024_einfuehrung_metadaten
     abstract: >-
@@ -1500,7 +1500,7 @@ references:
     citation-key: schweiz
     container-title: museums.ch
     language: de
-    title: "Webdossier: KI im Museum"
+    title: 'Webdossier: KI im Museum'
     title-short: Webdossier
     type: webpage
     URL: >-
@@ -1586,7 +1586,7 @@ references:
       Mitteilungen der Vereinigung Österreichischer Bibliothekarinnen und
       Bibliothekare
     DOI: 10.31263/voebm.v69i2.1629
-    issue: "2"
+    issue: '2'
     issued:
       - year: 2016
     language: de
@@ -1595,7 +1595,7 @@ references:
       What’s the frequency, Kenneth? – Eine (queer)feministische Kritik an
       Sexismen und Rassismen im Schlagwortkatalog
     type: article-journal
-    volume: "69"
+    volume: '69'
 
   - id: spivak_subaltern_1988
     author:
@@ -1939,20 +1939,20 @@ references:
     container-title-short: Sci Data
     DOI: 10.1038/sdata.2016.18
     ISSN: 2052-4463
-    issue: "1"
+    issue: '1'
     issued:
       - year: 2016
         month: 3
         day: 15
     language: en
     license: 2016 The Author(s)
-    page: "160018"
+    page: '160018'
     publisher: Nature Publishing Group
     source: www.nature.com
     title: The FAIR Guiding Principles for scientific data management and stewardship
     type: article-journal
     URL: https://www.nature.com/articles/sdata201618
-    volume: "3"
+    volume: '3'
 
   - id: young_justice_1990
     author:
@@ -2038,7 +2038,7 @@ references:
         month: 9
         day: 9
     citation-key: zotero-item-22995
-    title: "| OpenGLAM Principles"
+    title: '| OpenGLAM Principles'
     type: post-weblog
     URL: https://openglam.org/how/
 ...
