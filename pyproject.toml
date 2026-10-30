@@ -1,0 +1,27 @@
+[project]
+name = "agentic-scientific-paper-template"
+version = "0.1.0"
+description = "TODO: Replace with your project description"
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "AGPL-3.0-only" }
+authors = [
+    { name = "TODO: Your Name", email = "TODO: you@example.com" },
+]
+dependencies = [
+    "pyyaml>=6.0.3",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14.14",
+    "ty>=0.0.13",
+]
+
+[tool.ruff]
+target-version = "py313"
+line-length = 100
+extend-exclude = ["outputs", "_manuscript", ".venv"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
