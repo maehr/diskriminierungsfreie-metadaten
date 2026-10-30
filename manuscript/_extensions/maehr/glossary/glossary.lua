@@ -24,27 +24,6 @@ local function kwExists(kwargs, keyword)
     return false
 end
 
--- Function to sort a Lua table by keys
-function sortByKeys(tbl)
-    local sortedKeys = {}
-
-    -- Extract keys from the table and store them in the 'sortedKeys' array
-    for key, _ in pairs(tbl) do
-        table.insert(sortedKeys, key)
-    end
-
-    -- Sort the keys alphabetically
-    table.sort(sortedKeys)
-
-    -- Create a new table with the sorted keys
-    local sortedTable = {}
-    for _, key in pairs(sortedKeys) do
-        sortedTable[key] = tbl[key]
-    end
-
-    return sortedTable
-end
-
 local function read_metadata_file(fname)
   local metafile = io.open(fname, 'r')
   local content = metafile:read("*a")
@@ -86,7 +65,7 @@ local function parseBlocks(text)
   return { pandoc.Para({ pandoc.Str(text) }) }
 end
 
-local function loadGlossaryLookup(path)
+local function loadGlossaryLookup(path, keepCase)
   local metafile = io.open(path, "r")
   if not metafile then
     io.stderr:write("Cannot open file " .. path .. "\n")
@@ -104,7 +83,7 @@ local function loadGlossaryLookup(path)
 
   local lookup = {}
   for key, value in pairs(parsed.meta) do
-    local normalized = string.lower(key)
+    local normalized = keepCase and key or string.lower(key)
     lookup[normalized] = pandoc.utils.stringify(value)
   end
 
@@ -159,15 +138,22 @@ return {
 
   -- create glossary table
   if kwExists(kwargs, "table") then
-    local sortedTable = sortByKeys(globalGlossaryTable)
+    -- Quarto resolves block shortcodes before inline ones, so the table
+    -- cannot rely on terms collected in the text: list the whole file.
+    if next(globalGlossaryTable) == nil then
+      globalGlossaryTable = loadGlossaryLookup(mergeOptions(kwargs, meta).path, true)
+    end
+    local sortedKeys = {}
+    for key in pairs(globalGlossaryTable) do table.insert(sortedKeys, key) end
+    table.sort(sortedKeys, function(a, b) return a:lower() < b:lower() end)
 
     if is_html then
       local gt = "<table class='glossary_table'>\n"
       gt = gt .. "<tr><th> Term </th><th> Definition </th></tr>\n"
 
-      for key, value in pairs(sortedTable) do
+      for _, key in ipairs(sortedKeys) do
           gt = gt .. "<tr><td>" .. key
-          gt = gt .. "</td><td>" .. value .. "</td></tr>\n"
+          gt = gt .. "</td><td>" .. globalGlossaryTable[key] .. "</td></tr>\n"
       end
       gt = gt .. "</table>"
 
@@ -175,9 +161,9 @@ return {
     end
 
     local entries = {}
-    for key, value in pairs(sortedTable) do
+    for _, key in ipairs(sortedKeys) do
       local termInlines = parseInlines(key)
-      local definitionBlocks = parseBlocks(value)
+      local definitionBlocks = parseBlocks(globalGlossaryTable[key])
       table.insert(entries, { termInlines, { definitionBlocks } })
     end
 
