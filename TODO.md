@@ -2,9 +2,10 @@
 
 ## Literatur und Auszeichnung
 
-- [ ] Folgende Literaturangaben sind unvollständig (Personennamen, Jahreszahlen etc.):
-      @schopper_2024_einfuehrung_metadaten; @forschungsdateninfo_metadaten_2024; @Europeana_EDM_Documentation
-      @humanrightsCH_FormenDiskriminierung
+- [x] @schopper_2024_einfuehrung_metadaten und @forschungsdateninfo_metadaten_2024 sind vollständig.
+- [ ] Folgende Literaturangaben sind unvollständig. Zotero und Crossref haben die Werte nicht.
+      @Europeana_EDM_Documentation (kein Datum, keine Urheberschaft); @humanrightsCH_FormenDiskriminierung (kein Datum);
+      @kaiser2023 (Zeitschriftentitel fehlt)
 - [ ] Gibt es eine Regelung was fett ausgezeichnet wird?
 - [ ] Gibt es eine Regelung, was monospaced `` ausgezeichnet wird?
 - [ ] Folgende Literaturangaben sollten inhaltlich überprüft und ggf. korrigiert werden:
@@ -13,8 +14,8 @@
 
 ## Redaktion
 
-- [ ] Generelle Sprachregeln (Überprüfen mit AI)  
-       - [ ] Abkürzungen wie z.B. oder ggf. immer ausschreiben  
+- [x] Generelle Sprachregeln (Überprüfen mit AI)  
+       - [x] Abkürzungen wie z.B. oder ggf. immer ausschreiben  
        - [x] Schweizer Hochdeutsch (kein scharfes S)  
        - [x] Bildunterschrift und Alttext für jede Abbildung  
        - [x] Keine “Vgl./Siehe/Siehe auch” bei Referenzen  

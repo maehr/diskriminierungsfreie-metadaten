@@ -23,7 +23,7 @@ Sources consolidated: `reviews/external/review-meeting-notes.md`, `reviews/missi
 | A5  | Medium   | External review + section specs | `specs/sections/11-1-planung-und-konzeption.md`, `specs/sections/13-3-datenverarbeitung-und-anreicherung.md`, `specs/sections/05-diskriminierung-in-und-durch-daten.md` | Reconcile stale TODO wording with current manuscript state (crossrefs/markers).              | Done   | TODO notes reflect only still-open work.                          |
 | A6  | Medium   | Orphaned planning artifacts     | `reviews/external/review-summary.md`                                                                                                                                    | Remove duplicated external review summary after migration to canonical plan.                 | Done   | Duplicate summary removed; meeting notes remain canonical source. |
 | A7  | Medium   | Acceptance criteria drift       | `specs/paper.md`, `specs/submission.md`                                                                                                                                 | Keep one release gate definition and cross-link from supporting specs.                       | Done   | Release gate is unambiguous across specs.                         |
-| A8  | Medium   | Release execution               | `specs/submission.md` and render outputs                                                                                                                                | Complete release checklist (validate/render/publish/Zenodo).                                 | Open   | All submission checklist items complete.                          |
+| A8  | Medium   | Release execution               | `specs/paper.md` and render outputs                                                                                                                                     | Complete release checklist (validate/render/publish/Zenodo).                                 | Open   | All release gate items in `specs/paper.md` complete.              |
 
 ## Action Register (Series B: Content & Refinement)
 
@@ -32,7 +32,7 @@ Sources consolidated: `reviews/external/review-meeting-notes.md`, `reviews/missi
 | B1  | High     | External review + ref audit | `manuscript/sections/04-theorie-01-diskriminierung-in-und-durch-daten.qmd`, `manuscript/sections/04-theorie-02-verzerrungen-und-fehler-bias.qmd` | Implement scientific debate sections (Bias vs. Diskriminierung; Intersektionalitaet; historische Begriffe) with must-have citations. | Open   | Sections contain argumentatively complete text with traceable citations and no unresolved placeholders. |
 | B2  | High     | Structural review           | `manuscript/index.qmd`, `specs/outline.md`                                                                                                       | Ensure manuscript order follows practice-first sequence before theory.                                                               | Done   | Index and outline are aligned on practice-before-theory ordering.                                       |
 | B3  | Medium   | Editorial review            | `manuscript/index.qmd`, frontmatter files                                                                                                        | Apply wording fixes (subtitle, target audience framing, phrasing cleanups).                                                          | Done   | Required wording updates integrated and consistent across frontmatter/index.                            |
-| B4  | Medium   | Technical debt review       | glossary and cross-reference touchpoints in `manuscript/sections/*.qmd`                                                                          | Resolve glossary and cross-reference debt (broken/unclear refs, missing glossary consistency).                                       | Done   | `npm run validate` passes with no glossary/cross-reference errors.                                      |
+| B4  | Medium   | Technical debt review       | glossary and cross-reference touchpoints in `manuscript/sections/*.qmd`                                                                          | Resolve glossary and cross-reference debt (broken/unclear refs, missing glossary consistency).                                       | Done   | `pnpm run check:glossary` passes with no glossary/cross-reference errors.                               |
 | B5  | Medium   | Literature coverage review  | `reviews/missing-references.md`, `manuscript/references.yaml`, theory sections                                                                   | Expand German- and Europe-focused literature coverage and align citations in theory/practice chapters.                               | Open   | Coverage gaps are documented and key German/European references are integrated in relevant sections.    |
 
 ## Current Priorities (Execution Order)
@@ -53,20 +53,16 @@ Sources consolidated: `reviews/external/review-meeting-notes.md`, `reviews/missi
 - 2026-02-10: B5 added and kept open to address German and European literature coverage gaps.
 - 2026-02-10: B4 completed after glossary shortcode normalization and cross-reference consistency check.
 - 2026-02-10: B5 first pass completed (German/European references integrated in theory and practice introductions); B5 remains open for further source expansion.
+- 2026-10-30: `specs/submission.md` merged into `specs/paper.md`, which now holds the release gate. `npm run validate` replaced by the three `pnpm run` checks.
 
 ## Validation Rule
 
 After every change batch, run:
 
 ```bash
-npm run validate
+pnpm run check && pnpm run check:citations && pnpm run check:glossary
 ```
 
 ## Release Gate
 
-- [ ] `npm run validate` passes
-- [ ] All citations in `manuscript/sections/*.qmd` resolve in `manuscript/references.yaml`
-- [ ] Version/date metadata reviewed
-- [ ] Quarto render completes successfully
-- [ ] Web build published
-- [ ] Zenodo release created or updated with DOI
+See `specs/paper.md`.
