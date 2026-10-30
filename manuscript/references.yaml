@@ -1413,7 +1413,7 @@ references:
         given: Andrea
     citation-key: rottmann2023
     container-title: Archiv - Theorie & Praxis
-    issue: 76. Jahrgang
+    issue: '4'
     issued:
       - year: 2023
         month: 11
@@ -1425,7 +1425,7 @@ references:
     type: article-journal
     URL: >-
       https://www.archive.nrw.de/sites/default/files/media/files/Archiv.theoriepraxis23-4-Internet.pdf
-    volume: '04'
+    volume: '76'
 
   - id: schopper_2024_einfuehrung_metadaten
     abstract: >-
@@ -1450,8 +1450,8 @@ references:
     author:
       - family: Schopper
         given: Daniel
-    authority: DARIAH Campus
     citation-key: schopper_2024_einfuehrung_metadaten
+    container-title: DARIAH Campus
     contributor:
       - family: Wiencek
         given: Florian
