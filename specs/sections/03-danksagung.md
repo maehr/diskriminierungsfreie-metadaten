@@ -4,8 +4,8 @@ source: `manuscript/sections/03-danksagung.qmd`
 
 ## Purpose
 
-- Acknowledge contributors, reviewers, and communities that shaped the first edition and the ongoing revisions.
-- Reinforce the handbook as a living document with ongoing community input.
+- Acknowledge contributors, reviewers, and communities that shaped version 1.0.0 and the ongoing revisions.
+- Reinforce the handbook as a Living Document with ongoing community input.
 
 ## Required Content
 

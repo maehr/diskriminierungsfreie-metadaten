@@ -1,7 +1,11 @@
-::: {.callout-caution title="Aktuelle Fassung – Vorabversion 2.0.0-alpha.0"}
-Dies ist die aktuell veröffentlichte Fassung des Handbuchs _Diskriminierungssensible Metadatenpraxis_. Sie ist eine Vorabversion der überarbeiteten zweiten Auflage und noch nicht redaktionell abgeschlossen. Feedback, Korrekturen und Ergänzungen sind willkommen via E-Mail oder [GitHub](https://github.com/maehr/diskriminierungsfreie-metadaten/discussions/34).
+::: {.callout-caution title="Living Document – aktuelle Arbeitsfassung"}
+_Diskriminierungssensible Metadatenpraxis_ wird seit 2023 als offenes, iterativ weiterentwickeltes Living Document erarbeitet. Die aktuelle Arbeitsfassung (Version 2.0.0-alpha.0) dokumentiert den laufenden Forschungs- und Entwicklungsprozess.
 
-Frühere Fassungen: [Erste Auflage, Version 1.0.1](https://maehr.github.io/diskriminierungsfreie-metadaten/v1/) (archiviert unter der {{< glossary DOI >}} [10.5281/zenodo.17073511](https://doi.org/10.5281/zenodo.17073511)) und Version 1.0.0 (archiviert unter [10.5281/zenodo.11124720](https://doi.org/10.5281/zenodo.11124720)).
+Eine wissenschaftlich überarbeitete und extern begutachtete Monografie ist bei Bielefeld University Press in Vorbereitung.
+
+Frühere öffentlich zugängliche Iterationen: [Version 1.0.0 (2024)](https://doi.org/10.5281/zenodo.11124720) und [Version 1.0.1 (2025)](https://doi.org/10.5281/zenodo.17073511).
+
+Feedback und Ergänzungen sind über [GitHub](https://github.com/maehr/diskriminierungsfreie-metadaten/discussions/34) willkommen.
 :::
 
 ::: {.callout-warning title="Content-Note"}
