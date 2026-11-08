@@ -10,7 +10,7 @@ Read the current version at <https://maehr.github.io/diskriminierungsfreie-metad
 
 ## Status
 
-The current version is **2.0.0-alpha.0**. It is a pre-release of the revised second edition. The text is not final. Feedback, corrections and additions are welcome on [GitHub Discussions](https://github.com/maehr/diskriminierungsfreie-metadaten/discussions/34).
+The current version is **2.0.0-alpha.0**. It is the current public working manuscript of an openly developed Living Document. Versions 1.0.0 and 1.0.1 are published iterations. A peer-reviewed monograph is in preparation. Feedback, corrections and additions are welcome on [GitHub Discussions](https://github.com/maehr/diskriminierungsfreie-metadaten/discussions/34).
 
 The website offers the handbook as HTML, DOCX and PDF.
 
@@ -20,17 +20,17 @@ The handbook gives practical guidance for the description of historical sources 
 
 ## Versions
 
-| Version                     | Date       | Where to read it                                              | Archive                                                            |
-| --------------------------- | ---------- | ------------------------------------------------------------- | ------------------------------------------------------------------ |
-| 2.0.0-alpha.0 (pre-release) | 2026-02-10 | <https://maehr.github.io/diskriminierungsfreie-metadaten/>    | No DOI                                                             |
-| 1.0.1 (first edition)       | 2025-09-07 | <https://maehr.github.io/diskriminierungsfreie-metadaten/v1/> | [10.5281/zenodo.17073511](https://doi.org/10.5281/zenodo.17073511) |
-| 1.0.0 (first edition)       | 2024-06-03 | Zenodo only                                                   | [10.5281/zenodo.11124720](https://doi.org/10.5281/zenodo.11124720) |
+| Version                            | Date       | Where to read it                                              | Archive                                                            |
+| ---------------------------------- | ---------- | ------------------------------------------------------------- | ------------------------------------------------------------------ |
+| 2.0.0-alpha.0 (working manuscript) | 2026-02-10 | <https://maehr.github.io/diskriminierungsfreie-metadaten/>    | No DOI                                                             |
+| 1.0.1 (published iteration)        | 2025-09-07 | <https://maehr.github.io/diskriminierungsfreie-metadaten/v1/> | [10.5281/zenodo.17073511](https://doi.org/10.5281/zenodo.17073511) |
+| 1.0.0 (published iteration)        | 2024-06-03 | Zenodo only                                                   | [10.5281/zenodo.11124720](https://doi.org/10.5281/zenodo.11124720) |
 
 The concept DOI [10.5281/zenodo.11124719](https://doi.org/10.5281/zenodo.11124719) refers to all archived versions. It resolves to the latest archived version, which is 1.0.1.
 
-The first edition also contains a mapping of the [Schlagwortindex GenderOpen](https://opengenderplatform.de/schlagwortindex) to the [Gemeinsame Normdatei (GND)](https://gnd.network/). Download it from the [v1 website](https://maehr.github.io/diskriminierungsfreie-metadaten/v1/data/genderopen_gnd_mapping.csv) or from Zenodo.
+Version 1.0.1 also contains a mapping of the [Schlagwortindex GenderOpen](https://opengenderplatform.de/schlagwortindex) to the [Gemeinsame Normdatei (GND)](https://gnd.network/). Download it from the [v1 website](https://maehr.github.io/diskriminierungsfreie-metadaten/v1/data/genderopen_gnd_mapping.csv) or from Zenodo.
 
-From February 2026 the pre-release was on Quarto Pub. That address now redirects to GitHub Pages.
+From February 2026 version 2.0.0-alpha.0 was on Quarto Pub. That address now redirects to GitHub Pages.
 
 ## How to cite
 
@@ -153,7 +153,7 @@ Render the documentation.
 pnpm run render
 ```
 
-GitHub Actions publishes the website. Each push to `main` starts the workflow `.github/workflows/quarto-publish.yml`. The workflow renders the handbook, prints the PDF, adds the first edition under `v1/` and publishes the result to the `gh-pages` branch.
+GitHub Actions publishes the website. Each push to `main` starts the workflow `.github/workflows/quarto-publish.yml`. The workflow renders the handbook, prints the PDF, adds version 1.0.1 under `v1/` and publishes the result to the `gh-pages` branch.
 
 ## Support
 
@@ -170,7 +170,7 @@ This project is maintained by [@maehr](https://github.com/maehr). Please underst
 
 ## Roadmap
 
-This handbook is a living document and will be updated regularly. The discussion of the handbook is open to everyone and we welcome feedback and suggestions for improvement on [GitHub Discussions](https://github.com/maehr/diskriminierungsfreie-metadaten/discussions).
+This handbook is a Living Document and will be updated regularly. The discussion of the handbook is open to everyone and we welcome feedback and suggestions for improvement on [GitHub Discussions](https://github.com/maehr/diskriminierungsfreie-metadaten/discussions).
 
 ## Contributing
 
