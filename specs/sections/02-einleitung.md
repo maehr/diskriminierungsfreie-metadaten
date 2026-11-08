@@ -27,7 +27,7 @@ source: `manuscript/sections/02-einleitung.qmd`
 ## Structure
 
 - `# Einleitung`.
-- Flow: audience/scope -> why metadata -> motivating example -> definition of discrimination -> practice lifecycle phases -> lifecycle diagram -> overview of theory topics -> decision diagram -> author positionality disclosure -> living document + contribution channels.
+- Flow: audience/scope -> why metadata -> motivating example -> definition of discrimination -> practice lifecycle phases -> lifecycle diagram -> overview of theory topics -> decision diagram -> author positionality disclosure -> Living Document + contribution channels.
 
 ## Citation Expectations
 

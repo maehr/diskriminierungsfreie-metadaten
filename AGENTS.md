@@ -78,7 +78,7 @@ Follow [secure use of Actions](https://docs.github.com/en/actions/reference/secu
 
 The workflow `.github/workflows/quarto-publish.yml` deploys from `main` to the `gh-pages` branch. Never publish the handbook by hand.
 
-- CI renders the handbook, prints the PDF, and adds the first edition from tag `site-v1.0.1` under `v1/`.
+- CI renders the handbook, prints the PDF, and adds version 1.0.1 from tag `site-v1.0.1` under `v1/`.
 - Quarto is pinned in the workflow. Change the pin in a separate pull request.
 - Keep the site URL in `manuscript/_quarto.yml`.
 - `redirect/` holds the page for the old Quarto Pub address. Only the maintainer publishes it with `quarto publish quarto-pub redirect/index.qmd`.

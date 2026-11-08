@@ -3,7 +3,7 @@
 Hand-maintained outline of the handbook.
 
 0. Frontmatter
-1. Vorwort zur zweiten Auflage
+1. Vom Living Document zur wissenschaftlichen Monografie
 2. Einleitung
 3. Praxis: Diskriminierungssensibler Umgang mit Metadaten
 4. 1\. Planung und Konzeption

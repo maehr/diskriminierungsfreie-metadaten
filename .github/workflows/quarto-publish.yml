@@ -82,12 +82,12 @@ jobs:
       - name: JamPack
         run: npx --yes @divriots/jampack@0.34.2 manuscript/_manuscript
 
-      - name: Add first edition under v1/
+      - name: Add version 1.0.1 under v1/
         run: |
           git fetch --no-tags --depth=1 origin refs/tags/site-v1.0.1:refs/tags/site-v1.0.1
           mkdir -p manuscript/_manuscript/v1
           git archive site-v1.0.1 | tar -x -C manuscript/_manuscript/v1
-          perl -0pi -e 's{</head>}{<link rel="canonical" href="https://maehr.github.io/diskriminierungsfreie-metadaten/v1/">\n</head>}; s{(<body[^>]*>)}{$1\n<div role="note" style="background:#fff3cd;color:#3d2e00;border-bottom:1px solid #e0c36b;padding:0.75rem 1rem;font:16px/1.4 system-ui,sans-serif;text-align:center">Historische Fassung: erste Auflage, Version 1.0.1. Archiviert unter <a href="https://doi.org/10.5281/zenodo.17073511">DOI 10.5281/zenodo.17073511</a>. <a href="https://maehr.github.io/diskriminierungsfreie-metadaten/">Zur aktuellen Fassung</a></div>}' manuscript/_manuscript/v1/index.html
+          perl -0pi -e 's{</head>}{<link rel="canonical" href="https://maehr.github.io/diskriminierungsfreie-metadaten/v1/">\n</head>}; s{(<body[^>]*>)}{$1\n<div role="note" style="background:#fff3cd;color:#3d2e00;border-bottom:1px solid #e0c36b;padding:0.75rem 1rem;font:16px/1.4 system-ui,sans-serif;text-align:center">Frühere veröffentlichte Iteration: Version 1.0.1. Archiviert unter <a href="https://doi.org/10.5281/zenodo.17073511">DOI 10.5281/zenodo.17073511</a>. <a href="https://maehr.github.io/diskriminierungsfreie-metadaten/">Zur aktuellen Arbeitsfassung</a></div>}' manuscript/_manuscript/v1/index.html
 
       - name: Upload site
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
