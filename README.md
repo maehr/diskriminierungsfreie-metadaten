@@ -30,7 +30,7 @@ The concept DOI [10.5281/zenodo.11124719](https://doi.org/10.5281/zenodo.1112471
 
 Version 1.0.1 also contains a mapping of the [Schlagwortindex GenderOpen](https://opengenderplatform.de/schlagwortindex) to the [Gemeinsame Normdatei (GND)](https://gnd.network/). Download it from the [v1 website](https://maehr.github.io/diskriminierungsfreie-metadaten/v1/data/genderopen_gnd_mapping.csv) or from Zenodo.
 
-From February 2026 version 2.0.0-alpha.0 was on Quarto Pub. That address now redirects to GitHub Pages.
+From February 2026, version 2.0.0-alpha.0 was on Quarto Pub. That address now redirects to GitHub Pages.
 
 ## How to cite
 
