@@ -13,6 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Version 1.0.1 is now at <https://maehr.github.io/diskriminierungsfreie-metadaten/v1/>. This web copy is the last GitHub Pages build (`gh-pages` commit `34355b6`, tag `site-v1.0.1`). It includes two notice edits after the release (`bcf1ee7`, `f99c33f`).
 - The website shows a fixed revision date. The build no longer sets it from file times.
 - Corrected the release date of v1.0.1 to 2025-09-07.
+- Revised the manuscript after external review #2 ([#42](https://github.com/maehr/diskriminierungsfreie-metadaten/issues/42)). The introduction states the scope and the limits. Section 3.2 separates source statement, description, contextualization and interpretation. Statements on FAIR, Dublin Core, identifiers and proprietary systems are corrected. Section 7.2 gives four deletion procedures. Statistical methods are optional. Section 1.3 has a worked decision example. Section 5.5 defines a minimal quality check.
+- Section references show the visible chapter numbers. Typos and three bibliography entries are corrected.
 
 ## [v2.0.0-alpha.0] - 2026-02-10
 

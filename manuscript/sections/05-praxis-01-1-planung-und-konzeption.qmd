@@ -26,7 +26,7 @@ Eine frühe Klärung von Objekttypen, Zielgruppen und Kontexten war zentral. Das
 
 Frühzeitige Klärung ist entscheidend: Urheber- und Leistungsschutzrechte, Datenschutz und Persönlichkeitsrechte, Rechte Dritter sowie der Schutz vulnerabler Gruppen müssen berücksichtigt werden. Grundlage bildet ein Rechteinventar, das pro Objekt Herkunft, Urheber\*in, Rechteketten und Personenbezug dokumentiert [@weitzmann_klimpel_2016].
 
-Der Umgang mit personenbezogenen Daten verlangt eine klare Rechtsgrundlage (Einwilligung, Vertrag, gesetzliche Grundlage, berechtigtes Interesse) und gegebenenfalls Schutzmassnahmen wie Anonymisierung, Zugriffsstufen oder {{< glossary Content-Note display="Content-Notes" >}} (siehe @sec-52-umgang-mit-sensiblen-und-diskriminierenden-inhalten).
+Der Umgang mit personenbezogenen Daten verlangt eine klare Rechtsgrundlage (Einwilligung, Vertrag, gesetzliche Grundlage, berechtigtes Interesse) und gegebenenfalls Schutzmassnahmen wie Anonymisierung, Zugriffsstufen oder {{< glossary Content-Note display="Content-Notes" >}} (siehe [Abschnitt 5.2](#sec-52-umgang-mit-sensiblen-und-diskriminierenden-inhalten)).
 
 Für die Veröffentlichung sind Lizenzangaben und Rechteaussagen (zum Beispiel {{< glossary CC display="CC" >}}-Lizenzen, {{< glossary "rights statement" display="RightsStatements.org" >}}) maschinenlesbar zu dokumentieren. Interne Review- und Eskalationswege sichern die Nachvollziehbarkeit und Rechtssicherheit. Bei komplexen Fällen ist juristische Expertise beizuziehen.
 
@@ -44,19 +44,51 @@ Für die Veröffentlichung sind Lizenzangaben und Rechteaussagen (zum Beispiel {
 
 Als Ausgangspunkt sollten etablierte Schemata wie das {{< glossary DCMES >}}, {{< glossary MODS >}} oder {{< glossary "Schema.org" >}} geprüft werden. Ihre Verbreitung in der Fachcommunity und die Anschlussfähigkeit an bestehende Systeme sichern Interoperabilität und Nachhaltigkeit. Je nach Projekt kann es sinnvoll sein, Schemata zu erweitern oder zu kombinieren, etwa {{< glossary EAD >}} oder {{< glossary MARC >}} auf Sammlungsebene und {{< glossary DCMES >}}, {{< glossary MODS >}}, {{< glossary LIDO >}} oder {{< glossary "VRA Core" >}} auf Objektebene [@schopper_2024_einfuehrung_metadaten].
 
-Darüber hinaus ist die frühzeitige Planung von Normdaten, kontrollierten Vokabularen, technischen Plattformen und Datenflüssen entscheidend. Bei der Definition der Metadatenfelder empfiehlt es sich, zunächst alle relevanten Informationen zu sammeln (zum Beispiel Zeitangaben, Geokoordinaten, Lizenzhinweise, Versionsgeschichte). Ob Angaben in eigenen Feldern oder in Kommentarfeldern erfasst werden, hängt von Automatisierbarkeit, Standardisierung und Aggregationsanforderungen ab.
+Darüber hinaus ist die frühzeitige Planung von Normdaten, kontrollierten Vokabularen, technischen Plattformen und Datenflüssen entscheidend. Bei der Definition der Metadatenfelder empfiehlt es sich, zunächst alle relevanten Informationen zu sammeln (zum Beispiel Zeitangaben, Geokoordinaten, Lizenzhinweise, Versionsgeschichte).
 
-Ein weiterer wichtiger Aspekt in diesem Schritt ist die Sensibilität gegenüber impliziten Annahmen, die mit Metadatenschemata und {{< glossary Ontologie display="Ontologien" >}} verbunden sind. Jede Klassifikation trifft bestimmte Aussagen über die Welt und ist daher nie neutral. Durch ihre Ordnungsstrukturen suggerieren Metadatenschemata häufig Allgemeingültigkeit und Objektivität, blenden jedoch Widersprüche, Ein- und Ausschlüsse aus. Beispiele hierfür sind die implizite Annahme eines Kernfamilienmodells in standardisierten Erhebungsbögen oder die westlich geprägten Vorstellungen von Besitz und Urheberschaft, die sich etwa in den Dublin-Core-Elementen "creator*"* und "rights" niederschlagen.
+Ein weiterer wichtiger Aspekt in diesem Schritt ist die Sensibilität gegenüber impliziten Annahmen, die mit Metadatenschemata und {{< glossary Ontologie display="Ontologien" >}} verbunden sind. Jede Klassifikation trifft bestimmte Aussagen über die Welt und ist daher nie neutral. Durch ihre Ordnungsstrukturen suggerieren Metadatenschemata häufig Allgemeingültigkeit und Objektivität, blenden jedoch Widersprüche, Ein- und Ausschlüsse aus. Beispiele hierfür sind die implizite Annahme eines Kernfamilienmodells in standardisierten Erhebungsbögen oder die Dublin-Core-Elemente `creator` und `rights`. `creator` lässt Personen, Organisationen und Dienste zu, verlangt aber eine benennbare, für die Herstellung verantwortliche Entität. `rights` setzt Rechte an der Ressource voraus. Kollektiv, anonym oder über Generationen überliefertes Wissen und gemeinschaftliche Verfügungsansprüche lassen sich so nur grob abbilden. Sie brauchen Ergänzungen wie {{< glossary TK-Labels >}} [@carroll2021].
 
 Bei der Festlegung von Metadatenfeldern stellt sich häufig die Frage, ob bestimmte Angaben in eigenständigen Feldern oder in einem allgemeinen Kommentarfeld erfasst werden sollten. Die Entscheidung hängt dabei von Kriterien wie Automatisierbarkeit, Häufigkeit der Nutzung, Standardisierung, Anforderungen durch Aggregatoren sowie der gewünschten Flexibilität ab. In der Praxis erfolgt die Modellierung der Felder meist iterativ und parallel zur Quellenannotation. Dabei kann es vorkommen, dass ursprünglich geplante Felder wieder verworfen oder angepasst werden müssen, weil sich herausstellt, dass sie nur für einen Teil der Objekte relevant sind.
 
 Schliesslich ist es wichtig, sämtliche Entscheidungen und Abwägungen bei der Schemaauswahl und Felddefinition nachvollziehbar zu dokumentieren. So wird nicht nur die interne Konsistenz gewährleistet, sondern auch eine spätere Nachvollziehbarkeit durch andere Forscher\*innen und Projekte sichergestellt.
 
-Ein weiterer zentraler Punkt bei der Auswahl und Planung von Infrastrukturen ist die Abwägung zwischen proprietären Lösungen und offenen, quelloffenen Systemen. Proprietäre Software und kommerzielle Plattformen können kurzfristig Vorteile durch Benutzer\*innenfreundlichkeit, Support und Marktverbreitung bieten. Gleichzeitig bergen sie das Risiko des Vendor Lock-in: Daten und {{< glossary Workflow display="Workflows" >}} sind an ein spezifisches System gebunden, wodurch langfristige Migrationen, Interoperabilität und Kostenkontrolle erschwert werden. Gerade bei Forschungsdaten widerspricht dies den Prinzipien von Nachhaltigkeit, Offenheit und {{< glossary FAIR >}}/{{< glossary CARE >}}.
+Ein weiterer zentraler Punkt bei der Auswahl und Planung von Infrastrukturen ist die Abwägung zwischen proprietären und quelloffenen Systemen. Dabei sind vier Kriterien getrennt zu prüfen:
+
+- **Softwarelizenz:** Ist der Quellcode offen oder proprietär?
+- **Interoperabilität:** Unterstützt das System offene Standards, Schnittstellen und persistente Identifikatoren?
+- **Export:** Lassen sich Daten und Metadaten jederzeit vollständig in offenen Formaten exportieren?
+- **Herstellerabhängigkeit:** Wie aufwendig ist ein Wechsel, und wer kontrolliert Preise, Weiterentwicklung und Zugriff?
+
+Proprietäre Software und kommerzielle Plattformen können Vorteile durch Benutzer\*innenfreundlichkeit, Support und Marktverbreitung bieten. Sie widersprechen {{< glossary FAIR >}} und {{< glossary CARE >}} nicht von vornherein. Beide Prinzipien stellen Anforderungen an Daten, Metadaten und ihre Governance, nicht an die Softwarelizenz. Kritisch ist der Vendor Lock-in: Sind Daten und {{< glossary Workflow display="Workflows" >}} ohne Exportweg an ein System gebunden, erschwert das Migration, Interoperabilität und Kostenkontrolle. Umgekehrt garantiert quelloffene Software allein weder Interoperabilität noch langfristigen Betrieb.
+
+::: {.callout-note title="Entscheidungsbeispiel: Standards für eine Plakatsammlung"}
+
+Das Szenario ist konstruiert. Es bündelt typische Entscheidungen.
+
+**Ausgangslage.** Ein Stadtarchiv und eine Forschungsgruppe wollen 2000 politische Plakate des 20\. Jahrhunderts online publizieren. Zwei Personen arbeiten zwölf Monate daran. Ein Inventar liegt als Tabelle vor. Mehrere Plakate zeigen rassistische oder sexistische Motive. Die Metadaten sollen im eigenen Portal auffindbar sein und an einen Aggregator gehen.
+
+**Kriterien und Optionen.**
+
+| Kriterium            | {{< glossary DCTerms >}}                                        | {{< glossary LIDO >}}                                                |
+| :------------------- | :-------------------------------------------------------------- | :------------------------------------------------------------------- |
+| Passung zum Material | generisch; Entwurf, Druck und Auftrag teilen sich wenige Felder | objektnah; Entwurf, Druck und Auftrag als eigene Ereignisse          |
+| Anschlussfähigkeit   | von den meisten Portalen und Aggregatoren verarbeitet           | für die Lieferung von Museumsobjekten an Portale entwickelt          |
+| Raum für Kontext     | getrennt nur mit selbst definierten Zusatzfeldern               | differenziert, aber aufwendig zu pflegen                             |
+| Aufwand im Team      | gering; die Tabelle genügt als Arbeitsformat                    | hoch; verlangt {{< glossary XML >}}-Kenntnisse und passende Software |
+| Offenheit und Export | offene Spezifikation; Format frei wählbar                       | offene Spezifikation; {{< glossary XML >}}                           |
+
+**Zielkonflikte.** Einfachheit steht gegen Ausdrucksstärke: DCTerms ist in zwölf Monaten umsetzbar, bildet Rollen und Kontext aber nur grob ab. Authentizität steht gegen Schutz: Historische Titel mit diskriminierenden Begriffen sollen auffindbar bleiben, ohne als Aussage des Archivs zu erscheinen.
+
+**Entscheid.** Das Team wählt DCTerms als Kernschema und ergänzt drei eigene Felder: Kontextualisierung, {{< glossary Content-Note >}} und Rolle der Beteiligten. Der Originaltitel bleibt unverändert im Feld `title`. Zeitangaben folgen {{< glossary EDTF >}}, Personen und Körperschaften der {{< glossary GND >}}, Objektarten dem {{< glossary AAT >}}. Eine kurze eigene Schlagwortliste enthält Selbstbezeichnungen und verweist auf die {{< glossary GND >}}, wo ein passender Eintrag existiert. {{< glossary LIDO >}} wird verworfen. Ein späteres Mapping bleibt möglich.
+
+**Dokumentation.** Das {{< glossary "Data Dictionary" >}} hält Entscheid, verworfene Alternative, Datum und Verantwortliche fest. Ein Pilot mit hundert zufällig gezogenen Plakaten prüft den Entscheid, bevor das Team den ganzen Bestand erfasst.
+
+:::
 
 ::: {.callout-important title="Checkliste Standards und Infrastruktur"}
 
 - [ ] Zentrales Schema \+ Erweiterungen dokumentiert
+- [ ] Auswahlkriterien und verworfene Alternativen dokumentiert
 - [ ] Normdaten/Vokabulare ausgewählt
 - [ ] Plattform, Exportformate und persistente Identifikatoren ({{< glossary PID display="PIDs" >}}; zum Beispiel {{< glossary DOI >}}) definiert
 
@@ -64,5 +96,5 @@ Ein weiterer zentraler Punkt bei der Auswahl und Planung von Infrastrukturen ist
 
 ::: {.callout-note title="Praxisbeispiel: Stadt.Geschichte.Basel"}
 
-Im Projekt Stadt.Geschichte.Basel wurde ein flexibles Metadatenmodell entwickelt, das Metadaten von Objekten und dazugehörigen Medien klar voneinander trennt. Zeitangaben werden nach dem {{< glossary EDTF >}} Standard erfasst, damit auch unsichere oder mehrdeutige Daten präzise dokumentiert werden können [@SGB_Datendokumentation_2025]. Für die Arbeit wird ein Mix aus etablierten Open Source Werkzeugen (etwa Omeka, QGIS, R und Python) und kommerziellen Plattformen (GitHub, ArcGIS) eingesetzt. Die Daten werden vor Veröffentlichung geprüft, angereichert und zur Nachnutzung bereitgestellt. Für die langfristige Sicherung werden sie im [DaSCH](https://www.dasch.swiss/) und auf [Zenodo](https://zenodo.org/) archiviert. Begleitend sorgen Schulungen, Data Stewards und die Einbindung in Lehre und Praktika für nachhaltige Nutzung. Leitlinien wie {{< glossary FAIR >}}, Open Access und digitale Nachhaltigkeit prägen die Infrastruktur. Proprietäre Dienste werden durch offene Standards und Repositorien abgesichert. Zudem gibt es klare Regelungen zu Datenschutz und Barrierefreiheit. Die Dokumentation wird innerhalb der Projeklaufzeit regelmässig aktualisiert [@Maehr_SGB_digital_2022].
+Im Projekt Stadt.Geschichte.Basel wurde ein flexibles Metadatenmodell entwickelt, das Metadaten von Objekten und dazugehörigen Medien klar voneinander trennt. Zeitangaben werden nach dem {{< glossary EDTF >}} Standard erfasst, damit auch unsichere oder mehrdeutige Daten präzise dokumentiert werden können [@SGB_Datendokumentation_2025]. Für die Arbeit wird ein Mix aus etablierten Open Source Werkzeugen (etwa Omeka, QGIS, R und Python) und kommerziellen Plattformen (GitHub, ArcGIS) eingesetzt. Die Daten werden vor Veröffentlichung geprüft, angereichert und zur Nachnutzung bereitgestellt. Für die langfristige Sicherung werden sie im [DaSCH](https://www.dasch.swiss/) und auf [Zenodo](https://zenodo.org/) archiviert. Begleitend sorgen Schulungen, Data Stewards und die Einbindung in Lehre und Praktika für nachhaltige Nutzung. Leitlinien wie {{< glossary FAIR >}}, Open Access und digitale Nachhaltigkeit prägen die Infrastruktur. Proprietäre Dienste werden durch offene Standards und Repositorien abgesichert. Zudem gibt es klare Regelungen zu Datenschutz und Barrierefreiheit. Die Dokumentation wird innerhalb der Projektlaufzeit regelmässig aktualisiert [@Maehr_SGB_digital_2022].
 :::

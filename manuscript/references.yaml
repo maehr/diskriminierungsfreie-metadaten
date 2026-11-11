@@ -789,14 +789,12 @@ references:
         given: Melissa M.
       - family: Ames
         given: Sarah
-    event-place: Place of publication not identified
     ISBN: 978-1-78330-658-9
     issued:
       - year: 2025
     language: en
     note: 'OCLC: 1474008533'
     publisher: Facet Publishing
-    publisher-place: Place of publication not identified
     source: Open WorldCat
     title: 'Library catalogues as data: research, practice and usage'
     title-short: Library catalogues as data
@@ -1147,10 +1145,6 @@ references:
         month: 8
         day: 31
     license: AGPL-3.0
-    original-date:
-      - year: 2025
-        month: 8
-        day: 30
     source: GitHub
     title: Dublin Core Metadata Enhancer
     type: software

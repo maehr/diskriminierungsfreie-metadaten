@@ -22,7 +22,9 @@ source: `manuscript/sections/05-praxis-01-1-planung-und-konzeption.qmd`
 - Keep both practice example callouts for Stadt.Geschichte.Basel.
 - Preserve guidance on pilots, prioritization, minimum standards, and anticipating sensitive content.
 - Preserve the emphasis that ontologies/schemas are not neutral and require documented trade-offs.
-- Preserve the vendor lock-in discussion and the preference for open standards.
+- Preserve the vendor lock-in discussion. Assess platforms with four separate criteria: software licence, interoperability, export, vendor dependence.
+- Keep the worked decision example callout (constructed poster collection, DCTerms and LIDO).
+- Keep the precise statement on Dublin Core `creator` and `rights`.
 
 ## Required Citations
 
@@ -31,6 +33,7 @@ source: `manuscript/sections/05-praxis-01-1-planung-und-konzeption.qmd`
   - `@weitzmann_klimpel_2016`
   - `@schopper_2024_einfuehrung_metadaten`
   - `@SGB_Datendokumentation_2025`
+  - `@carroll2021`
 
 ## Known TODOs to Resolve
 

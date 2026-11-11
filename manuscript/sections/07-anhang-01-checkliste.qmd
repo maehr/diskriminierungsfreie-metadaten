@@ -18,6 +18,7 @@
      1.3 Standards und Infrastruktur festlegen
 
    - [ ] Zentrales Schema + Erweiterungen dokumentiert
+   - [ ] Auswahlkriterien und verworfene Alternativen dokumentiert
    - [ ] Normdaten/Vokabulare ausgewählt
    - [ ] Plattform, Exportformate und persistente Identifikatoren ({{< glossary PID display="PIDs" >}}; zum Beispiel {{< glossary DOI >}}) definiert
 
@@ -43,6 +44,7 @@
 
    - [ ] Vokabulare und Normdateien pro Feld definiert
    - [ ] Regeln für Intrinsisch/Extrinsisch festgelegt
+   - [ ] Kontextualisierung und Interpretation getrennt erfasst und gekennzeichnet
    - [ ] Unsicherheit formalisiert und sichtbar gemacht
 
      3.3 KI-Unterstützung und Automatisierung
@@ -95,6 +97,14 @@
    - [ ] Persistente {{< glossary URI display="URIs" >}} stabil, Umzüge mit Weiterleitungen gesichert
    - [ ] Jede Edition als Paket mit Prüfsummen, Daten und Dokumentation archiviert
 
+     5.5 Minimale Qualitätsprüfung
+
+   - [ ] Auffindbarkeit: Persistenter Identifikator vergeben; Datensätze im Zielportal über Titel, Schlagwörter und Selbstbezeichnungen auffindbar
+   - [ ] Genauigkeit: Stichprobe gegen die Quelle geprüft; Fehler korrigiert, Unsicherheiten gekennzeichnet
+   - [ ] Provenienz: Herkunft der Quelle und der Metadaten angegeben (übernommen, neu erfasst oder KI-generiert), mit Bearbeiter\*in und Datum
+   - [ ] Rechte: Lizenz oder {{< glossary "rights statement" >}} maschinenlesbar; Personenbezug, Schutzbedarf und Zugangsstufe geprüft
+   - [ ] Kontext: Quellenangabe, Beschreibung, Kontextualisierung und Interpretation getrennt und gekennzeichnet; diskriminierende Inhalte mit {{< glossary Content-Note >}} versehen
+
 6. Nachnutzung und Wiederverwendung
    - [ ] Linked-Data-Exporte, {{< glossary PID display="PIDs" >}} und {{< glossary Crosswalk display="Crosswalks" >}} verfügbar
    - [ ] Zitations- und Lizenzrichtlinien veröffentlicht
@@ -104,6 +114,6 @@
 7. Archivierung und Löschung
    - [ ] Archivpakete mit dokumentierten Provenienzen und Prüfsummen erstellt
    - [ ] Lösch- und Rückgabeprozesse rechtlich und organisatorisch festgelegt
-   - [ ] Tombstones und Änderungsprotokolle veröffentlicht
+   - [ ] Löschverfahren je Fall gewählt (Redaktion, Tombstone oder vollständige Entfernung) und intern protokolliert
    - [ ] Zugriffskontrollen, Verschlüsselung und Logs aktiv
    - [ ] Redundanz- und Notfallpläne etabliert, Kosten langfristig kalkuliert

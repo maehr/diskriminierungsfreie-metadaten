@@ -8,6 +8,8 @@ Warum Metadaten? In einer zunehmend digital vermittelten Welt machen Metadaten h
 
 Ein Blick in die deutschsprachigen Archive zeigt, dass vielerorts bereits auf die {{< glossary FAIR >}}-Prinzipien bei Metadaten geachtet wird. Eine diskriminierungssensible Metadatenpraxis bleibt jedoch meist aus. Oft fehlen kontextualisierende Beschreibungen, in denen Diskriminierungsformen explizit benannt und in ihren jeweiligen historischen Kontext eingeordnet werden. Im Online-Katalog der "Plakatsammlung der Schule für Gestaltung" beschränkt sich die Beschreibung des Plakats ["Frauenstimmrecht, Nein"](https://www.recherche-plakatsammlungbasel.ch/objects/48228/) auf sachliche Angaben: "Eidgenössische Abstimmung, 1\. Februar 1959". Hinweise auf den historischen, politischen und insbesondere den sexistischen Kontext fehlen.
 
+Eine solche sachliche Erschliessung ist nicht fehlerhaft. Katalogisierung und wissenschaftliche Datenpublikation verfolgen aber unterschiedliche Zwecke. Wer historische Forschungsdaten für die weitere wissenschaftliche und öffentliche Nutzung publiziert, braucht oft eine zusätzliche, quellengestützte Kontextualisierung. Dabei bleiben Quellenangabe, sachliche Beschreibung, Kontextualisierung und Interpretation unterscheidbar ([Abschnitt 3.2](#sec-32-beschreibung-und-verschlagwortung)).
+
 Mit diesem Handbuch setzen wir uns für eine diskriminierungssensible Metadatenpraxis ein. Wir erkennen an, dass Diskriminierung tief in gesellschaftlichen und institutionellen Strukturen verankert ist und sich nicht allein durch eine wohlüberlegte Begriffswahl vermeiden lässt.
 
 Diskriminierungssensibilität bedeutet, aufmerksam zu bleiben für Veränderungen von gesellschaftlichen Normen, die Vielfalt von Diskriminierungserfahrungen und die Unabgeschlossenheit von Dekolonisierungsprozessen. Sie fordert uns auf, unsere eigene Positionierung und bestehende Machtverhältnisse kritisch zu hinterfragen und zu reflektieren.
@@ -16,13 +18,13 @@ Im Handbuch verwenden wir bewusst eine breite Definition von Diskriminierung, um
 
 Der Band gliedert sich in zwei Teile. Er beginnt mit der Praxis. Im Praxisteil behandeln wir den diskriminierungssensiblen Umgang mit Metadaten entlang der Phasen des Forschungsdatenlebenszyklus [@higgins2008]:
 
-1. **Planung und Konzeption:** Konzeptionelle Grundentscheidungen, Auswahl von Standards, Rollen, ethische und rechtliche Aspekte, Fokus auf Einwilligung und Schutz vulnerabler Gruppen. @sec-1-planung-und-konzeption
-2. **Datensammlung und Quellenkritik:** Datenerzeugung und \-sammlung, Nutzung offener Formate und normierter Begrifflichkeiten zur Interoperabilität sowie Kontextualisierung der Quellen. @sec-2-datensammlung-und-quellenkritik
-3. **Datenverarbeitung und Anreicherung:** Datenaufbereitung, Metadatenanreicherung, Dokumentation, frühzeitige Standardisierung. @sec-3-datenverarbeitung-und-anreicherung
-4. **Speicherung und Verwaltung:** Strukturiertes, sicheres Speichern, Zugriffskontrolle, Pflege, Versionierung, diskriminierungssensible Zugangsregelungen. @sec-4-speicherung-und-verwaltung
-5. **Veröffentlichung und Zugang:** Zugänglichmachung über Repositorien, persistente Identifikatoren ({{< glossary PID display="PIDs" >}}), Lizenzen, {{< glossary FAIR >}}/{{< glossary CARE >}}-Prinzipien. @sec-5-veroeffentlichung-und-zugang
-6. **Nachnutzung und Wiederverwendung:** Recherchierbarkeit, Interoperabilität, Kontextinformation zur Vermeidung von Fehlinterpretationen. @sec-6-nachnutzung-und-wiederverwendung
-7. **Archivierung und Löschung:** Auswahl von Archivierungsstandards und Speicherorten, rechtliche und ethische Vorgaben. @sec-7-archivierung-und-loeschung
+1. **[Planung und Konzeption](#sec-1-planung-und-konzeption):** Konzeptionelle Grundentscheidungen, Auswahl von Standards, Rollen, ethische und rechtliche Aspekte, Fokus auf Einwilligung und Schutz vulnerabler Gruppen.
+2. **[Datensammlung und Quellenkritik](#sec-2-datensammlung-und-quellenkritik):** Datenerzeugung und \-sammlung, Nutzung offener Formate und normierter Begrifflichkeiten zur Interoperabilität sowie Kontextualisierung der Quellen.
+3. **[Datenverarbeitung und Anreicherung](#sec-3-datenverarbeitung-und-anreicherung):** Datenaufbereitung, Metadatenanreicherung, Dokumentation, frühzeitige Standardisierung.
+4. **[Speicherung und Verwaltung](#sec-4-speicherung-und-verwaltung):** Strukturiertes, sicheres Speichern, Zugriffskontrolle, Pflege, Versionierung, diskriminierungssensible Zugangsregelungen.
+5. **[Veröffentlichung und Zugang](#sec-5-veroeffentlichung-und-zugang):** Zugänglichmachung über Repositorien, persistente Identifikatoren ({{< glossary PID display="PIDs" >}}), Lizenzen, {{< glossary FAIR >}}/{{< glossary CARE >}}-Prinzipien.
+6. **[Nachnutzung und Wiederverwendung](#sec-6-nachnutzung-und-wiederverwendung):** Recherchierbarkeit, Interoperabilität, Kontextinformation zur Vermeidung von Fehlinterpretationen.
+7. **[Archivierung und Löschung](#sec-7-archivierung-und-loeschung):** Auswahl von Archivierungsstandards und Speicherorten, rechtliche und ethische Vorgaben.
 
 ```{mermaid}
 %%| label: fig-metadata-1
@@ -46,6 +48,10 @@ flowchart TD
 ```
 
 Der zweite Teil bündelt die theoretischen und technischen Schlüsselbegriffe und verknüpft sozial- und informationswissenschaftliche Perspektiven. Er dient als konzeptioneller Rahmen und als Nachschlagebereich (Normativität, Formen der Diskriminierung, Bias und Oppression sowie Grundlagen zu Forschungs- und Metadaten, Metadatenstandards und {{< glossary FAIR >}}/{{< glossary CARE >}}/{{< glossary LOUD >}}).
+
+Das Handbuch unterstützt Forschende und Gedächtnisinstitutionen dabei, historische Forschungsdaten auffindbar, nachvollziehbar und verantwortungsvoll zu veröffentlichen und nachnutzbar zu machen. Die Veröffentlichung dient dem öffentlichen Interesse an historischem Wissen und wissenschaftlicher Überprüfbarkeit. Dieses Interesse ist mit Persönlichkeitsrechten, dem Schutz betroffener Gruppen sowie rechtlichen und ethischen Einschränkungen abzuwägen. Die übrigen Phasen des Lebenszyklus behandeln wir, soweit sie diesem Publikationszweck dienen.
+
+Das Handbuch ist eine praxisorientierte Entscheidungshilfe, eine wissenschaftlich fundierte Einführung und eine Sammlung übertragbarer Empfehlungen. Es ist kein Regelwerk für alle Institutionen und Bestände und kein Rahmen zur Evaluation von Metadatenpraktiken. Ob die Empfehlungen gesellschaftliche Benachteiligung messbar verringern, untersucht es nicht. Wir unterscheiden deshalb zwischen etablierten fachlichen Standards, unseren normativen Empfehlungen und Aussagen über Wirkungen, die empirisch zu prüfen bleiben. Auch eine vollständige Erfassung konkurrierender historischer Deutungen ist nicht verlangt. Massstab ist eine für Publikationszweck und Zielgruppe angemessene, transparent begründete Kontextualisierung.
 
 Das Ziel dieses Handbuchs ist es, anhand konkreter Beispiele, Methoden und Strategien Hilfestellungen zu bieten, die es der Leser\*in erlauben sollen, Diskriminierung in der Metadatenpraxis zu erkennen und Entscheidungen in Bezug auf den eigenen Forschungskontext und auf die zur Verfügung stehenden Ressourcen fällen zu können. Zudem greifen wir konkrete Beispiele aus der deutschsprachigen, geschichtswissenschaftlichen Forschungspraxis auf, um auf wiederkehrende Stolperfallen hinzuweisen. Zur Orientierung im Handbuch dient folgende Entscheidungshilfe:
 

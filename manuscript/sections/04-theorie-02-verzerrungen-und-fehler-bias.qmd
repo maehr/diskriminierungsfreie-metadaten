@@ -42,7 +42,7 @@ _Wirkmechanismus:_ Erzwingt Kategorien, die der Selbstbeschreibung der Betroffen
 
 _Beispiele:_
 
-- Binarer `gndo:gender`\-Wert ("male"/"female") löscht nicht-binäre Identitäten.
+- Binärer `gndo:gender`\-Wert ("male"/"female") löscht nicht-binäre Identitäten.
 - Koloniale Ethnonyme in Normdaten ("Hottentotte") perpetuieren rassistische Klassifikationen.
 
 **Epistemische Gewalt**
@@ -141,7 +141,7 @@ _Beispiel:_ Trainings- und Testsets für {{< glossary Named-Entity-Recognition >
 
 Ungleichgewicht, das durch visuelle, typografische oder layoutbezogene Hervorhebungen entsteht. Interface-Entscheide lenken Aufmerksamkeit und Interpretationsrahmen, bevor inhaltliche Qualität bewertet wird.
 
-_Beispiel:_ Quellen, die ohne Einschränkungen zugänglich sind, werden farblich hervorgehoben im Archivkatalog. Damit werden sie häufiger angeklickt und verdrängen, die weniger zugänglichen Quellen überdurchschnittlich.
+_Beispiel:_ Quellen, die ohne Einschränkungen zugänglich sind, werden farblich hervorgehoben im Archivkatalog. Damit werden sie häufiger angeklickt und verdrängen die weniger zugänglichen Quellen überdurchschnittlich.
 
 #### **Rangfolgenfehler (Ranking Bias)** {#sec-rangfolgenfehler-ranking-bias}
 

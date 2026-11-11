@@ -8,7 +8,14 @@ Eine nachhaltige Langzeitarchivierung setzt auf offene, standardisierte Verpacku
 
 ### 7.2 Löschung, Rückgabe und Takedown {#sec-72-löschung-rückgabe-und-takedown}
 
-Nicht alle Daten können oder dürfen unbegrenzt aufbewahrt werden. Rechtliche Löschfristen, datenschutzrechtliche Ansprüche oder Rückgaberechte von Datensubjekten erfordern kontrollierte Verfahren. Löschungen sollten nicht stillschweigend erfolgen, sondern durch sogenannte Tombstone-Seiten sichtbar bleiben, die auf die frühere Existenz des Datensatzes hinweisen. Wo möglich, sollte Löschung durch selektive Redaktion (zum Beispiel Anonymisierung oder Einschränkung einzelner Felder) ersetzt werden, um die Kontextintegrität zu wahren. Ein formelles Deletions-Audit sowie nachvollziehbare Änderungsprotokolle sichern die Transparenz. Für sensible Kulturdaten kann auch eine Rückgabe an betroffene Communities (Repatriierung) erforderlich sein.
+Nicht alle Daten können oder dürfen unbegrenzt aufbewahrt werden. Rechtliche Löschfristen, datenschutzrechtliche Ansprüche oder Rückgaberechte von Datensubjekten erfordern kontrollierte Verfahren. Löschungen sollten nicht stillschweigend erfolgen. Je nach Schutzbedarf kommen vier Verfahren in Frage:
+
+- **Eingeschränkte Sichtbarkeit:** Einzelne Felder werden anonymisiert oder gesperrt, der Datensatz bleibt bestehen. Diese selektive Redaktion ist der Löschung vorzuziehen, wo sie den Schutzzweck erfüllt, weil sie die Kontextintegrität wahrt.
+- **Öffentlicher Tombstone:** Der Datensatz wird entfernt. Unter dem bisherigen Identifikator weist eine Seite auf seine frühere Existenz hin. Das ist der Normalfall, wenn der Hinweis selbst niemanden gefährdet.
+- **Vollständige Entfernung:** Ein Tombstone kann selbst sensible Informationen offenlegen, etwa durch Namen im Titel, in der URL oder im Löschgrund. Dann nennt er nur Identifikator und Löschdatum; ohne persistenten Identifikator kann er ganz entfallen. Der Schutz Betroffener hat Vorrang vor der öffentlichen Nachvollziehbarkeit.
+- **Interne Dokumentation:** Jede Löschung wird in einem zugriffsgeschützten Protokoll festgehalten (wer, wann, auf welcher Grundlage). Es enthält nur, was für den Nachweis nötig ist.
+
+Die Löschung muss alle Kopien erfassen, auch archivierte Editionen, Datenpakete und an Aggregatoren gelieferte Metadaten. Für sensible Kulturdaten kann auch eine Rückgabe an betroffene Communities (Repatriierung) erforderlich sein.
 
 ### 7.3 Zugriff und Schutz {#sec-73-zugriff-und-schutz}
 
@@ -18,7 +25,7 @@ Archivierte Daten müssen auch in Zukunft geschützt und verantwortungsvoll zug�
 
 - [ ] Archivpakete mit dokumentierten Provenienzen und Prüfsummen erstellt
 - [ ] Lösch- und Rückgabeprozesse rechtlich und organisatorisch festgelegt
-- [ ] Tombstones und Änderungsprotokolle veröffentlicht
+- [ ] Löschverfahren je Fall gewählt (Redaktion, Tombstone oder vollständige Entfernung) und intern protokolliert
 - [ ] Zugriffskontrollen, Verschlüsselung und Logs aktiv
 - [ ] Redundanz- und Notfallpläne etabliert, Kosten langfristig kalkuliert
 
