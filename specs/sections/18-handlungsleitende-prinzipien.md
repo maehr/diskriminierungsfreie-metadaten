@@ -14,7 +14,7 @@ source: `manuscript/sections/05-praxis-08-handlungsleitende-prinzipien.qmd`
   2. Varianten- und Mehrsprachigkeitsfaehigkeit im Metadatenmodell
   3. Partizipative Kuratierung und Governance
   4. Ausgleichende Technik entlang der gesamten Prozesskette
-  5. Analytische Robustheit als Standardpraxis
+  5. Analytische Robustheit bei quantitativen Auswertungen
   6. Gerechtigkeitsmetriken und Monitoring
   7. Reproduzierbarkeit und digitale Nachhaltigkeit
 - Keep the final "Zusammenfassung" with the 4-step cycle.
@@ -24,6 +24,7 @@ source: `manuscript/sections/05-praxis-08-handlungsleitende-prinzipien.qmd`
 - Preserve concrete operational artifacts: decision/change logs, datasheets/model cards, SKOS label patterns, issue tracking.
 - Preserve the emphasis on documented uncertainty and conservative modeling.
 - Preserve the monitoring metrics examples (recall/precision parity, exposure in rankings, etc.).
+- Mark principles 4 to 6 as optional. Statistical methods are not a general requirement for metadata creation.
 
 ## Citation Expectations
 
@@ -35,7 +36,7 @@ source: `manuscript/sections/05-praxis-08-handlungsleitende-prinzipien.qmd`
 - 2\. Varianten- und Mehrsprachigkeitsfähigkeit im Metadatenmodell
 - 3\. Partizipative Kuratierung und Governance
 - 4\. Ausgleichende Technik entlang der gesamten Prozesskette
-- 5\. Analytische Robustheit als Standardpraxis
+- 5\. Analytische Robustheit bei quantitativen Auswertungen
 - 6\. Gerechtigkeitsmetriken und Monitoring
 - 7\. Reproduzierbarkeit und digitale Nachhaltigkeit
 - Zusammenfassung

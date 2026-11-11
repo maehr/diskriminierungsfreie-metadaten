@@ -1,6 +1,6 @@
 ## Metadatenstandards: sieben Ebenen {#sec-metadatenstandards-sieben-ebenen}
 
-Dieser Anhang ergänzt @sec-metadatenstandards und entfaltet die sieben Ebenen oder Typen von Metadatenstandards anhand des Beispiels _Knie Völkerschau_.
+Dieser Anhang ergänzt den Abschnitt [Metadatenstandards](#sec-metadatenstandards) und entfaltet die sieben Ebenen oder Typen von Metadatenstandards anhand des Beispiels _Knie Völkerschau_.
 
 ### **1\. Datentypstandard _(Feld- oder Attributniveau)_** {#sec-1-datentypstandard-feld--oder-attributniveau}
 
@@ -44,7 +44,7 @@ Oft wird zwischen Strukturstandard und Schema nicht klar unterschieden. Während
 
 Die Datenstruktur des Beispiels _Knie Völkerschau_ entspricht dem **{{< glossary EDM display="Europeana Data Model (EDM)" >}}**:
 
-- `ProvidedCHO` (Cultural Heritage Object) enthält zum Beipsiel `dc:title`, `dc:date`, `dc:type`
+- `ProvidedCHO` (Cultural Heritage Object) enthält zum Beispiel `dc:title`, `dc:date`, `dc:type`
 - `Aggregation` verknüpft mit `edm:isShownBy`, `edm:preview`, `edm:provider`
 - `Proxy` erlaubt Mehrsprachigkeit, etwa in `dc:description` (da) und `dc:title` (de)
 
@@ -54,7 +54,7 @@ Legt fest, **wie der strukturierte Metadatensatz technisch gespeichert oder übe
 
 **Anmerkung:** {{< glossary XML >}} oder {{< glossary RDF >}} sind **Struktur- und Formatstandards zugleich**, abhängig davon, ob man ihre **logische Modellierung** oder die **Serialisierung** betont.
 
-Im Fall von _Knie Völkerschau_ liegen die Metadaten folgenden Formaten vor:
+Im Fall von _Knie Völkerschau_ liegen die Metadaten in folgenden Formaten vor:
 
 - Europeana-{{< glossary API >}} liefert Metadaten im **{{< glossary JSON-LD >}}** (zum Beispiel via `/record/v2/...json`)
 - Exportierbar als **{{< glossary RDF >}}/{{< glossary XML >}}** oder **{{< glossary Turtle >}}**
@@ -77,7 +77,7 @@ Ermöglichen den **Austausch, Aggregation und Mapping** zwischen verschiedenen S
 
 Das Beispiel _Knie Völkerschau_ ist vollständig eingebettet in ein interoperables Framework:
 
-- Über die maschinenlesbare Schnittstelle {{< glossary OAI-PMH >}} werden die Informationen aus den lokalen Repositorien gesammelt und an einen Aggreator (zum Beispiel Europeana) übermittelt. Die Herkunftsinformation kann im Feld `edm:dataProvider` eingebettet werden.
+- Über die maschinenlesbare Schnittstelle {{< glossary OAI-PMH >}} werden die Informationen aus den lokalen Repositorien gesammelt und an einen Aggregator (zum Beispiel Europeana) übermittelt. Die Herkunftsinformation kann im Feld `edm:dataProvider` eingebettet werden.
 - {{< glossary IIIF >}} Manifest verfügbar für DeepZoom oder Bildannotation
 - Verlinkung auf Lizenzen, Orte, Konzepte via {{< glossary URI >}} ({{< glossary LOUD >}}-Prinzipien)
 - Es sind Mappings in beide Richtungen möglich: von {{< glossary MARC >}} zu {{< glossary "Dublin Core" >}} und umgekehrt, von {{< glossary TEI >}} zu {{< glossary EDM >}} und umgekehrt sowie von {{< glossary "CIDOC CRM" >}} zu {{< glossary EDM >}} und umgekehrt.

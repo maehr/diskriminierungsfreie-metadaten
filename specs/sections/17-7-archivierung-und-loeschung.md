@@ -18,7 +18,8 @@ source: `manuscript/sections/05-praxis-07-7-archivierung-und-loeschung.qmd`
 - Keep the conceptual references to OAIS and NDSA Preservation Levels as orientation.
 - Keep packaging examples (BagIt, RO-Crate) and preservation metadata standards (METS, PREMIS).
 - Keep integrity and redundancy requirements (checksums; 3-2-1 rule).
-- Keep the principle that deletions should be visible via tombstones and logged via an audit/change log.
+- Keep the four deletion procedures: restricted visibility, public tombstone, full removal, internal log.
+- Keep the rule that the protection of affected persons has priority over public traceability.
 - Keep the possibility of selective redaction instead of full deletion and the mention of repatriation for sensitive cultural data.
 - Keep the checklist callout "Checkliste Archivierung und Loeschung".
 
