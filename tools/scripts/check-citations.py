@@ -49,6 +49,29 @@ def load_bib_keys(bib_path: Path) -> set[str]:
     return set(re.findall(r"@\w+\{(\w+),", content))
 
 
+FENCE_RE = re.compile(r"^\s*(`{3,}|~{3,})")
+CODE_SPAN_RE = re.compile(r"(?<!`)(`+)(?!`).+?(?<!`)\1(?!`)")
+
+
+def strip_code(content: str) -> str:
+    """Remove fenced code blocks and inline code spans.
+
+    Pandoc reads no citation inside code, so an `@` there is not a citation.
+    """
+    kept: list[str] = []
+    fence: str | None = None
+    for line in content.splitlines():
+        match = FENCE_RE.match(line)
+        if fence is None:
+            if match:
+                fence = match.group(1)
+                continue
+            kept.append(CODE_SPAN_RE.sub("", line))
+        elif match and match.group(1)[0] == fence[0] and len(match.group(1)) >= len(fence):
+            fence = None
+    return "\n".join(kept)
+
+
 def find_citations(sections_dir: Path) -> set[str]:
     """Find all @citations in manuscript sections."""
     citations: set[str] = set()
@@ -83,7 +106,7 @@ def find_citations(sections_dir: Path) -> set[str]:
         return False
 
     for qmd in sections_dir.glob("*.qmd"):
-        content = qmd.read_text(encoding="utf-8")
+        content = strip_code(qmd.read_text(encoding="utf-8"))
         found = cite_re.findall(content)
         citations.update(key for key in found if not is_crossref(key))
     return citations

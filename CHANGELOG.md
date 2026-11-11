@@ -15,6 +15,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Corrected the release date of v1.0.1 to 2025-09-07.
 - Revised the manuscript after external review #2 ([#42](https://github.com/maehr/diskriminierungsfreie-metadaten/issues/42)). The introduction states the scope and the limits. Section 3.2 separates source statement, description, contextualization and interpretation. Statements on FAIR, Dublin Core, identifiers and proprietary systems are corrected. Section 7.2 gives four deletion procedures. Statistical methods are optional. Section 1.3 has a worked decision example from Stadt.Geschichte.Basel. Section 5.5 defines a minimal quality check.
 - Section references show the visible chapter numbers. Typos and three bibliography entries are corrected.
+- The bibliography has entries for all works in the decision tree of the appendix. The entry for Kaiser et al. (2023) has its journal title.
+- Section 7.1 names BagIt and RO-Crate. The introduction limits its statement on catalogue practice to the Basel example. An unsupported statement on DE-BIAS is removed.
+
+### Fixed
+
+- The citation check ignores code blocks and code spans.
+- The glossary check finds the term after a named argument. It reports a shortcode without a term.
+- The glossary filter reports a shortcode without a term and continues the render.
 
 ## [v2.0.0-alpha.0] - 2026-02-10
 
