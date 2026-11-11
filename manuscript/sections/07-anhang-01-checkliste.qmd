@@ -44,7 +44,7 @@
 
    - [ ] Vokabulare und Normdateien pro Feld definiert
    - [ ] Regeln für Intrinsisch/Extrinsisch festgelegt
-   - [ ] Kontextualisierung und Interpretation getrennt erfasst und gekennzeichnet
+   - [ ] Kontextualisierung und Interpretation, sofern vorhanden, getrennt erfasst und gekennzeichnet
    - [ ] Unsicherheit formalisiert und sichtbar gemacht
 
      3.3 KI-Unterstützung und Automatisierung
@@ -99,11 +99,12 @@
 
      5.5 Minimale Qualitätsprüfung
 
-   - [ ] Auffindbarkeit: Persistenter Identifikator vergeben; Datensätze im Zielportal über Titel, Schlagwörter und Selbstbezeichnungen auffindbar
+   - [ ] Stichprobe von einer zweiten Person geprüft; Umfang vorab festgelegt; Ergebnis, Datum und Prüfer\*in protokolliert
+   - [ ] Auffindbarkeit: Persistenter Identifikator vergeben; Datensätze im Zielportal über Titel, Schlagwörter und, sofern bekannt, Selbstbezeichnungen auffindbar
    - [ ] Genauigkeit: Stichprobe gegen die Quelle geprüft; Fehler korrigiert, Unsicherheiten gekennzeichnet
    - [ ] Provenienz: Herkunft der Quelle und der Metadaten angegeben (übernommen, neu erfasst oder KI-generiert), mit Bearbeiter\*in und Datum
    - [ ] Rechte: Lizenz oder {{< glossary "rights statement" >}} maschinenlesbar; Personenbezug, Schutzbedarf und Zugangsstufe geprüft
-   - [ ] Kontext: Quellenangabe, Beschreibung, Kontextualisierung und Interpretation getrennt und gekennzeichnet; diskriminierende Inhalte mit {{< glossary Content-Note >}} versehen
+   - [ ] Kontext: Quellenangabe, Beschreibung sowie, sofern vorhanden, Kontextualisierung und Interpretation getrennt und gekennzeichnet; diskriminierende Inhalte mit {{< glossary Content-Note >}} versehen
 
 6. Nachnutzung und Wiederverwendung
    - [ ] Linked-Data-Exporte, {{< glossary PID display="PIDs" >}} und {{< glossary Crosswalk display="Crosswalks" >}} verfügbar

@@ -83,14 +83,15 @@ Offene Prinzipien werden auf der Projektseite explizit sichtbar gemacht. Dies sc
 
 ### 5.5 Minimale Qualitätsprüfung {#sec-55-minimale-qualitaetspruefung}
 
-Vor jeder Veröffentlichung prüft eine zweite Person eine Stichprobe der Datensätze anhand von fünf Kriterien. Der Umfang der Stichprobe wird vorab festgelegt. Die Prüfung macht Publikationsentscheidungen nachvollziehbar. Sie ist kein Evaluationsrahmen und misst keine gesellschaftliche Wirkung. Ergebnis, Datum und Prüfer\*in stehen im Änderungsprotokoll.
+Vor jeder Veröffentlichung prüft eine zweite Person eine Stichprobe der Datensätze anhand von fünf Kriterien. Der Umfang der Stichprobe wird vorab festgelegt. Lässt sich die Auffindbarkeit erst im Zielportal prüfen, folgt dieser Teil unmittelbar nach der Veröffentlichung. Die Prüfung macht Publikationsentscheidungen nachvollziehbar. Sie ist kein Evaluationsrahmen und misst keine gesellschaftliche Wirkung. Ergebnis, Datum und Prüfer\*in stehen im Änderungsprotokoll.
 
 ::: {.callout-important title="Checkliste minimale Qualitätsprüfung"}
 
-- [ ] **Auffindbarkeit:** Persistenter Identifikator vergeben; Datensätze im Zielportal über Titel, Schlagwörter und Selbstbezeichnungen auffindbar
+- [ ] Stichprobe von einer zweiten Person geprüft; Umfang vorab festgelegt; Ergebnis, Datum und Prüfer\*in protokolliert
+- [ ] **Auffindbarkeit:** Persistenter Identifikator vergeben; Datensätze im Zielportal über Titel, Schlagwörter und, sofern bekannt, Selbstbezeichnungen auffindbar
 - [ ] **Genauigkeit:** Stichprobe gegen die Quelle geprüft; Fehler korrigiert, Unsicherheiten gekennzeichnet
 - [ ] **Provenienz:** Herkunft der Quelle und der Metadaten angegeben (übernommen, neu erfasst oder KI-generiert), mit Bearbeiter\*in und Datum
 - [ ] **Rechte:** Lizenz oder {{< glossary "rights statement" >}} maschinenlesbar; Personenbezug, Schutzbedarf und Zugangsstufe geprüft
-- [ ] **Kontext:** Quellenangabe, Beschreibung, Kontextualisierung und Interpretation getrennt und gekennzeichnet; diskriminierende Inhalte mit {{< glossary Content-Note >}} versehen
+- [ ] **Kontext:** Quellenangabe, Beschreibung sowie, sofern vorhanden, Kontextualisierung und Interpretation getrennt und gekennzeichnet; diskriminierende Inhalte mit {{< glossary Content-Note >}} versehen
 
 :::

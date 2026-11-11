@@ -10,9 +10,9 @@ Eine nachhaltige Langzeitarchivierung setzt auf offene, standardisierte Verpacku
 
 Nicht alle Daten können oder dürfen unbegrenzt aufbewahrt werden. Rechtliche Löschfristen, datenschutzrechtliche Ansprüche oder Rückgaberechte von Datensubjekten erfordern kontrollierte Verfahren. Löschungen sollten nicht stillschweigend erfolgen. Je nach Schutzbedarf kommen vier Verfahren in Frage:
 
-- **Eingeschränkte Sichtbarkeit:** Einzelne Felder werden anonymisiert oder gesperrt, der Datensatz bleibt bestehen. Diese selektive Redaktion ist der Löschung vorzuziehen, wo sie den Schutzzweck erfüllt, weil sie die Kontextintegrität wahrt.
+- **Eingeschränkte Sichtbarkeit:** Einzelne Felder werden anonymisiert oder gesperrt, der Datensatz bleibt bestehen. Diese selektive Redaktion ist der Löschung vorzuziehen, wo sie den Schutzzweck erfüllt und keine rechtliche Löschpflicht besteht, weil sie die Kontextintegrität wahrt.
 - **Öffentlicher Tombstone:** Der Datensatz wird entfernt. Unter dem bisherigen Identifikator weist eine Seite auf seine frühere Existenz hin. Das ist der Normalfall, wenn der Hinweis selbst niemanden gefährdet.
-- **Vollständige Entfernung:** Ein Tombstone kann selbst sensible Informationen offenlegen, etwa durch Namen im Titel, in der URL oder im Löschgrund. Dann nennt er nur Identifikator und Löschdatum; ohne persistenten Identifikator kann er ganz entfallen. Der Schutz Betroffener hat Vorrang vor der öffentlichen Nachvollziehbarkeit.
+- **Vollständige Entfernung:** Ein Tombstone kann selbst sensible Informationen offenlegen, etwa durch Namen im Titel, in der URL oder im Löschgrund. Dann nennt er nur Identifikator und Löschdatum. Legt schon der Identifikator, die URL oder der Hinweis auf die frühere Existenz Schützenswertes offen, entfällt er ganz. Der Nachweis steht dann nur im internen Protokoll. Der Schutz Betroffener hat Vorrang vor der öffentlichen Nachvollziehbarkeit.
 - **Interne Dokumentation:** Jede Löschung wird in einem zugriffsgeschützten Protokoll festgehalten (wer, wann, auf welcher Grundlage). Es enthält nur, was für den Nachweis nötig ist.
 
 Die Löschung muss alle Kopien erfassen, auch archivierte Editionen, Datenpakete und an Aggregatoren gelieferte Metadaten. Für sensible Kulturdaten kann auch eine Rückgabe an betroffene Communities (Repatriierung) erforderlich sein.

@@ -6,7 +6,7 @@ Zentrale Grundlage einer nachhaltigen und nachvollziehbaren Datenverarbeitung is
 
 Die Automatisierung von Verarbeitungsschritten setzt atomar strukturierte Felder voraus. Freitextangaben, die nur in seltenen Fällen vorkommen, sollten hingegen möglichst zentral gebündelt werden, um Redundanzen und Validierungsprobleme zu vermeiden.
 
-**{{< glossary Ontologie display="Ontologien" >}} sind nicht neutral: Schemata treffen Annahmen über Welt und Personen.** Jede Festlegung von Datenmodellen, Schemata und Kontrollstrukturen impliziert Annahmen über Weltbilder, soziale Kategorien und rechtliche Rahmenbedingungen. Beispiele hierfür sind das binäre Geschlechtsmodell, rigide Namensfelder ohne kulturelle Differenzierung oder die Annahme einer benennbaren, verantwortlichen Urheberschaft in Feldern wie `creator` oder `rights` ([Abschnitt 1.3](#sec-13-standards-und-infrastruktur-festlegen)). Solche Modellierungen sind niemals selbstverständlich, sondern müssen als bewusste Entscheidungen transparent dokumentiert werden. Eine präzise Aufzeichnung dieser Abwägungen ist daher verpflichtend, um die Nachvollziehbarkeit und kritische Überprüfbarkeit der Datenarchitektur sicherzustellen.
+**{{< glossary Ontologie display="Ontologien" >}} sind nicht neutral: Schemata treffen Annahmen über Welt und Personen.** Jede Festlegung von Datenmodellen, Schemata und Kontrollstrukturen impliziert Annahmen über Weltbilder, soziale Kategorien und rechtliche Rahmenbedingungen. Beispiele hierfür sind das binäre Geschlechtsmodell, rigide Namensfelder ohne kulturelle Differenzierung oder die Annahme einer benennbaren, verantwortlichen Urheberschaft im Feld `creator` ([Abschnitt 1.3](#sec-13-standards-und-infrastruktur-festlegen)). Solche Modellierungen sind niemals selbstverständlich, sondern müssen als bewusste Entscheidungen transparent dokumentiert werden. Eine präzise Aufzeichnung dieser Abwägungen ist daher verpflichtend, um die Nachvollziehbarkeit und kritische Überprüfbarkeit der Datenarchitektur sicherzustellen.
 
 ::: {.callout-important title="Checkliste Technische Standards"}
 
@@ -39,7 +39,7 @@ Kontextualisierung und Interpretation sind legitime Teile einer verantwortlichen
 
 - [ ] Vokabulare und Normdateien pro Feld definiert
 - [ ] Regeln für Intrinsisch/Extrinsisch festgelegt
-- [ ] Kontextualisierung und Interpretation getrennt erfasst und gekennzeichnet
+- [ ] Kontextualisierung und Interpretation, sofern vorhanden, getrennt erfasst und gekennzeichnet
 - [ ] Unsicherheit formalisiert und sichtbar gemacht
 
 :::
