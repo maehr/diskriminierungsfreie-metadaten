@@ -23,7 +23,7 @@ source: `manuscript/sections/05-praxis-01-1-planung-und-konzeption.qmd`
 - Preserve guidance on pilots, prioritization, minimum standards, and anticipating sensitive content.
 - Preserve the emphasis that ontologies/schemas are not neutral and require documented trade-offs.
 - Preserve the vendor lock-in discussion. Assess platforms with four separate criteria: software licence, interoperability, export, vendor dependence.
-- Keep the worked decision example callout (constructed poster collection, DCTerms and LIDO).
+- Keep the worked decision example callout (Stadt.Geschichte.Basel). Use documented decisions only. Do not add a constructed scenario.
 - Keep the precise statement on Dublin Core `creator` and `rights`.
 
 ## Required Citations
@@ -34,6 +34,9 @@ source: `manuscript/sections/05-praxis-01-1-planung-und-konzeption.qmd`
   - `@schopper_2024_einfuehrung_metadaten`
   - `@SGB_Datendokumentation_2025`
   - `@carroll2021`
+  - `@Maehr_Schnegg_Handbuch_2025`
+  - `@SGB_Datenmodell`
+  - `@SGB_omeka2dsp`
 
 ## Known TODOs to Resolve
 

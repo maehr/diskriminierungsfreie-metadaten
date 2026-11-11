@@ -1130,6 +1130,32 @@ references:
     URL: >-
       https://dokumentation.stadtgeschichtebasel.ch/products/interna/digitalkonzept/
 
+  - id: Maehr_Schnegg_Handbuch_2025
+    accessed:
+      - year: 2026
+        month: 11
+        day: 11
+    author:
+      - family: Mähr
+        given: Moritz
+      - family: Schnegg
+        given: Noëlle
+    citation-key: Maehr_Schnegg_Handbuch_2025
+    DOI: 10.5281/zenodo.17073511
+    issued:
+      - year: 2025
+        month: 9
+        day: 7
+    language: de
+    publisher: Zenodo
+    title: >-
+      Handbuch zur Erstellung diskriminierungsfreier Metadaten für historische
+      Quellen und Forschungsdaten: Erfahrungen aus dem
+      geschichtswissenschaftlichen Forschungsprojekt Stadt.Geschichte.Basel
+    type: book
+    URL: https://doi.org/10.5281/zenodo.17073511
+    version: 1.0.1
+
   - id: mahr2025
     accessed:
       - year: 2025
@@ -1530,6 +1556,49 @@ references:
     title: Datendokumentation. Forschungsdatenplattform Stadt.Geschichte.Basel
     type: webpage
     URL: https://forschung.stadtgeschichtebasel.ch/data.html
+
+  - id: SGB_Datenmodell
+    accessed:
+      - year: 2026
+        month: 11
+        day: 11
+    author:
+      - family: Görlich
+        given: Nico
+      - family: Münch
+        given: Cristina
+      - family: Mähr
+        given: Moritz
+      - family: Schnegg
+        given: Noëlle
+      - family: Twente
+        given: Moritz
+    citation-key: SGB_Datenmodell
+    container-title: Dokumentationsplattform Stadt.Geschichte.Basel
+    language: de
+    title: Datenmodell
+    type: webpage
+    URL: >-
+      https://dokumentation.stadtgeschichtebasel.ch/products/research-data/datamodel/
+
+  - id: SGB_omeka2dsp
+    accessed:
+      - year: 2026
+        month: 11
+        day: 11
+    author:
+      - family: Görlich
+        given: Nico
+      - family: Mähr
+        given: Moritz
+      - family: Twente
+        given: Moritz
+    citation-key: SGB_omeka2dsp
+    container-title: Dokumentationsplattform Stadt.Geschichte.Basel
+    language: de
+    title: omeka2dsp
+    type: webpage
+    URL: https://dokumentation.stadtgeschichtebasel.ch/products/coding/omeka2dsp/
 
   - id: sgg2023
     abstract: >-
