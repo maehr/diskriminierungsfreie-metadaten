@@ -18,6 +18,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - The bibliography has entries for all works in the decision tree of the appendix. The entry for Kaiser et al. (2023) has its journal title.
 - Section 7.1 names BagIt and RO-Crate. The introduction limits its statement on catalogue practice to the Basel example. An unsupported statement on DE-BIAS is removed.
 
+### Removed
+
+- `TODO.md`. Issue [#47](https://github.com/maehr/diskriminierungsfreie-metadaten/issues/47) tracks the open items.
+
 ### Fixed
 
 - The citation check ignores code blocks and code spans.

@@ -48,7 +48,6 @@ See the [CITATION.cff](CITATION.cff) file for citation information.
 - `reviews/`: review notes
 - `tools/scripts/`: the checks for citations and glossary terms
 - `redirect/`: the redirect page for the old Quarto Pub address
-- `TODO.md`: open editorial tasks
 
 ## Getting Started
 
