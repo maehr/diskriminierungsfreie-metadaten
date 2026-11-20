@@ -30,7 +30,7 @@
 
      2.2 Kontextualisierung der Quellen
 
-   - [ ] Entstehungs- und Nutzungskontext beschrieben
+   - [ ] Entstehungs-, Überlieferungs- und Verwendungskontext beschrieben
    - [ ] Relevante Akteur\*innen und Machtverhältnisse benannt
    - [ ] Rezeption und Deutungskonflikte referenziert
 

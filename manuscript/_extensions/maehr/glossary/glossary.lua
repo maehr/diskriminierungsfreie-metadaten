@@ -171,6 +171,11 @@ return {
   end
 
   -- or set up in-text term
+  if args[1] == nil then
+    io.stderr:write("WARNING: glossary shortcode without a term\n")
+    return pandoc.Strong({ pandoc.Str("?glossary") })
+  end
+
   local options = mergeOptions(kwargs, meta)
 
   local display = pandoc.utils.stringify(args[1])
