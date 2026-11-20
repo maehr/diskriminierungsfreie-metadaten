@@ -1051,6 +1051,26 @@ references:
     title: A Manual of Archive Administration
     type: book
 
+  - id: johnson_2019_conversation
+    accessed:
+      - year: 2026
+        month: 11
+        day: 20
+    author:
+      - family: Johnson
+        given: Katherine
+    citation-key: johnson_2019_conversation
+    container-title: The Conversation
+    DOI: 10.64628/AA.4sce6dxdr
+    issued:
+      - year: 2019
+        month: 11
+        day: 10
+    language: en
+    title: Frozen in time, the casts of Indigenous Australians who performed in ‘human zoos’ are chilling
+    type: article-newspaper
+    URL: https://theconversation.com/frozen-in-time-the-casts-of-indigenous-australians-who-performed-in-human-zoos-are-chilling-124982
+
   - id: junger2021
     accessed:
       - year: 2025
@@ -1824,6 +1844,36 @@ references:
     publisher-place: Urbana and Chicago
     title: Can the subaltern speak?
     type: chapter
+
+  - id: stabs_bonny
+    accessed:
+      - year: 2026
+        month: 11
+        day: 20
+    archive: Staatsarchiv Basel-Stadt
+    archive_location: BSL 1001 G 1.1.13.2
+    author:
+      - literal: Taeschler-Signer
+    citation-key: stabs_bonny
+    language: de
+    title: Kletternder Maori "Bonny"
+    type: graphic
+    URL: https://dls.staatsarchiv.bs.ch/records/439319
+
+  - id: staehelin_1993
+    author:
+      - family: Staehelin
+        given: Balthasar
+    citation-key: staehelin_1993
+    ISBN: 978-3-905141-57-3
+    issued:
+      - year: 1993
+    language: de
+    number-of-pages: '181'
+    publisher: Basler Afrika Bibliographien
+    publisher-place: Basel
+    title: Völkerschauen im Zoologischen Garten Basel 1879–1935
+    type: book
 
   - id: stanczak2021
     abstract: >-

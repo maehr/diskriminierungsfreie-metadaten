@@ -39,17 +39,35 @@ Das Dossier ["Zigeuner-Problem"](https://www.recherche.bar.admin.ch/recherche/#/
 
 ### 2.2 Kontextualisierung der Quellen {#sec-22-kontextualisierung-der-quellen}
 
-Wenn wie in den Beispielen "Genozid-Denkmal" oder "Zigeuner-Problem" eine Kontextualisierung fehlt, muss in diesem Schritt eine Analyse des Entstehungs- sowie des Verwendungskontextes vorgenommen werden. Mit Blick auf einen diskriminierungssensiblen Umgang mit historischen Quellen gilt es zu beachten, dass sich diskriminierende Ideologien im Lauf der Zeit verändert haben. Eine fundierte Analyse der historischen Überlieferungsgeschichte erlaubt es, die Wirkungsmacht dieser Ideologien zum Zeitpunkt der Objekterstellung zu rekonstruieren und damit kritisch zu reflektieren. Im Zentrum steht dabei die Frage "Unter welchen Umständen und mit welcher Absicht wurde die Quelle verfasst?" [@WerkzeugkastenGeschichte_2016].
+Wenn wie in den Beispielen "Genozid-Denkmal" oder "Zigeuner-Problem" eine Kontextualisierung fehlt, sollte in diesem Schritt eine Analyse des Entstehungs-, Überlieferungs- und Verwendungskontextes vorgenommen werden. Mit Blick auf einen diskriminierungssensiblen Umgang mit historischen Quellen gilt es zu beachten, dass sich diskriminierende Ideologien im Lauf der Zeit verändert haben. Eine fundierte Analyse der historischen Überlieferungsgeschichte erlaubt es, die Wirkungsmacht dieser Ideologien zum Zeitpunkt der Objekterstellung zu rekonstruieren und damit kritisch zu reflektieren. Im Zentrum steht dabei die Frage "Unter welchen Umständen und mit welcher Absicht wurde die Quelle verfasst?" [@WerkzeugkastenGeschichte_2016].
 
-Zudem helfen bei der Kontextualisierung die acht W-Fragen: Wer? Wann? Wo? Welche Quelle? Warum? An wen? Wie/wer überlieferte? Wovon zeugt sie, wovon schweigt sie?
+Bei einer Quellen-Kontextualisierung ist es wichtig, zwischen der Erhebung historischer Kontextinformationen und deren wissenschaftlicher Interpretation zu unterscheiden. Dabei unterscheiden wir drei Ebenen, die aufeinander aufbauen:
+
+- **Historische Kontextualisierung:** Erschliessung des Entstehungs-, Überlieferungs- und Verwendungskontextes anhand von Archivunterlagen, Provenienzangaben und weiteren Quellen
+- **Historische Analyse:** Untersuchung der Bedeutung und Wirkungsmacht von Ideologien und Machtverhältnissen im jeweiligen historischen Kontext
+- **Kritische Einordnung:** Bewertung der untersuchten Vorstellungen und Praktiken aus einer transparenten ethischen und gesellschaftlichen Perspektive
+
+::: {.callout-note title="Beispiel einer Kontextualisierung bei Stadt.Geschichte.Basel"}
+
+**Kletternder Maori "Bonny"**
+
+- **Historische Kontextualisierung:** Die Fotografie stammt aus dem Bestand des Staatsarchivs Basel-Stadt. Der Eintrag nennt als Ersteller\*in Taeschler-Signer, aber kein Entstehungsdatum [@stabs_bonny]. Die abgebildete Person ist vermutlich Bonangera ("Bonny"), ein Badtjala-Mann von K'gari (Fraser Island, Australien), der 1883 unter anderem in Basel auftrat [@johnson_2019_conversation]. Der Archivtitel ordnet ihn damit vermutlich falsch als Maori ein.
+- **Historische Analyse:** Das Bild ist in den Kontext der sogenannten "Völkerschauen" zwischen 1879 und 1935 im Basler Zoo einzuordnen [@staehelin_1993].
+- **Kritische Einordnung:** Hinter diesen "Völkerschauen" stand ein rassistisches, imperialistisches und koloniales Menschenbild.
+
+:::
+
+Bei einer Kontextualisierung helfen zudem die acht W-Fragen: Wer? Wann? Wo? Welche Quelle? Warum? An wen? Wie/wer überlieferte? Wovon zeugt sie, wovon schweigt sie?
 
 Durch das Durcharbeiten der W-Fragen können die sozialen und politischen Kontexte (**Entstehungskontext**) erfasst werden. Diskriminierungsformen wie beispielsweise Rassismus sind eng mit sozialen, politischen, wissenschaftlichen, institutionellen, ökonomischen und kulturellen Strukturen verbunden und sind in Hinblick auf Erstellung, Rezeption und Reproduktion der Quelle gleichermassen relevant.
 
-Neben dem Entstehungskontext muss auch der **Verwendungskontext der Quelle** ermittelt und kritisch reflektiert werden. Wichtig hier sind die Fragen, wie das Objekt beziehungsweise die Quelle aktuell zur Verfügung gestellt wird. In welchem archivarischen Kontext (Ordnungssystem, Schlagwörter, Fachbereich) ist es zu finden? Was ist der Umfang und Zustand der zu beschreibenden Metadaten? Wer waren die betreuenden Archivar\*innen und was ist über deren Arbeitskontexte bekannt? Dabei ist auch ein Blick in die Rezeption zu werfen. Wie wird die Quelle dort interpretiert und eingeordnet? Und welche sozialen, wissenschaftlichen und politischen Kontexte waren dabei wiederum wirksam?
+Neben dem Entstehungskontext muss auch der Überlieferungs- und **Verwendungskontext der Quelle** ermittelt und kritisch reflektiert werden. Der Überlieferungskontext gibt Auskunft darüber, wie eine Quelle überliefert, aufbewahrt und erschlossen wurde. Welchen Zustand und Umfang weisen die Metadaten auf? In welchem archivarischen Kontext (Ordnungssystem, Schlagwörter, Fachbereich) ist sie zu finden? Wer waren die betreuenden Archivar\*innen und was ist über deren Arbeitskontexte bekannt?
+
+Beim Verwendungskontext stehen Fragen nach der historischen und aktuellen Nutzung der Quelle im Zentrum. Dabei ist auch ein Blick in die Rezeption zu werfen. Wie wird die Quelle dort interpretiert und eingeordnet? Und welche sozialen, wissenschaftlichen und politischen Kontexte waren dabei wiederum wirksam?
 
 ::: {.callout-important title="Checkliste Kontextualisierung"}
 
-- [ ] Entstehungs- und Nutzungskontext beschrieben
+- [ ] Entstehungs-, Überlieferungs- und Verwendungskontext beschrieben
 - [ ] Relevante Akteur\*innen und Machtverhältnisse benannt
 - [ ] Rezeption und Deutungskonflikte referenziert
 
