@@ -175,6 +175,51 @@ references:
     author:
       - family: Baresel-Brand
         given: Andrea
+      - family: Franz
+        given: Michael
+      - family: Gramlich
+        given: Johannes
+      - family: Hartmann
+        given: Jasmin
+      - family: Hartmann
+        given: Uwe
+      - family: Henkel
+        given: Matthias
+      - family: Henker
+        given: Michael
+      - family: Kesting
+        given: Maria
+      - family: Kocourek
+        given: Jana
+      - family: Köstering
+        given: Susanne
+      - family: Lindenau
+        given: Katja
+      - family: Lupfer
+        given: Gilbert
+      - family: Mühlen
+        given: Ilse
+        non-dropping-particle: von zur
+      - family: Obenaus
+        given: Maria
+      - family: Poltermann
+        given: Johanna
+      - family: Rosebrock
+        given: Tessa
+      - family: Saß
+        given: Ulrike
+      - family: Scheibe
+        given: Michaela
+      - family: Thielecke
+        given: Carola
+      - family: Vuillaume
+        given: David
+      - family: Walz
+        given: Markus
+      - family: Winter
+        given: Petra
+      - family: Zuschlag
+        given: Christoph
     citation-key: baresel-brand2019
     ISBN: 978-3-9821420-0-5
     issued:
@@ -801,7 +846,7 @@ references:
     type: book
 
   - id: gasser2024
-    author:
+    editor:
       - family: Gasser
         given: Michael
       - family: Hotea

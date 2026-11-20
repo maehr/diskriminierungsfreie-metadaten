@@ -48,9 +48,11 @@ function parseShortcodeKeys(line) {
 	let m;
 	while ((m = re.exec(line)) !== null) {
 		// The term is the first positional argument. Named arguments can stand before it.
-		const positional = splitArgs(m[1].trim()).filter((arg) => !NAMED_ARG.test(arg));
+		const args = splitArgs(m[1].trim());
+		const positional = args.filter((arg) => !NAMED_ARG.test(arg));
 		if (positional.length === 0) {
-			// Parameter-only shortcodes such as {{< glossary table=true >}}
+			// Only the table mode, such as {{< glossary table=true >}}, needs no term.
+			if (!args.some((arg) => /^table=/.test(arg))) keys.push(null);
 			continue;
 		}
 		keys.push(positional[0].replace(/^["']|["']$/g, ''));
@@ -97,7 +99,9 @@ function checkFile(filePath, trackedTerms, glossarySet) {
 		}
 
 		for (const key of parseShortcodeKeys(line)) {
-			if (!glossarySet.has(key)) {
+			if (key === null) {
+				unknownShortcodes.push({ filePath, lineNo, key: '(no term)' });
+			} else if (!glossarySet.has(key)) {
 				unknownShortcodes.push({ filePath, lineNo, key });
 			}
 		}

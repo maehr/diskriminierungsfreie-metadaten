@@ -49,26 +49,45 @@ def load_bib_keys(bib_path: Path) -> set[str]:
     return set(re.findall(r"@\w+\{(\w+),", content))
 
 
-FENCE_RE = re.compile(r"^\s*(`{3,}|~{3,})")
-CODE_SPAN_RE = re.compile(r"(?<!`)(`+)(?!`).+?(?<!`)\1(?!`)")
+# A fence opener: up to three spaces, then three or more backticks or tildes.
+# A backtick fence takes no backtick in its info string, so ```x``` is inline code.
+FENCE_OPEN_RE = re.compile(r"^ {0,3}(`{3,}[^`]*|~{3,}.*)$")
+FENCE_CLOSE_RE = re.compile(r"^ {0,3}(`{3,}|~{3,})\s*$")
+CODE_SPAN_RE = re.compile(r"(?<!`)(`+)(?!`).+?(?<!`)\1(?!`)", re.DOTALL)
 
 
 def strip_code(content: str) -> str:
     """Remove fenced code blocks and inline code spans.
 
     Pandoc reads no citation inside code, so an `@` there is not a citation.
+    An inline code span can cross a soft line break, but not a blank line.
     """
     kept: list[str] = []
+    paragraph: list[str] = []
     fence: str | None = None
+
+    def flush() -> None:
+        if paragraph:
+            kept.append(CODE_SPAN_RE.sub("", "\n".join(paragraph)))
+            paragraph.clear()
+
     for line in content.splitlines():
-        match = FENCE_RE.match(line)
         if fence is None:
-            if match:
-                fence = match.group(1)
+            opener = FENCE_OPEN_RE.match(line)
+            if opener:
+                flush()
+                marker = opener.group(1)
+                fence = marker[0] * (len(marker) - len(marker.lstrip(marker[0])))
                 continue
-            kept.append(CODE_SPAN_RE.sub("", line))
-        elif match and match.group(1)[0] == fence[0] and len(match.group(1)) >= len(fence):
-            fence = None
+            if line.strip():
+                paragraph.append(line)
+            else:
+                flush()
+        else:
+            closer = FENCE_CLOSE_RE.match(line)
+            if closer and closer.group(1)[0] == fence[0] and len(closer.group(1)) >= len(fence):
+                fence = None
+    flush()
     return "\n".join(kept)
 
 
