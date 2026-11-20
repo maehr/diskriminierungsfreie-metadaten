@@ -22,7 +22,7 @@ Adressierbarkeit und Persistenz erfordern die Vergabe kanonischer, parameterlose
 
 ### 5.2 Umgang mit sensiblen und diskriminierenden Inhalten {#sec-52-umgang-mit-sensiblen-und-diskriminierenden-inhalten}
 
-Sensible Daten wie Informationen zu Personen, Kulturgut oder Fundorten erfordern besonderen Schutz. Ebenso gilt es, diskriminierende Inhalte (@sec-diskriminierung-in-und-durch-daten) klar zu benennen, kontextualisiert zu präsentieren und nicht zu beschönigen. {{< glossary Content-Note display="Content-Notes" >}} bieten dabei eine Möglichkeit, Zugänge zu moderieren und gleichzeitig Transparenz herzustellen.
+Sensible Daten wie Informationen zu Personen, Kulturgut oder Fundorten erfordern besonderen Schutz. Ebenso gilt es, diskriminierende Inhalte ([Diskriminierung in und durch Daten](#sec-diskriminierung-in-und-durch-daten)) klar zu benennen, kontextualisiert zu präsentieren und nicht zu beschönigen. {{< glossary Content-Note display="Content-Notes" >}} bieten dabei eine Möglichkeit, Zugänge zu moderieren und gleichzeitig Transparenz herzustellen.
 
 Bei sensiblen Daten können Geodaten archäologischer Fundorte, personenbezogene Abbildungen lebender oder identifizierbarer Menschen sowie Kontaktdaten von Bearbeiter\*innen problematisch sein. Bei diskriminierenden Inhalten sollte stets die Wirkung geprüft und die Reproduktion schädlicher Anschauungen vermieden werden.
 
@@ -68,7 +68,7 @@ Exportschnittstellen sind durch {{< glossary API >}}-Keys und Rate-Limits abzusi
 
 ### 5.4 Transparente Dokumentation {#sec-54-transparente-dokumentation}
 
-Die Dokumentation bleibt öffentlich zugänglich und macht Entscheidungsprozesse, Mitbestimmungen, Konflikte, Lücken und Versionen sichtbar. Beispielhaft dient die Dokumentation der Stadtgeschichte Basel. Jede Edition sollte statt eines "rolling release" fixiert vorliegen, ein Build-Datum und eine Versionsbezeichnung tragen und eine Zitierempfehlung enthalten. Persistente {{< glossary URI display="URIs" >}} müssen stabil bleiben, Umzüge sind durch Weiterleitungen abzusichern. Jede Edition wird als fixiertes Paket archiviert, das Webartefakte, Datenkopien, Dokumentationen, Prüfsummen, Lizenzdateien und optional eine {{< glossary "CITATION.cff" >}}-Datei umfasst.
+Die Dokumentation bleibt öffentlich zugänglich und macht Entscheidungsprozesse, Mitbestimmungen, Konflikte, Lücken und Versionen sichtbar. Beispielhaft dient die Dokumentation von Stadt.Geschichte.Basel. Jede Edition sollte statt eines "rolling release" fixiert vorliegen, ein Build-Datum und eine Versionsbezeichnung tragen und eine Zitierempfehlung enthalten. Persistente {{< glossary URI display="URIs" >}} müssen stabil bleiben, Umzüge sind durch Weiterleitungen abzusichern. Jede Edition wird als fixiertes Paket archiviert, das Webartefakte, Datenkopien, Dokumentationen, Prüfsummen, Lizenzdateien und optional eine {{< glossary "CITATION.cff" >}}-Datei umfasst.
 
 Offene Prinzipien werden auf der Projektseite explizit sichtbar gemacht. Dies schliesst eine Verlinkung auf die _Endings Principles_ sowie die Veröffentlichung von Compliance-Checklisten und Diagnosetools ein, welche die Qualitätssicherung und die Abschlussreife dokumentieren.
 
@@ -78,5 +78,20 @@ Offene Prinzipien werden auf der Projektseite explizit sichtbar gemacht. Dies sc
 - [ ] Editionen mit Datum, Version und Zitierempfehlung publiziert
 - [ ] Persistente {{< glossary URI display="URIs" >}} stabil, Umzüge mit Weiterleitungen gesichert
 - [ ] Jede Edition als Paket mit Prüfsummen, Daten und Dokumentation archiviert
+
+:::
+
+### 5.5 Minimale Qualitätsprüfung {#sec-55-minimale-qualitaetspruefung}
+
+Vor jeder Veröffentlichung prüft eine zweite Person eine Stichprobe der Datensätze anhand von fünf Kriterien. Der Umfang der Stichprobe wird vorab festgelegt. Lässt sich die Auffindbarkeit erst im Zielportal prüfen, folgt dieser Teil unmittelbar nach der Veröffentlichung. Die Prüfung macht Publikationsentscheidungen nachvollziehbar. Sie ist kein Evaluationsrahmen und misst keine gesellschaftliche Wirkung. Ergebnis, Datum und Prüfer\*in stehen im Änderungsprotokoll.
+
+::: {.callout-important title="Checkliste minimale Qualitätsprüfung"}
+
+- [ ] Stichprobe von einer zweiten Person geprüft; Umfang vorab festgelegt; Ergebnis, Datum und Prüfer\*in protokolliert
+- [ ] **Auffindbarkeit:** Persistenter Identifikator vergeben; Datensätze im Zielportal über Titel, Schlagwörter und, sofern bekannt, Selbstbezeichnungen auffindbar
+- [ ] **Genauigkeit:** Stichprobe gegen die Quelle geprüft; Fehler korrigiert, Unsicherheiten gekennzeichnet
+- [ ] **Provenienz:** Herkunft der Quelle und der Metadaten angegeben (übernommen, neu erfasst oder KI-generiert), mit Bearbeiter\*in und Datum
+- [ ] **Rechte:** Lizenz oder {{< glossary "rights statement" >}} maschinenlesbar; Personenbezug, Schutzbedarf und Zugangsstufe geprüft
+- [ ] **Kontext:** Quellenangabe, Beschreibung sowie, sofern vorhanden, Kontextualisierung und Interpretation getrennt und gekennzeichnet; diskriminierende Inhalte mit {{< glossary Content-Note >}} versehen
 
 :::

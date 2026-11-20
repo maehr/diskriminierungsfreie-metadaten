@@ -14,6 +14,8 @@ source: `manuscript/sections/02-einleitung.qmd`
 - Audience statement: historians, archivists, librarians, data curators; universities and GLAM.
 - Motivation: why metadata matters for findability, access, interoperability, reuse.
 - Example of missing contextualization in existing catalog metadata (Plakatsammlung Basel "Frauenstimmrecht, Nein").
+- Statement that a factual catalogue description is not an error, and that data publication can need added contextualization.
+- Scope and limits: the publication purpose; the handbook is a decision aid, not an evaluation framework and not a universal ruleset.
 - Handbook definition of discrimination (broad, includes many protected/attributed characteristics).
 - Two-part structure description (theory + practice).
 - Seven practice phases list and the citation grounding the lifecycle model (`@higgins2008`).
@@ -27,7 +29,7 @@ source: `manuscript/sections/02-einleitung.qmd`
 ## Structure
 
 - `# Einleitung`.
-- Flow: audience/scope -> why metadata -> motivating example -> definition of discrimination -> practice lifecycle phases -> lifecycle diagram -> overview of theory topics -> decision diagram -> author positionality disclosure -> Living Document + contribution channels.
+- Flow: audience/scope -> why metadata -> motivating example -> definition of discrimination -> practice lifecycle phases -> lifecycle diagram -> overview of theory topics -> scope and limits -> decision diagram -> author positionality disclosure -> Living Document + contribution channels.
 
 ## Citation Expectations
 

@@ -13,6 +13,7 @@ source: `manuscript/sections/05-praxis-05-5-veroeffentlichung-und-zugang.qmd`
 - `### 5.2 Umgang mit sensiblen und diskriminierenden Inhalten`
 - `### 5.3 Technische Strategien`
 - `### 5.4 Transparente Dokumentation`
+- `### 5.5 Minimale Qualitaetspruefung`
 
 ## Required Elements
 
@@ -22,7 +23,8 @@ source: `manuscript/sections/05-praxis-05-5-veroeffentlichung-und-zugang.qmd`
 - Keep the static-site target architecture guidance and the strict build/validation framing.
 - Keep the recommended format list (PDF/A, XML/HTML/MD/TXT, TIFF/PNG/SVG, CSV) and UTF-8 recommendation.
 - Keep the requirements around README/reference docs, versioned API/dumps, and opt-in for sensitive content.
-- Keep all four checklists as callout blocks.
+- Keep the minimal quality check with five criteria: findability, accuracy, provenance, rights, context. It is not an evaluation framework.
+- Keep all five checklists as callout blocks.
 
 ## Required Citations
 

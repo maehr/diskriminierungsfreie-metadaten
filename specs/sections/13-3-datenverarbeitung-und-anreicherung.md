@@ -18,6 +18,7 @@ source: `manuscript/sections/05-praxis-03-3-datenverarbeitung-und-anreicherung.q
 - Preserve the insistence that schemas/ontologies are not neutral and that modeling decisions must be documented.
 - Keep the "Checkliste Technische Standards" callout.
 - Keep the "Checkliste Beschreibung" callout.
+- Keep the four description levels in 3.2: source statement, factual description, contextualization, interpretation.
 - Keep both "callout-tip" blocks on gaps/contradictions/uncertainty/errors and on free-text description decisions.
 - Keep the automation subsection's risk framing (bias, hallucinations, opacity) and the requirement to label AI-generated content.
 - Keep the three AI practice note callouts:

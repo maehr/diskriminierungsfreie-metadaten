@@ -35,23 +35,27 @@ function getQmdFiles(dir) {
 	return files;
 }
 
+const NAMED_ARG = /^[A-Za-z_][A-Za-z0-9_-]*=/;
+
+function splitArgs(args) {
+	// Keep quoted strings and name="value" pairs in one piece.
+	return args.match(/(?:[A-Za-z_][A-Za-z0-9_-]*=)?(?:"[^"]*"|'[^']*'|[^\s"']+)/g) || [];
+}
+
 function parseShortcodeKeys(line) {
 	const keys = [];
 	const re = /\{\{<\s*glossary\s+([^>]+?)\s*>\}\}/g;
 	let m;
 	while ((m = re.exec(line)) !== null) {
-		const args = m[1].trim();
-		if (/^[A-Za-z_][A-Za-z0-9_-]*\s*=/.test(args)) {
-			// Parameter-only shortcodes such as {{< glossary table=true >}}
+		// The term is the first positional argument. Named arguments can stand before it.
+		const args = splitArgs(m[1].trim());
+		const positional = args.filter((arg) => !NAMED_ARG.test(arg));
+		if (positional.length === 0) {
+			// Only the table mode, such as {{< glossary table=true >}}, needs no term.
+			if (!args.some((arg) => /^table=/.test(arg))) keys.push(null);
 			continue;
 		}
-		const quoted = args.match(/^"([^"]+)"/);
-		if (quoted) {
-			keys.push(quoted[1]);
-			continue;
-		}
-		const token = args.split(/\s+/)[0];
-		if (token) keys.push(token);
+		keys.push(positional[0].replace(/^["']|["']$/g, ''));
 	}
 	return keys;
 }
@@ -90,8 +94,14 @@ function checkFile(filePath, trackedTerms, glossarySet) {
 		}
 		if (inCodeFence) continue;
 
+		if (/\{\{<\s*glossary\s*>\}\}/.test(line)) {
+			unknownShortcodes.push({ filePath, lineNo, key: '(no term)' });
+		}
+
 		for (const key of parseShortcodeKeys(line)) {
-			if (!glossarySet.has(key)) {
+			if (key === null) {
+				unknownShortcodes.push({ filePath, lineNo, key: '(no term)' });
+			} else if (!glossarySet.has(key)) {
 				unknownShortcodes.push({ filePath, lineNo, key });
 			}
 		}

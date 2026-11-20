@@ -53,6 +53,22 @@ references:
     URL: >-
       https://www.humanrights.ch/de/ipf/menschenrechte/diskriminierung/antidiskriminierungsgesetz/adg-ausgangslage/
 
+  - id: ahrndt2021a
+    citation-key: ahrndt2021a
+    edition: 3. Ausgabe
+    editor:
+      - family: Ahrndt
+        given: Wiebke
+      - literal: Deutscher Museumsbund
+    ISBN: 978-3-9819866-6-2
+    issued:
+      - year: 2021
+    language: de
+    publisher: Deutscher Museumsbund e.V
+    publisher-place: Berlin
+    title: Leitfaden Umgang mit Sammlungsgut aus kolonialen Kontexten
+    type: book
+
   - id: A4BLiP2020
     abstract: >-
       Deutsch: Die Arbeitsgruppe für antirassistische Beschreibung von „Archives
@@ -154,6 +170,68 @@ references:
     title: Rassismuskritische Dokumentation. Ein Handbuch für GLAM-Institutionen
     type: report
     URL: https://doi.org/10.5281/zenodo.17657486
+
+  - id: baresel-brand2019
+    author:
+      - family: Baresel-Brand
+        given: Andrea
+      - family: Franz
+        given: Michael
+      - family: Gramlich
+        given: Johannes
+      - family: Hartmann
+        given: Jasmin
+      - family: Hartmann
+        given: Uwe
+      - family: Henkel
+        given: Matthias
+      - family: Henker
+        given: Michael
+      - family: Kesting
+        given: Maria
+      - family: Kocourek
+        given: Jana
+      - family: Köstering
+        given: Susanne
+      - family: Lindenau
+        given: Katja
+      - family: Lupfer
+        given: Gilbert
+      - family: Mühlen
+        given: Ilse
+        non-dropping-particle: von zur
+      - family: Obenaus
+        given: Maria
+      - family: Poltermann
+        given: Johanna
+      - family: Rosebrock
+        given: Tessa
+      - family: Saß
+        given: Ulrike
+      - family: Scheibe
+        given: Michaela
+      - family: Thielecke
+        given: Carola
+      - family: Vuillaume
+        given: David
+      - family: Walz
+        given: Markus
+      - family: Winter
+        given: Petra
+      - family: Zuschlag
+        given: Christoph
+    citation-key: baresel-brand2019
+    ISBN: 978-3-9821420-0-5
+    issued:
+      - year: 2019
+    language: de
+    publisher: Deutsches Zentrum für Kulturgutverluste
+    publisher-place: Magdeburg
+    title: >-
+      Leitfaden Provenienzforschung zur Identifizierung von Kulturgut, das
+      während der nationalsozialistischen Herrschaft verfolgungsbedingt entzogen
+      wurde
+    type: book
 
   - id: baroncini2025
     abstract: >-
@@ -298,6 +376,68 @@ references:
     type: book
     URL: >-
       https://direct.mit.edu/books/monograph/4738/Sorting-Things-OutClassification-and-Its
+
+  - id: breslau2019
+    author:
+      - family: Breslau
+        given: Ralf
+      - family: Kaukoreit
+        given: Volker
+      - family: Probst
+        given: Rudolf
+      - family: Weber
+        given: Jutta
+      - family: Wedl
+        given: Martin
+    citation-key: breslau2019
+    issued:
+      - year: 2019
+        month: 1
+    language: de
+    publisher: Standardisierungsausschuss
+    publisher-place: Berlin, Bern, Wien
+    title: >-
+      Ressourcenerschließung mit Normdaten in Archiven und Bibliotheken (RNAB):
+      Richtlinie und Regeln für Personen-, Familien-, Körperschaftsarchive und
+      Sammlungen
+    type: report
+
+  - id: bruckmann2024
+    author:
+      - family: Bruckmann
+        given: Ziu
+      - family: Galli
+        given: Andrea
+      - family: Graf
+        given: Nicole
+      - family: Hintermüller
+        given: Julia
+      - family: Pfyffer
+        given: Gaby
+      - family: Schädler
+        given: Linda
+      - family: Schönbächler
+        given: Martina
+      - family: Spano
+        given: Roberta
+      - family: Sträuli
+        given: Sabine
+      - family: Walt
+        given: Roman
+      - family: Willi
+        given: Stephanie
+    citation-key: bruckmann2024
+    DOI: 10.3929/ethz-b-000691291
+    issued:
+      - year: 2024
+        month: 8
+    language: de
+    publisher: ETH Zürich, ETH-Bibliothek
+    title: >-
+      Dekolonialisierung der Sammlungen und Archive der ETH Zürich – ein
+      Leitfaden aus der Praxis
+    type: report
+    URL: https://doi.org/10.3929/ethz-b-000691291
 
   - id: budde2008
     author:
@@ -705,6 +845,22 @@ references:
     title: 'The politics of reality: Essays in feminist theory'
     type: book
 
+  - id: gasser2024
+    editor:
+      - family: Gasser
+        given: Michael
+      - family: Hotea
+        given: Meda Diana
+    citation-key: gasser2024
+    DOI: 10.3929/ethz-b-000708573
+    issued:
+      - year: 2024
+    language: de
+    publisher: ETH Zürich, ETH-Bibliothek, Rara und Karten
+    title: Handbuch der kartografischen Sammlungen der Schweiz
+    type: book
+    URL: https://doi.org/10.3929/ethz-b-000708573
+
   - id: GIDA_CARE_2025
     abstract: >-
       Deutsch: Die CARE-Prinzipien (Collective Benefit, Authority to Control,
@@ -789,14 +945,12 @@ references:
         given: Melissa M.
       - family: Ames
         given: Sarah
-    event-place: Place of publication not identified
     ISBN: 978-1-78330-658-9
     issued:
       - year: 2025
     language: en
     note: 'OCLC: 1474008533'
     publisher: Facet Publishing
-    publisher-place: Place of publication not identified
     source: Open WorldCat
     title: 'Library catalogues as data: research, practice and usage'
     title-short: Library catalogues as data
@@ -820,6 +974,23 @@ references:
       geschlechtersensible Normdaten
     type: article-journal
     volume: '75'
+
+  - id: Hahn2016
+    author:
+      - family: Hahn
+        given: Helene
+    citation-key: Hahn2016
+    issued:
+      - year: 2016
+        month: 4
+    language: de
+    publisher: digiS – Servicestelle Digitalisierung Berlin, Zuse Institute Berlin
+    publisher-place: Berlin
+    title: >-
+      Kooperativ in die digitale Zeit: wie öffentliche Kulturinstitutionen
+      Cultural Commons fördern
+    type: document
+    URL: http://nbn-resolving.de/urn:nbn:de:0297-zib-59131
 
   - id: higgins2008
     abstract: >-
@@ -925,6 +1096,26 @@ references:
     title: A Manual of Archive Administration
     type: book
 
+  - id: johnson_2019_conversation
+    accessed:
+      - year: 2026
+        month: 11
+        day: 20
+    author:
+      - family: Johnson
+        given: Katherine
+    citation-key: johnson_2019_conversation
+    container-title: The Conversation
+    DOI: 10.64628/AA.4sce6dxdr
+    issued:
+      - year: 2019
+        month: 11
+        day: 10
+    language: en
+    title: Frozen in time, the casts of Indigenous Australians who performed in ‘human zoos’ are chilling
+    type: article-newspaper
+    URL: https://theconversation.com/frozen-in-time-the-casts-of-indigenous-australians-who-performed-in-human-zoos-are-chilling-124982
+
   - id: junger2021
     accessed:
       - year: 2025
@@ -1001,6 +1192,7 @@ references:
       - family: Berger
         given: Frederik
     citation-key: kaiser2023
+    container-title: Journal of Natural Science Collections
     issued:
       - year: 2023
         month: 2
@@ -1011,6 +1203,7 @@ references:
       Promises of mass digitisation and the colonial realities of natural history
       collections
     type: article-journal
+    URL: https://www.natsca.org/article/2796
     volume: '11'
 
   - id: kleinberg2017
@@ -1032,6 +1225,21 @@ references:
     title: >-
       Inherent Trade-Offs in the Fair Determination of Risk Scores
     type: paper-conference
+
+  - id: knaus2019
+    author:
+      - family: Knaus
+        given: Gudrun
+    citation-key: knaus2019
+    editor:
+      - family: Bracht
+        given: Christian
+    issued:
+      - year: 2019
+    language: de
+    title: Leitfaden für digitales Sammlungsmanagement an Kunstmuseen
+    type: book
+    URL: https://archiv.ub.uni-heidelberg.de/artdok/6413/
 
   - id: koenig2024
     abstract: >-
@@ -1132,6 +1340,32 @@ references:
     URL: >-
       https://dokumentation.stadtgeschichtebasel.ch/products/interna/digitalkonzept/
 
+  - id: Maehr_Schnegg_Handbuch_2025
+    accessed:
+      - year: 2026
+        month: 11
+        day: 11
+    author:
+      - family: Mähr
+        given: Moritz
+      - family: Schnegg
+        given: Noëlle
+    citation-key: Maehr_Schnegg_Handbuch_2025
+    DOI: 10.5281/zenodo.17073511
+    issued:
+      - year: 2025
+        month: 9
+        day: 7
+    language: de
+    publisher: Zenodo
+    title: >-
+      Handbuch zur Erstellung diskriminierungsfreier Metadaten für historische
+      Quellen und Forschungsdaten: Erfahrungen aus dem
+      geschichtswissenschaftlichen Forschungsprojekt Stadt.Geschichte.Basel
+    type: book
+    URL: https://doi.org/10.5281/zenodo.17073511
+    version: 1.0.1
+
   - id: mahr2025
     accessed:
       - year: 2025
@@ -1147,10 +1381,6 @@ references:
         month: 8
         day: 31
     license: AGPL-3.0
-    original-date:
-      - year: 2025
-        month: 8
-        day: 30
     source: GitHub
     title: Dublin Core Metadata Enhancer
     type: software
@@ -1537,6 +1767,49 @@ references:
     type: webpage
     URL: https://forschung.stadtgeschichtebasel.ch/data.html
 
+  - id: SGB_Datenmodell
+    accessed:
+      - year: 2026
+        month: 11
+        day: 11
+    author:
+      - family: Görlich
+        given: Nico
+      - family: Münch
+        given: Cristina
+      - family: Mähr
+        given: Moritz
+      - family: Schnegg
+        given: Noëlle
+      - family: Twente
+        given: Moritz
+    citation-key: SGB_Datenmodell
+    container-title: Dokumentationsplattform Stadt.Geschichte.Basel
+    language: de
+    title: Datenmodell
+    type: webpage
+    URL: >-
+      https://dokumentation.stadtgeschichtebasel.ch/products/research-data/datamodel/
+
+  - id: SGB_omeka2dsp
+    accessed:
+      - year: 2026
+        month: 11
+        day: 11
+    author:
+      - family: Görlich
+        given: Nico
+      - family: Mähr
+        given: Moritz
+      - family: Twente
+        given: Moritz
+    citation-key: SGB_omeka2dsp
+    container-title: Dokumentationsplattform Stadt.Geschichte.Basel
+    language: de
+    title: omeka2dsp
+    type: webpage
+    URL: https://dokumentation.stadtgeschichtebasel.ch/products/coding/omeka2dsp/
+
   - id: sgg2023
     abstract: >-
       Le document propose un glossaire et un catalogue qui répertorient les
@@ -1616,6 +1889,36 @@ references:
     publisher-place: Urbana and Chicago
     title: Can the subaltern speak?
     type: chapter
+
+  - id: stabs_bonny
+    accessed:
+      - year: 2026
+        month: 11
+        day: 20
+    archive: Staatsarchiv Basel-Stadt
+    archive_location: BSL 1001 G 1.1.13.2
+    author:
+      - literal: Taeschler-Signer
+    citation-key: stabs_bonny
+    language: de
+    title: Kletternder Maori "Bonny"
+    type: graphic
+    URL: https://dls.staatsarchiv.bs.ch/records/439319
+
+  - id: staehelin_1993
+    author:
+      - family: Staehelin
+        given: Balthasar
+    citation-key: staehelin_1993
+    ISBN: 978-3-905141-57-3
+    issued:
+      - year: 1993
+    language: de
+    number-of-pages: '181'
+    publisher: Basler Afrika Bibliographien
+    publisher-place: Basel
+    title: Völkerschauen im Zoologischen Garten Basel 1879–1935
+    type: book
 
   - id: stanczak2021
     abstract: >-
